@@ -4,8 +4,8 @@ type: synthesis
 created: 2026-04-15
 updated: 2026-04-15
 sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md]
-related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/small-language-models-edge-ai.md, ../concepts/large-sensor-models.md]
-tags: [landscape, ai-stack, architecture, 2026]
+related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/small-language-models-edge-ai.md, ../concepts/large-sensor-models.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
+tags: [landscape, ai-stack, architecture, 2026, silicon, auracast]
 ---
 
 # The Hearing Aid AI Stack — 2026 Landscape
@@ -13,46 +13,100 @@ tags: [landscape, ai-stack, architecture, 2026]
 A synthesis of the current state of AI/ML in hearing aids, organized as a technology stack from hardware to user experience.
 
 ## Layer 1: Silicon
-- Custom SoCs with dedicated DSP cores (all major manufacturers)
-- Emerging: on-chip neural network accelerators (Demant Polaris, Starkey Edge)
-- Power budgets: 1-5 mW total device power
+
+Custom SoCs with dedicated DSP cores remain the foundation, but 2025–2026 has seen a meaningful jump in dedicated neural accelerator silicon.
+
+### Key Chips (2025–2026)
+| Chip | Manufacturer | Specs | Product |
+|------|-------------|-------|---------|
+| DEEPSONIC | Sonova (Phonak) | 7.7B ops/sec, dual-chip architecture | Phonak Sphere Infinio |
+| DNN Chip | GN (ReSound) | 4.9 trillion operations/day | ReSound Vivia |
+| Polaris | Demant (Oticon) | Single-chip DNN 2.0 | Oticon Intent |
+| Edge AI | Starkey | On-device ML | Genesis AI |
+| H2 | Apple | General-purpose; hearing aid classification added 2024 | AirPods Pro 2 |
+
+- Power budgets remain tight: 1–5 mW total device power
 - Trend: more transistors dedicated to ML inference vs. traditional DSP
+- Dual-chip designs (Sonova) trade PCB complexity for raw throughput
+- Single-chip designs (Demant) trade throughput for form factor and power efficiency
+
+### Real-Time AI: Only Two Products as of 2026
+Of all marketed "AI" hearing aids, only two currently implement genuine real-time AI inference in the audio path:
+- **Phonak Sphere Infinio** — DEEPSONIC dual-chip, real-time scene adaptation
+- **ReSound Vivia** — Dedicated DNN chip, real-time Intelligent Focus
+
+All others use AI for fitting, personalization, and background adaptation, not sample-by-sample audio processing.
 
 ## Layer 2: On-Device Models
+
 - **Noise reduction:** DNNs replacing traditional Wiener filters
 - **Scene classification:** CNN/RNN classifiers (quiet, speech, music, noise, outdoors, etc.)
+  - Phonak: 22M scenes in training data
+  - Oticon DNN 2.0: 13M scenes, plus 4D Sensor (head + body motion fusion)
+  - ReSound: 13.5M sentences in training data
 - **Speech enhancement:** Compact neural nets (< 1M params)
 - **Beamforming:** ML-steered directional microphones
 - **Feedback cancellation:** Adaptive filters augmented with ML
-- **Own voice processing:** Unique to WS Audiology/Signia
+- **Own voice processing:** Unique to WS Audiology/Signia (OVP)
+- **Ultra-low latency DNN:** 1ms time-domain processing (emerging; required for feedback cancellation and bone conduction paths)
+
+### Processing Architecture Comparison
+| Approach | Exemplar | Trade-off |
+|----------|---------|-----------|
+| Dual-chip raw power | Sonova/Phonak | Highest throughput, larger device, more power |
+| Sensor fusion DNN | Demant/Oticon | Motion-aware but single-chip constrained |
+| Cloud-hybrid DNN | WS Audiology/Signia | Larger effective model, latency risk for some functions |
+| Health ecosystem | Starkey | Differentiates on sensors, not audio ML |
+| Consumer chip | Apple (H2) | General purpose, 5-min audiometry, OTC scale |
 
 ## Layer 3: Personalization
+
 - **Fitting algorithms:** NAL-NL2, DSL v5, proprietary (prescription → gain curves)
 - **On-device adaptation:** Devices learn user preferences over time
 - **Audiologist adjustments:** Fine-tuning via manufacturer software (Phonak Target, Oticon Genie)
 - **Self-adjustment:** Users tweak via smartphone apps, data feeds back
+- **Signia DNN Assistant:** Cloud-based DNN that delivers personalization adjustments without a full clinic visit — a hybrid model where real-time audio stays on-device but fitting intelligence lives in the cloud
 
 ## Layer 4: Connectivity & Data
-- **Bluetooth LE Audio / Auracast** — Emerging broadcast standard
+
+- **Bluetooth LE Audio / Auracast** — Emerging broadcast standard; key bridge between consumer and clinical devices. Auracast allows loop systems in public venues (theaters, airports) to broadcast directly to hearing aids and earbuds, reducing stigma and integration friction.
+  - Auracast is expected to appear in public infrastructure (public transit, cinemas) through 2026–2028
+  - Both hearing aid manufacturers and consumer audio brands (Sony, Apple) adopting Auracast
 - **Companion apps** — Data collection, remote control, health features
 - **Cloud analytics** — Aggregated usage data for R&D
-- **Remote fitting** — Teleaudiology via apps (accelerated by COVID)
+- **Remote fitting** — Teleaudiology via apps (accelerated by COVID, now standard)
 
 ## Layer 5: Ecosystem & Services
+
 - **Health monitoring** — Fall detection, heart rate, activity (Starkey leading)
 - **Translation** — Real-time speech translation (demo/experimental stage)
-- **Cognitive health** — Hearing-cognition link monitoring (emerging research)
-- **OTC self-fit** — Apple AirPods Pro, Jabra Enhance, Bose SoundControl
+- **Cognitive health** — Hearing-cognition link monitoring (emerging research, ACHIEVE study data)
+- **OTC self-fit** — Apple AirPods Pro 2 ($249, FDA-cleared OTC), Jabra Enhance, Bose SoundControl
+
+### Apple AirPods Pro as Hearing Aid (2024–2026)
+Apple AirPods Pro 2 received FDA OTC hearing aid clearance in 2024. Key specs:
+- H2 chip with hearing-specific inference added via software
+- 5-minute self-administered audiometry via iPhone
+- Targets mild-to-moderate hearing loss
+- Price: $249 (vs. $4,600 average prescription hearing aid)
+- Positioned as the primary OTC disruptor from consumer electronics
 
 ## What's Missing / Coming Next
+
 1. **Foundation models for audio** — Pre-trained on massive audio datasets, fine-tuned for hearing
-2. **Cross-device learning** — Federated learning across user populations
+2. **Cross-device federated learning** — Training across user populations without centralizing raw audio data; privacy-preserving model improvement
 3. **Causal personalization** — Moving from correlation (users like X) to causation (setting X improves outcomes because Y)
-4. **Sensor fusion** — Combining audio + motion + biometrics for holistic understanding (LSM concept)
+4. **Sensor fusion at scale** — Combining audio + motion + biometrics for holistic understanding (LSM concept); Oticon 4D Sensor is early evidence
 5. **Real-time translation** — Requires significant compute advances at hearing aid scale
+6. **Auracast infrastructure rollout** — The connectivity layer that enables hearing aids and earbuds to interoperate with public venue systems
 
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — Layer 2 deep dive
 - [[speech-enhancement-neural-networks]] — Key workload in Layer 2
 - [[small-language-models-edge-ai]] — Model paradigm for Layers 2-3
 - [[large-sensor-models]] — Potential future for Layer 2 initialization
+- [[ai-hearing-aid-platforms-2026]] — Platform-by-platform comparison table
+
+## Sources
+- [Small Language Models for Edge AI](../../sources/small-language-models-edge-2026.md)
+- [Large Sensor Models (arXiv)](../../sources/large-sensor-models-arxiv-2026.md)
