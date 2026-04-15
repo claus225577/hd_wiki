@@ -3,8 +3,8 @@ title: Speech Enhancement Neural Networks
 type: concept
 created: 2026-04-15
 updated: 2026-04-15
-sources: []
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md]
+sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md]
 tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer]
 ---
 
@@ -73,9 +73,34 @@ Leading manufacturers train on massive datasets to cover real-world acoustic div
 - **DNS Challenge** — Industry benchmark for real-time speech enhancement
 - **Subjective listening tests** — Still gold standard; ML metrics don't fully capture perceived quality for hearing aid users
 
+## Recent Academic Advances (2024–2026)
+
+### Sub-Millisecond Latency (2025)
+Achieved 0.32–1.25 ms mean algorithmic latency using minimum-phase FIR filter for sample-by-sample processing on hearables. Eliminates comb-filter artifacts entirely (arXiv, 2025).
+
+### Ultra-Low Latency DNN Noise Reduction (2026)
+Pre-trained convolutional time-domain network achieving 1 ms latency. Validated on normal-hearing, hearing-impaired, and CI users. Published in Frontiers in Audiology and Otology.
+
+### Binaural Deep Speech Enhancement (2024)
+IEEE/ACM TASLP paper comparing monaural vs. binaural DNN processing. Shows binaural processing preserves spatial cues (ITD/ILD) while enhancing speech — solving a key limitation of earlier independent-ear processing.
+
+### Self-Supervised Speech Models as Loss Functions (2024)
+Novel approach using self-supervised speech representations in the loss function during training (not as input features). Produces enhancement models better aligned with hearing-impaired perceptual quality. Connected to Clarity Challenge; funded by WS Audiology and Toshiba.
+
+### Foundation Models for Intelligibility Prediction (2024)
+Self-supervised speech models (e.g., NVIDIA Parakeet, 600M params, 120k hours) correlate better with human intelligibility ratings than PESQ/STOI. Opens path to non-intrusive quality prediction without listener panels.
+
 ## Related Pages
 - [[dnn-architectures-hearing-aids]] — Deep dive on hardware-specific DNN architectures and chip implementations
 - [[on-device-ml-hearing-aids]] — Deployment target for these networks
 - [[small-language-models-edge-ai]] — Compression techniques applicable to speech models
 - [[auditory-attention-decoding]] — Next frontier: steering enhancement based on where user is listening
 - [[cochlear-implant-ai]] — Speech enhancement DNNs adapted for cochlear implant users
+- [[vcca-computational-audiology]] — Central topic across all VCCAs
+
+## Sources
+- [Sub-ms Latency Speech Enhancement](../sources/sub-millisecond-speech-enhancement-hearables-2025.md)
+- [Low-Latency DNN Noise Reduction](../sources/dnn-noise-reduction-intelligibility-2026.md)
+- [Binaural Deep Speech Enhancement](../sources/multichannel-deep-speech-enhancement-ha-2024.md)
+- [SSL Loss Functions for HA Enhancement](../sources/ssl-loss-functions-hearing-aid-enhancement-2024.md)
+- [Speech Foundation Models for HI Prediction](../sources/speech-foundation-models-hearing-impaired-2024.md)

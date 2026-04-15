@@ -3,8 +3,8 @@ title: Hearing Loss and Dementia: The Evidence
 type: concept
 created: 2026-04-15
 updated: 2026-04-15
-sources: []
-related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md]
+sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, hearing-loss-dementia-lancet-2024.md]
+related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md]
 tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors]
 ---
 
@@ -94,7 +94,27 @@ Multiple professional bodies have updated guidance in light of this evidence:
 - Long-term (5-10 year) RCT data not yet available
 - Whether AI-enhanced hearing aids provide additional cognitive benefit over conventional aids is unknown
 
+## Recent Academic Updates (2024–2025)
+
+### ACHIEVE Trial Secondary Analysis (2025, PMC)
+ARIC cohort secondary analysis (N=2,692) confirms that cognitive benefits of hearing intervention are stratified by baseline risk: high-risk individuals see ~50% reduction in cognitive decline rate; lower-risk individuals see minimal benefit. This supports **precision audiology** — using ML models to predict who benefits most from early intervention.
+
+### Predictive Model for Cognitive Outcomes (2025, Frontiers)
+ML model developed to predict which hearing aid users will experience cognitive benefits, addressing the ACHIEVE finding that not all patients benefit equally. Moves toward personalized intervention decisions.
+
+### Framingham Heart Study (2024, JAMA Network Open)
+Large longitudinal study linking hearing loss to brain structural changes visible on MRI, cognitive performance decline, and dementia risk. Adds neuroimaging evidence to the epidemiological association.
+
+### Dementia Risk Meta-Analysis (2024)
+50 studies, >1.5M participants: adult-onset hearing loss increases risk for cognitive decline, dementia, MCI, and Alzheimer's disease. Hearing loss confirmed as responsible for ~7% of dementia risk — the largest single modifiable factor.
+
 ## Related Pages
 - [[otc-hearing-aids]] — Policy and access arguments strengthened by this evidence
 - [[hearing-aid-market-dynamics]] — Dementia link is a marketing and clinical narrative driving adoption
 - [[teleaudiology]] — Remote care models to reach untreated populations earlier
+- [[automated-audiometry]] — ML audiometry enables screening at scale for early detection
+
+## Sources
+- [ACHIEVE Trial Secondary Analysis](../sources/achieve-trial-cognitive-hearing-2025.md)
+- [Cognitive Outcome Prediction Model](../sources/hearing-aid-cognitive-outcome-prediction-2025.md)
+- [Framingham Heart Study — Hearing & Brain](../sources/hearing-loss-dementia-framingham-jama-2024.md)

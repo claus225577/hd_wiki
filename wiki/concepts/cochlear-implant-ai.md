@@ -3,8 +3,8 @@ title: AI in Cochlear Implants
 type: concept
 created: 2026-04-15
 updated: 2026-04-15
-sources: []
-related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md]
+sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md]
+related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md]
 tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric]
 ---
 
@@ -93,8 +93,29 @@ ML-in-CI publications have grown substantially since 2018, tracking the broader 
 - **Regulatory pathway:** AI-based sound coding changes require FDA/CE clearance, slowing deployment relative to research advances
 - **Power constraints:** CI sound processors have battery/power constraints similar to hearing aids
 
+## Recent Academic Advances (2024–2026)
+
+### Deep Learning Framework with 3D-Printed Cochleae (2025)
+Co-modelling framework combining 3D-printed biomimetic cochleae with ML for interpreting electric field imaging (EFI) profiles. Predicts patient-specific anatomy and tissue resistivity for personalized CI fitting. Published in PMC.
+
+### AVSE-ECS: Audio-Visual CI Sound Coding (2025)
+Novel system using audio-visual speech enhancement (lip reading + audio) as pre-processing for deep-learning-based ElectrodeNet-CS sound coding. End-to-end learning from multimodal input to electrode stimulation patterns. arXiv.
+
+### Largest CI Outcome Prediction Study (2025)
+4,046 patients across 32 US institutions (Ear and Hearing, September 2025). Assesses ML feasibility for predicting post-implant speech perception — unprecedented scale for CI outcome prediction.
+
+### Pediatric Language Prediction via Transfer Learning (2025)
+278 pediatric CI recipients, 3 languages, pre-implant MRI → 92.39% accuracy in forecasting spoken language improvement using bilinear attention-based deep transfer learning.
+
 ## Related Pages
 - [[dnn-architectures-hearing-aids]] — Same DNN architectures (CRN, transformer) apply to CI processors
 - [[on-device-ml-hearing-aids]] — Shared edge inference constraints between HAs and CI processors
 - [[speech-enhancement-neural-networks]] — Core enhancement pipeline applicable to CI pre-processing
 - [[auditory-attention-decoding]] — AAD research often conducted with CI users who have implanted electrodes
+- [[vcca-computational-audiology]] — CI research is a core VCCA track
+
+## Sources
+- [DL Framework for CI with 3D Cochleae](../sources/deep-learning-framework-cochlear-implants-2025.md)
+- [AVSE-ECS Audio-Visual CI Coding](../sources/avse-ecs-audiovisual-ci-2025.md)
+- [ML CI Speech Perception — 4,046 patients](../sources/ml-ci-speech-perception-multicenter-2025.md)
+- [Pediatric CI Language Prediction](../sources/pediatric-ci-language-prediction-transfer-learning-2025.md)

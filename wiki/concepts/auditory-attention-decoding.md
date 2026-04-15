@@ -3,8 +3,8 @@ title: Auditory Attention Decoding (AAD)
 type: concept
 created: 2026-04-15
 updated: 2026-04-15
-sources: []
-related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md]
+sources: [eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md]
+related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, vcca-computational-audiology.md]
 tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, hearing-aids]
 ---
 
@@ -92,7 +92,36 @@ The pathway from research to product is gated by electrode miniaturization, ampl
 | Latency added | Minimal | 1-5 seconds (decode time) |
 | Power impact | Minimal | Significant (+EEG recording) |
 
+## Recent Academic Advances (2024–2026)
+
+### Real-Time Neurosteered Hearing Instrument (2025)
+Landmark paper from Technical University of Denmark demonstrating a complete closed-loop system: EEG → attention decoder → hearing aid beamforming adjustment — working in real-time with hearing-impaired listeners. Published in Journal of Neural Engineering, February 2025.
+
+### TSF-AADNet: Short-Window Decoding (2025)
+Novel dual-branch neural network (temporal-spatial + frequency-spatial features with attention fusion) achieving improved short-window AAD — critical for practical hearing aids where 10-30 second decoding windows are unacceptable.
+
+### Wireless Miniaturization (2026)
+Two-node, four-channel wireless EEG sensor network (bioRxiv, Feb 2026) demonstrates AAD with dramatically reduced hardware — from 64+ lab channels to 4 wireless channels.
+
+### Scalp vs. Around-Ear vs. In-Ear EEG Comparison (2025)
+First simultaneous comparison of all three modalities for AAD (Nature Scientific Reports). Critical benchmarking for determining which form factor is viable for consumer devices.
+
+### Deep CNN AAD in Hearing-Impaired Listeners (2024)
+Deep CNN models achieve 69.8%–82.9% accuracy using 1-second windows with hearing-impaired subjects — validating AAD in the actual target population, not just normal-hearing lab subjects.
+
+### HA Noise Reduction Improves AAD (2025)
+eNeuro paper showing that hearing aid noise reduction and nonlinearity compensation improve EEG-based tracking of selective attention — a virtuous cycle where better HA processing enables better neurosteering.
+
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — On-device inference pipeline that AAD would integrate with
 - [[speech-enhancement-neural-networks]] — Enhancement pipeline that AAD would steer
 - [[dnn-architectures-hearing-aids]] — The DNN stage that receives AAD attention signal as input
+- [[vcca-computational-audiology]] — Major venue for AAD research presentations
+
+## Sources
+- [Real-time EEG Neurosteering](../sources/eeg-neurosteering-hearing-aid-2025.md)
+- [TSF-AADNet](../sources/tsf-aadnet-short-window-aad-2025.md)
+- [Wireless EEG AAD](../sources/wireless-eeg-aad-two-node-2026.md)
+- [In-Ear EEG Comparison](../sources/in-ear-eeg-aad-comparison-2025.md)
+- [Deep AAD in Hearing-Impaired](../sources/deep-aad-hearing-impaired-2024.md)
+- [HA Noise Reduction & AAD](../sources/noise-reduction-selective-attention-eneuro-2025.md)
