@@ -3,8 +3,8 @@ title: On-Device ML in Hearing Aids
 type: concept
 created: 2026-04-15
 updated: 2026-04-15
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md]
-related: [small-language-models-edge-ai.md, large-sensor-models.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md]
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, world-models-continual-learning-2026.md, interspeech-2026-audio-reasoning-challenge.md]
+related: [small-language-models-edge-ai.md, large-sensor-models.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, world-models-hearing-ai.md, audio-reasoning-chain-of-thought.md]
 tags: [edge-ai, hearing-aids, inference, dsp, chips, deepsonic, neural-processing]
 ---
 
@@ -73,6 +73,8 @@ On-device models are typically trained in the cloud on massive datasets:
 - [[large-sensor-models]] — Future: pre-trained models distilled for on-device deployment
 - [[auditory-attention-decoding]] — Next frontier for on-device intelligence
 - [[cochlear-implant-ai]] — Parallel developments in cochlear implant processors
+- [[world-models-hearing-ai]] — World models and continual learning for acoustic personalization
+- [[audio-reasoning-chain-of-thought]] — Chain-of-thought reasoning for audio understanding
 
 ## Sources
 - [Small Language Models Edge 2026](../../sources/small-language-models-edge-2026.md)
