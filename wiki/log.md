@@ -4,6 +4,67 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-04-17 — Batch Ingestion: Product Launches, Clinical Trial, Market Data, AI Trends
+
+**Operation:** INGEST (batch — 10 sources)
+
+**Sources ingested:**
+1. Oticon Verit launch — premium adult HA with 2nd-gen AI, Auracast, Google Fast Pair (Apr 15, 2026)
+2. Oticon Play SI launch — pediatric HA with 2nd-gen AI, 4D sensors, Auracast (Apr 16, 2026)
+3. Phonak DNN noise reduction clinical trial NCT07526428 — interventional study for moderate-severe HL (Apr 14, 2026)
+4. Starkey CTO Achin Bhowmik inducted into AIMBE — AI-driven hearing innovation recognition (Apr 16, 2026)
+5. Hearing aids market $14.42B by 2030 — MarketsandMarkets report (Apr 16, 2026)
+6. Ceretone OTC hearing aids UK launch at £129.99 — ultra-affordable OTC disruption (Apr 15, 2026)
+7. Auracast "Ready vs Enabled" clarification + venue installation guides — consumer education, infrastructure deployment (Apr 14-16, 2026)
+8. Advanced Bionics research collaboration for next-gen cochlear implants — Sonova CI innovation (Apr 14, 2026)
+9. Qwen3.6-35B-A3B open-source release — MoE model, 35B total / 3B active, runs on laptop (Apr 16, 2026)
+10. Karpathy "AI Psychosis" concept — AI understanding gap between tech workers and public (Apr 9-11, 2026)
+
+**Pages created:** 5 new pages
+- wiki/entities/ceretone.md — Ultra-affordable OTC brand
+- wiki/entities/advanced-bionics.md — Sonova CI subsidiary
+- wiki/concepts/hearing-aid-market-dynamics.md — Market sizing, forecasts, structural forces
+- wiki/syntheses/ai-understanding-gap-hearing-industry.md — Karpathy AI Psychosis applied to hearing industry
+
+**Pages updated:** 14 existing pages
+- wiki/entities/demant-oticon.md — Verit + Play SI products, Auracast connectivity, product timeline
+- wiki/entities/starkey.md — Achin Bhowmik leadership section, AIMBE recognition
+- wiki/entities/phonak.md — DNN clinical trial NCT07526428, clinical evidence building
+- wiki/entities/sonova-ag.md — Phonak clinical trial, AB CI collaboration, Advanced Bionics link
+- wiki/concepts/auracast-bluetooth-le-audio.md — Ready vs Enabled distinction, venue deployment, Oticon products
+- wiki/concepts/otc-hearing-aids.md — Ceretone, international OTC expansion
+- wiki/concepts/dnn-in-hearing-aids.md — Phonak clinical trial, Oticon 2nd-gen AI
+- wiki/concepts/cochlear-implant-ai.md — AB next-gen CI research, manufacturer section
+- wiki/concepts/small-language-models-edge-ai.md — Qwen3.6 MoE, open-source trajectory
+- wiki/concepts/speech-enhancement-neural-networks.md — Phonak clinical trial
+- wiki/comparisons/ai-hearing-aid-platforms-2026.md — Oticon Verit row, April 2026 developments
+- wiki/comparisons/otc-vs-prescription-hearing-aids.md — Ceretone pricing, market projection update
+- wiki/syntheses/hearing-aid-ai-stack-2026.md — Verit, clinical trial, Auracast updates
+- wiki/syntheses/hearing-ai-research-landscape-2025.md — Clinical evidence, open-source AI sections
+- wiki/syntheses/vertical-integration-trend.md — Market data source update
+
+**Sources created:** 10
+**Cross-references added:** ~45
+**Notes:** Major batch covering three key themes: (1) Demant product launches with 2nd-gen AI and Auracast across adult+pediatric lines, (2) Sonova dual-track clinical evidence building (Phonak DNN trial) and CI innovation (AB collaboration), (3) broader AI ecosystem developments (Qwen MoE, Karpathy AI Psychosis) connected to hearing industry implications. The Ceretone UK launch at £130 represents a new price floor for OTC. The Auracast Ready vs Enabled distinction emerged as a concrete example of the AI understanding gap concept.
+
+---
+
+## 2026-04-16 — LinkedIn Post Research Ingestion
+
+**Operation:** INGEST (batch)
+**Sources ingested:**
+- Interspeech 2026 Audio Reasoning Challenge (arXiv:2602.14224) — chain-of-thought evaluation for audio AI
+- 2026 World Models & Continual Learning Breakthroughs (NextBigFuture, April 14 2026)
+- Karpathy "Idea Files" paradigm for AI agent development (SimpleNews.ai, April 4 2026)
+
+**Pages created:** 2 concepts (audio-reasoning-chain-of-thought.md, world-models-hearing-ai.md)
+**Pages updated:** on-device-ml-hearing-aids.md (added cross-references to new pages)
+**Sources created:** 3 (interspeech-2026-audio-reasoning-challenge.md, world-models-continual-learning-2026.md, karpathy-idea-files-april-2026.md)
+**Cross-references added:** 6
+**Notes:** Research conducted for daily LinkedIn posts. Audio reasoning and world models represent two emerging paradigms that could transform hearing aid AI from reactive classification to proactive comprehension.
+
+---
+
 ## 2026-04-15 — Initial Seeding
 
 **Operation:** INGEST (batch)

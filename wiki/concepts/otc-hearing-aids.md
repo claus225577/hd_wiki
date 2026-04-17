@@ -2,10 +2,10 @@
 title: Over-the-Counter Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
-related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md]
-tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting]
+updated: 2026-04-17
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md]
+related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md]
+tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international]
 ---
 
 # Over-the-Counter Hearing Aids
@@ -56,6 +56,9 @@ The ~3x price gap between prescription and OTC is the primary driver of OTC inte
 - **Lexie Hearing** — Subscription model, strong app experience, backed by WS Audiology (major manufacturer)
 - **MDHearing** — Value-focused, largely preset devices, broad distribution
 
+### Ultra-Affordable Entrants
+- **Ceretone** — UK launch at £129.99 (~$165 USD) in April 2026; ready-to-wear preset devices; among cheapest OTC hearing aids in any major market. See [[ceretone]].
+
 ### Consumer Electronics Companies
 - **Sony** — CRE series, developed in partnership with WS Audiology; blend of CE brand trust and HA expertise
 - **Jabra** — Enhance Plus, leveraging headset brand recognition
@@ -95,6 +98,14 @@ The OTC category directly addresses the **access gap** in hearing care:
 - Cost is the #1 cited barrier in surveys
 - OTC lowers the barrier but requires health literacy to self-diagnose correctly
 - Risk: users with more severe loss than OTC-indicated may delay proper treatment
+
+## International OTC Expansion
+
+The OTC hearing aid phenomenon is expanding beyond the US:
+- **UK:** Ceretone launched at £129.99 (April 2026) — no FDA-equivalent OTC category exists, but products sold under UK medical device regulations or as personal sound amplifiers
+- **EU:** Varying regulatory frameworks; some countries more permissive than others
+- **Key question:** Will the US FDA OTC model be replicated internationally, or will each market develop its own framework?
+- International price competition is driving the OTC price floor below $200
 
 ## Intersection with Dementia Research
 Given that hearing aid use is associated with **48% slower cognitive decline** (ACHIEVE study) and hearing loss is the largest modifiable dementia risk factor, increasing OTC adoption has potential population-level public health significance. See [[hearing-loss-dementia-link]].

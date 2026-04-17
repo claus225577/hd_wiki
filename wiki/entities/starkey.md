@@ -2,10 +2,10 @@
 title: Starkey
 type: entity
 created: 2026-04-15
-updated: 2026-04-15
-sources: [starkey-omega-ai-launch-2025.md]
+updated: 2026-04-17
+sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md]
 related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md, starkey-omega-ai.md, med-el.md]
-tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn]
+tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe]
 ---
 
 # Starkey
@@ -59,6 +59,14 @@ This creates a different value proposition — particularly for older adults, ca
 - Edge Mode is notable UX: user explicitly triggers an ML optimization call, providing implicit feedback signal on when existing models aren't sufficient
 - Multi-modal health sensing opens hearing aids as a platform for longitudinal health data collection
 
+## Leadership
+
+### Achin Bhowmik — CTO & EVP of Engineering
+- **Background:** Previously VP at Intel (perceptual computing division)
+- **AIMBE Fellowship (April 2026):** Inducted into the American Institute for Medical and Biological Engineering College of Fellows — recognition of AI-driven hearing innovation leadership
+- **Significance:** Bhowmik is the only major hearing aid company CTO from the consumer AI/computing world; his Intel background reflects cross-pollination of consumer tech AI talent into the hearing industry
+- AIMBE fellowship validates Starkey's health-tech positioning: their CTO is recognized for medical/biological engineering innovation, not just consumer electronics
+
 ## Competitive Gap
 As of 2026, Starkey is the only manufacturer with FDA-cleared fall detection in a hearing aid. Competitors have not matched this. The gap may close as health monitoring becomes a competitive requirement rather than a differentiator.
 
@@ -70,3 +78,4 @@ As of 2026, Starkey is the only manufacturer with FDA-cleared fall detection in 
 
 ## Sources
 - Research notes on Genesis AI platform, 3D sensor fall detection, battery specs, Hear Share app
+- [Starkey CTO Bhowmik AIMBE Induction](../sources/starkey-cto-bhowmik-aimbe-april-2026.md) — AIMBE fellowship recognition

@@ -2,8 +2,8 @@
 title: Speech Enhancement Neural Networks
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md]
+updated: 2026-04-17
+sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md]
 related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md]
 tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer]
 ---
@@ -89,6 +89,9 @@ Novel approach using self-supervised speech representations in the loss function
 
 ### Foundation Models for Intelligibility Prediction (2024)
 Self-supervised speech models (e.g., NVIDIA Parakeet, 600M params, 120k hours) correlate better with human intelligibility ratings than PESQ/STOI. Opens path to non-intrusive quality prediction without listener panels.
+
+### Phonak DNN Noise Reduction Clinical Trial (April 2026)
+Sonova/Phonak registered an interventional clinical trial (NCT07526428) specifically evaluating DNN noise reduction for moderate-to-severe hearing loss. First registered trial targeting DNN efficacy at more severe hearing loss levels, where SNR requirements differ from mild-to-moderate populations.
 
 ## Related Pages
 - [[dnn-architectures-hearing-aids]] — Deep dive on hardware-specific DNN architectures and chip implementations

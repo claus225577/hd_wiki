@@ -2,8 +2,8 @@
 title: The Hearing Aid AI Stack — 2026 Landscape
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-15
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md]
+updated: 2026-04-17
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, oticon-verit-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md]
 related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/small-language-models-edge-ai.md, ../concepts/large-sensor-models.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
 tags: [landscape, ai-stack, architecture, 2026, silicon, auracast]
 ---
@@ -21,6 +21,7 @@ Custom SoCs with dedicated DSP cores remain the foundation, but 2025–2026 has 
 |------|-------------|-------|---------|
 | DEEPSONIC | Sonova (Phonak) | 7.7B ops/sec, dual-chip architecture | Phonak Sphere Infinio |
 | DNN Chip | GN (ReSound) | 4.9 trillion operations/day | ReSound Vivia |
+| 2nd-Gen AI | Demant (Oticon) | Single-chip, 2nd-gen AI | Oticon Verit (Apr 2026) |
 | Polaris | Demant (Oticon) | Single-chip DNN 2.0 | Oticon Intent |
 | Edge AI | Starkey | On-device ML | Genesis AI |
 | H2 | Apple | General-purpose; hearing aid classification added 2024 | AirPods Pro 2 |
@@ -29,6 +30,12 @@ Custom SoCs with dedicated DSP cores remain the foundation, but 2025–2026 has 
 - Trend: more transistors dedicated to ML inference vs. traditional DSP
 - Dual-chip designs (Sonova) trade PCB complexity for raw throughput
 - Single-chip designs (Demant) trade throughput for form factor and power efficiency
+
+### Generational Leap: Oticon Verit (April 2026)
+Oticon Verit launched with "second-generation AI sound processing" — successor to DNN 2.0. Full architecture details not yet published, but the generational framing suggests a new or significantly updated SoC. Verit also brings Auracast and Google Fast Pair to Oticon's lineup.
+
+### Clinical Evidence: Phonak DNN Trial (April 2026)
+Phonak registered a clinical trial (NCT07526428) for DNN noise reduction in moderate-to-severe hearing loss — first trial targeting more severe loss populations with DNN technology.
 
 ### Real-Time AI: Only Two Products as of 2026
 Of all marketed "AI" hearing aids, only two currently implement genuine real-time AI inference in the audio path:
@@ -72,6 +79,8 @@ All others use AI for fitting, personalization, and background adaptation, not s
 - **Bluetooth LE Audio / Auracast** — Emerging broadcast standard; key bridge between consumer and clinical devices. Auracast allows loop systems in public venues (theaters, airports) to broadcast directly to hearing aids and earbuds, reducing stigma and integration friction.
   - Auracast is expected to appear in public infrastructure (public transit, cinemas) through 2026–2028
   - Both hearing aid manufacturers and consumer audio brands (Sony, Apple) adopting Auracast
+  - **April 2026:** Oticon Verit and Play SI ship with Auracast; venue installation guides published; "Ready vs Enabled" consumer education push underway
+  - Consumer confusion between "Auracast Ready" (hardware capable, not yet active) and "Auracast Enabled" (active out of box) is an adoption barrier
 - **Companion apps** — Data collection, remote control, health features
 - **Cloud analytics** — Aggregated usage data for R&D
 - **Remote fitting** — Teleaudiology via apps (accelerated by COVID, now standard)
@@ -93,12 +102,13 @@ Apple AirPods Pro 2 received FDA OTC hearing aid clearance in 2024. Key specs:
 
 ## What's Missing / Coming Next
 
-1. **Foundation models for audio** — Pre-trained on massive audio datasets, fine-tuned for hearing
+1. **Foundation models for audio** — Pre-trained on massive audio datasets, fine-tuned for hearing; open-source MoE models (Qwen3.6-35B-A3B) demonstrate efficient inference at scale
 2. **Cross-device federated learning** — Training across user populations without centralizing raw audio data; privacy-preserving model improvement
 3. **Causal personalization** — Moving from correlation (users like X) to causation (setting X improves outcomes because Y)
-4. **Sensor fusion at scale** — Combining audio + motion + biometrics for holistic understanding (LSM concept); Oticon 4D Sensor is early evidence
+4. **Sensor fusion at scale** — Combining audio + motion + biometrics for holistic understanding (LSM concept); Oticon 4D Sensor now in both adult (Verit) and pediatric (Play SI) products
 5. **Real-time translation** — Requires significant compute advances at hearing aid scale
-6. **Auracast infrastructure rollout** — The connectivity layer that enables hearing aids and earbuds to interoperate with public venue systems
+6. **Auracast infrastructure rollout** — Venue installation now beginning (April 2026); consumer education on Ready vs Enabled distinction needed
+7. **Clinical evidence for DNN efficacy** — Phonak clinical trial (NCT07526428) signals industry-wide push toward evidence-based DNN claims
 
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — Layer 2 deep dive

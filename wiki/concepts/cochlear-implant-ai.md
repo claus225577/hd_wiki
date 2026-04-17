@@ -2,10 +2,10 @@
 title: AI in Cochlear Implants
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md]
-related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md]
-tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric]
+updated: 2026-04-17
+sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md]
+related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md]
+tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics]
 ---
 
 # AI in Cochlear Implants
@@ -82,8 +82,11 @@ ML-in-CI publications have grown substantially since 2018, tracking the broader 
 
 - **Cochlear Ltd. (Australia)** — Nucleus systems; largest CI manufacturer globally
 - **MED-EL (Austria)** — Extensive electrode array designs, strong in fine structure processing
-- **Advanced Bionics (USA, Sonova subsidiary)** — HiRes sound coding, Naída processor
+- **Advanced Bionics (USA, Sonova subsidiary)** — HiRes sound coding, Naida processor; announced next-gen CI research collaboration (April 2026) — see [[advanced-bionics]]
 - **Oticon Medical (Demant subsidiary)** — Neuro 2 processor
+
+### Advanced Bionics Next-Gen Research (April 2026)
+AB announced a research collaboration to advance next-generation CI innovation. This is significant because CI technology has seen less AI innovation than hearing aids in recent years. Potential focus areas include AI-driven sound coding, personalized electrode mapping, improved neural interfaces, and advanced materials. Sonova's dual-track strategy invests in both hearing aid AI (DEEPSONIC/Phonak) and CI innovation (AB).
 
 ## Challenges and Open Questions
 
@@ -113,9 +116,12 @@ Novel system using audio-visual speech enhancement (lip reading + audio) as pre-
 - [[speech-enhancement-neural-networks]] — Core enhancement pipeline applicable to CI pre-processing
 - [[auditory-attention-decoding]] — AAD research often conducted with CI users who have implanted electrodes
 - [[vcca-computational-audiology]] — CI research is a core VCCA track
+- [[advanced-bionics]] — Sonova's CI subsidiary; next-gen research collaboration
+- [[sonova-ag]] — Parent company of Advanced Bionics
 
 ## Sources
 - [DL Framework for CI with 3D Cochleae](../sources/deep-learning-framework-cochlear-implants-2025.md)
 - [AVSE-ECS Audio-Visual CI Coding](../sources/avse-ecs-audiovisual-ci-2025.md)
 - [ML CI Speech Perception — 4,046 patients](../sources/ml-ci-speech-perception-multicenter-2025.md)
 - [Pediatric CI Language Prediction](../sources/pediatric-ci-language-prediction-transfer-learning-2025.md)
+- [AB Next-Gen CI Research Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md)

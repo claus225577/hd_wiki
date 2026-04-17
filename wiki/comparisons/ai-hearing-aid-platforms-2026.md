@@ -2,10 +2,10 @@
 title: AI Hearing Aid Platform Comparison 2026
 type: comparison
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
-related: [../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/gn-hearing-resound.md]
-tags: [comparison, platform, 2026, phonak, resound, oticon, signia, starkey, apple]
+updated: 2026-04-17
+sources: [oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, starkey-cto-bhowmik-aimbe-april-2026.md]
+related: [../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/gn-hearing-resound.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
+tags: [comparison, platform, 2026, phonak, resound, oticon, signia, starkey, apple, verit, clinical-trial]
 ---
 
 # AI Hearing Aid Platform Comparison 2026
@@ -18,6 +18,7 @@ A platform-by-platform breakdown of the AI capabilities in major hearing aid pro
 |----------|------|-------------|---------------|---------------|--------------|
 | **Phonak Sphere Infinio** | DEEPSONIC (dual-chip) | 7.7B ops/sec | 22M scenes | Spheric Speech Clarity 2.0 | On-device, real-time |
 | **ReSound Vivia** | Dedicated DNN chip | 4.9T ops/day | 13.5M sentences | Intelligent Focus | On-device, real-time |
+| **Oticon Verit** (Apr 2026) | TBD (2nd-gen AI) | Not disclosed | TBD | 2nd-gen AI + Auracast + Google Fast Pair | On-device |
 | **Oticon Intent** | Single-chip (Polaris) | Not disclosed | 13M scenes | 4D Sensor (head + body motion) | On-device, DNN 2.0 |
 | **Signia Integrated Xperience (IX)** | Integrated (not named) | Not disclosed | Live DNN | Multi-stream RealTime Enhancement + cloud DNN Assistant | Cloud-hybrid |
 | **Starkey Genesis AI** | Edge AI (proprietary) | Not disclosed | Not disclosed | Health tracking + fall detection | On-device |
@@ -90,13 +91,26 @@ Starkey's health platform bet is a hedge against commoditization of audio AI —
 ### Apple: Accessibility at Scale
 Apple's strategy is to define a new category (clinical-grade consumer hearing device) and own it with distribution and ecosystem lock-in. Risk: clinical legitimacy ceiling (not suitable for severe loss). Upside: ~1.5B AirPods users means even 5% with hearing loss represents a massive addressable market untouched by traditional hearing aid brands.
 
+## April 2026 Developments
+
+### Oticon Verit + Play SI
+Demant launched two new products with "second-generation AI" — successor to DNN 2.0. Both include Auracast and Google Fast Pair. The Play SI is notable as the first pediatric hearing aid with 4D sensors and Auracast. Full specs of the 2nd-gen AI platform are not yet published.
+
+### Phonak Clinical Trial (NCT07526428)
+Sonova registered an interventional clinical trial for DNN noise reduction in moderate-to-severe hearing loss — first of its kind targeting more severe loss with DNN technology. Signals a shift from marketing claims to clinical evidence building.
+
+### Starkey CTO AIMBE Recognition
+Starkey's CTO Achin Bhowmik (ex-Intel VP) inducted into AIMBE — validates the health-tech positioning and AI innovation leadership in the hearing aid space.
+
 ## What to Watch in 2026–2027
 
-- Will Sonova's DEEPSONIC dual-chip prove out in real-world outcome data vs. single-chip competitors?
+- Will Sonova's DEEPSONIC dual-chip prove out in clinical trial data (NCT07526428) vs. single-chip competitors?
+- How does Oticon's "2nd-gen AI" in Verit compare architecturally to DNN 2.0?
 - Will Oticon's 4D Sensor become a true differentiator or a marketing feature?
 - Will Signia's cloud DNN Assistant drive measurably better satisfaction vs. clinic-only fitting?
 - Will Apple expand AirPods hearing aid features to address moderate-severe loss?
 - Will any brand achieve genuine federated learning across its user base?
+- Will Auracast venue infrastructure reach critical mass?
 
 ## Related Pages
 - [[hearing-aid-ai-stack-2026]] — Full stack context including silicon and connectivity layers

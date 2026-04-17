@@ -2,10 +2,10 @@
 title: Deep Neural Networks in Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md]
-related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md]
-tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency]
+updated: 2026-04-17
+sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, oticon-verit-launch-april-2026.md]
+related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
+tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency, clinical-trial, second-gen-ai]
 ---
 
 # Deep Neural Networks in Hearing Aids
@@ -108,10 +108,23 @@ Training data composition matters as much as scale:
 
 **Cloud-based DNN inference is not viable for primary hearing aid processing** due to latency requirements. Cloud may play a role in offline model personalization and firmware updates, but real-time audio must be processed on-device.
 
+## Clinical Evidence Frontier (April 2026)
+
+### Phonak DNN Clinical Trial (NCT07526428)
+Sonova/Phonak registered an interventional clinical trial on ClinicalTrials.gov (April 14, 2026) specifically evaluating DNN noise reduction for **moderate-to-severe** hearing loss:
+- Most prior DNN HA studies focused on mild-to-moderate loss
+- Moderate-to-severe population has different SNR requirements and fewer remaining speech cues
+- This is the first registered trial specifically targeting DNN efficacy at more severe hearing loss levels
+- Signals the industry moving from marketing claims to clinical evidence for DNN hearing aids
+
+### Oticon Second-Generation AI (April 2026)
+Oticon Verit (adult) and Play SI (pediatric) launched with "second-generation AI sound processing" — successor to DNN 2.0. Details of the architectural changes are not yet published, but the generational framing suggests meaningful DNN improvements beyond the Intent's DNN 2.0.
+
 ## Clinical and Market Significance
 - DNN hearing aids consistently outperform classical DSP in clinical trials for noisy environments — the primary complaint of hearing aid users
 - DNN capability is now a premium differentiator; "AI hearing aid" is standard marketing language across the Big 5
 - Training data scale and architecture quality are becoming competitive moats — large manufacturers have 10–20x more training data than smaller players
+- Clinical trial registration (Phonak NCT07526428) signals the industry building formal evidence bases for DNN claims
 
 ## Related Pages
 - [[dnn-architectures-hearing-aids]] — Detailed CRN, SepFormer, and chip-level architecture deep-dive
@@ -123,3 +136,5 @@ Training data composition matters as much as scale:
 - [DNN Effectiveness Frontiers 2025](../../sources/dnn-effectiveness-frontiers-2025.md) — Clinical evidence for DNN hearing aid performance
 - [Selective Noise Cancellation arXiv 2025](../../sources/selective-noise-cancellation-arxiv-2025.md) — Context-aware attention-based noise cancellation architectures
 - [Low-Latency DNN Noise Reduction Frontiers 2025](../../sources/low-latency-dnn-noise-reduction-frontiers-2025.md) — Sub-1ms latency DNN research
+- [Phonak DNN Clinical Trial](../../sources/phonak-dnn-noise-reduction-clinical-trial-april-2026.md) — NCT07526428, moderate-to-severe DNN study
+- [Oticon Verit Launch](../../sources/oticon-verit-launch-april-2026.md) — 2nd-gen AI sound processing

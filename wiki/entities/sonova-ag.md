@@ -2,10 +2,10 @@
 title: Sonova AG
 type: entity
 created: 2026-04-15
-updated: 2026-04-15
-sources: [phonak-infinio-sphere-2024.md]
-related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, phonak-audeo-sphere-infinio.md]
-tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip]
+updated: 2026-04-17
+sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md]
+related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, phonak-audeo-sphere-infinio.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md]
+tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant]
 ---
 
 # Sonova AG
@@ -15,7 +15,7 @@ Swiss hearing care company and one of the world's largest hearing aid manufactur
 ## Brands
 - **Phonak** — Primary/flagship hearing aid brand (Audéo Sphere Infinio, Virto R Infinio, Lumity, Infinio lines)
 - **Unitron** — Mid-tier hearing aid brand
-- **Advanced Bionics** — Cochlear implant division
+- **Advanced Bionics** — Cochlear implant division (see [[advanced-bionics]])
 - **AudioNova** — Retail hearing care network (acquired 2016)
 
 ## Technology Platform
@@ -48,6 +48,18 @@ Sonova's decision to use two dedicated chips (one for standard processing, one f
 
 HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class for noise performance.
 
+## Recent Developments (April 2026)
+
+### Phonak DNN Clinical Trial (NCT07526428)
+- Registered interventional study for DNN noise reduction in moderate-to-severe hearing loss
+- First clinical trial specifically targeting DNN efficacy for more severe hearing loss populations
+- Signals evidence-building strategy for DEEPSONIC platform claims
+
+### Advanced Bionics Research Collaboration
+- AB announced new research collaboration to advance next-generation cochlear implant innovation (April 14, 2026)
+- Dual-track innovation: hearing aid AI (DEEPSONIC) + CI technology development
+- CI market ($2B+ annually) is a strategic growth segment with higher margins
+
 ## Market Position
 - Consistently #1 or #2 globally by revenue (competing with Demant)
 - Strong in pediatric audiology
@@ -62,8 +74,12 @@ HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class
 
 ## Related Pages
 - [[phonak-audeo-sphere-infinio]] — Detailed product page for Sonova's flagship AI hearing aid
+- [[advanced-bionics]] — Cochlear implant subsidiary; next-gen CI research collaboration
 - [[on-device-ml-hearing-aids]] — DEEPSONIC dual-chip as key architecture example
+- [[cochlear-implant-ai]] — AI applications in Sonova's CI division
 - [[demant-oticon]], [[ws-audiology-signia]], [[gn-hearing-resound]], [[starkey]] — Competitors
 
 ## Sources
 - [Phonak Infinio Sphere 2024](../sources/phonak-infinio-sphere-2024.md) — DEEPSONIC chip specs, launch details, Ultra update, awards
+- [Phonak DNN Clinical Trial](../sources/phonak-dnn-noise-reduction-clinical-trial-april-2026.md) — NCT07526428
+- [AB Next-Gen CI Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md) — CI research partnership

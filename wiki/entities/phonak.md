@@ -2,10 +2,10 @@
 title: Phonak
 type: entity
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
-related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, gn-hearing-resound.md, demant-oticon.md]
-tags: [company, brand, phonak, sonova, deepsonic, ai-hearing-aid, dual-chip]
+updated: 2026-04-17
+sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md]
+related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, gn-hearing-resound.md, demant-oticon.md, ../concepts/dnn-in-hearing-aids.md]
+tags: [company, brand, phonak, sonova, deepsonic, ai-hearing-aid, dual-chip, clinical-trial]
 ---
 
 # Phonak
@@ -45,6 +45,16 @@ See [[sonova-ag]] for full DEEPSONIC architecture details.
 - **Ultra firmware update (Oct 2025)**: delivered 18x more real-world training data to deployed devices via over-the-air update
 - Demonstrates Phonak's post-deployment model improvement capability — analogous to how software companies ship model updates
 
+## Clinical Evidence Building
+
+### DNN Noise Reduction Clinical Trial (April 2026)
+- **Registry:** ClinicalTrials.gov (NCT07526428)
+- **Type:** Interventional study
+- **Focus:** DNN-based noise reduction for adults with **moderate-to-severe** hearing loss
+- **Significance:** First registered clinical trial specifically evaluating DNN noise reduction for moderate-to-severe loss; most prior DNN HA studies focused on mild-to-moderate
+- Signals Sonova's push to build clinical evidence for DEEPSONIC platform efficacy
+- Could support regulatory claims, insurance reimbursement arguments, and clinical guideline inclusion
+
 ## Awards & Recognition
 - **2026 AI Excellence Award** — Industry recognition for the DEEPSONIC/Infinio platform
 
@@ -73,3 +83,4 @@ Phonak accounts for the majority of Sonova AG's hearing aid revenue. Unitron is 
 
 ## Sources
 - Research notes on DEEPSONIC chip specs, Audéo Sphere Infinio, Oct 2025 Ultra firmware update, 2026 AI Excellence Award
+- [Phonak DNN Noise Reduction Clinical Trial](../sources/phonak-dnn-noise-reduction-clinical-trial-april-2026.md) — NCT07526428, moderate-to-severe DNN study

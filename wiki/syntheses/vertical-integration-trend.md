@@ -2,8 +2,8 @@
 title: Vertical Integration Trend in the Hearing Industry
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-15
-sources: [amplifon-gn-acquisition-2026.md]
+updated: 2026-04-17
+sources: [amplifon-gn-acquisition-2026.md, hearing-aids-market-14b-by-2030-april-2026.md]
 related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/otc-vs-prescription-hearing-aids.md]
 tags: [industry-trend, vertical-integration, m-and-a, strategy, amplifon, gn-hearing]
 ---

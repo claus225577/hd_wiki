@@ -2,8 +2,8 @@
 title: Hearing+AI Research Landscape 2025
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
+updated: 2026-04-17
+sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md]
 related: [../syntheses/hearing-aid-ai-stack-2026.md, ../syntheses/dementia-prevention-hearing-care.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
 tags: [research, landscape, 2025, deep-learning, cochlear-implant, tinnitus, neurosteering, eeg, scoping-review]
 ---
@@ -126,9 +126,23 @@ The gap between research publications and clinical products is wide in hearing A
 
 7. **AAD clinical trial design** — For neurosteering/AAD to advance to clinical use, a new class of clinical trials is needed (EEG-controlled, prospective, with patient-reported outcomes); none have yet been completed
 
+## Clinical Evidence Building (April 2026 Update)
+
+A notable shift is underway from marketing-driven AI claims toward clinical evidence:
+- **Phonak NCT07526428** — First registered clinical trial for DNN noise reduction in moderate-to-severe hearing loss (April 2026)
+- This signals the industry recognizing that clinical trial data will become necessary for regulatory claims, insurance reimbursement, and clinical guideline inclusion
+- Expect more manufacturers to register DNN hearing aid clinical trials in 2026-2027
+
+## Open-Source AI and Hearing Research
+
+Open-source model releases (e.g., Qwen3.6-35B-A3B, April 2026 — 35B params, 3B active via MoE) are lowering barriers for hearing AI research:
+- Academic labs can fine-tune large open-source models for audio/hearing tasks without access to proprietary training infrastructure
+- MoE (mixture-of-experts) architecture is conceptually relevant to hearing aid ML: deploy scene-specific expert sub-networks
+- The compression trajectory (175B GPT-3 in 2020 to 3B active in 2026) suggests hearing-aid-scale foundation models within the decade
+
 ## What This Means for the Field
 
-- **2025–2027:** DNN noise reduction and fitting AI will be standard in all premium hearing aids; academic literature will catch up with commercial implementations
+- **2025–2027:** DNN noise reduction and fitting AI will be standard in all premium hearing aids; clinical trial evidence building begins; academic literature will catch up with commercial implementations
 - **2027–2030:** AAD proof-of-concept in wearable hearing aids; in-ear EEG achieves reliable consumer-grade SNR
 - **2030+:** Neurosteered hearing aids in clinical trials; large audio models routinely fine-tuned for individual hearing profiles at fitting
 

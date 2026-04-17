@@ -2,8 +2,8 @@
 title: OTC vs Prescription Hearing Aids
 type: comparison
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
+updated: 2026-04-17
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md]
 related: [../syntheses/consumer-hearing-tech-convergence.md, ../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../syntheses/vertical-integration-trend.md]
 tags: [otc, prescription, fda, accessibility, apple, marketrak, price, adoption]
 ---
@@ -116,6 +116,7 @@ Apple AirPods Pro 2 (FDA-cleared OTC, 2024) is the single most disruptive produc
 
 | Brand | Type | Price (per pair) | Channel |
 |-------|------|-----------------|---------|
+| Ceretone (UK) | OTC/ready-to-wear | £130 / ~$165 | Online, UK retail |
 | Eargo | DTC/OTC | $1,000–$2,500 | Direct, online |
 | Jabra Enhance | OTC | $800–$1,500 | Online + Best Buy |
 | Audicus | DTC subscription | ~$1,200 | Direct, online |
@@ -127,10 +128,11 @@ Apple AirPods Pro 2 (FDA-cleared OTC, 2024) is the single most disruptive produc
 
 ## Market Projections
 
-- Global hearing aid market: ~$14B (2024), projected $22B by 2030
+- Global hearing aid market: ~$14B (2024); MarketsandMarkets (April 2026) projects $14.42B by 2030 — more conservative than earlier $22B estimates
 - OTC segment expected to reach 15–20% of US unit volume by 2030 (from ~6% in 2024)
 - Consumer electronics segment (AirPods + competitors): potentially another 10–15% of addressable market
 - Prescription segment will retain dominant share in revenue (higher ASP) but shrink as % of units
+- Ultra-affordable OTC (Ceretone at £130, sub-$200 devices) may expand the addressable market by reaching users who would never spend $1,000+
 
 ## Related Pages
 - [[consumer-hearing-tech-convergence]] — Consumer electronics entering the hearing space
