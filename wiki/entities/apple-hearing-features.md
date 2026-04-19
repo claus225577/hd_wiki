@@ -2,10 +2,10 @@
 title: Apple Hearing Features
 type: entity
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
-related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, starkey.md, sonova-ag.md, demant-oticon.md]
-tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26]
+updated: 2026-04-18
+sources: [airpods-pro-3-hearing-health-april-2026.md]
+related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md]
+tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring]
 ---
 
 # Apple Hearing Features
@@ -25,9 +25,15 @@ AirPods Pro 2 received FDA clearance as a Class II OTC hearing aid. This is not 
 - **Live Listen** — iPhone acts as a remote directional microphone, streamed to AirPods
 
 ### AirPods Pro 3 (2026)
-- All hearing aid features of AirPods Pro 2, plus:
-- **Heart rate sensing** — Continuous cardiovascular monitoring via in-ear optical sensors
-- Extends the health monitoring use case (parallels Starkey's health-in-hearing-aids strategy)
+- All hearing aid features of AirPods Pro 2, plus significant improvements:
+- **Price:** **$200** — $49 cheaper than AirPods Pro 2 at launch
+- **FDA-approved hearing aid feature** for mild-to-moderate hearing loss (carried over from Pro 2)
+- **Heart rate monitoring** — LEDs pulse **256 times per second** through in-ear optical sensors for continuous cardiovascular monitoring. The 256 Hz sampling rate is higher than many dedicated health wearables, suggesting clinical-grade PPG measurement
+- **Active hearing protection** — Real-time monitoring of sound exposure levels with automatic protection
+- **Conversation Boost** — Directional amplification for face-to-face conversations
+- **67% more battery life in Transparency mode** compared to previous generation — directly addresses the battery life gap vs. dedicated hearing aids
+- **Continuous software updates** — Apple regularly adds features post-launch, making the device improve over time (contrast with traditional hearing aids that ship with fixed firmware)
+- Extends the health monitoring use case (parallels Starkey's health-in-hearing-aids strategy but at consumer electronics scale)
 
 ### Software Requirements
 - Requires **iOS 26 / iPadOS 26**
@@ -41,10 +47,12 @@ AirPods Pro 2 received FDA clearance as a Class II OTC hearing aid. This is not 
 - The hardware platform for hearing aid distribution already exists in consumers' pockets/ears
 
 ### Price
+- AirPods Pro 3: **$200** (April 2026)
 - AirPods Pro 2: ~$249
 - Traditional prescription hearing aids: $2,000–$7,000 per pair
 - OTC hearing aids from traditional manufacturers: $800–$1,500
-- Apple's price point is dramatically below all traditional alternatives
+- Ultra-affordable OTC (Ceretone): ~$165
+- Apple's price point at $200 is now cheaper than even ultra-affordable OTC entrants — with FDA clearance and health monitoring included
 
 ### Clinical Legitimacy
 - FDA Class II clearance means this is not a lifestyle device — it is a regulated medical device
@@ -95,4 +103,5 @@ Apple's differentiation is not primarily AI audio processing quality — it is d
 - [[on-device-ml-hearing-aids]] — Apple's H-series/A-series chips as ML platforms for hearing
 
 ## Sources
-- Research notes on AirPods Pro 2 FDA clearance, iOS 26 hearing test feature, AirPods Pro 3 heart rate, global availability
+- [AirPods Pro 3 Hearing Health + Heart Rate (April 2026)](../../sources/airpods-pro-3-hearing-health-april-2026.md) — $200 price, 256 Hz heart rate, 67% battery improvement, FDA hearing aid feature
+- Research notes on AirPods Pro 2 FDA clearance, iOS 26 hearing test feature, global availability

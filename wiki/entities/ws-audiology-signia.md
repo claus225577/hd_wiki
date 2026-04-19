@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-04-15
 sources: [signia-ix-platform-2024.md]
-related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, signia-ix.md]
+related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md]
 tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream]
 ---
 

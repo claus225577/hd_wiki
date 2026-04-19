@@ -2,7 +2,7 @@
 
 Master catalog of all pages in the Hearing + AI Wiki.
 
-_Last updated: 2026-04-17_
+_Last updated: 2026-04-19_
 
 ## Concepts
 
@@ -25,7 +25,11 @@ _Last updated: 2026-04-17_
 | [Teleaudiology](concepts/teleaudiology.md) | telehealth, remote-care, access | 2026-04-15 |
 | [Audio Reasoning and Chain-of-Thought](concepts/audio-reasoning-chain-of-thought.md) | audio-reasoning, chain-of-thought, explainability | 2026-04-16 |
 | [World Models for Hearing AI](concepts/world-models-hearing-ai.md) | world-models, continual-learning, personalization | 2026-04-16 |
-| [Hearing Aid Market Dynamics](concepts/hearing-aid-market-dynamics.md) | market, forecast, growth, industry, pricing | 2026-04-17 |
+| [Hearing Aid Market Dynamics](concepts/hearing-aid-market-dynamics.md) | market, forecast, growth, industry, pricing | 2026-04-19 |
+| [Model Compression for Hearing AI](concepts/model-compression.md) | quantization, compression, pruning, distillation, edge-ai | 2026-04-18 |
+| [Audiologist Workforce Shortage](concepts/audiologist-workforce-shortage.md) | workforce, shortage, access, rural-health, demographics | 2026-04-19 |
+| [Precision Drug Delivery for the Inner Ear](concepts/precision-drug-delivery-inner-ear.md) | drug-delivery, inner-ear, cochlea, cochlear-implant | 2026-04-19 |
+| [Model Context Protocol (MCP)](concepts/model-context-protocol.md) | mcp, agentic-ai, protocol, interoperability | 2026-04-19 |
 
 ## Entities
 
@@ -38,11 +42,12 @@ _Last updated: 2026-04-17_
 | [WS Audiology / Signia](entities/ws-audiology-signia.md) | company | 2026-04-15 |
 | [Starkey](entities/starkey.md) | company | 2026-04-15 |
 | [Phonak](entities/phonak.md) | company | 2026-04-15 |
-| [Apple Hearing Features](entities/apple-hearing-features.md) | company, consumer-tech | 2026-04-15 |
+| [Apple Hearing Features](entities/apple-hearing-features.md) | company, consumer-tech | 2026-04-18 |
 | [WHO Hearing Program](entities/who-hearing-program.md) | organization | 2026-04-15 |
 | [VCCA — Computational Audiology](entities/vcca-computational-audiology.md) | conference, academic | 2026-04-15 |
 | [Advanced Bionics](entities/advanced-bionics.md) | company, cochlear-implant | 2026-04-17 |
 | [Ceretone](entities/ceretone.md) | company, otc | 2026-04-17 |
+| [Google Research](entities/google-research.md) | company, research, ai | 2026-04-18 |
 
 ## Comparisons
 
@@ -59,4 +64,4 @@ _Last updated: 2026-04-17_
 | [Hearing+AI Research Landscape 2025](syntheses/hearing-ai-research-landscape-2025.md) | 2026-04-15 |
 | [The Hearing Aid AI Stack — 2026 Landscape](syntheses/hearing-aid-ai-stack-2026.md) | 2026-04-15 |
 | [Vertical Integration Trend in Hearing Industry](syntheses/vertical-integration-trend.md) | 2026-04-15 |
-| [The AI Understanding Gap in the Hearing Industry](syntheses/ai-understanding-gap-hearing-industry.md) | 2026-04-17 |
+| [The AI Understanding Gap in the Hearing Industry](syntheses/ai-understanding-gap-hearing-industry.md) | 2026-04-18 |

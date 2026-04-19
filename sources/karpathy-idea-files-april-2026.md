@@ -14,13 +14,17 @@ Andrej Karpathy introduced structured markdown specifications ("idea files") for
 ## Key Extractions
 
 - **Idea files**: Structured markdown specs describing system architectures without implementation code
+- **Core philosophy:** "Share the idea, not the code — the agent builds it for your context"
 - **Three-layer architecture**: Raw sources (immutable) -> Wiki (LLM-generated, continuously updated) -> Schema (configuration)
 - **Three operations**: Ingest (process sources, update pages), Query (answer questions, file synthesis), Lint (health-checks)
-- Karpathy's research wiki grew to ~100 articles and 400,000 words on a single topic
-- **246 points and 77 comments** on Hacker News — sparked developer community adoption
+- **The LLM Wiki** is the primary example of the idea file paradigm — a knowledge base maintained by LLMs rather than humans
+- Karpathy's personal wiki: **~100 articles, 400,000 words** on a single research topic
+- **Hacker News reception:** 246 points, 77 comments — sparked significant developer community adoption
 - Represents shift from distributing finished code to sharing high-level specs that AI agents customize per context
+- The paradigm assumes AI agents are capable enough to implement complex systems from architectural descriptions alone
 
 ## Also Noted
 
 - Karpathy warns of growing gap between AI power users and skeptics — "two distinct user groups speaking past each other"
 - Published "Karpathy Guidelines" for LLM programming standards
+- This hearing-ai-wiki is itself an implementation of Karpathy's LLM Wiki concept

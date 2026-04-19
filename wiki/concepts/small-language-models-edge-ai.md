@@ -2,9 +2,9 @@
 title: Small Language Models for Edge AI
 type: concept
 created: 2026-04-15
-updated: 2026-04-17
-sources: [small-language-models-edge-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md]
-related: [on-device-ml-hearing-aids.md, large-sensor-models.md]
+updated: 2026-04-18
+sources: [small-language-models-edge-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, google-turboquant-iclr-2026.md]
+related: [on-device-ml-hearing-aids.md, large-sensor-models.md, model-compression.md, ../entities/google-research.md]
 tags: [slm, edge-ai, tinyml, on-device, efficiency, mixture-of-experts, open-source]
 ---
 
@@ -35,6 +35,7 @@ By 2027, organizations will use small, task-specific AI models 3x more than gene
 ## Techniques for Making Models Small
 - Knowledge distillation (train small student from large teacher)
 - Quantization (INT8, INT4, binary in extreme cases)
+  - **Frontier:** Google TurboQuant (ICLR 2026) achieves 3-bit quantization with zero accuracy loss via PolarQuant + QJL — no retraining needed. See [[model-compression]].
 - Pruning (remove unnecessary weights)
 - Neural architecture search (NAS) for efficient topologies
 - Task-specific training vs. general-purpose
@@ -46,3 +47,5 @@ The open-source model ecosystem (Qwen, Llama, Gemma, SmolLM) is converging towar
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — The deployment environment for SLMs in hearing
 - [[large-sensor-models]] — LSMs must be distilled to SLM-scale for wearable deployment
+- [[model-compression]] — Quantization, distillation, and pruning techniques for edge deployment
+- [[google-research]] — Gemma models and TurboQuant compression research

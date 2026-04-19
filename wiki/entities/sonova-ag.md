@@ -2,10 +2,10 @@
 title: Sonova AG
 type: entity
 created: 2026-04-15
-updated: 2026-04-17
+updated: 2026-04-19
 sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md]
-related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, phonak-audeo-sphere-infinio.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md]
-tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant]
+related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md]
+tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant, drug-delivery]
 ---
 
 # Sonova AG
@@ -55,10 +55,14 @@ HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class
 - First clinical trial specifically targeting DNN efficacy for more severe hearing loss populations
 - Signals evidence-building strategy for DEEPSONIC platform claims
 
-### Advanced Bionics Research Collaboration
-- AB announced new research collaboration to advance next-generation cochlear implant innovation (April 14, 2026)
-- Dual-track innovation: hearing aid AI (DEEPSONIC) + CI technology development
+### Advanced Bionics + Spiral Therapeutics Collaboration
+- AB announced equity investment + R&D collaboration with **Spiral Therapeutics** (precision drug delivery for inner ear) on April 14, 2026
+- Part of Spiral's **$27M Series B** round
+- Goal: investigate drug delivery during cochlear implant surgery for unmet clinical needs
+- First major CI manufacturer to invest in precision inner ear drug delivery
+- Dual-track innovation: hearing aid AI (DEEPSONIC) + CI technology development (now including pharmacotherapy)
 - CI market ($2B+ annually) is a strategic growth segment with higher margins
+- See [[precision-drug-delivery-inner-ear]] for detailed concept analysis
 
 ## Market Position
 - Consistently #1 or #2 globally by revenue (competing with Demant)
@@ -73,10 +77,10 @@ HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class
 - Remote fitting through myPhonak creates digital touchpoints for data collection
 
 ## Related Pages
-- [[phonak-audeo-sphere-infinio]] — Detailed product page for Sonova's flagship AI hearing aid
-- [[advanced-bionics]] — Cochlear implant subsidiary; next-gen CI research collaboration
+- [[advanced-bionics]] — Cochlear implant subsidiary; Spiral Therapeutics collaboration
 - [[on-device-ml-hearing-aids]] — DEEPSONIC dual-chip as key architecture example
 - [[cochlear-implant-ai]] — AI applications in Sonova's CI division
+- [[precision-drug-delivery-inner-ear]] — Spiral Therapeutics drug delivery during CI surgery
 - [[demant-oticon]], [[ws-audiology-signia]], [[gn-hearing-resound]], [[starkey]] — Competitors
 
 ## Sources

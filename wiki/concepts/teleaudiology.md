@@ -2,10 +2,10 @@
 title: Teleaudiology and Remote Hearing Care
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
-related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md]
-tags: [telehealth, remote-care, audiology, self-fitting, cloud, signia, smartphone, access]
+updated: 2026-04-19
+sources: [audiologist-shortage-asha-sciencedirect-2025.md]
+related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, precision-drug-delivery-inner-ear.md]
+tags: [telehealth, remote-care, audiology, self-fitting, cloud, signia, smartphone, access, workforce-shortage]
 ---
 
 # Teleaudiology and Remote Hearing Care
@@ -103,8 +103,28 @@ Teleaudiology and OTC hearing aids are complementary:
 - Companies like Lexie Hearing offer audiologist chat/video support as a subscription add-on
 - This hybrid model may become the dominant care pathway for mild-moderate hearing loss
 
+## The Workforce Imperative
+
+Teleaudiology is not merely a convenience — it is increasingly a necessity driven by the audiologist workforce shortage:
+- **75% of US counties** are audiologist shortage areas (ASHA data)
+- Rural patients travel **68 minutes** on average to reach an audiologist vs. **32 minutes** for urban patients
+- The audiologist profession is growing at ~0.9%/year while the 65+ population grows ~3%/year
+- Teleaudiology is the primary technology lever for extending one audiologist's reach across multiple shortage areas
+- See [[audiologist-workforce-shortage]] for comprehensive analysis
+
+## AI Agent Infrastructure (MCP)
+
+The Model Context Protocol (MCP) — now at 97M monthly SDK downloads — provides infrastructure for AI-powered teleaudiology agents that could:
+- Access patient records, audiograms, and fitting databases through standardized interfaces
+- Adjust hearing aid parameters remotely via manufacturer fitting software
+- Triage patients and schedule follow-ups automatically
+- See [[model-context-protocol]] for protocol details and hearing AI applications
+
 ## Related Pages
 - [[otc-hearing-aids]] — OTC model that teleaudiology complements and supports
 - [[hearing-aid-market-dynamics]] — Teleaudiology shifts the economics of hearing care delivery
 - [[hearing-loss-dementia-link]] — Remote care models expand reach to untreated populations earlier
 - [[on-device-ml-hearing-aids]] — On-device logging data that feeds remote clinician review
+- [[audiologist-workforce-shortage]] — The workforce gap that makes teleaudiology essential
+- [[model-context-protocol]] — AI agent infrastructure for automated teleaudiology
+- [[precision-drug-delivery-inner-ear]] — Remote monitoring of CI + drug delivery outcomes

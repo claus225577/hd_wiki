@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-04-15
 sources: [amplifon-gn-acquisition-2026.md, auracast-hearing-accessibility-2026.md, resound-vivia-launch-2025.md]
-related: [amplifon.md, ../concepts/auracast-bluetooth-le-audio.md, ../concepts/closed-loop-data-flywheel.md, sonova-ag.md, resound-vivia.md]
+related: [amplifon.md, ../concepts/auracast-bluetooth-le-audio.md, ../concepts/closed-loop-data-flywheel.md, sonova-ag.md]
 tags: [company, manufacturer, resound, gn-group, acquired, dnn, auracast, dual-chip]
 ---
 
@@ -61,7 +61,6 @@ ReSound Vivia and Phonak Audéo Sphere Infinio are the only 2 products globally 
 
 ## Related Pages
 - [[amplifon]] — Acquirer; full deal terms and strategic implications
-- [[resound-vivia]] — Detailed product page for ReSound Vivia
 - [[auracast-bluetooth-le-audio]] — GN/ReSound as first mover
 - [[closed-loop-data-flywheel]] — Data strategy enabled by Amplifon merger
 

@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-15
 updated: 2026-04-15
 sources: []
-related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, cochlear-implant-ai.md]
+related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, cochlear-implant-ai.md, model-compression.md]
 tags: [dnn, crn, transformer, cnn, rnn, hearing-aids, chips, low-latency, sepformer]
 ---
 
@@ -125,4 +125,5 @@ Given the extreme constraints, several manufacturers use automated NAS to find P
 - [[speech-enhancement-neural-networks]] — Architecture catalog including CRN, SepFormer, and legacy models
 - [[on-device-ml-hearing-aids]] — Hardware context: chips, power budgets, memory constraints
 - [[small-language-models-edge-ai]] — Model compression techniques (distillation, quantization, pruning)
+- [[model-compression]] — Detailed compression pipeline including TurboQuant 3-bit quantization
 - [[cochlear-implant-ai]] — Parallel DNN development for cochlear implant signal processors

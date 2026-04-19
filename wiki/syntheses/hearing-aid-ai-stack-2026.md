@@ -2,8 +2,8 @@
 title: The Hearing Aid AI Stack — 2026 Landscape
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-17
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, oticon-verit-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md]
+updated: 2026-04-18
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, oticon-verit-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, google-turboquant-iclr-2026.md, airpods-pro-3-hearing-health-april-2026.md]
 related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/small-language-models-edge-ai.md, ../concepts/large-sensor-models.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
 tags: [landscape, ai-stack, architecture, 2026, silicon, auracast]
 ---
@@ -64,7 +64,7 @@ All others use AI for fitting, personalization, and background adaptation, not s
 | Sensor fusion DNN | Demant/Oticon | Motion-aware but single-chip constrained |
 | Cloud-hybrid DNN | WS Audiology/Signia | Larger effective model, latency risk for some functions |
 | Health ecosystem | Starkey | Differentiates on sensors, not audio ML |
-| Consumer chip | Apple (H2) | General purpose, 5-min audiometry, OTC scale |
+| Consumer chip | Apple (H2/H3) | General purpose, 5-min audiometry, OTC scale, 256 Hz PPG heart rate |
 
 ## Layer 3: Personalization
 
@@ -93,16 +93,20 @@ All others use AI for fitting, personalization, and background adaptation, not s
 - **OTC self-fit** — Apple AirPods Pro 2 ($249, FDA-cleared OTC), Jabra Enhance, Bose SoundControl
 
 ### Apple AirPods Pro as Hearing Aid (2024–2026)
-Apple AirPods Pro 2 received FDA OTC hearing aid clearance in 2024. Key specs:
-- H2 chip with hearing-specific inference added via software
-- 5-minute self-administered audiometry via iPhone
-- Targets mild-to-moderate hearing loss
-- Price: $249 (vs. $4,600 average prescription hearing aid)
-- Positioned as the primary OTC disruptor from consumer electronics
+Apple AirPods Pro 2 received FDA OTC hearing aid clearance in 2024. AirPods Pro 3 (April 2026) deepened the disruption:
+- FDA-approved hearing aid feature for mild-to-moderate loss
+- 5-minute clinical-grade self-administered audiometry via iPhone
+- **AirPods Pro 3 price: $200** (down from $249 for Pro 2) — now cheaper than ultra-affordable OTC
+- **Heart rate monitoring** at 256 Hz via in-ear PPG — health monitoring convergence
+- **Active hearing protection** — real-time sound exposure monitoring
+- **67% more battery** in Transparency mode vs. previous gen
+- **Continuous software updates** — device improves post-purchase
+- Positioned as the primary OTC disruptor from consumer electronics, now with health monitoring parity
 
 ## What's Missing / Coming Next
 
 1. **Foundation models for audio** — Pre-trained on massive audio datasets, fine-tuned for hearing; open-source MoE models (Qwen3.6-35B-A3B) demonstrate efficient inference at scale
+1b. **Extreme model compression** — Google TurboQuant (ICLR 2026) achieves 6x KV cache compression at 3-bit with zero accuracy loss and no retraining. Combined with distillation and pruning, this trajectory could enable significantly more capable models on hearing aid chips. See [[model-compression]].
 2. **Cross-device federated learning** — Training across user populations without centralizing raw audio data; privacy-preserving model improvement
 3. **Causal personalization** — Moving from correlation (users like X) to causation (setting X improves outcomes because Y)
 4. **Sensor fusion at scale** — Combining audio + motion + biometrics for holistic understanding (LSM concept); Oticon 4D Sensor now in both adult (Verit) and pediatric (Play SI) products

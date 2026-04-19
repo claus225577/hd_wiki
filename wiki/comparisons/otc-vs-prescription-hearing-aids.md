@@ -2,9 +2,9 @@
 title: OTC vs Prescription Hearing Aids
 type: comparison
 created: 2026-04-15
-updated: 2026-04-17
-sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md]
-related: [../syntheses/consumer-hearing-tech-convergence.md, ../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../syntheses/vertical-integration-trend.md]
+updated: 2026-04-18
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md]
+related: [../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../syntheses/vertical-integration-trend.md, ../concepts/otc-hearing-aids.md]
 tags: [otc, prescription, fda, accessibility, apple, marketrak, price, adoption]
 ---
 
@@ -135,7 +135,7 @@ Apple AirPods Pro 2 (FDA-cleared OTC, 2024) is the single most disruptive produc
 - Ultra-affordable OTC (Ceretone at £130, sub-$200 devices) may expand the addressable market by reaching users who would never spend $1,000+
 
 ## Related Pages
-- [[consumer-hearing-tech-convergence]] — Consumer electronics entering the hearing space
+- [[otc-hearing-aids]] — Deep dive on OTC category, brands, and adoption data
 - [[hearing-aid-ai-stack-2026]] — Technology stack for prescription devices
 - [[ai-hearing-aid-platforms-2026]] — Platform comparison including Apple
 - [[vertical-integration-trend]] — Industry response to OTC disruption

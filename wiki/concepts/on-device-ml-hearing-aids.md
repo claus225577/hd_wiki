@@ -2,10 +2,10 @@
 title: On-Device ML in Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, world-models-continual-learning-2026.md, interspeech-2026-audio-reasoning-challenge.md]
-related: [small-language-models-edge-ai.md, large-sensor-models.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, world-models-hearing-ai.md, audio-reasoning-chain-of-thought.md]
-tags: [edge-ai, hearing-aids, inference, dsp, chips, deepsonic, neural-processing]
+updated: 2026-04-19
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, world-models-continual-learning-2026.md, interspeech-2026-audio-reasoning-challenge.md, google-turboquant-iclr-2026.md]
+related: [small-language-models-edge-ai.md, large-sensor-models.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, world-models-hearing-ai.md, audio-reasoning-chain-of-thought.md, model-compression.md, ../entities/google-research.md, model-context-protocol.md]
+tags: [edge-ai, hearing-aids, inference, dsp, chips, deepsonic, neural-processing, quantization]
 ---
 
 # On-Device ML in Hearing Aids
@@ -59,11 +59,21 @@ On-device models are typically trained in the cloud on massive datasets:
 - Synthetic mixing of speech + noise to cover rare acoustic conditions
 - Hearing aid microphone simulation to bridge lab-to-device gap
 
+## Model Compression for On-Device Deployment
+
+Getting capable models onto hearing aid chips requires aggressive compression (see [[model-compression]]):
+- **Quantization:** INT8/INT4 standard; Google's TurboQuant (ICLR 2026) achieves 3-bit with zero accuracy loss — pushes the theoretical floor
+- **Knowledge distillation:** Large Transformer teachers compressed into compact CRN students
+- **Pruning:** 50-90% weight sparsity achievable on speech enhancement tasks
+- **NAS:** Automated architecture search for Pareto-optimal latency/accuracy/power tradeoffs
+
+The combination of these techniques bridges the ~6 orders of magnitude gap between cloud training environments and hearing aid deployment targets.
+
 ## Emerging Capabilities
 - **On-device learning / personalization:** Adapting to user preferences over time without cloud sync
 - **Auditory attention decoding (AAD):** Using EEG/biosignals to steer beamforming toward attended speaker (see [[auditory-attention-decoding]])
 - **Real-time translation:** Requires more compute than currently available on-chip
-- **Health monitoring:** Heart rate from in-ear sensors, stress detection
+- **Health monitoring:** Heart rate from in-ear sensors, stress detection — Apple AirPods Pro 3 now does PPG at 256 Hz
 - **Fall detection:** Via accelerometer + ML (shipping in some Starkey models)
 
 ## Related Pages
@@ -75,6 +85,7 @@ On-device models are typically trained in the cloud on massive datasets:
 - [[cochlear-implant-ai]] — Parallel developments in cochlear implant processors
 - [[world-models-hearing-ai]] — World models and continual learning for acoustic personalization
 - [[audio-reasoning-chain-of-thought]] — Chain-of-thought reasoning for audio understanding
+- [[model-compression]] — Quantization, distillation, pruning techniques for on-device deployment
 
 ## Sources
 - [Small Language Models Edge 2026](../../sources/small-language-models-edge-2026.md)

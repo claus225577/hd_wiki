@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-04-17
 sources: [oticon-intent-launch-2024.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md]
-related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, oticon-intent.md, ../concepts/auracast-bluetooth-le-audio.md]
+related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, ../concepts/auracast-bluetooth-le-audio.md]
 tags: [company, manufacturer, oticon, denmark, dnn, brainhearing, single-chip, npu, auracast, le-audio, pediatric]
 ---
 
@@ -97,7 +97,6 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 
 ## Related Pages
 - [[sonova-ag]] — Primary competitor; dual-chip (DEEPSONIC) vs. integrated NPU (Sirius) architectural contrast
-- [[oticon-intent]] — Detailed product page for Intent on the Sirius platform
 - [[on-device-ml-hearing-aids]] — Sirius integrated NPU as key example
 - [[auracast-bluetooth-le-audio]] — Verit and Play SI are first Oticon products with Auracast
 - [[ws-audiology-signia]], [[gn-hearing-resound]], [[starkey]] — Other major competitors

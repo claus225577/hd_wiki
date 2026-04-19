@@ -2,10 +2,10 @@
 title: Automated & Computational Audiometry
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [ml-pure-tone-audiometry-automated-masking-2025.md, deep-learning-audiogram-classification-2024.md, hearing-loss-type-classification-ml-2024.md, ml-menieres-disease-audiometry-2025.md, kde-vae-audiometric-data-synthesis-2025.md]
-related: [teleaudiology.md, vcca-computational-audiology.md, on-device-ml-hearing-aids.md]
-tags: [audiometry, machine-learning, automated-testing, pure-tone, classification, clinical-decision-support]
+updated: 2026-04-19
+sources: [ml-pure-tone-audiometry-automated-masking-2025.md, deep-learning-audiogram-classification-2024.md, hearing-loss-type-classification-ml-2024.md, ml-menieres-disease-audiometry-2025.md, kde-vae-audiometric-data-synthesis-2025.md, audiologist-shortage-asha-sciencedirect-2025.md]
+related: [teleaudiology.md, vcca-computational-audiology.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md]
+tags: [audiometry, machine-learning, automated-testing, pure-tone, classification, clinical-decision-support, workforce-shortage]
 ---
 
 # Automated & Computational Audiometry

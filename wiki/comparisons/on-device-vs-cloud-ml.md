@@ -2,9 +2,9 @@
 title: On-Device vs Cloud ML for Hearing Aids
 type: comparison
 created: 2026-04-15
-updated: 2026-04-15
-sources: [small-language-models-edge-2026.md]
-related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/small-language-models-edge-ai.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
+updated: 2026-04-18
+sources: [small-language-models-edge-2026.md, google-turboquant-iclr-2026.md]
+related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/small-language-models-edge-ai.md, ../concepts/model-compression.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
 tags: [edge-ai, cloud, latency, architecture-decision, federated-learning, hybrid]
 ---
 
@@ -86,9 +86,18 @@ The smartphone companion app acts as a bridge:
 - Handles cloud connectivity when needed
 - Battery constraint is the phone's, not the hearing aid's, for phone-side inference
 
+## Model Compression: Closing the Gap
+
+Advances in model compression are steadily increasing what's feasible on-device:
+- Google TurboQuant (ICLR 2026) achieves **6x KV cache compression** at 3-bit with zero accuracy loss — no retraining needed
+- Combined with knowledge distillation, pruning, and NAS, the on-device capability frontier is advancing faster than cloud-only approaches
+- The practical implication: more tasks currently requiring cloud offload may become feasible on-device within 2-3 years
+- See [[model-compression]] for detailed compression pipeline
+
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — Deep dive on on-device capabilities
 - [[small-language-models-edge-ai]] — The model paradigm enabling on-device ML
+- [[model-compression]] — Quantization and compression techniques closing the on-device gap
 - [[ai-hearing-aid-platforms-2026]] — Which manufacturers have chosen which architecture
 
 ## Sources

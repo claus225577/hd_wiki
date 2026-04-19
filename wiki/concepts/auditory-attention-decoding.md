@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-15
 updated: 2026-04-15
 sources: [eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md]
-related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, vcca-computational-audiology.md]
+related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, vcca-computational-audiology.md, audio-reasoning-chain-of-thought.md]
 tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, hearing-aids]
 ---
 
@@ -117,6 +117,7 @@ eNeuro paper showing that hearing aid noise reduction and nonlinearity compensat
 - [[speech-enhancement-neural-networks]] — Enhancement pipeline that AAD would steer
 - [[dnn-architectures-hearing-aids]] — The DNN stage that receives AAD attention signal as input
 - [[vcca-computational-audiology]] — Major venue for AAD research presentations
+- [[audio-reasoning-chain-of-thought]] — Chain-of-thought reasoning about audio scenes; complementary to AAD's neural attention signal
 
 ## Sources
 - [Real-time EEG Neurosteering](../sources/eeg-neurosteering-hearing-aid-2025.md)

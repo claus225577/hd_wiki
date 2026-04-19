@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-04-17
 sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md]
-related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md, starkey-omega-ai.md, med-el.md]
+related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md]
 tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe]
 ---
 

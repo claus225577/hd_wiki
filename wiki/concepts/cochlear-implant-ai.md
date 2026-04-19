@@ -2,9 +2,9 @@
 title: AI in Cochlear Implants
 type: concept
 created: 2026-04-15
-updated: 2026-04-17
+updated: 2026-04-19
 sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md]
-related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md]
+related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, precision-drug-delivery-inner-ear.md]
 tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics]
 ---
 
@@ -85,8 +85,10 @@ ML-in-CI publications have grown substantially since 2018, tracking the broader 
 - **Advanced Bionics (USA, Sonova subsidiary)** — HiRes sound coding, Naida processor; announced next-gen CI research collaboration (April 2026) — see [[advanced-bionics]]
 - **Oticon Medical (Demant subsidiary)** — Neuro 2 processor
 
-### Advanced Bionics Next-Gen Research (April 2026)
-AB announced a research collaboration to advance next-generation CI innovation. This is significant because CI technology has seen less AI innovation than hearing aids in recent years. Potential focus areas include AI-driven sound coding, personalized electrode mapping, improved neural interfaces, and advanced materials. Sonova's dual-track strategy invests in both hearing aid AI (DEEPSONIC/Phonak) and CI innovation (AB).
+### Advanced Bionics + Spiral Therapeutics (April 2026)
+AB announced an equity investment + R&D collaboration with **Spiral Therapeutics** (precision drug delivery for inner ear) as part of Spiral's $27M Series B. The collaboration investigates drug delivery during cochlear implant surgery — a new therapeutic axis combining device + pharmacology. Potential applications include residual hearing preservation during electrode insertion, anti-inflammatory treatment, and neural survival enhancement. This is significant because it expands CI innovation beyond electronics into pharmacotherapy. See [[precision-drug-delivery-inner-ear]].
+
+Sonova's dual-track strategy now spans three domains: hearing aid AI (DEEPSONIC/Phonak), CI electronics (AB), and CI pharmacotherapy (Spiral partnership).
 
 ## Challenges and Open Questions
 
@@ -116,8 +118,9 @@ Novel system using audio-visual speech enhancement (lip reading + audio) as pre-
 - [[speech-enhancement-neural-networks]] — Core enhancement pipeline applicable to CI pre-processing
 - [[auditory-attention-decoding]] — AAD research often conducted with CI users who have implanted electrodes
 - [[vcca-computational-audiology]] — CI research is a core VCCA track
-- [[advanced-bionics]] — Sonova's CI subsidiary; next-gen research collaboration
+- [[advanced-bionics]] — Sonova's CI subsidiary; Spiral Therapeutics collaboration
 - [[sonova-ag]] — Parent company of Advanced Bionics
+- [[precision-drug-delivery-inner-ear]] — Drug delivery during CI surgery; new therapeutic axis
 
 ## Sources
 - [DL Framework for CI with 3D Cochleae](../sources/deep-learning-framework-cochlear-implants-2025.md)

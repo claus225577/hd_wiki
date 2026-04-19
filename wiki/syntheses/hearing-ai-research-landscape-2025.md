@@ -4,7 +4,7 @@ type: synthesis
 created: 2026-04-15
 updated: 2026-04-17
 sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md]
-related: [../syntheses/hearing-aid-ai-stack-2026.md, ../syntheses/dementia-prevention-hearing-care.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
+related: [../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../concepts/hearing-loss-dementia-link.md]
 tags: [research, landscape, 2025, deep-learning, cochlear-implant, tinnitus, neurosteering, eeg, scoping-review]
 ---
 
@@ -148,7 +148,7 @@ Open-source model releases (e.g., Qwen3.6-35B-A3B, April 2026 — 35B params, 3B
 
 ## Related Pages
 - [[hearing-aid-ai-stack-2026]] — Commercial applications of the research themes
-- [[dementia-prevention-hearing-care]] — ACHIEVE study and Johns Hopkins research context
+- [[hearing-loss-dementia-link]] — ACHIEVE study and Johns Hopkins research context (hearing-dementia connection)
 - [[on-device-vs-cloud-ml]] — Architecture implications of research-to-product translation
 - [[ai-hearing-aid-platforms-2026]] — Where commercial products currently stand
 
