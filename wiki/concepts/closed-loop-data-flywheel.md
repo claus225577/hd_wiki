@@ -2,10 +2,10 @@
 title: Closed-Loop Data Flywheel
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [amplifon-gn-acquisition-2026.md]
-related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../syntheses/vertical-integration-trend.md]
-tags: [data-strategy, personalization, feedback-loops, m-and-a]
+updated: 2026-04-21
+sources: [amplifon-gn-acquisition-2026.md, wsa-sound-preference-program-april-2026.md]
+related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/ws-audiology-signia.md, ../syntheses/vertical-integration-trend.md]
+tags: [data-strategy, personalization, feedback-loops, m-and-a, sound-preference]
 ---
 
 # Closed-Loop Data Flywheel
@@ -33,6 +33,18 @@ This creates a closed loop: clinical decisions → device data → product impro
 ## Netflix Analogy
 Netflix transitioned from content distributor to producer by using viewing data to inform production decisions. Similarly, a retailer-manufacturer merger uses fitting/outcome data to inform hearing aid R&D — the data from distribution informs the product itself.
 
+## WS Audiology Sound Preference Program (April 2026)
+
+WSA's Sound Preference Program is another concrete example of a data flywheel, distinct from the M&A-driven Amplifon-GN model:
+
+- **Data collection:** Free Sound Preference Tool uses randomized audio comparisons to classify users as "natural sound" or "enhanced sound" preference
+- **~40% of users** show strong, consistent preferences — a measurable individual trait
+- **Feedback loop:** Preference data feeds into Signia Assistant (cloud DNN) for personalization, and aggregated data informs product R&D across WSA's dual brand portfolio (Widex for natural, Signia for enhanced)
+- **Low-friction entry:** Free tool encourages broad adoption, maximizing data volume
+- Unlike the Amplifon-GN approach (requires M&A to close the loop), WSA closes the loop through a **software-defined data collection instrument** distributed to existing clinics
+
+This represents a second model for hearing aid data flywheels: not vertical integration, but structured data collection tools that turn routine clinical interactions into R&D inputs.
+
 ## Implications for Data Science
 - Requires unified data infrastructure across retail and manufacturing
 - Privacy/consent frameworks needed for cross-system data sharing
@@ -42,4 +54,5 @@ Netflix transitioned from content distributor to producer by using viewing data 
 ## Related Pages
 - [[amplifon]] — The acquirer, bringing retail data
 - [[gn-hearing-resound]] — The acquired, bringing manufacturing/R&D data
+- [[ws-audiology-signia]] — Sound Preference Program as software-defined data flywheel
 - [[vertical-integration-trend]] — Industry-wide trend this deal exemplifies

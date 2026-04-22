@@ -2,8 +2,8 @@
 title: On-Device vs Cloud ML for Hearing Aids
 type: comparison
 created: 2026-04-15
-updated: 2026-04-18
-sources: [small-language-models-edge-2026.md, google-turboquant-iclr-2026.md]
+updated: 2026-04-21
+sources: [small-language-models-edge-2026.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md]
 related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/small-language-models-edge-ai.md, ../concepts/model-compression.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
 tags: [edge-ai, cloud, latency, architecture-decision, federated-learning, hybrid]
 ---
@@ -90,7 +90,9 @@ The smartphone companion app acts as a bridge:
 
 Advances in model compression are steadily increasing what's feasible on-device:
 - Google TurboQuant (ICLR 2026) achieves **6x KV cache compression** at 3-bit with zero accuracy loss — no retraining needed
+- PrismML Ternary Bonsai (April 2026) pushes further to **1.58-bit ternary weights** {-1, 0, +1} — 9x memory reduction, eliminates multiplications entirely. 8B model at 1.75 GB, 82 tok/sec on M4 Pro, runs on iPhone via MLX
 - Combined with knowledge distillation, pruning, and NAS, the on-device capability frontier is advancing faster than cloud-only approaches
+- The 3-bit to 1.58-bit compression trajectory within a single month (April 2026) suggests sub-2-bit on-device inference is converging rapidly
 - The practical implication: more tasks currently requiring cloud offload may become feasible on-device within 2-3 years
 - See [[model-compression]] for detailed compression pipeline
 

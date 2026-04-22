@@ -23,8 +23,8 @@ tags: [market-size, forecast, hearing-aids, growth, marketsandmarkets]
   - Prior estimates had the global market at ~$14B in 2024 with projections of $22B by 2030 (from other sources)
   - The $14.42B by 2030 figure from MarketsandMarkets is more conservative, suggesting slower growth than some earlier projections
   - Discrepancy may reflect different scope definitions (OTC included? cochlear implants? accessories?) or post-pandemic demand normalization
-  - Key growth drivers: aging population, OTC category expansion, AI feature premiumization, awareness of hearing-dementia link
-  - Key headwinds: OTC price compression, consumer electronics (AirPods) capturing mild-loss segment at lower ASP
+  - Key growth drivers: aging population, OTC category expansion, AI processing capabilities, awareness of hearing-dementia link, aging demographics worldwide
+  - Key headwinds: OTC price compression, consumer electronics (AirPods) capturing mild-loss segment at lower ASP, premium OTC pricing failures (Sony discontinuation)
 
 ## Relevance to Hearing + AI
 - The 6.8% CAGR and $14.42B target validate sustained investment in hearing AI R&D

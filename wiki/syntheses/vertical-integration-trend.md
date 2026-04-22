@@ -2,7 +2,7 @@
 title: Vertical Integration Trend in the Hearing Industry
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-17
+updated: 2026-04-21
 sources: [amplifon-gn-acquisition-2026.md, hearing-aids-market-14b-by-2030-april-2026.md]
 related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/otc-vs-prescription-hearing-aids.md]
 tags: [industry-trend, vertical-integration, m-and-a, strategy, amplifon, gn-hearing]
@@ -59,7 +59,7 @@ WS Audiology (Signia, Widex) and Starkey are now the outliers without significan
 | Sonova | Phonak, Unitron | AudioNova | Yes | Sustaining DEEPSONIC lead |
 | Demant | Oticon, Bernafon | HearingLife | Yes | 4D Sensor differentiation |
 | Amplifon + GN | ReSound, Beltone | Amplifon network | Yes (new) | Integration execution risk |
-| WS Audiology | Signia, Widex | Limited retail | Partially | No major retail anchor |
+| WS Audiology | Signia, Widex | Limited retail | Partially | No major retail anchor; building software-defined data flywheel via Sound Preference Program |
 | Starkey | Starkey | Limited retail | Partially | Health ecosystem niche |
 
 ## Implications for Independent Audiologists

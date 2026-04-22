@@ -2,8 +2,8 @@
 title: The Hearing Aid AI Stack — 2026 Landscape
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-18
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, oticon-verit-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, google-turboquant-iclr-2026.md, airpods-pro-3-hearing-health-april-2026.md]
+updated: 2026-04-22
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, oticon-verit-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, google-turboquant-iclr-2026.md, airpods-pro-3-hearing-health-april-2026.md, auracast-uk-live-theaters-april-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, apple-ceo-transition-ternus-april-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wsa-sound-preference-program-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, starkey-omega-ai-big-ai-awards-2026.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, orka-o1-pro-bose-anc-awe-2026.md, dnn-noise-reduction-intelligibility-2026.md, adobe-speechmatics-on-device-stt-april-2026.md]
 related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/small-language-models-edge-ai.md, ../concepts/large-sensor-models.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
 tags: [landscape, ai-stack, architecture, 2026, silicon, auracast]
 ---
@@ -24,12 +24,19 @@ Custom SoCs with dedicated DSP cores remain the foundation, but 2025–2026 has 
 | 2nd-Gen AI | Demant (Oticon) | Single-chip, 2nd-gen AI | Oticon Verit (Apr 2026) |
 | Polaris | Demant (Oticon) | Single-chip DNN 2.0 | Oticon Intent |
 | Edge AI | Starkey | On-device ML | Genesis AI |
-| H2 | Apple | General-purpose; hearing aid classification added 2024 | AirPods Pro 2 |
+| G3 Gen AI NPU | Starkey | Integrated NPU (2x BIG AI Awards 2026) | Omega AI (Oct 2025) |
+| H2 | Apple | General-purpose; hearing aid classification added 2024 | AirPods Pro 2/3 |
 
 - Power budgets remain tight: 1–5 mW total device power
 - Trend: more transistors dedicated to ML inference vs. traditional DSP
 - Dual-chip designs (Sonova) trade PCB complexity for raw throughput
 - Single-chip designs (Demant) trade throughput for form factor and power efficiency
+
+### Emerging: Programmable Accelerators & Software-Only AI
+Two April 2026 developments point to alternative silicon strategies:
+- **Programmable speech AI accelerators** (arXiv:2503.18698v2): Co-designed silicon that can be updated with new models post-deployment; mixed-precision quantization per layer
+- **Aizip TinyML platform**: Runs AI noise reduction on standard DSP chips without custom NPU — democratizes AI for mid-tier/OTC devices
+- **Oticon Zeal ITE** (AAA 2026): Rechargeable ITE with streaming — proves modern AI and connectivity fit the tightest form factor
 
 ### Generational Leap: Oticon Verit (April 2026)
 Oticon Verit launched with "second-generation AI sound processing" — successor to DNN 2.0. Full architecture details not yet published, but the generational framing suggests a new or significantly updated SoC. Verit also brings Auracast and Google Fast Pair to Oticon's lineup.
@@ -43,6 +50,12 @@ Of all marketed "AI" hearing aids, only two currently implement genuine real-tim
 - **ReSound Vivia** — Dedicated DNN chip, real-time Intelligent Focus
 
 All others use AI for fitting, personalization, and background adaptation, not sample-by-sample audio processing.
+
+### New Paradigm: ANC + DNN Dual-Layer (April 2026)
+Orka O1 Pro (AWE 2026) introduces Bose QuietControl ANC alongside DNN speech enhancement — the first hearing aid to combine physical noise attenuation with computational speech separation. 3.5g weight, 35+ hours battery. See [[orka-bose-partnership]].
+
+### Conv-TasNet Listener Group Evidence (Schulz et al. 2026)
+Schulz et al. validated that 1ms-latency Conv-TasNet provides **+5.7 dB to CI users** but slightly degrades normal-hearing. DNN noise reduction benefit is inversely correlated with baseline hearing ability — strongest justification yet for prioritizing DNN in severe-loss and CI devices.
 
 ## Layer 2: On-Device Models
 
@@ -64,7 +77,7 @@ All others use AI for fitting, personalization, and background adaptation, not s
 | Sensor fusion DNN | Demant/Oticon | Motion-aware but single-chip constrained |
 | Cloud-hybrid DNN | WS Audiology/Signia | Larger effective model, latency risk for some functions |
 | Health ecosystem | Starkey | Differentiates on sensors, not audio ML |
-| Consumer chip | Apple (H2/H3) | General purpose, 5-min audiometry, OTC scale, 256 Hz PPG heart rate |
+| Consumer chip | Apple (H2/H3) | General purpose, 5-min audiometry, OTC scale, 256 Hz PPG heart rate. CEO Ternus (ex-HW lead) signals strategic priority |
 
 ## Layer 3: Personalization
 
@@ -73,6 +86,7 @@ All others use AI for fitting, personalization, and background adaptation, not s
 - **Audiologist adjustments:** Fine-tuning via manufacturer software (Phonak Target, Oticon Genie)
 - **Self-adjustment:** Users tweak via smartphone apps, data feeds back
 - **Signia DNN Assistant:** Cloud-based DNN that delivers personalization adjustments without a full clinic visit — a hybrid model where real-time audio stays on-device but fitting intelligence lives in the cloud
+- **WSA Sound Preference Program (April 2026):** Free tool using randomized audio comparisons classifies ~40% of users with consistent "natural" vs. "enhanced" sound preferences — structured data collection for personalization algorithms
 
 ## Layer 4: Connectivity & Data
 
@@ -106,7 +120,7 @@ Apple AirPods Pro 2 received FDA OTC hearing aid clearance in 2024. AirPods Pro 
 ## What's Missing / Coming Next
 
 1. **Foundation models for audio** — Pre-trained on massive audio datasets, fine-tuned for hearing; open-source MoE models (Qwen3.6-35B-A3B) demonstrate efficient inference at scale
-1b. **Extreme model compression** — Google TurboQuant (ICLR 2026) achieves 6x KV cache compression at 3-bit with zero accuracy loss and no retraining. Combined with distillation and pruning, this trajectory could enable significantly more capable models on hearing aid chips. See [[model-compression]].
+1b. **Extreme model compression** — Google TurboQuant (ICLR 2026) achieves 6x KV cache compression at 3-bit with zero accuracy loss; PrismML Ternary Bonsai (April 2026) pushes to 1.58-bit ternary weights {-1, 0, +1} with 9x memory reduction and no-multiply inference. Combined with distillation and pruning, sub-2-bit inference on hearing aid chips is increasingly plausible. See [[model-compression]].
 2. **Cross-device federated learning** — Training across user populations without centralizing raw audio data; privacy-preserving model improvement
 3. **Causal personalization** — Moving from correlation (users like X) to causation (setting X improves outcomes because Y)
 4. **Sensor fusion at scale** — Combining audio + motion + biometrics for holistic understanding (LSM concept); Oticon 4D Sensor now in both adult (Verit) and pediatric (Play SI) products

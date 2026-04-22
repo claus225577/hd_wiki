@@ -2,10 +2,10 @@
 title: Deep Neural Network Architectures for Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: []
-related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, cochlear-implant-ai.md, model-compression.md]
-tags: [dnn, crn, transformer, cnn, rnn, hearing-aids, chips, low-latency, sepformer]
+updated: 2026-04-22
+sources: [prismml-ternary-bonsai-158bit-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md]
+related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, cochlear-implant-ai.md, model-compression.md, mixture-of-experts.md, state-space-models.md, compute-in-memory.md]
+tags: [dnn, crn, transformer, cnn, rnn, hearing-aids, chips, low-latency, sepformer, state-space-models]
 ---
 
 # Deep Neural Network Architectures for Hearing Aids
@@ -67,6 +67,35 @@ CRN is widely considered the **optimal production architecture** for hearing aid
 - CRN variants that take filterbank features but reconstruct in time domain
 - Tries to capture advantages of both; adds training complexity
 
+## Emerging: State Space Models (SSMs) as Transformer/RNN Alternative
+
+State space models (S4, Mamba) represent a fundamentally different approach to sequence modeling that may complement or eventually replace CRN and transformer architectures for hearing aid audio processing. See [[state-space-models]] for the full concept page.
+
+### Why SSMs Matter for Hearing Aid Architectures
+- **O(n) complexity** vs transformers' O(n^2) — critical for continuous 24/7 audio processing
+- **Inherently causal** — process audio sample-by-sample, no lookahead needed
+- **Fixed memory at inference** — hidden state does not grow with sequence length (unlike transformer KV caches)
+- **Long-range temporal modeling** — better than RNNs at capturing distant dependencies (via structured A matrix)
+- **Dual training mode** — convolutional mode for fast parallel training, recurrent mode for efficient streaming inference
+
+### SSM vs CRN for Hearing Aids
+
+| Dimension | CRN (Production Standard) | SSM (Emerging) |
+|-----------|--------------------------|----------------|
+| Temporal modeling | RNN (LSTM/GRU) | Linear recurrence (S4/Mamba) |
+| Long-range context | Limited by RNN capacity | Excellent |
+| Training speed | Limited by RNN sequential pass | Full parallelism (conv mode) |
+| Hardware mapping | Digital DSP/NPU | Digital or analog CIM |
+| Maturity | Shipping in products | Research/prototype |
+
+### Hardware Co-Design: SSMs on CIM
+The University of Michigan (Nature Communications 2026) demonstrated SSMs mapped onto RRAM crossbar arrays where the model's temporal dynamics are physically encoded in memristor material thickness. This hardware-software co-design could enable SSM-based hearing aid processing at dramatically lower power than digital implementations. See [[compute-in-memory]].
+
+### Applied Brain Research: Production SSMs
+ABR's TSP1 hardware accelerator runs SSM-based speech-to-text, TTS, and speech-to-intent at under 30mW — demonstrating SSMs as production-ready for real-time audio, albeit at power levels still above hearing aid budgets.
+
+A CRN-SSM hybrid (CNN spectral front-end + SSM temporal backbone) could be a natural evolution, combining CRN's proven spectral feature extraction with SSM's superior temporal modeling.
+
 ## Ultra-Low Latency: 1ms DNN Target
 
 Standard hearing aid latency budgets allow ~5-8ms for the DNN block. Emerging research targets **1ms latency** for noise reduction:
@@ -127,3 +156,9 @@ Given the extreme constraints, several manufacturers use automated NAS to find P
 - [[small-language-models-edge-ai]] — Model compression techniques (distillation, quantization, pruning)
 - [[model-compression]] — Detailed compression pipeline including TurboQuant 3-bit quantization
 - [[cochlear-implant-ai]] — Parallel DNN development for cochlear implant signal processors
+- [[state-space-models]] — SSMs as emerging alternative to CRN/transformer architectures
+- [[compute-in-memory]] — CIM hardware enabling SSM-native analog computation
+
+## Sources
+- [Michigan CIM RRAM + SSM (Nature Communications 2026)](../../sources/michigan-compute-in-memory-rram-ssm-nature-2026.md) — SSMs mapped onto RRAM crossbar arrays
+- [Applied Brain Research SSM Edge Audio](../../sources/applied-brain-research-ssm-edge-audio-2026.md) — Production SSMs for streaming audio on TSP1

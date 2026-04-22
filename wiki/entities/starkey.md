@@ -2,10 +2,10 @@
 title: Starkey
 type: entity
 created: 2026-04-15
-updated: 2026-04-17
-sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md]
+updated: 2026-04-21
+sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md]
 related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md]
-tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe]
+tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe, omega-ai, awards]
 ---
 
 # Starkey
@@ -67,6 +67,19 @@ This creates a different value proposition — particularly for older adults, ca
 - **Significance:** Bhowmik is the only major hearing aid company CTO from the consumer AI/computing world; his Intel background reflects cross-pollination of consumer tech AI talent into the hearing industry
 - AIMBE fellowship validates Starkey's health-tech positioning: their CTO is recognized for medical/biological engineering innovation, not just consumer electronics
 
+## Omega AI Platform (Oct 2025)
+
+### G3 Gen AI Neuro Processor
+- Latest flagship chip with **integrated NPU** — dedicated neural processing unit
+- Powers the Omega AI hearing aid line
+- Represents Starkey's most capable hardware for on-device ML inference
+
+### 2026 BIG AI Excellence Awards
+- Starkey won **two awards** at the 2026 BIG AI Excellence Awards for the Omega AI platform
+- External industry validation of Starkey's AI-first hearing aid strategy
+- Positions hearing aids alongside mainstream AI products in awards typically dominated by big tech companies
+- Reinforces Starkey's narrative as a health-tech company with genuine AI credentials recognized outside the audiology industry
+
 ## Competitive Gap
 As of 2026, Starkey is the only manufacturer with FDA-cleared fall detection in a hearing aid. Competitors have not matched this. The gap may close as health monitoring becomes a competitive requirement rather than a differentiator.
 
@@ -79,3 +92,4 @@ As of 2026, Starkey is the only manufacturer with FDA-cleared fall detection in 
 ## Sources
 - Research notes on Genesis AI platform, 3D sensor fall detection, battery specs, Hear Share app
 - [Starkey CTO Bhowmik AIMBE Induction](../sources/starkey-cto-bhowmik-aimbe-april-2026.md) — AIMBE fellowship recognition
+- [Starkey Omega AI BIG AI Awards](../sources/starkey-omega-ai-big-ai-awards-2026.md) — Two 2026 BIG AI Excellence Awards

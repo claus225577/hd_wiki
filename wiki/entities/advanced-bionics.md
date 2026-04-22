@@ -2,7 +2,7 @@
 title: Advanced Bionics
 type: entity
 created: 2026-04-17
-updated: 2026-04-19
+updated: 2026-04-20
 sources: [advanced-bionics-research-collaboration-ci-april-2026.md]
 related: [sonova-ag.md, ../concepts/cochlear-implant-ai.md, phonak.md, ../concepts/precision-drug-delivery-inner-ear.md]
 tags: [company, cochlear-implant, sonova, research, next-gen, spiral-therapeutics, drug-delivery]

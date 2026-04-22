@@ -2,8 +2,8 @@
 title: AI Hearing Aid Platform Comparison 2026
 type: comparison
 created: 2026-04-15
-updated: 2026-04-17
-sources: [oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, starkey-cto-bhowmik-aimbe-april-2026.md]
+updated: 2026-04-21
+sources: [oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, starkey-cto-bhowmik-aimbe-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, starkey-omega-ai-big-ai-awards-2026.md]
 related: [../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/gn-hearing-resound.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
 tags: [comparison, platform, 2026, phonak, resound, oticon, signia, starkey, apple, verit, clinical-trial]
 ---
@@ -18,7 +18,7 @@ A platform-by-platform breakdown of the AI capabilities in major hearing aid pro
 |----------|------|-------------|---------------|---------------|--------------|
 | **Phonak Sphere Infinio** | DEEPSONIC (dual-chip) | 7.7B ops/sec | 22M scenes | Spheric Speech Clarity 2.0 | On-device, real-time |
 | **ReSound Vivia** | Dedicated DNN chip | 4.9T ops/day | 13.5M sentences | Intelligent Focus | On-device, real-time |
-| **Oticon Verit** (Apr 2026) | TBD (2nd-gen AI) | Not disclosed | TBD | 2nd-gen AI + Auracast + Google Fast Pair | On-device |
+| **Oticon Verit** (Apr 2026) | Sirius (2nd-gen AI) | Not disclosed | Not disclosed | 12dB NR, Auracast, Google Fast Pair, SuddenSound Stabilizer | On-device |
 | **Oticon Intent** | Single-chip (Polaris) | Not disclosed | 13M scenes | 4D Sensor (head + body motion) | On-device, DNN 2.0 |
 | **Signia Integrated Xperience (IX)** | Integrated (not named) | Not disclosed | Live DNN | Multi-stream RealTime Enhancement + cloud DNN Assistant | Cloud-hybrid |
 | **Starkey Genesis AI** | Edge AI (proprietary) | Not disclosed | Not disclosed | Health tracking + fall detection | On-device |
@@ -58,11 +58,13 @@ A platform-by-platform breakdown of the AI capabilities in major hearing aid pro
 - **Privacy trade-off:** Some usage data is transmitted to cloud for DNN Assistant to function
 - **Market positioning:** Premium + accessible; also markets Widex Moment (separate brand) with own DNN approach
 
-### Starkey Genesis AI
+### Starkey Genesis AI / Omega AI
 - **Bet:** Hearing aids as a health platform, not just audio devices
 - **Fall detection:** On-device sensor fusion detects falls, sends alerts
 - **Health metrics:** Activity tracking, body temperature, heart rate (in some models)
 - **Audio AI:** Competent DNN noise reduction, but not the raw-power differentiator Starkey leads with
+- **Omega AI (Oct 2025):** Latest flagship with G3 Gen AI Neuro Processor; integrated NPU
+- **2026 BIG AI Excellence Awards:** Won two awards — external validation of AI capabilities beyond the audiology industry
 - **Market positioning:** Premium; appeals to health-conscious users and family members of older adults
 
 ### Apple AirPods Pro 2
@@ -82,14 +84,14 @@ Sonova's DEEPSONIC dual-chip bet is a statement that sufficient compute, paired 
 ### Demant: Sensor Fusion
 Demant's 4D Sensor approach bets that context-aware hearing aids (ones that know where you're looking and how you're moving) will outperform pure audio processing. This reflects a broader research trend — combining audio with multimodal signals rather than just processing harder. Risk: motion data may not be as predictive as hoped. Upside: opens a differentiation axis competitors aren't focused on.
 
-### WS Audiology: Cloud-Hybrid Intelligence
-WS Audiology's Signia hybrid approach bets that the fitting and personalization problem is as important as the real-time audio problem — and that cloud compute can solve the fitting problem without compromising latency. Risk: privacy concerns and connectivity dependency. Upside: the cloud model can improve faster than firmware-updated competitors.
+### WS Audiology: Cloud-Hybrid Intelligence + Preference Data
+WS Audiology's Signia hybrid approach bets that the fitting and personalization problem is as important as the real-time audio problem — and that cloud compute can solve the fitting problem without compromising latency. Risk: privacy concerns and connectivity dependency. Upside: the cloud model can improve faster than firmware-updated competitors. **April 2026 addition:** WSA launched the Sound Preference Program — a free tool using randomized audio comparisons to classify users as "natural sound" or "enhanced sound" preference (~40% show strong, consistent preference). This structured data collection feeds directly into personalization algorithms and aligns with WSA's dual-brand positioning (Widex natural, Signia enhanced).
 
 ### Starkey: Health Ecosystem
 Starkey's health platform bet is a hedge against commoditization of audio AI — if all brands converge on similar DNN noise reduction, differentiate on what's connected to the hearing aid. Risk: health features may not influence purchase decisions as much as audio quality. Upside: strong moat if health data becomes valuable for insurance/wellness integrations.
 
-### Apple: Accessibility at Scale
-Apple's strategy is to define a new category (clinical-grade consumer hearing device) and own it with distribution and ecosystem lock-in. Risk: clinical legitimacy ceiling (not suitable for severe loss). Upside: ~1.5B AirPods users means even 5% with hearing loss represents a massive addressable market untouched by traditional hearing aid brands.
+### Apple: Accessibility at Scale (CEO Signal)
+Apple's strategy is to define a new category (clinical-grade consumer hearing device) and own it with distribution and ecosystem lock-in. Risk: clinical legitimacy ceiling (not suitable for severe loss). Upside: ~1.5B AirPods users means even 5% with hearing loss represents a massive addressable market untouched by traditional hearing aid brands. **April 2026 signal:** John Ternus — the executive who led AirPods Pro hardware engineering and Apple Silicon — became Apple CEO. The architect of Apple's hearing health hardware is now running the company, reinforcing that hearing health is a strategic priority.
 
 ## April 2026 Developments
 
@@ -110,6 +112,7 @@ Starkey's CTO Achin Bhowmik (ex-Intel VP) inducted into AIMBE — validates the 
 - Will Signia's cloud DNN Assistant drive measurably better satisfaction vs. clinic-only fitting?
 - Will Apple expand AirPods hearing aid features to address moderate-severe loss?
 - Will any brand achieve genuine federated learning across its user base?
+- Will WSA's Sound Preference data create a measurable personalization advantage?
 - Will Auracast venue infrastructure reach critical mass?
 
 ## Related Pages

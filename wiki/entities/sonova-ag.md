@@ -2,7 +2,7 @@
 title: Sonova AG
 type: entity
 created: 2026-04-15
-updated: 2026-04-19
+updated: 2026-04-20
 sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md]
 related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md]
 tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant, drug-delivery]

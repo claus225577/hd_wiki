@@ -2,10 +2,10 @@
 title: Deep Neural Networks in Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-17
-sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, oticon-verit-launch-april-2026.md]
-related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
-tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency, clinical-trial, second-gen-ai]
+updated: 2026-04-22
+sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, oticon-verit-launch-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, dnn-noise-reduction-intelligibility-2026.md, orka-o1-pro-bose-anc-awe-2026.md]
+related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md, state-space-models.md, compute-in-memory.md, ../entities/orka-bose-partnership.md]
+tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency, clinical-trial, second-gen-ai, anc]
 ---
 
 # Deep Neural Networks in Hearing Aids
@@ -59,6 +59,7 @@ See [[dnn-architectures-hearing-aids]] and [[speech-enhancement-neural-networks]
 | Transformer / SepFormer | Research / teacher model | Long-range dependencies; too compute-heavy for direct deployment |
 | Attention-based hybrid | Emerging | Lightweight attention variants targeting <1ms latency |
 | Feedforward DNN | Legacy | Simple, fast; accuracy limited in complex scenes |
+| State Space Model (SSM) | Emerging research | O(n) complexity, inherently causal, CIM-compatible; see [[state-space-models]] |
 
 ### Attention-Based Selective Noise Cancellation
 Emerging architecture class (2025): context-aware attention mechanisms that selectively cancel specific noise sources (e.g., suppress HVAC hum but preserve a companion's voice) rather than applying a global noise mask. Represents a shift from environment-blind suppression to semantically-aware enhancement.
@@ -118,7 +119,27 @@ Sonova/Phonak registered an interventional clinical trial on ClinicalTrials.gov 
 - Signals the industry moving from marketing claims to clinical evidence for DNN hearing aids
 
 ### Oticon Second-Generation AI (April 2026)
-Oticon Verit (adult) and Play SI (pediatric) launched with "second-generation AI sound processing" — successor to DNN 2.0. Details of the architectural changes are not yet published, but the generational framing suggests meaningful DNN improvements beyond the Intent's DNN 2.0.
+Oticon Verit (adult) and Play SI (pediatric) launched with "second-generation AI sound processing" on the Sirius platform — successor to DNN 2.0 in Intent. Key measured improvement: **12dB noise suppression** — 2dB better than Oticon Real, 3dB better than Opn S. This quantifies the generational AI improvement in concrete SNR terms. Play SI also introduces **SuddenSound Stabilizer** for managing transient loud sounds. Both models ship with Auracast + Google Fast Pair connectivity.
+
+## Conv-TasNet Listener-Group Study (Schulz et al. 2026)
+
+Schulz et al. (Frontiers in Audiology and Otology, Jan 2026) tested a Conv-TasNet with 1ms latency across three listener groups, revealing that **DNN benefit inversely correlates with baseline hearing ability**:
+
+| Listener Group | SNR Benefit | Interpretation |
+|---------------|-------------|----------------|
+| Cochlear implant users | **+5.7 dB** | Largest benefit — most degraded baseline |
+| Hearing-impaired | **+0.8 dB** | Modest positive benefit |
+| Normal-hearing | **Slightly degraded** | DNN processing may interfere with good perception |
+
+This has significant product implications: DNN noise reduction should be prioritized for severe hearing loss and CI users, where it delivers the largest absolute improvement. The result also suggests that aggressive noise reduction may need to be calibrated to the user's hearing profile to avoid over-processing.
+
+## ANC + DNN: Dual-Layer Noise Management (April 2026)
+
+The Orka O1 Pro (AWE 2026) introduces active noise cancellation (Bose QuietControl) alongside DNN speech enhancement — the first hearing aid to combine both approaches:
+- **ANC layer:** Physical noise attenuation of broadband environmental noise
+- **DNN layer:** Computational speech-noise separation on the residual signal
+- This dual-layer paradigm could free DNN capacity for finer speech enhancement by offloading broadband noise to ANC hardware
+- See [[orka-bose-partnership]] for product details
 
 ## Clinical and Market Significance
 - DNN hearing aids consistently outperform classical DSP in clinical trials for noisy environments — the primary complaint of hearing aid users
@@ -131,6 +152,8 @@ Oticon Verit (adult) and Play SI (pediatric) launched with "second-generation AI
 - [[on-device-ml-hearing-aids]] — Hardware and deployment context for DNN inference
 - [[speech-enhancement-neural-networks]] — Full architecture catalog with latency and benchmark analysis
 - [[hearing-aid-chip-architectures]] — NPU vs dual-chip chip design debate
+- [[state-space-models]] — SSMs as emerging alternative architecture for hearing aid inference
+- [[compute-in-memory]] — CIM hardware paradigm enabling new model-hardware co-design
 
 ## Sources
 - [DNN Effectiveness Frontiers 2025](../../sources/dnn-effectiveness-frontiers-2025.md) — Clinical evidence for DNN hearing aid performance
@@ -138,3 +161,5 @@ Oticon Verit (adult) and Play SI (pediatric) launched with "second-generation AI
 - [Low-Latency DNN Noise Reduction Frontiers 2025](../../sources/low-latency-dnn-noise-reduction-frontiers-2025.md) — Sub-1ms latency DNN research
 - [Phonak DNN Clinical Trial](../../sources/phonak-dnn-noise-reduction-clinical-trial-april-2026.md) — NCT07526428, moderate-to-severe DNN study
 - [Oticon Verit Launch](../../sources/oticon-verit-launch-april-2026.md) — 2nd-gen AI sound processing
+- [Schulz et al. Conv-TasNet Listener Groups](../../sources/dnn-noise-reduction-intelligibility-2026.md) — CI +5.7 dB, benefit inversely correlated with baseline
+- [Orka O1 Pro Bose ANC](../../sources/orka-o1-pro-bose-anc-awe-2026.md) — First ANC + DNN hearing aid

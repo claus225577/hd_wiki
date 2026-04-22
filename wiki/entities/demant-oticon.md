@@ -2,8 +2,8 @@
 title: Demant / Oticon
 type: entity
 created: 2026-04-15
-updated: 2026-04-17
-sources: [oticon-intent-launch-2024.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md]
+updated: 2026-04-21
+sources: [oticon-intent-launch-2024.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md]
 related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, ../concepts/auracast-bluetooth-le-audio.md]
 tags: [company, manufacturer, oticon, denmark, dnn, brainhearing, single-chip, npu, auracast, le-audio, pediatric]
 ---
@@ -52,19 +52,35 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 - Expands the 4D sensor / DNN 2.0 technology to users who prefer the miniBTE form factor
 
 ### Oticon Verit (Apr 2026)
-- New premium adult hearing aid
+- New premium adult hearing aid on **Sirius platform**
 - **Second-generation AI sound processing** — successor to DNN 2.0 in Intent
+- **MoreSound Intelligence 3.0** — latest generation of AI scene classification and sound processing
+- **12dB noise suppression** — 2dB better than Oticon Real, 3dB better than Opn S
+- **SuddenSound Stabilizer** — manages sudden loud sounds
 - **Bluetooth LE Audio with Auracast** broadcast support
 - **Google Fast Pair** for seamless Android pairing
+- **Zinc-air disposable battery** styles — differentiator vs rechargeable-only Intent; serves users who prefer traditional batteries
 - First Oticon product with both Auracast and Google Fast Pair
 - Signals Demant's commitment to LE Audio ecosystem and cross-platform (iOS + Android) connectivity
 
 ### Oticon Play SI (Apr 2026)
 - **Pediatric hearing aid** with second-gen AI sound processing
 - **4D user-intent sensors** — previously exclusive to adult Intent, now brought to pediatric line
+- **12dB noise suppression** — same level as adult Verit
+- **Bandwidth:** 80Hz–10kHz
+- **IP68 rated** — dust and water resistant; critical for pediatric durability
+- **Styles:** miniRITE R and miniBTE R
 - **Bluetooth LE Audio with Auracast** — first pediatric hearing aid with Auracast; critical for classroom accessibility
 - **Made for iPhone (MFi) + Android Fast Pair** — cross-platform connectivity
+- **EduMic compatible** — works with Oticon's classroom microphone system alongside Auracast
 - Significance: brings flagship-level AI and sensor technology to children for the first time
+
+### Oticon Zeal (Apr 2026 — AAA 2026 debut)
+- **Rechargeable in-the-ear (ITE)** hearing aid — Oticon's modern ITE entry
+- **Streaming and connectivity** — brings wireless streaming to the ITE form factor, historically limited by antenna and battery constraints
+- Debuting at the **AAA 2026 conference** (April 22, 2026)
+- Complements the BTE/RIC lineup (Intent, Verit) and pediatric (Play SI) with an ITE option for users who prefer in-ear cosmetics
+- ITE form factor imposes tighter power and space constraints — on-device ML inference must be even more efficient than BTE/RIC designs
 
 ## Product Timeline
 | Year | Product | Key Technology |
@@ -72,8 +88,9 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 | 2020 | Oticon More | First Oticon DNN hearing aid |
 | Feb 2024 | Oticon Intent | Sirius platform, 4D sensors + DNN 2.0, 35% more speech cues |
 | Nov 2025 | Intent miniBTE R | Intent platform, smaller form factor |
-| Apr 2026 | Oticon Verit | 2nd-gen AI, Auracast, Google Fast Pair |
-| Apr 2026 | Oticon Play SI | Pediatric, 2nd-gen AI, 4D sensors, Auracast |
+| Apr 2026 | Oticon Verit | Sirius, 2nd-gen AI, 12dB NR, Auracast, zinc-air, SuddenSound Stabilizer |
+| Apr 2026 | Oticon Play SI | Pediatric, 2nd-gen AI, 4D sensors, 12dB NR, Auracast, IP68, EduMic |
+| Apr 2026 | Oticon Zeal | Rechargeable ITE, streaming, connectivity — AAA 2026 debut |
 
 ## Corporate Developments
 - **Feb 2025** — Acquired **Ohwerk Group** (77 audiology clinics across Germany), expanding Demant's retail footprint in the German market.
@@ -105,4 +122,5 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 - [Oticon Intent Launch 2024](../sources/oticon-intent-launch-2024.md) — Sirius platform, DNN 2.0, 4D sensors, SoundScore, Expert Choice Award
 - [Oticon Verit Launch](../sources/oticon-verit-launch-april-2026.md) — 2nd-gen AI, Auracast, Google Fast Pair
 - [Oticon Play SI Launch](../sources/oticon-play-si-pediatric-launch-april-2026.md) — Pediatric 2nd-gen AI with 4D sensors and Auracast
+- [Oticon Zeal ITE Launch](../sources/oticon-zeal-ite-launch-aaa-2026.md) — Rechargeable ITE with streaming at AAA 2026
 - Research notes on Intent miniBTE R launch, 2026 #1 rating, and Ohwerk acquisition

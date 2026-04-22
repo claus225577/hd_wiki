@@ -4,7 +4,9 @@ url: https://www.advancedbionics.com/us/en/home/about-ab/f/newsroom/press-releas
 date: 2026-04-14
 type: industry-news
 tags: [advanced-bionics, sonova, cochlear-implant, research, collaboration, next-gen, spiral-therapeutics, drug-delivery]
-also_covered: https://hearinghealthmatters.org/hearing-news-watch/2026/advanced-bionics-spiral-tx/
+also_covered:
+  - https://hearinghealthmatters.org/hearing-news-watch/2026/advanced-bionics-spiral-tx/
+  - https://hearingreview.com/hearing-products/implants-bone-conduction/cochlear-implants/advanced-bionics-announces-research-collaboration-with-spiral-therapeutics
 ---
 
 # Advanced Bionics + Spiral Therapeutics Collaboration

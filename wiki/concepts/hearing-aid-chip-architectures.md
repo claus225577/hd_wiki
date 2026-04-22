@@ -2,10 +2,10 @@
 title: Hearing Aid Chip Architectures
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [hardware-software-codesign-edge-ai-2026.md, starkey-omega-ai-launch-2025.md, phonak-infinio-sphere-2024.md, resound-vivia-launch-2025.md]
-related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md]
-tags: [chips, npu, edge-ai, hardware, dual-chip, integrated, power-efficiency]
+updated: 2026-04-22
+sources: [hardware-software-codesign-edge-ai-2026.md, starkey-omega-ai-launch-2025.md, phonak-infinio-sphere-2024.md, resound-vivia-launch-2025.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md]
+related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md]
+tags: [chips, npu, edge-ai, hardware, dual-chip, integrated, power-efficiency, compute-in-memory, rram]
 ---
 
 # Hearing Aid Chip Architectures
@@ -97,24 +97,69 @@ University of Michigan research published in early 2026 explicitly targets **har
 - Compile-time scheduling that maps DNN layers directly to chip resources without runtime overhead
 - Results: 2–4x efficiency improvements over baseline chip designs with equal model accuracy
 
+### Programmable Speech AI Accelerators (arXiv 2025)
+arXiv:2503.18698v2 demonstrates a **programmable accelerator** co-designed with speech AI models for wireless hearables:
+- Mixed-precision quantization (per-layer bit width selection) for optimal accuracy vs. efficiency
+- Programmable silicon — firmware-updateable with new DNN models post-deployment
+- 28-participant human perceptual evaluation validates the hardware-model co-design approach
+- Represents an alternative to fixed-function NPUs: flexibility of a programmable core with the efficiency of custom datapath
+
+### Aizip: Software-Only AI on Standard Chips (2026)
+Aizip demonstrates that **AI noise reduction can run on standard hearing device hardware** without custom NPU:
+- Platform approach: optimized tiny AI models + deployment tooling targeting commodity DSPs
+- Could enable AI features on mid-tier and OTC devices that lack dedicated DNN accelerators
+- Validates that software optimization (quantization, pruning, efficient architectures) can compensate for hardware limitations
+- Strategic implication: custom NPU may not be required for all AI hearing use cases
+
 ### Memory Bandwidth as Primary Bottleneck
 For hearing aid chips, the limiting factor is often memory bandwidth — reading model weights from SRAM — not raw compute. Architectures that reuse weights efficiently (e.g., depthwise separable convolutions, recurrent networks with small hidden states) are strongly favored over those with large, one-time-use weight matrices.
 
+## Approach 3: Compute-in-Memory (CIM) — Emerging Paradigm
+
+A fundamentally different architecture where computation happens inside the memory array itself, eliminating the data movement bottleneck that dominates power in conventional chips. See [[compute-in-memory]] for full concept page.
+
+### RRAM Crossbar Arrays (Michigan, Nature Communications 2026)
+University of Michigan researchers demonstrated the **first mapping of state space models onto RRAM crossbar arrays**:
+- **Memristive devices** store model weights as analog conductance values
+- **Vector-matrix multiplication** happens via physics (Ohm's law) — not sequential digital operations
+- Tungsten oxide at different thicknesses achieves different decay rates for SSM temporal dynamics
+- Accuracy within **4.6 bits of ideal** digital computation
+- **Dramatically reduced latency and power** vs. conventional digital hardware
+- Paper explicitly names hearing aids as a target application
+
+### CIM vs Integrated NPU vs Dual-Chip
+
+| Dimension | Integrated NPU | Dual-Chip | Compute-in-Memory |
+|-----------|---------------|-----------|-------------------|
+| Compute paradigm | Digital sequential | Digital sequential | Analog parallel |
+| Memory bottleneck | Yes (SRAM reads) | Yes (SRAM reads) | Eliminated |
+| Power for data movement | Dominant cost | Dominant cost | Near-zero |
+| Programmability | Full (firmware update) | Full (firmware update) | Limited (reprogram RRAM) |
+| Manufacturing maturity | Production | Production | Research/prototype |
+| Model flexibility | Any model | Any model | Model encoded in hardware |
+
+CIM does not replace integrated NPU or dual-chip for current products, but represents the trajectory for next-generation hearing aid silicon where memory bandwidth is the primary bottleneck.
+
 ## Future Directions
 
-- **In-memory computing:** Performing DNN multiply-accumulate operations inside SRAM cells, eliminating weight-read bottleneck
 - **Analog neural networks:** Charge-domain computation for sub-milliwatt inference
 - **Neuromorphic processing:** Spike-based neural computation matching the temporal sparsity of audio signals
 - **Unified biometric + audio processing:** Single chip handling audio DNN, PPG health sensing, and IMU-based fall detection
+- **Ternary-native compute units:** PrismML Ternary Bonsai (April 2026) demonstrates 1.58-bit {-1, 0, +1} weight models that eliminate multiplications entirely. If hearing aid NPUs adopted ternary-native logic, inference becomes additions/subtractions only — dramatically reducing power and area. A model requiring 2 MB at INT8 could fit in ~220 KB at 1.58-bit. See [[model-compression]].
 
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — Full ML task landscape and deployment constraints
 - [[dnn-in-hearing-aids]] — DNN history, inference pipeline, and clinical metrics
 - [[dnn-architectures-hearing-aids]] — Detailed CRN, transformer, and architecture analysis
 - [[small-language-models-edge-ai]] — Model compression techniques that make DNN-on-chip feasible
+- [[compute-in-memory]] — CIM paradigm: computation inside memory arrays
+- [[state-space-models]] — SSMs as the natural model architecture for CIM hardware
 
 ## Sources
 - [Hardware-Software Co-Design Edge AI 2026](../../sources/hardware-software-codesign-edge-ai-2026.md) — Michigan 2026 co-design research
 - [Starkey Omega AI Launch 2025](../../sources/starkey-omega-ai-launch-2025.md) — G3 Neuro Processor details
 - [Phonak Infinio Sphere 2024](../../sources/phonak-infinio-sphere-2024.md) — DEEPSONIC dual-chip architecture
 - [ReSound Vivia Launch 2025](../../sources/resound-vivia-launch-2025.md) — 360+DNN dual-chip, 4.9T ops/day
+- [Wireless Hearables Programmable Speech AI Accelerators](../../sources/wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md) — Programmable co-designed silicon
+- [Aizip Tiny AI for Hearing Devices](../../sources/aizip-tiny-ai-hearing-devices-2026.md) — Software-only AI on standard hardware
+- [Michigan CIM RRAM + SSM (Nature Communications 2026)](../../sources/michigan-compute-in-memory-rram-ssm-nature-2026.md) — First SSM-on-CIM mapping, RRAM crossbar arrays

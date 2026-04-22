@@ -2,8 +2,8 @@
 title: Auracast / Bluetooth LE Audio
 type: concept
 created: 2026-04-15
-updated: 2026-04-17
-sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md]
+updated: 2026-04-20
+sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, auracast-uk-live-theaters-april-2026.md]
 related: [on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, hearing-aid-market-dynamics.md, ../entities/gn-hearing-resound.md, ../entities/demant-oticon.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
 tags: [bluetooth, accessibility, connectivity, infrastructure, le-audio, venue-deployment, consumer-education]
 ---
@@ -27,7 +27,7 @@ Auracast is a broadcast audio feature within the Bluetooth LE Audio specificatio
 - Enables simultaneous multi-language streaming at a single venue
 
 ## Current Status (April 2026)
-- **Device support:** ReSound Vivia and Nexia ship with Auracast. **Oticon Verit** (adult, Apr 2026) and **Oticon Play SI** (pediatric, Apr 2026) now ship with Auracast + Google Fast Pair. Other Big 5 manufacturers following.
+- **Device support:** ReSound Vivia and Nexia ship with Auracast. **Oticon Verit** (adult, Apr 2026) and **Oticon Play SI** (pediatric, Apr 2026) now ship with Auracast + Google Fast Pair. **Oticon Zeal** (rechargeable ITE, Apr 2026) likely Auracast-compatible given Oticon's full-lineup push. Other Big 5 manufacturers following.
 - **Venue adoption:** Very limited but infrastructure deployment beginning. Venue installation guides published (April 2026) indicating early-adopter venues starting deployment.
 - **The gap:** Hearing aids are ready; venues are beginning to catch up (previously ~3 years behind).
 - **Smartphone integration:** iOS and Android added Auracast support in 2024/2025 OS releases, enabling phones as transmitters.
@@ -59,6 +59,18 @@ Practical venue installation guides have been published, signaling the transitio
 - **Audio integration:** Connecting to existing PA/AV systems
 - Early-adopter venues beginning installations in 2026
 
+### First UK Live Theater Deployments (April 2026)
+The first real-world Auracast assistive listening deployments in UK performance venues have been documented:
+- **Everyman Theatre (Cheltenham)** and **Contact (Manchester)** — using the **Auri Bluetooth Auracast system**
+- **Replaces 20-year-old infrared** assistive listening systems — a generational technology transition
+- **Sub-lip-reader-detectable latency** — critical for live performance where audience members lip-read performers; infrared systems had known latency issues
+- **Benefits beyond hearing loss:** neurodivergent audiences also benefit — expanding the addressable user base
+- **Accessibility improvements:**
+  - No pre-booking required (unlike infrared systems that required advance notice)
+  - Any seat works — no designated "assistive listening" section
+  - Handheld receivers available for non-Auracast devices (bridges the device adoption gap)
+- **Significance:** Moves Auracast from trade show demos and venue installation guides to validated, audience-facing deployment. The handheld receiver option solves the chicken-and-egg problem: venues can deploy before all audience members have Auracast-compatible hearing aids.
+
 ## Open Questions
 - Who pays for venue infrastructure? Hearing aid companies, venues, or government mandates?
 - Will Auracast coexist with or replace telecoil/hearing loop systems?
@@ -79,3 +91,4 @@ Practical venue installation guides have been published, signaling the transitio
 - [Auracast Ready vs Enabled + Venue Guides](../../sources/auracast-ready-vs-enabled-venue-guides-april-2026.md)
 - [Oticon Verit Launch](../../sources/oticon-verit-launch-april-2026.md) — First Oticon product with Auracast
 - [Oticon Play SI Launch](../../sources/oticon-play-si-pediatric-launch-april-2026.md) — First pediatric HA with Auracast
+- [Auracast in UK Live Theaters](../../sources/auracast-uk-live-theaters-april-2026.md) — First real-world venue deployments replacing infrared

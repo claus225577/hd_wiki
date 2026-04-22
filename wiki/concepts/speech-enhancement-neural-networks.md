@@ -2,9 +2,9 @@
 title: Speech Enhancement Neural Networks
 type: concept
 created: 2026-04-15
-updated: 2026-04-17
-sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md]
+updated: 2026-04-22
+sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, deezer-44pct-ai-generated-audio-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md, state-space-models.md]
 tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer]
 ---
 
@@ -34,7 +34,7 @@ CRN is considered the optimal architecture for production hearing aids: CNN laye
 - Compute cost remains a barrier for direct deployment; used as teacher model for distillation
 
 ### Legacy Architectures (Research Baseline)
-- **Conv-TasNet** — Time-domain speech separation, influential but too large for HA chips
+- **Conv-TasNet** — Time-domain speech separation, influential architecture. Schulz et al. 2026 demonstrated 1ms latency variant with significant CI benefit (+5.7 dB). Originally considered too large for HA chips, but optimization work continues.
 - **DCCRN** — Deep Complex Convolution Recurrent Network, good real-time performance
 - **FullSubNet** — Full-band and sub-band fusion, strong on DNS Challenge benchmarks
 - **TinyRecurrentUNet** — Designed for low-resource devices, closer to hearing aid constraints
@@ -58,6 +58,17 @@ Leading manufacturers train on massive datasets to cover real-world acoustic div
 - Scenes combine speech (various languages, accents, mic distances) with noise (stationary, non-stationary, multi-source)
 - Hearing aid microphone simulation is critical — models trained on clean recordings generalize poorly to HA mics
 
+## Generative Audio AI and Speech Enhancement
+
+The boundary between generative audio AI and speech enhancement is blurring. Deezer reports that **44% of songs uploaded daily** are AI-generated (April 2026), with 85% of AI-music streams flagged as fraudulent. While this is a music/streaming story, it signals the maturity of neural audio generation at scale.
+
+**Relevance to hearing aid speech enhancement:**
+- Generative audio models (diffusion, GANs, flow-matching) share architectural DNA with speech enhancement networks — both model and manipulate audio spectrograms
+- **Generative enhancement** — instead of masking noise (traditional approach), generative models can reconstruct clean speech from degraded signals, potentially achieving better quality than mask-based approaches
+- **Synthetic training data** — generative models could produce diverse, realistic training data for hearing aid DNN training at lower cost
+- **Personalized audio rendering** — generating audio optimized for individual hearing profiles, rather than applying frequency-dependent gain to existing audio
+- The 44% figure demonstrates that neural audio generation has reached production-scale quality and throughput
+
 ## Challenges Specific to Hearing Aids
 - Model must run in < 10ms (algorithmic latency budget); 1ms targets emerging
 - Must handle hearing loss-specific processing (frequency-dependent amplification per audiogram)
@@ -78,8 +89,12 @@ Leading manufacturers train on massive datasets to cover real-world acoustic div
 ### Sub-Millisecond Latency (2025)
 Achieved 0.32–1.25 ms mean algorithmic latency using minimum-phase FIR filter for sample-by-sample processing on hearables. Eliminates comb-filter artifacts entirely (arXiv, 2025).
 
-### Ultra-Low Latency DNN Noise Reduction (2026)
-Pre-trained convolutional time-domain network achieving 1 ms latency. Validated on normal-hearing, hearing-impaired, and CI users. Published in Frontiers in Audiology and Otology.
+### Ultra-Low Latency DNN Noise Reduction — Listener Group Analysis (Schulz et al. 2026)
+Conv-TasNet achieving 1 ms latency, tested across three listener groups (Frontiers in Audiology and Otology, Jan 2026):
+- **CI users: +5.7 dB** SNR benefit — largest improvement
+- **Hearing-impaired: +0.8 dB** — modest positive benefit
+- **Normal-hearing: slightly degraded** — DNN may interfere with good baseline perception
+- **Key finding:** Benefit inversely correlates with baseline hearing deficit — DNN noise reduction is most valuable for users with the worst baseline, particularly cochlear implant users
 
 ### Binaural Deep Speech Enhancement (2024)
 IEEE/ACM TASLP paper comparing monaural vs. binaural DNN processing. Shows binaural processing preserves spatial cues (ITD/ILD) while enhancing speech — solving a key limitation of earlier independent-ear processing.
@@ -92,6 +107,19 @@ Self-supervised speech models (e.g., NVIDIA Parakeet, 600M params, 120k hours) c
 
 ### Phonak DNN Noise Reduction Clinical Trial (April 2026)
 Sonova/Phonak registered an interventional clinical trial (NCT07526428) specifically evaluating DNN noise reduction for moderate-to-severe hearing loss. First registered trial targeting DNN efficacy at more severe hearing loss levels, where SNR requirements differ from mild-to-moderate populations.
+
+### Samsung Galaxy S26 Real-Time Audio Eraser (April 2026)
+Samsung's Galaxy S26 transitions Audio Eraser from post-production editing to **real-time sound separation** during live capture. Significance for hearing AI:
+- Consumer smartphones now have sufficient ML inference for real-time source separation — sets user expectations
+- The "post-production to real-time" transition mirrors hearing aids' own evolution from offline fitting to real-time DNN processing
+- Technology transfer: smartphone-grade models could be distilled for hearing aid deployment
+- Competitive pressure: as phones gain hearing-aid-like capabilities, prescription devices must demonstrate superior performance
+
+### Programmable Speech AI Accelerators (arXiv 2025)
+Custom silicon co-designed with speech AI models (arXiv:2503.18698v2):
+- **Mixed-precision quantization** — different bit widths per layer for optimal accuracy-efficiency tradeoff
+- **28-participant human evaluation** — perceptual validation, not just PESQ/STOI
+- Programmable design allows model updates post-deployment
 
 ## Related Pages
 - [[dnn-architectures-hearing-aids]] — Deep dive on hardware-specific DNN architectures and chip implementations
@@ -107,3 +135,6 @@ Sonova/Phonak registered an interventional clinical trial (NCT07526428) specific
 - [Binaural Deep Speech Enhancement](../sources/multichannel-deep-speech-enhancement-ha-2024.md)
 - [SSL Loss Functions for HA Enhancement](../sources/ssl-loss-functions-hearing-aid-enhancement-2024.md)
 - [Speech Foundation Models for HI Prediction](../sources/speech-foundation-models-hearing-impaired-2024.md)
+- [Wireless Hearables Programmable Speech AI Accelerators](../sources/wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md) — Co-designed silicon + mixed-precision quantization
+- [Samsung Galaxy S26 Audio Eraser](../sources/samsung-galaxy-s26-audio-eraser-realtime-2026.md) — Consumer real-time sound separation
+- [Adobe + Speechmatics On-Device STT](../sources/adobe-speechmatics-on-device-stt-april-2026.md) — On-device speech recognition within 5% of cloud, 12-16% better than Whisper

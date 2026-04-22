@@ -1,6 +1,7 @@
 ---
 title: "Qwen3.6-35B-A3B Open-Source Release"
 url: https://qwen.ai/blog?id=qwen3.6-35b-a3b
+also_covered: https://simonwillison.net/2026/Apr/16/qwen-beats-opus/
 date: 2026-04-16
 type: ai-release
 tags: [open-source, llm, mixture-of-experts, edge-ai, qwen, alibaba]
@@ -13,7 +14,8 @@ tags: [open-source, llm, mixture-of-experts, edge-ai, qwen, alibaba]
 - **Model:** Qwen3.6-35B-A3B — mixture-of-experts (MoE) language model
 - **Architecture:** 35 billion total parameters, 3 billion active parameters per inference (A3B = Active 3B)
 - **Developer:** Alibaba Qwen team
-- **Key claim:** Runs on a laptop; beats frontier models on some tasks
+- **Size quantized:** ~21GB quantized — runs on MacBook Pro M5 via LM Studio
+- **Key claim:** Competes with frontier models (per Simon Willison analysis: "Qwen beats Opus"); runs on consumer hardware
 - **Date:** April 16, 2026
 - **Significance for Hearing AI:**
   - MoE architecture (35B total / 3B active) demonstrates how sparse expert routing enables large model capability at small inference cost

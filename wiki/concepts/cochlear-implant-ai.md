@@ -2,8 +2,8 @@
 title: AI in Cochlear Implants
 type: concept
 created: 2026-04-15
-updated: 2026-04-19
-sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md]
+updated: 2026-04-22
+sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md, dnn-noise-reduction-intelligibility-2026.md]
 related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, precision-drug-delivery-inner-ear.md]
 tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics]
 ---
@@ -52,6 +52,13 @@ Artificial neural networks applied to CI sound coding have achieved:
 - DNN-based noise reduction adapted for CI (operating pre-stimulation) shows significant improvement in noisy environments
 - Latency constraints are similar to hearing aids: < 10ms algorithmic delay
 - See [[dnn-architectures-hearing-aids]] for applicable architectures
+
+### Conv-TasNet Listener Group Study (Schulz et al. 2026)
+Schulz et al. (Frontiers in Audiology and Otology, Jan 2026) tested Conv-TasNet with 1ms latency across three groups and found **CI users gained the most from DNN noise reduction**:
+- **CI users: +5.7 dB** SNR improvement — the largest benefit of any group tested
+- Hearing-impaired: +0.8 dB; normal-hearing: slightly degraded
+- **Key insight:** DNN benefit inversely correlates with baseline hearing deficit — CI users have the worst baseline and gain the most
+- **Product implication:** DNN noise reduction should be a priority feature for CI sound processors, where it delivers the highest ROI
 
 ### End-to-End Audio-Visual Learning
 - Research into learning CI sound coding from audio-visual data (video + audio pairs)
@@ -128,3 +135,4 @@ Novel system using audio-visual speech enhancement (lip reading + audio) as pre-
 - [ML CI Speech Perception — 4,046 patients](../sources/ml-ci-speech-perception-multicenter-2025.md)
 - [Pediatric CI Language Prediction](../sources/pediatric-ci-language-prediction-transfer-learning-2025.md)
 - [AB Next-Gen CI Research Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md)
+- [Schulz et al. Conv-TasNet Listener Groups](../sources/dnn-noise-reduction-intelligibility-2026.md) — CI users gain +5.7 dB from DNN noise reduction, most benefit of any group

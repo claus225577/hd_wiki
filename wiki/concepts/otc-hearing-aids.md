@@ -2,10 +2,10 @@
 title: Over-the-Counter Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-19
-sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md]
-related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md]
-tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage]
+updated: 2026-04-22
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md]
+related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md]
+tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage, sony-exit, anc]
 ---
 
 # Over-the-Counter Hearing Aids
@@ -62,9 +62,10 @@ The ~3x price gap between prescription and OTC is the primary driver of OTC inte
 - **Ceretone** — UK launch at £129.99 (~$165 USD) in April 2026; ready-to-wear preset devices; among cheapest OTC hearing aids in any major market. See [[ceretone]].
 
 ### Consumer Electronics Companies
-- **Sony** — CRE series, developed in partnership with WS Audiology; blend of CE brand trust and HA expertise
+- **Sony** — CRE series, developed in partnership with WS Audiology; **discontinued April 2026** — premium OTC pricing ($999-$1,299) could not compete with sub-$250 alternatives and AirPods Pro. WSA signals continued OTC interest but needs new approach. See [[ws-audiology-signia]].
 - **Jabra** — Enhance Plus, leveraging headset brand recognition
-- **Bose** — Entered and partially exited the market; demonstrated regulatory pathway
+- **Bose** — Entered and partially exited direct OTC market; now partnering with Orka on ANC-equipped hearing aids (O1 Pro, AWE 2026). See [[orka-bose-partnership]].
+- **Orka** — Debuted O1 Pro at AWE 2026 — world's first RIC hearing aid with Bose ANC, 3.5g, 35hr battery. Positioned at the consumer-tech/hearing-aid intersection.
 
 ### The Apple Disruption: AirPods Pro as Hearing Aid
 In September 2024, Apple released a software update enabling **AirPods Pro 2** to function as an OTC hearing aid. In April 2026, **AirPods Pro 3** deepened this disruption:
@@ -76,6 +77,7 @@ In September 2024, Apple released a software update enabling **AirPods Pro 2** t
 - **Active hearing protection** — real-time sound exposure monitoring
 - **67% more battery life** in Transparency mode vs. previous generation
 - **Continuous software updates** improve device post-purchase
+- **Leadership signal:** Apple's April 2026 CEO transition — John Ternus, who led AirPods Pro hardware and Apple Silicon, became CEO — signals hearing health is a strategic priority at the highest level
 - Impact: legitimizes consumer electronics as a hearing health platform; $200 price point with FDA clearance + health monitoring fundamentally disrupts OTC pricing. See [[apple-hearing-features]].
 
 ## User Profile and Limitations
@@ -114,6 +116,21 @@ The OTC hearing aid phenomenon is expanding beyond the US:
 - **Key question:** Will the US FDA OTC model be replicated internationally, or will each market develop its own framework?
 - International price competition is driving the OTC price floor below $200
 
+## Premium OTC Pricing Failure: Sony Discontinuation (April 2026)
+
+WS Audiology ended Sony-branded OTC hearing aid sales in April 2026, providing a critical data point on OTC market dynamics:
+- **Sony CRE series** priced at $999-$1,299 — premium OTC positioning
+- **Could not compete** against AirPods Pro ($200-$249 with FDA clearance), Ceretone ($165), and other sub-$250 OTC devices
+- **Even Sony's brand trust** was insufficient to justify premium OTC pricing
+- **Lesson:** Premium OTC may not be a viable category — consumers wanting premium go prescription; consumers wanting affordable go budget OTC or AirPods
+- **WSA's pivot:** Signals WSA will focus on Signia/Widex prescription AI features (where margins are sustainable) rather than OTC brand licensing
+
+This validates the "middle squeeze" thesis: growth is at the premium prescription end (AI features, $4,000-$7,000) and the ultra-affordable end (sub-$250), while mid-tier/premium OTC gets compressed from both sides.
+
+## ANC Enters the Hearing Aid Market (April 2026)
+
+The Orka O1 Pro, debuting at AWE 2026 with Bose QuietControl ANC, introduces active noise cancellation to hearing aids for the first time. ANC has been a standard feature in consumer earbuds since ~2019 but was absent from hearing aids. This bridges the consumer audio and medical hearing worlds. See [[orka-bose-partnership]].
+
 ## Intersection with Dementia Research
 Given that hearing aid use is associated with **48% slower cognitive decline** (ACHIEVE study) and hearing loss is the largest modifiable dementia risk factor, increasing OTC adoption has potential population-level public health significance. See [[hearing-loss-dementia-link]].
 
@@ -123,3 +140,11 @@ Given that hearing aid use is associated with **48% slower cognitive decline** (
 - [[hearing-loss-dementia-link]] — Public health rationale for expanding hearing aid access
 - [[auracast-bluetooth-le-audio]] — Connectivity standard increasingly expected in OTC devices
 - [[audiologist-workforce-shortage]] — Workforce gaps that make OTC a necessity, not just a preference
+- [[ws-audiology-signia]] — Sony OTC partnership ended; WSA pivots from premium OTC
+- [[orka-bose-partnership]] — ANC entering hearing aids via consumer audio partnerships
+
+## Sources
+- [Sony OTC Hearing Aids Discontinued](../../sources/sony-otc-hearing-aids-discontinued-april-2026.md) — WSA ends Sony OTC brand, premium pricing failure
+- [Orka O1 Pro with Bose ANC](../../sources/orka-o1-pro-bose-anc-awe-2026.md) — First ANC RIC hearing aid
+- [Ceretone OTC UK Launch](../../sources/ceretone-otc-uk-launch-april-2026.md) — Ultra-affordable OTC international expansion
+- [AirPods Pro 3 Hearing Health](../../sources/airpods-pro-3-hearing-health-april-2026.md) — $200 FDA-cleared disruption

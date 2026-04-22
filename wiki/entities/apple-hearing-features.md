@@ -2,8 +2,8 @@
 title: Apple Hearing Features
 type: entity
 created: 2026-04-15
-updated: 2026-04-18
-sources: [airpods-pro-3-hearing-health-april-2026.md]
+updated: 2026-04-21
+sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md]
 related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md]
 tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring]
 ---
@@ -89,6 +89,19 @@ AirPods Pro 2 received FDA clearance as a Class II OTC hearing aid. This is not 
 - Likely reaches people with mild hearing loss who would never visit a clinic — net new addressable market
 - Could reduce the "average age at first hearing aid" (currently ~70 years old vs. average hearing loss onset ~50s)
 
+## Leadership: John Ternus as CEO (April 2026)
+
+Tim Cook moved to Executive Chairman; **John Ternus** became Apple CEO in April 2026. Ternus previously led Apple's hardware engineering division, which includes:
+- **Apple Silicon** (M-series chips powering on-device ML across all Apple devices)
+- **AirPods Pro** hardware program (FDA-cleared hearing aid features, hearing test, Adaptive Transparency, heart rate monitoring)
+- The sensor and chip engineering that made AirPods Pro a medical device
+
+**Why this matters for hearing:** The executive who personally oversaw AirPods Pro's transformation into an FDA-cleared hearing aid is now running the entire company. This signals that Apple's hearing health push is a strategic priority at the highest level, not a side project within a hardware team. It also suggests continued aggressive investment in:
+- On-device ML chips optimized for health sensing (Apple Silicon roadmap)
+- Sensor integration in wearables (PPG, accelerometer, microphones)
+- FDA-regulated health features as core product differentiators
+- Accessibility as a first-class product pillar
+
 ## Apple Watch — Hearing Health
 - **Noise exposure monitoring** — Tracks environmental decibel levels; alerts to dangerous exposure
 - **AirPods Pro 3 heart rate** — Continuous cardiac monitoring extends Apple's health platform
@@ -104,4 +117,5 @@ Apple's differentiation is not primarily AI audio processing quality — it is d
 
 ## Sources
 - [AirPods Pro 3 Hearing Health + Heart Rate (April 2026)](../../sources/airpods-pro-3-hearing-health-april-2026.md) — $200 price, 256 Hz heart rate, 67% battery improvement, FDA hearing aid feature
+- [Apple CEO Transition — John Ternus (April 2026)](../../sources/apple-ceo-transition-ternus-april-2026.md) — Ternus led AirPods Pro and Apple Silicon; elevation to CEO signals continued hearing health investment
 - Research notes on AirPods Pro 2 FDA clearance, iOS 26 hearing test feature, global availability

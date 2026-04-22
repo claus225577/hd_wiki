@@ -2,8 +2,8 @@
 title: Teleaudiology and Remote Hearing Care
 type: concept
 created: 2026-04-15
-updated: 2026-04-19
-sources: [audiologist-shortage-asha-sciencedirect-2025.md]
+updated: 2026-04-21
+sources: [audiologist-shortage-asha-sciencedirect-2025.md, noah-es-5000-subscribers-april-2026.md]
 related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, precision-drug-delivery-inner-ear.md]
 tags: [telehealth, remote-care, audiology, self-fitting, cloud, signia, smartphone, access, workforce-shortage]
 ---
@@ -111,6 +111,16 @@ Teleaudiology is not merely a convenience — it is increasingly a necessity dri
 - The audiologist profession is growing at ~0.9%/year while the 65+ population grows ~3%/year
 - Teleaudiology is the primary technology lever for extending one audiologist's reach across multiple shortage areas
 - See [[audiologist-workforce-shortage]] for comprehensive analysis
+
+## Cloud Data Infrastructure: Noah ES (April 2026)
+
+HIMSA's **Noah ES** cloud-based hearing care platform surpassed **5,000 subscribers** worldwide (April 2026). Noah is the de facto industry standard for audiometric data storage and hearing aid fitting data exchange. The cloud migration (Noah ES) is significant for teleaudiology because:
+
+- Cloud-based patient records enable seamless remote fitting — audiologist and patient can access the same data from different locations
+- Standardized cloud data format enables AI-assisted fitting recommendations across practices
+- 5,000 subscribers represents a critical mass of cloud-connected hearing care practices
+- Enables **federated learning** across practices without sharing raw patient data
+- Supports the workforce shortage response: one audiologist can serve patients across multiple cloud-connected locations
 
 ## AI Agent Infrastructure (MCP)
 
