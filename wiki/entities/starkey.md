@@ -2,10 +2,10 @@
 title: Starkey
 type: entity
 created: 2026-04-15
-updated: 2026-04-21
-sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md]
-related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md]
-tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe, omega-ai, awards]
+updated: 2026-04-25
+sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, starkey-omega-ai-aaa-2026-showcase.md, hearingtracker-2026-premium-rankings.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md]
+related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md, ../concepts/auracast-bluetooth-le-audio.md, aaa-conference.md]
+tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe, omega-ai, awards, auracast, respiratory-rate, aaa-2026]
 ---
 
 # Starkey
@@ -80,16 +80,47 @@ This creates a different value proposition — particularly for older adults, ca
 - Positions hearing aids alongside mainstream AI products in awards typically dominated by big tech companies
 - Reinforces Starkey's narrative as a health-tech company with genuine AI credentials recognized outside the audiology industry
 
-## Competitive Gap
-As of 2026, Starkey is the only manufacturer with FDA-cleared fall detection in a hearing aid. Competitors have not matched this. The gap may close as health monitoring becomes a competitive requirement rather than a differentiator.
+### Auracast & Connectivity Update (Jan 2026)
+Widely rolled out feature update for Omega AI platform:
+- **Auracast Assistant:** Bluetooth LE Audio broadcast reception — Starkey joins Oticon and ReSound with Auracast-capable devices
+- **Google Fast Pair:** Seamless Android pairing, matching Oticon's integration
+- **Push to Talk:** Dedicated communication mode for voice capture
+- **Respiratory rate tracking:** Adds another health biometric to Starkey's monitoring suite:
+  - Abnormal respiratory rate is an early indicator of respiratory distress, heart failure, infection
+  - Combined with heart rate, fall detection, and activity tracking, enables comprehensive health profiling from the ear
+  - Strengthens Starkey's "health tech company" positioning with four distinct biometric signals
+
+## AAA 2026 Showcase (April 2026)
+Starkey showcased the full Omega AI platform at AAA 2026 (San Antonio, April 22-25), highlighting three pillars:
+- **Auracast broadcast audio** — aligning with the industry-wide LE Audio rollout
+- **AI-driven sound processing** — demonstrating G3 Gen AI Neuro Processor capabilities
+- **Health and wellness integration** — showcasing the full health monitoring suite (fall detection, activity tracking, respiratory rate, heart rate)
+
+The AAA showcase reinforces Starkey's three-pillar positioning: connectivity + AI audio + health tech. See [[aaa-conference]].
+
+## HearingTracker 2026 Premium Ranking: #2
+- **Ranked #2** in HearingTracker's 2026 premium hearing aid rankings (Starkey Genesis AI)
+- Behind Phonak Infinio Sphere (#1), ahead of Oticon Intent (#3)
+- Validates the health-tech differentiation strategy alongside audio AI
+
+## Competitive Gap — Health Monitoring
+As of 2026, Starkey is the only hearing aid manufacturer with FDA-cleared fall detection. Competitors have not matched this in hearing aids specifically, but the gap is narrowing from the consumer earbud side:
+- **Samsung Galaxy Buds** expanding in-ear PPG for HRV and stress tracking (April 2026) — consumer earbuds increasingly offering health monitoring that overlaps with Starkey's hearing aid features
+- **Apple AirPods Pro 3** already offers 256 Hz PPG heart rate monitoring
+- The competitive pressure comes from consumer earbuds converging on health features from below, not from other hearing aid manufacturers converging from above
 
 ## Related Pages
 - [[apple-hearing-features]] — Apple Watch also tracks falls; different form factor but overlapping health monitoring territory
 - [[sonova-ag]] — Competitor; no fall detection
 - [[demant-oticon]] — Competitor; no fall detection
 - [[on-device-ml-hearing-aids]] — Starkey's Edge AI as implementation example
+- [[auracast-bluetooth-le-audio]] — Omega AI Auracast Assistant (Jan 2026)
 
 ## Sources
 - Research notes on Genesis AI platform, 3D sensor fall detection, battery specs, Hear Share app
 - [Starkey CTO Bhowmik AIMBE Induction](../sources/starkey-cto-bhowmik-aimbe-april-2026.md) — AIMBE fellowship recognition
 - [Starkey Omega AI BIG AI Awards](../sources/starkey-omega-ai-big-ai-awards-2026.md) — Two 2026 BIG AI Excellence Awards
+- [Starkey Omega AI Auracast Update](../sources/starkey-omega-ai-auracast-update-jan-2026.md) — Auracast, Google Fast Pair, Push to Talk, respiratory rate
+- [Starkey Omega AI at AAA 2026](../sources/starkey-omega-ai-aaa-2026-showcase.md) — Full platform showcase: Auracast, AI processing, health integration
+- [HearingTracker 2026 Premium Rankings](../sources/hearingtracker-2026-premium-rankings.md) — Starkey Genesis AI ranked #2
+- [Samsung Galaxy Buds Health Monitoring](../sources/samsung-galaxy-buds-health-monitoring-ppg-2026.md) — Consumer earbud health monitoring competitive context

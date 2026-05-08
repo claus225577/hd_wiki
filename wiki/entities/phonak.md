@@ -2,10 +2,10 @@
 title: Phonak
 type: entity
 created: 2026-04-15
-updated: 2026-04-17
-sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md]
-related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, gn-hearing-resound.md, demant-oticon.md, ../concepts/dnn-in-hearing-aids.md]
-tags: [company, brand, phonak, sonova, deepsonic, ai-hearing-aid, dual-chip, clinical-trial]
+updated: 2026-05-05
+sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md, phonak-ai-excellence-award-march-2026.md, phonak-usa-pickleball-partnership-spring-2026.md, phonak-pickleball-aaa-2026-deeper-coverage.md, hearingtracker-2026-premium-rankings.md, phonak-infinio-if-design-award-2026.md, phonak-virto-r-infinio-red-dot-april-2026.md]
+related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, gn-hearing-resound.md, demant-oticon.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/eu-ai-act-medical-devices.md]
+tags: [company, brand, phonak, sonova, deepsonic, ai-hearing-aid, dual-chip, clinical-trial, marketing, sports-partnership]
 ---
 
 # Phonak
@@ -56,7 +56,12 @@ See [[sonova-ag]] for full DEEPSONIC architecture details.
 - Could support regulatory claims, insurance reimbursement arguments, and clinical guideline inclusion
 
 ## Awards & Recognition
-- **2026 AI Excellence Award** — Industry recognition for the DEEPSONIC/Infinio platform
+- **2026 Red Dot Award for Product Design (April 29, 2026)** — **Virto R Infinio** picked up the 2026 Red Dot Award for Product Design, the third major 2026 award for the Infinio platform after the AI Excellence Award and the iF DESIGN AWARD. See [Red Dot source](../sources/phonak-virto-r-infinio-red-dot-april-2026.md).
+- **2026 iF DESIGN AWARD** — Infinio Ultra Sphere and Virto R Infinio both received the iF Award earlier in 2026.
+- **2026 AI Excellence Award (March 24, 2026)** — **Virto R Infinio** and **Infinio Ultra Sphere** won the 2026 AI Excellence Award
+  - Ultra Sphere recognized for DNN-based **direct speech/noise separation** — not just noise estimation, but active separation of speech from noise
+  - Virto R Infinio win is notable: demonstrates DEEPSONIC AI recognition in space-constrained custom ITE/ITC form factor
+  - Follows Starkey's two BIG AI Awards — both major US brands now have 2026 AI award recognition
 
 ## Phonak vs. Competitors on AI Processing (Mid-2025 Snapshot)
 | Product | AI Architecture | Training Data | Ops/sec |
@@ -72,6 +77,26 @@ Note: ops/sec comparisons should be treated cautiously — different architectur
 - **myPhonak app** — Consumer app; remote fine-tuning, hearing diary, usage data
 - **Lumity line** — Previous generation (PRISM chip); still available/supported
 
+## Marketing & Partnerships
+
+### "Hear to Win" — USA Pickleball Partnership (Spring 2026)
+- Partnership with **USA Pickleball** (national governing body) for hearing health awareness
+- **"Hear to Win" campaign** formally announced at AAA 2026 (San Antonio, April 22–25); industry coverage published April 27, 2026
+- Targets **~20 million** US pickleball players
+- **Phonak Sphere Sound Lab** — courtside activation at select tournaments featuring hearing technology demos, hearing protection education, and connections to local hearing care providers
+- Year-round digital activations: promotional content, livestream integrations, USA Pickleball member communications
+- Executives quoted: Christine Jones, Sonova VP Marketing Wholesale US; Christian Portaro, Senior Director of Corporate Partnerships, USA Pickleball
+- Strategic targeting: pickleball's demographic skews 50+ age group — high overlap with hearing loss prevalence
+- Represents a shift toward **consumer-brand marketing** (sports/lifestyle) alongside traditional clinical channel marketing
+- Consistent with industry-wide response to OTC competition and consumer tech encroachment — Phonak building brand awareness outside audiology clinics
+- **Underexplored data-science angle:** pickleball is an unusually rich acoustic edge-case environment (outdoor wind, court echo, sudden multi-talker calls, high motion, sweat, exertion artifacts) that is poorly represented in standard fitting datasets — the Sphere Sound Lab is structurally well-positioned to evolve into a real-world evaluation program
+
+## HearingTracker 2026 Premium Ranking: #1
+- **Ranked #1** in HearingTracker's 2026 premium hearing aid rankings (Phonak Infinio Sphere)
+- Ahead of Starkey Genesis AI (#2) and Oticon Intent (#3)
+- Validates the DEEPSONIC dual-chip compute advantage in consumer/expert composite scoring
+- AI processing is now table stakes for premium ranking — all three top picks are AI-powered
+
 ## Position Within Sonova
 Phonak accounts for the majority of Sonova AG's hearing aid revenue. Unitron is the mid-tier brand; Advanced Bionics handles cochlear implants. AudioNova is the retail arm. Phonak R&D drives Sonova's core chip investment (PRISM → DEEPSONIC).
 
@@ -80,7 +105,12 @@ Phonak accounts for the majority of Sonova AG's hearing aid revenue. Unitron is 
 - [[gn-hearing-resound]] — ReSound Vivia is the only other product with real-time AI processing (mid-2025)
 - [[demant-oticon]] — Single-chip competitor; architectural contrast
 - [[on-device-ml-hearing-aids]] — DEEPSONIC dual-chip as key architecture case study
+- [[hearing-aid-market-dynamics]] — Pickleball partnership as consumer marketing strategy
 
 ## Sources
 - Research notes on DEEPSONIC chip specs, Audéo Sphere Infinio, Oct 2025 Ultra firmware update, 2026 AI Excellence Award
 - [Phonak DNN Noise Reduction Clinical Trial](../sources/phonak-dnn-noise-reduction-clinical-trial-april-2026.md) — NCT07526428, moderate-to-severe DNN study
+- [Phonak AI Excellence Award](../sources/phonak-ai-excellence-award-march-2026.md) — Virto R Infinio and Infinio Ultra Sphere, March 2026
+- [Phonak USA Pickleball Partnership](../sources/phonak-usa-pickleball-partnership-spring-2026.md) — "Hear to Win" campaign, spring 2026 tournament season
+- [Phonak Pickleball AAA 2026 Deeper Coverage](../sources/phonak-pickleball-aaa-2026-deeper-coverage.md) — Sphere Sound Lab, executive quotes, ~20M player audience scale
+- [HearingTracker 2026 Premium Rankings](../sources/hearingtracker-2026-premium-rankings.md) — Phonak Infinio Sphere ranked #1

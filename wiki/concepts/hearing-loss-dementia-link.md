@@ -2,10 +2,10 @@
 title: Hearing Loss and Dementia: The Evidence
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, hearing-loss-dementia-lancet-2024.md]
-related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md]
-tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors]
+updated: 2026-05-07
+sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md]
+related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md]
+tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping]
 ---
 
 # Hearing Loss and Dementia: The Evidence
@@ -93,6 +93,25 @@ Multiple professional bodies have updated guidance in light of this evidence:
 - Mechanism is still debated — effortful listening hypothesis needs more direct evidence
 - Long-term (5-10 year) RCT data not yet available
 - Whether AI-enhanced hearing aids provide additional cognitive benefit over conventional aids is unknown
+
+## Hearing and Mobility — Apple Hearing Study (May 2026)
+
+Released 1 May 2026, the Apple Hearing Study (n=160,000 consented U.S. adults; collaboration with the University of Michigan School of Public Health) extends the hearing–healthspan evidence base beyond cognition into physical function:
+
+- **Mobility sub-analysis:** **n=57,183** — worse hearing correlated with **reduced walking speed**, with the strongest effect in adults 60+
+- Walking speed is among the most validated single predictors of healthspan: falls, hospitalization, cognitive decline, and all-cause mortality
+- Captured passively through phones and AirPods rather than annual clinic visits — first population-scale instrumented evidence of this kind
+
+**Why this matters:** Cognition (ACHIEVE, Lancet) and now mobility (Apple/U-M) both connect to hearing. The argument that hearing intervention is a healthspan intervention — not just an audibility intervention — gains a second hard biomarker. This strengthens the policy and clinical case for early intervention, and creates a stronger evidence backbone for hearing aids as a category in the wearable-health stack. See [[longitudinal-hearing-phenotyping]] and [[../sources/apple-hearing-study-results-may-2026]].
+
+## Hidden Hearing Loss as a Cognitive Risk Factor — Knipper (May 2026)
+
+In a 1 May 2026 public statement, Tübingen researcher **Prof. Dr. Marlies Knipper** emphasized that standard audiometric tests overlook the **suprathreshold and high-frequency range where cognitive risks first become apparent**. Her position:
+- **Hidden hearing loss** — auditory nerve / synaptopathy damage that doesn't register on a routine pure-tone audiogram — is mechanistically tied to cognitive load and decline.
+- The pure-tone audiogram is therefore an **under-spec'd outcome measure** for hearing-cognition research.
+- This is consistent with the Apple Hearing Study finding that 16% of "clinically normal" listeners self-rate fair/poor hearing — likely a population-scale signature of hidden hearing loss.
+
+**Implication for hearing AI:** Speech-in-noise testing, extended-high-frequency audiometry, and self-reported hearing should be additional outcome measures in hearing-aid validation and ML training pipelines — not optional. See [Knipper source](../sources/knipper-hidden-hearing-loss-dementia-may-2026.md) and [[subjective-objective-hearing-gap]].
 
 ## Recent Academic Updates (2024–2025)
 

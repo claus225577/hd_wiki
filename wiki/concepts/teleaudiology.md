@@ -2,9 +2,9 @@
 title: Teleaudiology and Remote Hearing Care
 type: concept
 created: 2026-04-15
-updated: 2026-04-21
-sources: [audiologist-shortage-asha-sciencedirect-2025.md, noah-es-5000-subscribers-april-2026.md]
-related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, precision-drug-delivery-inner-ear.md]
+updated: 2026-05-08
+sources: [audiologist-shortage-asha-sciencedirect-2025.md, noah-es-5000-subscribers-april-2026.md, remote-ci-programming-real-life-frontiers-2026.md]
+related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, precision-drug-delivery-inner-ear.md, cochlear-implant-ai.md, ../entities/neurotone-ai.md]
 tags: [telehealth, remote-care, audiology, self-fitting, cloud, signia, smartphone, access, workforce-shortage]
 ---
 
@@ -46,6 +46,17 @@ This equivalence finding was important for regulatory and reimbursement acceptan
 - Audiology was slower to adopt than general medicine but followed the trend
 - Regulatory flexibility (CMS temporary waivers) provided the reimbursement environment for rapid adoption
 - Many practices that adopted teleaudiology during COVID have maintained it permanently
+
+### CI Remote Programming in Real-Life Environments (Snoeck, Brendel, Wasmann — Apr 22, 2026)
+A Frontiers in Audiology and Otology study (n = 12 post-lingual CI users, mean age 62) examined remote CI programming in **participants' actual listening environments** (commute, office, restaurant) rather than the clinic. Findings:
+- All 12 would recommend remote fitting; 6/12 high satisfaction.
+- 37 patient-defined COSI goals: **10 "much better," 8 "better," 4 "a little better," 12 no improvement** — every participant achieved improvement on ≥1 goal.
+- Best-aided speech-in-quiet stable (≤4 pp at group level) — no safety degradation.
+- Pain points: technical issues (7/12), reduced non-verbal cues (6/12), lip-sync/connectivity instability.
+- The bottleneck has shifted from audiology workflow to **UX and connectivity infrastructure**, plus reimbursement.
+- Strategic reframe: instead of selling remote care as clinic-equivalent, sell it as **ecological-validity care** — the only setting where the patient's actual problem environment can be reproduced.
+- **Data-science implication**: every in-situ remote session produces a labeled triple of (programming change × in-situ acoustic context × COSI rating) — a context-aware mapping training set you cannot build in a sound booth.
+See [Snoeck, Brendel, Wasmann (Frontiers in Audiology and Otology, April 22 2026)](../sources/remote-ci-programming-real-life-frontiers-2026.md).
 
 ## Remote Fitting Models
 

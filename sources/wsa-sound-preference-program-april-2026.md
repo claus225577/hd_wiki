@@ -1,6 +1,7 @@
 ---
 title: "WS Audiology Sound Preference Program and Tool"
 url: https://hearingreview.com/hearing-loss/patient-care/counseling-education/how-recognizing-sound-preference-reframes-the-hearing-care-conversation
+also_covered: https://hearinghealthmatters.org/hearing-news-watch/2026/sound-preference-personalized-care/
 date: 2026-04-20
 type: news
 tags: [ws-audiology, personalization, sound-preference, fitting, signia, widex, data-collection]
@@ -13,6 +14,10 @@ tags: [ws-audiology, personalization, sound-preference, fitting, signia, widex, 
 - Research shows **~40% of users** have strong, consistent preferences for either "natural sound" or "enhanced sound"
 - The tool uses **randomized audio comparisons** to identify preferences
 - Does not require patients to describe what they hear in words — overcomes the vocabulary barrier in hearing care
+
+## Global Rollout
+- **Global rollout starting April 20, 2026** — research-backed initiative helping HCPs understand how individual sound preferences influence hearing aid adoption and satisfaction
+- Framed as a tool for hearing care professionals (HCPs) to improve patient outcomes, not just a fitting aid
 
 ## How It Works
 - Patients listen to randomized audio comparisons

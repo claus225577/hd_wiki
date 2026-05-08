@@ -2,9 +2,9 @@
 title: Audiologist Workforce Shortage
 type: concept
 created: 2026-04-19
-updated: 2026-04-19
-sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md]
-related: [teleaudiology.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, automated-audiometry.md, ../syntheses/ai-understanding-gap-hearing-industry.md, precision-drug-delivery-inner-ear.md]
+updated: 2026-05-07
+sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md]
+related: [teleaudiology.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, automated-audiometry.md, ../syntheses/ai-understanding-gap-hearing-industry.md, precision-drug-delivery-inner-ear.md, ../entities/who-hearing-program.md, ../syntheses/cochlear-implant-access-economics.md, ../entities/aci-alliance-ci2026.md]
 tags: [workforce, audiology, shortage, access, rural-health, demographics, telehealth, policy]
 ---
 
@@ -95,6 +95,7 @@ The shortage is not US-specific:
 - [[automated-audiometry]] — AI-powered hearing tests without audiologist presence
 - [[ai-understanding-gap-hearing-industry]] — Audiologists as translators between AI claims and patient understanding
 - [[precision-drug-delivery-inner-ear]] — Innovation that may eventually reduce need for repeat interventions
+- [[who-hearing-program]] — WHO data on global shortage (1 audiologist per million in parts of sub-Saharan Africa); advocacy for scaling hearing care
 
 ## Sources
 - [Audiologist Workforce Shortage — ASHA + ScienceDirect](../sources/audiologist-shortage-asha-sciencedirect-2025.md)

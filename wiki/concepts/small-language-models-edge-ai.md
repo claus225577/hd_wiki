@@ -2,10 +2,10 @@
 title: Small Language Models for Edge AI
 type: concept
 created: 2026-04-15
-updated: 2026-04-22
-sources: [small-language-models-edge-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, open-source-speech-ai-edge-native-april-2026.md]
-related: [on-device-ml-hearing-aids.md, large-sensor-models.md, model-compression.md, ../entities/google-research.md, mixture-of-experts.md, state-space-models.md]
-tags: [slm, edge-ai, tinyml, on-device, efficiency, mixture-of-experts, open-source, speech-models]
+updated: 2026-05-07
+sources: [small-language-models-edge-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, open-source-speech-ai-edge-native-april-2026.md, google-gemma-4-open-models-april-2026.md, liquid-ai-lfm25-audio-2026.md]
+related: [on-device-ml-hearing-aids.md, large-sensor-models.md, model-compression.md, ../entities/google-research.md, mixture-of-experts.md, state-space-models.md, tinyml-edge-ai.md, mamba-architecture.md]
+tags: [slm, edge-ai, tinyml, on-device, efficiency, mixture-of-experts, open-source, speech-models, multimodal]
 ---
 
 # Small Language Models for Edge AI
@@ -25,6 +25,7 @@ Small Language Models (SLMs) are compact, task-specific neural networks designed
 ## Notable Small Models (2026)
 - **SmolLM2** (135M params) — Hugging Face, strong performance at fraction of compute
 - **Gemma 3** (270M params) — Google's efficient small model family
+- **Gemma 4** (April 2026) — Full family: E2B (2B), E4B (4B), 26B MoE, 31B Dense. Apache 2.0. Native vision and audio processing, 140+ languages, up to 256K context. Runs on phones, Raspberry Pi, NVIDIA Jetson. 31B outperforms models 20x its size. E2B/E4B are strong teacher/distillation candidates for hearing AI. Gemini Nano 4 (built on Gemma 4) achieves 4x speed and 60% battery reduction on Android.
 - **Phi-3 Mini** (3.8B) — Microsoft, too large for hearing aids but relevant for mobile audiology apps
 - **Qwen3.6-35B-A3B** (35B total / 3B active, April 2026) — Alibaba; mixture-of-experts architecture, ~21GB quantized, runs on MacBook Pro M5 via LM Studio. Competes with frontier models (per Simon Willison: "Qwen beats Opus"). See [[mixture-of-experts]] for detailed MoE concept analysis and hearing aid implications
 - **Custom DSP nets** — Manufacturer-specific models, often < 1M parameters, running on dedicated audio DSPs
@@ -52,6 +53,7 @@ The open-source ecosystem has reached a critical mass of production-quality **sp
 | **Qwen3-ASR** | 0.6B / 1.7B | 52 | Timestamp prediction, multilingual | Open |
 | **Qwen3-TTS** | — | — | Zero-shot voice cloning (3s reference), 97ms TTFA | Open |
 | **Distil-Whisper** | — | — | 6.3x faster than Whisper Large V3 | Open |
+| **Liquid AI LFM2.5-Audio** | 1.5B | — | **Native audio in/out**, ~8x faster than predecessor, fully on-device | Vendor |
 
 **Why this matters for hearing AI:**
 - **Distillation teachers:** These models are 0.6B-3B params — vastly smaller than LLMs but still ~1000x larger than hearing aid models. They serve as high-quality teacher models for knowledge distillation into hearing-aid-scale (<1M param) student models.
@@ -72,6 +74,9 @@ The ternary quantization trajectory is particularly notable: PrismML's 1.7B mode
 - [[google-research]] — Gemma models and TurboQuant compression research
 - [[mixture-of-experts]] — MoE architecture enabling large model capacity at small inference cost
 - [[state-space-models]] — SSMs as alternative architecture for efficient edge sequence modeling
+- [[tinyml-edge-ai]] — Ultra-constrained ML inference on microcontrollers (256KB-class), keyword spotting validated at 97%
+- [[mamba-architecture]] — Selective SSM achieving linear-complexity speech enhancement for CI
 
 ## Sources
 - [Open-Source Speech AI Edge-Native (April 2026)](../../sources/open-source-speech-ai-edge-native-april-2026.md) — Voxtral, Qwen3-ASR/TTS, Distil-Whisper landscape
+- [Liquid AI LFM2.5-Audio (2026)](../../sources/liquid-ai-lfm25-audio-2026.md) — 1.5B native audio LLM, on-device, ~8x speedup; relevant for phone-tethered hearing-aid features

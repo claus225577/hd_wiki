@@ -2,10 +2,10 @@
 title: Mixture of Experts (MoE)
 type: concept
 created: 2026-04-20
-updated: 2026-04-21
-sources: [qwen3-6-35b-a3b-open-source-april-2026.md]
-related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, model-compression.md, dnn-architectures-hearing-aids.md, hearing-aid-chip-architectures.md]
-tags: [mixture-of-experts, moe, sparse-models, edge-ai, architecture, efficiency]
+updated: 2026-04-25
+sources: [qwen3-6-35b-a3b-open-source-april-2026.md, google-gemma-4-open-models-april-2026.md]
+related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, model-compression.md, dnn-architectures-hearing-aids.md, hearing-aid-chip-architectures.md, ../entities/google-research.md]
+tags: [mixture-of-experts, moe, sparse-models, edge-ai, architecture, efficiency, multimodal]
 ---
 
 # Mixture of Experts (MoE)
@@ -62,6 +62,8 @@ The gating network maps to the existing scene classifier — instead of switchin
 | Wearable MoE | ~10M total / 1M active | Hearing aid chip | Research stage |
 | Current HA DNNs | <1M total / <1M active | Hearing aid chip | Deployed |
 
+Google Gemma 4 (April 2026) adds another data point: the 26B MoE variant provides multimodal (vision + audio) processing with sparse inference. Apache 2.0 licensed. The E2B/E4B dense variants (2B/4B) run on Raspberry Pi and NVIDIA Jetson, showing the edge deployment trajectory continuing downward.
+
 The compression trajectory (175B GPT-3 in 2020 to 3B active MoE in 2026) suggests hearing-aid-scale MoE models are plausible within the decade.
 
 ## Relationship to Other Compression Techniques
@@ -89,3 +91,4 @@ MoE is complementary to, not a replacement for, other model compression approach
 
 ## Sources
 - [Qwen3.6-35B-A3B Open-Source Release](../../sources/qwen3-6-35b-a3b-open-source-april-2026.md) — Key MoE example demonstrating frontier performance at consumer hardware scale
+- [Google Gemma 4](../../sources/google-gemma-4-open-models-april-2026.md) — 26B MoE variant with native audio; Apache 2.0; edge deployment validated

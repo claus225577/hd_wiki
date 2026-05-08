@@ -2,9 +2,9 @@
 title: Hearing Aid Chip Architectures
 type: concept
 created: 2026-04-15
-updated: 2026-04-22
-sources: [hardware-software-codesign-edge-ai-2026.md, starkey-omega-ai-launch-2025.md, phonak-infinio-sphere-2024.md, resound-vivia-launch-2025.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md]
-related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md]
+updated: 2026-04-25
+sources: [hardware-software-codesign-edge-ai-2026.md, starkey-omega-ai-launch-2025.md, phonak-infinio-sphere-2024.md, resound-vivia-launch-2025.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, completely-implantable-cochlear-implants-april-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md]
+related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, ../entities/envoy-medical.md, cochlear-implant-ai.md, active-noise-cancellation.md]
 tags: [chips, npu, edge-ai, hardware, dual-chip, integrated, power-efficiency, compute-in-memory, rram]
 ---
 
@@ -140,6 +140,22 @@ University of Michigan researchers demonstrated the **first mapping of state spa
 
 CIM does not replace integrated NPU or dual-chip for current products, but represents the trajectory for next-generation hearing aid silicon where memory bandwidth is the primary bottleneck.
 
+## Consumer Chip Benchmark: Qualcomm S5/S3 Gen 3 (April 2026)
+
+Qualcomm's S5 and S3 Gen 3 Sound Platforms, shipping in premium TWS earbuds, demonstrate **transformer-based noise cancellation at sub-3ms latency** — the first commercial deployment of transformer architecture for real-time ANC. This is significant for hearing aid chip strategy:
+
+- **Sub-3ms transformer inference** in a battery-powered earbud challenges the assumption that transformers are too compute-heavy for real-time audio on constrained devices
+- Qualcomm's consumer TWS platform powers many major earbud brands — sets performance expectations across the industry
+- **Technology transfer:** Compression techniques used to fit transformers on TWS platforms are directly applicable to hearing aid DNN systems
+- Consumer audio chips are outpacing hearing aid-specific silicon in some latency dimensions, creating competitive pressure
+- See [[active-noise-cancellation]] for more on transformer-based ANC
+
+| Device | Reported Processing | Latency |
+|--------|-------------------|---------|
+| ReSound Vivia (dual-chip) | 4.9T ops/day | Not disclosed |
+| DEEPSONIC research chip | 7.7B ops/sec | Not disclosed |
+| Qualcomm S5 Gen 3 (consumer TWS) | Not disclosed | Sub-3ms (transformer ANC) |
+
 ## Future Directions
 
 - **Analog neural networks:** Charge-domain computation for sub-milliwatt inference
@@ -163,3 +179,4 @@ CIM does not replace integrated NPU or dual-chip for current products, but repre
 - [Wireless Hearables Programmable Speech AI Accelerators](../../sources/wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md) — Programmable co-designed silicon
 - [Aizip Tiny AI for Hearing Devices](../../sources/aizip-tiny-ai-hearing-devices-2026.md) — Software-only AI on standard hardware
 - [Michigan CIM RRAM + SSM (Nature Communications 2026)](../../sources/michigan-compute-in-memory-rram-ssm-nature-2026.md) — First SSM-on-CIM mapping, RRAM crossbar arrays
+- [Qualcomm S5/S3 Gen 3 Sound Platforms](../../sources/qualcomm-s5-s3-gen3-sound-platforms-2026.md) — Transformer-based ANC at sub-3ms in consumer TWS

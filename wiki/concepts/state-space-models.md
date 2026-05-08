@@ -2,9 +2,9 @@
 title: State Space Models (SSMs) for Hearing AI
 type: concept
 created: 2026-04-22
-updated: 2026-04-22
-sources: [michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md]
-related: [dnn-architectures-hearing-aids.md, compute-in-memory.md, on-device-ml-hearing-aids.md, hearing-aid-chip-architectures.md, speech-enhancement-neural-networks.md, small-language-models-edge-ai.md]
+updated: 2026-04-25
+sources: [michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, mamba-ssm-audio-traction-2026.md]
+related: [dnn-architectures-hearing-aids.md, compute-in-memory.md, on-device-ml-hearing-aids.md, hearing-aid-chip-architectures.md, speech-enhancement-neural-networks.md, small-language-models-edge-ai.md, mamba-architecture.md, cochlear-implant-ai.md]
 tags: [state-space-models, ssm, mamba, s4, edge-ai, streaming-audio, hearing-aids, transformer-alternative]
 ---
 
@@ -93,6 +93,20 @@ The TSP1 at 30mW is still ~6-30x above hearing aid total power budgets (1-5mW), 
 
 SSMs are not yet ready to replace CRNs in production hearing aids, but they offer a compelling future path — especially when paired with CIM hardware that can implement the linear recurrence in analog domain.
 
+## Mamba for CI Speech Enhancement (April 2026)
+
+Chiang & Hansen (arXiv:2604.12246) demonstrated **TokenSE**, the first Mamba-based speech enhancement for cochlear implants:
+- Discrete token representation + Mamba backbone for CI-optimized enhancement
+- **Linear O(n) complexity** is critical for CI processor compute budgets (even tighter than hearing aids)
+- **Subjective CI user testing** confirmed intelligibility gains — strongest validation for SSM-based audio AI to date
+- See [[mamba-architecture]] for detailed Mamba architectural analysis
+
+This complements the Michigan CIM+SSM work: while Michigan showed SSMs can run on analog hardware, TokenSE shows SSMs (Mamba specifically) can achieve competitive speech enhancement quality with CI users.
+
+## Mamba Adoption Accelerating (April 2026)
+
+Mamba (selective SSM) adoption is accelerating across audio/speech research as of April 2026, with multiple new implementations appearing in speech separation, enhancement, and generation tasks. The linear scaling advantage over transformers is proving decisive for streaming audio applications. See [[mamba-architecture]] for detailed traction analysis.
+
 ## Open Questions
 
 - **Accuracy on hearing-specific benchmarks:** SSMs have not yet been extensively evaluated on hearing aid speech enhancement benchmarks (STOI, SI-SNR on hearing aid noise conditions)
@@ -111,3 +125,4 @@ SSMs are not yet ready to replace CRNs in production hearing aids, but they offe
 ## Sources
 - [Michigan CIM RRAM + SSM (Nature Communications 2026)](../../sources/michigan-compute-in-memory-rram-ssm-nature-2026.md) — First SSM-on-CIM mapping
 - [Applied Brain Research SSM Edge Audio](../../sources/applied-brain-research-ssm-edge-audio-2026.md) — Production SSMs for streaming audio, TSP1 hardware
+- [Mamba SSM Audio Traction (April 2026)](../../sources/mamba-ssm-audio-traction-2026.md) — Broader adoption evidence

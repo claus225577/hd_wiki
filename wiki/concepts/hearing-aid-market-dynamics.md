@@ -2,9 +2,9 @@
 title: Hearing Aid Market Dynamics
 type: concept
 created: 2026-04-17
-updated: 2026-04-22
-sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md]
-related: [otc-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/apple-hearing-features.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../syntheses/vertical-integration-trend.md, auracast-bluetooth-le-audio.md, audiologist-workforce-shortage.md, teleaudiology.md, ../entities/himsa.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md]
+updated: 2026-04-25
+sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedient-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, aaa-2026-conference-april.md, neurotone-ai-1000-clinics-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md]
+related: [otc-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/apple-hearing-features.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../syntheses/vertical-integration-trend.md, auracast-bluetooth-le-audio.md, audiologist-workforce-shortage.md, teleaudiology.md, ../entities/himsa.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md, cochlear-implant-ai.md, ../entities/envoy-medical.md, ../entities/neurotone-ai.md, ../entities/aaa-conference.md, eu-ai-act-medical-devices.md]
 tags: [market, forecast, growth, industry, pricing, demographics, workforce, shortage, sony-exit, anc, hearables-convergence]
 ---
 
@@ -57,7 +57,16 @@ Apple's April 2026 CEO transition (John Ternus, who led AirPods Pro hardware and
 2. **Consumer electronics entry** — Apple AirPods Pro 2 at $249 captures mild-loss segment at fraction of traditional ASP
 3. **Ultra-affordable entrants** — Ceretone at £130, others at sub-$200, drive further ASP erosion
 4. **Channel disruption** — Costco, DTC brands, and consumer electronics bypass traditional audiology distribution
-5. **Premium OTC failure** — Sony/WSA OTC hearing aids discontinued (April 2026); $999-$1,299 pricing could not compete, validating that premium OTC is not a viable segment
+5. **Premium OTC failure** — Sony/WSA OTC hearing aids discontinued (April 2026) after 3.5 years; despite #1 HearAdvisor ranking, $700-$1,000 pricing could not compete, validating that premium OTC is not a viable segment
+
+## Emerging Product Categories
+
+### Fully Implantable Cochlear Implants (April 2026)
+Three companies developing fully implantable CIs with no external processor — a new product category approaching market:
+- **Envoy Medical (Acclaim):** Piezoelectric incus sensor, chest battery (10-15 yr), no magnet; FDA approval anticipated late 2027/early 2028
+- **Cochlear Ltd.:** 21 years R&D, subcutaneous mic behind ear
+- **MED-EL (TICI):** Subcutaneous mic, fine structure strategies
+If approved, fully implantable CIs would create a premium product tier above current CI systems, with significant edge AI implications for under-skin processing. See [[cochlear-implant-ai]] and [[envoy-medical]].
 
 ## Consumer-Audio Partnerships (April 2026)
 
@@ -73,6 +82,10 @@ The market is consolidating around three vertically integrated "super-competitor
 3. **Amplifon + GN** (ReSound + Amplifon retail)
 
 With WS Audiology and Starkey as non-integrated players under strategic pressure.
+
+## Gene Therapy: New Treatment Modality (April 2026)
+
+The FDA approval of Otarmeni (Regeneron, April 23, 2026) — the first gene therapy for genetic hearing loss — introduces a new treatment axis. Near-term market impact is limited (OTOF mutations account for ~2-8% of prelingual severe-to-profound cases), but the longer-term pipeline (~200 deafness genes) could gradually shift some CI candidates toward curative therapy. Regeneron is providing Otarmeni free in the US, which sets an unusual pricing precedent. The 61-day FDA approval via National Priority Voucher signals strong regulatory support for hearing therapeutics. Harvard/Fudan Nature data (90% improvement, 50% normal hearing at 2.5 years) strengthens the clinical case. See [[gene-therapy-hearing]].
 
 ## Revenue vs. Units
 
@@ -90,6 +103,8 @@ A critical distinction: the premium/prescription segment will retain dominant re
 - [[sonova-ag]], [[demant-oticon]] — Major market participants
 - [[audiologist-workforce-shortage]] — Detailed analysis of the workforce constraint
 - [[teleaudiology]] — Technology response to workforce/access gaps
+- [[gene-therapy-hearing]] — Otarmeni (April 2026) introduces curative treatment for genetic hearing loss; potential long-term impact on CI volume for OTOF mutations
+- [[regeneron]] — First pharma company to enter hearing loss treatment with approved gene therapy
 
 ## Sources
 
@@ -98,3 +113,4 @@ A critical distinction: the premium/prescription segment will retain dominant re
 - [Sony OTC Hearing Aids Discontinued](../sources/sony-otc-hearing-aids-discontinued-april-2026.md) — Premium OTC pricing failure
 - [Orka O1 Pro Bose ANC](../sources/orka-o1-pro-bose-anc-awe-2026.md) — Consumer-audio partnership model
 - [Singh et al. AI-Enabled Hearables](../sources/frontiers-ai-enabled-hearables-industry-2026.md) — 18 experts on convergence, BCI by 2050, governance gaps
+- [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — First gene therapy for hearing loss; new treatment modality entering market

@@ -2,10 +2,10 @@
 title: AI Hearing Aid Platform Comparison 2026
 type: comparison
 created: 2026-04-15
-updated: 2026-04-21
-sources: [oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, starkey-cto-bhowmik-aimbe-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, starkey-omega-ai-big-ai-awards-2026.md]
-related: [../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/gn-hearing-resound.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
-tags: [comparison, platform, 2026, phonak, resound, oticon, signia, starkey, apple, verit, clinical-trial]
+updated: 2026-04-25
+sources: [oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, starkey-cto-bhowmik-aimbe-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, starkey-omega-ai-big-ai-awards-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, oticon-play-si-hearingreview-april-2026.md, phonak-ai-excellence-award-march-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, hearingtracker-2026-premium-rankings.md, eu-ai-act-medical-device-compliance-2026.md]
+related: [../syntheses/hearing-aid-ai-stack-2026.md, ../comparisons/on-device-vs-cloud-ml.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/gn-hearing-resound.md, ../syntheses/ai-understanding-gap-hearing-industry.md, ../entities/ws-audiology-signia.md, dnn-vs-natural-processing.md, ../concepts/eu-ai-act-medical-devices.md]
+tags: [comparison, platform, 2026, phonak, resound, oticon, signia, starkey, apple, verit, clinical-trial, widex, natural-processing, pediatric]
 ---
 
 # AI Hearing Aid Platform Comparison 2026
@@ -95,14 +95,28 @@ Apple's strategy is to define a new category (clinical-grade consumer hearing de
 
 ## April 2026 Developments
 
+### Widex Allure — Natural Processing Outperforms DNN (Korhonen et al.)
+Korhonen et al. tested 29 adults across 5 premium hearing aids and found Widex Allure (no DNN, "natural processing") outperformed 4 DNN-based competitors by up to **8.5 dB SNR** for moderate hearing loss — word recognition 80% vs. 60-70%. Challenges the assumption that DNN is always superior. See [[dnn-vs-natural-processing]].
+
 ### Oticon Verit + Play SI
-Demant launched two new products with "second-generation AI" — successor to DNN 2.0. Both include Auracast and Google Fast Pair. The Play SI is notable as the first pediatric hearing aid with 4D sensors and Auracast. Full specs of the 2nd-gen AI platform are not yet published.
+Demant launched two new products with "second-generation AI" — successor to DNN 2.0. Both include Auracast and Google Fast Pair. The Play SI is notable as the first pediatric hearing aid with 4D sensors and Auracast. **Boys Town study** (independent clinical validation): **50% improved sentence recognition** in noise, **77% reduced listening difficulty** for teens.
 
 ### Phonak Clinical Trial (NCT07526428)
 Sonova registered an interventional clinical trial for DNN noise reduction in moderate-to-severe hearing loss — first of its kind targeting more severe loss with DNN technology. Signals a shift from marketing claims to clinical evidence building.
 
 ### Starkey CTO AIMBE Recognition
 Starkey's CTO Achin Bhowmik (ex-Intel VP) inducted into AIMBE — validates the health-tech positioning and AI innovation leadership in the hearing aid space.
+
+### HearingTracker 2026 Premium Rankings (April 2026)
+HearingTracker published 2026 premium rankings:
+1. **Phonak Infinio Sphere** — #1 (DEEPSONIC dual-chip compute advantage)
+2. **Starkey Genesis AI** — #2 (health-tech differentiation)
+3. **Oticon Intent** — #3 (4D sensor fusion + DNN 2.0, despite being Feb 2024 vintage)
+
+All three top picks are AI-powered — AI processing is now table stakes for premium ranking. Oticon's newer products (Verit, Zeal, both April 2026) may not yet be reflected.
+
+### EU AI Act Compliance (April 2026)
+EU AI Act Class IIa medical device provisions entering compliance period, affecting all manufacturers selling AI-powered hearing aids in the EU. Requirements include documentation of training data/models, risk assessment for AI-driven clinical decisions, transparency, and post-market monitoring. OTA DNN updates may require re-certification. See [[eu-ai-act-medical-devices]].
 
 ## What to Watch in 2026–2027
 
@@ -113,7 +127,11 @@ Starkey's CTO Achin Bhowmik (ex-Intel VP) inducted into AIMBE — validates the 
 - Will Apple expand AirPods hearing aid features to address moderate-severe loss?
 - Will any brand achieve genuine federated learning across its user base?
 - Will WSA's Sound Preference data create a measurable personalization advantage?
-- Will Auracast venue infrastructure reach critical mass?
+- Does Widex's natural processing advantage (Korhonen study) hold up in independent replication?
+- Will fully implantable CIs (Envoy Acclaim, FDA late 2027/2028) require on-device AI at sub-microwatt budgets?
+- Will Auracast venue infrastructure reach critical mass? (European airports, transit, NHS now piloting — 2026-2027)
+- How will EU AI Act compliance affect DNN model update velocity and competitive positioning?
+- Will consumer earbud health monitoring (Samsung HRV/stress, Apple PPG) erode Starkey's health-tech differentiation?
 
 ## Related Pages
 - [[hearing-aid-ai-stack-2026]] — Full stack context including silicon and connectivity layers

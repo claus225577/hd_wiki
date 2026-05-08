@@ -2,9 +2,9 @@
 title: The Hearing Aid AI Stack — 2026 Landscape
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-22
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, oticon-verit-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, google-turboquant-iclr-2026.md, airpods-pro-3-hearing-health-april-2026.md, auracast-uk-live-theaters-april-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, apple-ceo-transition-ternus-april-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wsa-sound-preference-program-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, starkey-omega-ai-big-ai-awards-2026.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, orka-o1-pro-bose-anc-awe-2026.md, dnn-noise-reduction-intelligibility-2026.md, adobe-speechmatics-on-device-stt-april-2026.md]
-related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/small-language-models-edge-ai.md, ../concepts/large-sensor-models.md, ../comparisons/ai-hearing-aid-platforms-2026.md]
+updated: 2026-04-26
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, oticon-verit-launch-april-2026.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, google-turboquant-iclr-2026.md, airpods-pro-3-hearing-health-april-2026.md, auracast-uk-live-theaters-april-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, apple-ceo-transition-ternus-april-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wsa-sound-preference-program-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, starkey-omega-ai-big-ai-awards-2026.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, orka-o1-pro-bose-anc-awe-2026.md, dnn-noise-reduction-intelligibility-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, oticon-play-si-hearingreview-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, edge-ai-audio-embedded-world-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, end-to-end-audiovisual-ci-sound-coding-arxiv-2026.md, neurotone-ai-1000-clinics-april-2026.md, aaa-2026-conference-april.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, anc-open-ear-smart-glasses-cmu-2026.md, phonak-ai-excellence-award-march-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, tinyml-speech-recognition-arduino-2025.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, google-gemma-4-open-models-april-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, ssl-pretraining-robust-ha-speech-enhancement-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, auracast-european-public-venue-rollout-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md, mamba-ssm-audio-traction-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md, lc3plus-codec-broader-implementation-2026.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md]
+related: [../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/small-language-models-edge-ai.md, ../concepts/large-sensor-models.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../entities/neurotone-ai.md, ../entities/aaa-conference.md, ../concepts/mamba-architecture.md, ../concepts/active-noise-cancellation.md, ../concepts/tinyml-edge-ai.md, ../concepts/gene-therapy-hearing.md, ../entities/regeneron.md, ../entities/google-research.md, ../concepts/eu-ai-act-medical-devices.md, ../concepts/auracast-bluetooth-le-audio.md, ../syntheses/hearing-ai-research-landscape-2025.md]
 tags: [landscape, ai-stack, architecture, 2026, silicon, auracast]
 ---
 
@@ -57,6 +57,15 @@ Orka O1 Pro (AWE 2026) introduces Bose QuietControl ANC alongside DNN speech enh
 ### Conv-TasNet Listener Group Evidence (Schulz et al. 2026)
 Schulz et al. validated that 1ms-latency Conv-TasNet provides **+5.7 dB to CI users** but slightly degrades normal-hearing. DNN noise reduction benefit is inversely correlated with baseline hearing ability — strongest justification yet for prioritizing DNN in severe-loss and CI devices.
 
+### DNN vs Natural Processing Challenge (Korhonen et al. 2026)
+Korhonen et al. tested 29 adults across 5 premium hearing aids and found **Widex Allure (no DNN) outperformed 4 DNN competitors** by up to 8.5 dB SNR for moderate hearing loss. Challenges the blanket assumption that DNN always outperforms classical DSP — implementation quality and training data coverage may matter more than architecture. See [[dnn-vs-natural-processing]].
+
+### Fully Implantable CIs — Ultimate Edge AI Challenge (April 2026)
+Three companies developing fully implantable cochlear implants: Envoy Medical (Acclaim, piezoelectric incus sensor, FDA late 2027/2028), Cochlear Ltd. (21 years R&D), MED-EL (TICI). Fully implantable CIs require sub-microwatt inference under skin — the extreme frontier of edge AI for hearing. See [[envoy-medical]].
+
+### Oticon Play SI — Pediatric AI Clinical Validation (April 2026)
+Boys Town study of Play SI found 50% improved sentence recognition and 77% reduced listening difficulty for teens — AI crossing the trust threshold into pediatric audiology with independent clinical validation.
+
 ## Layer 2: On-Device Models
 
 - **Noise reduction:** DNNs replacing traditional Wiener filters
@@ -91,6 +100,8 @@ Schulz et al. validated that 1ms-latency Conv-TasNet provides **+5.7 dB to CI us
 ## Layer 4: Connectivity & Data
 
 - **Bluetooth LE Audio / Auracast** — Emerging broadcast standard; key bridge between consumer and clinical devices. Auracast allows loop systems in public venues (theaters, airports) to broadcast directly to hearing aids and earbuds, reducing stigma and integration friction.
+  - **European public venue rollout accelerating (April 2026):** Bluetooth SIG reports airports, transit, and NHS outpatient clinics piloting Auracast in Europe for 2026-2027. NHS adoption validates Auracast as a public health standard.
+  - **LC3plus codec** seeing broader implementation — improved quality over LC3 for music streaming
   - Auracast is expected to appear in public infrastructure (public transit, cinemas) through 2026–2028
   - Both hearing aid manufacturers and consumer audio brands (Sony, Apple) adopting Auracast
   - **April 2026:** Oticon Verit and Play SI ship with Auracast; venue installation guides published; "Ready vs Enabled" consumer education push underway
@@ -101,7 +112,7 @@ Schulz et al. validated that 1ms-latency Conv-TasNet provides **+5.7 dB to CI us
 
 ## Layer 5: Ecosystem & Services
 
-- **Health monitoring** — Fall detection, heart rate, activity (Starkey leading)
+- **Health monitoring** — Fall detection, heart rate, activity (Starkey leading); Samsung Galaxy Buds adding HRV and stress tracking (April 2026) — consumer earbuds converging on hearing aid health features
 - **Translation** — Real-time speech translation (demo/experimental stage)
 - **Cognitive health** — Hearing-cognition link monitoring (emerging research, ACHIEVE study data)
 - **OTC self-fit** — Apple AirPods Pro 2 ($249, FDA-cleared OTC), Jabra Enhance, Bose SoundControl
@@ -127,6 +138,11 @@ Apple AirPods Pro 2 received FDA OTC hearing aid clearance in 2024. AirPods Pro 
 5. **Real-time translation** — Requires significant compute advances at hearing aid scale
 6. **Auracast infrastructure rollout** — Venue installation now beginning (April 2026); consumer education on Ready vs Enabled distinction needed
 7. **Clinical evidence for DNN efficacy** — Phonak clinical trial (NCT07526428) signals industry-wide push toward evidence-based DNN claims
+8. **Gene therapy for hearing loss** — FDA approved Otarmeni (Regeneron, April 2026), the first gene therapy for genetic hearing loss (OTOF mutations). Harvard/Fudan Nature data shows 90% improvement, 50% normal hearing at 2.5 years. Near-term impact limited to OTOF (~2-8% of prelingual cases), but ~200 deafness genes represent a long-term pipeline that could shift some CI candidates toward curative treatment. See [[gene-therapy-hearing]].
+10. **EU AI Act compliance** — Class IIa medical device provisions entering compliance period (2026), requiring documentation of AI training data, risk assessment, transparency, and post-market monitoring. First binding AI regulation for hearing aids — could slow OTA model update velocity but strengthens clinical evidence culture. See [[eu-ai-act-medical-devices]].
+11. **Target speaker extraction** — Hsu et al. (April 2026) achieved sub-5ms causal TSE using speaker embeddings — enabling "extract the right speaker" rather than "enhance all speech." Combined with AAD, could enable brain-steered personalized listening.
+12. **Consumer chip parity pressure** — Qualcomm S5/S3 Gen 3 shipping transformer-based ANC at sub-3ms in TWS earbuds. Consumer silicon is matching or exceeding hearing aid latency targets, increasing competitive pressure.
+9. **Open multimodal models at the edge** — Google Gemma 4 (April 2026) delivers native audio processing in 2B-31B parameter models, Apache 2.0, running on phones/Raspberry Pi. The 26B MoE variant and Gemini Nano 4 (4x speed, 60% battery reduction on Android) validate continued compression of multimodal capabilities toward hearing device scale. See [[small-language-models-edge-ai]].
 
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — Layer 2 deep dive

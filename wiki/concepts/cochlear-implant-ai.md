@@ -2,10 +2,10 @@
 title: AI in Cochlear Implants
 type: concept
 created: 2026-04-15
-updated: 2026-04-22
-sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md, dnn-noise-reduction-intelligibility-2026.md]
-related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, precision-drug-delivery-inner-ear.md]
-tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics]
+updated: 2026-04-26
+sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md, dnn-noise-reduction-intelligibility-2026.md, completely-implantable-cochlear-implants-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, end-to-end-audiovisual-ci-sound-coding-arxiv-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, cochlear-nucleus-nexa-smart-implant-2026.md]
+related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, precision-drug-delivery-inner-ear.md, ../entities/envoy-medical.md, hearing-aid-chip-architectures.md, compute-in-memory.md, state-space-models.md, mamba-architecture.md, gene-therapy-hearing.md, ../entities/regeneron.md, ../entities/cochlear-ltd.md, software-defined-medical-implants.md, longitudinal-hearing-phenotyping.md, ../entities/aci-alliance-ci2026.md, ../syntheses/cochlear-implant-access-economics.md]
+tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics, fully-implantable, gene-therapy]
 ---
 
 # AI in Cochlear Implants
@@ -60,11 +60,28 @@ Schulz et al. (Frontiers in Audiology and Otology, Jan 2026) tested Conv-TasNet 
 - **Key insight:** DNN benefit inversely correlates with baseline hearing deficit — CI users have the worst baseline and gain the most
 - **Product implication:** DNN noise reduction should be a priority feature for CI sound processors, where it delivers the highest ROI
 
-### End-to-End Audio-Visual Learning
-- Research into learning CI sound coding from audio-visual data (video + audio pairs)
-- Exploits the fact that lip movements and facial expressions carry speech information
-- CI users often rely heavily on visual cues; AI models trained on audiovisual data may produce stimulation patterns better aligned with what the brain expects
-- Still pre-clinical research stage
+### DAT-CFTNet: Attention-Based Dual-Path RNN for CI (ICASSP 2026)
+Mamun & Hansen (arXiv:2604.06744) propose an attention-based dual-path RNN specifically for CI speech enhancement:
+- **Outperforms CFTNet and DCCRN** — established baselines for real-time SE
+- **Eliminates musical artifacts** — a critical CI-specific problem where spectral processing remnants are highly disruptive through electrode stimulation
+- Validates dual-path RNN + attention as viable for CI-constrained enhancement
+
+### TokenSE: Mamba-Based Speech Enhancement for CI (April 2026)
+Chiang & Hansen (arXiv:2604.12246) — first selective state space model (Mamba) applied to CI speech enhancement:
+- **O(n) linear complexity** vs O(n^2) for Transformers — critical for CI processor compute budgets
+- Operates on **discrete speech tokens** for compression before SSM processing
+- **Subjective tests with actual CI users** confirm intelligibility gains
+- Demonstrates Mamba as viable for CI-specific enhancement; see [[mamba-architecture]]
+
+### End-to-End Audio-Visual CI Sound Coding (arXiv, April 2026)
+New end-to-end system (arXiv:2508.13576v1) combining audio and visual modalities for CI sound coding:
+- **Combines microphone audio with lip-reading video** to produce CI electrodograms directly
+- **End-to-end learning** — jointly optimizes audio processing, visual processing, and electrodogram generation
+- **Noise-robust:** visual signal provides independent information when audio is degraded — CI users' core challenge
+- Learns to weight audio vs. visual signals based on noise conditions (audio dominates in quiet; visual gains weight in noise)
+- **Practical deployment path:** Most likely first as a smartphone app processing audio-visual input and streaming optimized audio to the CI processor
+- Advances prior work (AVSE-ECS, 2025) with true end-to-end learning rather than separate A/V stages
+- This formalizes computationally what CI users already do naturally: rely on lip-reading as a compensatory strategy
 
 ## AI for Personalized Rehabilitation
 
@@ -87,8 +104,9 @@ ML-in-CI publications have grown substantially since 2018, tracking the broader 
 
 ## Key Manufacturers
 
-- **Cochlear Ltd. (Australia)** — Nucleus systems; largest CI manufacturer globally
-- **MED-EL (Austria)** — Extensive electrode array designs, strong in fine structure processing
+- **Cochlear Ltd. (Australia)** — Nucleus systems; largest CI manufacturer globally (~50% U.S. market share, 700,000+ devices implanted). Launched Nucleus Nexa (2025), the world's first cochlear implant with upgradeable firmware and on-implant memory — see [[../entities/cochlear-ltd]] and [[software-defined-medical-implants]]. Available to U.S. veterans through VA (Jan 2026); featured at AAA 2026. 21 years R&D on a separate fully implantable CI with subcutaneous mic.
+- **MED-EL (Austria)** — Extensive electrode array designs, strong in fine structure processing; developing TICI (Totally Implantable CI) with subcutaneous mic
+- **Envoy Medical (USA)** — Acclaim fully implantable CI; piezoelectric incus sensor, no magnet, chest battery (10-15 yr); FDA approval anticipated late 2027/early 2028. See [[envoy-medical]].
 - **Advanced Bionics (USA, Sonova subsidiary)** — HiRes sound coding, Naida processor; announced next-gen CI research collaboration (April 2026) — see [[advanced-bionics]]
 - **Oticon Medical (Demant subsidiary)** — Neuro 2 processor
 
@@ -96,6 +114,24 @@ ML-in-CI publications have grown substantially since 2018, tracking the broader 
 AB announced an equity investment + R&D collaboration with **Spiral Therapeutics** (precision drug delivery for inner ear) as part of Spiral's $27M Series B. The collaboration investigates drug delivery during cochlear implant surgery — a new therapeutic axis combining device + pharmacology. Potential applications include residual hearing preservation during electrode insertion, anti-inflammatory treatment, and neural survival enhancement. This is significant because it expands CI innovation beyond electronics into pharmacotherapy. See [[precision-drug-delivery-inner-ear]].
 
 Sonova's dual-track strategy now spans three domains: hearing aid AI (DEEPSONIC/Phonak), CI electronics (AB), and CI pharmacotherapy (Spiral partnership).
+
+## Fully Implantable Cochlear Implants (April 2026)
+
+Three companies are developing **completely implantable CIs** with no external processor — representing the ultimate edge AI challenge for hearing technology:
+
+| Company | Device | Sound Capture | Battery | Status |
+|---------|--------|---------------|---------|--------|
+| **Envoy Medical** | Acclaim | Piezoelectric at incus | Chest, 10-15 yr | Pivotal trials; FDA late 2027/early 2028 |
+| **Cochlear Ltd.** | Unnamed | Subcutaneous mic | Behind ear | 21 years R&D |
+| **MED-EL** | TICI | Subcutaneous mic | Not disclosed | In development |
+
+### AI Implications for Fully Implantable CIs
+- **Sub-microwatt inference budgets:** 10-15 year battery life with continuous operation requires power levels orders of magnitude below current hearing aid chips (1-5 mW)
+- **Novel input signals:** Envoy's piezoelectric ossicular vibration is fundamentally different from acoustic microphone input — ML preprocessing pipelines may not transfer directly
+- **No external update path:** Firmware updates require wireless over-skin programming or surgical intervention
+- **Thermal constraints:** All compute within biocompatible housing; tissue damage above ~2C rise
+- Technologies like [[compute-in-memory]] and [[state-space-models]] are particularly relevant — ultra-low-power inference could enable AI in fully implantable devices
+- See [[envoy-medical]] for Envoy Medical details
 
 ## Challenges and Open Questions
 
@@ -128,6 +164,14 @@ Novel system using audio-visual speech enhancement (lip reading + audio) as pre-
 - [[advanced-bionics]] — Sonova's CI subsidiary; Spiral Therapeutics collaboration
 - [[sonova-ag]] — Parent company of Advanced Bionics
 - [[precision-drug-delivery-inner-ear]] — Drug delivery during CI surgery; new therapeutic axis
+- [[gene-therapy-hearing]] — Gene therapy (Otarmeni, April 2026) may reduce CI candidacy for some OTOF-mutation patients
+- [[regeneron]] — Manufacturer of Otarmeni, first gene therapy for hearing loss
+- [[envoy-medical]] — Acclaim fully implantable CI; piezoelectric sensor, no external components
+- [[compute-in-memory]] — Ultra-low-power hardware relevant to fully implantable CI constraints
+- [[state-space-models]] — Efficient model architecture for power-constrained CI processors
+- [[../entities/cochlear-ltd]] — Largest CI manufacturer; Nucleus Nexa smart implant
+- [[software-defined-medical-implants]] — Concept formalized by the Nexa system; MLOps for in-vivo devices
+- [[longitudinal-hearing-phenotyping]] — Measurement substrate for tracking CI outcomes over years
 
 ## Sources
 - [DL Framework for CI with 3D Cochleae](../sources/deep-learning-framework-cochlear-implants-2025.md)
@@ -136,3 +180,9 @@ Novel system using audio-visual speech enhancement (lip reading + audio) as pre-
 - [Pediatric CI Language Prediction](../sources/pediatric-ci-language-prediction-transfer-learning-2025.md)
 - [AB Next-Gen CI Research Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md)
 - [Schulz et al. Conv-TasNet Listener Groups](../sources/dnn-noise-reduction-intelligibility-2026.md) — CI users gain +5.7 dB from DNN noise reduction, most benefit of any group
+- [Completely Implantable Cochlear Implants](../sources/completely-implantable-cochlear-implants-april-2026.md) — Three companies developing fully implantable CIs; Envoy Acclaim with piezoelectric sensor
+- [DAT-CFTNet CI Speech Enhancement](../sources/dat-cftnet-ci-speech-enhancement-icassp-2026.md) — Attention dual-path RNN, eliminates musical artifacts (ICASSP 2026)
+- [TokenSE Mamba CI Speech Enhancement](../sources/tokense-mamba-ci-speech-enhancement-2026.md) — First Mamba-based SE for CI with subjective validation
+- [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — First gene therapy for hearing loss; may reduce CI candidacy for OTOF mutations
+- [Harvard/Fudan OTOF Nature Study](../sources/harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md) — 90% improvement, 50% normal hearing at 2.5 years
+- [Cochlear Nucleus Nexa Smart Implant](../sources/cochlear-nucleus-nexa-smart-implant-2026.md) — World's first CI with upgradeable firmware and on-implant memory

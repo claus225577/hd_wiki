@@ -2,10 +2,10 @@
 title: WS Audiology / Signia
 type: entity
 created: 2026-04-15
-updated: 2026-04-22
-sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md]
-related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md]
-tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference]
+updated: 2026-04-23
+sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md]
+related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/dnn-vs-natural-processing.md, ../concepts/otc-hearing-aids.md, neurotone-ai.md, aaa-conference.md]
+tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing]
 ---
 
 # WS Audiology / Signia
@@ -51,7 +51,7 @@ Signia's flagship AI platform, expanded through 2025:
 - **Active Scanning** — Processes 15 million data points per hour for acoustic classification
 
 ### Sound Preference Program (April 2026)
-WSA launched a free **Sound Preference Program** and interactive **Sound Preference Tool** to quantify individual listening preferences:
+WSA launched a free **Sound Preference Program** and interactive **Sound Preference Tool** to quantify individual listening preferences. **Global rollout starting April 20, 2026** — showcased at AAA 2026 (San Antonio). Research-backed initiative helping HCPs understand how individual sound preferences influence hearing aid adoption and satisfaction.
 
 - Research shows **~40% of users** have strong, consistent preferences for either "natural sound" or "enhanced sound"
 - The tool uses **randomized audio comparisons** to identify preferences without requiring patients to describe what they hear
@@ -66,12 +66,16 @@ WSA launched a free **Sound Preference Program** and interactive **Sound Prefere
 - If integrated with **Signia Assistant** (cloud DNN), could enable preference-aware personalization at scale
 - Represents a step toward a [[closed-loop-data-flywheel]] for WSA — preference data from fittings feeds back into product development and automated personalization
 
+### Widex Natural Processing Evidence (Korhonen et al. 2026)
+Korhonen et al. (Hearing Review, April 2026) tested 29 adults across 5 premium hearing aids and found **Widex Allure (no DNN, "natural processing") outperformed 4 DNN-based competitors** by up to **8.5 dB SNR** for moderate hearing loss. Word recognition: 80% vs. 60-70%. The study validates Widex's temporal-cue-preserving approach and strengthens WSA's dual-brand rationale: Widex for users who prefer natural sound, Signia for those who prefer enhanced/DNN processing. See [[dnn-vs-natural-processing]].
+
 ### Sony OTC Partnership — Discontinued (April 2026)
-WSA partnered with Sony on the CRE series OTC hearing aids, leveraging Sony's consumer brand recognition with WSA's hearing technology. **Sales were discontinued in April 2026** due to:
-- Premium OTC pricing ($999-$1,299) could not compete with AirPods Pro ($200-$249, FDA-cleared) and ultra-affordable OTC options (Ceretone at $165)
-- Even Sony's strong consumer brand was insufficient to justify premium OTC pricing
-- WSA signals continued OTC interest but needs a fundamentally different approach
-- **Strategic implication:** WSA likely refocuses on Signia/Widex prescription AI features where margins are sustainable, rather than OTC brand licensing
+WSA partnered with Sony on the CRE series OTC hearing aids, leveraging Sony's consumer brand recognition with WSA's hearing technology. **Sales were discontinued in April 2026** after **3.5 years** of partnership:
+- **CRE-E10, CRE-C10, CRE-C20** all pulled from U.S. market
+- Premium OTC pricing ($700-$1,000 street / $999-$1,299 MSRP) could not compete with AirPods Pro ($200-$249) and ultra-affordable OTC (Ceretone at $165)
+- **Despite #1 HearAdvisor ranking** — product quality was not the problem; price was
+- WSA plans to remain in OTC under **different branding** (not Sony)
+- **Strategic implication:** Brand licensing insufficient for OTC; WSA likely needs fundamentally different pricing/approach
 
 ## Signia vs. Competitors on AI Co-Processing
 WSA claims 22% speech understanding advantage over "AI co-processor competitors" — this phrasing likely targets Phonak/Sonova (DEEPSONIC co-processor) and the framing is worth watching as independent verification becomes available. The metric is Signia's own published result.
@@ -86,8 +90,14 @@ WSA claims 22% speech understanding advantage over "AI co-processor competitors"
 - [[demant-oticon]] — Competitor
 - [[gn-hearing-resound]], [[starkey]] — Other major competitors
 - [[closed-loop-data-flywheel]] — Sound Preference Program as structured data collection for personalization feedback loop
+- [[dnn-vs-natural-processing]] — Widex natural processing outperforming DNN competitors validates dual-brand strategy
+- [[otc-hearing-aids]] — Sony OTC discontinuation; WSA OTC pivot
+- [[neurotone-ai]] — Brian Taylor (ex-Signia VP) moved to Neurotone AI
+- [[aaa-conference]] — Sound Preference Program showcased at AAA 2026
 
 ## Sources
 - Research notes on Signia IX platform, RealTime Conversation Enhancement, 2025 form factor expansion
 - [WS Audiology Sound Preference Program (April 2026)](../../sources/wsa-sound-preference-program-april-2026.md) — 40% users have consistent natural vs. enhanced preference; randomized audio comparison tool
 - [Sony OTC Hearing Aids Discontinued](../../sources/sony-otc-hearing-aids-discontinued-april-2026.md) — Premium OTC pricing failure, WSA ends Sony brand partnership
+- [Sony OTC Discontinued — HearingTracker](../../sources/sony-otc-discontinued-hearingtracker-april-2026.md) — 3.5 year partnership, #1 HearAdvisor ranking despite commercial failure
+- [Korhonen et al. — Natural vs DNN](../../sources/korhonen-natural-vs-dnn-hearing-aids-april-2026.md) — Widex Allure outperformed 4 DNN competitors by up to 8.5 dB SNR

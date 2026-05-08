@@ -2,10 +2,10 @@
 title: On-Device ML in Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-22
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, world-models-continual-learning-2026.md, interspeech-2026-audio-reasoning-challenge.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, adobe-speechmatics-on-device-stt-april-2026.md]
-related: [small-language-models-edge-ai.md, large-sensor-models.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, world-models-hearing-ai.md, audio-reasoning-chain-of-thought.md, model-compression.md, ../entities/google-research.md, model-context-protocol.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md]
-tags: [edge-ai, hearing-aids, inference, dsp, chips, deepsonic, neural-processing, quantization, compute-in-memory, state-space-models]
+updated: 2026-04-25
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, world-models-continual-learning-2026.md, interspeech-2026-audio-reasoning-challenge.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, edge-ai-audio-embedded-world-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, tinyml-speech-recognition-arduino-2025.md, anc-open-ear-smart-glasses-cmu-2026.md, meta-synthetic-data-distillation-april-2026.md, google-gemma-4-open-models-april-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md]
+related: [small-language-models-edge-ai.md, large-sensor-models.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, world-models-hearing-ai.md, audio-reasoning-chain-of-thought.md, model-compression.md, ../entities/google-research.md, model-context-protocol.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, ../entities/envoy-medical.md, tinyml-edge-ai.md, active-noise-cancellation.md, mamba-architecture.md, synthetic-data-for-hearing-ai.md]
+tags: [edge-ai, hearing-aids, inference, dsp, chips, deepsonic, neural-processing, quantization, compute-in-memory, state-space-models, hearable-intelligence, convergence, synthetic-data]
 ---
 
 # On-Device ML in Hearing Aids
@@ -72,6 +72,7 @@ On-device models are typically trained in the cloud on massive datasets:
 - **13.5M–22M sound scenes** reported by leading manufacturers
 - Synthetic mixing of speech + noise to cover rare acoustic conditions
 - Hearing aid microphone simulation to bridge lab-to-device gap
+- **Emerging: AI-generated synthetic data** — Meta's April 2026 synthetic data distillation pipeline uses large models to generate training data for smaller edge models via a recursive improvement loop. This approach could dramatically expand hearing aid training corpora beyond the current 22M ceiling while sidestepping privacy constraints of real patient audio. See [[synthetic-data-for-hearing-ai]].
 
 ## Model Compression for On-Device Deployment
 
@@ -98,11 +99,30 @@ Applied Brain Research validates SSMs in production with their TSP1 chip (under 
 ### On-Device Speech Recognition Approaching Cloud Parity (April 2026)
 Adobe and Speechmatics demonstrated on-device speech-to-text for Premiere Pro that processes 1hr audio in 55 seconds (~65x real-time), within **5% of cloud accuracy**, and **12-16% better than Whisper** across 55+ languages. While running on laptop/desktop hardware (not hearing aid chips), this validates the trajectory: on-device models are closing the gap with cloud. The compression and optimization techniques used here are directly relevant to pushing speech models toward hearing aid deployment.
 
+### Edge AI Audio Supply Chain Maturation (Embedded World 2026)
+Three notable vendors showcased hearable-specific edge AI at Embedded World 2026:
+- **Synaptics Astra SR80** — major semiconductor company (not a startup) entering hearable AI silicon
+- **AONDevices** — always-on customizable edge AI speech enhancement
+- **Aizip + PYOUR Audio** — tiny AI inference on standard microcontrollers without dedicated NPUs
+
+This supply chain maturation means smaller OEMs can now ship AI-capable hearing devices without designing custom silicon, potentially democratizing AI hearing features beyond the Big 6. See also [[hearing-aid-chip-architectures]].
+
+### Consumer-Medical Device Convergence (April 2026)
+HHTM analysis documents the shrinking gap between consumer earbuds and medical hearing aids:
+- Both categories now running on-device ML for noise reduction, scene classification, and adaptive processing
+- Silicon capabilities converging: consumer audio chips and hearing aid SoCs approaching similar compute/power ratios
+- Personalization algorithms represent the most defensible moat for hearing aid companies
+- Supports the "middle squeeze" thesis in hearing aid pricing
+
+### Fully Implantable CIs — Extreme Edge Constraint (April 2026)
+Three companies are developing fully implantable cochlear implants with no external processor. Envoy Medical's Acclaim uses a piezoelectric incus sensor and a chest-implanted battery lasting 10-15 years. This represents the extreme frontier of edge AI: sub-microwatt inference budgets, no external update path, strict thermal limits under tissue, and novel input signals (ossicular vibration rather than acoustic microphone). CIM + SSM architectures are the most likely path to enabling AI in these devices. See [[envoy-medical]] and [[cochlear-implant-ai]].
+
 ## Emerging Capabilities
 - **On-device learning / personalization:** Adapting to user preferences over time without cloud sync
 - **Auditory attention decoding (AAD):** Using EEG/biosignals to steer beamforming toward attended speaker (see [[auditory-attention-decoding]])
 - **Real-time translation:** Requires more compute than currently available on-chip
-- **Health monitoring:** Heart rate from in-ear sensors, stress detection — Apple AirPods Pro 3 now does PPG at 256 Hz
+- **Target speaker extraction:** Identifying and extracting a specific speaker via pre-enrolled speaker embeddings — Hsu et al. (April 2026) achieved sub-5ms causal TSE for hearing assistive devices. Could be combined with AAD for brain-steered speaker selection.
+- **Health monitoring:** Heart rate from in-ear sensors, stress detection — Apple AirPods Pro 3 now does PPG at 256 Hz. **Samsung Galaxy Buds** (April 2026) expanding to HRV and stress tracking via in-ear PPG — consumer earbuds converging on hearing aid health features.
 - **Fall detection:** Via accelerometer + ML (shipping in some Starkey models)
 
 ## Related Pages
@@ -111,13 +131,15 @@ Adobe and Speechmatics demonstrated on-device speech-to-text for Premiere Pro th
 - [[speech-enhancement-neural-networks]] — Primary ML workload on hearing aid chips
 - [[large-sensor-models]] — Future: pre-trained models distilled for on-device deployment
 - [[auditory-attention-decoding]] — Next frontier for on-device intelligence
-- [[cochlear-implant-ai]] — Parallel developments in cochlear implant processors
+- [[cochlear-implant-ai]] — Parallel developments in cochlear implant processors; fully implantable CIs as extreme edge AI challenge
+- [[envoy-medical]] — Acclaim fully implantable CI; sub-microwatt inference frontier
 - [[world-models-hearing-ai]] — World models and continual learning for acoustic personalization
 - [[audio-reasoning-chain-of-thought]] — Chain-of-thought reasoning for audio understanding
 - [[model-compression]] — Quantization, distillation, pruning techniques for on-device deployment
 - [[mixture-of-experts]] — MoE architecture for scene-specific expert routing on hearing aid chips
 - [[compute-in-memory]] — CIM hardware paradigm eliminating memory bandwidth bottleneck
 - [[state-space-models]] — SSMs as transformer/RNN alternative for streaming audio
+- [[synthetic-data-for-hearing-ai]] — Synthetic data distillation for expanding training corpora
 
 ## Sources
 - [Small Language Models Edge 2026](../../sources/small-language-models-edge-2026.md)
@@ -127,3 +149,6 @@ Adobe and Speechmatics demonstrated on-device speech-to-text for Premiere Pro th
 - [Michigan CIM RRAM + SSM (Nature Communications 2026)](../../sources/michigan-compute-in-memory-rram-ssm-nature-2026.md) — First SSM-on-CIM mapping for edge AI
 - [Applied Brain Research SSM Edge Audio](../../sources/applied-brain-research-ssm-edge-audio-2026.md) — Production SSMs for streaming audio on TSP1 hardware
 - [Adobe + Speechmatics On-Device STT](../../sources/adobe-speechmatics-on-device-stt-april-2026.md) — Cloud-parity on-device speech recognition, 65x real-time, 55+ languages
+- [Multi-Stage Low-Latency Enhancement for HAs](../../sources/multi-stage-low-latency-enhancement-ha-arxiv-2026.md) — Phase-aware multi-stage system within 5ms latency; head rotation integration
+- [Edge AI Audio — Embedded World 2026](../../sources/edge-ai-audio-embedded-world-2026.md) — Synaptics SR80, AONDevices, Aizip+PYOUR supply chain maturation
+- [HHTM: Convergence of AI, Audio, and Hearing Devices](../../sources/hhtm-convergence-ai-audio-hearing-devices-2026.md) — Consumer-medical device convergence analysis

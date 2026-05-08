@@ -2,9 +2,9 @@
 title: Hearing Aid Market Outlook
 type: synthesis
 created: 2026-04-21
-updated: 2026-04-22
-sources: [hearing-aids-market-14b-by-2030-april-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, aizip-tiny-ai-hearing-devices-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md]
-related: [../concepts/hearing-aid-market-dynamics.md, ../concepts/otc-hearing-aids.md, ../entities/demant-oticon.md, ../entities/starkey.md, ../entities/apple-hearing-features.md, ../entities/himsa.md, ../comparisons/otc-vs-prescription-hearing-aids.md, vertical-integration-trend.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md]
+updated: 2026-04-23
+sources: [hearing-aids-market-14b-by-2030-april-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, aizip-tiny-ai-hearing-devices-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md]
+related: [../concepts/hearing-aid-market-dynamics.md, ../concepts/otc-hearing-aids.md, ../entities/demant-oticon.md, ../entities/starkey.md, ../entities/apple-hearing-features.md, ../entities/himsa.md, ../comparisons/otc-vs-prescription-hearing-aids.md, vertical-integration-trend.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md, ../comparisons/dnn-vs-natural-processing.md, ../entities/envoy-medical.md]
 tags: [market, forecast, convergence, hearables, consumer-tech, outlook, sony-exit, anc, bci]
 ---
 
@@ -51,7 +51,9 @@ HIMSA Noah ES reached 5,400+ cloud subscribers (doubled YoY) — critical mass f
 - **Starkey:** Two BIG AI Excellence Awards for Omega AI — external validation of health-tech positioning
 - **Consumer tech:** Samsung real-time Audio Eraser raises the bar for what consumers expect from AI audio processing
 - **Orka + Bose:** World's first ANC RIC hearing aid (O1 Pro) — consumer audio partnership model may be more viable than brand licensing (Sony/WSA approach). See [[orka-bose-partnership]].
-- **WSA/Sony exit:** Sony-branded OTC hearing aids discontinued — premium OTC pricing ($999-$1,299) failed against AirPods Pro ($200) and budget OTC. Validates the "middle squeeze."
+- **WSA/Sony exit:** Sony-branded OTC hearing aids discontinued after 3.5 years — despite #1 HearAdvisor ranking, $700-$1,000 pricing failed against AirPods Pro ($200) and budget OTC. WSA plans OTC under different branding. Validates the "middle squeeze."
+- **Widex natural processing advantage:** Korhonen et al. found Widex Allure (no DNN) outperformed 4 DNN competitors by up to 8.5 dB SNR — challenges the narrative that AI/DNN is universally superior. See [[dnn-vs-natural-processing]].
+- **Fully implantable CIs approaching:** Envoy Medical (Acclaim) anticipates FDA approval late 2027/2028 — a new product category requiring extreme edge AI innovation. See [[envoy-medical]].
 
 ## Investment Implications
 

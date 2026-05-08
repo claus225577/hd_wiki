@@ -2,10 +2,10 @@
 title: The AI Understanding Gap in the Hearing Industry
 type: synthesis
 created: 2026-04-17
-updated: 2026-04-21
-sources: [karpathy-ai-psychosis-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, karpathy-claude-md-template-viral-april-2026.md, karpathy-idea-files-april-2026.md, mcp-dev-summit-97m-installs-april-2026.md, kimi-k26-agentic-model-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md]
-related: [../concepts/otc-hearing-aids.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/auracast-bluetooth-le-audio.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../concepts/model-context-protocol.md, ../concepts/audiologist-workforce-shortage.md]
-tags: [ai-psychosis, understanding-gap, marketing, consumer-education, adoption]
+updated: 2026-05-06
+sources: [karpathy-ai-psychosis-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, karpathy-claude-md-template-viral-april-2026.md, karpathy-idea-files-april-2026.md, mcp-dev-summit-97m-installs-april-2026.md, kimi-k26-agentic-model-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, karpathy-sequoia-ascent-2026.md]
+related: [../concepts/otc-hearing-aids.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/auracast-bluetooth-le-audio.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../concepts/model-context-protocol.md, ../concepts/audiologist-workforce-shortage.md, ../concepts/agentic-engineering-hearing-rd.md]
+tags: [ai-psychosis, understanding-gap, marketing, consumer-education, adoption, software-3, agentic-engineering]
 ---
 
 # The AI Understanding Gap in the Hearing Industry
@@ -98,6 +98,18 @@ Moonshot AI open-sourced Kimi K2.6 with 300 sub-agent swarm coordination and 4,0
 - Complements MCP infrastructure: Kimi-class agents + MCP tool access + hearing care databases = autonomous audiology assistants
 - The understanding gap extends not just to patients but to the hearing industry itself — most hearing aid companies are not yet thinking in terms of agentic swarms
 
+## The R&D-Side Counterpart: "Outsource Thinking, Not Understanding"
+
+Karpathy's Sequoia AI Ascent 2026 fireside (recap published end of April 2026) reframes the same gap on the engineering side:
+
+> "You can outsource your thinking, but you can't outsource your understanding."
+
+In hearing R&D this maps directly:
+- Agents can run the parameter sweeps, draft the regulatory submissions, and write the literature reviews — but they cannot tell you which audiogram is the wrong one to validate on, or that a 0.5 dB SII gain is artefactual.
+- The competitive moat shifts from raw ML headcount to *calibrated hearing-domain judgment*, paired with effective agent infrastructure.
+
+See [[../concepts/agentic-engineering-hearing-rd]] for the full treatment.
+
 ## Open Questions
 
 - Should the hearing aid industry develop standardized AI feature labels (similar to nutrition labels)?
@@ -114,6 +126,7 @@ Moonshot AI open-sourced Kimi K2.6 with 300 sub-agent swarm coordination and 4,0
 - [[ai-hearing-aid-platforms-2026]] — Platform comparison showing actual AI features
 - [[model-context-protocol]] — AI agent infrastructure for bridging understanding gaps
 - [[audiologist-workforce-shortage]] — Workforce gap context for why AI bridging matters
+- [[agentic-engineering-hearing-rd]] — Engineering-side counterpart of the understanding gap
 
 ## Sources
 
@@ -122,3 +135,4 @@ Moonshot AI open-sourced Kimi K2.6 with 300 sub-agent swarm coordination and 4,0
 - [Karpathy CLAUDE.md Template Goes Viral](../sources/karpathy-claude-md-template-viral-april-2026.md) — Structured AI agent instructions as engineering artifact
 - [Karpathy Idea Files](../sources/karpathy-idea-files-april-2026.md) — "Share the idea, not the code" paradigm
 - [MCP Dev Summit + 97M Installs](../sources/mcp-dev-summit-97m-installs-april-2026.md) — AI agent infrastructure milestone
+- [Karpathy — Sequoia AI Ascent 2026](../sources/karpathy-sequoia-ascent-2026.md) — "Outsource thinking, not understanding"; Software 3.0 framing

@@ -2,10 +2,10 @@
 title: Precision Drug Delivery for the Inner Ear
 type: concept
 created: 2026-04-19
-updated: 2026-04-19
-sources: [advanced-bionics-research-collaboration-ci-april-2026.md]
-related: [cochlear-implant-ai.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, teleaudiology.md, audiologist-workforce-shortage.md]
-tags: [drug-delivery, inner-ear, cochlea, spiral-therapeutics, cochlear-implant, pharmacotherapy, regenerative-medicine]
+updated: 2026-04-25
+sources: [advanced-bionics-research-collaboration-ci-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md]
+related: [cochlear-implant-ai.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, teleaudiology.md, audiologist-workforce-shortage.md, gene-therapy-hearing.md, ../entities/regeneron.md]
+tags: [drug-delivery, inner-ear, cochlea, spiral-therapeutics, cochlear-implant, pharmacotherapy, regenerative-medicine, gene-therapy]
 ---
 
 # Precision Drug Delivery for the Inner Ear
@@ -52,10 +52,11 @@ During cochlear implant surgery, the surgeon already has direct access to the co
 - **Otoprotection:** Preventing hearing damage from noise exposure or ototoxic drugs (aminoglycosides, cisplatin)
 - **Tinnitus treatment:** Direct delivery of therapeutics to cochlear targets involved in tinnitus generation
 
-### Long-Term (Speculative)
+### Long-Term (No Longer Speculative for OTOF)
+- **Gene therapy:** The FDA approval of Otarmeni (Regeneron, April 2026) validated AAV vector delivery to the inner ear for OTOF gene mutations — 80% of patients improved to ≤70 dB HL at 24 weeks. Harvard/Fudan Nature study shows 90% improvement and 50% normal hearing at 2.5 years. See [[gene-therapy-hearing]].
 - **Hair cell regeneration:** Delivering gene therapy vectors or small molecules that trigger hair cell regeneration from supporting cells
 - **Neural regeneration:** Growth factors to regenerate spiral ganglion neurons
-- If successful, could fundamentally change who needs a CI — some candidates might be treatable pharmacologically
+- Gene therapy for OTOF has moved from speculative to FDA-approved; ~200 additional deafness genes represent an enormous pipeline
 
 ## Connection to AI and Hearing Technology
 
@@ -73,3 +74,5 @@ During cochlear implant surgery, the surgeon already has direct access to the co
 
 ## Sources
 - [AB + Spiral Therapeutics Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md)
+- [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — First gene therapy for hearing loss
+- [Harvard/Fudan OTOF Nature Study](../sources/harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md) — 2.5-year follow-up

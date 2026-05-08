@@ -2,6 +2,7 @@
 title: "Sony OTC Hearing Aids Discontinued — WSA Eyes Next Steps (April 2026)"
 url: https://www.hearingtracker.com/news/sales-of-sony-hearing-aids-discontinued-wsa-eyes-next-steps-for-otc-market
 date: 2026-04-22
+also_see: sony-otc-discontinued-hearingtracker-april-2026.md
 type: market-news
 tags: [sony, ws-audiology, otc-hearing-aids, market-dynamics, discontinuation]
 ---

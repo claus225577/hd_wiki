@@ -2,10 +2,10 @@
 title: Sonova AG
 type: entity
 created: 2026-04-15
-updated: 2026-04-20
-sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md]
-related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md]
-tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant, drug-delivery]
+updated: 2026-05-07
+sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md, phonak-ai-excellence-award-march-2026.md, sonova-silentcloud-acquisition-2026.md, connect-hearing-audionova-rebrand-may-2026.md]
+related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md, ../syntheses/vertical-integration-trend.md]
+tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant, drug-delivery, retail, audionova]
 ---
 
 # Sonova AG
@@ -16,7 +16,7 @@ Swiss hearing care company and one of the world's largest hearing aid manufactur
 - **Phonak** — Primary/flagship hearing aid brand (Audéo Sphere Infinio, Virto R Infinio, Lumity, Infinio lines)
 - **Unitron** — Mid-tier hearing aid brand
 - **Advanced Bionics** — Cochlear implant division (see [[advanced-bionics]])
-- **AudioNova** — Retail hearing care network (acquired 2016)
+- **AudioNova** — Retail hearing care network (acquired 2016); **US Connect Hearing chain (~160 centres) is being rebranded into AudioNova as of May 2026**, completing global retail unification over a 2-year transition
 
 ## Technology Platform
 
@@ -47,6 +47,13 @@ Sonova's proprietary next-generation AI chip powering the Infinio Ultra platform
 Sonova's decision to use two dedicated chips (one for standard processing, one for AI) is a deliberate architectural bet against competitors who use a single integrated chip. The 53x processing headroom claim positions Sonova as having the highest AI compute capacity in hearing aids as of 2025–2026. Oticon (Demant) has publicly defended a single-chip (integrated NPU) approach as sufficient for their DNN models.
 
 HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class for noise performance.
+
+## Recent Developments (May 2026)
+
+### Connect Hearing → AudioNova Rebrand (1 May 2026)
+- US retail chain **Connect Hearing** (~160 centres) being folded into the global **AudioNova** brand over a 2-year transition.
+- Completes worldwide retail unification under a single banner and aligns with the **Sennheiser consumer-hearing divestiture** as part of Sonova's consolidation around core hearing care.
+- Strategic implication: a unified retail brand enables centralized fitting-data pipelines, A/B program rollouts, and cleaner consent workflows for ML training data — infrastructure prep for AI-driven retail audiology.
 
 ## Recent Developments (April 2026)
 
@@ -87,3 +94,5 @@ HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class
 - [Phonak Infinio Sphere 2024](../sources/phonak-infinio-sphere-2024.md) — DEEPSONIC chip specs, launch details, Ultra update, awards
 - [Phonak DNN Clinical Trial](../sources/phonak-dnn-noise-reduction-clinical-trial-april-2026.md) — NCT07526428
 - [AB Next-Gen CI Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md) — CI research partnership
+- [Sonova SilentCloud Acquisition](../sources/sonova-silentcloud-acquisition-2026.md) — Tinnitus-therapy integration
+- [Connect Hearing → AudioNova Rebrand](../sources/connect-hearing-audionova-rebrand-may-2026.md) — US retail consolidation, May 2026

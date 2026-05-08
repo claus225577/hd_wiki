@@ -2,10 +2,10 @@
 title: Apple Hearing Features
 type: entity
 created: 2026-04-15
-updated: 2026-04-21
-sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md]
-related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md]
-tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring]
+updated: 2026-05-04
+sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md]
+related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md]
+tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring, hearing-study, longitudinal]
 ---
 
 # Apple Hearing Features
@@ -106,6 +106,20 @@ Tim Cook moved to Executive Chairman; **John Ternus** became Apple CEO in April 
 - **Noise exposure monitoring** — Tracks environmental decibel levels; alerts to dangerous exposure
 - **AirPods Pro 3 heart rate** — Continuous cardiac monitoring extends Apple's health platform
 
+## Apple Hearing Study — May 2026 Findings (with University of Michigan)
+
+The Apple Hearing Study, launched in 2019 with the U-M School of Public Health, reached 160,000+ consented U.S. participants — among the largest hearing research cohorts ever assembled. New results released **1 May 2026** establish Apple as a population-scale longitudinal hearing data generator, complementing its hardware role.
+
+### Key results
+- **Perception–measurement gap:** Among ~85,000 participants in WHO-normal hearing range (≤25 dB 4PTA), **16% rated their hearing as fair or poor** — see [[../concepts/subjective-objective-hearing-gap]].
+- **Mobility link:** In a sub-analysis of **57,183** participants, worse hearing correlated with **reduced walking speed**, especially in adults 60+. Walking speed is a validated predictor of healthspan, falls, and cognitive decline — see [[../concepts/hearing-loss-dementia-link]].
+- **Continuous monitoring:** Researchers position the AirPods 4PTA as an instrument for users to track hearing drift even when classified clinically normal — an MLOps shift from clinic-anchored to device-anchored measurement.
+
+### Strategic implications
+Apple is no longer just a hardware disruptor in hearing — it is now a population-scale data generator for the hearing-health–healthspan thesis. Traditional hearing aid manufacturers historically have had access to fitting data but not longitudinal, cross-modal health outcome data. The Apple cohort closes that gap and could position Apple to publish epidemiological evidence faster than incumbents can match.
+
+See [[../concepts/longitudinal-hearing-phenotyping]] for the broader measurement framework.
+
 ## Comparison to Competitors' AI Approaches
 Apple's differentiation is not primarily AI audio processing quality — it is distribution scale, brand, price, and the removal of clinical friction (no audiologist visit, no prescription). The hearing AI in AirPods (leveraging the H-series chip and A-series SoC in iPhone) is competent but not at the level of Oticon Intent's 4D sensor fusion or Phonak's DEEPSONIC 7.7B ops/sec processing.
 
@@ -118,4 +132,5 @@ Apple's differentiation is not primarily AI audio processing quality — it is d
 ## Sources
 - [AirPods Pro 3 Hearing Health + Heart Rate (April 2026)](../../sources/airpods-pro-3-hearing-health-april-2026.md) — $200 price, 256 Hz heart rate, 67% battery improvement, FDA hearing aid feature
 - [Apple CEO Transition — John Ternus (April 2026)](../../sources/apple-ceo-transition-ternus-april-2026.md) — Ternus led AirPods Pro and Apple Silicon; elevation to CEO signals continued hearing health investment
+- [Apple Hearing Study — May 2026 Results (n=160,000)](../../sources/apple-hearing-study-results-may-2026.md) — 16% perception gap, walking speed correlation in 57,183-person sub-analysis
 - Research notes on AirPods Pro 2 FDA clearance, iOS 26 hearing test feature, global availability

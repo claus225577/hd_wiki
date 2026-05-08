@@ -2,9 +2,9 @@
 title: VCCA — Virtual Conference on Computational Audiology
 type: entity
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-26
 sources: [vcca2024-conference.md, vcca2025-conference.md, vcca2026-conference.md, computational-audiology-new-approaches-pmc-2021.md]
-related: [teleaudiology.md, auditory-attention-decoding.md, cochlear-implant-ai.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md]
+related: [teleaudiology.md, auditory-attention-decoding.md, cochlear-implant-ai.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, ../syntheses/hearing-ai-research-landscape-2025.md]
 tags: [conference, computational-audiology, academic, vcca, ai-audiology]
 ---
 
@@ -85,6 +85,7 @@ VCCA has become the go-to venue for researchers working on computational approac
 - [[auditory-attention-decoding]] — Core AAD research presented at VCCA
 - [[cochlear-implant-ai]] — CI-specific computational research at VCCA
 - [[speech-enhancement-neural-networks]] — Central topic across all VCCAs
+- [[hearing-ai-research-landscape-2025]] — Broader research landscape synthesis that contextualizes VCCA themes
 
 ## Sources
 - [VCCA2024 Conference](../sources/vcca2024-conference.md)

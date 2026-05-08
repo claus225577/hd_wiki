@@ -2,6 +2,7 @@
 title: "Oticon Play SI Launch — Pediatric Hearing Aid with 2nd-Gen AI"
 url: https://hearinghealthmatters.org/hearing-technologies/2026/oticon-play-si-hearing-aids-pediatric/
 also_covered: https://hearingreview.com/hearing-products/hearing-aids/oticon-introduces-play-si-pediatric-hearing-aid-family
+also_see: oticon-play-si-hearingreview-april-2026.md
 date: 2026-04-16
 type: product-launch
 tags: [oticon, demant, pediatric, hearing-aid, ai, auracast, le-audio, 4d-sensors]

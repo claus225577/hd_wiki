@@ -2,8 +2,8 @@
 title: Over-the-Counter Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-22
-sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md]
+updated: 2026-04-23
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md]
 related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md]
 tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage, sony-exit, anc]
 ---
@@ -54,7 +54,8 @@ The ~3x price gap between prescription and OTC is the primary driver of OTC inte
 
 ## Key Players
 
-### DTC-First OTC Brands
+### Mass-Retail OTC Brands
+- **Audien Hearing** — Largest OTC retail footprint: 11,000+ locations including Target (nationwide, April 2026), Walmart, Best Buy, CVS. Products: Atom One, Atom Pro 2, Atom X. Positioned alongside consumer electronics. The sheer distribution scale generates population-level usage data from first-time hearing aid users.
 - **Lexie Hearing** — Subscription model, strong app experience, backed by WS Audiology (major manufacturer)
 - **MDHearing** — Value-focused, largely preset devices, broad distribution
 
@@ -108,22 +109,32 @@ The OTC category directly addresses the **access gap** in hearing care:
 - Risk: users with more severe loss than OTC-indicated may delay proper treatment
 - **Workforce dimension:** With 75% of US counties being audiologist shortage areas and rural patients traveling 68 min on average, OTC hearing aids are a critical access tool for underserved populations — see [[audiologist-workforce-shortage]]
 
+## OTC Distribution Inflection Point (April 2026)
+
+The OTC hearing aid market crossed a distribution milestone in April 2026:
+- **Audien Hearing** reached 11,000+ retail locations including nationwide Target rollout (April 22, 2026)
+- This represents the largest OTC hearing aid retail footprint in the US
+- Products shelved alongside consumer electronics (Bose, Apple) — normalizing hearing aids as consumer tech
+- **Data implication:** Mass retail generates population-scale usage data from demographics that would never visit an audiologist — a fundamentally new dataset for training hearing AI algorithms
+
 ## International OTC Expansion
 
 The OTC hearing aid phenomenon is expanding beyond the US:
-- **UK:** Ceretone launched at £129.99 (April 2026) — no FDA-equivalent OTC category exists, but products sold under UK medical device regulations or as personal sound amplifiers
+- **UK:** Ceretone launched at £129.99 (April 2026) following a UK law change allowing non-prescription hearing aids — see [[ceretone]]
 - **EU:** Varying regulatory frameworks; some countries more permissive than others
 - **Key question:** Will the US FDA OTC model be replicated internationally, or will each market develop its own framework?
 - International price competition is driving the OTC price floor below $200
 
 ## Premium OTC Pricing Failure: Sony Discontinuation (April 2026)
 
-WS Audiology ended Sony-branded OTC hearing aid sales in April 2026, providing a critical data point on OTC market dynamics:
-- **Sony CRE series** priced at $999-$1,299 — premium OTC positioning
+WS Audiology ended Sony-branded OTC hearing aid sales in April 2026 after **3.5 years** of partnership, providing a critical data point on OTC market dynamics:
+- **Sony CRE-E10, CRE-C10, CRE-C20** — all pulled from U.S. market
+- Priced at **$700-$1,000** (street) / $999-$1,299 (MSRP) — premium OTC positioning
+- **Despite #1 HearAdvisor ranking** — product quality was not the failure point; pricing was
 - **Could not compete** against AirPods Pro ($200-$249 with FDA clearance), Ceretone ($165), and other sub-$250 OTC devices
-- **Even Sony's brand trust** was insufficient to justify premium OTC pricing
+- **Even Sony's brand trust** was insufficient to justify 3-4x premium over Apple
 - **Lesson:** Premium OTC may not be a viable category — consumers wanting premium go prescription; consumers wanting affordable go budget OTC or AirPods
-- **WSA's pivot:** Signals WSA will focus on Signia/Widex prescription AI features (where margins are sustainable) rather than OTC brand licensing
+- **WSA's pivot:** Plans to remain in OTC market under **different branding** (not Sony); signals need for fundamentally different approach
 
 This validates the "middle squeeze" thesis: growth is at the premium prescription end (AI features, $4,000-$7,000) and the ultra-affordable end (sub-$250), while mid-tier/premium OTC gets compressed from both sides.
 
@@ -145,6 +156,9 @@ Given that hearing aid use is associated with **48% slower cognitive decline** (
 
 ## Sources
 - [Sony OTC Hearing Aids Discontinued](../../sources/sony-otc-hearing-aids-discontinued-april-2026.md) — WSA ends Sony OTC brand, premium pricing failure
+- [Sony OTC Discontinued — HearingTracker](../../sources/sony-otc-discontinued-hearingtracker-april-2026.md) — 3.5 year partnership, #1 HearAdvisor ranking, $700-$1,000 pricing
 - [Orka O1 Pro with Bose ANC](../../sources/orka-o1-pro-bose-anc-awe-2026.md) — First ANC RIC hearing aid
 - [Ceretone OTC UK Launch](../../sources/ceretone-otc-uk-launch-april-2026.md) — Ultra-affordable OTC international expansion
+- [Audien Target Expansion](../../sources/audien-target-expansion-april-2026.md) — 11,000+ retail locations, mass-market data play
+- [Ceretone UK OTC Expansion](../../sources/ceretone-uk-otc-expansion-april-2026.md) — UK regulatory shift enabling non-prescription hearing aids
 - [AirPods Pro 3 Hearing Health](../../sources/airpods-pro-3-hearing-health-april-2026.md) — $200 FDA-cleared disruption

@@ -2,8 +2,8 @@
 title: Vertical Integration Trend in the Hearing Industry
 type: synthesis
 created: 2026-04-15
-updated: 2026-04-21
-sources: [amplifon-gn-acquisition-2026.md, hearing-aids-market-14b-by-2030-april-2026.md]
+updated: 2026-05-07
+sources: [amplifon-gn-acquisition-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, connect-hearing-audionova-rebrand-may-2026.md]
 related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/otc-vs-prescription-hearing-aids.md]
 tags: [industry-trend, vertical-integration, m-and-a, strategy, amplifon, gn-hearing]
 ---
@@ -18,6 +18,7 @@ The hearing aid industry is consolidating around vertically integrated models wh
 2. **Demant builds HearingLife** — Organic growth of retail network in the US
 3. **WS Audiology (Sivantos + Widex merge, 2019)** — Manufacturing consolidation, limited retail
 4. **Amplifon acquires GN Hearing (2026, €2.3B)** — Retailer acquires manufacturer; first of its kind
+5. **Connect Hearing → AudioNova US rebrand (May 2026)** — Sonova folds its 160+ US retail centres into the global AudioNova brand over a 2-year transition; completes worldwide retail unification under one banner. Coupled with the Sennheiser consumer-hearing divestiture, signals Sonova's tightening focus on core hearing care + integrated retail.
 
 ## The Amplifon-GN Deal in Detail
 

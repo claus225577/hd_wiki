@@ -2,8 +2,8 @@
 title: Auditory Attention Decoding (AAD)
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md]
+updated: 2026-04-25
+sources: [eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md, target-speaker-extraction-ultra-low-latency-2026.md]
 related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, vcca-computational-audiology.md, audio-reasoning-chain-of-thought.md]
 tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, hearing-aids]
 ---

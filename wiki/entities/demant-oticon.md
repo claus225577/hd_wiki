@@ -2,10 +2,10 @@
 title: Demant / Oticon
 type: entity
 created: 2026-04-15
-updated: 2026-04-21
-sources: [oticon-intent-launch-2024.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md]
-related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, ../concepts/auracast-bluetooth-le-audio.md]
-tags: [company, manufacturer, oticon, denmark, dnn, brainhearing, single-chip, npu, auracast, le-audio, pediatric]
+updated: 2026-05-05
+sources: [oticon-intent-launch-2024.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, oticon-play-si-hearingreview-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, aaa-2026-conference-april.md, oticon-zeal-aaa-2026-details.md, oticon-zeal-full-specs-aaa-2026.md, aaa-2026-convention-full-program-april.md, hearingtracker-2026-premium-rankings.md, oticon-va-portfolio-zeal-intent-verit-may-2026.md]
+related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, ../concepts/auracast-bluetooth-le-audio.md, aaa-conference.md, ../concepts/synthetic-data-for-hearing-ai.md, ../concepts/eu-ai-act-medical-devices.md]
+tags: [company, manufacturer, oticon, denmark, dnn, brainhearing, single-chip, npu, auracast, le-audio, pediatric, encapsulation, ite, dnn-2-0]
 ---
 
 # Demant / Oticon
@@ -74,13 +74,24 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 - **Made for iPhone (MFi) + Android Fast Pair** — cross-platform connectivity
 - **EduMic compatible** — works with Oticon's classroom microphone system alongside Auracast
 - Significance: brings flagship-level AI and sensor technology to children for the first time
+- **Boys Town Clinical Validation:**
+  - **50% improved sentence recognition** in noise (Boys Town National Research Hospital)
+  - **77% reduced listening difficulty** for teenagers
+  - Study conducted at one of the most respected pediatric audiology research centers
+  - Strongest clinical evidence to date for AI in pediatric hearing aids
 
 ### Oticon Zeal (Apr 2026 — AAA 2026 debut)
-- **Rechargeable in-the-ear (ITE)** hearing aid — Oticon's modern ITE entry
-- **Streaming and connectivity** — brings wireless streaming to the ITE form factor, historically limited by antenna and battery constraints
-- Debuting at the **AAA 2026 conference** (April 22, 2026)
+- **"World's most discreet, complete hearing aid"** — nearly invisible rechargeable ITE
+- **DNN 2.0 always-on AI on Sirius chip** — same silicon as flagship Intent; full AI processing parity with BTE/RIC despite tighter ITE power/thermal constraints
+- **Encapsulation technology** — novel manufacturing/sealing approach for ITE durability; addresses moisture/cerumen ingress challenges
+- **Bluetooth LE Audio + Auracast-ready** — completes Oticon's full-lineup Auracast rollout across all form factors
+- **20-hour battery life** with quick-charge (15 min = 4 hours) — addresses historical battery anxiety of rechargeable ITEs
+- **Fitting options:** Instant-fit option (enables same-day dispensing) + micro-earmold custom option
+- **Tap controls via motion sensor** — eliminates physical buttons for discreet form factor
+- **Fitting range:** Rated up to ~75 dB hearing loss (mild to moderately severe)
+- Debuting at the **AAA 2026 conference** (April 22-25, San Antonio, TX). See [[aaa-conference]].
 - Complements the BTE/RIC lineup (Intent, Verit) and pediatric (Play SI) with an ITE option for users who prefer in-ear cosmetics
-- ITE form factor imposes tighter power and space constraints — on-device ML inference must be even more efficient than BTE/RIC designs
+- Most technologically advanced ITE hearing aid to date (DNN 2.0 + Auracast + encapsulation + 20hr battery in ITE form)
 
 ## Product Timeline
 | Year | Product | Key Technology |
@@ -90,14 +101,17 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 | Nov 2025 | Intent miniBTE R | Intent platform, smaller form factor |
 | Apr 2026 | Oticon Verit | Sirius, 2nd-gen AI, 12dB NR, Auracast, zinc-air, SuddenSound Stabilizer |
 | Apr 2026 | Oticon Play SI | Pediatric, 2nd-gen AI, 4D sensors, 12dB NR, Auracast, IP68, EduMic |
-| Apr 2026 | Oticon Zeal | Rechargeable ITE, streaming, connectivity — AAA 2026 debut |
+| Apr 2026 | Oticon Zeal | Rechargeable ITE, DNN 2.0 on Sirius, 20hr battery, Auracast, tap controls — AAA 2026 debut |
 
 ## Corporate Developments
 - **Feb 2025** — Acquired **Ohwerk Group** (77 audiology clinics across Germany), expanding Demant's retail footprint in the German market.
+- **Apr 2026** — Oticon donating **$30K to AAA Foundation** for student scholarships, investing in the audiology workforce pipeline.
+- **May 2026** — **VA portfolio expansion** ([[../sources/oticon-va-portfolio-zeal-intent-verit-may-2026]]): Zeal (ITE), Intent miniBTE R, and Verit added to the U.S. Department of Veterans Affairs supply schedule. Material distribution win — VA is the single largest hearing-aid purchaser globally — and gives VA audiologists the broadest Oticon form-factor range to date.
 
 ## Market Position
 - #1 or #2 globally (neck and neck with Sonova)
 - Rated **#1 prescription hearing aid 2026** (industry/consumer ratings)
+- **HearingTracker 2026 premium ranking: #3** (Oticon Intent) — behind Phonak Infinio Sphere (#1) and Starkey Genesis AI (#2). Note: Oticon Verit and Zeal (both April 2026) may not yet be reflected in these rankings
 - Vertically integrated (manufacturer + HearingLife retail)
 - Strong research tradition (Eriksholm Research Centre)
 
@@ -115,12 +129,20 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 ## Related Pages
 - [[sonova-ag]] — Primary competitor; dual-chip (DEEPSONIC) vs. integrated NPU (Sirius) architectural contrast
 - [[on-device-ml-hearing-aids]] — Sirius integrated NPU as key example
-- [[auracast-bluetooth-le-audio]] — Verit and Play SI are first Oticon products with Auracast
+- [[auracast-bluetooth-le-audio]] — Verit, Play SI, and Zeal all ship with Auracast — full-lineup rollout
+- [[aaa-conference]] — Zeal debut at AAA 2026 (San Antonio, Apr 22-25); $30K scholarship donation
+- [[synthetic-data-for-hearing-ai]] — Synthetic data distillation could expand Oticon's 13M scene training corpus
 - [[ws-audiology-signia]], [[gn-hearing-resound]], [[starkey]] — Other major competitors
 
 ## Sources
 - [Oticon Intent Launch 2024](../sources/oticon-intent-launch-2024.md) — Sirius platform, DNN 2.0, 4D sensors, SoundScore, Expert Choice Award
 - [Oticon Verit Launch](../sources/oticon-verit-launch-april-2026.md) — 2nd-gen AI, Auracast, Google Fast Pair
 - [Oticon Play SI Launch](../sources/oticon-play-si-pediatric-launch-april-2026.md) — Pediatric 2nd-gen AI with 4D sensors and Auracast
-- [Oticon Zeal ITE Launch](../sources/oticon-zeal-ite-launch-aaa-2026.md) — Rechargeable ITE with streaming at AAA 2026
+- [Oticon Play SI — Hearing Review](../sources/oticon-play-si-hearingreview-april-2026.md) — Boys Town: 50% improved sentence recognition, 77% reduced listening difficulty
+- [Oticon Zeal ITE Launch (HHTM)](../sources/oticon-zeal-ite-launch-aaa-2026.md) — Rechargeable ITE with streaming at AAA 2026
+- [Oticon Zeal at AAA 2026 (Hearing Review)](../sources/oticon-zeal-hearingreview-aaa-2026.md) — Encapsulation tech, 2nd-gen AI confirmed, Auracast confirmed
+- [AAA 2026 Conference](../sources/aaa-2026-conference-april.md) — Conference context for Zeal debut
+- [AAA 2026 Full Program](../sources/aaa-2026-convention-full-program-april.md) — $30K scholarship donation, 200+ sessions
+- [Oticon Zeal Full Specs](../sources/oticon-zeal-full-specs-aaa-2026.md) — DNN 2.0, Sirius chip, 20hr battery, 75 dB range, tap controls
+- [HearingTracker 2026 Premium Rankings](../sources/hearingtracker-2026-premium-rankings.md) — Oticon Intent ranked #3
 - Research notes on Intent miniBTE R launch, 2026 #1 rating, and Ohwerk acquisition

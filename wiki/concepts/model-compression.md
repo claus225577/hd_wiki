@@ -2,9 +2,9 @@
 title: Model Compression for Hearing AI
 type: concept
 created: 2026-04-18
-updated: 2026-04-22
-sources: [google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, open-source-speech-ai-edge-native-april-2026.md, adobe-speechmatics-on-device-stt-april-2026.md]
-related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../comparisons/on-device-vs-cloud-ml.md, ../entities/google-research.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md]
+updated: 2026-04-25
+sources: [google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, open-source-speech-ai-edge-native-april-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, google-gemma-4-open-models-april-2026.md, efficient-on-device-speech-enhancement-qat-2026.md]
+related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../comparisons/on-device-vs-cloud-ml.md, ../entities/google-research.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, synthetic-data-for-hearing-ai.md]
 tags: [quantization, compression, pruning, distillation, edge-ai, efficiency, compute-in-memory]
 ---
 
@@ -32,7 +32,7 @@ Reducing the numerical precision of model weights and activations:
 - **3-bit** — Frontier compression; Google's TurboQuant (ICLR 2026) achieves 3-bit quantization of KV cache with zero accuracy loss
 - **Ternary (1.58-bit)** — Weights restricted to {-1, 0, +1}; PrismML Ternary Bonsai (April 2026) achieves 75.5 avg benchmark at 1.75 GB for an 8B model — 9x smaller than FP16. Eliminates multiplications entirely (additions/subtractions only). See below.
 - **Post-training quantization (PTQ)** — Applied after training, no retraining needed (e.g., TurboQuant)
-- **Quantization-aware training (QAT)** — Model trained with quantization in the loop; better accuracy but requires full retraining
+- **Quantization-aware training (QAT)** — Model trained with quantization in the loop; better accuracy but requires full retraining. April 2026 results show INT8 QAT achieves **3x speedup on ARM** for speech enhancement with minimal quality loss — validating QAT as superior to PTQ for hearing-relevant audio tasks
 
 ### Knowledge Distillation
 Training a small "student" model to mimic a large "teacher" model:
@@ -126,3 +126,4 @@ The open-source speech model ecosystem now provides production-quality teacher m
 - [PrismML Ternary Bonsai (April 2026)](../../sources/prismml-ternary-bonsai-158bit-april-2026.md) — 1.58-bit ternary models, 9x memory reduction, no-multiply inference
 - [Michigan CIM RRAM + SSM (Nature Communications 2026)](../../sources/michigan-compute-in-memory-rram-ssm-nature-2026.md) — CIM alternative to compression
 - [Open-Source Speech AI Edge-Native (April 2026)](../../sources/open-source-speech-ai-edge-native-april-2026.md) — Distil-Whisper, Voxtral, Qwen3-ASR/TTS as distillation sources
+- [INT8 QAT Speech Enhancement (April 2026)](../../sources/efficient-on-device-speech-enhancement-qat-2026.md) — 3x ARM speedup for speech enhancement via quantization-aware training
