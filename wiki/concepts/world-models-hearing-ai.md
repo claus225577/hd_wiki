@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-16
 updated: 2026-04-16
 sources: [world-models-continual-learning-2026.md]
-related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, large-sensor-models.md, small-language-models-edge-ai.md]
+related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, large-sensor-models.md, small-language-models-edge-ai.md, closed-loop-data-flywheel.md, cortical-reorganization-hearing-aids.md]
 tags: [world-models, continual-learning, personalization, acoustic-modeling, edge-ai, catastrophic-forgetting]
 ---
 
@@ -63,6 +63,8 @@ This enables prediction-based processing rather than reactive classification.
 - [[dnn-in-hearing-aids]] — Current paradigm that world models would replace
 - [[large-sensor-models]] — Pre-trained models that could bootstrap hearing world models
 - [[small-language-models-edge-ai]] — Model compression techniques needed for on-device world models
+- [[closed-loop-data-flywheel]] — Data strategy that world model personalization would extend
+- [[cortical-reorganization-hearing-aids]] — Neuroplasticity context: the brain's acoustic world model changes with hearing aid use
 
 ## Sources
 - [World Models and Continual Learning 2026](../../sources/world-models-continual-learning-2026.md)

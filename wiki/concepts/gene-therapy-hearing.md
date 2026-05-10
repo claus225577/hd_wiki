@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-25
 updated: 2026-04-26
 sources: [otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md]
-related: [precision-drug-delivery-inner-ear.md, cochlear-implant-ai.md, ../entities/regeneron.md, hearing-aid-market-dynamics.md, longitudinal-hearing-phenotyping.md]
+related: [precision-drug-delivery-inner-ear.md, cochlear-implant-ai.md, ../entities/regeneron.md, hearing-aid-market-dynamics.md, longitudinal-hearing-phenotyping.md, software-defined-medical-implants.md]
 tags: [gene-therapy, otof, aav, hearing-loss, regenerative-medicine, fda, regulatory]
 ---
 
@@ -73,6 +73,7 @@ Additional gene therapy targets under investigation:
 - [[regeneron]] — Manufacturer of Otarmeni
 - [[hearing-aid-market-dynamics]] — Market impact of curative therapies for genetic hearing loss
 - [[longitudinal-hearing-phenotyping]] — Measurement infrastructure required to characterize multi-year durability of gene therapy
+- [[software-defined-medical-implants]] — If gene therapy recipients later need implants, software-defined device durability monitoring applies
 
 ## Sources
 - [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — FDA approval announcement, mechanism, efficacy data

@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-04-15
 sources: []
-related: [apple-hearing-features.md, starkey.md, amplifon.md]
+related: [apple-hearing-features.md, starkey.md, amplifon.md, ../concepts/otc-hearing-aids.md, ../concepts/audiologist-workforce-shortage.md, ../concepts/teleaudiology.md, ../concepts/hearing-loss-dementia-link.md, ../concepts/gene-therapy-hearing.md]
 tags: [organization, who, public-health, childhood-hearing-loss, global-health, world-hearing-day]
 ---
 
@@ -71,6 +71,11 @@ WHO data on hearing loss burden:
 - [[apple-hearing-features]] — OTC hearing aids and in-app audiometry align with WHO's scalable access goals
 - [[starkey]] — Starkey Hearing Foundation distributes hearing aids globally; aligns with WHO access mission
 - [[amplifon]] — Largest retail hearing care network; scale relevant to WHO access targets
+- [[../concepts/otc-hearing-aids]] — OTC category addresses WHO's access gap for low- and middle-income populations
+- [[../concepts/audiologist-workforce-shortage]] — Audiologist shortage in low-resource settings is the primary access barrier WHO programs address
+- [[../concepts/teleaudiology]] — Remote care models aligned with WHO's community-level hearing care goals
+- [[../concepts/hearing-loss-dementia-link]] — Public health dimension WHO programs aim to prevent through early intervention
+- [[../concepts/gene-therapy-hearing]] — Emerging curative approach relevant to WHO's preventable hearing loss agenda
 
 ## Sources
 - WHO World Hearing Day campaign materials (2025, 2026 themes)

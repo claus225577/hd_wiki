@@ -4,7 +4,7 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 sources: [apple-hearing-study-results-may-2026.md, achieve-trial-cognitive-hearing-2025.md]
-related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, apple-hearing-features.md]
+related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, ../entities/apple-hearing-features.md]
 tags: [outcome-measurement, audiometry, perception, self-report, personalization, real-world-evidence]
 ---
 

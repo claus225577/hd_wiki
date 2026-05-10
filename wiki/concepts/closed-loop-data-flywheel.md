@@ -2,10 +2,10 @@
 title: Closed-Loop Data Flywheel
 type: concept
 created: 2026-04-15
-updated: 2026-04-21
-sources: [amplifon-gn-acquisition-2026.md, wsa-sound-preference-program-april-2026.md]
-related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/ws-audiology-signia.md, ../syntheses/vertical-integration-trend.md]
-tags: [data-strategy, personalization, feedback-loops, m-and-a, sound-preference]
+updated: 2026-05-10
+sources: [amplifon-gn-acquisition-2026.md, wsa-sound-preference-program-april-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md, asha-nslhm-2026-care-partners.md]
+related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/ws-audiology-signia.md, ../syntheses/vertical-integration-trend.md, probabilistic-generative-models-hearing-ai.md, care-partner-dyad-models.md]
+tags: [data-strategy, personalization, feedback-loops, m-and-a, sound-preference, bayesian, dyad]
 ---
 
 # Closed-Loop Data Flywheel
@@ -45,14 +45,36 @@ WSA's Sound Preference Program is another concrete example of a data flywheel, d
 
 This represents a second model for hearing aid data flywheels: not vertical integration, but structured data collection tools that turn routine clinical interactions into R&D inputs.
 
+## Probabilistic / Bayesian Flywheel — AIDA-2 (March 2026)
+
+A third architecture for the flywheel, distinct from M&A (Amplifon-GN) and software-defined data collection (WSA Sound Preference). The AIDA-2 framework (Hidalgo-Araya et al., GN Advanced Science + TU Eindhoven, arXiv 2603.28436) treats user appraisals as **evidence in a Bayesian inference graph**:
+- User says "too sharp" → likelihood function over a latent comfort variable → posterior update on the relevant gain.
+- The flywheel collapses into the inference machinery itself. There is no separate "data pipeline" to architect — the model is the pipeline.
+- Federated learning maps cleanly onto this framing: per-device posteriors aggregate into population priors that update R&D priors.
+
+See [[probabilistic-generative-models-hearing-ai]].
+
+## Multi-User / Dyad Extension (Care Partners)
+
+Today's flywheel is built on n=1 telemetry — one wearer, one device. The [[care-partner-dyad-models]] argument is that the flywheel should ingest **dyad-level signals** (repair requests, repetitions, partner-reported listening effort), because adherence and outcomes are dyad-level phenomena. ASHA's NSLHM 2026 care-partner resource push is a public-awareness signal in this direction.
+
+Concrete additions:
+- Conversation-partner enrollment as a structured field.
+- Partner-side fitting feedback alongside wearer feedback.
+- Repair-event telemetry as a dyad-attributed signal.
+- Joint outcome metrics including partner listening effort.
+
 ## Implications for Data Science
 - Requires unified data infrastructure across retail and manufacturing
 - Privacy/consent frameworks needed for cross-system data sharing
 - Opportunity for causal inference: which fitting decisions lead to best long-term outcomes?
 - Federated learning could enable insights without centralizing sensitive patient data
+- Dyad-level telemetry raises additional consent issues — care partners must opt in to enrollment
 
 ## Related Pages
 - [[amplifon]] — The acquirer, bringing retail data
 - [[gn-hearing-resound]] — The acquired, bringing manufacturing/R&D data
 - [[ws-audiology-signia]] — Sound Preference Program as software-defined data flywheel
 - [[vertical-integration-trend]] — Industry-wide trend this deal exemplifies
+- [[probabilistic-generative-models-hearing-ai]] — Bayesian flywheel as a third architecture
+- [[care-partner-dyad-models]] — Multi-user / dyad extension of the flywheel

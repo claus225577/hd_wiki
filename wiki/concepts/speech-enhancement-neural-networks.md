@@ -2,10 +2,10 @@
 title: Speech Enhancement Neural Networks
 type: concept
 created: 2026-04-15
-updated: 2026-05-08
-sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, deezer-44pct-ai-generated-audio-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, ssl-pretraining-robust-ha-speech-enhancement-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, mdpi-speech-separation-survey-2026.md, spatial-magnifier-multichannel-se-arxiv-2026.md, ndf-plus-neural-directional-filtering-arxiv-2026.md, predictive-generative-drift-decomposition-arxiv-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md, state-space-models.md, ../comparisons/dnn-vs-natural-processing.md, mamba-architecture.md, active-noise-cancellation.md, eu-ai-act-medical-devices.md]
-tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer, mamba, generative-predictive]
+updated: 2026-05-10
+sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, deezer-44pct-ai-generated-audio-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, ssl-pretraining-robust-ha-speech-enhancement-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, mdpi-speech-separation-survey-2026.md, spatial-magnifier-multichannel-se-arxiv-2026.md, ndf-plus-neural-directional-filtering-arxiv-2026.md, predictive-generative-drift-decomposition-arxiv-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md, state-space-models.md, ../comparisons/dnn-vs-natural-processing.md, mamba-architecture.md, active-noise-cancellation.md, eu-ai-act-medical-devices.md, probabilistic-generative-models-hearing-ai.md]
+tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer, mamba, generative-predictive, bayesian-counter-paradigm]
 ---
 
 # Speech Enhancement Neural Networks
@@ -179,6 +179,16 @@ arXiv eess.AS (Habets group, Fraunhofer IIS / FAU Erlangen-Nürnberg):
 - Habets' group is upstream of Phonak/Sonova's spatial-audio research; expect this thread to surface in production silicon one-to-two generations later.
 - See [[../sources/ndf-plus-neural-directional-filtering-arxiv-2026]].
 
+### AIDA-2 — Probabilistic Generative Counter-Paradigm (Hidalgo-Araya et al., March 2026)
+arXiv 2603.28436 (GN Advanced Science + TU Eindhoven + Lazy Dynamics, 30 Mar 2026):
+- **Not a neural network at all.** Reformulates the spectral-enhancement pipeline as a **single Bayesian generative model** with signal processing, learning, and personalization expressed as inference variants in the same factor graph.
+- **~85 effective parameters** competitive with Wiener filtering on VoiceBank+DEMAND (PESQ 2.17 vs 2.22) — six orders of magnitude fewer than the deep networks above.
+- Variational message passing in **RxInfer.jl** as the inference engine.
+- Personalization as **Bayesian posterior updating** on user appraisals — collapses fitting into the same machinery that does denoising.
+- Significant because GN Advanced Science (research arm of GN Hearing/ReSound) is co-author. Probabilistic generative modeling is being advanced from inside a Big-Five OEM, not just academic ELLIS labs.
+- Open question: matches *Wiener*, not modern DNN baselines, on PESQ. Argument is parameter efficiency and structural advantages, not raw quality. Does it scale?
+- See [[probabilistic-generative-models-hearing-ai]] (primary home) and [[../sources/aida-2-bayesian-generative-se-arxiv-2026]].
+
 ### Predictive-Generative Drift Decomposition (Richter et al., May 2026)
 arXiv eess.AS (MERL / U Hamburg / Paderborn — same lineage as GAP-URGENet):
 - Decomposes the SE target into a **predictive (deterministic, mask-based) component** and a **generative drift component** that refines the residual the predictive path leaves.
@@ -196,16 +206,6 @@ arXiv eess.AS (MERL / U Hamburg / Paderborn — same lineage as GAP-URGENet):
 - [[cochlear-implant-ai]] — Speech enhancement DNNs adapted for cochlear implant users
 - [[vcca-computational-audiology]] — Central topic across all VCCAs
 - [[eu-ai-act-medical-devices]] — Regulatory framework affecting AI speech enhancement in hearing aids
-
-## Sources
-- [Sub-ms Latency Speech Enhancement](../sources/sub-millisecond-speech-enhancement-hearables-2025.md)
-- [Low-Latency DNN Noise Reduction](../sources/dnn-noise-reduction-intelligibility-2026.md)
-- [Binaural Deep Speech Enhancement](../sources/multichannel-deep-speech-enhancement-ha-2024.md)
-- [SSL Loss Functions for HA Enhancement](../sources/ssl-loss-functions-hearing-aid-enhancement-2024.md)
-- [Speech Foundation Models for HI Prediction](../sources/speech-foundation-models-hearing-impaired-2024.md)
-- [Wireless Hearables Programmable Speech AI Accelerators](../sources/wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md) — Co-designed silicon + mixed-precision quantization
-- [Samsung Galaxy S26 Audio Eraser](../sources/samsung-galaxy-s26-audio-eraser-realtime-2026.md) — Consumer real-time sound separation
-- [Adobe + Speechmatics On-Device STT](../sources/adobe-speechmatics-on-device-stt-april-2026.md) — On-device speech recognition within 5% of cloud, 12-16% better than Whisper
 
 ### DAT-CFTNet: Attention-Based Dual-Path RNN for CI (ICASSP 2026)
 Mamun & Hansen (arXiv:2604.06744, April 2026) propose an attention-based dual-path RNN for CI speech enhancement:
@@ -251,3 +251,4 @@ Won 1st place in the URGENT (Universal speech Restoration with Generative approa
 - [Spatial-Magnifier (Lee et al., May 2026)](../sources/spatial-magnifier-multichannel-se-arxiv-2026.md) — Learned spatial upsampling for small wearable mic arrays
 - [NDF+ (Huang et al., May 2026)](../sources/ndf-plus-neural-directional-filtering-arxiv-2026.md) — Joint directional filtering + diffuse extraction
 - [Predictive-Generative Drift Decomposition (Richter et al., May 2026)](../sources/predictive-generative-drift-decomposition-arxiv-2026.md) — Decomposes SE into predictive + generative components for fidelity-vs-comfort knob
+- [AIDA-2 — Probabilistic Generative Speech Enhancement (Hidalgo-Araya et al., Mar 2026)](../sources/aida-2-bayesian-generative-se-arxiv-2026.md) — GN Advanced Science + TU Eindhoven; ~85-parameter Bayesian generative model competitive with Wiener at six orders of magnitude fewer parameters than DNNs

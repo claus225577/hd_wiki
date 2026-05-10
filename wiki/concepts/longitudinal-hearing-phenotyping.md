@@ -2,10 +2,10 @@
 title: Longitudinal Hearing Phenotyping
 type: concept
 created: 2026-04-26
-updated: 2026-05-08
-sources: [harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, apple-hearing-study-results-may-2026.md, hearing-aid-cortical-reorganization-meg-frontiers-2026.md]
+updated: 2026-05-09
+sources: [harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, apple-hearing-study-results-may-2026.md, hearing-aid-cortical-reorganization-meg-frontiers-2026.md, pediatric-softband-bcd-database-frontiers-may-2026.md]
 related: [gene-therapy-hearing.md, cochlear-implant-ai.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, automated-audiometry.md, large-sensor-models.md, vcca-computational-audiology.md, subjective-objective-hearing-gap.md, hearing-loss-dementia-link.md, digital-phenotyping-cognitive-decline.md, cortical-reorganization-hearing-aids.md]
-tags: [phenotyping, longitudinal, outcome-measurement, ecological-momentary-assessment, gene-therapy, ml-monitoring, real-world-evidence, neuroplasticity]
+tags: [phenotyping, longitudinal, outcome-measurement, ecological-momentary-assessment, gene-therapy, ml-monitoring, real-world-evidence, neuroplasticity, telemetry, candidacy-expansion]
 ---
 
 # Longitudinal Hearing Phenotyping
@@ -76,6 +76,22 @@ This is the first time the longitudinal phenotype has been operationalized at th
 
 See [[../sources/apple-hearing-study-results-may-2026]] and [[apple-hearing-features]].
 
+## Pediatric BCD Exemplar — Telemetry Becomes the Warrant (May 2026)
+
+A second exemplar — quieter than Apple but methodologically purer — was published in Frontiers in Audiology and Otology on 8 May 2026: a retrospective review of **5,490 children** fitted with softband bone-conduction devices over 1998–2025 within a publicly-funded pediatric audiology system.
+
+The headline numbers (PEACH 46% unaided → 82% aided, 74% regular daily use) matter less than the candidacy finding: **88% of fittings were not the textbook microtia/atresia population.** OME, craniofacial anomalies, cleft palate, and unknown etiologies dominated, and outcomes within these expanded groups were comparable to the historical indication.
+
+Candidacy expansion happened in the data before it happened in the guideline. The dataset was not produced by an RCT. It was produced by routine clinical care that captured outcomes consistently for nearly three decades. That is exactly the property the longitudinal phenotype framework is meant to formalize for adult hearing aids.
+
+Implications:
+
+- **Routine clinical telemetry, captured uniformly, is sufficient warrant for guideline change** — the pediatric BCD literature is now the proof of concept.
+- **The hearing aid analogue does not yet exist at this scale.** Most national hearing aid systems do not capture wear time, satisfaction, or acoustic-context history as structured longitudinal fields.
+- **Manufacturers and clinics that begin treating routine fitting and wear-time data as a strategic asset stand to control the next candidacy expansion** — and the regulatory / reimbursement moat that comes with it.
+
+See [[../sources/pediatric-softband-bcd-database-frontiers-may-2026]].
+
 ## Use Cases
 
 ### 1. Gene Therapy Durability Monitoring
@@ -124,3 +140,4 @@ See [[../sources/apple-hearing-study-results-may-2026]] and [[apple-hearing-feat
 - [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — 24-week regulatory endpoint as contrast to multi-year real-world phenotype
 - [Apple Hearing Study — May 2026 Results (n=160,000)](../sources/apple-hearing-study-results-may-2026.md) — Population-scale exemplar of the framework operationalized through consumer hardware; mobility and perception findings
 - [Becker et al., MEG Cortical Reorganization, Apr 2026](../sources/hearing-aid-cortical-reorganization-meg-frontiers-2026.md) — Adds cortical efficiency as a sub-3-month signal motivating telemetry-based proxies in the phenotype layer
+- [Pediatric Softband BCD Database, Frontiers, May 8 2026](../sources/pediatric-softband-bcd-database-frontiers-may-2026.md) — n=5,490 28-year database showing routine clinical telemetry as warrant for candidacy expansion beyond historical indications

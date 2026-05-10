@@ -31,7 +31,7 @@ The FDA's 2022 rule establishing an over-the-counter (OTC) hearing aid category 
   - VA provides free to eligible veterans
 - **OTC hearing aids:** ~$1,600 average retail; range from $200 to $3,000
   - No required professional fees
-  - Apple AirPods Pro 2 at $249 is the most disruptive price point
+  - Apple AirPods Pro 3 at $200 is the most disruptive price point (AirPods Pro 3 launched April 2026 with FDA OTC clearance)
   - DTC brands (Eargo, Jabra Enhance, Audicus) cluster $500–$2,000
 
 ## Fitting Approaches

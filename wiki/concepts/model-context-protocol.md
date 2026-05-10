@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-19
 updated: 2026-04-19
 sources: [mcp-dev-summit-97m-installs-april-2026.md, karpathy-idea-files-april-2026.md]
-related: [../syntheses/ai-understanding-gap-hearing-industry.md, small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, teleaudiology.md, automated-audiometry.md]
+related: [../syntheses/ai-understanding-gap-hearing-industry.md, small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, teleaudiology.md, automated-audiometry.md, agentic-engineering-hearing-rd.md]
 tags: [mcp, protocol, agentic-ai, anthropic, open-standard, tool-use, interoperability, infrastructure]
 ---
 
@@ -74,6 +74,7 @@ MCP and Karpathy's "idea files" paradigm represent complementary developments:
 - [[on-device-ml-hearing-aids]] — On-device processing that may communicate with cloud services via standardized protocols
 - [[teleaudiology]] — AI-powered teleaudiology as a primary use case for MCP in hearing care
 - [[automated-audiometry]] — Automated hearing tests as MCP tool endpoints
+- [[agentic-engineering-hearing-rd]] — MCP provides the tool-use infrastructure layer for agentic hearing R&D workflows
 
 ## Sources
 - [MCP Dev Summit + 97M Installs](../sources/mcp-dev-summit-97m-installs-april-2026.md)

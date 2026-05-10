@@ -2,7 +2,9 @@
 title: "NDF+: Joint Neural Directional Filtering and Diffuse Sound Extraction"
 authors: [Weilong Huang, Le Nhat Tam Huynh, Oliver Thiergart, Emanuël A. P. Habets]
 affiliation: Fraunhofer IIS / FAU Erlangen-Nürnberg
-date: 2026-05
+date: 2026-05-07
+arxiv_id: 2605.06108
+arxiv_url: https://arxiv.org/abs/2605.06108
 arxiv_listing: https://arxiv.org/list/eess.AS/2026-05
 type: research-paper
 tags: [speech-enhancement, directional-filtering, beamforming, diffuse-extraction, multichannel, cocktail-party, hearing-aids, fraunhofer]
@@ -31,4 +33,5 @@ tags: [speech-enhancement, directional-filtering, beamforming, diffuse-extractio
 
 ## Source
 
-arXiv eess.AS May 2026 listing (paper #13 in the listing). Full paper accessed via arXiv listing page; specific arXiv ID to be backfilled when paper page resolves.
+arXiv:2605.06108 — submitted 7 May 2026. https://arxiv.org/abs/2605.06108
+Backfilled in the 2026-05-10 daily digest after arXiv abstract page resolved (was previously listed as TBD pending paper page).

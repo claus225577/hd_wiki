@@ -82,4 +82,4 @@ Widex Allure outperformed all 4 DNN-based competitors by up to 8.5 dB SNR in spe
 - [[ai-hearing-aid-platforms-2026]] — Platform comparison including Widex approach
 
 ## Sources
-- [Korhonen et al. — Natural Processing vs AI in Speech-in-Noise](../sources/korhonen-natural-vs-dnn-hearing-aids-april-2026.md) — 29 adults, 5 HAs, Widex Allure outperformed 4 DNN competitors by up to 8.5 dB SNR
+- [Korhonen et al. — Natural Processing vs AI in Speech-in-Noise](../../sources/korhonen-natural-vs-dnn-hearing-aids-april-2026.md) — 29 adults, 5 HAs, Widex Allure outperformed 4 DNN competitors by up to 8.5 dB SNR

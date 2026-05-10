@@ -2,10 +2,10 @@
 title: Neurotone AI
 type: entity
 created: 2026-04-23
-updated: 2026-05-06
-sources: [neurotone-ai-1000-clinics-april-2026.md, brian-taylor-neurotone-rationale-april-2026.md]
+updated: 2026-05-09
+sources: [neurotone-ai-1000-clinics-april-2026.md, brian-taylor-neurotone-rationale-april-2026.md, virtual-speech-therapist-arxiv-2026.md]
 related: [../concepts/dnn-in-hearing-aids.md, ../concepts/teleaudiology.md, ../concepts/audiologist-workforce-shortage.md, ws-audiology-signia.md]
-tags: [company, startup, aural-rehabilitation, ai, clinic-platform, brian-taylor]
+tags: [company, startup, aural-rehabilitation, ai, clinic-platform, brian-taylor, clinician-in-the-loop]
 ---
 
 # Neurotone AI
@@ -47,6 +47,9 @@ In an April 27, 2026 HearingTracker interview, Taylor articulated his rationale:
 - Could validate AI aural rehabilitation efficacy at a level not previously possible
 - If outcomes are positive, creates a new revenue stream for audiology clinics alongside device dispensing
 
+### Architectural Pattern: Clinician-in-the-Loop AI Agents (May 2026)
+Sheikh et al. ([arXiv:2605.01101](../../sources/virtual-speech-therapist-arxiv-2026.md)) published a "Virtual Speech Therapist" agent architecture in May 2026 that mirrors Neurotone's pattern: an LLM administers structured therapy in real time, while a clinician supervises and reviews outcomes asynchronously. Speech therapy is an adjacent vertical, but the architectural pattern — clinician oversight + AI delivery — is identical to what Brian Taylor described as the post-fit aural rehab loop. This is the first peer-reviewable instance of the same pattern Neurotone is commercializing, and it lends academic legitimacy to the clinician-in-the-loop framing.
+
 ## Market Context
 
 Aural rehabilitation has historically been underutilized in audiology:
@@ -64,3 +67,4 @@ Aural rehabilitation has historically been underutilized in audiology:
 ## Sources
 - [Neurotone AI 1,000 Clinic Partners](../sources/neurotone-ai-1000-clinics-april-2026.md) — Milestone, Brian Taylor VP hire, standard of care positioning
 - [Brian Taylor on Why He Left the Hearing Aid World for Neurotone AI](../sources/brian-taylor-neurotone-rationale-april-2026.md) — Taylor's rationale; post-fitting gap framing
+- [Virtual Speech Therapist (Sheikh et al., May 2026)](../../sources/virtual-speech-therapist-arxiv-2026.md) — Adjacent vertical exemplifying clinician-in-the-loop AI agent architecture

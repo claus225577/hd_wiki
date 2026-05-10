@@ -2,10 +2,10 @@
 title: WS Audiology / Signia
 type: entity
 created: 2026-04-15
-updated: 2026-04-23
-sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md]
+updated: 2026-05-10
+sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md]
 related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/dnn-vs-natural-processing.md, ../concepts/otc-hearing-aids.md, neurotone-ai.md, aaa-conference.md]
-tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing]
+tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing, lucid, retail-channel, sams-club]
 ---
 
 # WS Audiology / Signia
@@ -77,6 +77,21 @@ WSA partnered with Sony on the CRE series OTC hearing aids, leveraging Sony's co
 - WSA plans to remain in OTC under **different branding** (not Sony)
 - **Strategic implication:** Brand licensing insufficient for OTC; WSA likely needs fundamentally different pricing/approach
 
+### Lexie B3 — Post-Sony OTC Vehicle (May 2026)
+WSA's first OTC product following the Sony exit. Lexie (WSA-backed) launched the **B3 powered by Bose** in May 2026:
+- **$999/pair** — same mid-tier band Sony failed in
+- **128 hrs total runtime** (32 hr aid + 96 hr case = ~5 days)
+- **Bluetooth 5.3 with Classic + BLE** — Auracast-readiness baseline
+- **"Automatic Sound Focus"** — new directional system using dual mics + Bose audio tuning
+- **Strategic bet:** WSA appears to believe Sony's failure was execution-specific (weak app, no follow-up care) rather than structural to mid-tier OTC. The B3 is the test of that thesis. See [[otc-hearing-aids]] for the "middle squeeze" framing.
+
+### Lucid Hearing Loses Sam's Club Operational Role (May 2026)
+WSA's mass-retail footprint contracted again on **10 May 2026**: HearingTracker reported that **NationsBenefits** (Plantation, FL — operates NationsHearing for Aetna Medicare Advantage) is replacing **Lucid Hearing** as the operational partner of **Sam's Club's ~450 in-club Hearing Aid Centers**.
+- **Channel-economics shift, not product shift:** the back-end staffing/workflow/benefits-administration plumbing changes; what's on the shelf may not move immediately.
+- **Sequence:** Sony OTC exit (Apr 2026) → Lexie B3 launch (early May 2026) → Sam's Club operational role lost (10 May 2026). All three within ~6 weeks.
+- **Strategic implication:** WSA's US OTC pipeline is materially narrower than at the start of 2026. Lexie B3's success becomes more load-bearing for WSA's US retail story.
+- **Adjacent dynamic:** NationsBenefits now sits on both sides of the transaction for Aetna MA members — administering the benefit AND operating the dispensing clinic — a vertical-integration model that could pressure other retail-clinic operators (Costco/Kirkland, BJs).
+
 ## Signia vs. Competitors on AI Co-Processing
 WSA claims 22% speech understanding advantage over "AI co-processor competitors" — this phrasing likely targets Phonak/Sonova (DEEPSONIC co-processor) and the framing is worth watching as independent verification becomes available. The metric is Signia's own published result.
 
@@ -101,3 +116,5 @@ WSA claims 22% speech understanding advantage over "AI co-processor competitors"
 - [Sony OTC Hearing Aids Discontinued](../../sources/sony-otc-hearing-aids-discontinued-april-2026.md) — Premium OTC pricing failure, WSA ends Sony brand partnership
 - [Sony OTC Discontinued — HearingTracker](../../sources/sony-otc-discontinued-hearingtracker-april-2026.md) — 3.5 year partnership, #1 HearAdvisor ranking despite commercial failure
 - [Korhonen et al. — Natural vs DNN](../../sources/korhonen-natural-vs-dnn-hearing-aids-april-2026.md) — Widex Allure outperformed 4 DNN competitors by up to 8.5 dB SNR
+- [Lexie B3 powered by Bose (May 2026)](../../sources/lexie-b3-bose-launch-may-2026.md) — WSA-backed Lexie launches $999 OTC with Bose tuning, 128 hr total runtime, BLE 5.3, "Automatic Sound Focus"
+- [Sam's Club Hearing Centers — NationsBenefits Replaces Lucid (May 2026)](../../sources/sams-club-nationsbenefits-supplants-lucid-may-2026.md) — WSA loses operational role at ~450 Sam's Club in-club hearing centers; vertical-integration model with Aetna MA benefit administrator

@@ -2,11 +2,10 @@
 title: Automated & Computational Audiometry
 type: concept
 created: 2026-04-15
-updated: 2026-04-21
+updated: 2026-05-10
 sources: [ml-pure-tone-audiometry-automated-masking-2025.md, deep-learning-audiogram-classification-2024.md, hearing-loss-type-classification-ml-2024.md, ml-menieres-disease-audiometry-2025.md, kde-vae-audiometric-data-synthesis-2025.md, audiologist-shortage-asha-sciencedirect-2025.md, llm-pure-tone-audiogram-chatgpt5-gemini25-2026.md, bisgaard-audiogram-loudness-scaling-ml-2026.md]
 related: [teleaudiology.md, vcca-computational-audiology.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, otc-hearing-aids.md]
 tags: [audiometry, machine-learning, automated-testing, pure-tone, classification, clinical-decision-support, workforce-shortage]
-updated: 2026-05-04
 ---
 
 # Automated & Computational Audiometry
@@ -63,6 +62,11 @@ Automated audiometry is a recurring VCCA theme:
 ## Related Pages
 - [[teleaudiology]] — Remote audiometry is the primary use case for automated testing
 - [[vcca-computational-audiology]] — Major venue for automated audiometry research
+- [[audiologist-workforce-shortage]] — Automated audiometry is a direct technological response to the shortage of clinical audiologists
+- [[otc-hearing-aids]] — Calibration-independent self-fitting approaches (Bisgaard ML) are directly applicable to OTC devices
+- [[on-device-ml-hearing-aids]] — On-device inference enables audiometric screening without cloud connectivity
+- [[model-context-protocol]] — MCP enables AI agents to invoke automated audiometry as a composable tool endpoint
+- [[hearing-loss-dementia-link]] — Early detection via automated audiometry supports earlier intervention for dementia risk
 
 ## Sources
 - [ML Pure-Tone Audiometry with Automated Masking](../sources/ml-pure-tone-audiometry-automated-masking-2025.md)

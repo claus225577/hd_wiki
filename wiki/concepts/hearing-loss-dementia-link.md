@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-15
 updated: 2026-05-07
 sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md]
-related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md]
+related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md, care-partner-dyad-models.md]
 tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping]
 ---
 
@@ -132,6 +132,10 @@ Large longitudinal study linking hearing loss to brain structural changes visibl
 - [[hearing-aid-market-dynamics]] — Dementia link is a marketing and clinical narrative driving adoption
 - [[teleaudiology]] — Remote care models to reach untreated populations earlier
 - [[automated-audiometry]] — ML audiometry enables screening at scale for early detection
+- [[digital-phenotyping-cognitive-decline]] — Passive wearable sensing for preclinical cognitive decline detection
+- [[care-partner-dyad-models]] — Care partners are most involved when cognitive decline accompanies hearing loss; dyad-level outcomes matter most here
+- [[longitudinal-hearing-phenotyping]] — Long-term outcome measurement to capture dementia-protection signals
+- [[subjective-objective-hearing-gap]] — "Subclinical" hearing loss with subjective complaints is the population at elevated dementia risk
 
 ## Sources
 - [ACHIEVE Trial Secondary Analysis](../sources/achieve-trial-cognitive-hearing-2025.md)

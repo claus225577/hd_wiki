@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-16
 updated: 2026-04-16
 sources: [interspeech-2026-audio-reasoning-challenge.md]
-related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md]
+related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, agentic-engineering-hearing-rd.md]
 tags: [audio-reasoning, chain-of-thought, explainability, large-audio-language-models, interspeech]
 ---
 
@@ -55,6 +55,7 @@ Audio reasoning could enable hearing aids to:
 - [[dnn-in-hearing-aids]] — Current DNN paradigm that reasoning would extend
 - [[speech-enhancement-neural-networks]] — Primary workload that reasoning could improve
 - [[auditory-attention-decoding]] — Another frontier for hearing aid intelligence
+- [[agentic-engineering-hearing-rd]] — Agentic AI approaches that audio reasoning could enable in hearing R&D
 
 ## Sources
 - [Interspeech 2026 Audio Reasoning Challenge](../../sources/interspeech-2026-audio-reasoning-challenge.md)

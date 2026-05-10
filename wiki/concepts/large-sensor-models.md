@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-15
 updated: 2026-04-15
 sources: [large-sensor-models-arxiv-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, world-models-hearing-ai.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, world-models-hearing-ai.md, closed-loop-data-flywheel.md, digital-phenotyping-cognitive-decline.md]
 tags: [foundation-models, wearables, sensor-fusion, transfer-learning]
 ---
 
@@ -38,3 +38,5 @@ Hearing aids are among the most sophisticated wearable computers, but their ML p
 - [[small-language-models-edge-ai]] — Practical constraint: LSMs must compress to edge-viable sizes
 - [[on-device-ml-hearing-aids]] — The deployment target for any hearing-relevant LSM
 - [[world-models-hearing-ai]] — Complementary approach: world models for acoustic scene understanding vs. LSMs for cross-device transfer learning
+- [[closed-loop-data-flywheel]] — LSMs trained on wearable telemetry close the loop from population sensor data to model improvement
+- [[digital-phenotyping-cognitive-decline]] — LSMs applied to cross-modal wearable data could enable passive cognitive decline detection

@@ -4,6 +4,88 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-05-10 — LINT
+
+**Operation:** Comprehensive LINT pass — all 70 wiki pages read (39 concepts, 21 entities, 4 comparisons, 6 syntheses); source file directory listing reviewed (individual source files not read due to volume ~180 files).
+
+**Checks performed:** A (index completeness), B (broken index entries), C (orphan detection), D (broken cross-references), E (duplicate concepts), F (stale sources), G (missing cross-references), H (page size).
+
+**Summary:**
+- Checks A, B, H: PASS — no issues
+- Check C: PASS with weak-link notes (who-hearing-program, hearing-ai-research-landscape-2025, large-sensor-models)
+- Check D: 5 issues found — typo in sources frontmatter, wrong entity path prefix, 2 wrong relative paths in concept body wikilinks, wrong relative path in comparisons body link, stale Apple product reference in comparison
+- Check E: 3 candidate pairs — dnn-architectures vs dnn-in-hearing-aids (overlap), small-language-models vs tinyml-edge-ai (scope overlap), model-compression triplication — all flagged for human judgment
+- Check F: 7 stale source concerns — hearing-ai-research-landscape-2025 title outdated, speech-enhancement 2024 foundation model sources, automated-audiometry 2024 ML sources, OTC comparison referencing superseded AirPods Pro 2
+- Check G: 8 pages with missing cross-references — who-hearing-program, automated-audiometry, world-models, audio-reasoning, model-context-protocol, large-sensor-models, gene-therapy-hearing, hearing-loss-dementia-link
+- Additional: duplicate Sources section in speech-enhancement-neural-networks, empty sources[] in who-hearing-program, potential duplicate source file pairs (6), duplicate `updated:` key in automated-audiometry frontmatter
+
+**Auto-fixes applied (15 issues across 13 files):**
+1. `concepts/hearing-aid-market-dynamics.md` — Fixed typo: `sciencedient` → `sciencedirect` in sources frontmatter
+2. `concepts/subjective-objective-hearing-gap.md` — Fixed missing `../entities/` prefix on apple-hearing-features in related field
+3. `concepts/speech-enhancement-neural-networks.md` — Removed first duplicate Sources section (lines 210-219 were incomplete copy of full Sources at end)
+4. `concepts/care-partner-dyad-models.md` — Fixed wrong wikilink path `[[../sources/...]]` → `[[../../sources/...]]`
+5. `concepts/cochlear-implant-ai.md` — Fixed wrong wikilink path `[[../sources/...]]` → `[[../../sources/...]]`
+6. `comparisons/dnn-vs-natural-processing.md` — Fixed Sources body link `../sources/` → `../../sources/` (wrong relative depth from comparisons/)
+7. `comparisons/otc-vs-prescription-hearing-aids.md` — Updated stale AirPods Pro 2 @ $249 reference to AirPods Pro 3 @ $200 (April 2026)
+8. `entities/who-hearing-program.md` — Added 5 missing related links (otc-hearing-aids, audiologist-workforce-shortage, teleaudiology, hearing-loss-dementia-link, gene-therapy-hearing) to frontmatter and Related Pages body
+9. `concepts/automated-audiometry.md` — Expanded Related Pages body section to match frontmatter (added 5 links); removed duplicate `updated:` key; corrected updated date to 2026-05-10
+10. `concepts/world-models-hearing-ai.md` — Added closed-loop-data-flywheel and cortical-reorganization-hearing-aids to related field and Related Pages
+11. `concepts/audio-reasoning-chain-of-thought.md` — Added agentic-engineering-hearing-rd to related field and Related Pages
+12. `concepts/model-context-protocol.md` — Added agentic-engineering-hearing-rd to related field and Related Pages
+13. `concepts/large-sensor-models.md` — Added closed-loop-data-flywheel and digital-phenotyping-cognitive-decline to related field and Related Pages
+14. `concepts/gene-therapy-hearing.md` — Added software-defined-medical-implants to related field and Related Pages
+15. `concepts/hearing-loss-dementia-link.md` — Added care-partner-dyad-models and expanded Related Pages body (added 4 links)
+
+**Issues requiring human judgment (8):**
+- H1: `hearing-ai-research-landscape-2025.md` title says "2025" — wiki is now May 2026; recommend rename to 2026 or update title; all backlinks would need updating
+- H2: `dnn-architectures-hearing-aids.md` vs `dnn-in-hearing-aids.md` — overlapping scope; recommend clarifying lead paragraphs or merging
+- H3: `model-compression.md` content triplicated across `small-language-models-edge-ai.md` and `tinyml-edge-ai.md` — trim compression sections in both; defer to model-compression.md
+- H4: `entities/who-hearing-program.md` — `sources: []` empty; only page with no source citations; needs source files identified and cited
+- H5: `concepts/speech-enhancement-neural-networks.md` — 2024 foundation model sources for a rapidly-moving topic; annotate as older evidence; new 2026 sources (ndf-plus, aida-2) already added
+- H6: `concepts/automated-audiometry.md` — 2024 ML classification sources; page lacks 2026 OTC audiometry developments (Apple hearing test, HIMSA Noah ES)
+- H7: 6 potential duplicate source file pairs in `sources/` — read both in each pair to determine if true duplicates: (ai-audiology-scoping-review-2024 vs ai-audiology-scoping-review), (low-latency-dnn-noise-reduction-frontiers-2025 vs low-latency-dnn-noise-reduction), (signia-ix-platform-2024 vs signia-ix-platform), (resound-vivia-dnn vs resound-vivia-launch-2025), (cochlear-implant-ai-innovations vs ai-cochlear-implant-innovations-review-2025), (oticon-intent-4d-sensors vs oticon-intent-launch-2024)
+- H8: `comparisons/otc-vs-prescription-hearing-aids.md` and `comparisons/on-device-vs-cloud-ml.md` — Sources body sections use informal citations not linked to actual source files
+
+**Pages touched:** 13 (auto-fixes applied)
+
+---
+
+## 2026-05-10 — INGEST (LinkedIn drafts)
+
+**Operation:** INGEST (LinkedIn post research, hearing + AI)
+
+**Sources added (2):**
+- `aida-2-bayesian-generative-se-arxiv-2026.md` — Hidalgo-Araya, Trésor, van Erp, Nuijten, van de Laar, de Vries (TU Eindhoven + Lazy Dynamics + **GN Advanced Science**), arXiv 2603.28436, 30 Mar 2026. AIDA-2: probabilistic generative model for spectral SE; ~85 effective parameters competitive with Wiener (PESQ 2.17 vs 2.22) on VoiceBank+DEMAND; signal processing + learning + personalization unified as inference in a factor graph (RxInfer.jl); industrial provenance via GN Advanced Science.
+- `asha-nslhm-2026-care-partners.md` — ASHA National Speech-Language-Hearing Month 2026 resource set, May 2026. Care-partner content prominent (spouses of adults with hearing loss; adult children of parents with dementia; families navigating swallowing/communication disorders); not the official theme but a clear emphasis.
+
+**New wiki pages (2):**
+- `concepts/probabilistic-generative-models-hearing-ai.md` — Counter-paradigm to "bigger DNNs on chip"; Bayesian factor-graph inference framing for hearing-aid signal processing; AIDA-2 as primary exemplar; positions a third path beyond DNN-vs-classical DSP.
+- `concepts/care-partner-dyad-models.md` — Design / data gap concept page. Hearing-aid AI is n=1 (the wearer) but adherence and outcome literature points to the dyad as the unit of adoption. Concrete schema additions: conversation partner enrollment, dyad-level telemetry (repair / repetition events), bilateral fitting feedback, joint outcome metrics.
+
+**Pages updated (3):**
+- `concepts/speech-enhancement-neural-networks.md` — Added AIDA-2 to `sources:` and `related:` frontmatter; new subsection "AIDA-2 — Probabilistic Generative Counter-Paradigm" under Recent Academic Advances; appended source link; updated date.
+- `entities/gn-hearing-resound.md` — Added "GN Advanced Science — Research Arm" subsection with AIDA-2 details; updated `sources:`, `related:`, `tags:`, and date. Frames AIDA-2 as a parallel non-DNN R&D track alongside ReSound Vivia DNN.
+- `concepts/closed-loop-data-flywheel.md` — Added "Probabilistic / Bayesian Flywheel — AIDA-2" subsection (third architecture beyond M&A and software-defined data collection) and "Multi-User / Dyad Extension (Care Partners)" subsection; expanded `sources:`, `related:`, `tags:`, date.
+
+**Pages reused / cross-linked into (no duplicate concepts):**
+- `concepts/digital-phenotyping-cognitive-decline.md` — referenced from new care-partner page as adjacent measurement frontier.
+- `concepts/longitudinal-hearing-phenotyping.md` — referenced from new care-partner page as outcome layer.
+- `concepts/hearing-loss-dementia-link.md` — referenced from new care-partner page (care-partner role most acute in dementia context).
+- `comparisons/dnn-vs-natural-processing.md` — referenced from new probabilistic-generative page as a related but distinct dichotomy (probabilistic generative is a third path).
+- `syntheses/ai-understanding-gap-hearing-industry.md` — referenced from both new pages.
+- `concepts/on-device-ml-hearing-aids.md`, `concepts/hearing-aid-chip-architectures.md`, `concepts/dnn-architectures-hearing-aids.md` — referenced from probabilistic-generative page (parameter-budget implications).
+
+**Index/log:**
+- Updated `wiki/index.md` last-updated banner with this ingest.
+- Will append banner notes for 2 new concept pages added to Concepts table.
+- Appended this log entry.
+
+**Underlying LinkedIn posts (10 May 2026, posted to Discord channel 1492462147127742565 and emailed to door.punch_4o@icloud.com):**
+1. **AIDA-2 — 85-parameter Bayesian generative model as a counter-narrative to on-chip DNNs** (arXiv 2603.28436)
+2. **Care partners as a hearing-aid data-model gap — ASHA NSLHM 2026** (asha.org NSLHM 2026)
+
+---
+
 ## 2026-05-08 — INGEST (Daily hearing+AI digest)
 
 **Operation:** INGEST (daily email digest research, hearing + AI)
@@ -1076,3 +1158,103 @@ Source: 9to5Mac (1 May 2026) + U-M School of Public Health study page
 - Industry-heavy news cycle today (consolidation + AAA fallout); arXiv 48-hour window was thin so used recent (2026) Frontiers and JAMA Oto papers that hadn't been featured in the prior digest.
 - Avoided overlap with 6 May digest (Apple Hearing Study, Behringer codec paper, Yang ANC, Brian Taylor / Neurotone, Sony OTC exit, ICASSP URGENT) — none repeated.
 - Discord confirmation message: "✅ Daily hearing+AI digest sent to door.punch_4o@icloud.com — 9 items covered (2 papers, 4 industry, 1 AI/ML, 2 worth-watching)."
+
+---
+
+## 2026-05-09 — LinkedIn drafts ingest
+
+**Underlying LinkedIn posts:**
+1. LUCIA — UK's first system-scale RCT for bilateral cochlear implants in adults (announced 6 May 2026; Cambridge / Birmingham / 14 NHS hospitals; n>250). Framed as a missing-dataset, not missing-AI, problem; access expansion runs on labeled cohorts.
+2. Pediatric softband BCD database (Frontiers in Audiology and Otology, 8 May 2026, n=5,490 children, ~28 years). Framed as routine clinical telemetry serving as the warrant for candidacy expansion before guideline change.
+
+**Sources created (2):**
+- sources/lucia-bilateral-ci-trial-may-2026.md — University of Birmingham press release, 6 May 2026; first system-scale RCT of bilateral vs unilateral CI in late-deafened adults across 14 NHS hospitals; recruitment autumn 2026, 12-month follow-up; no AI/ML technology component — purpose-built to generate the labeled cohort that 30-year reimbursement debates have lacked.
+- sources/pediatric-softband-bcd-database-frontiers-may-2026.md — Frontiers in Audiology and Otology, 8 May 2026; retrospective review of 5,490 children fitted with softband BCDs 1998-2025 within publicly-funded pediatric audiology system; PEACH 46% → 82% aided, 74% daily use, 88% of fittings outside the textbook microtia/atresia population (OME, craniofacial anomalies, cleft palate, unknown etiology); first large-scale characterization of contemporary fitting practices.
+
+**Pages updated (3):**
+- wiki/syntheses/cochlear-implant-access-economics.md — added new section "Adult Bilateral CI as the Next Access Frontier — LUCIA Trial (May 2026)" tying the trial to the Robinson institutional-economics keynote framing; added lucia source to frontmatter sources; added longitudinal-hearing-phenotyping to related; added bilateral-ci, rct tags; appended to Sources list; bumped updated date to 2026-05-09.
+- wiki/concepts/cochlear-implant-ai.md — added subsection "LUCIA Trial — A New Cohort for Adult Bilateral CI Modelling (May 2026)" under "AI for Outcome Prediction" connecting LUCIA's labeled cohort to the JAMA / Northwestern preimplant-MRI prediction model that previously had no adult bilateral comparison data; added lucia source to frontmatter sources; bumped updated date to 2026-05-09.
+- wiki/concepts/longitudinal-hearing-phenotyping.md — added new section "Pediatric BCD Exemplar — Telemetry Becomes the Warrant (May 2026)" before Use Cases, framing the n=5,490 pediatric BCD database as the proof-of-concept that routine clinical telemetry can drive guideline change at scale, and the absent adult-hearing-aid analogue as a strategic gap; added pediatric BCD source to frontmatter sources; added telemetry, candidacy-expansion tags; appended to Sources list; bumped updated date to 2026-05-09.
+
+**Pages created (0):** Both items mapped cleanly to existing infrastructure — preferred in-place updates over near-duplicate pages, per wiki conventions.
+
+**Index updated:** wiki/index.md — added top-line entry for today's ingest; bumped updated dates for cochlear-implant-ai.md (added bilateral-ci tag), longitudinal-hearing-phenotyping.md (added telemetry, candidacy-expansion tags), and cochlear-implant-access-economics.md (synthesis date row).
+
+**Discord drafts posted to channel 1492462147127742565.** Email sent to door.punch_4o@icloud.com — "📝 LinkedIn Drafts — 09 May 2026" — 2 posts.
+
+**Notes:**
+- Both sources are first-week-of-May 2026, fresh material that did not overlap with any of the 60+ prior post topics in the LinkedIn post history log.
+- Both items reinforce the recurring 2026 thread that hearing care's binding constraints are dataset/cohort/policy-shaped, not signal-processing-shaped — a thread that links Apple Hearing Study, MEG cortical reorganization, remote CI programming, and Robinson's CI2026 keynote.
+- LUCIA timing (announced 6 May, CI2026 Chicago wraps 9 May) reads as a deliberate field-level reframing.
+
+---
+
+## 2026-05-09 — Daily hearing+AI digest ingest
+
+**Sources researched (10):**
+1. arXiv:2605.06189 — Predictive-Generative Drift Decomposition for SE & Separation (Richter et al., MERL/Hamburg/Paderborn). *Already ingested*.
+2. arXiv:2605.04749 — Spatial-Magnifier multichannel SE (Lee, Pandey, Parekh et al.). *Already ingested*.
+3. arXiv:2605.03776 — Codec intelligibility w/ noise + SE (Behringer et al.). *Already ingested*.
+4. arXiv:2605.01101 — Virtual Speech Therapist clinician-in-the-loop AI agent (Sheikh et al.). **NEW**.
+5. Lexie B3 OTC powered by Bose, $999/pair, 128 hr runtime, BLE 5.3, "Automatic Sound Focus". HearingTracker. **NEW**.
+6. Sony OTC discontinued. *Already ingested*.
+7. Brian Taylor → Neurotone AI as VP Clinical Research. *Already ingested*.
+8. Phonak Virto R Infinio 2026 Red Dot Award. *Already ingested*.
+9. Northwestern JAMA Oto-HNS deep transfer learning for CI language outcome prediction. *Already ingested*.
+10. Auracast UK theatre rollout (National Theatre Dorfman, Bridge Theatre). *Already ingested*.
+
+**Sources created (3):**
+- sources/lexie-b3-bose-launch-may-2026.md — WSA's first post-Sony OTC vehicle. RIC, $999, 32 hr aid + 96 hr case = ~5 days, Bluetooth 5.3 (Classic + BLE), "Automatic Sound Focus" directional system. Strategic stress test of mid-priced ($700-$1,300) OTC band that Sony failed in.
+- sources/virtual-speech-therapist-arxiv-2026.md — Sheikh et al. arXiv:2605.01101. Clinician-in-the-loop AI agent for speech therapy. Adjacent vertical, but exact architectural mirror of the Neurotone aural rehab pattern Brian Taylor articulated.
+- sources/hearing-ai-digest-2026-05-09.md — daily digest record (10 items, 656 words, sent to door.punch_4o@icloud.com).
+
+**Pages updated (3):**
+- wiki/concepts/otc-hearing-aids.md — added lexie-b3-bose-launch-may-2026 to frontmatter sources; added "lexie, bose" tags; added Lexie B3 spec details to Lexie entry under Mass-Retail OTC Brands; added new "Mid-Priced OTC Stress Test: Lexie B3 (May 2026)" subsection under Premium OTC Pricing Failure framing the B3 as the next data point on the middle-squeeze thesis; bumped updated date to 2026-05-09.
+- wiki/entities/ws-audiology-signia.md — added lexie-b3-bose-launch-may-2026 to frontmatter sources; added new "Lexie B3 — Post-Sony OTC Vehicle (May 2026)" subsection after Sony Discontinuation framing WSA's strategic bet that Sony's failure was execution-specific; appended Lexie B3 to Sources list; bumped updated date to 2026-05-09.
+- wiki/entities/neurotone-ai.md — added virtual-speech-therapist-arxiv-2026 to frontmatter sources; added "clinician-in-the-loop" tag; added new "Architectural Pattern: Clinician-in-the-Loop AI Agents (May 2026)" subsection under Strategic Significance, framing Sheikh et al. as the first peer-reviewable instance of the pattern Neurotone is commercializing; appended Sheikh et al. to Sources list; bumped updated date to 2026-05-09.
+
+**Pages created (0):** All items mapped cleanly to existing pages — preferred in-place updates over near-duplicate pages, per wiki conventions.
+
+**Index updated:** wiki/index.md — added top-line entry for today's digest ingest above the LinkedIn-drafts entry from earlier today; bumped updated dates and tags for OTC Hearing Aids, WS Audiology / Signia, and Neurotone AI.
+
+**Email sent:** door.punch_4o@icloud.com — "🎧 Hearing + AI Daily Digest — 09 May 2026" — 10 items: 4 papers (drift decomposition, spatial-magnifier, codec intelligibility, virtual speech therapist), 5 industry news (Lexie B3, Sony exit, Brian Taylor/Neurotone, Phonak Red Dot, FHH Conference), 1 AI/ML (Northwestern CI MRI prediction), 1 worth-watching (Auracast UK theatres). 656 words.
+
+**Notes:**
+- Light Saturday news cycle. 7 of 10 items overlapped with prior 2026-05-06 / 2026-05-07 / 2026-05-08 digests; only 2 genuinely new sources to ingest.
+- Both new sources reinforce existing wiki threads: Lexie B3 → middle-squeeze OTC thesis (already developed in OTC concept page after Sony exit); Sheikh et al. → clinician-in-the-loop pattern (already implicit in Neurotone framing, now with peer-reviewable architectural exemplar).
+- Discord confirmation message: "✅ Daily hearing+AI digest sent to door.punch_4o@icloud.com — 10 items covered (4 papers, 5 industry, 1 AI/ML, 1 worth-watching)."
+
+---
+
+## 2026-05-10 — Daily hearing+AI digest ingest
+
+**Sources researched (5 items in digest):**
+1. NDF+ — Joint Neural Directional Filtering and Diffuse Sound Extraction (Huang/Habets et al., Fraunhofer IIS / IAL Erlangen, arXiv:2605.06108, submitted 7 May 2026). *Already ingested 2026-05-08 — backfilled arXiv ID + submission date.*
+2. NationsBenefits replacing Lucid Hearing as operational partner of Sam's Club's ~450 in-club Hearing Aid Centers. HearingTracker. **NEW**.
+3. CI2026 Chicago closing day (6–9 May 2026). *Already ingested via ci2026-chicago-robinson-keynote-may-2026.md and aci-alliance-ci2026.md*.
+4. AAA 2026 panel — AI vs. provider shortage tension. *Already ingested via aaa-2026-leadership-panel-may.md*.
+5. ICASSP 2026 URGENT Speech Enhancement Challenge wrap. *Already ingested via gap-urgenet-urgent-challenge-icassp-2026.md*.
+
+**Sources created (2):**
+- sources/sams-club-nationsbenefits-supplants-lucid-may-2026.md — HearingTracker, May 2026. Channel-economics shift: WSA loses ~450 mass-retail clinic operations to NationsBenefits. Vertical-integration pattern with same operator running Aetna MA hearing benefit AND in-store dispensing.
+- sources/hearing-ai-digest-2026-05-10.md — daily digest record (5 items, 506 words, sent to door.punch_4o@icloud.com).
+
+**Sources updated (1):**
+- sources/ndf-plus-neural-directional-filtering-arxiv-2026.md — backfilled arxiv_id (2605.06108), arxiv_url, exact submission date (2026-05-07). Source file previously had "specific arXiv ID to be backfilled when paper page resolves" note; resolved.
+
+**Pages updated (3):**
+- wiki/entities/ws-audiology-signia.md — added sams-club-nationsbenefits-supplants-lucid-may-2026 to frontmatter sources; added "lucid, retail-channel, sams-club" tags; added new "Lucid Hearing Loses Sam's Club Operational Role (May 2026)" subsection after the Lexie B3 subsection, framing the three structural events in ~6 weeks (Sony exit / Lexie B3 launch / Sam's Club operational role lost) and the vertical-integration model. Appended source to Sources list. Bumped updated date to 2026-05-10.
+- wiki/concepts/otc-hearing-aids.md — added sams-club-nationsbenefits-supplants-lucid-may-2026 to frontmatter sources; added "sams-club, retail-channel, nationsbenefits, lucid, vertical-integration" tags; added new "Retail-Channel Vertical Integration: Sam's Club / NationsBenefits / Lucid (May 2026)" subsection after Lexie B3 subsection. Appended source to Sources list. Bumped updated date to 2026-05-10.
+- wiki/concepts/hearing-aid-market-dynamics.md — added sams-club-nationsbenefits-supplants-lucid-may-2026 to frontmatter sources; added "retail-channel, vertical-integration, benefits-administrators, medicare-advantage" tags; added new "Retail-Channel Vertical Integration: Benefits Administrators Move into Dispensing (May 2026)" section before Revenue vs. Units. Appended source to Sources list. Bumped updated date to 2026-05-10.
+
+**Pages created (0):** Single new source mapped cleanly to existing infrastructure (WSA entity, OTC concept, market-dynamics concept) — preferred in-place updates per wiki conventions.
+
+**Index updated:** wiki/index.md — added top-line entry for today's digest ingest above the LinkedIn-drafts entry from earlier today; bumped updated dates and tags for OTC Hearing Aids, WS Audiology / Signia, Hearing Aid Market Dynamics.
+
+**Email sent:** door.punch_4o@icloud.com — "🎧 Hearing + AI Daily Digest — 10 May 2026" — 5 items: 1 paper (NDF+), 2 industry (Sam's Club/NationsBenefits, CI2026 close), 1 AI/ML (AAA 2026 panel re-circulation), 1 worth-watching (ICASSP URGENT wrap). 506 words.
+
+**Notes:**
+- Sunday light news cycle. 4 of 5 items overlapped with prior 2026-05-06 → 2026-05-09 digests; only 1 genuinely new source ingested.
+- The Sam's Club / NationsBenefits / Lucid story is the structural news of the week: it's the first US-market instance of an MA benefits administrator vertically integrating the dispensing clinic. Worth flagging for synthesis next week if NationsBenefits expands to Costco / BJs / Walmart Health.
+- Three WSA US retail-channel events in ~6 weeks (Sony exit Apr / Lexie B3 launch ~6 May / Sam's Club operational role lost 10 May) reinforce the "WSA US OTC pipeline narrowing" thread that began with the Sony discontinuation. The wiki now has this thread tracked across WSA entity + OTC concept + market-dynamics concept.
+- Discord confirmation message: "✅ Daily hearing+AI digest sent to door.punch_4o@icloud.com — 5 items covered (1 paper, 2 industry, 1 AI/ML, 1 worth-watching)."
