@@ -4,6 +4,175 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-05-16 — INGEST (Daily hearing+AI digest)
+
+**Operation:** Compiled and sent today's daily hearing+AI digest to door.punch_4o@icloud.com (654 words, 9 items). Posted Discord confirmation to channel 1490303675648970823 (HTTP 200). Ingested 2 genuinely new sources; 7 of 9 items were already in the wiki.
+
+**New source files (2):**
+- `eargo-8-launch-may-2026.md` — Eargo 8 OTC launch mid-May 2026; first product post-Eargo×LXE-Hearing merger; $2,699 MSRP CIC, FDA-cleared. Smart Sound Adjust = environmental classification with auto-program-switching (prescription-tier feature in an OTC). Device Scan = patented in-canal acoustic-signature self-check for wax/occlusion using existing speaker–microphone path — first OTC to market telemetry-through-transducers as a wellness feature. 16 h battery / ~14 case recharges.
+- `driftse-equilibrium-se-arxiv-2026.md` — DriftSE; arXiv 2604.24199; submitted to Interspeech 2026. Equilibrium-style generative SE that evolves the pushforward distribution of a mapping function to converge directly onto the clean-speech distribution; **single-step inference** matches multi-step diffusion baselines on VoiceBank+DEMAND. Latency unlock for generative SE in HA budgets — categorically different route from predictive-generative drift decomposition. Streaming stability and hallucination-surface vs L3-SE both open.
+
+Plus digest record: `hearing-ai-digest-2026-05-16.md`.
+
+**Updated existing pages (2):**
+- `wiki/concepts/otc-hearing-aids.md` — Added "Premium-OTC Self-Fitting + Auto-Scene: Eargo 8 (May 2026)" subsection under Premium OTC Pricing Failure section, framing the upper-OTC viability test ($2,699) as complementary to the Lexie B3 mid-tier test ($999). Smart Sound Adjust collapsed one of the prescription tier's marketing differentiators; Device Scan introduced canal-as-passive-sensor pattern. Source added to frontmatter; updated date bumped.
+- `wiki/concepts/speech-enhancement-neural-networks.md` — Added "DriftSE — Single-Step Equilibrium Generative SE" subsection under Recent Academic Advances; contrasted with predictive-generative drift decomposition (Richter et al.) as a parallel route to single-step inference. Flagged the hallucination-surface question relative to L3-SE / linguistic-hallucination-speech-enhancement concept as unverified. Source added to frontmatter; tags expanded with single-step-generative-se, equilibrium-model; updated date bumped to 2026-05-16.
+
+**Items in digest already in wiki (no duplicate ingest):**
+- Brain-controlled hearing aid (Mesgarani/Choudhari, Nature Neuroscience 11 May 2026) — `brain-controlled-hearing-nature-neuroscience-may-2026.md` (ingested 12 May; NPR 14 May follow-on coverage adds press-cycle context but no new technical claim).
+- Framingham hearing-aid → 20-yr dementia risk (61% reduction in under-70s) — `framingham-hearing-aid-dementia-jaman-2025.md` (the Aug 2025 JAMA Neurology Letters + May 2026 PR resurfacing both captured).
+- Northwestern AI for cochlear-implant language prediction (92.4% accuracy from preimplant MRI) — `pediatric-ci-language-prediction-transfer-learning-2025.md` plus `ai-cochlear-implant-language-prediction-2025.md` and `ai-predicts-ci-language-outcomes.md`.
+- Phonak Virto R Infinio / Infinio Ultra Sphere 2026 AI Excellence Award — `phonak-ai-excellence-award-march-2026.md` (announced March 24 2026; same award).
+- Starkey Brandon Sawalich / Omega AI BIG Innovation — `starkey-omega-ai-big-ai-awards-2026.md`.
+- Interspeech 2026 Audio Reasoning Challenge — `interspeech-2026-audio-reasoning-challenge.md`.
+- Ultra-low-power MCU / TinyML 2026 roadmap — `tiny-ml-to-tiny-dl-survey-acm-2026.md` and adjacent TinyML sources.
+
+**Strategic threads reinforced:**
+- **Generative-SE latency wall is breaking.** Third paper in 8 days from the "single-step / efficient generative SE" line (DriftSE today; L3-SE 14 May with its categorically-new linguistic-hallucination failure mode; predictive-generative drift decomposition 8 May). 2026 is the year generative SE either ships in HAs or hits a faithfulness ceiling that blocks it. Both branches of that fork are now wiki-tracked.
+- **OTC scene-classification convergence at premium tier.** Eargo 8 ports prescription-tier auto-scene-classification into a $2,699 self-fitting OTC. The "premium prescription justifies its price via AI features" narrative has now lost one of its strongest individual claims.
+- **Telemetry-through-existing-transducers as a category.** Eargo Device Scan + pediatric softband BCD telemetry + in-ear PPG = third 2026 datapoint suggesting the device's own transducers double as cheap clinical sensors. Worth a dedicated synthesis page in Q3 2026 if the pattern recurs.
+- **Press-cycle persistence of AAD/brain-controlled hearing.** Third digest in a row featuring the Columbia paper (with the May 14 NPR explainer extending coverage). The narrative has not exhausted itself; expect OEM "attention-aware" feature-marketing pressure into H2 2026.
+
+---
+
+## 2026-05-16 — INGEST (LinkedIn drafts)
+
+**Operation:** Ingested two news items underlying today's LinkedIn drafts: (1) **Listen Up Kentucky** state-level public-awareness campaign (ADA + WSA + KAA, surfaced 11 May 2026 for Better Hearing Month) framed as the missing top-of-funnel data layer for hearing-care AI; and (2) **Gijbels, Anderson, Miller, Johnson, Lunner** (Frontiers in Audiology and Otology, March 30 2026; DOI 10.3389/fauot.2026.1772008) ecological-validity protocol with the headline that audiovisual intelligibility and listening comprehension outperform audio-only assessments, plus a negative result that vocal-intensity changes do NOT reliably track hearing-loss severity.
+
+**New source files (2):**
+- `listen-up-kentucky-may-2026.md` — Kentucky-wide PSAs (TV + radio) + audiologist outreach toolkits across Kentucky DMAs; WSA is the **sole OEM partner**, ADA + KAA co-lead; explicitly designed as a scalable template for additional state rollouts.
+- `gijbels-ecological-validity-fauot-mar-2026.md` — n=26 (11 dyads + 4 individuals with research-assistant partners); 2-3 hour test battery spanning audio-only / audiovisual / dyadic conversation; headline: audiovisual intelligibility + listening comprehension beat audio-only at predicting real-world function; negative: vocal-intensity-as-hearing-loss-biomarker fails.
+
+**New concept pages (2):**
+- `wiki/concepts/hearing-care-funnel-attribution.md` — Data-science framing of the awareness → search → screening → fitting funnel. 80% of people with hearing loss never seek care; the demand-side measurement layer is structurally under-instrumented. Listen Up Kentucky positioned as a natural A/B framework (DMA-level exposure). Model classes that apply: geo-uplift / synthetic-control / Bayesian MMM / causal forests / propensity-weighted conversion modeling. Argument: the OEM with the best top-of-funnel attribution model wins the next decade because every other AI claim (DNN SNR, dyad enhancement, etc.) is downstream of fitting volume.
+- `wiki/concepts/multimodal-hearing-assessment.md` — Synthesizes Gijbels et al. with Apple Hearing Study (16% audio-vs-subjective gap) and the AVSE work. Argues the audio-only loss function (PESQ/STOI/HASPI) is misspecified for hearing-aided populations because the device is multimodal in deployment but evaluated as audio-only. Concrete proposal: HASPI-AV outcome variant; paired smartphone camera as the cheapest visual sensor for ecologically-valid evaluation. Adjacent-negative section: vocal-intensity tracking does NOT scale (Gijbels), narrowing the dyadic feature set.
+
+**Updated existing pages (5):**
+- `wiki/concepts/subjective-objective-hearing-gap.md` — Added "Clinical-Cohort Confirmation (Gijbels et al., March 2026)" section linking the Apple-population-scale finding to the clinical-cohort finding. Bumped frontmatter sources/related/tags; added multimodal-hearing-assessment cross-link; fixed entity paths.
+- `wiki/concepts/audiologist-workforce-shortage.md` — Added "Pairing With the Demand-Side Constraint" section. Frames Listen Up Kentucky as the demand-side companion to the supply-side workforce gap; joint supply-demand model would predict where the next bottleneck migrates if either lever moves first. Added source row + hearing-care-funnel-attribution related.
+- `wiki/entities/ws-audiology-signia.md` — Added "Listen Up Kentucky — State-Level Awareness Pilot (May 2026)" subsection between Lexie B3 and Sam's Club. WSA as sole OEM = first manufacturer with a state-scale demand-side dataset; competitive variable if WSA installs the measurement plumbing.
+- `wiki/concepts/speech-enhancement-neural-networks.md` — Added "The Audio-Only Loss-Function Gap (Gijbels et al., March 2026)" subsection under Evaluation Metrics; argues that PESQ/STOI/HASPI systematically undersell multimodal devices because the metric ignores the visual channel that subjects actually use in deployment. Frontmatter tags now include multimodal/audiovisual.
+- `wiki/concepts/care-partner-dyad-models.md` — Added "Negative Result: Vocal-Intensity Tracking (Gijbels et al., March 2026)" section. Constrains the dyad-aware feature set: Lombard-effect-as-biomarker is out; partner-side visual channel (face visibility, gaze direction) and turn-taking/repair-frequency signals remain candidates.
+
+**Index update:** Prepended a "Last updated: 2026-05-16" stanza covering the 2 new sources, 2 new concept pages, and 5 updated pages; demoted prior 2026-05-15 entry to "Earlier."
+
+**Underlying LinkedIn posts:**
+1. *Listen Up Kentucky — public-health awareness as the missing top-of-funnel data layer for hearing-care AI.* Reframes a Better Hearing Month state PSA as a state-level A/B framework, names the missing pipeline (PSA exposure → search lift → screening → fitting), and argues the attribution model is a competitive variable hard to replicate without a state-scale dataset.
+2. *Audiovisual intelligibility outperforms audio-only assessments.* Summarizes Gijbels et al. n=26; argues audio-only loss functions are misspecified for multimodal deployment; proposes paired-phone camera as the cheapest visual sensor for ecologically-valid evaluation.
+
+**Watchlist for follow-up:**
+- Whether other states adopt the Listen Up template; whether ADA + WSA publish PSA-exposure → fitting-conversion attribution data.
+- Whether any OEM publishes HASPI-AV or other multimodal outcome metrics in 2026 product literature.
+- Whether independent labs replicate the Gijbels vocal-intensity negative result before any product team commits to Lombard-effect-as-biomarker.
+
+---
+
+## 2026-05-15 — INGEST (Daily hearing+AI digest)
+
+**Operation:** Ingested today's hearing+AI digest. Quiet news cycle after Monday's brain-controlled-hearing splash; three genuinely new sources mapped, plus a new concept page for the predictive pediatric earmold pattern.
+
+**New source files (3):**
+- `allears-ai-pediatric-earmolds-april-2026.md` — Western University × Boys Town National Research Hospital project; PIs Scollie / Nikan / Pearce / McCreery; Oberkotter Foundation $4.4M / 4 yrs; ML-predicted ear-canal growth + mirroring + 3D-printed earmolds in advance of fit drift; software to be open-sourced.
+- `aondevices-edge-ai-ces-2026.md` — AONDevices × P-Logic CES 2026 microwatt-class always-on multi-modal inference silicon for hearables; adds another commercial-stage entrant to the dedicated-AI-silicon column alongside Phonak Sphere Infinio and Fortell Spatial AI.
+- `tiny-ml-to-tiny-dl-survey-acm-2026.md` — ACM Computing Surveys 2026 taxonomy of TinyML → Tiny Deep Learning; on-device-training treatment names the missing rung between factory-trained DNN deployment and in-situ adaptation in HAs.
+
+**New concept pages (1):**
+- `wiki/concepts/predictive-pediatric-earmolds.md` — ML shape-prediction + 3D-printing pipeline as a planned manufacturing flow rather than a reactive impression-and-refit cycle; critical-window optimization framing for prelingual hearing-aided children; open-source pediatric stack as a structural counter to OEM-bundled fit software; mirroring symmetry assumption may break for syndromic populations where intervention is most acute.
+
+**Updated existing pages (2):**
+- `wiki/concepts/tinyml-edge-ai.md` — Added Tiny ML → Tiny DL survey subsection (anchor reference for future scope), AONDevices × P-Logic CES 2026 subsection (microwatt always-on); bumped frontmatter sources/related/dates.
+- `wiki/concepts/on-device-ml-hearing-aids.md` — Added two new sources to frontmatter; bumped updated date.
+
+**Index update:** added new concept row, bumped on-device-ml-hearing-aids row, added today's daily-digest entry.
+
+**Already-in-wiki digest items:** Fortell Spatial AI study (sources/fortell-spatial-ai-ija-may-2026.md from 13 May), Apple Hearing Study findings (sources/apple-hearing-study-results-may-2026.md), Apple AirPods country expansion (sources/airpods-hearing-aid-country-expansion-may-2026.md from 13 May), Phonak Virto R Infinio Red Dot (sources/phonak-virto-r-infinio-red-dot-april-2026.md), Starkey Omega AI BIG Innovation (sources/starkey-omega-ai-big-ai-awards-2026.md), NPR brain-controlled hearing coverage (already mapped to sources/brain-controlled-hearing-nature-neuroscience-may-2026.md from 12 May).
+
+---
+
+## 2026-05-15 — INGEST (LinkedIn drafts)
+
+**Operation:** Ingested two news items underlying today's LinkedIn drafts: (1) Tether QVAC MedPsy on-device medical LLM release (May 7 2026), framed as the substrate for hearing-care **companion-phone** apps (distinct from the on-chip lane); and (2) JASA paper on meta-earplugs with Helmholtz resonators (Apr 28 2026), framed as a passive-metamaterial counter-narrative to AI maximalism in hearing protection.
+
+**New source files (2):**
+- `qvac-medpsy-edge-medical-llm-may-2026.md` — Tether AI Group QVAC MedPsy 1.7B + 4B (Hugging Face, May 7 2026); Apache 2.0; 4B beats Google MedGemma-27B at 7× smaller on 7-task closed-ended medical benchmark; Q4_K_M ≈ 1.28 / 2.72 GB; smartphone-class deployment; SFT+RL on AlphaMedQA pipeline; Baichuan-M3-235B teacher.
+- `meta-earplugs-helmholtz-resonators-jasa-april-2026.md` — JASA 159(4) 3702 (Apr 28 2026); surfaced in Hearing Review week of May 12; 3D-printed passive earplug with Helmholtz resonators in series tuned to sub-1 kHz; +15 dB low-frequency attenuation via phase-cancellation reflection; near-zero occlusion effect.
+
+**New concept pages (2):**
+- `wiki/concepts/medical-domain-edge-llms.md` — Companion-phone-substrate framing distinct from on-chip lane. Workflows table: tinnitus iCBT counseling, plain-language audiogram explanation, post-fit Q&A, conversational triage, first-fit onboarding, care-partner counseling. Bottleneck shifts from compute to **hearing-care domain alignment** because audiology training corpora are an order of magnitude sparser than general medicine. Risks section: hallucination in counseling, SaMD liability framing, monthly base-model update cadence, multilingual coverage gap, voice-modality gap (MedPsy is text-only).
+- `wiki/concepts/passive-acoustic-metamaterials.md` — Phase-cancellation reflection as the mechanism (vs absorption). Computational acoustics + generative geometry as a tunable parameter space analogous to neural-network design. Floor-raising thesis: every dB attenuated mechanically is a dB the active DSP/DNN/ANC layer doesn't fight, paying a power/latency/algorithmic-complexity dividend up front. Co-design table across passive shell + active DSP/DNN + companion phone LLM. Limits subsection: dynamic conversation, per-user personalization, sub-2 kHz design bias.
+
+**Updated existing pages (2):**
+- `wiki/concepts/small-language-models-edge-ai.md` — Added QVAC MedPsy entry to Notable Small Models 2026 table; bumped frontmatter sources/related/tags; added MedPsy source row.
+- `wiki/concepts/digital-therapeutics-tinnitus.md` — Added MedPsy as adherence-lever open question (does on-device conversational counseling out-complete form-based delivery?); bumped frontmatter sources/related; added source row.
+
+**Index update:** added the two new concept pages, bumped SLM and tinnitus-DTx tag/date entries.
+
+**Underlying LinkedIn posts:**
+1. *QVAC MedPsy on-device medical LLM — the hearing-care companion app just got an upgrade* (medical-domain edge LLMs collapse the cloud-LLM regulatory friction and rule-based-script personalization deficit; companion app substrate transformed; bottleneck shifts to domain alignment).
+2. *Meta-earplugs Helmholtz resonators — passive metamaterials as a counter-narrative to AI maximalism in hearing protection* (3D-printed phase-cancellation geometry as a design loop structurally identical to NN tuning; floor-raising layer beneath the active stack; future products co-design passive shell with active DSP rather than picking).
+
+---
+
+## 2026-05-13 — INGEST (Daily Hearing+AI Digest)
+
+**Operation:** Ingested today's hearing+AI daily digest (10 items: 2 papers, 4 industry news, 2 AI/ML, 2 worth-watching). Most digest items were already in the wiki (Fortell Spatial AI paper, Apple Hearing Study May 1, Starkey Omega Government Services, ICASSP URGENT, Otarmeni gene therapy). Four genuinely new sources warranted ingestion.
+
+**New source files (4):**
+- `airpods-hearing-aid-country-expansion-may-2026.md` — Apple's 12 May 2026 expansion of the AirPods Pro 2/3 Hearing Aid feature to Italy, Romania, and Czechia, bundled with Apple Watch hypertension alerts; now in 100+ countries. iOS 26+ required.
+- `apple-otc-haf-usability-aja-2025.md` — First independent academic evaluation of Apple's OTC Hearing Aid Feature in the American Journal of Audiology (DOI 10.1044/2025_AJA-25-00192). MAUQ usability 6.7/7 in adults with self-perceived mild-to-moderate loss; high satisfaction and sound-quality scores; lab measurements meet OTC prescription-target expectations.
+- `sonova-sennheiser-consumer-divestiture-may-2026.md` — Sonova publicly announced it is seeking a buyer for the Sennheiser-branded Consumer Hearing business. Refocus on core hearing care. Implicit concession that the consumer-hearable category has been won by Apple/Bose/Sony rather than medical-device incumbents.
+- `dfingernet-noise-adaptive-se-arxiv-2025.md` — DFingerNet (arXiv:2501.10525) — Deep Filter Network backbone extended with a noise-fingerprint adaptation module. Conditional SE inference replaces the discrete scene-classifier-plus-program-switch pattern. On-device-friendly architecture.
+
+**Updated pages (4):**
+- `wiki/entities/apple-hearing-features.md` — Added country-rollout sentence in Software Requirements; refreshed frontmatter (`updated: 2026-05-13`); added two new source rows.
+- `wiki/entities/sonova-ag.md` — Added new Sennheiser Consumer Hearing Divestiture subsection under Recent Developments (May 2026); refreshed frontmatter; added new source row.
+- `wiki/concepts/otc-hearing-aids.md` — Added independent clinical validation (AJA) and geographic rollout (May 12) bullets in the Apple Disruption section; refreshed frontmatter sources.
+- `wiki/concepts/dnn-in-hearing-aids.md` — Added new Conditional / Noise-Fingerprint Adaptation subsection under Key Architectures, citing DFingerNet as the canonical example; refreshed frontmatter.
+
+**No new wiki pages required** — all items folded into existing infrastructure.
+
+**Coverage gaps noted (deferred):**
+- AONDevices AONx360 edge-AI silicon (CES 2026) — mentioned in digest Worth-Watching but already covered well by existing `aizip-tiny-ai-hearing-devices-2026.md` and the edge-AI/TinyML concept set. Not a priority for a standalone source file today.
+- Verifying whether the Fortell Spatial AI paper venue is IJA or *Hearing, Balance and Communication* — existing source file says IJA; some Taylor & Francis search hits referenced HBC. DOI prefix `10.1080/14992027` resolves to IJA. Leaving the existing source unchanged.
+
+**Email digest record:** `hearing-ai-digest-2026-05-13` — 10 items: Spatial AI Fortell paper (lead), Apple OTC-HAF AJA validation, AirPods country expansion, Apple Hearing Study findings, Starkey Omega VA channel, Sonova/Sennheiser divestiture, ICASSP 2026 URGENT, DFingerNet, Otarmeni gene therapy, AONDevices AONx360.
+
+---
+
+## 2026-05-11 — INGEST (Daily Hearing+AI Digest)
+
+**Operation:** Ingested today's hearing+AI daily digest (8 items: 3 papers, 3 industry news, 1 AI/ML, 1 worth-watching).
+
+**New source files (3):**
+- `speaker-distance-estimation-reverberation-arxiv-2026.md` — Neri et al., arXiv:2605.07694, 11 May 2026. Single-channel speaker distance estimation; empirical decomposition of early vs. late reverberation degradation. Reinforces late-tail-as-next-frontier-nuisance with Huang/NDF+ thread.
+- `starkey-omega-ai-government-services-may-2026.md` — Starkey announces Omega AI feature parity (Auracast Assistant, Push-to-Talk, Google Fast Pair) for VA/DoD/IHS as of May 1, 2026, plus the new StarLink Edge LE Adapter. Channel-economics expansion + one new accessory.
+- `live-captioning-smart-glasses-may-2026.md` — Glass Almanac roundup of Wired's May 2026 live-captioning glasses comparative review. Category-convergence pressure on hearing aids.
+
+**Backfill (1 source):**
+- `predictive-generative-drift-decomposition-arxiv-2026.md` — added arXiv:2605.06189 ID and 8 May 2026 submission date (was placeholder).
+
+**Digest record:** `hearing-ai-digest-2026-05-11.md`
+
+**Wiki page updates (2):**
+- `concepts/speech-enhancement-neural-networks.md` — Added Speaker Distance Estimation source to frontmatter; added "Single-Channel Speaker Distance Estimation under Reverberation (Neri et al., May 2026)" subsection under Recent Academic Advances; updated Predictive-Generative Drift Decomposition subsection with arXiv ID. Updated `updated:` to 2026-05-11.
+- `entities/starkey.md` — Added Government Services source to frontmatter; added "Government Services Portfolio Expansion (May 1, 2026)" section between Auracast/Connectivity Update and AAA 2026 Showcase. Updated `updated:` to 2026-05-11.
+
+**Index updates:**
+- Top-of-file "Last updated" entry rewritten for 2026-05-11 ingest; prior 2026-05-10 entry demoted.
+- Speech Enhancement Neural Networks row: tags + date refreshed.
+- Starkey row: tags + date refreshed.
+
+**No new wiki pages required** — Monday light cycle, all items mapped to existing infrastructure.
+
+**Strategic threads reinforced:**
+- Late-reverberation as next-frontier nuisance variable (Neri + Huang).
+- Channel-economics dominance — third consecutive day (Starkey Government Services + WSA Sam's Club + Lexie B3 prior).
+- Category convergence: live-captioning glasses now substituting for HA on the "speech-in-noise understanding" job for some profiles.
+
+**Already-covered items not re-ingested:** Spatial-Magnifier (May 8), Predictive-Generative Drift (May 8 — backfill only), Apple Hearing Study (May 1 source), FHH 2026 conference (existing source), Sonova FY readout (calendar flag only — results not yet released).
+
+---
+
 ## 2026-05-10 — LINT
 
 **Operation:** Comprehensive LINT pass — all 70 wiki pages read (39 concepts, 21 entities, 4 comparisons, 6 syntheses); source file directory listing reviewed (individual source files not read due to volume ~180 files).
@@ -1258,3 +1427,165 @@ Source: 9to5Mac (1 May 2026) + U-M School of Public Health study page
 - The Sam's Club / NationsBenefits / Lucid story is the structural news of the week: it's the first US-market instance of an MA benefits administrator vertically integrating the dispensing clinic. Worth flagging for synthesis next week if NationsBenefits expands to Costco / BJs / Walmart Health.
 - Three WSA US retail-channel events in ~6 weeks (Sony exit Apr / Lexie B3 launch ~6 May / Sam's Club operational role lost 10 May) reinforce the "WSA US OTC pipeline narrowing" thread that began with the Sony discontinuation. The wiki now has this thread tracked across WSA entity + OTC concept + market-dynamics concept.
 - Discord confirmation message: "✅ Daily hearing+AI digest sent to door.punch_4o@icloud.com — 5 items covered (1 paper, 2 industry, 1 AI/ML, 1 worth-watching)."
+
+---
+
+## 2026-05-11 — LinkedIn-drafts ingest (Schmitt & Stropahl SilentCloud RWD + Francis/Seshadri Framingham 2025)
+
+**Sources created (2):**
+- sources/silentcloud-tinnitus-rwd-frontiers-may-2026.md — Schmitt & Stropahl (Sonova R&D), Frontiers in Audiology and Otology, 7 May 2026, DOI 10.3389/fauot.2026.1769291. First peer-reviewed real-world outcomes for SilentCloud (CE / FDA 510(k) tinnitus DTx). Mean THI −14.7 pts (p<0.001), Cohen's d ≈0.69, 63.5% clinically meaningful improvement among 63 iCBT completers. The headline number is the funnel: 17,271 registered → 63 completers (~0.4%). No ML methods reported — traditional stats only. Industrial provenance (Sonova).
+- sources/framingham-hearing-aid-dementia-jaman-2025.md — Francis, Seshadri, Dillard, Kujawa, Welling, Alcabes, Beiser, JAMA Neurology Letters, 18 Aug 2025, DOI 10.1001/jamaneurol.2025.2713. Distinct from the existing 2024 Framingham/brain-structure source. n=2,953 Framingham adults, up to 20-yr follow-up. Under-70 hearing-aid users: 61% lower incident-dementia risk vs untreated peers. Over-70: no significant association. Self-reported HA use (no telemetry validation). Resurfaced in May 2026 via IHS Better Hearing Month PR (May 5) and McKnight's coverage (May 6).
+
+**Pages created (1):**
+- wiki/concepts/digital-therapeutics-tinnitus.md — New concept page covering tinnitus DTx as a category (CE/FDA SaMD landscape, the SilentCloud RWD result, the adherence-as-ML-problem framing, reference architecture for a dropout-aware DTx, competitive landscape, open research questions). Cross-links to care-partner-dyad-models, hearing-loss-dementia-link, longitudinal-hearing-phenotyping, audiologist-workforce-shortage, sonova-ag entity.
+
+**Pages updated (2):**
+- wiki/concepts/hearing-loss-dementia-link.md — added framingham-hearing-aid-dementia-jaman-2025 to frontmatter sources; added new "Framingham Hearing Aid Use → Incident Dementia (2025, JAMA Neurology Letters)" subsection inside the "Recent Academic Updates" section, emphasizing the age-stratified result (61% under-70 vs no effect 70+), the midlife-prevention reframing, and the product-design implication (industry has optimized for 75+ phenotype but the consequential cohort is 50–69). Appended source to Sources list with descriptive label. Bumped updated date to 2026-05-11.
+- wiki/entities/sonova-ag.md — added silentcloud-tinnitus-rwd-frontiers-may-2026 to frontmatter sources; added new digital-therapeutics-tinnitus concept link to Related Pages; appended SilentCloud RWD source to Sources list. Bumped updated date to 2026-05-11.
+
+**Index updated:** wiki/index.md — added "Digital Therapeutics for Tinnitus" entry under Concepts (tags: tinnitus, digital-therapeutics, dtx, icbt, adherence, silentcloud, sonova; date 2026-05-11). Hearing-loss-dementia-link entry already in index — date will refresh on next lint sweep.
+
+**LinkedIn posts (2):**
+- Post 1 — "SilentCloud real-world tinnitus data — the adherence funnel is the ML problem" — frames 17,271 → 63 funnel as the central ML problem (dropout-time survival, sequence-aware nudges, dyadic onboarding), not the post-completion effect size. Sonova industrial provenance.
+- Post 2 — "Framingham 61% under-70 dementia reduction — design hearing technology for midlife, not retirement" — reframes the age cutoff as product strategy: industry optimizes for 75+ phenotype but the consequential intervention cohort is 50–69. Concrete data-science task list: passive midlife screening, working-age acoustic personalization, per-user cognitive-trajectory telemetry.
+
+**Email sent:** door.punch_4o@icloud.com — "📝 LinkedIn Drafts — 11 May 2026"
+**Discord posted:** channel 1492462147127742565 (LinkedIn-drafts channel)
+
+**Notes:**
+- The Schmitt & Stropahl paper is the first published RWD evidence for SilentCloud since the Sonova acquisition. The internal angle is more interesting than the external angle — the dropout funnel reveals where ML can move the needle. Worth watching for follow-up papers from the same group with adherence modelling.
+- The Francis/Seshadri 2025 Framingham analysis is distinct from the existing 2024 Framingham/brain-structure source on the wiki — both ingested now, cross-linked, and labelled clearly.
+- The age-stratified result (61% under-70 / no effect 70+) is the most actionable hearing-cognition finding of the past year and deserves a dedicated synthesis page if more under-70-cohort evidence accumulates. Flagging for synthesis if a third confirmatory study lands.
+
+---
+
+## 2026-05-12 — LinkedIn-drafts ingest (Choudhari/Mesgarani Nature Neuroscience closed-loop AAD + GN NAL-NL3 global launch)
+
+**Sources created (2):**
+- sources/brain-controlled-hearing-nature-neuroscience-may-2026.md — Choudhari, Mesgarani et al. (Columbia Zuckerman Institute), *Nature Neuroscience*, 11 May 2026, DOI 10.1038/s41593-026-02281-5. First closed-loop human demonstration of real-time brain-controlled hearing. Intracranial ECoG in epilepsy patients; system improved intelligibility, reduced listening effort, was consistently preferred across guided + self-initiated attention shifts. Reframes hearing-aid AI's loss function from signal-side enhancement to attention-side enhancement. Form-factor gap (ECoG won't ship) is now the translational question for ear-EEG / cEEGrids / non-neural surrogates. Coverage: NPR, NeurosciencneNews, Inside Precision Medicine, EurekAlert, MedicalXpress. Senior author Mesgarani is the same group behind much of the foundational AAD work since 2012.
+- sources/gn-nal-nl3-global-launch-march-2026.md — GN press release, 11 March 2026. World's first commercial fitting platform built on NAL-NL3, the successor to 2011-era NL2 and the field's first data-derived prescription baseline. Global software release across ReSound Smart Fit 2.3.1, Beltone Solus Max 2.3.1, Hearing Australia Fitware 2.3.1. NL3 layers large-scale clinical fitting datasets + real-world user feedback into the prescription target. Companion enhanced AutoREM tooling automates real-ear verification. Methodology paper in *International Journal of Audiology* (online ahead of print, DOI 10.1080/14992027.2026.2648713). Distinct from the pre-existing sources/nal-nl3-fitting-protocol-2026.md trade-press summary — this source covers the GN-specific commercial launch and global software release.
+
+**Pages created (1):**
+- wiki/concepts/hearing-aid-prescription-formulas.md — New concept page covering the NAL / DSL / OEM-proprietary prescription-formula landscape. First dedicated wiki page on prescription targets as the upstream baseline every downstream AI layer (DNN, beamforming, personalization, AAD) inherits. Frames the NL2→NL3 transition as the most consequential change to the field's default starting point in 15 years. Sections: core function, the major formulas (NAL-NL1/2/3, DSL v5, Phonak APD, Oticon VAC+, Starkey e-STAT, WSA SoundFit / Sound Preference), NAL-NL3 as the data-native successor, why prescription formulas are an AI/ML story now (manufacturer divergence, closed-loop feedback opportunity, outcome equity/fairness, REM verification still matters), relationship to personalization (prior vs posterior framing), open questions. Cross-links to ml-personalized-fitting, dnn-in-hearing-aids, closed-loop-data-flywheel, wsa-sound-preference-program-april-2026, gn-hearing-resound, vcca-computational-audiology.
+
+**Pages updated (2):**
+- wiki/concepts/auditory-attention-decoding.md — added brain-controlled-hearing-nature-neuroscience-may-2026 to frontmatter sources (placed first); added "ecog, closed-loop, cocktail-party" tags; added new "First Real-Time Closed-Loop Human Demonstration with ECoG (May 2026)" subsection at the top of the Recent Academic Advances section (positioned ahead of the 2025 TU Denmark closed-loop paper since the Columbia paper is the human / perceptual milestone vs the Danish hearing-impaired-in-the-loop milestone). Appended source to Sources list at top. Bumped updated date to 2026-05-12.
+- wiki/entities/gn-hearing-resound.md — added gn-nal-nl3-global-launch-march-2026 to frontmatter sources (placed first); added hearing-aid-prescription-formulas to related; added "nal-nl3, fitting-software" tags; added new "NAL-NL3 — First to Ship Data-Native Prescription Formula (March 2026)" section after the GN Advanced Science section, framing GN as having the most complete top-to-bottom data-native fitting stack (NL3 prior + Vivia DNN + AIDA-2 Bayesian) of any OEM as of mid-2026. Added prescription-formulas concept to Related Pages list. Appended source to Sources list at top. Bumped updated date to 2026-05-12.
+
+**Index updated:** wiki/index.md — added Hearing Aid Prescription Formulas concept entry between Hearing Aid Chip Architectures and Hearing Loss and Dementia Link; bumped Auditory Attention Decoding updated date to 2026-05-12 with ecog + closed-loop tags; bumped GN Hearing / ReSound updated date to 2026-05-12 with nal-nl3 + dnn + bayesian tags. New top-line _Last updated_ entry for today's ingest.
+
+**LinkedIn posts (2):**
+- Post 1 — "Real-time brain-controlled hearing aid — first human demo and the shift in loss function" — frames the Columbia ECoG closed-loop demonstration as a reframe of hearing-aid AI's loss function (signal-side → attention-side) and lays out three implications (evaluation metrics, personalization as moment-by-moment conditioning, form-factor / ear-EEG translation).
+- Post 2 — "NAL-NL3 — the prescription baseline every hearing aid starts from just went data-derived" — frames the GN NL3 launch as the unsexy-but-foundational moment when the prescription target itself becomes ML-derived, with three implications (manufacturer divergence as competitive variable, closed-loop feedback at the prior level, outcome equity as dataset-curation problem).
+
+**Email sent:** door.punch_4o@icloud.com — "📝 LinkedIn Drafts — 12 May 2026"
+**Discord posted:** channel 1492462147127742565 (LinkedIn-drafts channel)
+
+**Notes:**
+- The Columbia paper is the most consequential AAD result in years and the natural anchor for any future synthesis page on "brain-controlled hearing aids." Closed-loop with a perceptual benefit endpoint, in humans, was the missing milestone. If a follow-up paper appears with non-invasive sensing (ear-EEG, cEEGrids) achieving anything close to the ECoG result, flag for synthesis page.
+- The NAL-NL3 thread now has full coverage: trade-press summary (nal-nl3-fitting-protocol-2026.md, April), commercial launch (gn-nal-nl3-global-launch-march-2026.md, March), and a dedicated concept page (hearing-aid-prescription-formulas.md) cross-referencing both. Watch for Phonak / Oticon / Starkey / WSA NL3 adoption announcements — that would be the canary for whether NL3 becomes a true cross-OEM default or stays GN-aligned.
+- Both posts intentionally adopt a "data-science framing of an underappreciated change" pattern — distinct from the May 11 funnel-modelling and midlife-prevention framings, and from the May 10 Bayesian counter-narrative framing. Track for fatigue if the pattern repeats too often.
+
+---
+
+## 2026-05-12 — INGEST (Daily Hearing+AI Digest, second pass)
+
+**Operation:** Ingested the daily hearing+AI digest sent this morning. Most digest items were already in the wiki from earlier ingests today (Columbia AAD paper, AAA 2026 panel, Phonak AI Excellence Award, Aizip tiny-AI, multi-stage low-latency paper, selective-NC survey, Apple Hearing Study results, Lexie B3, Oticon Verit, Auracast UK theatres, Northwestern CI language prediction). Only one genuinely new item required source creation.
+
+**New source files (1):**
+- `sonova-costco-sennheiser-sonite-r-may-2026.md` — HearingTracker, 11 May 2026. Sonova returns to Costco via a pilot trial with the Sennheiser Sonite R RIC in 100+ U.S. warehouses, reversing the 2024 Phonak pullout. Significant because it (a) restores Sonova's exposure to Costco's fitting/outcome data flow, and (b) completes a four-stack retail strategy (Phonak premium independent / Unitron mid-tier independent / Sennheiser-licensed Sonite R Costco mass / AudioNova consolidated own-brand) that gives Sonova the broadest data footprint of any OEM if scaled.
+
+**Pages updated (1):**
+- wiki/entities/sonova-ag.md — added sonova-costco-sennheiser-sonite-r-may-2026 to frontmatter sources; added new "Costco Return — Sennheiser Sonite R Pilot (11 May 2026)" subsection inside Recent Developments (May 2026), framing the four-stack retail-data strategy; appended source to Sources list. Bumped updated date to 2026-05-12.
+
+**Email sent:** door.punch_4o@icloud.com — "🎧 Hearing + AI Daily Digest — 12 May 2026" (706 words). Headline: Columbia AAD paper.
+
+**Notes:**
+- The Costco return is a retail/strategy story, but the underlying interest is the data-footprint asymmetry it implies — Sonova is the only OEM now operating across all four major retail channel types simultaneously. If Phonak/DEEPSONIC OTAs eventually push to Sonite R units in the Costco channel, that's a much bigger story.
+- No new concept or synthesis pages needed — today's digest mostly consolidated material already on the wiki. Index and concept-page hygiene is current.
+
+---
+
+## 2026-05-13 — INGEST (LinkedIn drafts)
+
+**Operation:** Ingested the two LinkedIn drafts generated today (Fortell IJA preference study and WCA 2026 Seoul computational audiology programming) into the wiki.
+
+**New source files (1):**
+- `fortell-spatial-ai-ija-may-2026.md` — *International Journal of Audiology*, May 2026, DOI 10.1080/14992027.2026.2663345. Peer-reviewed preference study of Fortell's investigational "Spatial AI" hearing aid against five state-of-the-art premium incumbents. n=20 adults with mild-to-moderately-severe bilateral hearing loss, 100 randomized blinded A/B trials per participant. Investigational device preferred 99/100 (one tie); average SNR uplift 12.2 dB vs 3.0–5.9 dB for the five controls. Consultants: William Shapiro and Mario Svirsky (NYU Langone). Companion Nov 2025 intelligibility study: 17 dB SNR uplift vs 1.9 dB control, 80% word comprehension in challenging noise vs 31% control. Custom AI chip ~235× compute of conventional HA SoCs, up to 100B ops/sec, <10 ms end-to-end latency. Single Park Avenue clinic, $6,800/pair, multi-month waitlist. Framed as the first startup full-stack chip+algorithm+dataset co-design with peer-reviewed evidence beating incumbents on preference by an order of magnitude in SNR.
+
+**Source files expanded (1):**
+- `world-congress-audiology-seoul-may-2026.md` — Confirmed program details added: theme "Broadening the Horizon of Audiology"; 60 planned sessions / 10 hands-on workshops / 18 special sessions / 32 oral presentation sessions; three AI-framed plenaries; Computational Audiology Network (CAN) multi-session presence — Round Table moderated by Nicky Chong-White, Workshop "The Force Awakens: Robots, Avatars, and ASR in Clinical Audiology" by Gloria Araiza-Illan and Jan-Willem Wasmann, and Planned Session "Future e-Health: AI for the Ear and Beyond" with three named talks (AI Virtual Patients for Audiology Training, AI-Assisted Diagnosis of Childhood Ear Disease, VR-Based Fine-Tuning of Hearing Device Settings). Significance framing added: computational audiology graduates from sidecar to track at flagship congress; hiring-pipeline implication for Sonova/Demant/GN/Starkey/WSA in 2027–2028; validation-loop compression as more clinicians become ML-literate.
+
+**New wiki pages (1):**
+- `wiki/entities/fortell.md` — New entity page for Fortell as a market entrant. Covers architecture highlights (custom AI chip + Spatial AI algorithm + curated dataset, co-design philosophy), distribution and pricing (Manhattan boutique, $6,800/pair, waitlist), clinical evidence (IJA May 2026 + companion Nov 2025), strategic position (validates co-design thesis, counter-pressure on shared-silicon strategies, premium positioning ≠ mass-market threat yet, industry-sponsored evidence caveat), and four open questions (scale path, independent replication, form-factor compression, OEM response). Cross-linked to chip architectures, DNN-in-hearing-aids, speech enhancement networks, Phonak (Sphere Infinio parallel), and Sonova-AG.
+
+**Pages updated (3):**
+- `wiki/concepts/hearing-aid-chip-architectures.md` — Added Fortell to Integrated NPU / Dual-Chip section as a startup full-stack example with custom AI chip at ~235× conventional HA SoCs. Added Fortell to Processing Power Statistics table (100B ops/sec). Updated frontmatter (sources, related — added fortell entity, updated tag list to include `co-design`). Added Fortell source to bottom Sources list. Bumped updated to 2026-05-13.
+- `wiki/entities/vcca-computational-audiology.md` — Added new "CAN Programming at WCA 2026 Seoul (24–27 May 2026)" section between VCCA2026 Programme and Impact. Added WCA 2026 source to frontmatter and Sources list. Added `wca2026` tag. Updated frontmatter related: list noted via Sources only. Bumped updated to 2026-05-13.
+- `wiki/index.md` — Updated last-updated stanza with 2026-05-13 entry summarizing the Fortell + WCA ingest. Demoted prior 2026-05-12 stanza to "Earlier" with full text preserved. Added Fortell entity row to Entities table. Updated VCCA row tags and date. Updated Hearing Aid Chip Architectures row tags (added `co-design`) and date.
+
+**LinkedIn posts (2):**
+- Post 1 — "Fortell's 99/100 preference vs incumbent hearing aids — when the chip is designed for the algorithm" — frames the IJA preference study as evidence that the SNR ceiling moves an order of magnitude when chip/algorithm/dataset are co-designed end-to-end, validating Sonova's Sphere Infinio dedicated-AI-chip bet and challenging shared-silicon strategies. Two open questions on vertical-integration necessity and premium-pricing market impact.
+- Post 2 — "World Congress of Audiology Seoul 2026 — computational audiology becomes a track, not a sidecar" — frames the CAN multi-session presence at WCA as a structural escalation of computational audiology from sub-community to track, with hiring-pipeline implications for the five major OEMs and a validation-loop compression implication for ML-pipeline builders.
+
+**Email sent:** door.punch_4o@icloud.com — "📝 LinkedIn Drafts — 13 May 2026"
+**Discord posted:** channel 1492462147127742565 (LinkedIn-drafts channel)
+
+**Notes:**
+- Fortell is the first new HA-industry entity added to the wiki in May. The page is intentionally cautious about the "startup beats incumbents" narrative — industry-sponsored study, n=20, single-clinic distribution, premium pricing — but the SNR numbers are striking enough to warrant a full entity page rather than a single subsection inside a chip-architectures page. If independent replication appears, upgrade the strategic-position section accordingly.
+- The WCA / CAN angle is structurally important but harder to evidence quantitatively. Watch for the post-conference summary (late May / early June) for which CAN sessions actually drew industry attendance versus academic-only audiences. That signal is the real test of "computational audiology becoming a track."
+- Both posts continue the "data-science framing of an underappreciated structural change" pattern. Three days in a row now (May 11 funnel modeling / May 12 attention-side loss function and NL3 priors / May 13 silicon-algorithm co-design and curriculum pipeline). Track for fatigue.
+
+---
+
+## 2026-05-14 — INGEST (arXiv: L3-SE — Linguistic Hallucination in LM-Based Speech Enhancement)
+
+**Operation:** Ingested Wang et al., arXiv:2605.08608 (eess.AS, 9 May 2026), "Reducing Linguistic Hallucination in LM-Based Speech Enhancement via Noise-Invariant Acoustic-Semantic Distillation." LM-based speech enhancement (autoregressive token-LM over WavLM-derived codec features) names a new failure mode — linguistic hallucination — and proposes acoustic-semantic distillation as the mitigation. The wiki-relevant angle is the failure-mode + evaluation-metric-gap argument: standard HA metrics (PESQ/STOI/SI-SNR/HASPI/HASQI/DNS-MOS) measure perceptual quality and intelligibility, not faithfulness to the words actually spoken. A hallucinated output can score well on all of them. Hearing-aid field needs to import hallucination benchmarks from the text-LLM community before generative SE ships in products.
+
+**New source files (1):**
+- `sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md` — Wang, Rong, Su, Tan, Wu, Fan, Luo, Luan, Lu; arXiv:2605.08608; eess.AS; 9 May 2026. Full bibliographic + architecture breakdown (three-component: noise-invariant conditioning encoder with dual acoustic+semantic distillation, high-fidelity codec with learnable weighted WavLM-layer representations, decoder-only autoregressive LM). Why-it-matters section frames four pillars: new failure-mode category (inaudible to listener, no reference signal), evaluation-metric gap, high-stakes communication (medical/financial/legal/safety), architectural implication for HA generative SE. Open questions covered (latency, hallucination measurement methodology, composition with spatial/TSE pipelines, multilingual generalization, HI-listener evaluation).
+
+**New wiki pages (2):**
+- `wiki/concepts/llm-based-speech-enhancement.md` — The autoregressive-LM-over-speech-tokens paradigm as a structurally distinct branch of the SE tree (sibling of Whisper/VALL-E/AudioLM, not a spectral mask network). Sections: core architecture (codec + conditioning encoder + decoder-only AR LM), why LM-based SE exists (naturalness, strong language prior, universal degradation handling, foundation-model trajectory), L3-SE architectural innovations, relationship to other SE paradigms (mask-based / generative-predictive fusion / diffusion / LM-based / probabilistic-generative comparison table), hearing-aid deployment considerations (latency floor, smartphone-side hybrid, 3-5 year on-chip horizon), the hallucination question (cross-link), open questions. Cross-links to dnn-in-hearing-aids, dnn-architectures-hearing-aids, large-sensor-models, model-compression, on-device-ml-hearing-aids, probabilistic-generative-models-hearing-ai, eu-ai-act-medical-devices, audio-reasoning-chain-of-thought, and primary cross-link to linguistic-hallucination-speech-enhancement.
+- `wiki/concepts/linguistic-hallucination-speech-enhancement.md` — Failure-mode page. Sections: why this is a categorically new failure mode (audible-vs-inaudible table), why generative SE hallucinates (prior takes over when acoustic evidence is weak), the evaluation-metric gap (table: PESQ/STOI/SI-SNR/HASPI/HASQI/DNS-MOS/listener-panel — all miss it), why it matters for hearing aids specifically (high-stakes communication, no external verification path, asymmetric trust by user group — CI/severe-HI cohort benefits most and verifies least, regulatory implications via EU AI Act + FDA AI/ML SaMD, connection to subjective-objective gap), what the field needs to build in order (standard benchmark, faithfulness metric, inference-time confidence estimates, HI-listener forced-choice transcription tests, regulatory guidance for generative SaMD), relationship to other failure modes (final summary table — only failure mode where both columns are "no"), open questions (base rate, severity distribution, user detection thresholds, hybrid architectures, multilingual fairness, adversarial robustness).
+
+**Pages updated (6):**
+- `wiki/concepts/speech-enhancement-neural-networks.md` — Added L3-SE subsection under Recent Academic Advances (positioned after Single-Channel Speaker Distance Estimation as the latest May 2026 entry; frames structurally distinct branch + failure mode + evaluation gap + HA implication + latency floor caveat). Added llm-based-speech-enhancement and linguistic-hallucination-speech-enhancement to Related Pages. Appended L3-SE entry to bottom Sources list. Frontmatter: added source + 2 related + 2 tags; bumped updated to 2026-05-14.
+- `wiki/concepts/dnn-in-hearing-aids.md` — Added new "LM-Based SE and the Linguistic-Hallucination Failure Mode (May 2026)" section between Multi-Stage Phase-Aware Enhancement and AI Aural Rehabilitation. Section frames the new failure-mode category, evaluation-metric gap, asymmetric risk by user group (cross-references Schulz et al. listener-group analysis already on this page), and production timeline. Added L3-SE source to frontmatter and bottom Sources list. Added llm-based-speech-enhancement and linguistic-hallucination-speech-enhancement to related list and Related Pages list. Tags bumped. Updated 2026-05-14.
+- `wiki/concepts/large-sensor-models.md` — Added "Adjacent: LM-Based Speech Enhancement as a Foundation-Model-Shaped Audio Application" subsection framing L3-SE as the foundation-model trajectory reaching SE; flagging linguistic-hallucination as a failure mode that transfers to any cross-sensor foundation model deployed in HAs. Added 2 related links to Related Pages. Frontmatter sources/related/tags bumped. Updated 2026-05-14.
+- `wiki/concepts/model-compression.md` — Added "Acoustic-Semantic Distillation (Wang et al., May 2026)" subsection under Knowledge Distillation; framed as the first SE distillation recipe whose primary objective is factuality (faithfulness to spoken words) rather than perceptual quality. Added 2 related links to Related Pages and L3-SE to frontmatter sources/related/tags. Updated 2026-05-14.
+- `wiki/concepts/probabilistic-generative-models-hearing-ai.md` — Added new "vs LM-Based Speech Enhancement (L3-SE, Wang et al., May 2026)" subsection inside Relationship to Other Paradigms. Argument: AIDA-2-style architectures are hallucination-resistant by construction because inference is constrained by explicit joint distribution rather than autoregressive language prior; structural regulatory + audiological advantage if hallucination becomes the dominant safety concern. Added 2 related links to Related Pages list; added hallucination-resistance tag. Added L3-SE to bottom Sources list. Frontmatter sources/related/tags bumped. Updated 2026-05-14.
+- `wiki/concepts/dnn-architectures-hearing-aids.md` — Frontmatter only: added L3-SE source, added 2 related links (llm-based-speech-enhancement, linguistic-hallucination-speech-enhancement), added llm-based-se tag, bumped updated to 2026-05-14.
+- `wiki/concepts/on-device-ml-hearing-aids.md` — Frontmatter only: added L3-SE source, added 2 related links (llm-based-speech-enhancement, linguistic-hallucination-speech-enhancement), added llm-based-se tag.
+
+**Index updated:** wiki/index.md — Top-line _Last updated_ stanza prepended summarizing the 2026-05-14 ingest. Two new concept rows added to Concepts table (LM-Based Speech Enhancement, Linguistic Hallucination in Speech Enhancement). Updated dates and tag lists on five existing concept rows: Large Sensor Models, DNN in Hearing Aids, Speech Enhancement Neural Networks, Model Compression for Hearing AI, Probabilistic Generative Models for Hearing AI. Demoted prior 2026-05-13 stanza to "Earlier" with full text preserved.
+
+**Pages touched this ingest: 10** (1 source created, 2 wiki concept pages created, 6 wiki concept pages updated, index + log appended). On-target for the 5-15 pages-per-source schema budget.
+
+**Notes:**
+- The wiki now has explicit treatment of all four SE paradigms as distinct concept pages or sections: mask-based DNN (speech-enhancement-neural-networks), generative-predictive fusion (covered inside speech-enhancement-neural-networks via GAP-URGENet and Richter drift decomposition), probabilistic generative (probabilistic-generative-models-hearing-ai / AIDA-2), and now LM-based (llm-based-speech-enhancement / L3-SE). The comparison table on the new LM-based page is the canonical four-paradigm summary.
+- The linguistic-hallucination page is the first wiki page whose primary thesis is an **evaluation-infrastructure gap** rather than a technology / market / clinical finding. It is structurally similar to the subjective-objective-hearing-gap page in that it argues for a new measurement axis the field is currently missing. If a second 2026 paper appears proposing a hallucination benchmark or faithfulness metric for SE, this page becomes the natural ingestion home and should be expanded into a benchmarking section.
+- Production-relevance caveat: autoregressive LM-based SE is currently far from a HA latency budget (token-by-token generation incompatible with <10 ms algorithmic latency). The pages flag this clearly. The argument for ingestion is that (a) the failure-mode taxonomy generalizes beyond LM-based SE to any generative SE that ships in HAs, and (b) the evaluation-metric gap is real today even for current generative-predictive systems entering products.
+- Watch list: any 2026 paper proposing a standard hallucination benchmark for SE; any HI-listener forced-choice transcription study under generative SE output; any regulator guidance (FDA, EMA, MHRA) addressing generative AI in SaMD audio devices; any HA OEM announcement of an LM-based SE product or research program. Each would warrant an update to the linguistic-hallucination page.
+
+---
+
+## 2026-05-14 — DIGEST EMAIL SENT
+
+**Operation:** Compiled and sent daily Hearing + AI Digest email to door.punch_4o@icloud.com (subject "🎧 Hearing + AI Daily Digest — 14 May 2026"). Five items covered: Choudhari/Mesgarani brain-controlled selective hearing (*Nature Neuroscience*, 11 May 2026); Wang et al. L3-SE linguistic-hallucination paper (arXiv:2605.08608, 9 May 2026); Northwestern deep-transfer-learning pediatric CI language-outcome prediction model (JAMA Otolaryngology – Head and Neck Surgery); NationsBenefits/Sam's Club channel transition supplanting Lucid Hearing (HearingTracker, 9 May 2026); HHTM Future of Hearing Healthcare 2026 virtual conference (Hearing Review, opening 13 May 2026). All five sources already present in `sources/` from prior ingests (brain-controlled paper from 2026-05-12, L3-SE from 2026-05-14 morning ingest, CI prediction model from earlier April ingest, NationsBenefits and HHTM from prior weeks).
+
+**No new wiki pages created in this operation** — digest is a downstream artifact of already-ingested sources. The wiki was the source-of-truth used to compile the digest, not a target for new ingestion.
+
+**Sanity check on digest framing:**
+- Brain-controlled hearing → anchored as the headline because Nature Neuroscience publication date (11 May) puts it inside the 48h "last week" window and lay-press coverage (NPR, Greek Reporter, Brighter Side) continued through May 13.
+- L3-SE → framed as the second-tier headline because it's the genuinely novel ML failure-mode story and the digest reader benefits from seeing it before generic outlets pick it up.
+- Northwestern CI prediction → included as a credible peer-reviewed result with a clear clinical workflow implication; cross-referenced wiki pages on cochlear-implant-ai.
+- NationsBenefits/Sam's Club → included as the only material US dispensing-channel news in the 48h window.
+- HHTM Future of Hearing Healthcare → included as the live event the reader can still attend (sessions 13/20/27 May).
+
+**Discord confirmation:** Posted to active channel — "✅ Daily hearing+AI digest sent to door.punch_4o@icloud.com — 5 items covered."
+
+**Notes:**
+- Yesterday's digest (2026-05-13) leaned on Fortell + Apple Hearing Study + Starkey VA + Sonova/Sennheiser + Otarmeni + Apple OTC HAF eval. Today's digest deliberately rotated to brain-controlled AAD + L3-SE + Northwestern CI MRI + Sam's Club channel + HHTM conference to avoid republishing the same five anchors two days running. Apple expansion was demoted to a "Worth Watching" mention rather than headline placement.
+- The digest's "Quick Stats" section continues to be the most reader-friendly summary — five concrete numbers, all sourced from the items above. Keep this pattern.
+- Watch list for tomorrow: any independent replication of the Choudhari/Mesgarani result with non-invasive sensors; any Fortell competitor preference study (industry-sponsored response expected); any first publication of an L3-SE-style hallucination benchmark; any new Apple Hearing Study release; any major OEM Q1 earnings commentary on AI hearing aid uptake.

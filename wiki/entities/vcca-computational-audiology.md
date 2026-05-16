@@ -2,10 +2,10 @@
 title: VCCA — Virtual Conference on Computational Audiology
 type: entity
 created: 2026-04-15
-updated: 2026-04-26
-sources: [vcca2024-conference.md, vcca2025-conference.md, vcca2026-conference.md, computational-audiology-new-approaches-pmc-2021.md]
+updated: 2026-05-13
+sources: [vcca2024-conference.md, vcca2025-conference.md, vcca2026-conference.md, computational-audiology-new-approaches-pmc-2021.md, world-congress-audiology-seoul-may-2026.md]
 related: [teleaudiology.md, auditory-attention-decoding.md, cochlear-implant-ai.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, ../syntheses/hearing-ai-research-landscape-2025.md]
-tags: [conference, computational-audiology, academic, vcca, ai-audiology]
+tags: [conference, computational-audiology, academic, vcca, ai-audiology, wca2026]
 ---
 
 # VCCA — Virtual Conference on Computational Audiology
@@ -76,6 +76,16 @@ The term "computational audiology" was formally defined in the foundational pape
 
 The Clarity Challenge (led by Graetzer, Cox, Barker at Salford/Sheffield) is closely aligned with VCCA — it provides standardized benchmarks for hearing aid speech enhancement and intelligibility prediction. Several VCCA presentations are connected to Clarity Challenge outcomes.
 
+## CAN Programming at WCA 2026 Seoul (24–27 May 2026)
+
+A meaningful escalation: the Computational Audiology Network is not just running its own annual conference, it now has a multi-session presence at the world's flagship audiology congress (37th World Congress of Audiology, Seoul). The CAN contributions:
+
+- **Round Table:** "Future Perspectives in Audiology and AI, New Technologies" — moderated by Nicky Chong-White
+- **Workshop:** "The Force Awakens: Robots, Avatars, and ASR in Clinical Audiology" — Gloria Araiza-Illan and Jan-Willem Wasmann
+- **Planned Session:** "Future e-Health — AI for the Ear and Beyond" — including talks on AI Virtual Patients for Audiology Training, AI-Assisted Diagnosis of Childhood Ear Disease, and VR-Based Fine-Tuning of Hearing Device Settings
+
+Structurally different from prior congresses where computational topics were largely confined to individual oral presentations. Signals that "computational audiology" is graduating from a sub-community to a track within the field's general program. See [[../../sources/world-congress-audiology-seoul-may-2026]] for full program context.
+
 ## Impact
 
 VCCA has become the go-to venue for researchers working on computational approaches to hearing healthcare. Its free, virtual format ensures global participation, especially from researchers in low-resource settings. The growing number of abstracts (30 → 89 → 100+) tracks the explosive growth of AI in audiology research.
@@ -92,3 +102,4 @@ VCCA has become the go-to venue for researchers working on computational approac
 - [VCCA2025 Conference](../sources/vcca2025-conference.md)
 - [VCCA2026 Conference](../sources/vcca2026-conference.md)
 - [Computational Audiology — Foundational Paper](../sources/computational-audiology-new-approaches-pmc-2021.md)
+- [World Congress of Audiology 2026 — Seoul](../sources/world-congress-audiology-seoul-may-2026.md) — CAN multi-session presence at the global flagship congress

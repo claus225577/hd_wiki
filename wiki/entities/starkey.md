@@ -2,8 +2,8 @@
 title: Starkey
 type: entity
 created: 2026-04-15
-updated: 2026-04-25
-sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, starkey-omega-ai-aaa-2026-showcase.md, hearingtracker-2026-premium-rankings.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md]
+updated: 2026-05-11
+sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, starkey-omega-ai-aaa-2026-showcase.md, hearingtracker-2026-premium-rankings.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md, starkey-omega-ai-government-services-may-2026.md]
 related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md, ../concepts/auracast-bluetooth-le-audio.md, aaa-conference.md]
 tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe, omega-ai, awards, auracast, respiratory-rate, aaa-2026]
 ---
@@ -89,6 +89,14 @@ Widely rolled out feature update for Omega AI platform:
   - Abnormal respiratory rate is an early indicator of respiratory distress, heart failure, infection
   - Combined with heart rate, fall detection, and activity tracking, enables comprehensive health profiling from the ear
   - Strengthens Starkey's "health tech company" positioning with four distinct biometric signals
+
+## Government Services Portfolio Expansion (May 1, 2026)
+Omega AI's full feature set is now available to U.S. **Government Services** audiologists — VA, DoD, and IHS — as of May 1, 2026:
+- **Auracast Assistant**, **Push-to-Talk**, **Google Fast Pair** — feature parity with the Jan 2026 commercial rollout
+- **StarLink Edge LE Adapter** — a new accessory bridging non-LE source devices to LE Audio. Genuinely new artifact in the May announcement; matters in VA/DoD environments where source-side hardware is mixed-vintage and not all clinicians or patients have LE-Audio-capable phones.
+- **Hardening claims**: waterproofing 10× stronger than previous coatings; custom in-ear products engineered up to 20× tougher — meaningful in active-duty settings.
+- **Channel significance**: VA alone fits ~700,000 hearing aids per year. Government Services parity materially expands the Omega AI installed base and reinforces Starkey's "hardened-environment" positioning vs. Oticon (Verit/Intent) and Phonak (Infinio) in the Federal channel.
+- See [[../sources/starkey-omega-ai-government-services-may-2026]].
 
 ## AAA 2026 Showcase (April 2026)
 Starkey showcased the full Omega AI platform at AAA 2026 (San Antonio, April 22-25), highlighting three pillars:

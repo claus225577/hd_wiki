@@ -2,8 +2,8 @@
 title: Hearing Loss and Dementia: The Evidence
 type: concept
 created: 2026-04-15
-updated: 2026-05-07
-sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md]
+updated: 2026-05-11
+sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md]
 related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md, care-partner-dyad-models.md]
 tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping]
 ---
@@ -124,6 +124,17 @@ ML model developed to predict which hearing aid users will experience cognitive 
 ### Framingham Heart Study (2024, JAMA Network Open)
 Large longitudinal study linking hearing loss to brain structural changes visible on MRI, cognitive performance decline, and dementia risk. Adds neuroimaging evidence to the epidemiological association.
 
+### Framingham Hearing Aid Use → Incident Dementia (2025, JAMA Neurology Letters)
+A second Framingham analysis (Francis, Seshadri et al., JAMA Neurology Letters, **Aug 18, 2025**) tracked 2,953 adults aged 60+ for up to 20 years, comparing untreated hearing loss, treated hearing loss, and no hearing loss.
+
+- **Under-70 stratum:** Hearing-aid users had **61% lower** incident-dementia risk vs untreated peers
+- **Under-70 stratum (no hearing loss):** 29% lower risk vs untreated peers
+- **70+ stratum:** No statistically significant association between hearing aid use and dementia
+
+The age cutoff is the headline. The result reframes hearing-intervention as a **midlife (50–69) prevention strategy** — by the time the typical wearer adopts a device in their late 70s, the protective window has substantially closed. **Product-design implication:** the industry has historically optimized for the 75+ phenotype (visible BTE, telecoil, fall detection), but the most consequential intervention cohort is 50–69. This cohort needs invisible form factors, workplace-acoustic personalization, passive screening triggers from existing wearables, and outcome metrics tied to cognitive trajectory rather than booth-only word recognition.
+
+Resurfaced in the **May 2026 news cycle** via Better Hearing Month coverage (IHS, May 5; McKnight's, May 6) — see [[../sources/framingham-hearing-aid-dementia-jaman-2025]].
+
 ### Dementia Risk Meta-Analysis (2024)
 50 studies, >1.5M participants: adult-onset hearing loss increases risk for cognitive decline, dementia, MCI, and Alzheimer's disease. Hearing loss confirmed as responsible for ~7% of dementia risk — the largest single modifiable factor.
 
@@ -140,4 +151,5 @@ Large longitudinal study linking hearing loss to brain structural changes visibl
 ## Sources
 - [ACHIEVE Trial Secondary Analysis](../sources/achieve-trial-cognitive-hearing-2025.md)
 - [Cognitive Outcome Prediction Model](../sources/hearing-aid-cognitive-outcome-prediction-2025.md)
-- [Framingham Heart Study — Hearing & Brain](../sources/hearing-loss-dementia-framingham-jama-2024.md)
+- [Framingham Heart Study — Hearing & Brain (JAMA Open, 2024)](../sources/hearing-loss-dementia-framingham-jama-2024.md)
+- [Framingham — Self-Reported Hearing Aid Use & Incident Dementia (JAMA Neurology Letters, 2025)](../sources/framingham-hearing-aid-dementia-jaman-2025.md) — 61% lower dementia risk in under-70 hearing-aid users

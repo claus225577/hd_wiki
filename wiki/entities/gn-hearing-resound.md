@@ -2,10 +2,10 @@
 title: GN Hearing / ReSound
 type: entity
 created: 2026-04-15
-updated: 2026-05-10
-sources: [amplifon-gn-acquisition-2026.md, auracast-hearing-accessibility-2026.md, resound-vivia-launch-2025.md, aida-2-bayesian-generative-se-arxiv-2026.md]
-related: [amplifon.md, ../concepts/auracast-bluetooth-le-audio.md, ../concepts/closed-loop-data-flywheel.md, ../concepts/probabilistic-generative-models-hearing-ai.md, sonova-ag.md]
-tags: [company, manufacturer, resound, gn-group, acquired, dnn, auracast, dual-chip, bayesian, gn-advanced-science]
+updated: 2026-05-12
+sources: [gn-nal-nl3-global-launch-march-2026.md, amplifon-gn-acquisition-2026.md, auracast-hearing-accessibility-2026.md, resound-vivia-launch-2025.md, aida-2-bayesian-generative-se-arxiv-2026.md]
+related: [amplifon.md, ../concepts/auracast-bluetooth-le-audio.md, ../concepts/closed-loop-data-flywheel.md, ../concepts/probabilistic-generative-models-hearing-ai.md, ../concepts/hearing-aid-prescription-formulas.md, sonova-ag.md]
+tags: [company, manufacturer, resound, gn-group, acquired, dnn, auracast, dual-chip, bayesian, gn-advanced-science, nal-nl3, fitting-software]
 ---
 
 # GN Hearing / ReSound
@@ -72,13 +72,24 @@ Hidalgo-Araya, Trésor, van Erp, Nuijten, van de Laar, de Vries (arXiv 2603.2843
 
 This positions GN distinctively against Phonak/Sonova (DEEPSONIC DNN), Oticon (Sirius NPU), and Starkey (Omega DNN 360) — all of whom are scaling deep networks. ReSound Vivia is GN's DNN play; AIDA-2 hints at a parallel non-DNN R&D track.
 
+## NAL-NL3 — First to Ship Data-Native Prescription Formula (March 2026)
+
+On 11 March 2026, GN became the **first hearing-aid manufacturer to ship a fitting platform built on NAL-NL3**, the successor to the 2011-era NAL-NL2 prescription formula and the field's first data-derived prescription baseline. Released globally across:
+- ReSound Smart Fit 2.3.1
+- Beltone Solus Max 2.3.1
+- Hearing Australia Fitware 2.3.1
+
+NL3 layers large-scale clinical fitting datasets and real-world user feedback into the prescription target itself — making the default starting point for every fitting a data-derived prior rather than a hand-tuned acoustic-loudness model. Companion enhanced AutoREM tooling automates the real-ear verification step. Combined with GN's downstream DNN (Vivia) and Bayesian (AIDA-2) lines, this is the most complete top-to-bottom data-native fitting stack of any OEM as of mid-2026. See [[../concepts/hearing-aid-prescription-formulas]] for the cross-OEM picture.
+
 ## Related Pages
 - [[amplifon]] — Acquirer; full deal terms and strategic implications
 - [[auracast-bluetooth-le-audio]] — GN/ReSound as first mover
 - [[closed-loop-data-flywheel]] — Data strategy enabled by Amplifon merger
 - [[../concepts/probabilistic-generative-models-hearing-ai]] — AIDA-2 / GN Advanced Science line
+- [[../concepts/hearing-aid-prescription-formulas]] — NL3 first-mover; cross-OEM landscape
 
 ## Sources
+- [GN NAL-NL3 Global Launch (March 2026)](../sources/gn-nal-nl3-global-launch-march-2026.md) — World-first commercial NL3 fitting platform across ReSound Smart Fit, Beltone Solus Max, Hearing Australia Fitware
 - [Amplifon-GN Acquisition 2026](../sources/amplifon-gn-acquisition-2026.md)
 - [Auracast Hearing Accessibility 2026](../sources/auracast-hearing-accessibility-2026.md)
 - [ReSound Vivia Launch 2025](../sources/resound-vivia-launch-2025.md) — CES 2025 introduction, dual-chip architecture, DNN specs, Auracast

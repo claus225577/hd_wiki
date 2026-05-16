@@ -2,10 +2,10 @@
 title: Auditory Attention Decoding (AAD)
 type: concept
 created: 2026-04-15
-updated: 2026-04-25
-sources: [eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md, target-speaker-extraction-ultra-low-latency-2026.md]
+updated: 2026-05-12
+sources: [brain-controlled-hearing-nature-neuroscience-may-2026.md, eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md, target-speaker-extraction-ultra-low-latency-2026.md]
 related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, vcca-computational-audiology.md, audio-reasoning-chain-of-thought.md]
-tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, hearing-aids]
+tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, ecog, closed-loop, cocktail-party, hearing-aids]
 ---
 
 # Auditory Attention Decoding (AAD)
@@ -94,6 +94,9 @@ The pathway from research to product is gated by electrode miniaturization, ampl
 
 ## Recent Academic Advances (2024–2026)
 
+### First Real-Time Closed-Loop Human Demonstration with ECoG (May 2026)
+Choudhari, Mesgarani et al. (Columbia Zuckerman Institute), *Nature Neuroscience*, 11 May 2026 — DOI 10.1038/s41593-026-02281-5. The first peer-reviewed human demonstration that closing the AAD loop in real time produces a *perceptual* benefit, not just offline classification accuracy. Used high-resolution intracranial ECoG in epilepsy patients undergoing neurosurgery; system improved speech intelligibility, reduced listening effort, and was consistently preferred by subjects across guided and self-initiated attention shifts. Critically reframes hearing-aid AI's loss function from signal-side enhancement to attention-side enhancement. ECoG itself won't ship — the translational gap is whether ear-EEG / cEEGrids / non-neural surrogates can recover enough of the attention signal at hearing-aid power budgets. Senior author Mesgarani is the same group behind much of the foundational AAD work since 2012.
+
 ### Real-Time Neurosteered Hearing Instrument (2025)
 Landmark paper from Technical University of Denmark demonstrating a complete closed-loop system: EEG → attention decoder → hearing aid beamforming adjustment — working in real-time with hearing-impaired listeners. Published in Journal of Neural Engineering, February 2025.
 
@@ -120,6 +123,7 @@ eNeuro paper showing that hearing aid noise reduction and nonlinearity compensat
 - [[audio-reasoning-chain-of-thought]] — Chain-of-thought reasoning about audio scenes; complementary to AAD's neural attention signal
 
 ## Sources
+- [Brain-Controlled Hearing — First Closed-Loop Human Demo (Nature Neuroscience, May 2026)](../sources/brain-controlled-hearing-nature-neuroscience-may-2026.md)
 - [Real-time EEG Neurosteering](../sources/eeg-neurosteering-hearing-aid-2025.md)
 - [TSF-AADNet](../sources/tsf-aadnet-short-window-aad-2025.md)
 - [Wireless EEG AAD](../sources/wireless-eeg-aad-two-node-2026.md)

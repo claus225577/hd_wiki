@@ -2,10 +2,10 @@
 title: Care Partners and Dyad-Level Models for Hearing AI
 type: concept
 created: 2026-05-10
-updated: 2026-05-10
-sources: [asha-nslhm-2026-care-partners.md]
-related: [closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, digital-phenotyping-cognitive-decline.md, longitudinal-hearing-phenotyping.md, on-device-ml-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
-tags: [care-partners, dyad, multi-user-modeling, adherence, patient-centered-care, telemetry, family, asha]
+updated: 2026-05-16
+sources: [asha-nslhm-2026-care-partners.md, gijbels-ecological-validity-fauot-mar-2026.md]
+related: [closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, digital-phenotyping-cognitive-decline.md, longitudinal-hearing-phenotyping.md, on-device-ml-hearing-aids.md, multimodal-hearing-assessment.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
+tags: [care-partners, dyad, multi-user-modeling, adherence, patient-centered-care, telemetry, family, asha, vocal-effort, lombard-effect]
 ---
 
 # Care Partners and Dyad-Level Models for Hearing AI
@@ -65,6 +65,18 @@ The dyad signal is **already in the data stream**. It's collected, then thrown a
 - [[digital-phenotyping-cognitive-decline]] — passive continuous signals from hearing aids could become preclinical biomarkers; the dyad is the natural experimental unit.
 - [[longitudinal-hearing-phenotyping]] — outcome measurement on a dyad timeline rather than individual.
 
+## Negative Result: Vocal-Intensity Tracking (Gijbels et al., March 2026)
+
+Gijbels, Anderson, Miller, Johnson and Lunner (Frontiers in Audiology and Otology, March 30 2026; n=26 in 11 dyads + 4 individuals with research-assistant partners) included a **dyadic conversation** arm with vocal-effort measurement. The finding constrains the design space:
+
+- **Vocal intensity changes during conversation did NOT reliably indicate hearing-loss severity.**
+
+This is a clean negative result for the Lombard-effect-as-biomarker idea (the intuition that the partner — or the wearer — speaks louder in proportion to the wearer's hearing loss). It does not rule out *other* dyadic signals — turn-taking dynamics, repair-request frequency, conversation length, prosodic alignment — but it narrows the candidate feature set for any future dyad-aware telemetry layer. Designers should not over-index on amplitude features when building dyad-level models.
+
+What Gijbels et al. **did** confirm as multimodal signal: audiovisual intelligibility and real-time self-report. The dyadic schema may need to incorporate the partner-side visual channel (face visibility, gaze direction) rather than the partner-side amplitude channel.
+
+See [[multimodal-hearing-assessment]] for the broader assessment-side framing.
+
 ## Open Questions
 
 - **Consent and privacy.** Multi-user schemas raise immediate consent issues — does the conversation partner consent to having their voice fingerprint enrolled? How does GDPR / HIPAA / state-law biometric consent apply?
@@ -78,7 +90,9 @@ The dyad signal is **already in the data stream**. It's collected, then thrown a
 - [[hearing-loss-dementia-link]] — Care-partner role most acute in dementia
 - [[digital-phenotyping-cognitive-decline]] — Adjacent measurement frontier
 - [[longitudinal-hearing-phenotyping]] — Outcome-measurement layer
+- [[multimodal-hearing-assessment]] — Dyadic assessment + audiovisual modality story
 - [[../syntheses/ai-understanding-gap-hearing-industry]] — Industry's n=1 default is itself an "AI understanding gap"
 
 ## Sources
-- [ASHA NSLHM 2026 — Care-Partner Resource Push](../sources/asha-nslhm-2026-care-partners.md) — May 2026
+- [ASHA NSLHM 2026 — Care-Partner Resource Push](../../sources/asha-nslhm-2026-care-partners.md) — May 2026
+- [Gijbels et al. — Frontiers in Audiology and Otology, March 2026](../../sources/gijbels-ecological-validity-fauot-mar-2026.md) — Dyadic vocal-intensity is NOT a reliable hearing-loss-severity signal; constrains the feature set for any future dyad-level telemetry

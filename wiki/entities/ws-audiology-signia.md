@@ -2,10 +2,10 @@
 title: WS Audiology / Signia
 type: entity
 created: 2026-04-15
-updated: 2026-05-10
-sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md]
-related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/dnn-vs-natural-processing.md, ../concepts/otc-hearing-aids.md, neurotone-ai.md, aaa-conference.md]
-tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing, lucid, retail-channel, sams-club]
+updated: 2026-05-16
+sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, listen-up-kentucky-may-2026.md]
+related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/dnn-vs-natural-processing.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-care-funnel-attribution.md, neurotone-ai.md, aaa-conference.md]
+tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing, lucid, retail-channel, sams-club, public-health, awareness-campaigns]
 ---
 
 # WS Audiology / Signia
@@ -85,6 +85,14 @@ WSA's first OTC product following the Sony exit. Lexie (WSA-backed) launched the
 - **"Automatic Sound Focus"** — new directional system using dual mics + Bose audio tuning
 - **Strategic bet:** WSA appears to believe Sony's failure was execution-specific (weak app, no follow-up care) rather than structural to mid-tier OTC. The B3 is the test of that thesis. See [[otc-hearing-aids]] for the "middle squeeze" framing.
 
+### Listen Up Kentucky — State-Level Awareness Pilot (May 2026)
+WSA partnered with the **Academy of Doctors of Audiology (ADA)** and the **Kentucky Academy of Audiology (KAA)** to launch the **Listen Up Kentucky** public-awareness campaign for Better Hearing Month 2026.
+- **What it is:** locally targeted PSAs (TV + radio) plus audiologist outreach toolkits across Kentucky DMAs.
+- **Design intent:** explicitly framed as a scalable model for adaptation to other states; ADA + WSA plan additional state rollouts.
+- **Strategic significance:** WSA is the **only OEM** participating, positioning it as the first major manufacturer with a state-scale dataset of PSA-driven hearing-care demand.
+- **Why it matters:** the campaign acts on the demand-side / top-of-funnel constraint (80% of people with hearing loss never seek care) — historically the under-instrumented layer in the field. See [[../concepts/hearing-care-funnel-attribution]].
+- **Possible payoff:** if WSA installs the measurement plumbing (DMA-level exposure → search lift → screening conversion → fitting conversion), the resulting attribution model becomes a competitive variable that's hard for OEMs without this dataset to replicate.
+
 ### Lucid Hearing Loses Sam's Club Operational Role (May 2026)
 WSA's mass-retail footprint contracted again on **10 May 2026**: HearingTracker reported that **NationsBenefits** (Plantation, FL — operates NationsHearing for Aetna Medicare Advantage) is replacing **Lucid Hearing** as the operational partner of **Sam's Club's ~450 in-club Hearing Aid Centers**.
 - **Channel-economics shift, not product shift:** the back-end staffing/workflow/benefits-administration plumbing changes; what's on the shelf may not move immediately.
@@ -106,7 +114,8 @@ WSA claims 22% speech understanding advantage over "AI co-processor competitors"
 - [[gn-hearing-resound]], [[starkey]] — Other major competitors
 - [[closed-loop-data-flywheel]] — Sound Preference Program as structured data collection for personalization feedback loop
 - [[dnn-vs-natural-processing]] — Widex natural processing outperforming DNN competitors validates dual-brand strategy
-- [[otc-hearing-aids]] — Sony OTC discontinuation; WSA OTC pivot
+- [[../concepts/otc-hearing-aids]] — Sony OTC discontinuation; WSA OTC pivot
+- [[../concepts/hearing-care-funnel-attribution]] — Listen Up Kentucky as the public-health awareness layer; WSA positioned as first OEM with state-scale demand-side dataset
 - [[neurotone-ai]] — Brian Taylor (ex-Signia VP) moved to Neurotone AI
 - [[aaa-conference]] — Sound Preference Program showcased at AAA 2026
 
@@ -118,3 +127,4 @@ WSA claims 22% speech understanding advantage over "AI co-processor competitors"
 - [Korhonen et al. — Natural vs DNN](../../sources/korhonen-natural-vs-dnn-hearing-aids-april-2026.md) — Widex Allure outperformed 4 DNN competitors by up to 8.5 dB SNR
 - [Lexie B3 powered by Bose (May 2026)](../../sources/lexie-b3-bose-launch-may-2026.md) — WSA-backed Lexie launches $999 OTC with Bose tuning, 128 hr total runtime, BLE 5.3, "Automatic Sound Focus"
 - [Sam's Club Hearing Centers — NationsBenefits Replaces Lucid (May 2026)](../../sources/sams-club-nationsbenefits-supplants-lucid-may-2026.md) — WSA loses operational role at ~450 Sam's Club in-club hearing centers; vertical-integration model with Aetna MA benefit administrator
+- [Listen Up Kentucky — ADA + WSA + KAA (May 2026)](../../sources/listen-up-kentucky-may-2026.md) — State-level public-awareness pilot; WSA is sole OEM partner, positioning it as first manufacturer with a state-scale top-of-funnel dataset

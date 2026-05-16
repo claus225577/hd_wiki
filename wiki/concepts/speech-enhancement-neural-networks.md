@@ -2,10 +2,10 @@
 title: Speech Enhancement Neural Networks
 type: concept
 created: 2026-04-15
-updated: 2026-05-10
-sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, deezer-44pct-ai-generated-audio-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, ssl-pretraining-robust-ha-speech-enhancement-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, mdpi-speech-separation-survey-2026.md, spatial-magnifier-multichannel-se-arxiv-2026.md, ndf-plus-neural-directional-filtering-arxiv-2026.md, predictive-generative-drift-decomposition-arxiv-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md, state-space-models.md, ../comparisons/dnn-vs-natural-processing.md, mamba-architecture.md, active-noise-cancellation.md, eu-ai-act-medical-devices.md, probabilistic-generative-models-hearing-ai.md]
-tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer, mamba, generative-predictive, bayesian-counter-paradigm]
+updated: 2026-05-16
+sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, deezer-44pct-ai-generated-audio-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, ssl-pretraining-robust-ha-speech-enhancement-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, mdpi-speech-separation-survey-2026.md, spatial-magnifier-multichannel-se-arxiv-2026.md, ndf-plus-neural-directional-filtering-arxiv-2026.md, predictive-generative-drift-decomposition-arxiv-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md, speaker-distance-estimation-reverberation-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, driftse-equilibrium-se-arxiv-2026.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, vcca-computational-audiology.md, state-space-models.md, ../comparisons/dnn-vs-natural-processing.md, mamba-architecture.md, active-noise-cancellation.md, eu-ai-act-medical-devices.md, probabilistic-generative-models-hearing-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md, multimodal-hearing-assessment.md]
+tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer, mamba, generative-predictive, bayesian-counter-paradigm, llm-based-se, linguistic-hallucination, multimodal, audiovisual, single-step-generative-se, equilibrium-model]
 ---
 
 # Speech Enhancement Neural Networks
@@ -84,6 +84,9 @@ The boundary between generative audio AI and speech enhancement is blurring. Dee
 - **SI-SNR** — Scale-Invariant Signal-to-Noise Ratio
 - **DNS Challenge** — Industry benchmark for real-time speech enhancement
 - **Subjective listening tests** — Still gold standard; ML metrics don't fully capture perceived quality for hearing aid users
+
+### The Audio-Only Loss-Function Gap (Gijbels et al., March 2026)
+All five canonical SE metrics above are **audio-only**. Gijbels et al. (Frontiers in Audiology and Otology, March 30, 2026; n=26) ran a within-subjects battery showing that **audiovisual** speech intelligibility and **listening comprehension** correlated with self-reported hearing experience far better than audio-only measures, and recovered hearing difficulty in participants with normal audiograms whom audio-only assessment missed. The implication for SE evaluation: current audio-only metrics may systematically undersell SE systems that incorporate visual context (lip cues, gaze, scene), and may also undersell the marginal value of a paired-phone-camera multimodal pipeline that augments hearing-aid audio with visual signal. See [[multimodal-hearing-assessment]] for the broader framing.
 
 ## Recent Academic Advances (2024–2026)
 
@@ -190,13 +193,38 @@ arXiv 2603.28436 (GN Advanced Science + TU Eindhoven + Lazy Dynamics, 30 Mar 202
 - See [[probabilistic-generative-models-hearing-ai]] (primary home) and [[../sources/aida-2-bayesian-generative-se-arxiv-2026]].
 
 ### Predictive-Generative Drift Decomposition (Richter et al., May 2026)
-arXiv eess.AS (MERL / U Hamburg / Paderborn — same lineage as GAP-URGENet):
+arXiv:2605.06189 (MERL / U Hamburg / Paderborn — same lineage as GAP-URGENet):
 - Decomposes the SE target into a **predictive (deterministic, mask-based) component** and a **generative drift component** that refines the residual the predictive path leaves.
 - Directly addresses the "robotic over-suppression" failure mode that is the dominant user complaint about modern HA DNN noise reduction — predictive models cause it; generative refinement could fix it.
 - The decomposition gives a **personalization knob**: a scalar predictive↔generative weight exposes a perceptual-comfort vs. fidelity slider without retraining.
 - Continuation of the GAP-URGENet generative-predictive fusion thread; same group, more principled formulation.
 - Implementation question: generative inference is expensive — can the generative path be **gated conditionally** (only when the predictive residual is high) to fit a 10 ms HA budget?
 - See [[../sources/predictive-generative-drift-decomposition-arxiv-2026]].
+
+### Single-Channel Speaker Distance Estimation under Reverberation (Neri et al., May 2026)
+arXiv:2605.07694 — empirical decomposition of how early vs. late reverberation degrades single-channel speaker distance estimation:
+- Front-end input to scene classifiers that estimate "voice-of-interest distance" — a key feature for modern HA gain and directionality control.
+- Confirms (with Huang/NDF+ above) that **late diffuse reverberation is the next-frontier nuisance variable** for spatial-aware HA front-ends; targeted dereverberation pre-processing is likely the highest-leverage intervention.
+- Single-channel emphasis matters because the monaural cue is what gets used when the binaural beamformer cannot lock — common in low-SNR / asymmetric scenes.
+- See [[../sources/speaker-distance-estimation-reverberation-arxiv-2026]].
+
+### L3-SE — LM-Based Speech Enhancement and Linguistic Hallucination (Wang et al., May 2026)
+arXiv:2605.08608 — a **structurally distinct branch** of the SE tree: rather than mask prediction or generative-predictive fusion, the system treats SE as autoregressive **language modeling** over speech tokens with WavLM-derived codec features:
+- **Three components:** noise-invariant conditioning encoder with dual acoustic+semantic distillation targets; high-fidelity codec with learnable weighted WavLM-layer representations; decoder-only autoregressive LM conditioned on acoustic-semantic features.
+- **New failure mode named.** Under severe noise, LM-based SE generates **"perceptually plausible yet linguistically incorrect"** speech — the output sounds clean and natural, but the words are wrong. Structurally identical to text-LLM hallucination, transplanted into real-time audio.
+- **Why this is categorically new:** every prior SE failure mode (residual noise, musical artifacts, smearing, robotic over-suppression) is *audible to the listener*. Linguistic hallucination is **inaudible** — the listener has no reference signal and no acoustic cue that the system has failed.
+- **Evaluation-metric gap.** PESQ, STOI, SI-SNR, HASPI all measure perceptual quality / intelligibility, not faithfulness to the words actually spoken. A hallucinated output can score well on every one of them. The field needs lexical-fidelity metrics (WER against ground-truth, semantic similarity) imported from the text-LLM evaluation toolkit.
+- **Hearing-aid implication:** the population that benefits most from aggressive enhancement (severe HI, CI users, per Schulz et al. 2026) is exactly the population least able to detect hallucinations independently. Generative SE deployment in HAs needs faithfulness telemetry, not just quality telemetry.
+- Latency floor for autoregressive token generation is currently far above the <10 ms HA budget — this is a research-grade architecture today, but the hallucination concern transfers to any LM-based or diffusion-based SE that eventually does enter products.
+- See [[llm-based-speech-enhancement]] (primary home) and [[linguistic-hallucination-speech-enhancement]] (failure-mode page).
+
+### DriftSE — Single-Step Equilibrium Generative SE (May 2026, Interspeech 2026 submission)
+arXiv 2604.24199 — a single-step generative SE framework that formulates denoising as an *equilibrium* problem, evolving the pushforward distribution of a mapping function so it converges directly onto the clean-speech distribution:
+- **One forward pass at inference**, matching or beating multi-step diffusion SE baselines on VoiceBank+DEMAND.
+- **Categorically different from predictive-generative drift decomposition** (Richter et al.): rather than splitting the SE target into a deterministic + generative residual, DriftSE evolves the mapping itself; both arrive at "no multi-step sampling at inference" by different routes.
+- **Latency unlock for generative SE in hearing aids.** Multi-step diffusion / score-matching SE has had a ~25–50 NFE inference cost that disqualifies it from <10 ms HA budgets. Single-step equilibrium SE collapses this gap — if streaming/causal stability holds.
+- **Hallucination-surface unverified.** Generative SE shares the L3-SE failure-mode risk (perceptually plausible but factually wrong words); the equilibrium formulation may have a different hallucination structure than autoregressive LM SE, but no faithfulness audit has been published.
+- See [[../sources/driftse-equilibrium-se-arxiv-2026]].
 
 ## Related Pages
 - [[dnn-architectures-hearing-aids]] — Deep dive on hardware-specific DNN architectures and chip implementations
@@ -206,6 +234,8 @@ arXiv eess.AS (MERL / U Hamburg / Paderborn — same lineage as GAP-URGENet):
 - [[cochlear-implant-ai]] — Speech enhancement DNNs adapted for cochlear implant users
 - [[vcca-computational-audiology]] — Central topic across all VCCAs
 - [[eu-ai-act-medical-devices]] — Regulatory framework affecting AI speech enhancement in hearing aids
+- [[llm-based-speech-enhancement]] — Structurally distinct paradigm: autoregressive language modeling over speech tokens
+- [[linguistic-hallucination-speech-enhancement]] — New failure-mode category specific to generative / LM-based SE; evaluation-metric gap
 
 ### DAT-CFTNet: Attention-Based Dual-Path RNN for CI (ICASSP 2026)
 Mamun & Hansen (arXiv:2604.06744, April 2026) propose an attention-based dual-path RNN for CI speech enhancement:
@@ -252,3 +282,4 @@ Won 1st place in the URGENT (Universal speech Restoration with Generative approa
 - [NDF+ (Huang et al., May 2026)](../sources/ndf-plus-neural-directional-filtering-arxiv-2026.md) — Joint directional filtering + diffuse extraction
 - [Predictive-Generative Drift Decomposition (Richter et al., May 2026)](../sources/predictive-generative-drift-decomposition-arxiv-2026.md) — Decomposes SE into predictive + generative components for fidelity-vs-comfort knob
 - [AIDA-2 — Probabilistic Generative Speech Enhancement (Hidalgo-Araya et al., Mar 2026)](../sources/aida-2-bayesian-generative-se-arxiv-2026.md) — GN Advanced Science + TU Eindhoven; ~85-parameter Bayesian generative model competitive with Wiener at six orders of magnitude fewer parameters than DNNs
+- [L3-SE — LM-Based SE and Linguistic Hallucination (Wang et al., May 2026)](../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608; autoregressive LM over WavLM-derived codec tokens with acoustic-semantic distillation; names linguistic hallucination as a categorically new failure mode for generative SE

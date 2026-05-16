@@ -2,8 +2,8 @@
 title: Apple Hearing Features
 type: entity
 created: 2026-04-15
-updated: 2026-05-04
-sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md]
+updated: 2026-05-13
+sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md]
 related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md]
 tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring, hearing-study, longitudinal]
 ---
@@ -38,6 +38,7 @@ AirPods Pro 2 received FDA clearance as a Class II OTC hearing aid. This is not 
 ### Software Requirements
 - Requires **iOS 26 / iPadOS 26**
 - Available in **150+ countries** — broader global reach than most prescription hearing aid distribution networks
+- **Hearing Test + Hearing Aid features** specifically available in **100+ countries** and growing — most recent regulatory wave (12 May 2026) added Italy, Romania, and Czechia, alongside Apple Watch hypertension alerts in the same markets. See [[../../sources/airpods-hearing-aid-country-expansion-may-2026]].
 
 ## Why This Is a Major Industry Disruption
 
@@ -133,4 +134,6 @@ Apple's differentiation is not primarily AI audio processing quality — it is d
 - [AirPods Pro 3 Hearing Health + Heart Rate (April 2026)](../../sources/airpods-pro-3-hearing-health-april-2026.md) — $200 price, 256 Hz heart rate, 67% battery improvement, FDA hearing aid feature
 - [Apple CEO Transition — John Ternus (April 2026)](../../sources/apple-ceo-transition-ternus-april-2026.md) — Ternus led AirPods Pro and Apple Silicon; elevation to CEO signals continued hearing health investment
 - [Apple Hearing Study — May 2026 Results (n=160,000)](../../sources/apple-hearing-study-results-may-2026.md) — 16% perception gap, walking speed correlation in 57,183-person sub-analysis
+- [AirPods Hearing Aid Country Expansion — May 12 2026](../../sources/airpods-hearing-aid-country-expansion-may-2026.md) — Italy, Romania, Czechia added; now in 100+ countries
+- [Apple OTC-HAF Usability (AJA, 2025)](../../sources/apple-otc-haf-usability-aja-2025.md) — First independent academic evaluation; MAUQ 6.7/7 usability
 - Research notes on AirPods Pro 2 FDA clearance, iOS 26 hearing test feature, global availability

@@ -2,9 +2,9 @@
 title: TinyML for Hearing Devices
 type: concept
 created: 2026-04-23
-updated: 2026-05-04
-sources: [tinyml-speech-recognition-arduino-2025.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, tinyml-stm32-hearing-aid-speech-enhancement-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, model-compression.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, speech-enhancement-neural-networks.md]
+updated: 2026-05-15
+sources: [tinyml-speech-recognition-arduino-2025.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, tinyml-stm32-hearing-aid-speech-enhancement-2026.md, tiny-ml-to-tiny-dl-survey-acm-2026.md, aondevices-edge-ai-ces-2026.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, model-compression.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, speech-enhancement-neural-networks.md, large-sensor-models.md]
 tags: [tinyml, edge-ai, microcontroller, keyword-spotting, ultra-low-resource, hearing-aids, arduino]
 ---
 
@@ -60,6 +60,20 @@ Custom silicon co-designed with speech AI models (arXiv:2503.18698v2) bridges Ti
 - **Mixed-precision quantization:** Different bit widths per layer for optimal accuracy-efficiency tradeoff
 - **Programmable design:** Allows model updates post-deployment (unlike fixed-function ASICs)
 - **28-participant human evaluation:** Perceptual validation beyond just objective metrics
+
+## Tiny ML → Tiny Deep Learning Survey (ACM Computing Surveys, 2026)
+
+A 2026 ACM Computing Surveys reference catalogs the field's transition from classical TinyML (small classifiers on MCU-class hardware) to **Tiny Deep Learning** — compressed transformers, SSMs, and on-device-training pipelines that fit the same envelope. Treats compression, quantization, edge-NAS, and on-device adaptation as one unified design space. See [survey source](../sources/tiny-ml-to-tiny-dl-survey-acm-2026.md).
+
+**Significance for HA roadmaps:** This is the literature spine for scoping which compressed architectures plausibly fit a 2026–2027 HA chip generation. The on-device-training treatment is the missing rung between "factory-trained DNN ships in the device" and "device adapts in situ to the wearer's environments" — the next inflection beyond static deployment.
+
+## AONDevices × P-Logic — Microwatt Always-On Edge AI (CES 2026)
+
+Joint CES 2026 demonstration of microwatt-class always-on inference silicon explicitly positioned for hearables. See [AONDevices source](../sources/aondevices-edge-ai-ces-2026.md).
+
+- Always-on multi-modal inference (voice + sound + multi-sensor) at microwatt power.
+- Removes the cloud round-trip that has limited many "AI hearing aid" claims to phone-side or coarse on-DSP heuristics.
+- Adds another commercial-stage entrant to the dedicated-AI-silicon column alongside Phonak Sphere Infinio and Fortell Spatial AI.
 
 ## STM32 Speech Enhancement (2025-2026)
 

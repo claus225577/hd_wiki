@@ -2,7 +2,9 @@
 title: "Predictive-Generative Drift Decomposition for Speech Enhancement and Separation"
 authors: [Julius Richter, Yoshiki Masuyama, Christoph Boeddeker, Takahiro Edo, Gordon Wichern, Jonathan Le Roux]
 affiliation: Mitsubishi Electric Research Labs (MERL) / Universität Hamburg / Paderborn
-date: 2026-05
+date: 2026-05-08
+arxiv_id: "2605.06189"
+url: https://arxiv.org/abs/2605.06189
 arxiv_listing: https://arxiv.org/list/eess.AS/2026-05
 type: research-paper
 tags: [speech-enhancement, speech-separation, predictive-models, generative-models, diffusion, drift-decomposition, hearing-aids, merl]
@@ -31,4 +33,4 @@ tags: [speech-enhancement, speech-separation, predictive-models, generative-mode
 
 ## Source
 
-arXiv eess.AS May 2026 listing (paper #14 in the listing). Full paper accessed via arXiv listing page; specific arXiv ID to be backfilled when paper page resolves.
+arXiv:2605.06189 (eess.AS, submitted 8 May 2026). https://arxiv.org/abs/2605.06189 — backfilled 2026-05-11 from May 11 digest cycle.

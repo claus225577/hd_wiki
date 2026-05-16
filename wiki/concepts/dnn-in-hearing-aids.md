@@ -2,10 +2,10 @@
 title: Deep Neural Networks in Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-24
-sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, oticon-verit-launch-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, dnn-noise-reduction-intelligibility-2026.md, orka-o1-pro-bose-anc-awe-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, oticon-play-si-hearingreview-april-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, neurotone-ai-1000-clinics-april-2026.md, oticon-zeal-full-specs-aaa-2026.md, meta-synthetic-data-distillation-april-2026.md]
-related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md, state-space-models.md, compute-in-memory.md, ../entities/orka-bose-partnership.md, ../comparisons/dnn-vs-natural-processing.md, ../entities/neurotone-ai.md, synthetic-data-for-hearing-ai.md, eu-ai-act-medical-devices.md]
-tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency, clinical-trial, second-gen-ai, anc, natural-processing, pediatric, phase-utilization, aural-rehabilitation, dnn-2-0, synthetic-data]
+updated: 2026-05-14
+sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, oticon-verit-launch-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, dnn-noise-reduction-intelligibility-2026.md, orka-o1-pro-bose-anc-awe-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, oticon-play-si-hearingreview-april-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, neurotone-ai-1000-clinics-april-2026.md, oticon-zeal-full-specs-aaa-2026.md, meta-synthetic-data-distillation-april-2026.md, dfingernet-noise-adaptive-se-arxiv-2025.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
+related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md, state-space-models.md, compute-in-memory.md, ../entities/orka-bose-partnership.md, ../comparisons/dnn-vs-natural-processing.md, ../entities/neurotone-ai.md, synthetic-data-for-hearing-ai.md, eu-ai-act-medical-devices.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
+tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency, clinical-trial, second-gen-ai, anc, natural-processing, pediatric, phase-utilization, aural-rehabilitation, dnn-2-0, synthetic-data, llm-based-se, linguistic-hallucination]
 ---
 
 # Deep Neural Networks in Hearing Aids
@@ -63,6 +63,9 @@ See [[dnn-architectures-hearing-aids]] and [[speech-enhancement-neural-networks]
 
 ### Attention-Based Selective Noise Cancellation
 Emerging architecture class (2025): context-aware attention mechanisms that selectively cancel specific noise sources (e.g., suppress HVAC hum but preserve a companion's voice) rather than applying a global noise mask. Represents a shift from environment-blind suppression to semantically-aware enhancement.
+
+### Conditional / Noise-Fingerprint Adaptation
+Closely related emerging direction: a single base SE network conditioned on a compact noise-fingerprint embedding extracted from the current acoustic environment. **DFingerNet (DFiN)** (arXiv 2501.10525) bolts a noise-fingerprint adaptation module onto the Deep Filter Network backbone, letting a single model behave like an ensemble of scene-specialized models without adding the compute cost of multiple network instances. Conceptually it replaces the discrete scene-classifier-plus-program-switch pattern with a continuous, embedding-driven adaptation more aligned with how foundation models specialize. See [DFingerNet source](../../sources/dfingernet-noise-adaptive-se-arxiv-2025.md).
 
 ## Key Performance Metrics
 
@@ -176,6 +179,24 @@ A novel multi-stage system (arXiv:2508.04283) operates in both magnitude and com
 - Phase-aware processing could be the next generational improvement after current magnitude-only DNN systems
 - The asymmetric windowing technique is hardware-friendly and could be adopted in firmware without new silicon
 
+## LM-Based SE and the Linguistic-Hallucination Failure Mode (May 2026)
+
+A new structural branch of the DNN-SE tree is emerging: **LM-based speech enhancement** treats denoising as autoregressive language modeling over speech tokens (a Whisper- / VALL-E-shaped decoder-only LM, trained on noisy → clean pairs). The L3-SE paper (Wang et al., arXiv:2605.08608, May 2026) is the most prominent recent example.
+
+The hearing-aid-relevant finding is the **new failure mode** the same paper names:
+
+- Under severe noise, LM-based SE produces **"perceptually plausible yet linguistically incorrect"** speech — the output sounds clean and natural, but the words are wrong.
+- This is **categorically different** from every prior SE failure mode tracked on this page. Residual noise, musical artifacts, smearing, and robotic over-suppression are all *audible* to the listener. Linguistic hallucination is **inaudible** — the listener has no reference signal and no acoustic cue that the system has failed.
+- Structurally identical to text-LLM hallucination, transplanted into a real-time always-on audio device worn on the body.
+
+**Evaluation-metric gap.** The standard HA evaluation stack — PESQ, STOI, SI-SNR, HASPI, HASQI, DNS-MOS — measures perceptual quality and intelligibility, not faithfulness to the words actually spoken. A hallucinated output can score well on every one of them. Before generative / LM-based SE ships in hearing aids, lexical-fidelity metrics (WER against ground-truth transcripts, semantic similarity) need to enter the audiology evaluation stack as a co-equal axis.
+
+**Asymmetric risk by user group.** Per Schulz et al. 2026 (above), DNN benefit is largest for severe HI and CI users — exactly the population whose ground-truth acoustic input is most degraded and who are therefore least able to detect hallucinations independently. The cohort that benefits most from aggressive enhancement is also the cohort least equipped to catch its errors.
+
+**Production timeline.** Autoregressive LM-based SE is currently far from a hearing-aid latency budget — token-by-token generation is incompatible with <10 ms algorithmic latency. This is a research-grade architecture today. The hallucination concern, however, transfers to any LM-based or diffusion-based SE that eventually does enter products (including the generative branch of the GAP-URGENet / drift-decomposition lineage).
+
+See [[llm-based-speech-enhancement]] (architecture) and [[linguistic-hallucination-speech-enhancement]] (failure-mode + evaluation gap).
+
 ## AI Aural Rehabilitation: Complementing Device DNNs (April 2026)
 
 Neurotone AI surpassed 1,000 clinic partners with AI-powered aural rehabilitation — training the listener's brain rather than processing the sound. Key distinction: DNN hearing aids optimize the signal; aural rehab optimizes the receiver. The two approaches are multiplicative. See [[neurotone-ai]].
@@ -197,6 +218,8 @@ Neurotone AI surpassed 1,000 clinic partners with AI-powered aural rehabilitatio
 - [[state-space-models]] — SSMs as emerging alternative architecture for hearing aid inference
 - [[compute-in-memory]] — CIM hardware paradigm enabling new model-hardware co-design
 - [[synthetic-data-for-hearing-ai]] — AI-generated training data to expand corpora and break data moats
+- [[llm-based-speech-enhancement]] — Structurally distinct paradigm: autoregressive LM over speech tokens
+- [[linguistic-hallucination-speech-enhancement]] — New failure-mode category specific to generative / LM-based SE; evaluation-metric gap
 
 ## Sources
 - [DNN Effectiveness Frontiers 2025](../../sources/dnn-effectiveness-frontiers-2025.md) — Clinical evidence for DNN hearing aid performance
@@ -212,3 +235,4 @@ Neurotone AI surpassed 1,000 clinic partners with AI-powered aural rehabilitatio
 - [Neurotone AI 1,000 Clinics](../../sources/neurotone-ai-1000-clinics-april-2026.md) — AI aural rehabilitation as complement to device DNN
 - [Oticon Zeal Full Specs](../../sources/oticon-zeal-full-specs-aaa-2026.md) — DNN 2.0 on Sirius chip in ITE form factor
 - [Meta Synthetic Data Distillation](../../sources/meta-synthetic-data-distillation-april-2026.md) — Recursive distillation for edge AI training data
+- [L3-SE — LM-Based SE and Linguistic Hallucination (Wang et al., May 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608; autoregressive LM-based SE with acoustic-semantic distillation; names linguistic hallucination as a new failure mode for generative SE

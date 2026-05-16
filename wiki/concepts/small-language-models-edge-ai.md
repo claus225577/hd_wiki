@@ -2,9 +2,9 @@
 title: Small Language Models for Edge AI
 type: concept
 created: 2026-04-15
-updated: 2026-05-07
-sources: [small-language-models-edge-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, open-source-speech-ai-edge-native-april-2026.md, google-gemma-4-open-models-april-2026.md, liquid-ai-lfm25-audio-2026.md]
-related: [on-device-ml-hearing-aids.md, large-sensor-models.md, model-compression.md, ../entities/google-research.md, mixture-of-experts.md, state-space-models.md, tinyml-edge-ai.md, mamba-architecture.md]
+updated: 2026-05-15
+sources: [small-language-models-edge-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, open-source-speech-ai-edge-native-april-2026.md, google-gemma-4-open-models-april-2026.md, liquid-ai-lfm25-audio-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md]
+related: [on-device-ml-hearing-aids.md, large-sensor-models.md, model-compression.md, ../entities/google-research.md, mixture-of-experts.md, state-space-models.md, tinyml-edge-ai.md, mamba-architecture.md, medical-domain-edge-llms.md]
 tags: [slm, edge-ai, tinyml, on-device, efficiency, mixture-of-experts, open-source, speech-models, multimodal]
 ---
 
@@ -28,6 +28,7 @@ Small Language Models (SLMs) are compact, task-specific neural networks designed
 - **Gemma 4** (April 2026) — Full family: E2B (2B), E4B (4B), 26B MoE, 31B Dense. Apache 2.0. Native vision and audio processing, 140+ languages, up to 256K context. Runs on phones, Raspberry Pi, NVIDIA Jetson. 31B outperforms models 20x its size. E2B/E4B are strong teacher/distillation candidates for hearing AI. Gemini Nano 4 (built on Gemma 4) achieves 4x speed and 60% battery reduction on Android.
 - **Phi-3 Mini** (3.8B) — Microsoft, too large for hearing aids but relevant for mobile audiology apps
 - **Qwen3.6-35B-A3B** (35B total / 3B active, April 2026) — Alibaba; mixture-of-experts architecture, ~21GB quantized, runs on MacBook Pro M5 via LM Studio. Competes with frontier models (per Simon Willison: "Qwen beats Opus"). See [[mixture-of-experts]] for detailed MoE concept analysis and hearing aid implications
+- **QVAC MedPsy 1.7B / 4B** (May 7, 2026) — Tether AI Group, Apache 2.0. Medical-domain SLMs built from Qwen3 via SFT+RL on AlphaMedQA. 4B variant beats Google MedGemma-27B on closed-ended medical benchmarks at 7× smaller. Q4_K_M quantized to 1.28 GB / 2.72 GB; smartphone-class deployment via llama.cpp / QVAC SDK. Relevant for hearing-care **companion phone apps** (tinnitus iCBT, audiogram explanation, post-fit Q&A) — too big for the HA chip itself. See [[medical-domain-edge-llms]].
 - **Custom DSP nets** — Manufacturer-specific models, often < 1M parameters, running on dedicated audio DSPs
 
 ## Gartner Prediction
@@ -80,3 +81,4 @@ The ternary quantization trajectory is particularly notable: PrismML's 1.7B mode
 ## Sources
 - [Open-Source Speech AI Edge-Native (April 2026)](../../sources/open-source-speech-ai-edge-native-april-2026.md) — Voxtral, Qwen3-ASR/TTS, Distil-Whisper landscape
 - [Liquid AI LFM2.5-Audio (2026)](../../sources/liquid-ai-lfm25-audio-2026.md) — 1.5B native audio LLM, on-device, ~8x speedup; relevant for phone-tethered hearing-aid features
+- [QVAC MedPsy edge medical LLM (May 2026)](../../sources/qvac-medpsy-edge-medical-llm-may-2026.md) — Smartphone-deployable medical-domain SLM relevant to the hearing-care companion-app substrate

@@ -2,10 +2,10 @@
 title: Probabilistic Generative Models for Hearing AI
 type: concept
 created: 2026-05-10
-updated: 2026-05-10
-sources: [aida-2-bayesian-generative-se-arxiv-2026.md]
-related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, closed-loop-data-flywheel.md, hearing-aid-chip-architectures.md, ../comparisons/dnn-vs-natural-processing.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
-tags: [bayesian-inference, probabilistic-graphical-models, generative-model, variational-message-passing, factor-graphs, rxinfer, edge-ai, parameter-efficiency]
+updated: 2026-05-14
+sources: [aida-2-bayesian-generative-se-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
+related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, closed-loop-data-flywheel.md, hearing-aid-chip-architectures.md, ../comparisons/dnn-vs-natural-processing.md, ../syntheses/ai-understanding-gap-hearing-industry.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
+tags: [bayesian-inference, probabilistic-graphical-models, generative-model, variational-message-passing, factor-graphs, rxinfer, edge-ai, parameter-efficiency, hallucination-resistance]
 ---
 
 # Probabilistic Generative Models for Hearing AI
@@ -71,6 +71,11 @@ Classical denoisers are often **special cases** of the probabilistic generative 
 ### vs Natural Processing (Korhonen/Widex DNN-vs-natural debate)
 Distinct from the [[../comparisons/dnn-vs-natural-processing]] debate, which compares DNN-driven and DSP-driven enhancement. Probabilistic generative is a **third path** — not "less AI" but a different mathematical scaffolding for AI.
 
+### vs LM-Based Speech Enhancement (L3-SE, Wang et al., May 2026)
+Both are "generative" in name, but the structural difference matters. [[llm-based-speech-enhancement]] uses an autoregressive language model with an implicit, learned prior over speech tokens — and exhibits the corresponding failure mode, [[linguistic-hallucination-speech-enhancement]]: confident generation of plausible-but-false words under uncertainty.
+
+Probabilistic generative models such as AIDA-2 have **explicit likelihoods over signal content** and explicit priors that can be inspected, audited, and regularized. They are more **hallucination-resistant by construction** because the inference is constrained by the joint distribution rather than the LM's autoregressive prior. The tradeoff is the inverse of LM-based SE: explicit, interpretable, parameter-efficient — but without the naturalness benefit a strong language prior provides. If hallucination becomes the dominant safety concern for generative SE in hearing aids, probabilistic-generative architectures gain a substantial regulatory and audiological advantage.
+
 ## Industrial Provenance
 
 GN Advanced Science (the research arm of GN Hearing / ReSound) co-authored the AIDA-2 paper. This is the strongest signal so far that probabilistic generative modeling is being taken seriously inside a Big-Five hearing-aid OEM, not just by ELLIS / Eindhoven academics.
@@ -92,6 +97,9 @@ Bert de Vries (TU Eindhoven, ELLIS) — co-author and longtime advocate of facto
 - [[closed-loop-data-flywheel]] — Probabilistic posterior updating is the canonical flywheel
 - [[hearing-aid-chip-architectures]] — Compute vs memory profile differs from DNN
 - [[../syntheses/ai-understanding-gap-hearing-industry]] — Counter-narrative to "all AI is deep learning"
+- [[llm-based-speech-enhancement]] — Alternative generative paradigm with strong language prior; structurally different failure profile
+- [[linguistic-hallucination-speech-enhancement]] — Failure mode that probabilistic generative architectures are structurally more resistant to
 
 ## Sources
 - [AIDA-2 — A Probabilistic Generative Model for Spectral Speech Enhancement](../sources/aida-2-bayesian-generative-se-arxiv-2026.md) — Hidalgo-Araya et al., arXiv 2603.28436, 30 Mar 2026 (GN Advanced Science + TU Eindhoven + Lazy Dynamics)
+- [L3-SE — LM-Based SE and Linguistic Hallucination (Wang et al., May 2026)](../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608; the counter-paradigm whose failure mode highlights probabilistic generative architectures' structural advantage

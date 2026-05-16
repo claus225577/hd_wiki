@@ -2,10 +2,10 @@
 title: Large Sensor Models
 type: concept
 created: 2026-04-15
-updated: 2026-04-15
-sources: [large-sensor-models-arxiv-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, world-models-hearing-ai.md, closed-loop-data-flywheel.md, digital-phenotyping-cognitive-decline.md]
-tags: [foundation-models, wearables, sensor-fusion, transfer-learning]
+updated: 2026-05-14
+sources: [large-sensor-models-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, world-models-hearing-ai.md, closed-loop-data-flywheel.md, digital-phenotyping-cognitive-decline.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
+tags: [foundation-models, wearables, sensor-fusion, transfer-learning, llm-based-se]
 ---
 
 # Large Sensor Models (LSMs)
@@ -34,9 +34,15 @@ Hearing aids are among the most sophisticated wearable computers, but their ML p
 - Heterogeneity across sensor types and sampling rates
 - No large-scale public dataset for hearing aid sensor data exists
 
+## Adjacent: LM-Based Speech Enhancement as a Foundation-Model-Shaped Audio Application
+
+The May 2026 L3-SE paper (Wang et al., arXiv:2605.08608) shows the foundation-model trajectory reaching SE: speech enhancement reframed as autoregressive language modeling over WavLM-derived speech tokens. Not an LSM in the cross-sensor sense, but the same paradigm shift — task-specific networks giving way to a generative backbone shared across audio tasks. Inherits the LSM family's strengths (transfer, naturalness, scale) and one new failure mode worth tracking before any cross-sensor foundation model ships in a hearing aid: **linguistic hallucination** — confident generation of plausible-but-false content under uncertainty. See [[llm-based-speech-enhancement]] and [[linguistic-hallucination-speech-enhancement]].
+
 ## Related Pages
 - [[small-language-models-edge-ai]] — Practical constraint: LSMs must compress to edge-viable sizes
 - [[on-device-ml-hearing-aids]] — The deployment target for any hearing-relevant LSM
 - [[world-models-hearing-ai]] — Complementary approach: world models for acoustic scene understanding vs. LSMs for cross-device transfer learning
 - [[closed-loop-data-flywheel]] — LSMs trained on wearable telemetry close the loop from population sensor data to model improvement
 - [[digital-phenotyping-cognitive-decline]] — LSMs applied to cross-modal wearable data could enable passive cognitive decline detection
+- [[llm-based-speech-enhancement]] — Foundation-model-shaped approach to SE; inherits LSM-family strengths and a new failure mode
+- [[linguistic-hallucination-speech-enhancement]] — Failure-mode argument transfers to any cross-sensor foundation model deployed in HAs

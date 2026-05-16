@@ -2,10 +2,10 @@
 title: The Subjective–Objective Hearing Gap
 type: concept
 created: 2026-05-04
-updated: 2026-05-04
-sources: [apple-hearing-study-results-may-2026.md, achieve-trial-cognitive-hearing-2025.md]
-related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, ../entities/apple-hearing-features.md]
-tags: [outcome-measurement, audiometry, perception, self-report, personalization, real-world-evidence]
+updated: 2026-05-16
+sources: [apple-hearing-study-results-may-2026.md, achieve-trial-cognitive-hearing-2025.md, gijbels-ecological-validity-fauot-mar-2026.md]
+related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, multimodal-hearing-assessment.md, ../entities/apple-hearing-features.md]
+tags: [outcome-measurement, audiometry, perception, self-report, personalization, real-world-evidence, multimodal]
 ---
 
 # The Subjective–Objective Hearing Gap
@@ -34,6 +34,16 @@ The pure-tone audiogram is a measurement of **threshold detection** for sinusoid
 - **Temporal dynamics** — the audiogram is a single timepoint; perception is continuous
 
 For half a century, the audiogram has been the gold standard for fitting and validating hearing aids. Its incompleteness has been known clinically; the Apple finding is the first population-scale quantification.
+
+## Clinical-Cohort Confirmation (Gijbels et al., March 2026)
+
+Gijbels, Anderson, Miller, Johnson and Lunner (Frontiers in Audiology and Otology, March 30 2026; n=26, ages 50–79) ran a 2–3-hour within-subjects battery: audiometry, speech-in-babble (audio-only and audiovisual), listening comprehension via podcasts, dyadic conversation, and real-time + retrospective self-report. The findings:
+
+- **Audiovisual** intelligibility correlated with self-reported hearing experience far more strongly than audio-only measures.
+- **Listening comprehension** in noise was robustly sensitive to hearing difficulties even in participants with **normal audiograms** — direct clinical-cohort confirmation of the Apple population-scale 16% finding.
+- **Real-time self-report** (in-task) strongly predicted objective performance; retrospective questionnaires did not.
+
+The Apple finding established that the gap exists at population scale. The Gijbels finding shows the gap is **recoverable with the right test** — specifically a multimodal, comprehension-level, in-task assessment. The successor concept page is [[multimodal-hearing-assessment]].
 
 ## Implications for Data Science and Hearing Aid R&D
 
@@ -76,13 +86,15 @@ Capturing the gap requires repeated, ecological measurement — the substrate of
 - Whether early intervention in the "subclinical with complaints" group reduces downstream dementia and mobility risk
 
 ## Related Pages
+- [[multimodal-hearing-assessment]] — The recovery pathway: audiovisual + comprehension + dyadic assessments that capture what the audiogram misses
 - [[longitudinal-hearing-phenotyping]] — Measurement framework that absorbs subjective signal
 - [[automated-audiometry]] — Tooling to collect 4PTA continuously through consumer hardware
 - [[on-device-ml-hearing-aids]] — Personalization models that should incorporate subjective signal
 - [[closed-loop-data-flywheel]] — Personalization loop grounded in experience, not threshold
 - [[hearing-loss-dementia-link]] — The functional cost of unmeasured experience
-- [[apple-hearing-features]] — Platform that quantified the gap
+- [[../entities/apple-hearing-features]] — Platform that quantified the gap
 
 ## Sources
-- [Apple Hearing Study — May 2026 Results](../sources/apple-hearing-study-results-may-2026.md) — Population-scale quantification of the 16% gap
-- [ACHIEVE Trial Secondary Analysis](../sources/achieve-trial-cognitive-hearing-2025.md) — Stratification of cognitive benefit by baseline risk reinforces that audiometric-only inclusion misses heterogeneity
+- [Apple Hearing Study — May 2026 Results](../../sources/apple-hearing-study-results-may-2026.md) — Population-scale quantification of the 16% gap
+- [Gijbels et al. — Frontiers in Audiology and Otology, March 2026](../../sources/gijbels-ecological-validity-fauot-mar-2026.md) — Clinical-cohort confirmation; audiovisual + comprehension assessments recover normal-audiogram cases
+- [ACHIEVE Trial Secondary Analysis](../../sources/achieve-trial-cognitive-hearing-2025.md) — Stratification of cognitive benefit by baseline risk reinforces that audiometric-only inclusion misses heterogeneity

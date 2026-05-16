@@ -2,8 +2,8 @@
 title: Over-the-Counter Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-05-10
-sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md]
+updated: 2026-05-16
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, apple-otc-haf-usability-aja-2025.md, airpods-hearing-aid-country-expansion-may-2026.md, eargo-8-launch-may-2026.md]
 related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md]
 tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage, sony-exit, anc, lexie, bose, sams-club, retail-channel, nationsbenefits, lucid, vertical-integration]
 ---
@@ -80,6 +80,8 @@ In September 2024, Apple released a software update enabling **AirPods Pro 2** t
 - **Continuous software updates** improve device post-purchase
 - **Leadership signal:** Apple's April 2026 CEO transition — John Ternus, who led AirPods Pro hardware and Apple Silicon, became CEO — signals hearing health is a strategic priority at the highest level
 - Impact: legitimizes consumer electronics as a hearing health platform; $200 price point with FDA clearance + health monitoring fundamentally disrupts OTC pricing. See [[apple-hearing-features]].
+- **Independent clinical validation (AJA, 2025):** First non-Apple academic evaluation of the OTC Hearing Aid Feature reports **MAUQ usability 6.7/7** with high subjective satisfaction and sound-quality scores in adults with self-perceived mild-to-moderate loss. Lab-measured personalized amplification met OTC prescription-target expectations. See [Apple OTC-HAF Usability — AJA 2025](../../sources/apple-otc-haf-usability-aja-2025.md).
+- **Geographic rollout (May 12 2026):** Hearing Aid feature added in Italy, Romania, and Czechia — now live in 100+ countries. Apple now operates the broadest single-vendor OTC distribution channel in the world. See [AirPods Country Expansion — May 2026](../../sources/airpods-hearing-aid-country-expansion-may-2026.md).
 
 ## User Profile and Limitations
 
@@ -146,6 +148,14 @@ WSA's first post-Sony OTC vehicle. Lexie B3 launched at the same $999 price poin
 - **BLE 5.3 + Auracast-readiness baseline** — table stakes that Sony shipped without on the older CRE-E10/C10/C20.
 
 If Lexie B3 succeeds at $999, the "mid-tier OTC is dead" thesis softens to "Sony-specific failure of execution." If it fails on the same trajectory, the middle-squeeze thesis hardens. Either way, it's the next data point.
+
+### Premium-OTC Self-Fitting + Auto-Scene: Eargo 8 (May 2026)
+
+A separate test of the *upper* OTC band. Eargo 8 launched mid-May 2026 at **$2,699 MSRP** — well above Lexie B3 / Sony CRE / mass-retail tiers — with two technical claims that historically lived only in the prescription tier:
+- **Smart Sound Adjust** — environmental classification + auto-program-switching with no user input. Functionally analogous to Phonak AutoSense / Oticon MoreSound Intelligence at OTC pricing, narrowing the prescription/OTC feature gap.
+- **Device Scan** — patented in-canal acoustic-signature self-check for wax / occlusion detection using the existing speaker–microphone pair as a sensor. First OTC hearing aid to market this as a wellness feature; a telemetry-through-transducers pattern likely to recur.
+
+First product launched post-Eargo-×-LXE-Hearing merger. The premium-OTC viability question is now bifurcated: Lexie B3 tests the **mid-$999** band, Eargo 8 tests the **upper-$2,699** band. See [Eargo 8 launch source](../../sources/eargo-8-launch-may-2026.md).
 
 ### Retail-Channel Vertical Integration: Sam's Club / NationsBenefits / Lucid (May 2026)
 

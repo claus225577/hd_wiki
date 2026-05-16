@@ -2,10 +2,10 @@
 title: Model Compression for Hearing AI
 type: concept
 created: 2026-04-18
-updated: 2026-04-25
-sources: [google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, open-source-speech-ai-edge-native-april-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, google-gemma-4-open-models-april-2026.md, efficient-on-device-speech-enhancement-qat-2026.md]
-related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../comparisons/on-device-vs-cloud-ml.md, ../entities/google-research.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, synthetic-data-for-hearing-ai.md]
-tags: [quantization, compression, pruning, distillation, edge-ai, efficiency, compute-in-memory]
+updated: 2026-05-14
+sources: [google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, open-source-speech-ai-edge-native-april-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, google-gemma-4-open-models-april-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
+related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../comparisons/on-device-vs-cloud-ml.md, ../entities/google-research.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, synthetic-data-for-hearing-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
+tags: [quantization, compression, pruning, distillation, edge-ai, efficiency, compute-in-memory, acoustic-semantic-distillation]
 ---
 
 # Model Compression for Hearing AI
@@ -40,6 +40,10 @@ Training a small "student" model to mimic a large "teacher" model:
 - Student: compact CRN or CNN fitting hearing aid constraints
 - The student learns the teacher's soft outputs, not just hard labels — captures nuance
 - Widely used in hearing aid DNN development (see [[dnn-architectures-hearing-aids]])
+
+#### Acoustic-Semantic Distillation (Wang et al., May 2026)
+
+The L3-SE paper (arXiv:2605.08608) introduces a distillation variant specifically designed for [[llm-based-speech-enhancement]]: **dual distillation targets** — an acoustic teacher and a semantic teacher — train a noise-invariant conditioning encoder whose representation preserves both phonetic detail and lexical content under severe noise. The motivation is to anchor the autoregressive LM's language prior against lexically-discriminative evidence and thereby reduce [[linguistic-hallucination-speech-enhancement]]. This is the first distillation recipe in the SE literature whose primary objective is *factuality* (faithfulness to spoken words) rather than perceptual quality.
 
 ### Pruning
 Removing unnecessary weights or structures from a trained model:
@@ -120,6 +124,8 @@ The open-source speech model ecosystem now provides production-quality teacher m
 - [[google-research]] — TurboQuant and other Google contributions
 - [[compute-in-memory]] — The alternative paradigm: redesign hardware instead of compressing models
 - [[state-space-models]] — SSMs as efficient model architecture reducing compression needs
+- [[llm-based-speech-enhancement]] — Compressing autoregressive token-LMs into HA budgets is the deployment question; acoustic-semantic distillation is a faithfulness-oriented variant
+- [[linguistic-hallucination-speech-enhancement]] — Why factuality-aware distillation matters before generative SE ships
 
 ## Sources
 - [Google TurboQuant (ICLR 2026)](../../sources/google-turboquant-iclr-2026.md) — 6x KV cache compression, 3-bit quantization, zero accuracy loss

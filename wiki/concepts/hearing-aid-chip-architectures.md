@@ -2,10 +2,10 @@
 title: Hearing Aid Chip Architectures
 type: concept
 created: 2026-04-15
-updated: 2026-04-25
-sources: [hardware-software-codesign-edge-ai-2026.md, starkey-omega-ai-launch-2025.md, phonak-infinio-sphere-2024.md, resound-vivia-launch-2025.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, completely-implantable-cochlear-implants-april-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md]
-related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, ../entities/envoy-medical.md, cochlear-implant-ai.md, active-noise-cancellation.md]
-tags: [chips, npu, edge-ai, hardware, dual-chip, integrated, power-efficiency, compute-in-memory, rram]
+updated: 2026-05-13
+sources: [hardware-software-codesign-edge-ai-2026.md, starkey-omega-ai-launch-2025.md, phonak-infinio-sphere-2024.md, resound-vivia-launch-2025.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, completely-implantable-cochlear-implants-april-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md, fortell-spatial-ai-ija-may-2026.md]
+related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, ../entities/envoy-medical.md, ../entities/fortell.md, cochlear-implant-ai.md, active-noise-cancellation.md]
+tags: [chips, npu, edge-ai, hardware, dual-chip, integrated, power-efficiency, compute-in-memory, rram, co-design]
 ---
 
 # Hearing Aid Chip Architectures
@@ -59,6 +59,13 @@ A classical audio DSP handles deterministic signal processing while a dedicated 
 - Enables continuous DNN-based scene analysis, speech enhancement, and directional processing running simultaneously
 - First ReSound device with dedicated on-chip DNN inference hardware
 
+**Fortell (Startup, 2025–2026)**
+- Custom AI chip designed alongside the company's "Spatial AI" single-purpose neural network
+- Reported at **~235× the compute of conventional hearing aid SoCs**, up to 100 billion ops/second, end-to-end latency under 10 ms
+- First startup to publish peer-reviewed evidence (IJA, May 2026) that a full-stack co-designed silicon + algorithm + dataset stack outperforms five state-of-the-art premium incumbents on multitalker preference (99/100 trials, 12.2 dB SNR vs 3.0–5.9 dB)
+- Distribution: single Manhattan clinic, $6,800 / pair — premium-only positioning at present
+- See [[../entities/fortell]] for entity page and clinical evidence detail
+
 ## Architecture Tradeoff Matrix
 
 | Dimension | Integrated NPU | Dual-Chip |
@@ -82,6 +89,7 @@ To put hearing aid AI compute in context:
 |--------|-------------------------------|
 | ReSound Vivia (dual-chip) | 4.9 trillion operations/day |
 | DEEPSONIC research chip | 7.7 billion ops/second (666T ops/day) |
+| Fortell custom AI chip | Up to 100 billion ops/second (~235× conventional HA SoCs) |
 | Starkey G3 Neuro Processor | Not publicly disclosed |
 | Phonak PRISM (Infinio) | Not publicly disclosed |
 
@@ -180,3 +188,4 @@ Qualcomm's S5 and S3 Gen 3 Sound Platforms, shipping in premium TWS earbuds, dem
 - [Aizip Tiny AI for Hearing Devices](../../sources/aizip-tiny-ai-hearing-devices-2026.md) — Software-only AI on standard hardware
 - [Michigan CIM RRAM + SSM (Nature Communications 2026)](../../sources/michigan-compute-in-memory-rram-ssm-nature-2026.md) — First SSM-on-CIM mapping, RRAM crossbar arrays
 - [Qualcomm S5/S3 Gen 3 Sound Platforms](../../sources/qualcomm-s5-s3-gen3-sound-platforms-2026.md) — Transformer-based ANC at sub-3ms in consumer TWS
+- [Fortell Spatial AI — IJA May 2026](../../sources/fortell-spatial-ai-ija-may-2026.md) — Startup full-stack co-design with custom AI chip; 99/100 preference vs incumbent premium HAs

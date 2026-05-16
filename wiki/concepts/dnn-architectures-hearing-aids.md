@@ -2,10 +2,10 @@
 title: Deep Neural Network Architectures for Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-04-23
-sources: [prismml-ternary-bonsai-158bit-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md]
-related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, cochlear-implant-ai.md, model-compression.md, mixture-of-experts.md, state-space-models.md, compute-in-memory.md, mamba-architecture.md, active-noise-cancellation.md, tinyml-edge-ai.md]
-tags: [dnn, crn, transformer, cnn, rnn, hearing-aids, chips, low-latency, sepformer, state-space-models, mamba, dual-path-rnn, generative-predictive]
+updated: 2026-05-14
+sources: [prismml-ternary-bonsai-158bit-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
+related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, cochlear-implant-ai.md, model-compression.md, mixture-of-experts.md, state-space-models.md, compute-in-memory.md, mamba-architecture.md, active-noise-cancellation.md, tinyml-edge-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
+tags: [dnn, crn, transformer, cnn, rnn, hearing-aids, chips, low-latency, sepformer, state-space-models, mamba, dual-path-rnn, generative-predictive, llm-based-se]
 ---
 
 # Deep Neural Network Architectures for Hearing Aids

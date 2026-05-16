@@ -2,10 +2,10 @@
 title: Audiologist Workforce Shortage
 type: concept
 created: 2026-04-19
-updated: 2026-05-07
-sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md]
-related: [teleaudiology.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, automated-audiometry.md, ../syntheses/ai-understanding-gap-hearing-industry.md, precision-drug-delivery-inner-ear.md, ../entities/who-hearing-program.md, ../syntheses/cochlear-implant-access-economics.md, ../entities/aci-alliance-ci2026.md]
-tags: [workforce, audiology, shortage, access, rural-health, demographics, telehealth, policy]
+updated: 2026-05-16
+sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md, listen-up-kentucky-may-2026.md]
+related: [teleaudiology.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, automated-audiometry.md, hearing-care-funnel-attribution.md, ../syntheses/ai-understanding-gap-hearing-industry.md, precision-drug-delivery-inner-ear.md, ../entities/who-hearing-program.md, ../syntheses/cochlear-implant-access-economics.md, ../entities/aci-alliance-ci2026.md]
+tags: [workforce, audiology, shortage, access, rural-health, demographics, telehealth, policy, demand-side]
 ---
 
 # Audiologist Workforce Shortage
@@ -88,15 +88,27 @@ The shortage is not US-specific:
 - In sub-Saharan Africa, some countries have fewer than 1 audiologist per million people
 - The global shortage makes technology solutions (automated screening, OTC, teleaudiology) critical for worldwide hearing health
 
+## Pairing With the Demand-Side Constraint
+
+The workforce shortage is the **supply-side** constraint. It pairs with the demand-side gap — roughly 80% of people with hearing loss never seek care — that is the focus of [[hearing-care-funnel-attribution]]. The two constraints interact:
+
+- Closing the awareness gap without expanding workforce supply → bottleneck queues, longer wait times, deferred fittings
+- Expanding workforce supply without closing the awareness gap → under-utilized capacity, idle audiologist time
+- Both must be modeled jointly to understand realized fitting volume
+
+Initiatives like **[Listen Up Kentucky](../../sources/listen-up-kentucky-may-2026.md)** (ADA + WSA + KAA, May 2026) act on the demand side. A joint supply-demand model would predict how much awareness uplift saturates against the current workforce, and where the next bottleneck migrates if either lever moves first.
+
 ## Related Pages
 - [[teleaudiology]] — Primary technology response to geographic access gaps
 - [[otc-hearing-aids]] — OTC as a way to bypass the audiologist bottleneck for mild-moderate loss
 - [[hearing-aid-market-dynamics]] — Workforce shortage as structural market driver
 - [[automated-audiometry]] — AI-powered hearing tests without audiologist presence
-- [[ai-understanding-gap-hearing-industry]] — Audiologists as translators between AI claims and patient understanding
+- [[hearing-care-funnel-attribution]] — Demand-side companion concept; pairs with this supply-side page
+- [[../syntheses/ai-understanding-gap-hearing-industry]] — Audiologists as translators between AI claims and patient understanding
 - [[precision-drug-delivery-inner-ear]] — Innovation that may eventually reduce need for repeat interventions
-- [[who-hearing-program]] — WHO data on global shortage (1 audiologist per million in parts of sub-Saharan Africa); advocacy for scaling hearing care
+- [[../entities/who-hearing-program]] — WHO data on global shortage (1 audiologist per million in parts of sub-Saharan Africa); advocacy for scaling hearing care
 
 ## Sources
-- [Audiologist Workforce Shortage — ASHA + ScienceDirect](../sources/audiologist-shortage-asha-sciencedirect-2025.md)
-- [Hearing Aids Market $14.42B by 2030](../sources/hearing-aids-market-14b-by-2030-april-2026.md) — Workforce gap as market driver
+- [Audiologist Workforce Shortage — ASHA + ScienceDirect](../../sources/audiologist-shortage-asha-sciencedirect-2025.md)
+- [Hearing Aids Market $14.42B by 2030](../../sources/hearing-aids-market-14b-by-2030-april-2026.md) — Workforce gap as market driver
+- [Listen Up Kentucky — ADA + WSA + KAA, May 2026](../../sources/listen-up-kentucky-may-2026.md) — Demand-side awareness pilot that pairs with the supply-side workforce constraint
