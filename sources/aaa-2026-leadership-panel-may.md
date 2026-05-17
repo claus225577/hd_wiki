@@ -17,6 +17,19 @@ At the AAA 2026 convention, executives from **Sonova, Demant North America, GN/R
 - **Reframe hearing loss as a core health issue.** Consensus push to position hearing loss alongside cognition, falls, and isolation — not as a quality-of-life or lifestyle concern.
 - **Career-path advocacy.** Panel agreed the industry must do more to surface diverse and rewarding career paths available with an audiology degree (clinical, research, industry, regulatory).
 
+## Concrete AI Wins Cited (Back-Office, Not Product-Page)
+- **Mike O'Neil (WSA US wholesale president)** — internal AI chatbots in customer service **cut new-rep training time by two months**.
+- **Mikkel Knudsen (ReSound US president)** — AI assistants embedded in **fitting software deflect customer-service calls**; AI front-office tools help administrative staff.
+- **Kyle Acker (Starkey VP US commercial sales)** — frames clinicians shifting from **"reactive to predictive"** through AI decision support.
+- **Nicholai Dessypris (Sonova president)** — "As AI ingests areas of our lives, we need to embrace it. We need to leverage it across the patient journey."
+- **Patti Trautwein (Cochlear Americas VP, market access)** — proposes terminology change: **"stage 1 vs. mild"** hearing loss to drive patient seriousness.
+
+## Strategic Read
+- The panel's unified framing of "AI is now baseline" suggests the next round of differentiation will be in **clinical evidence, fitting workflows, and post-fitting care** — not in raw model capability.
+- Workforce shortage + AI integration is a logical pairing: AI tools (auto-fitting, remote monitoring, decision support) become a partial response to fewer audiologists per patient.
+- **The cited wins are unglamorous internal-productivity multipliers, not product features.** This is a different "AI in hearing aids" story than the on-chip-DNN narrative dominating product launches. The highest-leverage 2026-2027 AI projects for HA-OEM data-science teams may be back-office, not signal-path.
+- The "core health issue" framing aligns with the IHS Better Hearing Month proactive-care push and the recent ACHIEVE-style cognitive-decline evidence.
+
 ## Strategic Read
 - The panel's unified framing of "AI is now baseline" suggests the next round of differentiation will be in **clinical evidence, fitting workflows, and post-fitting care** — not in raw model capability.
 - Workforce shortage + AI integration is a logical pairing: AI tools (auto-fitting, remote monitoring, decision support) become a partial response to fewer audiologists per patient.

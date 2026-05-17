@@ -4,6 +4,36 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-05-17 — INGEST (LinkedIn drafts)
+
+**Operation:** Ingested two news items underlying today's LinkedIn drafts: (1) the **AAA 2026 leadership panel** (Hearing Review coverage, May 6 2026) reframed through the specific cited back-office AI wins — already in wiki as a source, updated with concrete quotes today; and (2) **DiffVQE** — first reproducible diffusion-based acoustic echo control (Lugo Girao et al., arXiv:2605.08189, 12 May 2026), framed as a companion-phone-tier story rather than an on-chip story.
+
+**New source files (1):**
+- `diffvqe-diffusion-aec-arxiv-may-2026.md` — DiffVQE; arXiv 2605.08189; hybrid score-based diffusion topology adapted for joint AEC + denoising; trained on Interspeech 2025 URGENT Challenge data; outperforms Microsoft's DeepVQE on both echo control AND noise control simultaneously while being smaller, less complex, faster, and single-step. Third 2026 datapoint extending the single-step / efficient generative-SE wave (after predictive-generative drift decomposition and DriftSE). Hearing-aid relevance: companion-phone-tier VoIP pipeline (Teams / Zoom / iOS-VoIP / Android-telephony → LE Audio handoff), not on-chip. Implies the HA's role shifts from "clean the signal" to "decide how much to trust what arrived." Trust-calibration metric is undefined.
+
+**Updated source files (1):**
+- `aaa-2026-leadership-panel-may.md` — added **Concrete AI Wins Cited (Back-Office, Not Product-Page)** section with named-quote citations: Mike O'Neil (WSA) cut new-rep training by 2 months with internal chatbots; Mikkel Knudsen (ReSound) AI assistants in fitting software deflect customer-service calls; Kyle Acker (Starkey) frames clinicians as "reactive to predictive"; Nicholai Dessypris (Sonova) patient-journey framing; Patti Trautwein (Cochlear) "stage 1 vs mild" terminology proposal. Added strategic-read bullet: cited wins are unglamorous internal productivity multipliers, not signal-path features — different "AI in hearing aids" story than the on-chip-DNN product launches.
+
+**New concept pages (1):**
+- `wiki/concepts/companion-phone-speech-pipeline.md` — formalizes the paired-smartphone audio pipeline as a distinct compute tier between HA SoC and cloud. ~4 orders-of-magnitude compute advantage over HA SoC. Workload-map table across HA-SoC / phone / cloud with latency budgets. Argues the HA's role shifts from "clean the signal" to "decide how much to trust what arrived" when upstream audio is generatively reconstructed. Names the missing **trust-calibration metric** and **mode-arbitration** problem. OEM-vs-platform divide: Apple controls the AirPods Pro 2/3 phone-pipeline end-to-end; medical-device OEMs do not. Cross-links DiffVQE / QVAC MedPsy / Samsung Audio Eraser / Adobe-Speechmatics as datapoints already in wiki demonstrating phone-tier maturity.
+
+**Updated existing pages (2):**
+- `wiki/concepts/speech-enhancement-neural-networks.md` — added **DiffVQE — Single-Step Diffusion AEC + Denoising (Lugo Girao et al., May 12 2026)** subsection under Recent Academic Advances, positioning as third datapoint in the single-step generative-SE wave; cross-linked companion-phone-speech-pipeline as the deployment substrate; added trust-calibration-metric-missing call-out. Frontmatter: added diffvqe source, companion-phone-speech-pipeline relation, and `diffusion-aec` / `companion-phone` tags; bumped updated date to 2026-05-17.
+- `wiki/concepts/audiologist-workforce-shortage.md` — added **Back-Office AI as the Highest-Leverage Bet (AAA 2026 Panel, May 2026)** section under Implications for Technology, listing the four named-quote back-office AI wins and arguing the AI-vs-audiologist framing is conceded by industry leadership; operative question becomes which back-office workflows scale fastest. Bumped updated date.
+
+**Index update:** Prepended a "Last updated: 2026-05-17" stanza; added Companion-Phone Speech Pipeline row to the Concepts table; bumped Speech Enhancement Neural Networks tag list and updated date.
+
+**Underlying LinkedIn posts:**
+1. *AAA 2026 industry panel — AI as the only realistic answer to the audiology workforce shortage.* Reframes the AI-in-hearing narrative from on-chip DNN to back-office productivity multipliers; names three specific industry cited-wins (WSA / ReSound / Starkey) as the actual signal of where 2026-2027 R&D leverage is.
+2. *DiffVQE — diffusion-based AEC beats SOTA at smaller size.* Names the companion-phone-pipeline tier as the deployment substrate; identifies the missing trust-calibration layer as the next interesting hearing-aid R&D problem.
+
+**Watchlist for follow-up:**
+- Whether any HA OEM publishes a "trust-calibration" or "faithfulness-to-truth" outcome metric for upstream-cleaned audio handed off via LE Audio.
+- Whether any OEM acknowledges back-office-AI (training / customer-service / fitting-software) as a strategic R&D track in 2026/27 product communications.
+- Whether DiffVQE-class single-step generative SE shows up in any consumer-VoIP product (Teams successor, iOS-VoIP, Android Phone, Zoom) within 12 months.
+
+---
+
 ## 2026-05-16 — INGEST (Daily hearing+AI digest)
 
 **Operation:** Compiled and sent today's daily hearing+AI digest to door.punch_4o@icloud.com (654 words, 9 items). Posted Discord confirmation to channel 1490303675648970823 (HTTP 200). Ingested 2 genuinely new sources; 7 of 9 items were already in the wiki.

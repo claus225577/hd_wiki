@@ -2,7 +2,7 @@
 title: Audiologist Workforce Shortage
 type: concept
 created: 2026-04-19
-updated: 2026-05-16
+updated: 2026-05-17
 sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md, listen-up-kentucky-may-2026.md]
 related: [teleaudiology.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, automated-audiometry.md, hearing-care-funnel-attribution.md, ../syntheses/ai-understanding-gap-hearing-industry.md, precision-drug-delivery-inner-ear.md, ../entities/who-hearing-program.md, ../syntheses/cochlear-implant-access-economics.md, ../entities/aci-alliance-ci2026.md]
 tags: [workforce, audiology, shortage, access, rural-health, demographics, telehealth, policy, demand-side]
@@ -65,6 +65,15 @@ The workforce shortage is arguably the single strongest structural argument for 
 - AI that handles routine tasks (hearing tests, first fits, follow-up adjustments) frees audiologists for complex cases
 - The goal isn't to replace audiologists but to multiply the impact of each one
 - Analogous to how AI in radiology doesn't replace radiologists but increases throughput
+
+### 6. Back-Office AI as the Highest-Leverage Bet (AAA 2026 Panel, May 2026)
+The AAA 2026 industry-leaders panel (Sonova / Demant / GN-ReSound / WSA / Starkey / Cochlear America presidents) cited a cluster of **internal, non-product-page AI wins** as their most concrete examples — not new on-chip DNN features:
+- **WSA** — internal AI chatbots in customer service cut new-rep training time by **two months** (Mike O'Neil).
+- **GN/ReSound** — AI assistants in fitting software deflect customer-service calls (Mikkel Knudsen).
+- **Starkey** — frames clinicians shifting from "reactive to predictive" through AI decision support (Kyle Acker).
+- **Sonova** — "leverage AI across the patient journey" framing without committing to a specific product feature (Nicholai Dessypris).
+
+The pattern: the highest-leverage AI projects in 2026-2027 for HA-OEM data-science teams may be **back-office productivity multipliers that buy the field time** while audiology graduation rates catch up, rather than signal-path features competing for the product-page bullet list. The "AI vs audiologist" framing is conceded by industry leadership; the operative question is which back-office workflows scale fastest.
 
 ## Market Impact
 
