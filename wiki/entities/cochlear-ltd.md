@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-26
 updated: 2026-04-26
 sources: [cochlear-nucleus-nexa-smart-implant-2026.md, completely-implantable-cochlear-implants-april-2026.md]
-related: [cochlear-implant-ai.md, software-defined-medical-implants.md, advanced-bionics.md, envoy-medical.md, aaa-conference.md, aci-alliance-ci2026.md, ../syntheses/cochlear-implant-access-economics.md]
+related: [../concepts/cochlear-implant-ai.md, ../concepts/software-defined-medical-implants.md, advanced-bionics.md, envoy-medical.md, aaa-conference.md, aci-alliance-ci2026.md, ../syntheses/cochlear-implant-access-economics.md]
 tags: [company, cochlear-implant, australia, market-leader, smart-implant]
 ---
 

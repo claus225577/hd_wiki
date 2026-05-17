@@ -2,8 +2,8 @@
 title: Over-the-Counter Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-05-16
-sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, apple-otc-haf-usability-aja-2025.md, airpods-hearing-aid-country-expansion-may-2026.md, eargo-8-launch-may-2026.md]
+updated: 2026-05-17
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, apple-otc-haf-usability-aja-2025.md, airpods-hearing-aid-country-expansion-may-2026.md, eargo-8-launch-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md]
 related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md]
 tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage, sony-exit, anc, lexie, bose, sams-club, retail-channel, nationsbenefits, lucid, vertical-integration]
 ---
@@ -29,6 +29,15 @@ Over-the-counter (OTC) hearing aids are a regulated device category established 
 - Maximum output limits defined by FDA to prevent further hearing damage
 - Output caps are more conservative than prescription devices, which is why OTC is restricted to mild-moderate loss
 - Annual self-check requirement recommended (not mandated)
+
+### Wellness / Medical Bifurcation (FDA Jan 2026 Guidance)
+FDA issued updated guidance in January 2026 reducing oversight on **low-risk AI-enabled wearables and wellness devices**, while preserving the 2022 OTC rule and Apple OTC HAF precedent for amplification-with-prescribed-targets. The practical effect on the OTC market is a **wellness/medical bifurcation**:
+- **Regulated side:** Apple AirPods Pro 2 / AirPods 4 ANC OTC HAF; Eargo 8; Lexie B3; Ceretone; any device claiming "hearing aid" in marketing copy.
+- **Deregulated side:** "Hearing wellness," "auditory training," "tinnitus management," "ear protection with adaptive amplification," and similar wellness-framed features in consumer hearables (ORKA-style Bose-licensed ANC RICs, Bose / Apple / Sony / Samsung mainstream earbuds, Lexie wellness telemetry features).
+- **Expected market effect:** more unvalidated wellness claims flood the consumer-earwear segment; audiologists and clinicians shoulder the triage burden. Pressure increases on regulated-OTC pricing (Apple HAF and Eargo 8 now compete with $50-tier "hearing wellness" earbuds at the marketing layer even if not at the clinical layer).
+- **Strategic question for Big-5 OEMs:** push for harder regulation to protect the prescription moat, or lighter regulation to enable hearable product lines? Likely answer: **harder for generative SE / amplification, lighter for telemetry / wellness sensors.**
+- **Generative-SE classification ambiguity** — generative speech reconstruction (per L3-SE / linguistic-hallucination thread) can plausibly be framed as either regulated noise reduction or deregulated audio enhancement. The classification will shape liability, reimbursement, and the regulatory entry point for future LM-based SE products.
+- See [[../sources/fda-low-risk-ai-wellness-wearables-guidance-jan-2026]] and [[eu-ai-act-medical-devices]] (contrasting direction in EU).
 
 ## Market Size and Growth
 

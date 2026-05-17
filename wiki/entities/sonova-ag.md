@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-05-13
 sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md, phonak-ai-excellence-award-march-2026.md, sonova-silentcloud-acquisition-2026.md, silentcloud-tinnitus-rwd-frontiers-may-2026.md, connect-hearing-audionova-rebrand-may-2026.md, sonova-costco-sennheiser-sonite-r-may-2026.md, sonova-sennheiser-consumer-divestiture-may-2026.md]
-related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md, ../syntheses/vertical-integration-trend.md]
+related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md, ../syntheses/vertical-integration-trend.md, ../concepts/digital-therapeutics-tinnitus.md]
 tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant, drug-delivery, retail, audionova]
 ---
 

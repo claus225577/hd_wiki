@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-26
 updated: 2026-05-09
 sources: [harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, apple-hearing-study-results-may-2026.md, hearing-aid-cortical-reorganization-meg-frontiers-2026.md, pediatric-softband-bcd-database-frontiers-may-2026.md]
-related: [gene-therapy-hearing.md, cochlear-implant-ai.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, automated-audiometry.md, large-sensor-models.md, vcca-computational-audiology.md, subjective-objective-hearing-gap.md, hearing-loss-dementia-link.md, digital-phenotyping-cognitive-decline.md, cortical-reorganization-hearing-aids.md]
+related: [gene-therapy-hearing.md, cochlear-implant-ai.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, automated-audiometry.md, large-sensor-models.md, ../entities/vcca-computational-audiology.md, subjective-objective-hearing-gap.md, hearing-loss-dementia-link.md, digital-phenotyping-cognitive-decline.md, cortical-reorganization-hearing-aids.md]
 tags: [phenotyping, longitudinal, outcome-measurement, ecological-momentary-assessment, gene-therapy, ml-monitoring, real-world-evidence, neuroplasticity, telemetry, candidacy-expansion]
 ---
 

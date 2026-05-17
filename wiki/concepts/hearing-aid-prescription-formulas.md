@@ -4,7 +4,7 @@ type: concept
 created: 2026-05-12
 updated: 2026-05-12
 sources: [gn-nal-nl3-global-launch-march-2026.md, nal-nl3-fitting-protocol-2026.md, ml-personalized-fitting-review-2024.md]
-related: [ml-personalized-fitting.md, dnn-in-hearing-aids.md, closed-loop-data-flywheel.md, gn-hearing-resound.md, phonak.md, demant-oticon.md, starkey.md, wsa-sound-preference-program-april-2026.md, vcca-computational-audiology.md]
+related: [dnn-in-hearing-aids.md, closed-loop-data-flywheel.md, ../entities/gn-hearing-resound.md, ../entities/phonak.md, ../entities/demant-oticon.md, ../entities/starkey.md, ../entities/vcca-computational-audiology.md]
 tags: [fitting, prescription, nal-nl2, nal-nl3, dsl-v5, gain-curve, audiology, fairness, computational-audiology]
 ---
 

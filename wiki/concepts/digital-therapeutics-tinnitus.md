@@ -2,8 +2,8 @@
 title: Digital Therapeutics for Tinnitus
 type: concept
 created: 2026-05-11
-updated: 2026-05-15
-sources: [silentcloud-tinnitus-rwd-frontiers-may-2026.md, sonova-silentcloud-acquisition-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md]
+updated: 2026-05-17
+sources: [silentcloud-tinnitus-rwd-frontiers-may-2026.md, sonova-silentcloud-acquisition-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, musicians-tinnitus-meta-analysis-2026.md]
 related: [care-partner-dyad-models.md, hearing-loss-dementia-link.md, ../entities/sonova-ag.md, longitudinal-hearing-phenotyping.md, medical-domain-edge-llms.md]
 tags: [tinnitus, digital-therapeutics, dtx, icbt, adherence, silentcloud, sonova, real-world-data, thi, digital-health]
 ---
@@ -15,6 +15,7 @@ Software-as-medical-device (SaMD) interventions delivering structured therapy �
 ## Why Tinnitus Is a Natural DTx Indication
 
 - **High prevalence:** 10–15% of adults experience some chronic tinnitus
+- **Occupational cohorts dwarf the general-population rate.** A 2026 meta-analysis (67 studies, 28,000+ musicians, 21 countries; *Otolaryngology – Head and Neck Surgery*) found **42.6% of musicians** experience tinnitus (vs 13.2% controls), 25.7% hearing loss, 37.3% hyperacusis. **Genre-neutral** — no significant classical-vs-rock/pop difference; instrument, ensemble seating, room acoustics, and protection-adherence matter more than genre. Quantifies and citably sources the musician-tier addressable market for tinnitus DTx + custom IEM-tier hearing protection. See [[../sources/musicians-tinnitus-meta-analysis-2026]].
 - **No reliable pharmacotherapy:** evidence-based interventions are predominantly behavioural (CBT)
 - **Audiologist scarcity:** see [[audiologist-workforce-shortage]] — most chronic tinnitus patients never see a specialist
 - **Under-served by hardware:** hearing aids treat associated hearing loss but not tinnitus distress itself; a software lane fills the gap

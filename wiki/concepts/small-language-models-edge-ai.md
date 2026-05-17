@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-15
 updated: 2026-05-15
 sources: [small-language-models-edge-2026.md, qwen3-6-35b-a3b-open-source-april-2026.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, open-source-speech-ai-edge-native-april-2026.md, google-gemma-4-open-models-april-2026.md, liquid-ai-lfm25-audio-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md]
-related: [on-device-ml-hearing-aids.md, large-sensor-models.md, model-compression.md, ../entities/google-research.md, mixture-of-experts.md, state-space-models.md, tinyml-edge-ai.md, mamba-architecture.md, medical-domain-edge-llms.md]
+related: [on-device-ml-hearing-aids.md, large-sensor-models.md, model-compression.md, ../entities/google-research.md, mixture-of-experts.md, state-space-models.md, tinyml-edge-ai.md, mamba-architecture.md, medical-domain-edge-llms.md, companion-phone-speech-pipeline.md]
 tags: [slm, edge-ai, tinyml, on-device, efficiency, mixture-of-experts, open-source, speech-models, multimodal]
 ---
 

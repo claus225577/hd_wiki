@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-15
 updated: 2026-05-13
 sources: [hardware-software-codesign-edge-ai-2026.md, starkey-omega-ai-launch-2025.md, phonak-infinio-sphere-2024.md, resound-vivia-launch-2025.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, completely-implantable-cochlear-implants-april-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md, fortell-spatial-ai-ija-may-2026.md]
-related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, ../entities/envoy-medical.md, ../entities/fortell.md, cochlear-implant-ai.md, active-noise-cancellation.md]
+related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, small-language-models-edge-ai.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, ../entities/envoy-medical.md, ../entities/fortell.md, cochlear-implant-ai.md, active-noise-cancellation.md, passive-acoustic-metamaterials.md]
 tags: [chips, npu, edge-ai, hardware, dual-chip, integrated, power-efficiency, compute-in-memory, rram, co-design]
 ---
 

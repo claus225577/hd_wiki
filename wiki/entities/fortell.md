@@ -4,7 +4,7 @@ type: entity
 created: 2026-05-13
 updated: 2026-05-13
 sources: [fortell-spatial-ai-ija-may-2026.md]
-related: [hearing-aid-chip-architectures.md, dnn-in-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, phonak.md, sonova-ag.md]
+related: [../concepts/hearing-aid-chip-architectures.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/speech-enhancement-neural-networks.md, phonak.md, sonova-ag.md]
 tags: [startup, hearing-aids, ai-chip, spatial-ai, premium, cocktail-party, custom-silicon]
 ---
 

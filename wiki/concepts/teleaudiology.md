@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-15
 updated: 2026-05-08
 sources: [audiologist-shortage-asha-sciencedirect-2025.md, noah-es-5000-subscribers-april-2026.md, remote-ci-programming-real-life-frontiers-2026.md]
-related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, precision-drug-delivery-inner-ear.md, cochlear-implant-ai.md, ../entities/neurotone-ai.md]
+related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, precision-drug-delivery-inner-ear.md, cochlear-implant-ai.md, ../entities/neurotone-ai.md, predictive-pediatric-earmolds.md]
 tags: [telehealth, remote-care, audiology, self-fitting, cloud, signia, smartphone, access, workforce-shortage]
 ---
 

@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-05-13
 sources: [vcca2024-conference.md, vcca2025-conference.md, vcca2026-conference.md, computational-audiology-new-approaches-pmc-2021.md, world-congress-audiology-seoul-may-2026.md]
-related: [teleaudiology.md, auditory-attention-decoding.md, cochlear-implant-ai.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, ../syntheses/hearing-ai-research-landscape-2025.md]
+related: [../concepts/teleaudiology.md, ../concepts/auditory-attention-decoding.md, ../concepts/cochlear-implant-ai.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/dnn-architectures-hearing-aids.md, ../syntheses/hearing-ai-research-landscape-2025.md]
 tags: [conference, computational-audiology, academic, vcca, ai-audiology, wca2026]
 ---
 

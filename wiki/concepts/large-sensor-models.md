@@ -2,8 +2,8 @@
 title: Large Sensor Models
 type: concept
 created: 2026-04-15
-updated: 2026-05-14
-sources: [large-sensor-models-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
+updated: 2026-05-17
+sources: [large-sensor-models-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, dod-biometric-hearing-protection-fy26.md]
 related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, world-models-hearing-ai.md, closed-loop-data-flywheel.md, digital-phenotyping-cognitive-decline.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
 tags: [foundation-models, wearables, sensor-fusion, transfer-learning, llm-based-se]
 ---
@@ -33,6 +33,10 @@ Hearing aids are among the most sophisticated wearable computers, but their ML p
 - Privacy: wearable health data is highly sensitive
 - Heterogeneity across sensor types and sampling rates
 - No large-scale public dataset for hearing aid sensor data exists
+
+## Dual-Use Defense Funding Subsidizes the In-Ear Sensor Stack (FY26)
+
+The FY26 US defense appropriations bill added **+$7.5M to accelerate biometric-enabled hearing protection** (Aware Defense, US Army; surfaced Feb 2026). Custom-molded in-ear shells combining passive + active hearing protection with embedded sensors — **same sensor stack civilian hearables and hearing aids will eventually inherit** (heart rate via PPG, body temperature, motion, stress/fatigue indicators). Defense procurement underwrites the BOM, qualification cycle, and yield curve on shell manufacturing + sensor integration; the technology transfers into consumer earwear with a 2–4 year lag. Structural argument for treating in-ear sensor fusion as a near-term realistic substrate for LSM-style foundation models in HAs rather than a 2030s ambition. See [[../sources/dod-biometric-hearing-protection-fy26]].
 
 ## Adjacent: LM-Based Speech Enhancement as a Foundation-Model-Shaped Audio Application
 

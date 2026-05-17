@@ -4,6 +4,67 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-05-17 — Lint Pass
+
+**Operation:** Comprehensive wiki lint pass. Checked index completeness, cross-reference integrity, orphan pages, duplicates, stale sources, page sizes, and missing links.
+
+**Stats at time of lint:**
+- Total wiki pages (excluding index/log): 81
+- Concepts: 51 | Entities: 22 | Comparisons: 4 | Syntheses: 6
+- Total sources: 196
+
+**Index completeness:**
+- 2 pages existed on disk but were missing from `wiki/index.md`:
+  - `concepts/hearing-care-funnel-attribution.md` (created 2026-05-16, never added to index)
+  - `concepts/multimodal-hearing-assessment.md` (created 2026-05-16, never added to index)
+- **Fixed:** Both rows added to the Concepts table in `wiki/index.md`.
+
+**Cross-references fixed (22 broken refs → 0):**
+All 22 broken references were path-prefix errors — bare filenames used where a directory prefix was required. Fixed across 7 files:
+1. `concepts/auditory-attention-decoding.md` — `vcca-computational-audiology.md` → `../entities/vcca-computational-audiology.md`
+2. `concepts/automated-audiometry.md` — same `vcca` fix
+3. `concepts/cochlear-implant-ai.md` — same `vcca` fix
+4. `concepts/longitudinal-hearing-phenotyping.md` — same `vcca` fix
+5. `concepts/speech-enhancement-neural-networks.md` — same `vcca` fix
+6. `concepts/hearing-aid-prescription-formulas.md` — 7 refs fixed: removed non-existent `ml-personalized-fitting.md`, removed source-file ref `wsa-sound-preference-program-april-2026.md`, added `../entities/` prefix to `gn-hearing-resound`, `phonak`, `demant-oticon`, `starkey`, `vcca-computational-audiology`
+7. `entities/cochlear-ltd.md` — added `../concepts/` prefix to `cochlear-implant-ai` and `software-defined-medical-implants`
+8. `entities/fortell.md` — added `../concepts/` prefix to 4 concept refs
+9. `entities/vcca-computational-audiology.md` — added `../concepts/` prefix to 5 concept refs
+
+**Orphan pages fixed (2 → 0):**
+- `concepts/passive-acoustic-metamaterials.md` — added as related in `concepts/hearing-aid-chip-architectures.md`
+- `concepts/predictive-pediatric-earmolds.md` — added as related in `concepts/teleaudiology.md`
+
+**Missing cross-references fixed (3):**
+- `entities/sonova-ag.md` → added link to `concepts/digital-therapeutics-tinnitus.md` (Sonova owns SilentCloud tinnitus DTx)
+- `concepts/small-language-models-edge-ai.md` → added link to `concepts/companion-phone-speech-pipeline.md` (SLMs run on the phone tier)
+- `concepts/passive-acoustic-metamaterials.md` already links to `concepts/companion-phone-speech-pipeline.md` via its own related field (no fix needed there, the body mention is peripheral)
+
+**Stale fast-moving sources (14, no wiki fix required — informational):**
+Sources pre-dating 2026-02-17 tagged with AI/ML topics. Most are foundational references (Starkey Genesis AI 2023, Lancet hearing-dementia 2024, early auracast 2025). The wiki pages citing them also cite fresher 2026 sources, so no content is stale-only. Notable:
+- `starkey-genesis-ai-health.md` (2023-02-01) — still valid as historical context
+- `ai-audiology-scoping-review.md` (2024-01-01) — foundational, not fast-moving in content
+- `phonak-deepsonic-ai-chip.md` (2025-10-01) — superseded by Sphere Infinio coverage; flag for future update
+- `interspeech-2026-audio-reasoning-challenge.md` (2026-02-16) — just at cutoff, still valid
+
+**Page size (no splits needed):**
+- Largest content page: `concepts/speech-enhancement-neural-networks.md` at 304 lines — large but coherent; monitor for split after next major ingest
+- `wiki/log.md` at 1,658 lines — expected for append-only log; no action required
+
+**Potential duplicates flagged (needs human judgment — no automatic merge):**
+- `concepts/dnn-in-hearing-aids.md` vs `concepts/dnn-architectures-hearing-aids.md` — 80% title overlap; dnn-in-hearing-aids is the clinical/product page, dnn-architectures is the architecture-taxonomy page; distinct enough to keep separate but should stay cross-linked
+- `concepts/hearing-aid-market-dynamics.md` vs `syntheses/hearing-aid-market-outlook.md` — 75% title overlap; dynamics is the live-updated concept, outlook is the periodic synthesis; keep separate
+- `concepts/state-space-models.md` vs `concepts/mamba-architecture.md` — SSMs is the general taxonomy, Mamba is the specific architecture; keep separate
+- `comparisons/ai-hearing-aid-platforms-2026.md` vs `syntheses/hearing-aid-ai-stack-2026.md` — comparison is OEM-by-OEM table, synthesis is architectural stack analysis; keep separate
+- `concepts/on-device-ml-hearing-aids.md` vs `concepts/tinyml-edge-ai.md` — on-device-ml is the broad hearing-device ML page, tinyml is sub-MCU keyword-spotting; keep separate
+
+**What needs human judgment:**
+1. `concepts/hearing-aid-prescription-formulas.md` — removed link to non-existent `ml-personalized-fitting.md`. If a dedicated personalized-fitting ML concept page is warranted, it should be created and cross-linked back.
+2. Stale source `phonak-deepsonic-ai-chip.md` (2025-10-01) — the Phonak entity page should be updated with Sphere Infinio as the current chip story; the DeepSonic source is superseded but kept for history.
+3. `concepts/speech-enhancement-neural-networks.md` at 304 lines — candidate for split into (a) architecture taxonomy and (b) recent advances, if it crosses ~400 lines after next major ingest.
+
+---
+
 ## 2026-05-17 — INGEST (LinkedIn drafts)
 
 **Operation:** Ingested two news items underlying today's LinkedIn drafts: (1) the **AAA 2026 leadership panel** (Hearing Review coverage, May 6 2026) reframed through the specific cited back-office AI wins — already in wiki as a source, updated with concrete quotes today; and (2) **DiffVQE** — first reproducible diffusion-based acoustic echo control (Lugo Girao et al., arXiv:2605.08189, 12 May 2026), framed as a companion-phone-tier story rather than an on-chip story.
@@ -1619,3 +1680,40 @@ Source: 9to5Mac (1 May 2026) + U-M School of Public Health study page
 - Yesterday's digest (2026-05-13) leaned on Fortell + Apple Hearing Study + Starkey VA + Sonova/Sennheiser + Otarmeni + Apple OTC HAF eval. Today's digest deliberately rotated to brain-controlled AAD + L3-SE + Northwestern CI MRI + Sam's Club channel + HHTM conference to avoid republishing the same five anchors two days running. Apple expansion was demoted to a "Worth Watching" mention rather than headline placement.
 - The digest's "Quick Stats" section continues to be the most reader-friendly summary — five concrete numbers, all sourced from the items above. Keep this pattern.
 - Watch list for tomorrow: any independent replication of the Choudhari/Mesgarani result with non-invasive sensors; any Fortell competitor preference study (industry-sponsored response expected); any first publication of an L3-SE-style hallucination benchmark; any new Apple Hearing Study release; any major OEM Q1 earnings commentary on AI hearing aid uptake.
+
+---
+
+## 2026-05-17 — DAILY DIGEST INGEST + EMAIL SENT
+
+**Operation:** Compiled and sent daily Hearing + AI Digest email to door.punch_4o@icloud.com (subject "🎧 Hearing + AI Daily Digest — 17 May 2026"). 11 items covered across Research Papers, Industry News, AI/ML Developments, Worth Watching, and Quick Stats sections. Ingested 4 net-new sources + 1 digest record into the wiki.
+
+**New sources (5):**
+1. `tf-mlpnet-tiny-speech-separation-arxiv-2026` — Itani et al., arXiv:2508.03047. First on-device real-time neural speech separation for low-power hearables. Architectural argument: deliberately avoids transformer + Mamba blocks because current HA NPUs don't support those ops. Pure MLP + depthwise-conv stacks over TF bins; beats prior streaming separation/TSE baselines within the hearable power envelope.
+2. `dod-biometric-hearing-protection-fy26` — US DoD FY26 appropriations bill +$7.5M for Aware Defense custom-molded in-ear sensor system (PPG / temperature / motion / stress). Dual-use precedent that subsidizes the in-ear sensor BOM and shell-molding qualification cycle that civilian hearables will inherit on 2-4 year lag.
+3. `musicians-tinnitus-meta-analysis-2026` — *Otolaryngology – Head and Neck Surgery* meta-analysis; 67 studies / 28k+ musicians / 21 countries. 42.6% tinnitus prevalence in musicians vs 13.2% controls; 25.7% hearing loss vs 11.6%; 37.3% hyperacusis vs 15.3%. **Genre-neutral** — no significant classical-vs-rock/pop difference; instrument / seating / acoustics / protection-adherence dominate over genre.
+4. `fda-low-risk-ai-wellness-wearables-guidance-jan-2026` — FDA Jan 2026 guidance reducing SaMD oversight on low-risk AI-enabled wearables / wellness devices. Preserves 2022 OTC rule and Apple OTC HAF precedent. Bifurcates consumer-earwear market into regulated amplification tier vs deregulated wellness tier; generative-SE classification ambiguity remains the highest-leverage open question.
+5. `hearing-ai-digest-2026-05-17` — digest record itself.
+
+**Updated wiki pages (6):**
+- `concepts/speech-enhancement-neural-networks.md` — added TF-MLPNet — Tiny On-Device Speech Separation, Accelerator-Aware subsection under Recent Academic Advances; reinforces deployable-envelope thesis (MLP / depthwise-conv / quantized-CRN as the 2026 on-chip envelope, transformer-on-HA gated on next silicon cycle); added source to frontmatter; bumped updated date.
+- `concepts/on-device-ml-hearing-aids.md` — added TF-MLPNet — Accelerator-Opcode-Driven Design subsection under Key Players & Their Chips; names the design-workflow inversion of building architecture around the accelerator opcode set first then optimizing the math; added source; bumped updated date.
+- `concepts/digital-therapeutics-tinnitus.md` — added occupational-cohort prevalence bullet citing the musicians meta-analysis; quantifies the genre-neutral TAM expansion lever; bumped updated date.
+- `concepts/large-sensor-models.md` — added Dual-Use Defense Funding Subsidizes the In-Ear Sensor Stack section citing the DoD FY26 increase; argues defense procurement makes LSM-style HA sensor fusion a near-term realistic substrate rather than a 2030s ambition; bumped updated date.
+- `concepts/otc-hearing-aids.md` — added Wellness / Medical Bifurcation (FDA Jan 2026 Guidance) subsection under Safety Limits; spells out regulated vs deregulated tier examples and the generative-SE classification ambiguity; bumped updated date.
+- `concepts/hearing-aid-market-dynamics.md` — added Two Market-Structuring Regulatory + Procurement Inputs (FY26) section covering FDA Jan 2026 + DoD FY26 + musicians meta-analysis as three FY26 inputs shaping the OEM landscape on multi-year horizons; bumped updated date.
+
+**Pages touched this ingest: 12** (5 sources created, 6 wiki concept pages updated, index + log appended). On-target for the 5-15 pages-per-source schema budget.
+
+**Editorial framing:**
+- Yesterday's digest (2026-05-16) leaned on Eargo 8 + Phonak AI awards + brain-controlled hearing + Framingham dementia + Northwestern CI prediction. Today's digest deliberately rotated to silicon-constraint / hardware (TF-MLPNet, ORKA Bose RIC, DoD biometric earwear) and regulatory (FDA AI-wellness guidance), with the musicians-tinnitus meta-analysis as the public-health anchor.
+- Three of four genuinely new sources are technically older than the 48h freshness window but only surfaced in mainstream industry coverage this week (DoD funding via Biometric Update; FDA guidance via Biometric Update + DoD coverage; musicians meta-analysis re-surfaced via Neuroscience News / Medical Xpress / Classic FM in May). The TF-MLPNet paper has an Aug 2025 first-version date but the recent revision indexed in 2026; included because the "accelerator-doesn't-support-transformers" framing is precisely the production-relevance argument the wiki was missing.
+- Light Sunday news cycle. No new primary product launches, no new clinical trial readouts, no new arXiv breakthroughs published in the strict 48h window. Today's value is **regulatory + procurement context** (FDA + DoD as 12-24 month market shapers) plus the **silicon-constraint architecture framing** (TF-MLPNet) — both more durable than a typical day's product/paper churn.
+
+**Discord confirmation:** Posted to active channel — "✅ Daily hearing+AI digest sent to door.punch_4o@icloud.com — 11 items covered (3 papers, 3 industry notes, 2 AI/ML items, 2 worth-watching + 5 quick stats)."
+
+**Watch list for tomorrow:**
+- Any HA OEM commentary on the FDA Jan 2026 wellness/medical bifurcation in upcoming Q1 earnings calls (Sonova, Demant, GN, Starkey).
+- Any new TF-MLPNet-style accelerator-aware architecture from a different group — would confirm the silicon-constraint design pattern is generalizing.
+- Any defense-vendor product announcement leveraging the Aware Defense FY26 funding — first dual-use civilian spinout would be a meaningful market signal.
+- Any clinical-tier follow-up to the Columbia brain-controlled hearing paper using non-invasive ear-EEG / cEEGrids (the form-factor gap is the dominant open question).
+- Any musician-tier custom-IEM / tinnitus-DTx product announcement leveraging the 42.6% prevalence number as marketing.
