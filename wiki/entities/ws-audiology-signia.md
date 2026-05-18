@@ -2,8 +2,8 @@
 title: WS Audiology / Signia
 type: entity
 created: 2026-04-15
-updated: 2026-05-16
-sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, listen-up-kentucky-may-2026.md]
+updated: 2026-05-18
+sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, listen-up-kentucky-may-2026.md, signia-active-mini-ix-may-2026.md]
 related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/dnn-vs-natural-processing.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-care-funnel-attribution.md, neurotone-ai.md, aaa-conference.md]
 tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing, lucid, retail-channel, sams-club, public-health, awareness-campaigns]
 ---
@@ -34,9 +34,18 @@ Signia's flagship AI platform, expanded through 2025:
 - Cloud-based **Signia Assistant** — live DNN model accessible via app for real-time adjustments and personalization; delivers cloud-based DNN inference without requiring all compute on-device
 - Processes conversation in real-time without perceptible latency
 
-**Form Factor Expansion (2025)**
+**Form Factor Expansion (2025–2026)**
 - Signia IX originally launched in RIC/RITE forms
 - **Aug 2025**: Expanded with **Insio IX** (custom ITE/ITC) and **Motion Charge&Go IX** (BTE), bringing IX AI to all major form factors
+- **May 12, 2026** — **Active Mini IX** launched as the **world's smallest ready-to-wear / instant-fit ITE** with the full IX platform on board (RealTime Conversation Enhancement, Signia Assistant in-app, two-mic directional, 21h battery + fast charge). **No custom shell, no manufacturing wait** — collapses the 1–2 week impression-to-fit gap that has historically gated first-time ITE adoption. Available in Garnet Black, Rose Gold, Pearl White. Internal study: 97% comfort satisfaction. See `signia-active-mini-ix-may-2026.md`.
+
+**Active Mini IX — Data-Pipeline Significance (May 2026)**
+The product is not framed externally as a data play, but the closed-loop implications are material:
+- **Time-to-first-telemetry** drops from ~2 weeks to same-day. Signia Assistant — already taking real-world acoustic adjustment requests and feeding personalization — gets first user signal from hour one rather than week three.
+- **Cosmetic-sensitive first-time-user demographic** that previously balked at BTE visibility but couldn't tolerate custom-ITE wait is now reachable; that cohort is largely absent from the BTE-dominant training data of the past two decades.
+- **ITE deep-canal acoustic phenotype** is structurally different from BTE/RIC — faster ITE proliferation broadens the acoustic distribution feeding personalization models.
+- Same-day adjustment cycles produce a fundamentally different **learning signal cadence** than the next-clinic-visit pattern.
+- Stacks with the **Apr 2026 Sound Preference Program** and **May 2026 Lexie B3** OTC launch as a ~6-week WSA cadence layering top-of-funnel awareness, mid-priced OTC, and instant-fit premium ITE.
 
 **Battery / Power**
 - Longest battery runtime among rechargeable superpower hearing aid devices (high-power category for severe/profound loss)

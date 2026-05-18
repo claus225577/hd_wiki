@@ -1717,3 +1717,51 @@ Source: 9to5Mac (1 May 2026) + U-M School of Public Health study page
 - Any defense-vendor product announcement leveraging the Aware Defense FY26 funding — first dual-use civilian spinout would be a meaningful market signal.
 - Any clinical-tier follow-up to the Columbia brain-controlled hearing paper using non-invasive ear-EEG / cEEGrids (the form-factor gap is the dominant open question).
 - Any musician-tier custom-IEM / tinnitus-DTx product announcement leveraging the 42.6% prevalence number as marketing.
+
+---
+
+## 2026-05-18 — LinkedIn drafts ingest
+
+**Underlying LinkedIn posts:**
+1. Signia Active Mini IX — instant-fit ITE collapses the impression-to-fit data gap that has throttled hearing-aid AI feedback loops
+2. Neural codecs are *less* noise-robust than classical — and listening effort is the metric the hearing-aid pipeline forgot
+
+**Sources processed:**
+- `signia-active-mini-ix-may-2026.md` — **new** — Signia launches the world's smallest ready-to-wear ITE with full IX platform on board; same-day fitting, no custom shell; Hearing Review coverage May 12 2026.
+- `codec-intelligibility-se-behringer-arxiv-2026.md` — **pre-existing** (from prior digest ingest); cross-linked into the new listening-effort concept page and into the speech-enhancement-neural-networks concept page Recent Academic Advances section.
+
+**Pages created (1):**
+- `concepts/listening-effort-evaluation.md` — formalizes listening effort as a first-class hearing-AI metric distinct from intelligibility; anchored to Behringer et al. codec finding that effort reveals differences invisible to intelligibility; documents measurement approaches (subjective scales, pupillometry, dual-task, EEG/fNIRS, ASR-derived proxies), the pipeline gap (codecs/SE/fitting), what "first-class" would mean (HASPI-equivalent for effort, regulatory acceptance criterion, telemetry-side proxies), and open questions (ASR-effort generalization to HI listeners, effort-vs-faithfulness for generative SE).
+
+**Pages updated (2):**
+- `entities/ws-audiology-signia.md` — added Active Mini IX (May 12 2026) under Form Factor Expansion subsection; added new Active Mini IX — Data-Pipeline Significance subsection covering time-to-first-telemetry compression, cosmetic-sensitive demographic reach, ITE deep-canal acoustic-phenotype expansion of the BTE-dominated training distribution, and the ~6-week WSA cadence (Sound Preference Program → Lexie B3 OTC → Active Mini IX instant-fit). Added `signia-active-mini-ix-may-2026.md` to frontmatter sources. Bumped updated date to 2026-05-18.
+- `concepts/speech-enhancement-neural-networks.md` — added Codec × Speech Enhancement × Noise — Listening Effort Reveals What Intelligibility Hides subsection under Recent Academic Advances; cross-links the new listening-effort-evaluation concept page; added Behringer codec source to frontmatter sources and codec-evaluation + listening-effort tags; added listening-effort-evaluation and auracast-bluetooth-le-audio to related; bumped updated date to 2026-05-18.
+
+**Editorial framing:**
+- Signia angle deliberately reframes a routine form-factor launch as a closed-loop data-pipeline event. The product page sells discretion + same-day fitting; the data-science argument is that fit-day = data-day and Signia Assistant's learning loop now starts on hour 1 rather than week 3. The cosmetic-sensitive first-time-user cohort that the BTE-dominated training corpus has structurally missed for 20 years is now reachable.
+- Codec / listening-effort angle uses an Interspeech 2026 submission to introduce a missing wiki concept. The Behringer paper was already in the source pool but had no dedicated effort-side wiki anchor — today's ingest creates that anchor and cross-links from speech-enhancement-neural-networks, linguistic-hallucination-speech-enhancement, subjective-objective-hearing-gap, cortical-reorganization-hearing-aids, multimodal-hearing-assessment, and companion-phone-speech-pipeline. Effort now has its own lookup entry alongside the existing intelligibility / faithfulness / personalization measurement axes.
+
+**Pages touched this ingest: 4** (1 new source, 1 new concept page, 2 wiki pages updated; index + log appended). On-target for the 5-15 pages-per-source schema budget given small primary ingest (the second source was pre-existing).
+
+---
+
+## 2026-05-18 — Daily hearing+AI digest ingest
+
+**Digest sent to door.punch_4o@icloud.com:** 🎧 Hearing + AI Daily Digest — 18 May 2026 (3 items: Wasano tinnitus RCT, Mesgarani brain-controlled hearing, FHH conference session 2).
+
+**Sources processed:**
+- `tinnitus-app-rct-jama-wasano-may-2026.md` — **new** — Wasano et al., JAMA Otolaryngology–Head & Neck Surgery (May 2026). Double-blind sham-controlled RCT, n=60, CBT + educational-counseling smartphone app for chronic tinnitus. Between-group THI improvement **−20.4 at week 16, −18.3 at week 24** (durable after therapeutic functions blocked). No serious AEs. Tokai University School of Medicine, Japan.
+- `brain-controlled-hearing-nature-neuroscience-may-2026.md` — **pre-existing** (ingested 11 May from primary publication). Re-surfaced in NPR 14 May follow-up; no wiki delta required.
+
+**Pages created (0).** New material consolidated into existing concept page rather than fragmented.
+
+**Pages updated (2):**
+- `concepts/digital-therapeutics-tinnitus.md` — added new "Wasano RCT — Controlled Efficacy Signal (May 2026)" section ahead of the SilentCloud RWD section; framed the two papers as complementary evidence layers (controlled efficacy vs real-world effectiveness + adherence). Added Wasano source to frontmatter sources; added `cbt` and `rct` tags; appended Wasano entry to Sources block; bumped updated date to 2026-05-18.
+- `wiki/index.md` — refreshed Digital Therapeutics for Tinnitus tag list (added cbt, rct) and updated date stamp to 2026-05-18.
+
+**Editorial framing:**
+- The Wasano paper is the strongest digital-therapeutics-for-tinnitus evidence to land since the SilentCloud RWD a week ago. The framing decision was to NOT create a new concept page (DTx-tinnitus already exists and is the right home) but to explicitly position the two 2026 papers as **complementary evidence layers**: Wasano = controlled efficacy (does the protocol work?), SilentCloud = real-world effectiveness + adherence (does it reach people?). Adherence is the bridge. This framing should age well into the reimbursement-pathway conversation.
+- The brain-controlled hearing story is the dominant news beat in the 11-18 May window but was ingested at primary publication; surfacing the NPR follow-up doesn't change the underlying wiki state. Noted in log for chronological completeness.
+- News cycle was deliberately characterized as quiet in the digest body — a tighter, more credible 3-item brief beat padding with 24-hour-old secondary coverage of stories already covered.
+
+**Pages touched this ingest: 3** (1 new source, 1 concept page updated, 1 index entry refreshed; log appended). Below the 5-15 schema budget but appropriate given a single substantive new source and a deliberately consolidative editorial choice.

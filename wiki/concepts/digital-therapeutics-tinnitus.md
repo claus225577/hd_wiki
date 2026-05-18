@@ -2,10 +2,10 @@
 title: Digital Therapeutics for Tinnitus
 type: concept
 created: 2026-05-11
-updated: 2026-05-17
-sources: [silentcloud-tinnitus-rwd-frontiers-may-2026.md, sonova-silentcloud-acquisition-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, musicians-tinnitus-meta-analysis-2026.md]
+updated: 2026-05-18
+sources: [silentcloud-tinnitus-rwd-frontiers-may-2026.md, sonova-silentcloud-acquisition-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, musicians-tinnitus-meta-analysis-2026.md, tinnitus-app-rct-jama-wasano-may-2026.md]
 related: [care-partner-dyad-models.md, hearing-loss-dementia-link.md, ../entities/sonova-ag.md, longitudinal-hearing-phenotyping.md, medical-domain-edge-llms.md]
-tags: [tinnitus, digital-therapeutics, dtx, icbt, adherence, silentcloud, sonova, real-world-data, thi, digital-health]
+tags: [tinnitus, digital-therapeutics, dtx, icbt, cbt, adherence, silentcloud, sonova, real-world-data, thi, digital-health, rct]
 ---
 
 # Digital Therapeutics for Tinnitus
@@ -25,6 +25,16 @@ Software-as-medical-device (SaMD) interventions delivering structured therapy �
 - **CE mark** under EU MDR for several products
 - **FDA 510(k) clearance** required for US distribution as SaMD
 - SilentCloud holds both — making it one of the first dual-cleared digital tinnitus therapeutics
+
+## The Wasano RCT — Controlled Efficacy Signal (May 2026)
+
+A second pillar of 2026 evidence: **Wasano et al., JAMA Otolaryngology–Head & Neck Surgery (May 2026)** — a **double-blind, sham-controlled RCT** of a prototype CBT + educational-counseling app in 60 patients with chronic tinnitus (Tokai University, Japan). See [[../sources/tinnitus-app-rct-jama-wasano-may-2026]].
+
+- **Between-group THI improvement: −20.4 points at week 16, −18.3 at week 24** (effect persisted 8 weeks after therapeutic functions were disabled)
+- No serious adverse events
+- Effect size ~3× the canonical 7-point THI MCID
+
+**Why this matters separately from the SilentCloud RWD:** Wasano supplies *controlled efficacy* (does the protocol work?); SilentCloud supplies *real-world effectiveness + adherence* (does it reach people?). They are complementary evidence layers — efficacy under control, attrition at scale — and adherence is the bridge between them. Reimbursement decisions in 2026–27 will require both.
 
 ## The SilentCloud Real-World Evidence Result (May 2026)
 
@@ -89,6 +99,7 @@ A digital therapeutic for tinnitus that takes the adherence problem seriously wo
 - [[audiologist-workforce-shortage]] — DTx scales where audiology workforce can't
 
 ## Sources
+- [Wasano RCT — JAMA Otolaryngology (May 2026)](../sources/tinnitus-app-rct-jama-wasano-may-2026.md) — Double-blind sham-controlled RCT, n=60; between-group THI −20.4 at week 16, durable to week 24
 - [SilentCloud RWD — Frontiers (May 2026)](../sources/silentcloud-tinnitus-rwd-frontiers-may-2026.md) — First peer-reviewed RWD; THI −14.7 in completers; 17,271 → 63 funnel
 - [Sonova SilentCloud Acquisition (2026)](../sources/sonova-silentcloud-acquisition-2026.md) — Strategic context: tinnitus DTx as Sonova's non-hardware lane
 - [QVAC MedPsy edge medical LLM (May 2026)](../sources/qvac-medpsy-edge-medical-llm-may-2026.md) — On-device medical LLMs as a possible adherence lever for tinnitus iCBT delivery
