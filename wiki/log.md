@@ -4,6 +4,36 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-05-19 — LinkedIn drafts ingest
+
+**Operation:** Ingested today's LinkedIn drafts research into the wiki.
+
+**Sources added (1):**
+- `asr-too-good-to-be-true-arxiv-may-2026.md` — de Oliveira, Peer & Gerkmann, arXiv:2605.12107, 12 May 2026, submitted to Interspeech 2026. Argues that modern ASR systems with embedded LMs are structurally inadequate for SE evaluation: noise robustness and contextual reconstruction that drive correlation with human WER are precisely the properties that hide acoustic SE damage.
+
+**Synthesis pages created (2):**
+- `syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md` — Unifies three May 2026 papers (Behringer May 5 listening effort, L3-SE May 9 linguistic hallucination, de Oliveira May 12 ASR-as-evaluator) into a single argument that the current hearing-aid SE evaluation stack systematically flatters models the wearer will still struggle with. Names three unbuilt evaluation primitives (acoustic faithfulness, linguistic faithfulness, effort), explains why the cracks compound, lays out implications for OEM R&D, companion-phone pipelines, regulators, and researchers.
+- `syntheses/va-as-hearing-ai-dataset-may-2026.md` — Reframes the Oticon (Zeal/Intent miniBTE R/Verit) + Signia (Active Mini IX/CIC Rechargeable Custom IX/Silk IX/Active Pro IX) + Starkey (Omega AI Government Services) VA-contract cluster of May 12-19 2026 as a structural data-science event. Documents the VA's data-science properties (single EHR, standardized fitting, structured outcome instruments, comorbidity linkage, longitudinal continuity), identifies three barriers to closed-loop telemetry (regulatory, technical, incentive), and argues the next 5 years of VA-channel competition will be decided by who builds an audit-clean telemetry+outcome bridge, not by portfolio breadth.
+
+**Existing pages updated (5):**
+- `concepts/listening-effort-evaluation.md` — Added `asr-too-good-to-be-true-arxiv-may-2026.md` to frontmatter sources; noted in the ASR-derived-proxy row that the noise-robustness that helps the effort proxy also hides acoustic damage when ASR is reused as an intelligibility metric; cross-linked the synthesis; bumped updated to 2026-05-19.
+- `concepts/linguistic-hallucination-speech-enhancement.md` — Added new "The Evaluator Problem (May 2026)" section arguing the standard ASR-WER fallback is itself broken from the opposite direction; added the new source to frontmatter; cross-linked synthesis and listening-effort-evaluation; bumped updated to 2026-05-19.
+- `entities/demant-oticon.md` — Corrected "single largest hearing-aid purchaser globally" claim under May 2026 VA portfolio expansion to "world's second-largest dispenser after the UK NHS, and the largest single US payer"; added three-OEM convergence note cross-linking the VA-dataset synthesis.
+- `entities/ws-audiology-signia.md` — Added VA Channel — IX Portfolio Expansion subsection under IX Form Factor section naming Active Mini IX / CIC Rechargeable Custom IX / Silk IX / Active Pro IX VA availability and cross-linking the synthesis.
+- `entities/starkey.md` — Added three-OEM convergence note under Government Services Portfolio Expansion subsection cross-linking the synthesis.
+
+**Index updates:**
+- New top entry on `wiki/index.md` documenting the day's ingest.
+- Added both new synthesis pages to the Syntheses table.
+
+**Underlying LinkedIn posts:**
+1. Third crack in the hearing-aid speech-enhancement evaluation stack in twelve days — ASR-based WER joins PESQ/STOI/HASPI as a yardstick that flatters generative SE failures.
+2. Three OEMs plugged premium AI hearing aids into the VA contract in one week — and the closed-loop data layer underneath is still unbuilt.
+
+**Verification note:** VA volume claim corrected this ingest. Search returned: "VA is the second largest dispenser of hearing aids in the world after England's National Health System (NHS), and constituted 18% of all U.S. hearing aids dispensed in 2022." Earlier source files (oticon-va-portfolio... and starkey-omega-ai-government...) had "largest single hearing-aid purchaser globally" and "~700,000 hearing aids per year" — left intact (surgical-change principle) but the corrected framing now lives in the new synthesis and the Demant entity update.
+
+---
+
 ## 2026-05-17 — Lint Pass
 
 **Operation:** Comprehensive wiki lint pass. Checked index completeness, cross-reference integrity, orphan pages, duplicates, stale sources, page sizes, and missing links.

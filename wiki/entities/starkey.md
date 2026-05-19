@@ -97,6 +97,7 @@ Omega AI's full feature set is now available to U.S. **Government Services** aud
 - **Hardening claims**: waterproofing 10× stronger than previous coatings; custom in-ear products engineered up to 20× tougher — meaningful in active-duty settings.
 - **Channel significance**: VA alone fits ~700,000 hearing aids per year. Government Services parity materially expands the Omega AI installed base and reinforces Starkey's "hardened-environment" positioning vs. Oticon (Verit/Intent) and Phonak (Infinio) in the Federal channel.
 - See [[../sources/starkey-omega-ai-government-services-may-2026]].
+- **Three-OEM convergence (May 2026)**: Starkey's Government Services rollout sits alongside Oticon's Zeal/Intent miniBTE R/Verit VA addition and Signia's IX VA portfolio expansion (Active Mini IX, CIC Rechargeable Custom IX, Silk IX, Active Pro IX) — all within roughly seven days. See [[../syntheses/va-as-hearing-ai-dataset-may-2026]] for the closed-loop dataset framing of this cluster.
 
 ## AAA 2026 Showcase (April 2026)
 Starkey showcased the full Omega AI platform at AAA 2026 (San Antonio, April 22-25), highlighting three pillars:

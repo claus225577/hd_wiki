@@ -2,9 +2,10 @@
 title: Linguistic Hallucination in Speech Enhancement
 type: concept
 created: 2026-05-14
-updated: 2026-05-14
-sources: [l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
-related: [llm-based-speech-enhancement.md, speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, subjective-objective-hearing-gap.md, on-device-ml-hearing-aids.md, software-defined-medical-implants.md]
+updated: 2026-05-19
+last_change: 2026-05-19 — added cross-link to speech-enhancement-evaluation-stack-cracks-may-2026 synthesis and to the asr-too-good-to-be-true source; the SE-evaluator side has the same LM-prior problem as the LM-based SE itself, compounding the gap
+sources: [l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md]
+related: [llm-based-speech-enhancement.md, speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, subjective-objective-hearing-gap.md, on-device-ml-hearing-aids.md, software-defined-medical-implants.md, listening-effort-evaluation.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
 tags: [hallucination, generative-se, llm-based-se, evaluation-metrics, faithfulness, factuality, safety, hearing-aids, audiology-metrics]
 ---
 
@@ -151,5 +152,12 @@ The right-hand column is the structural argument: the standard evaluation stack 
 - [[on-device-ml-hearing-aids]] — deployment context; faithfulness telemetry is an open infrastructure question
 - [[software-defined-medical-implants]] — post-market surveillance and PCCP implications
 
+## The Evaluator Problem (May 2026)
+
+The standard objective fallback for catching hallucinations would be: run an ASR on the SE output and compute WER against ground truth. **de Oliveira, Peer & Gerkmann (arXiv:2605.12107, May 12 2026)** argue this fallback is broken — modern ASRs have their own embedded language models with strong priors over plausible speech, and those LMs can transcribe correctly through residual acoustic damage that the SE failed to remove. The ASR-evaluator hallucinates *with* the SE-hallucinator in the same direction, hiding the failure.
+
+This compounds the gap: the SE has an LM prior that produces plausible-but-wrong words; the evaluator has an LM prior that recognizes those words confidently. Neither side surfaces the error. The synthesis is in [[../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026]].
+
 ## Sources
 - [L3-SE — Reducing Linguistic Hallucination in LM-Based Speech Enhancement (Wang et al., May 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608; named the failure mode, proposed acoustic-semantic distillation as mitigation
+- [Too Good to Be True: Modern ASR for SE Evaluation (de Oliveira, Peer & Gerkmann, May 2026)](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md) — arXiv:2605.12107; argues the ASR-WER fallback is structurally inadequate as an SE evaluator

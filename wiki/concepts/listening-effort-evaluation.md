@@ -2,10 +2,10 @@
 title: Listening Effort as a First-Class Hearing-AI Metric
 type: concept
 created: 2026-05-18
-updated: 2026-05-18
-last_change: Page created — anchored to codec-speech-enhancement-intelligibility-arxiv-2026 finding that listening-effort metrics reveal differences invisible to intelligibility scores
-sources: [codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, gijbels-ecological-validity-fauot-mar-2026.md]
-related: [speech-enhancement-neural-networks.md, subjective-objective-hearing-gap.md, multimodal-hearing-assessment.md, dnn-in-hearing-aids.md, cortical-reorganization-hearing-aids.md, auracast-bluetooth-le-audio.md, companion-phone-speech-pipeline.md, linguistic-hallucination-speech-enhancement.md]
+updated: 2026-05-19
+last_change: 2026-05-19 — cross-linked to the new speech-enhancement-evaluation-stack-cracks-may-2026 synthesis and the asr-too-good-to-be-true ASR-as-SE-eval source; ASR-derived effort proxy from Behringer is now in tension with the de Oliveira finding that the same noise-robust ASR systems hide acoustic damage on the intelligibility side
+sources: [codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md]
+related: [speech-enhancement-neural-networks.md, subjective-objective-hearing-gap.md, multimodal-hearing-assessment.md, dnn-in-hearing-aids.md, cortical-reorganization-hearing-aids.md, auracast-bluetooth-le-audio.md, companion-phone-speech-pipeline.md, linguistic-hallucination-speech-enhancement.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
 tags: [listening-effort, evaluation-metrics, cognitive-load, fatigue, outcome-measurement, audiology-metrics, pupillometry, ssq, neurosci-eval, codec-evaluation]
 ---
 
@@ -41,7 +41,7 @@ Effort is also the channel through which hallucinated SE output is detectable �
 | **Dual-task paradigms** | Captures cognitive resources | Task choice changes the effort signature |
 | **EEG / fNIRS** | Direct cortical signal | Setup cost; signal-to-noise |
 | **Behavioral surrogates (response time, fatigue at end of day)** | Ecologically valid | Indirect |
-| **ASR-derived proxies** | Automatic; scales to large evaluations | Validity vs. human effort unproven across conditions |
+| **ASR-derived proxies** | Automatic; scales to large evaluations | Validity vs. human effort unproven across conditions; same noise-robustness that helps the effort proxy *hides* acoustic damage when ASR is reused as an intelligibility metric (see [[asr-too-good-to-be-true-arxiv-may-2026]]) |
 
 ## The Pipeline Gap
 - **Codecs:** evaluated for bitrate × intelligibility. Behringer et al. argue effort must be added.
@@ -75,3 +75,7 @@ Effort is also the channel through which hallucinated SE output is detectable �
 - [Korhonen, Kuk & Slugocki — Natural vs DNN Hearing Aids (Hearing Review, April 2026)](../../sources/korhonen-natural-vs-dnn-hearing-aids-april-2026.md)
 - [Gijbels et al. — Ecological Validity in Hearing Science (Frontiers, Mar 2026)](../../sources/gijbels-ecological-validity-fauot-mar-2026.md)
 - [Wang et al. — L3-SE Linguistic Hallucination in LM-Based SE (arXiv:2605.08608, May 9 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md)
+- [de Oliveira, Peer & Gerkmann — Too Good to Be True: Modern ASR for SE Evaluation (arXiv:2605.12107, May 12 2026)](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md)
+
+## See Also
+- [[../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026]] — synthesis covering the three cracks in the SE evaluation stack identified in May 2026 (effort, linguistic faithfulness, ASR-yardstick).

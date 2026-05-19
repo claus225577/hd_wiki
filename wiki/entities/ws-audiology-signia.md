@@ -47,6 +47,9 @@ The product is not framed externally as a data play, but the closed-loop implica
 - Same-day adjustment cycles produce a fundamentally different **learning signal cadence** than the next-clinic-visit pattern.
 - Stacks with the **Apr 2026 Sound Preference Program** and **May 2026 Lexie B3** OTC launch as a ~6-week WSA cadence layering top-of-funnel awareness, mid-priced OTC, and instant-fit premium ITE.
 
+**VA Channel — IX Portfolio Expansion (May 2026)**
+In the same week as the Active Mini IX launch, Signia announced VA / DoD / IHS availability of **Active Mini IX, CIC Rechargeable Custom IX, Silk IX, and Active Pro IX**. Combined with Oticon's Zeal/Intent miniBTE R/Verit VA expansion and Starkey's Omega AI Government Services rollout, this is a structural three-OEM convergence on the VA contract within seven days. See the [[../syntheses/va-as-hearing-ai-dataset-may-2026]] synthesis for the closed-loop dataset framing.
+
 **Battery / Power**
 - Longest battery runtime among rechargeable superpower hearing aid devices (high-power category for severe/profound loss)
 

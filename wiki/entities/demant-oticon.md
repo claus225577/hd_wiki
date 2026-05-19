@@ -106,7 +106,7 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 ## Corporate Developments
 - **Feb 2025** — Acquired **Ohwerk Group** (77 audiology clinics across Germany), expanding Demant's retail footprint in the German market.
 - **Apr 2026** — Oticon donating **$30K to AAA Foundation** for student scholarships, investing in the audiology workforce pipeline.
-- **May 2026** — **VA portfolio expansion** ([[../sources/oticon-va-portfolio-zeal-intent-verit-may-2026]]): Zeal (ITE), Intent miniBTE R, and Verit added to the U.S. Department of Veterans Affairs supply schedule. Material distribution win — VA is the single largest hearing-aid purchaser globally — and gives VA audiologists the broadest Oticon form-factor range to date.
+- **May 2026** — **VA portfolio expansion** ([[../sources/oticon-va-portfolio-zeal-intent-verit-may-2026]]): Zeal (ITE), Intent miniBTE R, and Verit added to the U.S. Department of Veterans Affairs supply schedule. Material distribution win — VA is the world's second-largest hearing-aid dispenser after the UK NHS, and the largest single US payer — and gives VA audiologists the broadest Oticon form-factor range to date. Part of a structural three-OEM convergence (Oticon + Signia + Starkey) on the VA contract within seven days in mid-May 2026; see [[../syntheses/va-as-hearing-ai-dataset-may-2026]] for the closed-loop dataset framing.
 
 ## Market Position
 - #1 or #2 globally (neck and neck with Sonova)
