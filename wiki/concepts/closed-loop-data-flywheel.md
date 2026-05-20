@@ -2,10 +2,10 @@
 title: Closed-Loop Data Flywheel
 type: concept
 created: 2026-04-15
-updated: 2026-05-10
-sources: [amplifon-gn-acquisition-2026.md, wsa-sound-preference-program-april-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md, asha-nslhm-2026-care-partners.md]
-related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/ws-audiology-signia.md, ../syntheses/vertical-integration-trend.md, probabilistic-generative-models-hearing-ai.md, care-partner-dyad-models.md]
-tags: [data-strategy, personalization, feedback-loops, m-and-a, sound-preference, bayesian, dyad]
+updated: 2026-05-20
+sources: [amplifon-gn-acquisition-2026.md, wsa-sound-preference-program-april-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md, asha-nslhm-2026-care-partners.md, karpathy-anthropic-pretraining-may-2026.md]
+related: [../entities/amplifon.md, ../entities/gn-hearing-resound.md, ../entities/ws-audiology-signia.md, ../syntheses/vertical-integration-trend.md, probabilistic-generative-models-hearing-ai.md, care-partner-dyad-models.md, ../syntheses/pretraining-corpus-as-moat-hearing-ai.md]
+tags: [data-strategy, personalization, feedback-loops, m-and-a, sound-preference, bayesian, dyad, pre-training, corpus-strategy]
 ---
 
 # Closed-Loop Data Flywheel
@@ -63,6 +63,16 @@ Concrete additions:
 - Partner-side fitting feedback alongside wearer feedback.
 - Repair-event telemetry as a dyad-attributed signal.
 - Joint outcome metrics including partner listening effort.
+
+## Pre-Training-Aware Flywheel (May 2026)
+
+A fourth architecture for the flywheel, triggered by the **Karpathy → Anthropic** move on 19 May 2026 (pre-training reasserted as the AI frontier). The fine-tuning-era flywheel framing implicitly assumed downstream specialization on top of someone else's base model. A pre-training-aware flywheel changes the calculus:
+
+- Every recorded fitting session is no longer just future fine-tuning data — it is **future pre-training data**, with substantially higher per-sample value
+- Telemetry-side architecture choices (sampling rate, retention, consent design) start to constrain whether the corpus can support continued pre-training, federated pre-training, or only fine-tuning
+- For OEMs holding multi-decade audiogram + telemetry + fitting-outcome corpora, the question reopens: pre-train (Option A), partner-pre-train (Option B), federated/synthetic pre-train (Option C), or substitute with Bayesian (Option D)?
+
+See [[../syntheses/pretraining-corpus-as-moat-hearing-ai]] for the full architectural treatment.
 
 ## Implications for Data Science
 - Requires unified data infrastructure across retail and manufacturing

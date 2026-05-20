@@ -2,10 +2,10 @@
 title: Agentic Engineering in Hearing R&D
 type: concept
 created: 2026-05-06
-updated: 2026-05-06
-sources: [karpathy-sequoia-ascent-2026.md, karpathy-idea-files-april-2026.md, karpathy-claude-md-template-viral-april-2026.md]
-related: [../syntheses/ai-understanding-gap-hearing-industry.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/model-context-protocol.md, ../syntheses/hearing-ai-research-landscape-2025.md]
-tags: [agentic-engineering, software-3, karpathy, llm-agents, r-and-d, taste, understanding]
+updated: 2026-05-20
+sources: [karpathy-sequoia-ascent-2026.md, karpathy-idea-files-april-2026.md, karpathy-claude-md-template-viral-april-2026.md, karpathy-anthropic-pretraining-may-2026.md]
+related: [../syntheses/ai-understanding-gap-hearing-industry.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/model-context-protocol.md, ../syntheses/hearing-ai-research-landscape-2025.md, ../syntheses/pretraining-corpus-as-moat-hearing-ai.md]
+tags: [agentic-engineering, software-3, karpathy, llm-agents, r-and-d, taste, understanding, pre-training, anthropic]
 ---
 
 # Agentic Engineering in Hearing R&D
@@ -48,6 +48,16 @@ This is the operational meaning of *"you can outsource your thinking, but not yo
 
 These judgments are built from clinical exposure, hand-coding signal processing primitives, listening-test experience, and breaking your own models.
 
+## Karpathy → Anthropic (May 19 2026) — Pre-Training as the Next AI-Improves-AI Loop
+
+On 19 May 2026 Karpathy announced he had joined Anthropic to work on **pre-training**, reporting to Nick Joseph. Anthropic's stated framing — "use Claude to accelerate pre-training research" — closes the recursive loop in the **most expensive R&D phase** of frontier model building. The Autoresearch / Software-3.0 thesis is now operationalised at the canonical frontier-lab scale.
+
+Read-across for hearing R&D:
+
+- Pre-training is harder, slower, and more compute-intensive than fine-tuning; if AI-assisted research can compress *that* loop, every cheaper, more constrained R&D loop in hearing-care (DSP parameter sweeps, fitting-outcome simulation, audibility benchmarking, clinical-study writeup) is a fortiori compressible
+- The conceptual move is not "automate the experiment" — it is "let the agent compress the parameter-search / writeup / cross-reference work so the human can spend more time on calibrated judgment"
+- It also reopens a strategic question for OEMs that the fine-tuning-era playbook had quietly closed: does the next-decade moat live in the **base model's pre-training corpus**, not just in the on-chip algorithm? See [[../syntheses/pretraining-corpus-as-moat-hearing-ai]] for the full thread
+
 ## Implications for Sonova / Industry R&D
 
 - The competitive moat shifts from "who has the most ML headcount" to "who has the most *calibrated* hearing-domain judgment paired with effective agent infrastructure"
@@ -75,3 +85,4 @@ These judgments are built from clinical exposure, hand-coding signal processing 
 - [Karpathy — Sequoia AI Ascent 2026](../../sources/karpathy-sequoia-ascent-2026.md) — primary source for the Software 3.0 / understanding-vs-thinking framing
 - [Karpathy idea files](../../sources/karpathy-idea-files-april-2026.md) — knowledge specifications for agents
 - [Karpathy CLAUDE.md template](../../sources/karpathy-claude-md-template-viral-april-2026.md) — agent behavioural guardrails
+- [Karpathy → Anthropic pre-training (May 19 2026)](../../sources/karpathy-anthropic-pretraining-may-2026.md) — Anthropic's "use Claude to accelerate pre-training" framing as the most expensive recursive AI-improves-AI loop

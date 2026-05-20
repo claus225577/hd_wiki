@@ -2,10 +2,10 @@
 title: Sonova AG
 type: entity
 created: 2026-04-15
-updated: 2026-05-13
-sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md, phonak-ai-excellence-award-march-2026.md, sonova-silentcloud-acquisition-2026.md, silentcloud-tinnitus-rwd-frontiers-may-2026.md, connect-hearing-audionova-rebrand-may-2026.md, sonova-costco-sennheiser-sonite-r-may-2026.md, sonova-sennheiser-consumer-divestiture-may-2026.md]
-related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md, ../syntheses/vertical-integration-trend.md, ../concepts/digital-therapeutics-tinnitus.md]
-tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant, drug-delivery, retail, audionova]
+updated: 2026-05-20
+sources: [phonak-infinio-sphere-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, advanced-bionics-research-collaboration-ci-april-2026.md, phonak-ai-excellence-award-march-2026.md, sonova-silentcloud-acquisition-2026.md, silentcloud-tinnitus-rwd-frontiers-may-2026.md, connect-hearing-audionova-rebrand-may-2026.md, sonova-costco-sennheiser-sonite-r-may-2026.md, sonova-sennheiser-consumer-divestiture-may-2026.md, sonova-fy-2025-26-results-may-2026.md]
+related: [../concepts/on-device-ml-hearing-aids.md, demant-oticon.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, advanced-bionics.md, ../concepts/cochlear-implant-ai.md, ../concepts/precision-drug-delivery-inner-ear.md, ../syntheses/vertical-integration-trend.md, ../concepts/digital-therapeutics-tinnitus.md, ../syntheses/pretraining-corpus-as-moat-hearing-ai.md]
+tags: [company, manufacturer, phonak, unitron, advanced-bionics, ai-chip, dual-chip, clinical-trial, cochlear-implant, drug-delivery, retail, audionova, earnings]
 ---
 
 # Sonova AG
@@ -49,6 +49,18 @@ Sonova's decision to use two dedicated chips (one for standard processing, one f
 HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class for noise performance.
 
 ## Recent Developments (May 2026)
+
+### FY 2025/26 Full-Year Results (18 May 2026)
+- **Sales:** CHF 3,605.9M, **+5.9% in local currencies** (Swiss-franc strength caused a −0.2% reported decline)
+- **Normalized EBITA:** CHF 811.2M, **+17.3% in local currencies**
+- **Net profit:** CHF 546M; **basic EPS CHF 9.02**
+- **Dividend:** Proposed **CHF 4.70/share** (highest in company history; +7% YoY; ~45% payout)
+- **R&D spending:** CHF 217.7M, **+3.8% in local currencies** — R&D-to-sales ratio ~6% (modestly compressed YoY)
+- **Hearing Instruments (Wholesale + Retail):** combined **+7.5% LC** (market share gains continue)
+- **Cochlear Implants:** **−11.1% LC**, particularly impacted by China VBP (volume-based procurement) policies
+- **FY 2026/27 guidance:** consolidated sales +5–8%, core EBIT +7–10% at constant currencies
+- **Strategic statements:** Sennheiser Consumer Hearing divestment reclassified as discontinued operations; regionalized operating model transition underway; product pipeline highlights AI-led Infinio platform leadership
+- **Data-science reading:** R&D-to-sales ratio compressing while AI feature surface (Infinio Ultra, AutoSense OS 7.0, Sphere variants, Virto R Infinio, EasyGuard) clearly expanded creates two competing hypotheses for next year's R&D line — (a) AI R&D productivity dividend operationalizing the Karpathy "outsource execution not understanding" framing, vs (b) capitalization timing where the next platform cycle's bill arrives in FY 2026/27. Both are testable against next-year financials. Connects to [[../syntheses/pretraining-corpus-as-moat-hearing-ai]].
 
 ### Costco Return — Sennheiser Sonite R Pilot (11 May 2026)
 - Sonova returns to **Costco** via a pilot trial with the **Sennheiser Sonite R** RIC in 100+ U.S. warehouses — reversing the 2024 Phonak pullout.
@@ -104,6 +116,7 @@ HearAdvisor independent testing rated the Audéo Sphere Infinio as best-in-class
 - [[../concepts/digital-therapeutics-tinnitus]] — SilentCloud is Sonova's digital-therapeutic flagship; Schmitt & Stropahl (Sonova R&D) published the first peer-reviewed RWD analysis May 2026
 
 ## Sources
+- [Sonova FY 2025/26 Results (18 May 2026)](../../sources/sonova-fy-2025-26-results-may-2026.md) — Full-year results: Sales CHF 3,605.9M (+5.9% LC), EBITA +17.3% LC, R&D CHF 217.7M (+3.8% LC), dividend record CHF 4.70; CI segment −11.1% LC under China VBP pressure
 - [Phonak Infinio Sphere 2024](../sources/phonak-infinio-sphere-2024.md) — DEEPSONIC chip specs, launch details, Ultra update, awards
 - [Phonak DNN Clinical Trial](../sources/phonak-dnn-noise-reduction-clinical-trial-april-2026.md) — NCT07526428
 - [AB Next-Gen CI Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md) — CI research partnership
