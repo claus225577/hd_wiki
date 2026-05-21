@@ -2,10 +2,10 @@
 title: WS Audiology / Signia
 type: entity
 created: 2026-04-15
-updated: 2026-05-18
-sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, listen-up-kentucky-may-2026.md, signia-active-mini-ix-may-2026.md]
-related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/dnn-vs-natural-processing.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-care-funnel-attribution.md, neurotone-ai.md, aaa-conference.md]
-tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing, lucid, retail-channel, sams-club, public-health, awareness-campaigns]
+updated: 2026-05-21
+sources: [signia-ix-platform-2024.md, wsa-sound-preference-program-april-2026.md, sony-otc-hearing-aids-discontinued-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, aaa-2026-conference-april.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, listen-up-kentucky-may-2026.md, signia-active-mini-ix-may-2026.md, widex-allure-ai-may-2026.md]
+related: [sonova-ag.md, demant-oticon.md, gn-hearing-resound.md, starkey.md, ../concepts/closed-loop-data-flywheel.md, ../comparisons/dnn-vs-natural-processing.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-care-funnel-attribution.md, ../concepts/user-controlled-on-demand-ai-hearing-aids.md, neurotone-ai.md, aaa-conference.md]
+tags: [company, manufacturer, signia, widex, singapore, dnn, conversation-enhancement, multi-stream, personalization, sound-preference, natural-processing, lucid, retail-channel, sams-club, public-health, awareness-campaigns, on-demand-ai, clarity-boost, compass-cloud, hybrid-ai]
 ---
 
 # WS Audiology / Signia
@@ -81,6 +81,38 @@ WSA launched a free **Sound Preference Program** and interactive **Sound Prefere
 ### Widex Natural Processing Evidence (Korhonen et al. 2026)
 Korhonen et al. (Hearing Review, April 2026) tested 29 adults across 5 premium hearing aids and found **Widex Allure (no DNN, "natural processing") outperformed 4 DNN-based competitors** by up to **8.5 dB SNR** for moderate hearing loss. Word recognition: 80% vs. 60-70%. The study validates Widex's temporal-cue-preserving approach and strengthens WSA's dual-brand rationale: Widex for users who prefer natural sound, Signia for those who prefer enhanced/DNN processing. See [[dnn-vs-natural-processing]].
 
+### Widex Allure AI RIC (May 2026)
+
+On **May 20, 2026** Widex announced the **Allure AI RIC** — the **AI variant** of the Allure line and the first commercial hearing aid built around a **user-toggled** AI co-processor. Default operating mode is Widex's classical **PureSound with ZeroDelay** pipeline; AI processing is engaged on demand by the wearer via a **Clarity Boost** button.
+
+**Hardware and feature set:**
+- **Chip:** proprietary **W1** with "Precision Hearing Technology"; **dedicated AI co-processor** running an audio-domain neural network.
+- **Performance claim (Clarity Boost on):** up to **6 dB higher output SNR vs competitor AI hearing aids** (manufacturer-published).
+- **Battery:** **32 h total**, including **up to 6 h of AI-on use or streaming** — explicitly power-budgeting AI as a minority operating mode.
+- **Signal processing stack:** Speech Enhancer Pro, Enhanced Sound Classifier, Adaptive Dynamic Feedback Controller, Allure PureSound with ZeroDelay, Dedicated Streaming Compressor.
+- **Connectivity:** Made for iPhone (MFi), ASHA, **LE Audio**, telecoil, hands-free.
+- **Charging:** standard, Charge & Clean, **Qi-enabled portable**.
+
+**Companion fitting platform — Widex Compass Cloud 2.0:**
+- Billed as the **world's first cloud-based fitting software**.
+- Features: **Adaptation Manager** (patient onboarding), **SmartSpeak** (spoken status), expanded **Data Logging**, **Sound Class Adjustments**, **Transfer Settings**.
+- Operational claims: **99.9%+ uptime**, **4/5 HCP satisfaction** in pre-launch testing.
+
+**Market launch:**
+- **5 markets June 1, 2026**.
+- Remaining markets including **US November 1, 2026**.
+
+**Executive framing.** Ngozi Amobi, head of Widex: *"We've taken a different approach, preserving natural sound as the foundation and introducing AI processing only when it adds value."*
+
+**Strategic significance — counter-positioning against always-on AI.** The Allure AI RIC is a deliberate counter to the always-on AI race (Phonak Sphere Infinio, ReSound Vivia, Oticon Zeal/Intent, Starkey Omega). WSA is now visibly running a **hybrid story** rather than picking a side in the natural-vs-DNN debate:
+- The Allure (non-AI) variant validates the natural path in Korhonen et al.
+- The **Allure AI RIC** ships a dedicated AI co-processor and surfaces it as a wearer-controlled feature.
+- The **Sound Preference Program** (Apr 2026) provides the population evidence that ~40% of wearers have stable natural-vs-enhanced preference, justifying the on-demand control surface.
+
+**Strategic significance — labeled telemetry.** A user-controlled AI button is a **labeled training signal that always-on systems cannot produce**. Every button press is a "this scene warranted AI" annotation paired with the scene-classifier state, acoustic features, time, and streaming source. Pair with Compass Cloud 2.0 as a centralized fitting + version-control + retraining substrate and the closed loop is materializing at the **platform layer**, not the chip layer. As of launch, Widex has not publicly committed to surfacing button-press telemetry into Compass Cloud as a personalization or retraining signal, but the architecture makes it natural. See [[../concepts/user-controlled-on-demand-ai-hearing-aids]] and [[../concepts/closed-loop-data-flywheel]].
+
+**Limits / open questions.** The 6 dB performance claim is manufacturer-published; independent replication pending. Real-world Clarity Boost engagement rates (how often, in what scenes, by which demographic) are unmeasured externally.
+
 ### Sony OTC Partnership — Discontinued (April 2026)
 WSA partnered with Sony on the CRE series OTC hearing aids, leveraging Sony's consumer brand recognition with WSA's hearing technology. **Sales were discontinued in April 2026** after **3.5 years** of partnership:
 - **CRE-E10, CRE-C10, CRE-C20** all pulled from U.S. market
@@ -130,6 +162,7 @@ WSA claims 22% speech understanding advantage over "AI co-processor competitors"
 - [[../concepts/hearing-care-funnel-attribution]] — Listen Up Kentucky as the public-health awareness layer; WSA positioned as first OEM with state-scale demand-side dataset
 - [[neurotone-ai]] — Brian Taylor (ex-Signia VP) moved to Neurotone AI
 - [[aaa-conference]] — Sound Preference Program showcased at AAA 2026
+- [[../concepts/user-controlled-on-demand-ai-hearing-aids]] — Widex Allure AI RIC as the reference implementation of user-toggled AI
 
 ## Sources
 - Research notes on Signia IX platform, RealTime Conversation Enhancement, 2025 form factor expansion
@@ -140,3 +173,4 @@ WSA claims 22% speech understanding advantage over "AI co-processor competitors"
 - [Lexie B3 powered by Bose (May 2026)](../../sources/lexie-b3-bose-launch-may-2026.md) — WSA-backed Lexie launches $999 OTC with Bose tuning, 128 hr total runtime, BLE 5.3, "Automatic Sound Focus"
 - [Sam's Club Hearing Centers — NationsBenefits Replaces Lucid (May 2026)](../../sources/sams-club-nationsbenefits-supplants-lucid-may-2026.md) — WSA loses operational role at ~450 Sam's Club in-club hearing centers; vertical-integration model with Aetna MA benefit administrator
 - [Listen Up Kentucky — ADA + WSA + KAA (May 2026)](../../sources/listen-up-kentucky-may-2026.md) — State-level public-awareness pilot; WSA is sole OEM partner, positioning it as first manufacturer with a state-scale top-of-funnel dataset
+- [Widex Allure AI RIC (May 2026)](../../sources/widex-allure-ai-may-2026.md) — User-toggled Clarity Boost on dedicated AI co-processor (W1 chip); up to 6 dB output SNR vs competitor AI HAs; Compass Cloud 2.0 as the first cloud-based fitting platform; counter-positioning against always-on AI; labeled-telemetry implication

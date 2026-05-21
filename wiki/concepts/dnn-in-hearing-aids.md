@@ -2,10 +2,10 @@
 title: Deep Neural Networks in Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-05-14
-sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, oticon-verit-launch-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, dnn-noise-reduction-intelligibility-2026.md, orka-o1-pro-bose-anc-awe-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, oticon-play-si-hearingreview-april-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, neurotone-ai-1000-clinics-april-2026.md, oticon-zeal-full-specs-aaa-2026.md, meta-synthetic-data-distillation-april-2026.md, dfingernet-noise-adaptive-se-arxiv-2025.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
-related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md, state-space-models.md, compute-in-memory.md, ../entities/orka-bose-partnership.md, ../comparisons/dnn-vs-natural-processing.md, ../entities/neurotone-ai.md, synthetic-data-for-hearing-ai.md, eu-ai-act-medical-devices.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
-tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency, clinical-trial, second-gen-ai, anc, natural-processing, pediatric, phase-utilization, aural-rehabilitation, dnn-2-0, synthetic-data, llm-based-se, linguistic-hallucination]
+updated: 2026-05-21
+sources: [dnn-effectiveness-frontiers-2025.md, selective-noise-cancellation-arxiv-2025.md, low-latency-dnn-noise-reduction-frontiers-2025.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, oticon-verit-launch-april-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, dnn-noise-reduction-intelligibility-2026.md, orka-o1-pro-bose-anc-awe-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, oticon-play-si-hearingreview-april-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, neurotone-ai-1000-clinics-april-2026.md, oticon-zeal-full-specs-aaa-2026.md, meta-synthetic-data-distillation-april-2026.md, dfingernet-noise-adaptive-se-arxiv-2025.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, widex-allure-ai-may-2026.md]
+related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, ../syntheses/ai-understanding-gap-hearing-industry.md, state-space-models.md, compute-in-memory.md, ../entities/orka-bose-partnership.md, ../comparisons/dnn-vs-natural-processing.md, ../entities/neurotone-ai.md, synthetic-data-for-hearing-ai.md, eu-ai-act-medical-devices.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md, user-controlled-on-demand-ai-hearing-aids.md]
+tags: [dnn, hearing-aids, history, inference, on-device, training-data, latency, clinical-trial, second-gen-ai, anc, natural-processing, pediatric, phase-utilization, aural-rehabilitation, dnn-2-0, synthetic-data, llm-based-se, linguistic-hallucination, on-demand-ai, dedicated-co-processor, clarity-boost]
 ---
 
 # Deep Neural Networks in Hearing Aids
@@ -152,6 +152,18 @@ The Orka O1 Pro (AWE 2026) introduces active noise cancellation (Bose QuietContr
 - This dual-layer paradigm could free DNN capacity for finer speech enhancement by offloading broadband noise to ANC hardware
 - See [[orka-bose-partnership]] for product details
 
+## On-Demand AI / Dedicated Co-Processor — Widex Allure AI RIC (May 2026)
+
+A counter-pattern to the always-on DNN architecture documented above: the **Widex Allure AI RIC** (May 20, 2026) ships a dedicated AI co-processor on the W1 chip but **runs Widex's classical PureSound pipeline by default and engages the DNN only on demand**, via a wearer-pressed "Clarity Boost" button.
+
+Architectural points worth noting in the DNN-in-HA context:
+- **Dedicated AI co-processor as a power-budgeted minority mode.** The Allure AI publishes battery life as "32 h total / up to 6 h AI-on or streaming" — explicit acknowledgement that DNN inference is power-expensive and is **not** the default operating state.
+- **Counter-position to always-on AI.** Phonak Sphere Infinio, ReSound Vivia, Oticon Zeal/Intent, and Starkey Omega all run AI continuously and present scene-classification + DNN gain shaping as the default. The Allure AI is the first Big-Six flagship to break with that pattern.
+- **Manufacturer-published claim:** up to **6 dB higher output SNR vs competitor AI hearing aids** when Clarity Boost is on. Independent replication pending.
+- **Labeled-telemetry implication.** The button press is a wearer-intent signal that always-on DNN systems cannot produce. See dedicated concept page [[user-controlled-on-demand-ai-hearing-aids]] for the data-science framing and [[closed-loop-data-flywheel]] for the cloud-substrate (Compass Cloud 2.0) angle.
+
+This stacks with the [[#natural-processing-counter-evidence-korhonen-et-al-2026|Korhonen et al. evidence]] and the WSA Sound Preference Program into a coherent dual-brand position: WSA does not claim DNN is wrong, nor that natural processing is wrong — it ships both and lets the wearer toggle between them on a per-scene basis.
+
 ## Natural Processing Counter-Evidence (Korhonen et al. 2026)
 
 Korhonen et al. (Hearing Review, April 2026) tested 29 adults with SNHL across 5 premium hearing aids and found that **Widex Allure (no DNN, "natural processing") outperformed 4 DNN-based competitors** by up to **8.5 dB SNR** in speech reception thresholds for moderate hearing loss. Word recognition: **80%** vs. **60-70%** for DNN devices.
@@ -220,6 +232,7 @@ Neurotone AI surpassed 1,000 clinic partners with AI-powered aural rehabilitatio
 - [[synthetic-data-for-hearing-ai]] — AI-generated training data to expand corpora and break data moats
 - [[llm-based-speech-enhancement]] — Structurally distinct paradigm: autoregressive LM over speech tokens
 - [[linguistic-hallucination-speech-enhancement]] — New failure-mode category specific to generative / LM-based SE; evaluation-metric gap
+- [[user-controlled-on-demand-ai-hearing-aids]] — User-toggled AI as a counter-pattern to always-on DNN; labeled-telemetry implications
 
 ## Sources
 - [DNN Effectiveness Frontiers 2025](../../sources/dnn-effectiveness-frontiers-2025.md) — Clinical evidence for DNN hearing aid performance
@@ -236,3 +249,4 @@ Neurotone AI surpassed 1,000 clinic partners with AI-powered aural rehabilitatio
 - [Oticon Zeal Full Specs](../../sources/oticon-zeal-full-specs-aaa-2026.md) — DNN 2.0 on Sirius chip in ITE form factor
 - [Meta Synthetic Data Distillation](../../sources/meta-synthetic-data-distillation-april-2026.md) — Recursive distillation for edge AI training data
 - [L3-SE — LM-Based SE and Linguistic Hallucination (Wang et al., May 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608; autoregressive LM-based SE with acoustic-semantic distillation; names linguistic hallucination as a new failure mode for generative SE
+- [Widex Allure AI RIC (May 2026)](../../sources/widex-allure-ai-may-2026.md) — User-toggled dedicated AI co-processor on W1 chip; counter-pattern to always-on DNN; Compass Cloud 2.0 companion fitting platform
