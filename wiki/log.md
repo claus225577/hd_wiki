@@ -1865,3 +1865,30 @@ Source: 9to5Mac (1 May 2026) + U-M School of Public Health study page
 - The arXiv review + MDPI federated-TinyML pairing is the most interesting pattern of the week: a literature snapshot of "what selective noise cancellation can do" alongside "how to personalize the classifier on-device without breaking the regulatory frame." Worth a synthesis pass once one more dot lands.
 
 **Pages touched this ingest: 3** (3 new sources, log appended). Below schema budget by design — see editorial framing.
+
+## 2026-05-22 — Hearing+AI Daily Digest ingest
+
+**Digest sent to door.punch_4o@icloud.com** (subject: "🎧 Hearing + AI Daily Digest — 22 May 2026"); Discord confirmation issued (8 items: 3 papers, 2 industry, 1 AI/ML, 2 worth-watching).
+
+**Sources processed:**
+- `acclock-earbud-bcg-biometric-may-2026.md` — **new** — Help Net Security coverage (May 19 2026) of AccLock research: continuous wearer authentication via ballistocardiogram detected by earbud accelerometer/IMU already in mainstream devices. 33-user study, low single-digit EER at rest, ~2 min enrollment; degrades on walking/running and on speech (jaw vibration). Deployment blocker: OEMs do not currently expose raw IMU to third-party developers. Relevant to hearing-aid telemetry-as-identity binding and to the hearables-as-health-platform thread.
+- `brain-informed-ci-speech-separation-arxiv-2601-22260.md` — **new** — arXiv eess.AS paper proposing EEG-AAD-conditioned speech separation for cochlear implants. 2 ms algorithmic latency, slightly lower parameter count than audio-only baseline, higher SI improvement. Sits in the gap between the May 2026 Columbia ECoG cocktail-party work (gold-standard but invasive) and shipping CI sound processors (latency-bound, non-invasive). Companion to existing `auditory-attention-decoding.md` concept page.
+- `multi-speaker-doa-binaural-ha-icassp-2026.md` — **new** — ICASSP 2026 submission combining deep DOA estimation with a speaker-count fusion head for binaural HAs. Attacks the scene-analysis front-end (vs. the separator side attacked by the CI paper above) — together the pair frames a "front-end DOA + back-end AAD separator" architecture for the cocktail-party problem.
+
+**Sources referenced in the digest body but NOT re-ingested** (already in wiki, verified via filename match):
+- `widex-allure-ai-may-2026.md` (yesterday's ingest)
+- `starkey-omega-ai-big-ai-awards-2026.md`
+- `frontiers-ai-enabled-hearables-industry-2026.md`
+- `dod-biometric-hearing-protection-fy26.md`
+- `lexie-b3-bose-launch-may-2026.md`
+
+**Pages created (0).** Same restraint policy as the May 20 ingest — three new sources land in well-developed concept neighborhoods (`auditory-attention-decoding`, `cochlear-implant-ai`, `lalm-selective-auditory-attention`, `closed-loop-data-flywheel`) and the editorial call is to let them be discoverable via frontmatter and cross-reference into concept pages on the next ingest that has a synthesis worth bundling them with.
+
+**Pages updated (0).** Deferred per the same restraint policy.
+
+**Editorial framing:**
+- Second light news day in a row; the genuinely additive items today are the two arXiv papers + AccLock. Of those, AccLock is the most interesting because it lands in a part of the wiki (hearables-as-identity-platform) that does not yet have a dedicated concept page — flag for a concept-page creation on the next ingest that has at least one more biometric-hearables data point to pair with it.
+- The Brain-Informed CI Speech Separation paper + the Multi-Speaker DOA Binaural HA paper are a natural pair: front-end (DOA + count) + back-end (AAD-conditioned separation). Worth a comparison page (`comparisons/front-end-vs-back-end-cocktail-party.md`) when at least one more entry in either side appears.
+- Apple AirPods country expansion (May 12) and the Columbia/Apple/Sonova items dominating recent news cycles were intentionally suppressed from today's digest to avoid duplicating yesterday's coverage.
+
+**Pages touched this ingest: 3** (3 new sources, log appended). Below schema budget by design — see editorial framing.

@@ -2,8 +2,8 @@
 title: Hearing Aid Market Dynamics
 type: concept
 created: 2026-04-17
-updated: 2026-05-17
-sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, aaa-2026-conference-april.md, neurotone-ai-1000-clinics-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, dod-biometric-hearing-protection-fy26.md, musicians-tinnitus-meta-analysis-2026.md]
+updated: 2026-05-22
+sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, aaa-2026-conference-april.md, neurotone-ai-1000-clinics-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, dod-biometric-hearing-protection-fy26.md, musicians-tinnitus-meta-analysis-2026.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md]
 related: [otc-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/apple-hearing-features.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../syntheses/vertical-integration-trend.md, auracast-bluetooth-le-audio.md, audiologist-workforce-shortage.md, teleaudiology.md, ../entities/himsa.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md, cochlear-implant-ai.md, ../entities/envoy-medical.md, ../entities/neurotone-ai.md, ../entities/aaa-conference.md, eu-ai-act-medical-devices.md]
 tags: [market, forecast, growth, industry, pricing, demographics, workforce, shortage, sony-exit, anc, hearables-convergence, retail-channel, vertical-integration, benefits-administrators, medicare-advantage]
 ---
@@ -118,6 +118,26 @@ Defense procurement underwrites the in-ear-sensor BOM and shell-molding qualific
 ### Occupational-Cohort TAM Reality Check
 Musicians tinnitus prevalence is **42.6%** (vs 13.2% in matched controls) per a 2026 meta-analysis (67 studies, 28k+ musicians, 21 countries; *Otolaryngology – Head and Neck Surgery*). Genre-neutral — classical vs rock/pop not significantly different. Cites the size of the occupational hearing-protection / custom-IEM / tinnitus-DTx tier addressable market and reframes intervention design from "warn classical musicians less, rock musicians more" to "intervene on seating / acoustics / protection-adherence regardless of genre." See [[../sources/musicians-tinnitus-meta-analysis-2026]] and [[digital-therapeutics-tinnitus]].
 
+## Unit-Growth Deceleration vs AI Feature Surge (May 2026)
+
+EHIMA's **2025 global sales report** (released 20 May 2026) crystallizes a decoupling between chip-side AI investment and unit growth:
+
+| Year | EHIMA Units | YoY Growth |
+|------|-------------|------------|
+| 2021 | 19.34M | +37.0% (post-COVID rebound) |
+| 2022 | 20.25M | +4.7% |
+| 2023 | 21.81M | +7.7% |
+| 2024 | 22.69M | +4.0% |
+| **2025** | **23.16M** | **+2.1%** |
+
+Unit growth has decelerated for two consecutive years — even as the trailing 12 months produced the densest AI feature surge in industry history (Phonak Sphere Infinio, ReSound Vivia, Oticon Zeal, Widex Allure AI, Signia Active Mini IX, AirPods Pro hearing aid in 10 countries, Bose-Orka, Audien at 11,000+ Target stores).
+
+Pair this with **EuroTrak UK 2025** at the consumer-survey level: adoption fell from 52.8% to 50.5% while satisfaction climbed from 75% to 82% and app usage from 22% to 31%. Wearers happier, but new wearers not showing up faster.
+
+The combined reading: **adoption is decoupled from chip uplift.** The constraint sits upstream of the silicon — awareness, denial, perceived severity, distribution friction, workforce, stigma. None of which a 6 dB SNR uplift addresses.
+
+For data-science teams: the highest-leverage models in 2026 are not the ones predicting noise scenes. They are the ones predicting which non-adopter responds to which message in which channel. Marketing analytics, propensity scoring, channel attribution, and friction-mapping are the underbuilt layer of the hearing-care data stack. See [[hearing-care-funnel-attribution]] for the detailed analysis.
+
 ## Revenue vs. Units
 
 A critical distinction: the premium/prescription segment will retain dominant revenue share (higher ASP) even as OTC grows in unit volume. By 2030:
@@ -146,3 +166,5 @@ A critical distinction: the premium/prescription segment will retain dominant re
 - [Singh et al. AI-Enabled Hearables](../sources/frontiers-ai-enabled-hearables-industry-2026.md) — 18 experts on convergence, BCI by 2050, governance gaps
 - [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — First gene therapy for hearing loss; new treatment modality entering market
 - [Sam's Club Hearing Centers — NationsBenefits Replaces Lucid (May 2026)](../sources/sams-club-nationsbenefits-supplants-lucid-may-2026.md) — Retail-channel vertical integration; MA benefits administrator now runs dispensing clinic
+- [EHIMA 2025 Global Sales Report](../sources/ehima-2025-global-sales-report-may-2026.md) — Unit growth decelerating: 23.16M units, +2.1% YoY (down from +7.7% in 2023)
+- [EuroTrak UK 2025](../sources/eurotrak-uk-2025-adoption-aug-2025.md) — UK adoption fell from 52.8% to 50.5% despite higher satisfaction; consumer-survey companion to EHIMA deceleration

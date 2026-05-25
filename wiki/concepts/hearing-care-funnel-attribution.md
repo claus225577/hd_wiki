@@ -2,8 +2,8 @@
 title: Hearing-Care Funnel Attribution
 type: concept
 created: 2026-05-16
-updated: 2026-05-16
-sources: [listen-up-kentucky-may-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md]
+updated: 2026-05-22
+sources: [listen-up-kentucky-may-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md]
 related: [audiologist-workforce-shortage.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, closed-loop-data-flywheel.md, teleaudiology.md, ../entities/ws-audiology-signia.md, ../syntheses/hearing-aid-market-outlook.md]
 tags: [public-health, marketing, attribution, top-of-funnel, awareness, demand-generation, market-penetration, state-pilots, hearing-care-access]
 ---
@@ -30,6 +30,17 @@ The asymmetry is striking: a hearing aid wearer has minute-by-minute environment
 ### 1. The binding constraint is at the top
 
 Roughly **80% of people with hearing loss never seek care** (figure widely cited by WHO and the International Hearing Society). The signal-processing and fitting literature has spent a decade optimizing the bottom 20%. The largest accessible TAM expansion is structurally **upstream of the device**.
+
+### 1b. May 2026 Industry-Data Validation: Adoption Decoupled From Chip Uplift
+
+Two May 2026 data drops crystallize the funnel-attribution thesis at the aggregate industry level:
+
+- **EHIMA 2025 (released 20 May 2026):** Global unit growth decelerated to **+2.1%** YoY (23.16M units), down from +7.7% in 2023 and +4.0% in 2024. See [[../sources/ehima-2025-global-sales-report-may-2026]].
+- **EuroTrak UK 2025:** Adoption **fell from 52.8% to 50.5%** despite satisfaction rising from 75% to 82% and app adoption from 22% to 31%. See [[../sources/eurotrak-uk-2025-adoption-aug-2025]].
+
+These land in the same window as the densest AI-feature surge in industry history (Phonak Sphere Infinio, ReSound Vivia, Oticon Zeal, Widex Allure AI, Signia Active Mini IX, AirPods Pro hearing aid in 10 countries, Bose-Orka, Audien at 11,000+ Target stores). Existing wearers are happier than ever. New wearers are not arriving faster.
+
+This is the strongest aggregate-level evidence to date that **adoption is decoupled from chip-side AI uplift** — and therefore that the highest-leverage models in 2026 are the funnel-attribution stack described on this page, not the on-chip signal-processing stack.
 
 ### 2. Awareness is the under-modeled lever
 
@@ -115,3 +126,5 @@ These are common in consumer tech and CPG but rare inside hearing OEM R&D.
 - [Listen Up Kentucky — ADA + WSA + KAA, May 2026](../../sources/listen-up-kentucky-may-2026.md) — State-level pilot launching the public-health awareness layer
 - [Hearing Aids Market $14B by 2030 — MarketsandMarkets, April 2026](../../sources/hearing-aids-market-14b-by-2030-april-2026.md) — Market size figures that make the awareness lever quantifiable
 - [Audiologist Shortage — ASHA + ScienceDirect](../../sources/audiologist-shortage-asha-sciencedirect-2025.md) — Supply-side companion data
+- [EHIMA 2025 Global Sales Report — May 20, 2026](../../sources/ehima-2025-global-sales-report-may-2026.md) — Aggregate unit-growth deceleration (+2.1% YoY in 2025, down from +7.7% in 2023)
+- [EuroTrak UK 2025 — August 2025 (resurfaced May 2026)](../../sources/eurotrak-uk-2025-adoption-aug-2025.md) — UK adoption fell despite satisfaction rising; consumer-survey evidence of funnel decoupling
