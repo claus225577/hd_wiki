@@ -2,11 +2,11 @@
 title: Listening Effort as a First-Class Hearing-AI Metric
 type: concept
 created: 2026-05-18
-updated: 2026-05-19
-last_change: 2026-05-19 — cross-linked to the new speech-enhancement-evaluation-stack-cracks-may-2026 synthesis and the asr-too-good-to-be-true ASR-as-SE-eval source; ASR-derived effort proxy from Behringer is now in tension with the de Oliveira finding that the same noise-robust ASR systems hide acoustic damage on the intelligibility side
-sources: [codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md]
-related: [speech-enhancement-neural-networks.md, subjective-objective-hearing-gap.md, multimodal-hearing-assessment.md, dnn-in-hearing-aids.md, cortical-reorganization-hearing-aids.md, auracast-bluetooth-le-audio.md, companion-phone-speech-pipeline.md, linguistic-hallucination-speech-enhancement.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
-tags: [listening-effort, evaluation-metrics, cognitive-load, fatigue, outcome-measurement, audiology-metrics, pupillometry, ssq, neurosci-eval, codec-evaluation]
+updated: 2026-05-26
+last_change: 2026-05-26 — cross-linked to the new communication-accessibility-metric concept and kathy-pichora-fuller entity; FUEL framework (Pichora-Fuller et al. 2016, Eriksholm) explicitly named as the operational specification (demand × resources × motivation) for the missing interactional layer; ISA Aram Glorig Award at WCA 2026 Seoul (26 May) named as the most senior endorsement to date that listening effort and its longitudinal aggregate need first-class metric status
+sources: [codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md, wca-2026-pichora-fuller-aram-glorig-may-26-2026.md]
+related: [speech-enhancement-neural-networks.md, subjective-objective-hearing-gap.md, multimodal-hearing-assessment.md, dnn-in-hearing-aids.md, cortical-reorganization-hearing-aids.md, auracast-bluetooth-le-audio.md, companion-phone-speech-pipeline.md, linguistic-hallucination-speech-enhancement.md, communication-accessibility-metric.md, ../entities/kathy-pichora-fuller.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
+tags: [listening-effort, evaluation-metrics, cognitive-load, fatigue, outcome-measurement, audiology-metrics, pupillometry, ssq, neurosci-eval, codec-evaluation, fuel-framework, communication-accessibility]
 ---
 
 # Listening Effort as a First-Class Hearing-AI Metric
@@ -17,6 +17,18 @@ The hearing-aid AI evaluation stack has spent two decades optimising for **speec
 - **Fatigue is the cardinal patient complaint** after acoustic comfort. Effort is what produces it.
 - Intelligibility measures **whether** the message was understood. Effort measures **at what cost**.
 - A codec, speech-enhancer, or fitting strategy that ties on intelligibility but doubles effort is, for the user, the worse system. The current evaluation stack cannot tell us that.
+
+## FUEL — The Operational Specification (Pichora-Fuller 2016)
+
+The Framework for Understanding Effortful Listening (Pichora-Fuller, Kramer et al., *Ear and Hearing* 2016, Eriksholm Workshop) is the field's reference operationalization of listening effort:
+
+- **Demand** — acoustic + linguistic + cognitive task load
+- **Resources** — sensory + cognitive + executive capacity
+- **Motivation** — effort the listener is willing to expend
+
+The key structural contribution is **motivation as a first-class variable**: two listeners with identical demand and resources will allocate different effort depending on context, fatigue, social stakes, and reward. The integration of FUEL components over time is what produces the **communication-accessibility** outcome — see [[communication-accessibility-metric]].
+
+The **2026 Aram Glorig Award** (ISA, WCA 2026 Seoul, 26 May 2026) to Pichora-Fuller for her body of work is the most senior endorsement to date that the field's evaluation construct has outrun its measurement stack. See [[../entities/kathy-pichora-fuller]] and [[../../sources/wca-2026-pichora-fuller-aram-glorig-may-26-2026]].
 
 ## Sources of Evidence
 
@@ -76,6 +88,7 @@ Effort is also the channel through which hallucinated SE output is detectable �
 - [Gijbels et al. — Ecological Validity in Hearing Science (Frontiers, Mar 2026)](../../sources/gijbels-ecological-validity-fauot-mar-2026.md)
 - [Wang et al. — L3-SE Linguistic Hallucination in LM-Based SE (arXiv:2605.08608, May 9 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md)
 - [de Oliveira, Peer & Gerkmann — Too Good to Be True: Modern ASR for SE Evaluation (arXiv:2605.12107, May 12 2026)](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md)
+- [WCA 2026 Seoul — Pichora-Fuller Aram Glorig Award Lecture (26 May 2026)](../../sources/wca-2026-pichora-fuller-aram-glorig-may-26-2026.md) — FUEL framework (demand × resources × motivation) as the operational specification; ISA's highest honor endorses the field's evaluation gap
 
 ## See Also
 - [[../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026]] — synthesis covering the three cracks in the SE evaluation stack identified in May 2026 (effort, linguistic faithfulness, ASR-yardstick).

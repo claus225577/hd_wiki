@@ -2,10 +2,10 @@
 title: VCCA — Virtual Conference on Computational Audiology
 type: entity
 created: 2026-04-15
-updated: 2026-05-13
-sources: [vcca2024-conference.md, vcca2025-conference.md, vcca2026-conference.md, computational-audiology-new-approaches-pmc-2021.md, world-congress-audiology-seoul-may-2026.md]
-related: [../concepts/teleaudiology.md, ../concepts/auditory-attention-decoding.md, ../concepts/cochlear-implant-ai.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/dnn-architectures-hearing-aids.md, ../syntheses/hearing-ai-research-landscape-2025.md]
-tags: [conference, computational-audiology, academic, vcca, ai-audiology, wca2026]
+updated: 2026-05-26
+sources: [vcca2024-conference.md, vcca2025-conference.md, vcca2026-conference.md, computational-audiology-new-approaches-pmc-2021.md, world-congress-audiology-seoul-may-2026.md, wca-2026-pichora-fuller-aram-glorig-may-26-2026.md]
+related: [../concepts/teleaudiology.md, ../concepts/auditory-attention-decoding.md, ../concepts/cochlear-implant-ai.md, ../concepts/speech-enhancement-neural-networks.md, ../concepts/dnn-architectures-hearing-aids.md, ../concepts/listening-effort-evaluation.md, ../concepts/communication-accessibility-metric.md, ../syntheses/hearing-ai-research-landscape-2025.md, kathy-pichora-fuller.md]
+tags: [conference, computational-audiology, academic, vcca, ai-audiology, wca2026, aram-glorig-award, pichora-fuller]
 ---
 
 # VCCA — Virtual Conference on Computational Audiology
@@ -86,6 +86,10 @@ A meaningful escalation: the Computational Audiology Network is not just running
 
 Structurally different from prior congresses where computational topics were largely confined to individual oral presentations. Signals that "computational audiology" is graduating from a sub-community to a track within the field's general program. See [[../../sources/world-congress-audiology-seoul-may-2026]] for full program context.
 
+### Aram Glorig Award — Kathy Pichora-Fuller (26 May 2026)
+
+The International Society of Audiology presented its highest honor — the **Aram Glorig Award** — to **M. Kathleen (Kathy) Pichora-Fuller** at WCA 2026 Seoul on **26 May 2026**, with the lecture **"Hearing and Healthy Aging: The Imperative for Communication Accessibility."** This sits adjacent to the CAN/computational-audiology track and is the most senior endorsement to date that the field's evaluation construct (communication accessibility, operationalized via Pichora-Fuller's FUEL framework — demand × resources × motivation) has outrun its standardized measurement stack. Direct relevance to the VCCA/CAN agenda: a fifth axis (interactional / communication accessibility) is being added to the signal × lexical × neural × effort hearing-AI evaluation stack, with no standardized metric to operationalize it on a wearable. See [[../../sources/wca-2026-pichora-fuller-aram-glorig-may-26-2026]], [[kathy-pichora-fuller]], and [[../concepts/communication-accessibility-metric]].
+
 ## Impact
 
 VCCA has become the go-to venue for researchers working on computational approaches to hearing healthcare. Its free, virtual format ensures global participation, especially from researchers in low-resource settings. The growing number of abstracts (30 → 89 → 100+) tracks the explosive growth of AI in audiology research.
@@ -103,3 +107,4 @@ VCCA has become the go-to venue for researchers working on computational approac
 - [VCCA2026 Conference](../sources/vcca2026-conference.md)
 - [Computational Audiology — Foundational Paper](../sources/computational-audiology-new-approaches-pmc-2021.md)
 - [World Congress of Audiology 2026 — Seoul](../sources/world-congress-audiology-seoul-may-2026.md) — CAN multi-session presence at the global flagship congress
+- [WCA 2026 Seoul — Pichora-Fuller Aram Glorig Award Lecture (26 May 2026)](../../sources/wca-2026-pichora-fuller-aram-glorig-may-26-2026.md) — ISA's highest honor + "Hearing and Healthy Aging: The Imperative for Communication Accessibility" keynote naming the missing interactional metric layer

@@ -4,6 +4,42 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-05-26 — LinkedIn drafts ingest: Apple May 21 multi-modal / LMIC wave + Pichora-Fuller Aram Glorig Award
+
+**Operation:** Ingested today's LinkedIn drafts research into the wiki. Two structurally novel events in the past five days — Apple's 21 May rollout of hearing-test screening into India alongside multi-modal Apple Watch screening into India/Taiwan, and the ISA's award of its highest honor to Kathy Pichora-Fuller at WCA 2026 Seoul on 26 May with a keynote naming communication accessibility as the missing outcome construct.
+
+**Sources added (2):**
+- `apple-airpods-india-italy-taiwan-may-21-2026.md` — On 21 May 2026 Apple pushed three different health-screening modalities into two new countries in a single iOS rollout: AirPods Pro Hearing Test → **India** (first launch at scale in an LMIC of this size; audiologist density ~1 per 500K-6M vs ~1 per 25K in the U.S.); AirPods Hearing Aid Mode → **Italy** (mode upgrade beyond 12 May EU wave); Apple Watch Sleep Apnea notifications → **India**; Apple Watch Hypertension notifications → **Taiwan**. Apple Health features now active in **160+ countries**. Structurally distinct from the 12 May wave because (a) India is the first LMIC of this scale, and (b) it is the first time three screening modalities (hearing + sleep + cardiac) shipped to two new countries in a single push — a sensor-fusion deployment cadence no traditional medical-device OEM can match.
+- `wca-2026-pichora-fuller-aram-glorig-may-26-2026.md` — 37th World Congress of Audiology (Seoul, 24-27 May 2026); on 26 May the International Society of Audiology presented its highest honor — the **Aram Glorig Award** — to **M. Kathleen (Kathy) Pichora-Fuller** (Professor Emerita Toronto, Adjunct SFU Gerontology) with the lecture **"Hearing and Healthy Aging: The Imperative for Communication Accessibility."** Pichora-Fuller is co-author of the **FUEL framework** (Pichora-Fuller, Kramer et al., Eriksholm 2015 / *Ear and Hearing* 2016) operationalizing listening as **demand × resources × motivation**, and active ISA representative on the WHO World Rehabilitation Alliance working group on primary care leading the Hearing in Later Life working group. ISA recognition is the most senior endorsement to date that the hearing-AI evaluation construct has outrun its measurement stack.
+
+**Wiki pages created (3):**
+- `entities/kathy-pichora-fuller.md` — Researcher entity page documenting four structural contributions (FUEL framework, three decades of cognitive-audiology work, WHO Rehabilitation Alliance role, healthy-aging framing). Includes a full table mapping the four existing hearing-AI evaluation layers (signal / lexical / neural attention / effort) to her proposed interactional fifth layer (communication accessibility). Names three concrete consequences for ML-side R&D: unit of evaluation shifts from signal to conversation; FUEL is already the operational specification (motivation × demand × resources); first OEM that ships a HASPI-equivalent for communication accessibility owns the next-decade outcome conversation.
+- `concepts/communication-accessibility-metric.md` — The fifth-axis hearing-AI evaluation primitive named at the field's flagship congress in May 2026. Documents where it sits in the five-layer stack and why it cannot be reduced to intelligibility / WER / AAD / effort. Lays out what "built" would look like (standardized scoring framework, wearable telemetry primitives for FUEL components, conversation as unit of evaluation, HASPI-equivalent for accessibility, regulatory acceptance). Argues three of the five required pieces are squarely in the AI/ML wheelhouse (continuous telemetry inference, multi-speaker conversation parsing, longitudinal outcome modeling). Documents the structural May 2026 alignment across Mesgarani / Behringer / Wang / de Oliveira / Gijbels / Pichora-Fuller papers and the Aram Glorig keynote. Open questions covering composite-vs-vector, telemetry sufficiency, regulatory taxonomy, LMIC implications.
+- `syntheses/lmic-screening-platform-asymmetry-may-2026.md` — Unifies the 21 May Apple wave into three compounding structural events: (1) screening-layer collapse to near-zero marginal cost in a 1.4 billion-person market; (2) three screening modalities + same wearer + same day as the first deployed substrate for cross-modal health-phenotyping at consumer scale; (3) the audiogram corpus India will generate within 24 months as the missing piece for the pre-training-corpus-as-moat thesis. Strategic implications for market sizing, competitive positioning (verification specialist / premium moat / platform partnership), LMIC healthcare governance asymmetry, and the question of whether the audiogram is the right primary outcome at all when no audiologist is in the loop. Watch-list for CDSCO guidance, WHO statement, OEM India responses, Apple India-cohort publication, Apple Watch hearing-related sensor feature, second-platform analog launch.
+
+**Existing pages updated (4):**
+- `entities/apple-hearing-features.md` — Added 21 May 2026 multi-modal wave bullet under Software Requirements naming India/Italy/Taiwan + sleep + cardiac modalities + 160+ countries footprint and explicit linkage to the new synthesis. Added new source to frontmatter sources. Added 5 new concept/synthesis cross-links to related: hearing-care-funnel-attribution, audiologist-workforce-shortage, lmic-screening-platform-asymmetry-may-2026 synthesis (plus existing kept). Added new tags lmic / india / multi-modal-screening. Added new source row in Sources list. Bumped updated to 2026-05-26.
+- `entities/vcca-computational-audiology.md` — Added new "Aram Glorig Award — Kathy Pichora-Fuller (26 May 2026)" subsection under the WCA 2026 CAN programming section with the keynote title, FUEL framing, the field's evaluation gap argument, and cross-links to the new entity + concept pages. New source added to frontmatter. Related fields expanded with kathy-pichora-fuller entity + listening-effort-evaluation + communication-accessibility-metric concepts. Added aram-glorig-award + pichora-fuller tags. New source row in Sources. Bumped updated to 2026-05-26.
+- `concepts/listening-effort-evaluation.md` — Added new "FUEL — The Operational Specification (Pichora-Fuller 2016)" section as the operational substrate for the listening-effort concept, explicitly naming demand × resources × motivation with motivation as the first-class variable distinction. Cross-linked kathy-pichora-fuller entity + communication-accessibility-metric concept. New source added to frontmatter. fuel-framework + communication-accessibility tags added. New source row in Sources. Bumped updated to 2026-05-26; last_change note updated to reflect the FUEL operationalization addition and the Aram Glorig Award framing.
+- `concepts/subjective-objective-hearing-gap.md` — Added cross-link to communication-accessibility-metric as the longitudinal interactional layer that aggregates the subjective signal into an outcome. Cross-linked listening-effort-evaluation as the cognitive-cost primitive underneath the subjective experience. Cross-linked kathy-pichora-fuller entity. New source added to frontmatter. fuel-framework + communication-accessibility tags added. New source row in Sources. Bumped updated to 2026-05-26.
+
+**Index updates:**
+- New top entry on `wiki/index.md` documenting today's ingest.
+- Added 2 new concept rows: listening-effort-evaluation (previously orphaned from the Concepts table; surfaced during this ingest) and communication-accessibility-metric.
+- Added 1 new entity row: kathy-pichora-fuller.
+- Added 1 new synthesis row: lmic-screening-platform-asymmetry-may-2026.
+- Bumped apple-hearing-features entity row (date + tags), vcca-computational-audiology entity row (date + tags), subjective-objective-hearing-gap concept row (date + tags).
+
+**Underlying LinkedIn posts:**
+1. Apple AirPods Pro hearing test launches in India — the LMIC inflection point for the hearing-care funnel; screening layer collapses to near-zero marginal cost in a 1.4B-person market; multi-modal sensor-fusion deployment cadence no traditional OEM can match; competitive question shifts from "best on-chip algorithm" to "best partnership with the platform that owns the screening funnel."
+2. Pichora-Fuller wins the Aram Glorig Award at WCA 2026 Seoul — communication accessibility as the objective function ML still has not built for; FUEL framework (demand × resources × motivation) is already the operational specification, the telemetry stack to instrument it on a real wearer over a real day is the missing piece; first OEM to ship a HASPI-equivalent for communication accessibility owns the outcome conversation for a decade.
+
+**Underlying angle:** The May 2026 alignment is structural — Mesgarani (Columbia ECoG closed-loop AAD, *Nat Neurosci* 11 May) / Behringer (codec listening effort, arXiv 5 May) / Wang et al. (L3-SE linguistic hallucination, arXiv 9 May) / de Oliveira/Peer/Gerkmann (ASR too good to be true, arXiv 12 May) / Gijbels (multimodal hearing assessment, *FAuOt* March 2026) / Pichora-Fuller (Aram Glorig Award keynote, 26 May) — point at a **five-axis evaluation reframe**: signal × lexical × neural × effort × **interactional / communication accessibility**. The fifth axis is being named at the field's flagship congress this week. Simultaneously, Apple's 21 May LMIC wave generates the demographic and audiogram-corpus substrate the new metric layer needs. The OEM (or platform) that ships the missing fifth axis first will own the next decade's outcome conversation — clinical, regulatory, reimbursement.
+
+**Lint note:** `concepts/listening-effort-evaluation.md` was missing from the Concepts table in `wiki/index.md` since its creation on 2026-05-18 — fixed in this ingest.
+
+---
+
 ## 2026-05-21 — Ad-hoc ingest: Widex Allure AI RIC + USC cross-lifespan diarization
 
 **Operation:** Ingested two ad-hoc sources surfaced on May 20-21, 2026 — Widex Allure AI RIC product launch + Compass Cloud 2.0 (Hearing Review, May 20) and the USC cross-lifespan speaker-diarization paper (arXiv:2604.05201 v2, May 19).
@@ -1890,5 +1926,31 @@ Source: 9to5Mac (1 May 2026) + U-M School of Public Health study page
 - Second light news day in a row; the genuinely additive items today are the two arXiv papers + AccLock. Of those, AccLock is the most interesting because it lands in a part of the wiki (hearables-as-identity-platform) that does not yet have a dedicated concept page — flag for a concept-page creation on the next ingest that has at least one more biometric-hearables data point to pair with it.
 - The Brain-Informed CI Speech Separation paper + the Multi-Speaker DOA Binaural HA paper are a natural pair: front-end (DOA + count) + back-end (AAD-conditioned separation). Worth a comparison page (`comparisons/front-end-vs-back-end-cocktail-party.md`) when at least one more entry in either side appears.
 - Apple AirPods country expansion (May 12) and the Columbia/Apple/Sonova items dominating recent news cycles were intentionally suppressed from today's digest to avoid duplicating yesterday's coverage.
+
+**Pages touched this ingest: 3** (3 new sources, log appended). Below schema budget by design — see editorial framing.
+
+## 2026-05-26 — Hearing+AI Daily Digest ingest
+
+**Digest sent to door.punch_4o@icloud.com** (subject: "🎧 Hearing + AI Daily Digest — 26 May 2026"); Discord confirmation posted to digest channel (9 items: 3 papers, 3 industry, 1 AI/ML, 2 worth-watching). Lead story: WCA 2026 Seoul Day 3 — Pichora-Fuller Aram Glorig Award lecture.
+
+**Sources processed:**
+- `arxiv-2603-07471-lightweight-se-adaptation.md` — **new** — Cui et al., March 2026 arXiv preprint. Frozen SE backbone + LoRA-style adapters updated via self-supervised training. <1% of base-model parameters updated; +1.51 dB SI-SDR average within 20 updates per scene. Cleanest published template this quarter for the on-device-personalization-without-PCCP-trauma problem.
+- `arxiv-2603-02724-own-voice-detection-simulated-tfs.md` — **new** — March 2026 arXiv. Single-microphone own-voice detection trained on simulated transfer functions, 80% accuracy on real HA recordings with no fine-tuning, aided by lightweight test-time feature compensation. Direct relevance to OVPL / occlusion management and to OTC in-ear form factors that lack outward-facing mics.
+- `jmir-otc-hearing-aids-dementia-2026.md` — **new** — JMIR Human Factors 2026;13:e83857. Semi-structured interviews on OTC HA facilitators/barriers in people with dementia — fills the population gap in the existing OTC efficacy literature.
+
+**Sources referenced in the digest body but NOT re-ingested** (already in wiki, verified via filename match):
+- `world-congress-audiology-seoul-may-2026.md` (WCA 2026 conference announcement)
+- `wca-2026-pichora-fuller-aram-glorig-may-26-2026.md` (today's marquee lecture, ingested earlier)
+- `starkey-omega-ai-aaa-2026-showcase.md` + related Starkey Omega Government Services coverage
+- `federated-tinyml-urban-sound-mdpi-sensors-2026.md` (referenced as architectural pair to the new arXiv:2603.07471)
+
+**Pages created (0).** All three new sources land in well-developed concept neighborhoods (DNN-in-hearing-aids, closed-loop-data-flywheel, pccp-regulatory-framing, own-voice-processing, otc-hearing-aids, hearing-cognition). Same restraint policy as 2026-05-20 and 2026-05-22 ingests — discoverability via filename + frontmatter tags is sufficient; concept-page updates batched for the next ingest with a synthesis worth bundling them with.
+
+**Pages updated (0).** Deferred per the same restraint policy.
+
+**Editorial framing:**
+- The two arXiv 2603.xx papers are a natural pair: both shipping-model-is-frozen, both close the deployment gap with a lightweight delta (low-rank adapter vs test-time feature compensation). Worth a future synthesis page on "test-time adaptation patterns for hearing-aid ML" once one or two more entries land — flag for the next ingest with an additional candidate.
+- The JMIR OTC-dementia paper is thematically downstream of today's Pichora-Fuller WCA lecture: both argue audiology has been measuring the wrong variables and that cognitive-load × hearing-loss is the underweighted axis. Worth surfacing together in any future synthesis pass on "FUEL framework as a lens for product evaluation."
+- WCA 2026 Seoul is generating most of the AI-in-audiology signal this week; expect more ingests as Days 3-4 (May 26-27) close out and trip reports surface.
 
 **Pages touched this ingest: 3** (3 new sources, log appended). Below schema budget by design — see editorial framing.

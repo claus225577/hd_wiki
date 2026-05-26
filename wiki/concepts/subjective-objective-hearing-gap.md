@@ -2,10 +2,10 @@
 title: The Subjective–Objective Hearing Gap
 type: concept
 created: 2026-05-04
-updated: 2026-05-16
-sources: [apple-hearing-study-results-may-2026.md, achieve-trial-cognitive-hearing-2025.md, gijbels-ecological-validity-fauot-mar-2026.md]
-related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, multimodal-hearing-assessment.md, ../entities/apple-hearing-features.md]
-tags: [outcome-measurement, audiometry, perception, self-report, personalization, real-world-evidence, multimodal]
+updated: 2026-05-26
+sources: [apple-hearing-study-results-may-2026.md, achieve-trial-cognitive-hearing-2025.md, gijbels-ecological-validity-fauot-mar-2026.md, wca-2026-pichora-fuller-aram-glorig-may-26-2026.md]
+related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, multimodal-hearing-assessment.md, listening-effort-evaluation.md, communication-accessibility-metric.md, ../entities/apple-hearing-features.md, ../entities/kathy-pichora-fuller.md]
+tags: [outcome-measurement, audiometry, perception, self-report, personalization, real-world-evidence, multimodal, fuel-framework, communication-accessibility]
 ---
 
 # The Subjective–Objective Hearing Gap
@@ -87,14 +87,18 @@ Capturing the gap requires repeated, ecological measurement — the substrate of
 
 ## Related Pages
 - [[multimodal-hearing-assessment]] — The recovery pathway: audiovisual + comprehension + dyadic assessments that capture what the audiogram misses
+- [[communication-accessibility-metric]] — The longitudinal interactional layer that aggregates the subjective signal into an outcome
+- [[listening-effort-evaluation]] — Cognitive-cost primitive underneath the subjective experience; FUEL operationalization
 - [[longitudinal-hearing-phenotyping]] — Measurement framework that absorbs subjective signal
 - [[automated-audiometry]] — Tooling to collect 4PTA continuously through consumer hardware
 - [[on-device-ml-hearing-aids]] — Personalization models that should incorporate subjective signal
 - [[closed-loop-data-flywheel]] — Personalization loop grounded in experience, not threshold
 - [[hearing-loss-dementia-link]] — The functional cost of unmeasured experience
 - [[../entities/apple-hearing-features]] — Platform that quantified the gap
+- [[../entities/kathy-pichora-fuller]] — FUEL framework architect; 2026 Aram Glorig Award lecture names communication accessibility as the missing outcome construct
 
 ## Sources
 - [Apple Hearing Study — May 2026 Results](../../sources/apple-hearing-study-results-may-2026.md) — Population-scale quantification of the 16% gap
 - [Gijbels et al. — Frontiers in Audiology and Otology, March 2026](../../sources/gijbels-ecological-validity-fauot-mar-2026.md) — Clinical-cohort confirmation; audiovisual + comprehension assessments recover normal-audiogram cases
 - [ACHIEVE Trial Secondary Analysis](../../sources/achieve-trial-cognitive-hearing-2025.md) — Stratification of cognitive benefit by baseline risk reinforces that audiometric-only inclusion misses heterogeneity
+- [WCA 2026 Seoul — Pichora-Fuller Aram Glorig Award Lecture (26 May 2026)](../../sources/wca-2026-pichora-fuller-aram-glorig-may-26-2026.md) — ISA's highest honor + the keynote naming communication accessibility as the imperative outcome the audiogram cannot reach
