@@ -2,11 +2,12 @@
 title: The Hearing-AI Speech-Enhancement Evaluation Stack — Three Cracks in Twelve Days (May 2026)
 type: synthesis
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-27
 sources:
   - codec-intelligibility-se-behringer-arxiv-2026.md
   - l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md
   - asr-too-good-to-be-true-arxiv-may-2026.md
+  - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
 related:
   - listening-effort-evaluation.md
   - linguistic-hallucination-speech-enhancement.md
@@ -14,7 +15,10 @@ related:
   - llm-based-speech-enhancement.md
   - companion-phone-speech-pipeline.md
   - dnn-in-hearing-aids.md
-tags: [evaluation-metrics, speech-enhancement, asr-wer, listening-effort, linguistic-hallucination, hearing-aid-ai, synthesis, interspeech-2026]
+  - non-intrusive-intelligibility-prediction.md
+  - foundation-model-fusion-speech.md
+  - clarity-prediction-challenge.md
+tags: [evaluation-metrics, speech-enhancement, asr-wer, listening-effort, linguistic-hallucination, hearing-aid-ai, synthesis, interspeech-2026, foundation-model-fusion, cpc3]
 ---
 
 # The Hearing-AI Speech-Enhancement Evaluation Stack — Three Cracks in Twelve Days (May 2026)
@@ -100,7 +104,28 @@ The cracks are not independent. They reinforce in a specific pattern:
 - Can ASR-derived effort proxies (Behringer's positive finding) generalize to hearing-impaired listeners, or do they break the same way ASR-WER does?
 - Will Interspeech 2026 codify any of these as challenge tracks? (DASR, URGENT, and Audio Reasoning Challenge are precedents for shifting evaluation by inviting submissions.)
 
+## Update — 27 May 2026: What the Replacement Architecture Is Starting to Look Like
+
+Ten days after the third crack landed, the first concrete look at the *replacement* yardstick appeared.
+
+**Nakazawa, "Frame-Aligned Fusion of Canary and WavLM for Non-Intrusive Intelligibility Prediction of Hearing-Aid-Processed Speech"** (arXiv:2605.23619, 22 May 2026) attacks CPC3 (3rd Clarity Prediction Challenge) with two frozen speech encoders — Nvidia **Canary** (ASR-side) and Microsoft **WavLM** (SSL-side) — and asks the question every multi-foundation-model system now has to answer: **where do you fuse?**
+
+- Compares single-backbone, uniform score averaging, late-pool, cross-attention, frame-aligned, reverse-aligned fusions under a left/right-preserving **binaural** framework.
+- Best: **temporally prepare WavLM with a learnable strided convolution, frame-align with Canary on the coarser Canary timeline, fuse before pooling.**
+- **Eval RMSE 24.96, Eval Corr 0.796.**
+- Headline inductive bias: *coarse local temporal correspondence before pooling.*
+
+### What This Tells the Field
+1. The lever moved up one layer: from "which encoder" to "where do they fuse." Encoder-pair × fusion-architecture is the new search space.
+2. **Binaural preservation has become a design constant** in the next-gen evaluator (hearing aids are binaural devices; spatial perception is part of intelligibility).
+3. The replacement metric architecture is **server-side, compact head, frozen backbones** — viable for fitting software, central QA, and regulator-facing post-market surveillance, but not on-chip.
+4. CPC3 is functionally becoming the field's **training set for evaluation models**, not only for SE models.
+
+### What Is Still Missing
+The Nakazawa paper addresses axis (1) — non-intrusive intelligibility under listener-stratified ground truth — but axes (2) word-level linguistic faithfulness and (3) HA-relevant listening effort remain unbuilt as deployable, foundation-model-fusion-class metrics. The architecture template now exists; the missing labels and benchmarks are the next bottleneck.
+
 ## Sources
 - [Behringer et al. — On the Influence of Speech Enhancement and Codecs on Speech Intelligibility and Listening Effort](../../sources/codec-intelligibility-se-behringer-arxiv-2026.md) — listening-effort axis
 - [Wang et al. — L3-SE: Reducing Linguistic Hallucination in LM-Based Speech Enhancement](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — linguistic-faithfulness axis
 - [de Oliveira, Peer & Gerkmann — Too Good to Be True: Modern ASR for SE Evaluation](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md) — ASR-yardstick axis
+- [Nakazawa — Frame-Aligned Fusion of Canary and WavLM on CPC3 (arXiv:2605.23619)](../../sources/frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md) — the constructive direction (foundation-model fusion + binaural preservation + CPC3-style labels)
