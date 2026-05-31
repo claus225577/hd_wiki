@@ -2,9 +2,10 @@
 title: Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)
 type: concept
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-28
 sources:
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
+  - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
 related:
   - non-intrusive-intelligibility-prediction.md
   - speech-enhancement-neural-networks.md
@@ -12,7 +13,7 @@ related:
   - cross-lifespan-speech-models.md
   - on-device-ml-hearing-aids.md
   - companion-phone-speech-pipeline.md
-tags: [speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture]
+tags: [speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture, word-level-prediction]
 ---
 
 # Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)
@@ -46,8 +47,20 @@ Nakazawa (arXiv:2605.23619, 22 May 2026) on CPC3 hearing-aid intelligibility pre
 - Late fusion throws away the temporal joint distribution; cross-attention re-discovers it but at quadratic cost.
 - A learnable strided convolution is cheap and trainable, sidestepping the cost of full cross-attention while restoring the alignment lost to differing native frame rates.
 
+## Granularity Is a Third Axis (May 22, 2026 — same author, different paper)
+Six days before the frame-aligned fusion paper, the same researcher posted Nakazawa (arXiv:2605.23604) attacking CPC3 along a completely different architectural axis: predict intelligibility **word by word**, not utterance by utterance.
+
+- **Frozen Whisper encoder** processes degraded speech; **decoder is conditioned on the canonical transcript**.
+- **Word-aligned local acoustic branch** uses character-level cross-attention; **utterance-level global branch** calibrates.
+- Output: per-word correctness probability, aggregated into a sentence score.
+- Results on CPC3: incorrect-word F1 = 0.778, MCC = 0.626, Corr = 0.806, RMSE = 24.39 (baseline 24.92).
+
+The implication is that **granularity (utterance / sentence / word / phoneme)** is a separable search axis from architecture. Word-level scoring catches a failure mode that sentence-level RMSE flattens out: hearing aids fail asymmetrically on content words (proper nouns, sentence-final keywords, low-frequency vocabulary). A word-level evaluator gives OEMs and regulators *which words failed* — the substrate for post-market surveillance distributions that sentence-level metrics cannot produce.
+
+The two Nakazawa papers (same author, same week, same dataset, two different axes) are the cleanest illustration this year of where evaluation models for hearing-aid-processed speech are actually heading.
+
 ## Open Search Space
-The competitive frontier for the next 12 months is the **encoder-pair × fusion-architecture** grid:
+The competitive frontier for the next 12 months is the **encoder-pair × fusion-architecture × granularity** grid:
 - Whisper × WavLM
 - Canary × HuBERT
 - MERT × WavLM
@@ -71,3 +84,4 @@ Plus the fusion-architecture axis itself: frame-aligned, cross-attention with po
 
 ## Sources
 - [Nakazawa — Frame-Aligned Fusion of Canary and WavLM (arXiv:2605.23619)](../../sources/frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md) — current SOTA, fusion-location argument, the binaural-preserving framework
+- [Nakazawa — Word-Level Modeling with Alignment-Aware Acoustic Fusion (arXiv:2605.23604)](../../sources/arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md) — granularity as a third axis, text-assisted reference-conditioned word-level prediction on the same CPC3 dataset

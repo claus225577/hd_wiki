@@ -97,5 +97,5 @@ PESQ does not get there. STOI does not get there. HASPI does not get there. The 
 ## Sources
 - [MUSA Benchmark — Koo, arXiv:2605.17225, May 2026](../../sources/musa-benchmark-koo-arxiv-2026.md) — Multilingual cocktail-party benchmark for LALM selective attention
 - [Brain-Controlled Hearing — Choudhari, Mesgarani, *Nature Neuroscience*, May 2026](../../sources/brain-controlled-hearing-nature-neuroscience-may-2026.md) — ECoG counterpart
-- [L3-SE Linguistic Hallucination — Wang et al., arXiv:2605.08608, May 2026](../../sources/l3-se-linguistic-hallucination-arxiv-may-2026.md) — Adjacent failure mode
-- [Cross-Lifespan Diarization — Xu, Feng, Narayanan, arXiv:2604.05201, May 2026](../../sources/cross-lifespan-speaker-diarization-arxiv-may-2026.md) — Third evaluation crack
+- [L3-SE Linguistic Hallucination — Wang et al., arXiv:2605.08608, May 2026](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — Adjacent failure mode
+- [Cross-Lifespan Diarization — Xu, Feng, Narayanan, arXiv:2604.05201, May 2026](../../sources/cross-lifespan-diarization-usc-may-2026.md) — Third evaluation crack

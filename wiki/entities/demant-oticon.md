@@ -2,10 +2,10 @@
 title: Demant / Oticon
 type: entity
 created: 2026-04-15
-updated: 2026-05-05
-sources: [oticon-intent-launch-2024.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, oticon-play-si-hearingreview-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, aaa-2026-conference-april.md, oticon-zeal-aaa-2026-details.md, oticon-zeal-full-specs-aaa-2026.md, aaa-2026-convention-full-program-april.md, hearingtracker-2026-premium-rankings.md, oticon-va-portfolio-zeal-intent-verit-may-2026.md]
-related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, ../concepts/auracast-bluetooth-le-audio.md, aaa-conference.md, ../concepts/synthetic-data-for-hearing-ai.md, ../concepts/eu-ai-act-medical-devices.md]
-tags: [company, manufacturer, oticon, denmark, dnn, brainhearing, single-chip, npu, auracast, le-audio, pediatric, encapsulation, ite, dnn-2-0]
+updated: 2026-05-28
+sources: [oticon-intent-launch-2024.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-zeal-ite-launch-aaa-2026.md, oticon-play-si-hearingreview-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, aaa-2026-conference-april.md, oticon-zeal-aaa-2026-details.md, oticon-zeal-full-specs-aaa-2026.md, aaa-2026-convention-full-program-april.md, hearingtracker-2026-premium-rankings.md, oticon-va-portfolio-zeal-intent-verit-may-2026.md, demant-q1-2026-zeal-results-may-2026.md]
+related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, ws-audiology-signia.md, gn-hearing-resound.md, starkey.md, ../concepts/auracast-bluetooth-le-audio.md, aaa-conference.md, ../concepts/synthetic-data-for-hearing-ai.md, ../concepts/eu-ai-act-medical-devices.md, ../concepts/hearing-aid-market-dynamics.md]
+tags: [company, manufacturer, oticon, denmark, dnn, brainhearing, single-chip, npu, auracast, le-audio, pediatric, encapsulation, ite, dnn-2-0, earnings, share-shift]
 ---
 
 # Demant / Oticon
@@ -107,6 +107,7 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 - **Feb 2025** — Acquired **Ohwerk Group** (77 audiology clinics across Germany), expanding Demant's retail footprint in the German market.
 - **Apr 2026** — Oticon donating **$30K to AAA Foundation** for student scholarships, investing in the audiology workforce pipeline.
 - **May 2026** — **VA portfolio expansion** ([[../sources/oticon-va-portfolio-zeal-intent-verit-may-2026]]): Zeal (ITE), Intent miniBTE R, and Verit added to the U.S. Department of Veterans Affairs supply schedule. Material distribution win — VA is the world's second-largest hearing-aid dispenser after the UK NHS, and the largest single US payer — and gives VA audiologists the broadest Oticon form-factor range to date. Part of a structural three-OEM convergence (Oticon + Signia + Starkey) on the VA contract within seven days in mid-May 2026; see [[../syntheses/va-as-hearing-ai-dataset-may-2026]] for the closed-loop dataset framing.
+- **May 2026 — Q1 2026 results** ([[../sources/demant-q1-2026-zeal-results-may-2026]]): Total revenue **+16%** (vs. consensus +13.5%) = **+6% organic + +10% acquisitions**. Hearing Aids organic growth from external customers **+9%**, driven by the global Zeal rollout. Gross margin expanded on higher ASPs and mix. Shares jumped **~11%** on the print. **2026 outlook held at 3–6% organic growth / DKK 4.1–4.5B EBIT before specials**, with management noting results at the low end now look "less likely" — implicit upward skew within the band. On track for DKK 250M cost savings in 2026 (DKK 500M total by 2028). Demant's reported world-market read: **HA market +4% value (+3% units, +1% ASP)** — at the **top end** of their 2–4% 2026 range. With 9% organic vs. 3% global units, **Demant took share in Q1**. Combined with Sonova's FY 2025/26 print two weeks prior, this is the second consecutive top-of-band data point on the 2026 HA value cycle — see [[../concepts/hearing-aid-market-dynamics]] and [[../syntheses/hearing-aid-market-outlook]].
 
 ## Market Position
 - #1 or #2 globally (neck and neck with Sonova)
@@ -146,3 +147,4 @@ The flagship product launching on the new **Sirius platform**, introducing multi
 - [Oticon Zeal Full Specs](../sources/oticon-zeal-full-specs-aaa-2026.md) — DNN 2.0, Sirius chip, 20hr battery, 75 dB range, tap controls
 - [HearingTracker 2026 Premium Rankings](../sources/hearingtracker-2026-premium-rankings.md) — Oticon Intent ranked #3
 - Research notes on Intent miniBTE R launch, 2026 #1 rating, and Ohwerk acquisition
+- [Demant Q1 2026 Results (May 2026)](../sources/demant-q1-2026-zeal-results-may-2026.md) — 16% total / 6% organic / 9% HA organic ex-customers; outlook held, low-end "less likely"; market read +4% value at top of band; share taken vs. global units

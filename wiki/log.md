@@ -4,6 +4,75 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-05-31 — Lint Pass
+
+**Operation:** Automated lint audit of the full wiki. Checked index completeness, orphan status, broken cross-references, broken source links, stale pages, duplicate concepts, and missing cross-links.
+
+**Scope:** 57 concept pages, 24 entity pages, 4 comparison pages, 10 synthesis pages, 400+ source files.
+
+---
+
+### Fixes Applied (3 automatic)
+
+**1. Missing index entry — `concepts/lalm-selective-auditory-attention.md`**
+- Page existed (created 2026-05-22) but was never added to wiki/index.md.
+- Not orphaned: had 1 incoming link from `auditory-attention-decoding.md`.
+- Fixed: added row to Concepts table in wiki/index.md, between cross-lifespan-speech-models and listening-effort-evaluation.
+
+**2. Broken source links — `concepts/lalm-selective-auditory-attention.md` Sources section**
+- `../../sources/l3-se-linguistic-hallucination-arxiv-may-2026.md` → corrected to `l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md`
+- `../../sources/cross-lifespan-speaker-diarization-arxiv-may-2026.md` → corrected to `cross-lifespan-diarization-usc-may-2026.md`
+- Note: frontmatter `sources:` field was already correct; only the inline markdown links at page bottom were wrong.
+
+**3. Missing cross-links to `lalm-selective-auditory-attention.md`**
+- `linguistic-hallucination-speech-enhancement.md` — added lalm page to `related:` (sibling evaluation-stack failure mode)
+- `syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md` — added lalm page to `related:` (multilingual source confusion is the fourth crack in that series)
+
+---
+
+### Issues Requiring Human Judgment
+
+**Stale pages (fast-moving topics, not updated in 6+ weeks as of 2026-05-31):**
+- `syntheses/hearing-ai-research-landscape-2025.md` — last updated 2026-04-17 (44 days). Title says "2025" but content draws on April 2026 sources. Consider: rename to `hearing-ai-research-landscape-2026.md` or add a prominent "snapshot" note.
+- `concepts/audio-reasoning-chain-of-thought.md` — last updated 2026-04-16 (45 days). Fast-moving topic (Interspeech 2026 Audio Reasoning Challenge launched since). Flag for update next relevant ingest.
+- `concepts/world-models-hearing-ai.md` — last updated 2026-04-16 (45 days). Closely related to continual-learning-hearing-ai (created 2026-05-27) — consider whether they should cross-link or partially merge.
+- `concepts/dnn-architectures-hearing-aids.md` — last updated 2026-04-21 (40 days). Foundation-model-fusion and LALM developments since are material.
+
+**Carry-forward flags (from log, repeated for visibility):**
+1. `concepts/auditory-attention-decoding.md` — needs methodology asterisk: LOPEO paper (Zhang/Liang et al., arXiv:2605.25605, ~26 May 2026) shows DNN AAD decoders systematically overestimate accuracy on unbalanced EEG datasets. Existing claims rest on potentially inflated numbers. Add asterisk on next corroborating replication ingest.
+2. `concepts/clinician-ai-consent-and-trust.md` — ready to create pending a second corroborating data point (regulator statement, professional-body position, or second on-record clinician quote). AAA 2026 + WCA 2026 + FHH 2026 all surfaced this theme; three conferences may now be sufficient trigger.
+3. `comparisons/cocktail-party-stack-front-to-back.md` — log flagged this as "one more entry triggers" on 2026-05-27. The LALM/MUSA page (`lalm-selective-auditory-attention.md`, created 2026-05-22) provides exactly that fourth anchor. Consider creating this comparison page now.
+
+**Orphan analysis:**
+- No true orphans found (all pages have at least one incoming link from another wiki page).
+- `lalm-selective-auditory-attention.md` was the least-connected page (1 incoming link before this lint); now has 3 with the cross-links added above.
+
+**Duplicate concept check:**
+- No duplicate concepts requiring merge found. `world-models-hearing-ai.md` and `continual-learning-hearing-ai.md` have overlapping scope (personalization, adaptation) but are structurally distinct enough to keep separate; a `related:` link between them would help (currently absent).
+- `dnn-in-hearing-aids.md` and `dnn-architectures-hearing-aids.md` cover adjacent ground; both are well-linked to each other. No merge recommended.
+
+**Pages that could benefit from splitting (>150 lines):**
+- `concepts/on-device-ml-hearing-aids.md` — 162 lines. Dense hub page; splitting would harm navigation. Recommend adding internal section anchors instead.
+- `syntheses/hearing-aid-ai-stack-2026.md` — 156 lines. Consider a "What Changed in 2026" addendum rather than a split.
+- `concepts/dnn-architectures-hearing-aids.md` — 164 lines. Most overdue for update anyway; a refresh would naturally right-size it.
+
+**Index size:** wiki/index.md front-matter summary section is very long (the rolling log of operations embedded in italics). This is intentional per schema but makes the file large. No action required — the schema calls for it.
+
+---
+
+### Stats
+
+| Category | Files on disk | In index |
+|---|---|---|
+| Concepts | 57 | 57 (was 56 before this lint) |
+| Entities | 24 | 24 |
+| Comparisons | 4 | 4 |
+| Syntheses | 10 | 10 |
+| **Total wiki pages** | **95** | **95** |
+| Sources | 400+ | n/a |
+
+---
+
 ## 2026-05-27 — LinkedIn drafts ingest: Nakazawa CPC3 fusion + Xiao et al. representation-centric continual learning
 
 **Operation:** Ingested today's LinkedIn drafts research into the wiki. Two arXiv papers from the past five days that together address the constructive side of the May 19 "three cracks" synthesis: (1) Nakazawa (22 May) shows what the *replacement evaluator* is starting to look like — frame-aligned mid-fusion of two frozen foundation-model encoders on CPC3; (2) Xiao, Wang, Holden & Dang (24 May) reframes hearing-aid *personalization* as a continual-learning problem at the representation-geometry layer rather than the parameter-handle layer the OEM industry has used for two decades.
@@ -2013,3 +2082,61 @@ Source: 9to5Mac (1 May 2026) + U-M School of Public Health study page
 - The cocktail-party stack now has anchors at all four stages (DOA + speaker count → spatial filter → separation → attention-guided refinement). One more entry at *any* stage and a `comparisons/cocktail-party-stack-front-to-back.md` page becomes the right move.
 
 **Pages touched this ingest: 4** (4 new sources, log appended, index updated). Below schema budget by design — see editorial framing.
+
+## 2026-05-28 — LinkedIn drafts ingest
+
+**Drafts emailed to door.punch_4o@icloud.com** (subject: "📝 LinkedIn Drafts — 28 May 2026 (corrected)"); Discord channel: 1490303675648970823. Two posts: (1) GN/Ampetronic Seoul Session + YouGov stigma data — stigma as the missing demand-side variable in the hearing-care funnel-attribution stack; (2) Nakazawa's second CPC3 paper — granularity (utterance → sentence → word → phoneme) as a separable third axis from encoder choice and fusion architecture.
+
+**Sources processed:**
+- `gn-auracast-seoul-session-big-ocean-may-2026.md` — **new** — GN Hearing × Ampetronic Seoul Session at WCA 2026 (May 26 2026). Kind Seoul jazz club becomes the first permanent Auracast venue installation in South Korea; live performance by Big Ocean (K-pop trio whose three members all wear hearing aids and cochlear implants); Andreas Anderhov (GN APAC President) confirmed permanence on the record. In parallel GN released YouGov nationally representative survey data — 30 January – 4 February 2026, n≈3,053 across AU/UK/US with n≈955 hearing-loss respondents — showing up to 40% of people with hearing loss are perceived as less intelligent or less capable, >1/3 read as rude or disengaged, >1/3 report others believe they should "try harder" to hear. Structurally a counter-stereotype-exposure intervention on the stigma variable the funnel-attribution stack has never instrumented.
+- `arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md` — **already in wiki** (ingested in the 2026-05-27 daily digest pass). Surfaced today for the LinkedIn pass as the granularity-as-a-third-axis counterpoint to yesterday's frame-aligned fusion post. The two Nakazawa CPC3 papers (same author, same week, same dataset, different architectural axes) are now the structural backbone of the foundation-model-fusion-speech concept page.
+
+**Pages updated (4):**
+1. `concepts/auracast-bluetooth-le-audio.md` — added "First South Korea Auracast Venue + K-Pop Performance (May 26, 2026)" section covering Big Ocean performance, Anderhov permanent-install confirmation, YouGov stigma data, and three implications spanning OEM behavior / metric stack / regulator framing. Added `stigma` tag; added `hearing-care-funnel-attribution` to related; bumped updated to 2026-05-28.
+2. `entities/gn-hearing-resound.md` — added "Seoul Session at WCA 2026 — Stigma + Cultural Deployment (May 26, 2026)" section reframing GN's WCA positioning from product showcase to demand-side intervention. Added `stigma`/`korea`/`lmic` tags; added `hearing-care-funnel-attribution` to related; bumped updated to 2026-05-28.
+3. `concepts/hearing-care-funnel-attribution.md` — added "Stigma as the Missing Demand-Side Input (May 2026)" section. Three implications: (a) stigma is upstream of awareness so the funnel needs a pre-awareness identity-threat-suppression stage; (b) cultural-visibility events are interventions not marketing and counter-stereotype-exposure is the right model class; (c) three currently-unlogged inputs a stigma-aware adoption model needs — cultural-visibility events, partner/family attitudes via care-partner enrollment, post-fitting social environment via existing on-device telemetry. Added `stigma`/`cultural-visibility` tags; bumped updated to 2026-05-28.
+4. `concepts/foundation-model-fusion-speech.md` — added "Granularity Is a Third Axis (May 22, 2026 — same author, different paper)" section using the second Nakazawa paper. Frozen Whisper encoder + decoder conditioned on canonical transcript + word-aligned local acoustic branch + utterance-level global branch; per-word correctness probability aggregated into sentence score; Eval RMSE 24.39 / Corr 0.806 / incorrect-word F1 0.778 / MCC 0.626 on CPC3 (baseline 24.92). Headline framing: granularity (utterance / sentence / word / phoneme) is a separable search axis from architecture, and word-level scoring gives OEMs + regulators *which words failed* — the substrate for post-market surveillance distributions that sentence-level RMSE cannot produce. Both Nakazawa source files now in frontmatter; added `word-level-prediction` tag; bumped updated to 2026-05-28.
+5. `syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md` — added "Update — 28 May 2026: Granularity Joins as a Third Axis" section. The search space is now encoder choice/pairing × fusion architecture × output granularity, and word-level prediction is the granularity axis's first deployable substrate for the "which words failed" post-market surveillance distribution the field needs. Bumped updated to 2026-05-28.
+
+**Pages added to index (4) — backfill correction:**
+- `concepts/non-intrusive-intelligibility-prediction.md` (created 2026-05-27 LinkedIn ingest, never wired into index table)
+- `concepts/foundation-model-fusion-speech.md` (created 2026-05-27 LinkedIn ingest, never wired into index table — updated 2026-05-28)
+- `concepts/continual-learning-hearing-ai.md` (created 2026-05-27 LinkedIn ingest, never wired into index table)
+- `entities/clarity-prediction-challenge.md` (created 2026-05-27 LinkedIn ingest, never wired into index table)
+
+These four pages were created in the 2026-05-27 LinkedIn ingest but the index row additions were not committed — the index's `_Last updated` block referenced them in the natural-language summary but the tables themselves did not list them. Corrected today.
+
+**Editorial framing:**
+- The GN Seoul + YouGov stigma release lands in a part of the funnel-attribution model that was named as a gap on 2026-05-16 but had no anchor source. Today's release provides the first nationally representative quantification of perceived-stigma (n≈3,053 across three countries) as an input to the hearing-care funnel — paired with a structurally clean counter-stereotype-exposure intervention (permanent Auracast install + K-pop performance with hearing-aid-wearing performers) that GN has effectively turned into a demand-side A/B substrate. This is the first time the wiki's funnel-attribution model has both a measurement (YouGov) and an intervention (Seoul Session) for the stigma variable in the same week.
+- The second Nakazawa paper completes a pattern that was only half-visible after yesterday's post: the same author, same week, same dataset, two papers attacking the CPC3 benchmark along two orthogonal architectural axes (fusion location vs output granularity). The foundation-model-fusion-speech concept page now has both papers as structural anchors and explicitly names the three-axis search space (encoder choice × fusion architecture × output granularity) as the competitive frontier for the next 12 months. The synthesis page's "what is still missing" inventory shrinks by one — word-level prediction is now deployable on the existing fusion-architecture substrate.
+- Index integrity: the 2026-05-27 LinkedIn ingest created four pages but only mentioned them in the natural-language `_Last updated` block — the index tables were not updated. Today's pass catches that and reconciles the index. This is the second time this quarter that the index-table update step has been skipped on the LinkedIn-ingest path; flag for a future lint pass to scan the natural-language entry summaries for `Created N new wiki pages` strings that do not have matching table rows.
+
+**Pages touched this ingest: 9** (1 new source, 5 wiki pages updated content-wise, 4 wiki pages added to index tables, log appended).
+
+## 2026-05-28 — Daily hearing+AI digest ingest
+
+**Digest emailed to door.punch_4o@icloud.com** (subject: "🎧 Hearing + AI Daily Digest — 28 May 2026"). Three items: (1) CFMDCTCodec sub-kbps neural speech codec (arXiv:2605.26812); (2) Demant Q1 2026 results — Oticon Zeal carries the quarter; (3) FHH Virtual Conference 2026 Day 3 wrap.
+
+**Sources processed:**
+- `arxiv-2605-26812-cfmdctcodec-may-2026.md` — **new** — Du, Ai et al. MDCT-domain encoder–quantizer–decoder + noise-prior-aware conditional-flow-matching (CFM) spectral enhancer with ODE solver. Non-adversarial joint reconstruction + quantization + CFM objective. **0.65 kbps** operating point, perceptual quality approaching much larger codecs with significantly fewer parameters. Accepted at IEEE/ACM TASLP. Relevance is squarely Auracast / BLE Audio bitrate frontier rather than SE — kept it out of the speech-enhancement-neural-networks page on that basis.
+- `demant-q1-2026-zeal-results-may-2026.md` — **new** — Total revenue +16% (+6% organic + +10% acquisitions); Hearing Aids organic ex-customers +9%, driven by global Oticon Zeal rollout. Gross-margin expansion on higher ASPs and mix. Share +~11% on print. 2026 outlook held at 3–6% organic / DKK 4.1–4.5B EBIT-before-specials, with low-end results "less likely" — explicit upward-skew language within the band. On track for DKK 250M savings in 2026 (DKK 500M total by 2028). Reported global HA market read: **+4% value (+3% units, +1% ASP)** — top of Demant's assumed 2–4% 2026 range; 9% organic vs. 3% global units = **share taken**.
+- `fhh-virtual-conference-2026-may-27.md` — **new** — Sixth annual HHTM Future of Hearing Healthcare virtual conference; three half-day sessions on May 13 / 20 / 27 / 2026; 23+ expert-led sessions. Day 3 closes the third major industry conversation in three weeks (after AAA 2026 leadership panel and WCA 2026 Seoul) that put AI front and centre — pattern reinforced: AI is no longer treated as a forecast item, the unresolved questions are clinician trust + patient-benefit evidence + informed consent, not raw capability.
+
+**Pages updated (3):**
+1. `entities/demant-oticon.md` — added "May 2026 — Q1 2026 results" entry under Corporate Developments, with the +16% / +6% / +9% breakdown, gross-margin expansion, share reaction, outlook held with upward-skew language, market-share-taken framing, and cross-links to `concepts/hearing-aid-market-dynamics` and `syntheses/hearing-aid-market-outlook`. Added `demant-q1-2026-zeal-results-may-2026.md` to frontmatter sources. Added `earnings`/`share-shift` tags. Added `hearing-aid-market-dynamics` to related. Bumped updated to 2026-05-28.
+2. `concepts/hearing-aid-market-dynamics.md` — added **"Q1 2026 Two-OEM Cross-Check: Market Value at Top of Band (May 2026)"** section with two-print triangulation table (Sonova FY 25/26 + Demant Q1 26), the unit-deceleration-vs-value-cycle-top-of-band reconciliation, the premium-product-launch-cadence framing as the main share-shift lever, and the explicit Demant outlook-skew language. Added both Sonova and Demant Q1 sources to frontmatter. Bumped updated to 2026-05-28.
+3. `concepts/auracast-bluetooth-le-audio.md` — added **"Sub-kbps Neural Codecs Push the Bitrate Frontier (May 2026)"** section covering CFMDCTCodec's MDCT-domain architecture and 0.65 kbps operating point. Four-bullet relevance frame: (a) regime LC3/LC3plus cannot reach; (b) multi-stream broadcast venue airtime relief; (c) on-device decoding parameter-count favourable but ODE-solver remains an open MIPS/latency question; (d) codec-SE blurring via post-decode CFM enhancement, pairs with Behringer codec-SE-intelligibility source. Closed with the SIG-roadmap watch flag for sub-kbps codec profile signalling in the next 12–24 months. Added CFMDCTCodec source to frontmatter and Sources list. Bumped updated to 2026-05-28.
+
+**Pages created (0).** Three new sources, but each lands in a well-developed neighbourhood — restraint policy continues. FHH 2026 specifically would have anchored a `concepts/ai-clinician-trust.md` or similar, but per the 2026-05-27 carry-forward flag the consent/trust concept page should wait for a second on-record clinician quote or a regulator statement; FHH 2026 is corroborating-coverage tone rather than a fresh data point.
+
+**Carry-forward flags (continuing from 2026-05-27):**
+1. `concepts/auditory-attention-decoding.md` methodology-asterisk on next AAD ingest under LOPEO protocol.
+2. `concepts/non-intrusive-intelligibility-prediction.md` revise with third CPC3 paper, flag for a `comparisons/non-intrusive-vs-text-assisted-cpc3.md`.
+3. `concepts/clinician-ai-consent-and-trust.md` create when next corroborating data point lands (regulator statement, professional-body position, second on-record clinician quote). **FHH 2026 Day 3 is corroborating-tone but not new-data; flag still open.**
+
+**Editorial framing:**
+- The CFMDCTCodec finding lands at an unexpected place in the wiki — *not* on the SE page (which would be the obvious guess) but on the Auracast page, because the operating point that matters is **bitrate, not intelligibility-in-noise**. This is the second consecutive ingest where a paper's most useful framing was not at its surface-level topic — see also 2026-05-27 where the Nakazawa word-level paper went on `foundation-model-fusion-speech` rather than on `non-intrusive-intelligibility-prediction`. Worth a future synthesis on what "the right home for an SE paper" is when the architecture borrows from codec/LLM/CI machinery.
+- Two large-OEM prints in two weeks (Sonova FY 25/26 + Demant Q1 26) **both reading market at top of the 2–4% band** is now the clearest 2026 macro signal we have — and it sits *alongside* the EHIMA 2025 unit-deceleration print (+2.1% YoY). The reconciliation matters: 2026 unit growth is recovering off the 2025 trough (+3% global units per Demant Q1) while ASP contribution (+1%) does the rest of the value-cycle work. The new "Q1 2026 Two-OEM Cross-Check" section on `hearing-aid-market-dynamics` is the canonical place for this reconciliation going forward.
+- FHH 2026 Day 3 closes a three-conference pattern (AAA → WCA → FHH) where AI moved from a future-tense talking point to a present-tense workflow item in the same six weeks. The unresolved questions across all three were *trust + benefit-evidence + consent*, not capability. This is the strongest signal yet that the AI-in-hearing-care subfield has crossed into a maturity phase where the bottleneck is interpretive infrastructure, not technical capability. If FHH session recordings drop usable quotes from clinician panels in the next 7–10 days, the consent-and-trust concept page becomes the right next move.
+
+**Pages touched this ingest: 6** (3 new sources, 3 wiki pages updated, log appended).

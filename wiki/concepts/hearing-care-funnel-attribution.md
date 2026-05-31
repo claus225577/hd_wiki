@@ -2,10 +2,10 @@
 title: Hearing-Care Funnel Attribution
 type: concept
 created: 2026-05-16
-updated: 2026-05-22
-sources: [listen-up-kentucky-may-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md]
-related: [audiologist-workforce-shortage.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, closed-loop-data-flywheel.md, teleaudiology.md, ../entities/ws-audiology-signia.md, ../syntheses/hearing-aid-market-outlook.md]
-tags: [public-health, marketing, attribution, top-of-funnel, awareness, demand-generation, market-penetration, state-pilots, hearing-care-access]
+updated: 2026-05-28
+sources: [listen-up-kentucky-may-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md, gn-auracast-seoul-session-big-ocean-may-2026.md]
+related: [audiologist-workforce-shortage.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, closed-loop-data-flywheel.md, teleaudiology.md, ../entities/ws-audiology-signia.md, ../entities/gn-hearing-resound.md, ../syntheses/hearing-aid-market-outlook.md]
+tags: [public-health, marketing, attribution, top-of-funnel, awareness, demand-generation, market-penetration, state-pilots, hearing-care-access, stigma, cultural-visibility]
 ---
 
 # Hearing-Care Funnel Attribution
@@ -49,6 +49,28 @@ Penetration uplift from awareness is the largest single TAM expansion lever in [
 ### 3. Workforce shortage and awareness compound
 
 [[audiologist-workforce-shortage]] frames the supply side; this page is the demand side. With 75% of U.S. counties in audiologist shortage and 80% of people with hearing loss not seeking care, the supply and demand levers must be modeled jointly. Closing awareness without expanding supply leads to bottleneck queues. Expanding supply without closing awareness leads to under-utilized capacity.
+
+## Stigma as the Missing Demand-Side Input (May 2026)
+
+GN's Seoul Session at WCA 2026 (May 26, 2026) bundled two releases that together specify a previously-unmeasured demand-side variable: **perceived-stigma** as an input to the funnel.
+
+YouGov nationally representative surveys (30 Jan – 4 Feb 2026; n≈3,053 across AU/UK/US):
+- Up to **40%** of people with hearing loss are perceived as less intelligent or less capable
+- **>1/3** are read as rude or disengaged
+- **>1/3** report others believe they should "try harder"
+
+Three implications for the funnel-attribution model:
+
+1. **Stigma is upstream of awareness.** A patient aware of a problem they perceive will make them appear less intelligent will rationally suppress that awareness. The standard "awareness → consideration → screening" funnel mis-orders the operations — for hearing loss, identity-threat negative valence precedes seeking. The funnel needs an additional pre-awareness stage: **identity-threat suppression**.
+
+2. **Cultural-visibility events are interventions, not marketing.** GN's Seoul Session — Big Ocean performing on Auracast in a permanent install — is structurally a stigma-variable intervention, not a product launch. The model class is **counter-stereotype exposure** (well-developed in social psychology, never operationalized in hearing-care funnel models).
+
+3. **Three inputs we don't currently log** that a stigma-aware adoption model needs:
+   - Cultural-visibility events (performances, media coverage, celebrity disclosures)
+   - Partner/family attitudes (proxy via care-partner enrollment data — see [[care-partner-dyad-models]] if present)
+   - Post-fitting social environment (acoustic context + conversation count via on-device telemetry — these signals are already collected and currently unused for funnel attribution)
+
+The Listen Up Kentucky frame (state-level A/B) and the GN Seoul frame (cultural-visibility intervention) are two different mechanisms attacking the same demand-side variable. A complete funnel-attribution model needs both.
 
 ## Listen Up Kentucky as a State-Level A/B Framework
 
@@ -128,3 +150,4 @@ These are common in consumer tech and CPG but rare inside hearing OEM R&D.
 - [Audiologist Shortage — ASHA + ScienceDirect](../../sources/audiologist-shortage-asha-sciencedirect-2025.md) — Supply-side companion data
 - [EHIMA 2025 Global Sales Report — May 20, 2026](../../sources/ehima-2025-global-sales-report-may-2026.md) — Aggregate unit-growth deceleration (+2.1% YoY in 2025, down from +7.7% in 2023)
 - [EuroTrak UK 2025 — August 2025 (resurfaced May 2026)](../../sources/eurotrak-uk-2025-adoption-aug-2025.md) — UK adoption fell despite satisfaction rising; consumer-survey evidence of funnel decoupling
+- [GN/Ampetronic Seoul Session + YouGov stigma data (May 26, 2026)](../../sources/gn-auracast-seoul-session-big-ocean-may-2026.md) — First permanent Auracast venue install in South Korea; Big Ocean K-pop performance; YouGov stigma survey across AU/UK/US — stigma as the missing demand-side input

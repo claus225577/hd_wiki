@@ -2,8 +2,8 @@
 title: Hearing Aid Market Dynamics
 type: concept
 created: 2026-04-17
-updated: 2026-05-22
-sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, aaa-2026-conference-april.md, neurotone-ai-1000-clinics-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, dod-biometric-hearing-protection-fy26.md, musicians-tinnitus-meta-analysis-2026.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md]
+updated: 2026-05-28
+sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, aaa-2026-conference-april.md, neurotone-ai-1000-clinics-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, dod-biometric-hearing-protection-fy26.md, musicians-tinnitus-meta-analysis-2026.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md, sonova-fy-2025-26-results-may-2026.md, demant-q1-2026-zeal-results-may-2026.md]
 related: [otc-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/apple-hearing-features.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../syntheses/vertical-integration-trend.md, auracast-bluetooth-le-audio.md, audiologist-workforce-shortage.md, teleaudiology.md, ../entities/himsa.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md, cochlear-implant-ai.md, ../entities/envoy-medical.md, ../entities/neurotone-ai.md, ../entities/aaa-conference.md, eu-ai-act-medical-devices.md]
 tags: [market, forecast, growth, industry, pricing, demographics, workforce, shortage, sony-exit, anc, hearables-convergence, retail-channel, vertical-integration, benefits-administrators, medicare-advantage]
 ---
@@ -138,6 +138,22 @@ The combined reading: **adoption is decoupled from chip uplift.** The constraint
 
 For data-science teams: the highest-leverage models in 2026 are not the ones predicting noise scenes. They are the ones predicting which non-adopter responds to which message in which channel. Marketing analytics, propensity scoring, channel attribution, and friction-mapping are the underbuilt layer of the hearing-care data stack. See [[hearing-care-funnel-attribution]] for the detailed analysis.
 
+## Q1 2026 Two-OEM Cross-Check: Market Value at Top of Band (May 2026)
+
+Two large-OEM prints in two weeks now triangulate the **2026 HA value cycle running at the top of the assumed 2–4% band**:
+
+| Print | Reporter Read of Global HA Market | OEM Organic Growth | Implication |
+|-------|-----------------------------------|--------------------|-------------|
+| Sonova FY 2025/26 (mid-May) | Top of range | (per [[../entities/sonova-ag]]) | Top-of-band read #1 |
+| **Demant Q1 2026 (late May)** | **+4% value (+3% units, +1% ASP)** | **+9% HA organic ex-customers**, +6% group organic | Top-of-band read #2; **Demant took share** vs. 3% global units |
+
+Key reads:
+- The **unit-growth deceleration** flagged from the EHIMA 2025 report (+2.1% YoY) and the **value-cycle top-of-band** print are **consistent, not contradictory** — they describe different points in the value chain. Q1 2026 global units +3% (Demant read) is a partial recovery off the 2025 trough, but still well below 2021's +37% rebound and the 2023 +7.7%. ASP contribution (+1%) is doing most of the cycle work.
+- **Premium-product launch cadence is now the main share-shift lever.** Phonak Sphere Infinio (Sonova) drove FY 25/26; Oticon Zeal is driving Demant Q1 26. The OEM that ships the next premium AI-feature wave by Q3 26 takes the next slug of share.
+- Demant's commentary that 2026 outlook results at the **low end are "less likely"** is the most explicit upward-skew language any of the Big-5 has used in the cycle.
+
+See [[../sources/demant-q1-2026-zeal-results-may-2026]] and [[../sources/sonova-fy-2025-26-results-may-2026]].
+
 ## Revenue vs. Units
 
 A critical distinction: the premium/prescription segment will retain dominant revenue share (higher ASP) even as OTC grows in unit volume. By 2030:
@@ -168,3 +184,4 @@ A critical distinction: the premium/prescription segment will retain dominant re
 - [Sam's Club Hearing Centers — NationsBenefits Replaces Lucid (May 2026)](../sources/sams-club-nationsbenefits-supplants-lucid-may-2026.md) — Retail-channel vertical integration; MA benefits administrator now runs dispensing clinic
 - [EHIMA 2025 Global Sales Report](../sources/ehima-2025-global-sales-report-may-2026.md) — Unit growth decelerating: 23.16M units, +2.1% YoY (down from +7.7% in 2023)
 - [EuroTrak UK 2025](../sources/eurotrak-uk-2025-adoption-aug-2025.md) — UK adoption fell from 52.8% to 50.5% despite higher satisfaction; consumer-survey companion to EHIMA deceleration
+- [Demant Q1 2026 Results (May 2026)](../sources/demant-q1-2026-zeal-results-may-2026.md) — +16% total / +6% organic / +9% HA organic ex-customers; outlook held with explicit upper-half skew; reported global HA market +4% value (+3% units, +1% ASP)

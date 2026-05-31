@@ -2,10 +2,10 @@
 title: Auracast / Bluetooth LE Audio
 type: concept
 created: 2026-04-15
-updated: 2026-05-06
-sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, auracast-uk-live-theaters-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, oticon-zeal-full-specs-aaa-2026.md, starkey-omega-ai-aaa-2026-showcase.md, auracast-european-public-venue-rollout-2026.md, lc3plus-codec-broader-implementation-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md]
-related: [on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, hearing-aid-market-dynamics.md, ../entities/gn-hearing-resound.md, ../entities/demant-oticon.md, ../syntheses/ai-understanding-gap-hearing-industry.md, ../entities/aaa-conference.md, ../entities/starkey.md]
-tags: [bluetooth, accessibility, connectivity, infrastructure, le-audio, venue-deployment, consumer-education]
+updated: 2026-05-28
+sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, auracast-uk-live-theaters-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, oticon-zeal-full-specs-aaa-2026.md, starkey-omega-ai-aaa-2026-showcase.md, auracast-european-public-venue-rollout-2026.md, lc3plus-codec-broader-implementation-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, gn-auracast-seoul-session-big-ocean-may-2026.md, arxiv-2605-26812-cfmdctcodec-may-2026.md]
+related: [on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, hearing-aid-market-dynamics.md, ../entities/gn-hearing-resound.md, ../entities/demant-oticon.md, ../syntheses/ai-understanding-gap-hearing-industry.md, ../entities/aaa-conference.md, ../entities/starkey.md, hearing-care-funnel-attribution.md]
+tags: [bluetooth, accessibility, connectivity, infrastructure, le-audio, venue-deployment, consumer-education, stigma]
 ---
 
 # Auracast / Bluetooth LE Audio
@@ -70,6 +70,15 @@ Bluetooth SIG reports accelerating Auracast installations across European public
 - European adoption likely accelerated by the **European Accessibility Act (2025)** and stronger accessibility mandates
 - Moves Auracast from individual venue pilots to systematic public infrastructure deployment
 
+### First South Korea Auracast Venue + K-Pop Performance (May 26, 2026)
+GN/Ampetronic Seoul Session at the World Congress of Audiology 2026:
+- **Venue:** Kind Seoul (jazz club) — first **permanent** Auracast installation in South Korea
+- **Performer:** Big Ocean — K-pop trio whose three members all live with hearing loss (hearing aids and cochlear implants)
+- **Equipment:** Auri Transmitter / Auri receivers (same hardware family as the UK theater deployments)
+- **Confirmed permanent:** Andreas Anderhov (GN APAC President) — "not a one-time event"
+- **First non-Western and first symbolic-performance Auracast deployment** to date. Korea has the demographic profile (population aging fast, audiologist shortage relative to demand) where infrastructure-side accessibility may be the binding constraint.
+- **Adjacent finding (YouGov, GN-commissioned, 30 Jan–4 Feb 2026, n≈3,053 across AU/UK/US):** up to **40%** perceive people with hearing loss as less intelligent or less capable; more than a third are read as rude or disengaged or believe they should "try harder." Frames the Seoul install as **structurally an intervention on the stigma variable**, not a product launch.
+
 ### First UK Live Theater Deployments (April 2026)
 The first real-world Auracast assistive listening deployments in UK performance venues have been documented:
 - **Everyman Theatre (Cheltenham)** and **Contact (Manchester)** — using the **Auri Bluetooth Auracast system**
@@ -98,6 +107,18 @@ Behringer et al. (arXiv:2605.03776, 5 May 2026) tested classical vs. neural spee
 
 For Auracast deployment, this argues for: (a) keeping the LC3/LC3plus baseline, since classical codecs hold up well in noise; (b) co-evaluating codec choice with the upstream SE stage rather than treating them as independent; and (c) treating listening effort, not just word recognition, as a primary metric when comparing codec configurations for hearing-impaired users.
 
+## Sub-kbps Neural Codecs Push the Bitrate Frontier (May 2026)
+
+Du, Ai et al. — **CFMDCTCodec** (arXiv:2605.26812, 26 May 2026; accepted at IEEE TASLP) — operates entirely in the MDCT domain, pairing a lightweight encoder–quantizer–decoder with a **noise-prior-aware conditional-flow-matching (CFM) enhancer** over the MDCT spectrum. The headline operating point is **0.65 kbps** with quality approaching much larger codecs and **significantly fewer parameters**.
+
+Why this matters for Auracast:
+- Auracast broadcast is **airtime- and battery-constrained**. The LC3 mandatory mode runs in the ~16–48 kbps range for speech; LC3plus adds higher-bitrate music modes. Sub-kbps speech with acceptable perceptual quality opens a regime LC3/LC3plus cannot reach.
+- For **multi-stream broadcast venues** (multiple languages, multiple seating zones, parallel description tracks), aggregate airtime is the bottleneck. Sub-kbps codecs are the path to more parallel streams without infrastructure upgrade.
+- For **on-device decoding**, small parameter counts are necessary but not sufficient — the CFM enhancer's ODE solver is the open question for HA-class MIPS / latency budgets. If it doesn't fit on-device, hybrid architectures with the enhancer skipped on weak signals or run only on companion-phone scenarios become viable.
+- Pairs with [[../sources/codec-intelligibility-se-behringer-arxiv-2026]]: SE-codec co-evaluation matters at any bitrate, and the CFM-as-enhancer architecture *itself* blurs the line between codec and SE — the post-decode enhancement step is doing some of what an SE front-end would otherwise do.
+
+This does not displace LC3 as the mandatory Bluetooth LE Audio baseline, but it signals where the **next-generation codec specification** likely heads. Watch for whether the Bluetooth SIG signals interest in sub-kbps codec profiles in the next 12–24 months, and whether HA SoC roadmaps (DEEPSONIC, Sirius successors) reserve compute headroom for CFM-style ODE-solver workloads.
+
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — Auracast audio needs on-device processing after receipt
 - [[dnn-architectures-hearing-aids]] — DNN pipelines process the received Auracast stream in real-time
@@ -119,3 +140,5 @@ For Auracast deployment, this argues for: (a) keeping the LC3/LC3plus baseline, 
 - [Auracast European Public Venue Rollout](../../sources/auracast-european-public-venue-rollout-2026.md) — Airports, transit, NHS piloting 2026-2027
 - [LC3plus Broader Implementation](../../sources/lc3plus-codec-broader-implementation-2026.md) — Improved codec quality for LE Audio music streaming
 - [Codec Intelligibility under Noise + SE (Behringer et al., 2026)](../../sources/codec-intelligibility-se-behringer-arxiv-2026.md) — Classical codecs more noise-robust than neural; SE preprocessing materially improves codec intelligibility and listening effort
+- [GN/Ampetronic Seoul Session + YouGov stigma data (May 26, 2026)](../../sources/gn-auracast-seoul-session-big-ocean-may-2026.md) — First permanent Auracast venue install in South Korea; Big Ocean K-pop performance; YouGov stigma survey across AU/UK/US
+- [CFMDCTCodec (Du, Ai et al., arXiv:2605.26812, May 2026)](../../sources/arxiv-2605-26812-cfmdctcodec-may-2026.md) — Sub-kbps (0.65 kbps) MDCT-domain neural codec with CFM-based spectral enhancement; pushes the bitrate frontier well below LC3's mandatory mode

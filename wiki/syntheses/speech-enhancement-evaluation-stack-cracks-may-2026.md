@@ -2,15 +2,17 @@
 title: The Hearing-AI Speech-Enhancement Evaluation Stack — Three Cracks in Twelve Days (May 2026)
 type: synthesis
 created: 2026-05-19
-updated: 2026-05-27
+updated: 2026-05-28
 sources:
   - codec-intelligibility-se-behringer-arxiv-2026.md
   - l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md
   - asr-too-good-to-be-true-arxiv-may-2026.md
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
+  - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
 related:
   - listening-effort-evaluation.md
   - linguistic-hallucination-speech-enhancement.md
+  - lalm-selective-auditory-attention.md
   - speech-enhancement-neural-networks.md
   - llm-based-speech-enhancement.md
   - companion-phone-speech-pipeline.md
@@ -124,8 +126,34 @@ Ten days after the third crack landed, the first concrete look at the *replaceme
 ### What Is Still Missing
 The Nakazawa paper addresses axis (1) — non-intrusive intelligibility under listener-stratified ground truth — but axes (2) word-level linguistic faithfulness and (3) HA-relevant listening effort remain unbuilt as deployable, foundation-model-fusion-class metrics. The architecture template now exists; the missing labels and benchmarks are the next bottleneck.
 
+## Update — 28 May 2026: Granularity Joins as a Third Axis
+
+Six days *before* the frame-aligned fusion paper, the same author (Nakazawa) posted a companion paper attacking CPC3 along a completely different architectural axis: predict intelligibility **word by word**, not utterance by utterance.
+
+**Nakazawa, "Word-Level Modeling with Alignment-Aware Acoustic Fusion for Text-Assisted Intelligibility Prediction in Listeners with Hearing Loss"** (arXiv:2605.23604, 22 May 2026):
+
+- **Frozen Whisper encoder** processes degraded speech; **decoder is conditioned on the canonical transcript**.
+- **Word-aligned local acoustic branch** uses character-level cross-attention; **utterance-level global branch** calibrates.
+- Per-word correctness probabilities aggregate into sentence intelligibility.
+- Results on CPC3: incorrect-word F1 = 0.778, MCC = 0.626, sentence-level Corr = 0.806, RMSE = 24.39 (baseline 24.92).
+
+### Why Granularity Is a Separable Axis
+Hearing aids do not fail uniformly across speech — they fail on the **content words** (proper nouns, sentence-final keywords, low-frequency vocabulary). A sentence-level evaluator gives a wearer "73% intelligibility." A word-level evaluator tells the OEM and regulator *which 27%*, by word class, by acoustic scene, by SNR bin. That stratification is the substrate for post-market surveillance distributions that sentence-level metrics literally cannot produce.
+
+### The Search Space Got Bigger This Week
+What started (May 5) as "three cracks in the evaluation stack" and consolidated (May 22-27) into "the constructive replacement architecture" now has **three separable search axes**:
+
+1. **Encoder choice and pairing** — Whisper / Canary / WavLM / HuBERT / Voxtral / MERT / Qwen3-ASR / ...
+2. **Fusion architecture** — frame-aligned, cross-attention, late-pool, reverse-aligned, MoE-over-experts
+3. **Output granularity** — utterance, sentence, **word**, phoneme
+
+Plus the listener-model axis (population / individual-conditioned / hearing-loss-stratified) and the binaural-preservation constraint.
+
+The two Nakazawa papers (same author, same week, same CPC3 dataset, two different axes) are the cleanest illustration this year of how fast the evaluation-metric search space is expanding. CPC3 is functionally the field's training set for *evaluation models*, not just enhancement models.
+
 ## Sources
 - [Behringer et al. — On the Influence of Speech Enhancement and Codecs on Speech Intelligibility and Listening Effort](../../sources/codec-intelligibility-se-behringer-arxiv-2026.md) — listening-effort axis
 - [Wang et al. — L3-SE: Reducing Linguistic Hallucination in LM-Based Speech Enhancement](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — linguistic-faithfulness axis
 - [de Oliveira, Peer & Gerkmann — Too Good to Be True: Modern ASR for SE Evaluation](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md) — ASR-yardstick axis
 - [Nakazawa — Frame-Aligned Fusion of Canary and WavLM on CPC3 (arXiv:2605.23619)](../../sources/frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md) — the constructive direction (foundation-model fusion + binaural preservation + CPC3-style labels)
+- [Nakazawa — Word-Level Modeling with Alignment-Aware Acoustic Fusion (arXiv:2605.23604)](../../sources/arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md) — granularity as a third axis; text-assisted reference-conditioned word-level intelligibility on the same CPC3 dataset

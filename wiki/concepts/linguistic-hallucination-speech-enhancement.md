@@ -5,7 +5,7 @@ created: 2026-05-14
 updated: 2026-05-19
 last_change: 2026-05-19 — added cross-link to speech-enhancement-evaluation-stack-cracks-may-2026 synthesis and to the asr-too-good-to-be-true source; the SE-evaluator side has the same LM-prior problem as the LM-based SE itself, compounding the gap
 sources: [l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md]
-related: [llm-based-speech-enhancement.md, speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, subjective-objective-hearing-gap.md, on-device-ml-hearing-aids.md, software-defined-medical-implants.md, listening-effort-evaluation.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
+related: [llm-based-speech-enhancement.md, speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, subjective-objective-hearing-gap.md, on-device-ml-hearing-aids.md, software-defined-medical-implants.md, listening-effort-evaluation.md, lalm-selective-auditory-attention.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
 tags: [hallucination, generative-se, llm-based-se, evaluation-metrics, faithfulness, factuality, safety, hearing-aids, audiology-metrics]
 ---
 

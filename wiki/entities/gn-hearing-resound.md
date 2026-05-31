@@ -2,10 +2,10 @@
 title: GN Hearing / ReSound
 type: entity
 created: 2026-04-15
-updated: 2026-05-12
-sources: [gn-nal-nl3-global-launch-march-2026.md, amplifon-gn-acquisition-2026.md, auracast-hearing-accessibility-2026.md, resound-vivia-launch-2025.md, aida-2-bayesian-generative-se-arxiv-2026.md]
-related: [amplifon.md, ../concepts/auracast-bluetooth-le-audio.md, ../concepts/closed-loop-data-flywheel.md, ../concepts/probabilistic-generative-models-hearing-ai.md, ../concepts/hearing-aid-prescription-formulas.md, sonova-ag.md]
-tags: [company, manufacturer, resound, gn-group, acquired, dnn, auracast, dual-chip, bayesian, gn-advanced-science, nal-nl3, fitting-software]
+updated: 2026-05-28
+sources: [gn-nal-nl3-global-launch-march-2026.md, amplifon-gn-acquisition-2026.md, auracast-hearing-accessibility-2026.md, resound-vivia-launch-2025.md, aida-2-bayesian-generative-se-arxiv-2026.md, gn-auracast-seoul-session-big-ocean-may-2026.md]
+related: [amplifon.md, ../concepts/auracast-bluetooth-le-audio.md, ../concepts/closed-loop-data-flywheel.md, ../concepts/probabilistic-generative-models-hearing-ai.md, ../concepts/hearing-aid-prescription-formulas.md, sonova-ag.md, ../concepts/hearing-care-funnel-attribution.md]
+tags: [company, manufacturer, resound, gn-group, acquired, dnn, auracast, dual-chip, bayesian, gn-advanced-science, nal-nl3, fitting-software, stigma, korea, lmic]
 ---
 
 # GN Hearing / ReSound
@@ -81,12 +81,26 @@ On 11 March 2026, GN became the **first hearing-aid manufacturer to ship a fitti
 
 NL3 layers large-scale clinical fitting datasets and real-world user feedback into the prescription target itself — making the default starting point for every fitting a data-derived prior rather than a hand-tuned acoustic-loudness model. Companion enhanced AutoREM tooling automates the real-ear verification step. Combined with GN's downstream DNN (Vivia) and Bayesian (AIDA-2) lines, this is the most complete top-to-bottom data-native fitting stack of any OEM as of mid-2026. See [[../concepts/hearing-aid-prescription-formulas]] for the cross-OEM picture.
 
+## Seoul Session at WCA 2026 — Stigma + Cultural Deployment (May 26, 2026)
+
+At the 37th World Congress of Audiology (Seoul, May 24-27, 2026), GN partnered with Ampetronic to stage "Seoul Session" — the **first permanent Auracast venue installation in South Korea**, at Kind Seoul jazz club. The event featured a live performance by **Big Ocean**, the K-pop trio whose three members all wear hearing aids and cochlear implants.
+
+Andreas Anderhov (GN APAC President) confirmed the installation is permanent, not a single-night event.
+
+In parallel, GN released **YouGov stigma data** (nationally representative online surveys, 30 January – 4 February 2026, n≈3,053 across Australia / UK / US, with n≈955 hearing-loss respondents):
+- Up to **40%** of people with hearing loss report being perceived as less intelligent or less capable
+- More than a third are read as rude or disengaged
+- More than a third report others believe they should "try harder" to hear
+
+The combined release reframes GN's positioning at WCA from product showcase to **demand-side intervention**: the Seoul install is structurally an A/B intervention on the stigma variable that supply-side optimization (chips, DNNs, fitting) has never instrumented. GN's regional president's framing — "These misconceptions don't just affect perception, they influence how environments and policies are designed" — situates GN at the intersection of accessibility infrastructure (Auracast) and the demand-side adoption funnel.
+
 ## Related Pages
 - [[amplifon]] — Acquirer; full deal terms and strategic implications
-- [[auracast-bluetooth-le-audio]] — GN/ReSound as first mover
+- [[auracast-bluetooth-le-audio]] — GN/ReSound as first mover; Seoul permanent venue install May 2026
 - [[closed-loop-data-flywheel]] — Data strategy enabled by Amplifon merger
 - [[../concepts/probabilistic-generative-models-hearing-ai]] — AIDA-2 / GN Advanced Science line
 - [[../concepts/hearing-aid-prescription-formulas]] — NL3 first-mover; cross-OEM landscape
+- [[../concepts/hearing-care-funnel-attribution]] — Seoul stigma intervention as funnel input
 
 ## Sources
 - [GN NAL-NL3 Global Launch (March 2026)](../sources/gn-nal-nl3-global-launch-march-2026.md) — World-first commercial NL3 fitting platform across ReSound Smart Fit, Beltone Solus Max, Hearing Australia Fitware
@@ -94,3 +108,4 @@ NL3 layers large-scale clinical fitting datasets and real-world user feedback in
 - [Auracast Hearing Accessibility 2026](../sources/auracast-hearing-accessibility-2026.md)
 - [ReSound Vivia Launch 2025](../sources/resound-vivia-launch-2025.md) — CES 2025 introduction, dual-chip architecture, DNN specs, Auracast
 - [AIDA-2 — A Probabilistic Generative Model for Spectral Speech Enhancement](../sources/aida-2-bayesian-generative-se-arxiv-2026.md) — GN Advanced Science + TU Eindhoven, arXiv 2603.28436, 30 Mar 2026
+- [GN/Ampetronic Seoul Session + YouGov stigma data (May 26, 2026)](../sources/gn-auracast-seoul-session-big-ocean-may-2026.md) — First permanent Auracast venue install in South Korea; Big Ocean K-pop performance; YouGov stigma survey across AU/UK/US
