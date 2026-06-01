@@ -2140,3 +2140,65 @@ These four pages were created in the 2026-05-27 LinkedIn ingest but the index ro
 - FHH 2026 Day 3 closes a three-conference pattern (AAA → WCA → FHH) where AI moved from a future-tense talking point to a present-tense workflow item in the same six weeks. The unresolved questions across all three were *trust + benefit-evidence + consent*, not capability. This is the strongest signal yet that the AI-in-hearing-care subfield has crossed into a maturity phase where the bottleneck is interpretive infrastructure, not technical capability. If FHH session recordings drop usable quotes from clinician panels in the next 7–10 days, the consent-and-trust concept page becomes the right next move.
 
 **Pages touched this ingest: 6** (3 new sources, 3 wiki pages updated, log appended).
+
+## 2026-06-01 — LinkedIn drafts ingest (2 posts)
+
+**LinkedIn posts drafted, posted to Discord (channel 1492462147127742565), emailed to door.punch_4o@icloud.com.**
+
+**Sources processed:**
+- `audien-atom-air-launch-may-28-2026.md` — **new** — Audien Hearing launches Atom Air OTC, $149 MSRP, **A1 MAX chip, single hearing mode, no app, no fitting, 24h battery, nearly-invisible ITE**. Marketing framed explicitly as anti-complexity / anti-personalization ("lightweight, discreet, affordable, easy to use; does not require apps or in-office appointments"). Positions between Atom One ($99) and Atom Pro 2 ($249) on form-factor / isolation but *identically below* Pro 2/X on personalization features. Distributed through Audien's existing 11,000+ retail location footprint (Target, Walmart, Best Buy, CVS).
+- `claude-opus-4-8-effort-controls-may-28-2026.md` — **new** — Anthropic releases Claude Opus 4.8 with **user-controlled "effort" slider** (fast = 2.5× speed, ~3× cheaper; high-effort default = better quality at comparable Opus 4.7 token spend) and **dynamic workflows** for Claude Code (hundreds of parallel sub-agents coordinated mid-task; Messages API now accepts system entries inside the messages array). First frontier-LLM release to ship continuous user-controlled cognitive-effort dosing as a UI primitive — not hidden behind opaque router labels. Released 9 days after Karpathy joined Anthropic's pre-training team (May 19); positioned by Anthropic as more honest about uncertainty and more capable of longer independent work.
+
+**Pages updated (2):**
+1. `concepts/otc-hearing-aids.md` — added the **Atom Air launch entry** under Audien Hearing in the "Mass-Retail OTC Brands" list (single mode / no app / 24h / A1 MAX / ITE, $149); added new section **"OTC Bifurcation: Personalization vs Simplicity (May 2026)"** with two-pole table (personalization pole anchored by Apple AirPods Pro 2/3, Sennheiser All-Day Clear, Lexie B2/B3, Eargo 8, Phonak Virto R Infinio, Widex Allure Clarity Boost; simplicity pole anchored by Audien Atom One / Atom Air, Ceretone, MDHearing), middle-squeeze framing tied to Sony CRE discontinuation + Lexie B3 as live experiment, data-science implications (telemetry vacuum at the simplicity pole, personalization roadmap denominator question), three open questions. Added `audien-atom-air-launch-may-28-2026.md` to frontmatter sources. Added Atom Air to Sources list at bottom. Bumped updated to 2026-06-01. Added `anti-personalization, audien-atom-air` to index tag row.
+2. `concepts/listening-effort-evaluation.md` — added new section **"The Claude Opus 4.8 Parallel — Effort as a User-Controlled Dosing Parameter (May 28 2026)"** with comparison table (continuous slider vs. binary Clarity Boost button, explicit cost trade-off vs. hidden battery cost, user dosing vs. adaptive routing, token-measurable effort vs. unmeasured listening effort). Framed the personalization-UX moat as "continuous user-controlled effort slider + real effort metric (pupillometry from earbud sensors, in-ear EEG, behavioural proxies), not perceptual surrogate." Added `claude-opus-4-8-effort-controls-may-28-2026.md` to frontmatter sources; updated `last_change` note. Added Claude 4.8 source to Sources list. Bumped updated to 2026-06-01. Updated index tag row.
+
+**Pages created (0).** Two new sources, both landing in well-developed neighbourhoods (OTC bifurcation extends the existing OTC concept page; Claude effort-dosing extends the existing listening-effort-evaluation page). Restraint policy continues.
+
+**Editorial framing:**
+- The Audien Atom Air is the cleanest single-product evidence yet of the OTC market bifurcating into two non-overlapping product hypotheses. The pre-existing `otc-hearing-aids` concept page had a strong "Sony middle-squeeze" thread already; the new section formalises it as a two-pole synthesis with an explicit anti-personalization label for the simplicity pole. Worth watching whether the simplicity pole stays at the entry tier or drifts upward as commodity-chip cost curves move.
+- The Claude Opus 4.8 effort-dosing parallel is the second time this month a frontier-LLM release has illuminated a hearing-care construct gap by operationalizing it elsewhere first (the previous was QVAC MedPsy on May 7 illuminating the companion-phone medical-LLM substrate). The pattern — *LLM industry ships X as a product feature → audiology realizes it has been the implicit objective function for decades but is operationally absent* — is now a recurring framing. Open question: which other audiology constructs are next in this pipeline (faithfulness/factuality? confidence calibration? behavior-cloning from telemetry?).
+- Both posts and both ingests deliberately avoided overlap with the active May 27–28 threads (Nakazawa CPC3 fusion-architecture × granularity, representation-centric continual learning, GN/YouGov stigma funnel, Demant Q1 + Sonova FY top-of-band cross-check). Today's two posts open fresh axes: **product-philosophy bifurcation at the OTC anchor price** (Audien) and **effort-as-dosing-primitive imported from the LLM frontier** (Anthropic).
+
+**Carry-forward flags (continuing from 2026-05-28):**
+1. `concepts/auditory-attention-decoding.md` methodology-asterisk on next AAD ingest under LOPEO protocol.
+2. `concepts/clinician-ai-consent-and-trust.md` create when next corroborating data point lands (regulator statement, professional-body position, second on-record clinician quote).
+3. **NEW:** Watch for OEM response to the Audien Atom Air anchor — does any premium OEM announce a simplified / no-app SKU within 3-6 months? If yes, the bifurcation thesis hardens; if no, the bifurcation remains a market-segment story rather than a product-portfolio one.
+4. **NEW:** Watch for the next OEM hearing-aid product release that ships a *continuous* user-controlled processing-intensity / effort slider (beyond Widex Allure's binary button). The Claude 4.8 framing predicts this becomes a 12-24 month roadmap item; first OEM to ship defines UX category.
+
+**Pages touched this ingest: 5** (2 new sources, 2 wiki pages updated content-wise, 1 index updated, log appended).
+
+---
+
+## 2026-06-01 — Daily Hearing+AI Digest ingest (11 items, 0 new sources)
+
+**Digest emailed to door.punch_4o@icloud.com at 06:47 PT.** Sections covered: 3 research papers, 4 industry news items, 2 AI/ML developments, 2 worth-watching, 5 quick-stat lines.
+
+**Items covered (all already in wiki — restraint policy applied, no duplicate source files created):**
+
+Research:
+- Columbia brain-controlled hearing aid (Nature Neuroscience, May 11) → `brain-controlled-hearing-nature-neuroscience-may-2026.md` (ingested 2026-05-12)
+- AI predicts CI language outcomes (JAMA Oto, deep transfer learning, n=278) → `ai-predicts-ci-language-outcomes.md` + `pediatric-ci-language-prediction-transfer-learning-2025.md`
+- Low-latency DL noise reduction across NH/HI/CI (Frontiers Aud & Oto) → `low-latency-dnn-noise-reduction-frontiers-2025.md`
+
+Industry:
+- Widex Allure AI RIC launch (5 markets today 2026-06-01, dual-chip, Clarity Boost button, +6 dB SNR claim, Compass Cloud 2.0) → `widex-allure-ai-may-2026.md`
+- Sonova SilentCloud acquisition (tinnitus, VA channel) → `sonova-silentcloud-acquisition-2026.md`
+- Apple AirPods hearing aid country expansion (100+ regions, May 2026) → `airpods-hearing-aid-country-expansion-may-2026.md` + `apple-airpods-india-italy-taiwan-may-21-2026.md`
+- Phonak Virto R Infinio Red Dot + iF Design awards 2026 → `phonak-virto-r-infinio-red-dot-april-2026.md`
+
+AI/ML:
+- Speech foundation models in SE loss functions (WavLM/SSSR, arXiv 2407.13333) → `speech-foundation-models-hearing-impaired-2024.md`
+- Binaural complex CNN+transformer SE (arXiv 2403.05393) → `multi-speaker-doa-binaural-ha-icassp-2026.md` covers the binaural-DOA neighbourhood
+
+Worth watching:
+- Auracast adoption (ReSound Nexia + Jabra Enhance Pro 20 active; broad ready-pending-firmware list) → multiple `auracast-*` sources
+- OTC 2026 trend report (AI/BT/self-fit/rechargeable as table stakes) → `concepts/otc-hearing-aids.md` covers; bifurcation thread from 2026-05-28 still active
+
+**Pages created (0). Sources created (0). Wiki pages updated (0).**
+
+**Editorial framing:**
+- Today's digest is the first run where **every covered item was already in the wiki via an upstream pipeline** (LinkedIn drafts, ad-hoc research, lint passes). This is a positive signal — the digest is no longer the primary source of fresh ingest because the parallel pipelines are catching items first. The digest's role is shifting from *ingest* to *retrieval-and-curation*: surfacing the day's important items from existing wiki state and routing them to the user's morning scan. Worth flagging in the next lint pass: is the digest worth running daily if it never sources new files, or should it switch to weekly trend-summary mode anchored on the synthesis pages?
+- The Widex Allure AI dual-chip "Clarity Boost button" model is the cleanest current example of the user-controlled-effort-dosing thesis from the 2026-05-28 Claude Opus 4.8 entry — a *binary* version of the continuous slider that LLM frontier ships, deployed in a hearing aid 4 days later. The carry-forward flag from 2026-05-28 (watch for first OEM continuous slider) remains open; Widex's binary-button precedent is the asymptote not yet crossed.
+
+**Pages touched this ingest: 1** (log appended only — no source or wiki page changes given full coverage).

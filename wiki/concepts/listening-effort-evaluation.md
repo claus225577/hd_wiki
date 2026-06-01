@@ -2,9 +2,9 @@
 title: Listening Effort as a First-Class Hearing-AI Metric
 type: concept
 created: 2026-05-18
-updated: 2026-05-26
-last_change: 2026-05-26 — cross-linked to the new communication-accessibility-metric concept and kathy-pichora-fuller entity; FUEL framework (Pichora-Fuller et al. 2016, Eriksholm) explicitly named as the operational specification (demand × resources × motivation) for the missing interactional layer; ISA Aram Glorig Award at WCA 2026 Seoul (26 May) named as the most senior endorsement to date that listening effort and its longitudinal aggregate need first-class metric status
-sources: [codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md, wca-2026-pichora-fuller-aram-glorig-may-26-2026.md]
+updated: 2026-06-01
+last_change: 2026-06-01 — added Claude Opus 4.8 (May 28 2026) user-controlled effort-slider parallel; first frontier-LLM release to ship continuous user-controlled cognitive-effort dosing as a UI primitive — operationalizes effort exactly as FUEL has been arguing for 30 years, and exposes the absent hearing-aid equivalent (Widex Allure binary button is the closest existing analog). Frames "continuous user-controlled effort slider measured against a real effort metric" as the personalization-UX moat for the next decade
+sources: [codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md, wca-2026-pichora-fuller-aram-glorig-may-26-2026.md, claude-opus-4-8-effort-controls-may-28-2026.md]
 related: [speech-enhancement-neural-networks.md, subjective-objective-hearing-gap.md, multimodal-hearing-assessment.md, dnn-in-hearing-aids.md, cortical-reorganization-hearing-aids.md, auracast-bluetooth-le-audio.md, companion-phone-speech-pipeline.md, linguistic-hallucination-speech-enhancement.md, communication-accessibility-metric.md, ../entities/kathy-pichora-fuller.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
 tags: [listening-effort, evaluation-metrics, cognitive-load, fatigue, outcome-measurement, audiology-metrics, pupillometry, ssq, neurosci-eval, codec-evaluation, fuel-framework, communication-accessibility]
 ---
@@ -62,6 +62,23 @@ Effort is also the channel through which hallucinated SE output is detectable �
 - **Speech enhancement (LM-based / generative):** intelligibility scores can stay high while linguistic hallucination raises effort sharply.
 - **Fitting prescription (NAL / DSL / OEM):** prescription validation studies report intelligibility, REM targets, and self-report. Effort rarely an outcome.
 
+## The Claude Opus 4.8 Parallel — Effort as a User-Controlled Dosing Parameter (May 28 2026)
+
+Anthropic shipped **Claude Opus 4.8** on May 28 2026 with a **user-controlled "effort" slider** as a first-class UI primitive: Fast mode at 2.5× the speed and ~3× lower cost, high-effort mode for harder problems, the cost-vs-quality trade-off surfaced explicitly to the user.
+
+This is the first frontier-LLM release to ship **continuous, user-controlled cognitive-effort dosing** as a direct product feature — not a backend routing decision hidden behind opaque labels ("extended thinking", "reasoning mode"). It operationalizes effort exactly as the hearing-care literature has been arguing should be the primary objective function for ~30 years (FUEL, above).
+
+| LLM (Claude 4.8) | Hearing-aid analog (today) |
+|------------------|----------------------------|
+| Continuous user-controlled effort slider | Binary AI on/off (Widex Allure Clarity Boost button, May 20 2026; otherwise adaptive routing) |
+| Cost trade-off explicit (tokens / latency / $) | Battery cost implicit / hidden; effort cost not surfaced at all |
+| User dosing decision | Scene-classifier or adaptive routing decides |
+| Effort measurable in tokens consumed | Listening effort not first-class measured on device |
+
+The hearing-aid product equivalent — "high-effort mode for 30 min in a noisy restaurant, low-effort default elsewhere, battery cost surfaced honestly" — is conceptually obvious and operationally absent. The first OEM that ships a continuous user-controlled effort slider **and** measures it against a real effort metric (pupillometry from earbud sensors, in-ear EEG, behavioural proxies) — not a perceptual surrogate like HASPI — defines the next decade of personalization UX.
+
+See [Claude Opus 4.8 release source](../../sources/claude-opus-4-8-effort-controls-may-28-2026.md).
+
 ## What "First-Class" Would Mean
 1. Effort reported alongside intelligibility in **every** SE / codec / fitting evaluation.
 2. A standardised effort metric (or a small set with cross-mapping) the field agrees on.
@@ -89,6 +106,7 @@ Effort is also the channel through which hallucinated SE output is detectable �
 - [Wang et al. — L3-SE Linguistic Hallucination in LM-Based SE (arXiv:2605.08608, May 9 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md)
 - [de Oliveira, Peer & Gerkmann — Too Good to Be True: Modern ASR for SE Evaluation (arXiv:2605.12107, May 12 2026)](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md)
 - [WCA 2026 Seoul — Pichora-Fuller Aram Glorig Award Lecture (26 May 2026)](../../sources/wca-2026-pichora-fuller-aram-glorig-may-26-2026.md) — FUEL framework (demand × resources × motivation) as the operational specification; ISA's highest honor endorses the field's evaluation gap
+- [Claude Opus 4.8 — Effort Controls & Dynamic Workflows (28 May 2026)](../../sources/claude-opus-4-8-effort-controls-may-28-2026.md) — first frontier-LLM release to ship continuous user-controlled cognitive-effort dosing as a UI primitive; operationalizes the construct hearing-care has been arguing for 30 years
 
 ## See Also
 - [[../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026]] — synthesis covering the three cracks in the SE evaluation stack identified in May 2026 (effort, linguistic faithfulness, ASR-yardstick).

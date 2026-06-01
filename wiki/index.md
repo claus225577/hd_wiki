@@ -76,7 +76,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [On-Device ML in Hearing Aids](concepts/on-device-ml-hearing-aids.md) | edge-ai, hearing-aids, inference | 2026-05-15 |
 | [Companion-Phone Speech Pipeline](concepts/companion-phone-speech-pipeline.md) | companion-phone, le-audio, auracast, voip, generative-se, trust-calibration, off-device-ai, edge-ai | 2026-05-17 |
 | [Predictive Pediatric Earmolds](concepts/predictive-pediatric-earmolds.md) | pediatric-hearing, custom-earmolds, ml-prediction, 3d-printing, ear-canal-growth, mirroring, open-source-medical | 2026-05-15 |
-| [OTC Hearing Aids](concepts/otc-hearing-aids.md) | otc, regulation, consumer, lexie, bose, sams-club, retail-channel, vertical-integration | 2026-05-10 |
+| [OTC Hearing Aids](concepts/otc-hearing-aids.md) | otc, regulation, consumer, lexie, bose, sams-club, retail-channel, vertical-integration, anti-personalization, audien-atom-air | 2026-06-01 |
 | [Small Language Models for Edge AI](concepts/small-language-models-edge-ai.md) | slm, edge-ai, tinyml, on-device, medical-llm | 2026-05-15 |
 | [Speech Enhancement Neural Networks](concepts/speech-enhancement-neural-networks.md) | deep-learning, speech, noise-reduction, late-reverberation, llm-based-se, linguistic-hallucination, diffusion-aec, companion-phone | 2026-05-17 |
 | [Teleaudiology](concepts/teleaudiology.md) | telehealth, remote-care, access | 2026-05-04 |
@@ -112,7 +112,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [User-Controlled On-Demand AI in Hearing Aids](concepts/user-controlled-on-demand-ai-hearing-aids.md) | on-demand-ai, user-control, clarity-boost, widex, hybrid-architecture, dedicated-co-processor, labeled-telemetry | 2026-05-21 |
 | [Cross-Lifespan Speech Models](concepts/cross-lifespan-speech-models.md) | speech-foundation-models, lifespan, pediatric-speech, older-adult-speech, age-distribution-shift, domain-adaptation, speaker-diarization, training-data-moat | 2026-05-21 |
 | [LALM Selective Auditory Attention and Multilingual Distractor Confusion](concepts/lalm-selective-auditory-attention.md) | lalm, selective-auditory-attention, multilingual, cocktail-party, benchmark, evaluation, hallucination, hearing-aid-ai, source-confusion, foundation-models | 2026-05-22 |
-| [Listening Effort as a First-Class Hearing-AI Metric](concepts/listening-effort-evaluation.md) | listening-effort, evaluation-metrics, cognitive-load, fatigue, pupillometry, fuel-framework, communication-accessibility | 2026-05-26 |
+| [Listening Effort as a First-Class Hearing-AI Metric](concepts/listening-effort-evaluation.md) | listening-effort, evaluation-metrics, cognitive-load, fatigue, pupillometry, fuel-framework, communication-accessibility, claude-opus-4-8-effort-dosing | 2026-06-01 |
 | [Communication Accessibility — The Missing Interactional Metric](concepts/communication-accessibility-metric.md) | communication-accessibility, fuel-framework, evaluation-metrics, outcome-measurement, interactional, conversation, telemetry | 2026-05-26 |
 | [Non-Intrusive Intelligibility Prediction](concepts/non-intrusive-intelligibility-prediction.md) | non-intrusive-metric, intelligibility-prediction, cpc3, foundation-model-fusion, evaluation-architecture, word-level-prediction | 2026-05-28 |
 | [Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)](concepts/foundation-model-fusion-speech.md) | speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture, word-level-prediction | 2026-05-28 |
