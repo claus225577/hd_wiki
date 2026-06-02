@@ -2,10 +2,10 @@
 title: Over-the-Counter Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-06-01
-sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, apple-otc-haf-usability-aja-2025.md, airpods-hearing-aid-country-expansion-may-2026.md, eargo-8-launch-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, audien-atom-air-launch-may-28-2026.md]
-related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md]
-tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage, sony-exit, anc, lexie, bose, sams-club, retail-channel, nationsbenefits, lucid, vertical-integration]
+updated: 2026-06-02
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, apple-otc-haf-usability-aja-2025.md, airpods-hearing-aid-country-expansion-may-2026.md, eargo-8-launch-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, audien-atom-air-launch-may-28-2026.md, veterans-hearing-aid-improvement-act-house-jun-2026.md]
+related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md, ../syntheses/va-as-hearing-ai-dataset-may-2026.md]
+tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage, sony-exit, anc, lexie, bose, sams-club, retail-channel, nationsbenefits, lucid, vertical-integration, va, veterans, legislation, clinically-supervised-otc]
 ---
 
 # Over-the-Counter Hearing Aids
@@ -207,6 +207,24 @@ The middle — premium OTC at $700-$1,300 with apps and some personalization —
 
 See [Audien Atom Air Launch — May 28 2026](../../sources/audien-atom-air-launch-may-28-2026.md).
 
+## Clinically-Supervised OTC — VA Pilot Legislation (June 2026)
+
+On **June 1, 2026**, the House companion to **S. 3739** was introduced by **Reps. Kevin Mullin (D-CA-15) and Keith Self (R-TX-03)**. The **Veterans Hearing Aid Improvement Act** would establish a **two-year VA pilot program** to evaluate FDA-cleared OTC hearing aids for veterans with mild-to-moderate hearing loss, under **VA clinical supervision**. Senate sponsors: **Marsha Blackburn (R-TN)** and **Adam Schiff (D-CA)**.
+
+The bill is significant beyond its veteran-specific scope because it would create — for the first time at scale — a **third OTC dispensing model** distinct from the two existing poles:
+
+| Model | Setting | Supervision | Dataset Quality |
+|-------|---------|-------------|-----------------|
+| **Retail OTC** | Best Buy / Target / Walmart / e-comm | None | Sparse, return-rate-only |
+| **Clinically-Supervised OTC (proposed)** | VA audiology clinic | VA audiologist supervised | Standardized outcomes via CPRS (APHAB, COSI, HHIE-S, AzBio, QuickSIN) |
+| **Prescription** | Audiology clinic | Full fitting + REM verification | Highest, but volume-bounded by audiologist supply |
+
+If enacted, the pilot RFP becomes a forcing function for **OTC-channel OEMs not in the existing VA cluster** (Apple AirPods Pro 2/3, Lexie, Eargo, Ceretone, Audien) to either bid or cede the channel — meaningfully widening the addressable OEM list from 3 (Oticon / Signia / Starkey) to potentially 8+.
+
+See [[../syntheses/va-as-hearing-ai-dataset-may-2026]] for the data-science implications inside the VA channel.
+
+Source: [Veterans Hearing Aid Improvement Act — House Companion](../../sources/veterans-hearing-aid-improvement-act-house-jun-2026.md).
+
 ## ANC Enters the Hearing Aid Market (April 2026)
 
 The Orka O1 Pro, debuting at AWE 2026 with Bose QuietControl ANC, introduces active noise cancellation to hearing aids for the first time. ANC has been a standard feature in consumer earbuds since ~2019 but was absent from hearing aids. This bridges the consumer audio and medical hearing worlds. See [[orka-bose-partnership]].
@@ -233,3 +251,4 @@ Given that hearing aid use is associated with **48% slower cognitive decline** (
 - [AirPods Pro 3 Hearing Health](../../sources/airpods-pro-3-hearing-health-april-2026.md) — $200 FDA-cleared disruption
 - [Sam's Club Hearing Centers — NationsBenefits Replaces Lucid (May 2026)](../../sources/sams-club-nationsbenefits-supplants-lucid-may-2026.md) — WSA loses operational role at ~450 Sam's Club hearing centers; vertical-integration of MA benefits administrator + retail dispensing
 - [Audien Atom Air Launch — May 28 2026](../../sources/audien-atom-air-launch-may-28-2026.md) — $149, no app, no fitting, single mode; anti-personalization OTC anchoring the simplicity pole of the bifurcation
+- [Veterans Hearing Aid Improvement Act — House Companion (June 1, 2026)](../../sources/veterans-hearing-aid-improvement-act-house-jun-2026.md) — bipartisan/bicameral VA OTC pilot bill; creates a structurally new clinically-supervised OTC dispensing model

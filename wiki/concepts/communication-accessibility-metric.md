@@ -2,10 +2,10 @@
 title: Communication Accessibility — The Missing Interactional Metric
 type: concept
 created: 2026-05-26
-updated: 2026-05-26
-sources: [wca-2026-pichora-fuller-aram-glorig-may-26-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md, brain-controlled-hearing-nature-neuroscience-may-2026.md, gijbels-ecological-validity-fauot-mar-2026.md]
-related: [listening-effort-evaluation.md, subjective-objective-hearing-gap.md, multimodal-hearing-assessment.md, auditory-attention-decoding.md, linguistic-hallucination-speech-enhancement.md, closed-loop-data-flywheel.md, longitudinal-hearing-phenotyping.md, ../entities/kathy-pichora-fuller.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
-tags: [communication-accessibility, fuel-framework, evaluation-metrics, outcome-measurement, interactional, conversation, audiology-metrics, telemetry, regulatory]
+updated: 2026-06-02
+sources: [wca-2026-pichora-fuller-aram-glorig-may-26-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md, brain-controlled-hearing-nature-neuroscience-may-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, breaking-the-pair-speaker-switching-arxiv-june-2026.md]
+related: [listening-effort-evaluation.md, subjective-objective-hearing-gap.md, multimodal-hearing-assessment.md, auditory-attention-decoding.md, linguistic-hallucination-speech-enhancement.md, closed-loop-data-flywheel.md, longitudinal-hearing-phenotyping.md, ../entities/kathy-pichora-fuller.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md, dyadic-interaction-preservation.md]
+tags: [communication-accessibility, fuel-framework, evaluation-metrics, outcome-measurement, interactional, conversation, audiology-metrics, telemetry, regulatory, dyadic-interaction]
 ---
 
 # Communication Accessibility — The Missing Interactional Metric

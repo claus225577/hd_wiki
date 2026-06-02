@@ -2,10 +2,10 @@
 title: Auditory Attention Decoding (AAD)
 type: concept
 created: 2026-04-15
-updated: 2026-05-22
-sources: [brain-controlled-hearing-nature-neuroscience-may-2026.md, eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md, target-speaker-extraction-ultra-low-latency-2026.md, musa-benchmark-koo-arxiv-2026.md]
-related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, ../entities/vcca-computational-audiology.md, audio-reasoning-chain-of-thought.md, lalm-selective-auditory-attention.md]
-tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, ecog, closed-loop, cocktail-party, hearing-aids, lalm, multilingual]
+updated: 2026-06-02
+sources: [brain-controlled-hearing-nature-neuroscience-may-2026.md, eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md, target-speaker-extraction-ultra-low-latency-2026.md, musa-benchmark-koo-arxiv-2026.md, mindvoice-non-invasive-neural-speech-arxiv-may-2026.md]
+related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, ../entities/vcca-computational-audiology.md, audio-reasoning-chain-of-thought.md, lalm-selective-auditory-attention.md, non-invasive-brain-to-speech.md]
+tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, ecog, closed-loop, cocktail-party, hearing-aids, lalm, multilingual, brain-to-speech]
 ---
 
 # Auditory Attention Decoding (AAD)

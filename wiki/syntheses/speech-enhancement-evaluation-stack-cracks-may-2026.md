@@ -2,13 +2,14 @@
 title: The Hearing-AI Speech-Enhancement Evaluation Stack — Three Cracks in Twelve Days (May 2026)
 type: synthesis
 created: 2026-05-19
-updated: 2026-05-28
+updated: 2026-06-02
 sources:
   - codec-intelligibility-se-behringer-arxiv-2026.md
   - l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md
   - asr-too-good-to-be-true-arxiv-may-2026.md
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
   - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
+  - breaking-the-pair-speaker-switching-arxiv-june-2026.md
 related:
   - listening-effort-evaluation.md
   - linguistic-hallucination-speech-enhancement.md
@@ -20,7 +21,9 @@ related:
   - non-intrusive-intelligibility-prediction.md
   - foundation-model-fusion-speech.md
   - clarity-prediction-challenge.md
-tags: [evaluation-metrics, speech-enhancement, asr-wer, listening-effort, linguistic-hallucination, hearing-aid-ai, synthesis, interspeech-2026, foundation-model-fusion, cpc3]
+  - dyadic-interaction-preservation.md
+  - communication-accessibility-metric.md
+tags: [evaluation-metrics, speech-enhancement, asr-wer, listening-effort, linguistic-hallucination, hearing-aid-ai, synthesis, interspeech-2026, foundation-model-fusion, cpc3, dyadic-interaction]
 ---
 
 # The Hearing-AI Speech-Enhancement Evaluation Stack — Three Cracks in Twelve Days (May 2026)
@@ -151,9 +154,31 @@ Plus the listener-model axis (population / individual-conditioned / hearing-loss
 
 The two Nakazawa papers (same author, same week, same CPC3 dataset, two different axes) are the cleanest illustration this year of how fast the evaluation-metric search space is expanding. CPC3 is functionally the field's training set for *evaluation models*, not just enhancement models.
 
+## Update — 2 June 2026: Interaction Preservation Joins as a Fifth Axis
+
+A June 1 paper closes the loop on the construct that Pichora-Fuller named at WCA Seoul on May 26 (see [[communication-accessibility-metric]]) and offers the first methodologically clean diagnostic.
+
+**Nilabh & Sharma, "Breaking the Pair: Evaluating Dyadic Interaction via Speaker Switching"** (arXiv:2606.02185, 1 June 2026):
+
+- **Dyadic Distance Matrix (DDM)** — represents a two-speaker conversation in a way that surfaces inter-speaker structure as first-class.
+- **Speaker-switch test** — replace one speaker's turns with turns from an unrelated speaker; turn-level statistics preserved, dyadic coadaptation destroyed.
+- A classifier discriminates real from switched DDMs across four embedding types and multiple classifiers (incl. ResNet-50), on **CANDOR** (naturalistic) and **LibriSpeech** (read).
+- **Key finding:** discriminability is *higher* on read speech than on naturalistic conversation — current representations capture spurious read-speech regularities better than genuine entrainment.
+
+### Why This Belongs in the Evaluation Stack
+The four axes above (signal, lexical, neural attention, effort) all operate *per utterance* or *per speaker*. None of them tests whether the **conversation as a two-person system** survives processing. A pipeline can score well on PESQ, WER, AAD, and effort proxies while still destroying the entrainment that lets a wearer follow real dialogue.
+
+The actionable application is a regression test: compute speaker-switch discriminability on the **input** and **output** of an SE pipeline. If the swap signal collapses post-SE, the pipeline is denoising the interactional substrate.
+
+### Architectural Note
+The DDM approach is **representation-agnostic** — it sits on top of whatever embeddings the upstream system produces. That makes it composable with the foundation-model-fusion architectures from the May 27-28 update: any encoder-pair × fusion architecture can be probed for interaction preservation by the same diagnostic. The fifth axis does not contradict the first four; it adds an orthogonal direction.
+
+See [[dyadic-interaction-preservation]] for the full concept page.
+
 ## Sources
 - [Behringer et al. — On the Influence of Speech Enhancement and Codecs on Speech Intelligibility and Listening Effort](../../sources/codec-intelligibility-se-behringer-arxiv-2026.md) — listening-effort axis
 - [Wang et al. — L3-SE: Reducing Linguistic Hallucination in LM-Based Speech Enhancement](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — linguistic-faithfulness axis
 - [de Oliveira, Peer & Gerkmann — Too Good to Be True: Modern ASR for SE Evaluation](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md) — ASR-yardstick axis
 - [Nakazawa — Frame-Aligned Fusion of Canary and WavLM on CPC3 (arXiv:2605.23619)](../../sources/frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md) — the constructive direction (foundation-model fusion + binaural preservation + CPC3-style labels)
 - [Nakazawa — Word-Level Modeling with Alignment-Aware Acoustic Fusion (arXiv:2605.23604)](../../sources/arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md) — granularity as a third axis; text-assisted reference-conditioned word-level intelligibility on the same CPC3 dataset
+- [Nilabh & Sharma — Breaking the Pair: Evaluating Dyadic Interaction via Speaker Switching (arXiv:2606.02185)](../../sources/breaking-the-pair-speaker-switching-arxiv-june-2026.md) — interaction preservation as a fifth, orthogonal axis

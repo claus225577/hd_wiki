@@ -2,10 +2,11 @@
 title: Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)
 type: concept
 created: 2026-05-27
-updated: 2026-05-28
+updated: 2026-06-02
 sources:
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
   - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
+  - arxiv-2606-01905-electrolaryngeal-se-jun-2026.md
 related:
   - non-intrusive-intelligibility-prediction.md
   - speech-enhancement-neural-networks.md
@@ -13,7 +14,8 @@ related:
   - cross-lifespan-speech-models.md
   - on-device-ml-hearing-aids.md
   - companion-phone-speech-pipeline.md
-tags: [speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture, word-level-prediction]
+  - non-invasive-brain-to-speech.md
+tags: [speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture, word-level-prediction, joint-modality, pathological-speech]
 ---
 
 # Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)

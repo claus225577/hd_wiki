@@ -2,11 +2,12 @@
 title: The U.S. Department of Veterans Affairs as a Hearing-Aid AI Dataset — Three OEM Cluster, May 12–19, 2026
 type: synthesis
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-06-02
 sources:
   - oticon-va-portfolio-zeal-intent-verit-may-2026.md
   - signia-active-mini-ix-may-2026.md
   - starkey-omega-ai-government-services-may-2026.md
+  - veterans-hearing-aid-improvement-act-house-jun-2026.md
 related:
   - demant-oticon.md
   - ws-audiology-signia.md
@@ -15,7 +16,8 @@ related:
   - closed-loop-data-flywheel.md
   - longitudinal-hearing-phenotyping.md
   - hearing-aid-ai-stack-2026.md
-tags: [va, veterans-affairs, distribution-channel, dataset, telemetry, closed-loop, outcomes-data, oem-cluster, synthesis]
+  - ../concepts/otc-hearing-aids.md
+tags: [va, veterans-affairs, distribution-channel, dataset, telemetry, closed-loop, outcomes-data, oem-cluster, synthesis, otc-pilot, legislation]
 ---
 
 # The VA as a Hearing-Aid AI Dataset — Three OEM Cluster, May 12–19, 2026
@@ -94,7 +96,26 @@ What an audit-clean telemetry + outcome pipeline would need to look like, at min
 - Could the Cooperative Research and Development Agreement (CRADA) mechanism — already used for Department of Defense hearing-protection work — provide the legal substrate for telemetry return?
 - What would happen if the VA RFP'd a multi-OEM standardized telemetry schema? (It hasn't. The leverage is asymmetric in the VA's favor here.)
 
+## Update — June 2, 2026: A Legislative Third Tier (OTC Pilot)
+
+On **June 1, 2026**, Reps. Kevin Mullin (D-CA-15) and Keith Self (R-TX-03) introduced the **Veterans Hearing Aid Improvement Act** in the U.S. House — the companion to **S. 3739** (Sens. Marsha Blackburn (R-TN) and Adam Schiff (D-CA)). The bill establishes a **two-year VA pilot** evaluating FDA-cleared **OTC hearing aids** for veterans with mild-to-moderate hearing loss, under VA clinical supervision.
+
+This is structurally important to this synthesis for three reasons:
+
+1. **Adds a third operational tier to the VA channel.** The May 12–19 cluster sized the channel as a two-tier prescription-premium / prescription-value contest. A pilot OTC tier under clinical supervision is a structurally new category — neither pure retail OTC nor traditional prescription.
+2. **Creates the first standardized-outcomes dataset on supervised-OTC use at scale.** If the pilot is structured with CPRS-side outcome capture (APHAB, COSI, HHIE-S, AzBio, QuickSIN), it produces the first systematic comparison of supervised OTC vs. prescription fitting in a unified EHR. The "What is Missing" telemetry+outcome bridge problem above is materially easier to solve in a pilot designed from the outset to capture outcomes.
+3. **Opens VA dispensing to OTC-channel OEMs not in the May cluster.** Apple AirPods Pro 2/3 (FDA OTC HAF), Lexie, Eargo, Ceretone, and Audien could plausibly become VA-pilot-eligible — meaningfully widening the OEM list from 3 (Oticon / Signia / Starkey) to potentially 8+. The dataset diversifies on chip architecture, fitting model, and consumer-electronics lineage in ways the prescription cluster does not.
+
+Watch items:
+- Committee referral (House VA vs. Energy & Commerce affects timeline).
+- Whether the eventual pilot RFP specifies **outcome-telemetry return** as a vendor requirement.
+- Whether Apple seeks pilot inclusion — the first time a consumer-electronics company would compete head-to-head with Big-5 OEMs inside the VA.
+- Whether the pilot solidifies **clinically-supervised OTC** as a distinct dispensing model (a third lane between retail OTC and prescription).
+
+See [Veterans Hearing Aid Improvement Act — House Companion](../../sources/veterans-hearing-aid-improvement-act-house-jun-2026.md) and [[../concepts/otc-hearing-aids]].
+
 ## Sources
 - [Oticon Expands U.S. VA Portfolio (May 2026)](../../sources/oticon-va-portfolio-zeal-intent-verit-may-2026.md)
 - [Signia Active Mini IX (May 12, 2026)](../../sources/signia-active-mini-ix-may-2026.md)
 - [Starkey — Omega AI Reaches Government Services (May 1, 2026)](../../sources/starkey-omega-ai-government-services-may-2026.md)
+- [Veterans Hearing Aid Improvement Act — House Companion (June 1, 2026)](../../sources/veterans-hearing-aid-improvement-act-house-jun-2026.md)

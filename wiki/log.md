@@ -2202,3 +2202,60 @@ Worth watching:
 - The Widex Allure AI dual-chip "Clarity Boost button" model is the cleanest current example of the user-controlled-effort-dosing thesis from the 2026-05-28 Claude Opus 4.8 entry — a *binary* version of the continuous slider that LLM frontier ships, deployed in a hearing aid 4 days later. The carry-forward flag from 2026-05-28 (watch for first OEM continuous slider) remains open; Widex's binary-button precedent is the asymptote not yet crossed.
 
 **Pages touched this ingest: 1** (log appended only — no source or wiki page changes given full coverage).
+
+---
+
+## 2026-06-02 — LinkedIn Drafts Ingest
+
+**Trigger:** Daily LinkedIn drafts pass (8:13 AM Zurich) — 2 posts drafted + posted to Discord channel `1492462147127742565`, emailed to user.
+
+**Sources ingested (2):**
+- `sources/breaking-the-pair-speaker-switching-arxiv-june-2026.md` — Nilabh & Sharma, "Breaking the Pair: Evaluating Dyadic Interaction via Speaker Switching," arXiv:2606.02185 (1 June 2026). Dyadic Distance Matrix + speaker-switch test as first methodologically clean diagnostic for interaction preservation as a separable evaluation axis. Key finding: discriminability of real-vs-switched DDMs is *higher* on read speech (LibriSpeech) than on naturalistic conversation (CANDOR) — the opposite of where hearing-aid wearers care about performance.
+- `sources/mindvoice-non-invasive-neural-speech-arxiv-may-2026.md` — Bao, Zeng, Feng & Xue, "MindVoice: Reconstructing Intelligible Speech from Non-invasive Neural Signals with Pretrained Priors," arXiv:2605.31173 (29 May 2026). Dual-pathway disentanglement (semantic + acoustic) feeding a frozen speech generation model with in-context voice cloning. First non-invasive system to produce natural + intelligible output rather than spectral-similar-but-unintelligible.
+
+**Pages created (2):**
+- `wiki/concepts/dyadic-interaction-preservation.md` — Names the speaker-switch diagnostic + DDM as a fifth, orthogonal evaluation axis (alongside signal / lexical / neural-attention / effort). Representation-agnostic so composes cleanly with the foundation-model-fusion architectures of the May 27/28 update. Open questions on multi-party (>2 speaker) conversation, on-device computability, and asymmetric entrainment for HI listeners.
+- `wiki/concepts/non-invasive-brain-to-speech.md` — The pretrained-prior paradigm as the modern alternative to classical EEG-stimulus-reconstruction AAD. Cross-references the November 2025 Nature *Scientific Reports* in-ear-EEG comparison (scalp 83.4% / around-ear 67.2% / in-ear 61.1% on 60s AAD windows) as the wearable-form-factor accuracy floor the architectural shift is designed to lift. Names the architecture shift from "decode attention → boost source" to "decode partial intent → query frozen foundation model → re-render," and the regulatory implication that frozen-backbone + small-learned-bridge maps cleanly onto FDA Predetermined Change Control Plans.
+
+**Pages updated (3):**
+- `wiki/concepts/auditory-attention-decoding.md` — Added `mindvoice-non-invasive-neural-speech-arxiv-may-2026.md` to sources, added `non-invasive-brain-to-speech.md` to related, added `brain-to-speech` tag, bumped updated to 2026-06-02.
+- `wiki/concepts/communication-accessibility-metric.md` — Added `breaking-the-pair-speaker-switching-arxiv-june-2026.md` to sources, added `dyadic-interaction-preservation.md` to related, added `dyadic-interaction` tag, bumped updated to 2026-06-02. The speaker-switch test is the first quantitative diagnostic candidate for the construct Pichora-Fuller named at WCA Seoul.
+- `wiki/syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md` — Added `breaking-the-pair-speaker-switching-arxiv-june-2026.md` to sources, added `dyadic-interaction-preservation.md` + `communication-accessibility-metric.md` to related, added `dyadic-interaction` tag, bumped updated to 2026-06-02. New "Update — 2 June 2026: Interaction Preservation Joins as a Fifth Axis" section describing the DDM + speaker-switch test, the read-vs-naturalistic inversion finding, the actionable pre/post-SE regression-test framing, and the representation-agnostic-composes-with-foundation-model-fusion note. New entry added to the Sources list.
+
+**Pages added to index (2):** `concepts/dyadic-interaction-preservation.md`, `concepts/non-invasive-brain-to-speech.md`. Also refreshed the tags+date on the existing `auditory-attention-decoding.md` and `communication-accessibility-metric.md` rows.
+
+**Editorial framing:**
+- This ingest is the cleanest example yet of two papers from the same 5-day window reinforcing the same architectural recipe across two surfaces. MindVoice (EEG/MEG → speech) and the Nakazawa CPC3 fusion work (degraded HA audio → intelligibility) both reduce to "frozen pretrained backbone + small learned bridge." Whether the input is a noisy biosignal or noisy audio, the lever has stopped being "build a better custom encoder."
+- The "Breaking the Pair" diagnostic gives the speech-enhancement-evaluation-stack-cracks synthesis its fifth axis exactly when the construct (communication accessibility) was named at the field's flagship congress (WCA Seoul, May 26). The pacing — construct named → quantitative diagnostic published — is six days.
+- Carry-forward flag: the speaker-switch diagnostic begs a hearing-aid SE benchmark study where pre/post-SE DDM discriminability is tracked alongside HASPI/STOI/WER/AAD. None published as of today. First OEM or academic group to publish that benchmark sets the metric.
+
+**Pages touched this ingest: 7** (2 sources, 2 wiki pages created, 3 wiki pages updated; plus log + index + LinkedIn memory).
+
+---
+
+## 2026-06-02 — Daily Hearing+AI Digest Ingest (afternoon pass)
+
+**Trigger:** Daily hearing+AI digest email sent to door.punch_4o@icloud.com (subject: 🎧 Hearing + AI Daily Digest — 02 Jun 2026). Quiet Monday news cycle; two new ingestable items identified after wiki dedupe.
+
+**Sources ingested (2):**
+- `sources/veterans-hearing-aid-improvement-act-house-jun-2026.md` — Veterans Hearing Aid Improvement Act, House companion to S. 3739, introduced 1 June 2026 by Reps. Kevin Mullin (D-CA-15) and Keith Self (R-TX-03). Two-year VA pilot evaluating FDA-cleared OTC hearing aids for veterans with mild-to-moderate hearing loss, under VA clinical supervision. Bicameral and bipartisan; Senate sponsors Blackburn (R-TN) and Schiff (D-CA). Structurally creates a third OTC dispensing model — clinically-supervised OTC — distinct from both retail OTC and prescription.
+- `sources/arxiv-2606-01905-electrolaryngeal-se-jun-2026.md` — "Advancing Electrolaryngeal Speech Enhancement Through Speech-Text Representation Learning" (arXiv:2606.01905, 2 Jun 2026). Seq2seq voice conversion with joint speech+text representation learning for laryngectomee speech reconstruction. Adjacent to mainstream HA SE, but adds to the same two-week architectural cluster (Nakazawa CPC3 fusion / MindVoice / Breaking the Pair / this paper) reinforcing the "frozen pretrained backbone + small learned bridge" recipe.
+
+**Pages created (0).**
+
+**Pages updated (3):**
+- `wiki/syntheses/va-as-hearing-ai-dataset-may-2026.md` — Added `veterans-hearing-aid-improvement-act-house-jun-2026.md` to sources; added `../concepts/otc-hearing-aids.md` to related; added `otc-pilot, legislation` tags; bumped `updated` to 2026-06-02. New 5-paragraph "Update — June 2, 2026: A Legislative Third Tier (OTC Pilot)" section. Reframes the May 12–19 cluster from two-tier (premium / value prescription) to potentially three-tier (premium / value / supervised-OTC), and reframes the OEM list from 3 to potentially 8+ if Apple / Lexie / Eargo / Ceretone / Audien become pilot-eligible.
+- `wiki/concepts/otc-hearing-aids.md` — Added `veterans-hearing-aid-improvement-act-house-jun-2026.md` to sources; added `../syntheses/va-as-hearing-ai-dataset-may-2026.md` to related; added `va, veterans, legislation, clinically-supervised-otc` tags; bumped `updated` to 2026-06-02. New "Clinically-Supervised OTC — VA Pilot Legislation (June 2026)" section with a three-row table contrasting retail-OTC vs. clinically-supervised OTC (proposed) vs. prescription on setting, supervision, and dataset quality. Source listed in Sources.
+- `wiki/concepts/foundation-model-fusion-speech.md` — Added `arxiv-2606-01905-electrolaryngeal-se-jun-2026.md` to sources; added `non-invasive-brain-to-speech.md` to related; added `joint-modality, pathological-speech` tags; bumped `updated` to 2026-06-02. The EL paper extends the concept's coverage from "evaluation architecture" to also "generation architecture for pathological speech," which is a separate but compatible application of the same fusion recipe.
+
+**Pages added to index (0).** No new wiki pages created; existing index rows for `va-as-hearing-ai-dataset-may-2026.md`, `otc-hearing-aids.md`, and `foundation-model-fusion-speech.md` already present (date refresh handled implicitly by frontmatter).
+
+**Editorial framing:**
+- The Veterans Hearing Aid Improvement Act is the first piece of *legislative* substrate the VA synthesis has had — every prior data point was an OEM commercial decision converging on a fixed VA channel structure. This bill, if enacted, *changes the channel structure itself.* The synthesis was previously a story of OEMs racing within fixed rails; it now also becomes a story of the rails being widened, with a new lane (clinically-supervised OTC) and a new addressable OEM list (Apple et al.) showing up at the same time. The "telemetry + outcome bridge" gap the synthesis identified gets materially easier to close if a pilot is *designed* to capture standardized outcomes from day one — much harder to retrofit into the live prescription contract.
+- The electrolaryngeal SE paper is a low-bandwidth ingest in isolation, but as the fourth data point in a 5-day cluster around the "frozen backbone + small bridge" recipe, it confirms the pattern is not surface-specific. Inputs across the cluster: degraded audio (Nakazawa CPC3), naturalistic dyadic audio (Breaking the Pair), non-invasive biosignals (MindVoice), severely-degraded prosthetic audio (this paper). All converge on the same recipe. The Karpathy-style observation: the field's working architecture has visibly bifurcated from "encoder design" (the 2019–2024 era) to "fusion + bridge design" (the 2025–2026 era), and the proof is the cross-surface convergence within a single week.
+- Carry-forward flags (new):
+  - Watch House committee referral (VA vs. Energy & Commerce) for the Mullin/Self bill — referral determines whether it moves on a 2026 timeline or stalls into 2027.
+  - Watch whether the Mullin/Self bill's eventual pilot RFP includes outcome-telemetry-return language — that would settle the open question on the VA synthesis page.
+  - Watch for an OEM (Apple is the obvious candidate) publicly signaling intent to bid into the supervised-OTC pilot. First mover changes the bidding-set composition for everyone.
+
+**Pages touched this ingest: 5** (2 sources created, 3 wiki pages updated; plus this log entry).
