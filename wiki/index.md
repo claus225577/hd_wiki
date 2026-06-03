@@ -121,6 +121,9 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Non-Intrusive Intelligibility Prediction](concepts/non-intrusive-intelligibility-prediction.md) | non-intrusive-metric, intelligibility-prediction, cpc3, foundation-model-fusion, evaluation-architecture, word-level-prediction | 2026-05-28 |
 | [Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)](concepts/foundation-model-fusion-speech.md) | speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture, word-level-prediction | 2026-05-28 |
 | [Continual Learning for Hearing AI](concepts/continual-learning-hearing-ai.md) | continual-learning, representation-geometry, personalization, foundation-models, on-device-adaptation | 2026-05-27 |
+| [Training–Deployment Distribution Gap in Hearing-Aid ML](concepts/training-deployment-distribution-gap.md) | training-loop, closed-loop-dynamics, distribution-shift, deployment-gap, methodology, dsp, on-chip | 2026-06-03 |
+| [Acoustic Feedback Cancellation in Hearing Aids](concepts/acoustic-feedback-cancellation.md) | acoustic-feedback, dfc, howl, closed-loop, deep-feedback-cancellation, dsp, hearing-aid-fundamentals | 2026-06-03 |
+| [Brain-Aligned Speech Foundation Models](concepts/brain-aligned-speech-foundation-models.md) | whisper, foundation-models, brain-alignment, ecog, auditory-cortex, layer-selection, representational-alignment, phoneme-encoding | 2026-06-03 |
 
 ## Entities
 

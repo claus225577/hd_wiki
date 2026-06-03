@@ -2,10 +2,10 @@
 title: Phonak
 type: entity
 created: 2026-04-15
-updated: 2026-05-05
-sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md, phonak-ai-excellence-award-march-2026.md, phonak-usa-pickleball-partnership-spring-2026.md, phonak-pickleball-aaa-2026-deeper-coverage.md, hearingtracker-2026-premium-rankings.md, phonak-infinio-if-design-award-2026.md, phonak-virto-r-infinio-red-dot-april-2026.md]
-related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, gn-hearing-resound.md, demant-oticon.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/eu-ai-act-medical-devices.md]
-tags: [company, brand, phonak, sonova, deepsonic, ai-hearing-aid, dual-chip, clinical-trial, marketing, sports-partnership]
+updated: 2026-06-03
+sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md, phonak-ai-excellence-award-march-2026.md, phonak-usa-pickleball-partnership-spring-2026.md, phonak-pickleball-aaa-2026-deeper-coverage.md, hearingtracker-2026-premium-rankings.md, phonak-infinio-if-design-award-2026.md, phonak-virto-r-infinio-red-dot-april-2026.md, hearingtracker-ai-hearing-aids-background-noise-jun-2026.md]
+related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, gn-hearing-resound.md, demant-oticon.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/eu-ai-act-medical-devices.md, ws-audiology-signia.md]
+tags: [company, brand, phonak, sonova, deepsonic, ai-hearing-aid, dual-chip, clinical-trial, marketing, sports-partnership, remote-mic-equivalent-snr]
 ---
 
 # Phonak
@@ -95,6 +95,13 @@ Note: ops/sec comparisons should be treated cautiously — different architectur
 - **Ranked #1** in HearingTracker's 2026 premium hearing aid rankings (Phonak Infinio Sphere)
 - Ahead of Starkey Genesis AI (#2) and Oticon Intent (#3)
 - Validates the DEEPSONIC dual-chip compute advantage in consumer/expert composite scoring
+
+## HearingTracker Background-Noise Field Review (June 2, 2026)
+[HearingTracker — Can AI Hearing Aids Finally Break Through Background Noise?](../sources/hearingtracker-ai-hearing-aids-background-noise-jun-2026.md) places **Infinio Ultra Sphere / DEEPSONIC** at the center of the first independent-lab evidence that a dedicated-AI hearing aid delivers **SNR-in-noise gains comparable to those previously achievable only with a remote microphone** — historically the SNR ceiling for non-CI hearing aids. The trade-offs the review flags now belong on the patient-counseling page:
+- **Battery life drops to ~10–11 hours** when the AI block is active (down from ~20+ hours conventional).
+- **Larger form factor** than non-AI Phonak peers in the same line.
+- **Premium pricing tier only** — no DEEPSONIC variant in OTC / value tier as of June 2026.
+- Pairs the DEEPSONIC story with the **Widex Allure / Clarity Boost** story (see [[ws-audiology-signia]]) as the two flagship instances of the **dedicated-AI-co-processor** category. The framing implication is that "AI hearing aid" is no longer a marketing category but a measurable-SNR category, and Phonak is one of two products defining what the term means.
 - AI processing is now table stakes for premium ranking — all three top picks are AI-powered
 
 ## Position Within Sonova

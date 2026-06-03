@@ -2,11 +2,12 @@
 title: Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)
 type: concept
 created: 2026-05-27
-updated: 2026-06-02
+updated: 2026-06-03
 sources:
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
   - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
   - arxiv-2606-01905-electrolaryngeal-se-jun-2026.md
+  - arxiv-2606-02305-whisper-ecog-ciferri-jun-2026.md
 related:
   - non-intrusive-intelligibility-prediction.md
   - speech-enhancement-neural-networks.md
@@ -15,7 +16,8 @@ related:
   - on-device-ml-hearing-aids.md
   - companion-phone-speech-pipeline.md
   - non-invasive-brain-to-speech.md
-tags: [speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture, word-level-prediction, joint-modality, pathological-speech]
+  - brain-aligned-speech-foundation-models.md
+tags: [speech-foundation-models, encoder-fusion, mid-fusion, wavlm, canary, whisper, evaluation-architecture, word-level-prediction, joint-modality, pathological-speech, layer-selection, brain-alignment]
 ---
 
 # Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)
@@ -61,8 +63,13 @@ The implication is that **granularity (utterance / sentence / word / phoneme)** 
 
 The two Nakazawa papers (same author, same week, same dataset, two different axes) are the cleanest illustration this year of where evaluation models for hearing-aid-processed speech are actually heading.
 
+## Layer Selection Is a Fourth Axis (June 1, 2026)
+Ciferri et al. (arXiv:2606.02305, ICLR 2026 Workshop on Representational Alignment) mapped Whisper's internal representations to human ECoG responses during naturalistic speech listening. **Intermediate layers — not the last hidden state — correlate most strongly with auditory cortex activity.** Their attention analysis recovers anatomically coherent phoneme-category organization in cortex from those intermediate representations.
+
+For fusion architectures the implication is direct: the per-encoder layer index is not fixed at the final hidden state by convention. **Which layer of each encoder you fuse** is a search axis with potentially large gains and roughly zero engineering cost. See [[brain-aligned-speech-foundation-models]].
+
 ## Open Search Space
-The competitive frontier for the next 12 months is the **encoder-pair × fusion-architecture × granularity** grid:
+The competitive frontier for the next 12 months is the **encoder-pair × fusion-architecture × granularity × layer-index** grid:
 - Whisper × WavLM
 - Canary × HuBERT
 - MERT × WavLM

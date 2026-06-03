@@ -2259,3 +2259,54 @@ Worth watching:
   - Watch for an OEM (Apple is the obvious candidate) publicly signaling intent to bid into the supervised-OTC pilot. First mover changes the bidding-set composition for everyone.
 
 **Pages touched this ingest: 5** (2 sources created, 3 wiki pages updated; plus this log entry).
+
+---
+
+## 2026-06-03 — Ingest: DFC-IL (Voit & Doclo) + Whisper↔ECoG (Ciferri et al.)
+
+**Sources added (2):**
+- `sources/arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md` — "In-the-Loop Training of Deep Feedback Cancellation for Hearing Aids" (Voit & Doclo, arXiv:2606.03832, 2 Jun 2026). First demonstration that integrating the neural feedback canceller directly into the closed-loop optimisation during training holds stability at high amplification gains where open-loop-trained DFC begins to howl. Methodology argument with implications well beyond acoustic feedback.
+- `sources/arxiv-2606-02305-whisper-ecog-ciferri-jun-2026.md` — "Mapping Whisper Representations to Human ECoG Responses with Interpretable Time-Resolved Neural Encoding" (Ciferri, Boccato, Olak, Ferrante, Toschi, arXiv:2606.02305, 1 Jun 2026, ICLR 2026 Workshop on Representational Alignment). Intermediate Whisper layers correlate most strongly with auditory cortex ECoG responses; attention analysis recovers anatomically coherent phoneme-category organization. Layer choice exposed as a free hyperparameter for downstream hearing-AI work.
+
+**Pages created (3):**
+- `wiki/concepts/training-deployment-distribution-gap.md` — New concept page generalising the DFC-IL methodology argument across hearing-aid ML sub-problems (SE, beamforming, scene classification, own-voice detection, noise reduction). Closes-the-gap toolkit: in-the-loop training, dynamics-level domain randomization, telemetry-grounded fine-tuning, curriculum, PCCPs.
+- `wiki/concepts/acoustic-feedback-cancellation.md` — New concept page covering the canonical case for DFC-IL: closed-loop howl, classical adaptive filters, neural DFC architectures, the open-loop-vs-in-the-loop training gap, and product implications (profound-loss candidacy, open-fit RIC form factor, on-chip ordering).
+- `wiki/concepts/brain-aligned-speech-foundation-models.md` — New concept page on intermediate-layer cortical alignment in speech foundation models. Connects Ciferri 2026 to existing AAD, non-invasive brain-to-speech, and cortical reorganization threads. Names the layer-selection hyperparameter as a free moat; raises open questions on layer drift across model versions, cross-subject generalization, and wearer-cortex reorganization.
+
+**Pages updated (1):**
+- `wiki/index.md` — Three new concept rows added (`training-deployment-distribution-gap.md`, `acoustic-feedback-cancellation.md`, `brain-aligned-speech-foundation-models.md`).
+
+**Pages touched this ingest: 6** (2 sources, 3 concept pages, 1 index update; plus this log entry).
+
+**Editorial framing:**
+- DFC-IL is structurally a methodology paper masquerading as a feedback-cancellation paper. The interesting move is that it reframes "deploy a bigger neural canceller" as the wrong lever and "close the gap between training conditions and deployment conditions" as the right one. That argument generalises to speech enhancement (trained on iid noise, deployed into wearer scene), beamforming (trained on static geometry, deployed onto a moving head), scene classification (trained on balanced corpus, deployed into wearer's long-tail distribution), and own-voice detection (trained on studio speech, deployed into cough/chewing/motion). The on-device ML stack has been thinking architecturally; the lever DFC-IL exposes is dynamical.
+- Ciferri et al. is the cleanest demonstration that Whisper specifically has a brain-aligned middle layer. The hearing-AI implication is that the field's reflex of tapping the last hidden state for downstream features is probably wrong for perceptual targets. The harder follow-on question is whether the brain-aligned layer is stable across model versions — when OpenAI ships Whisper v4 or v5, the cortex-correlated layer index could move, and OEMs adopting these models for fitting software or evaluation would need a layer-search protocol baked into every adoption.
+- Carry-forward flags:
+  - Track whether anyone publishes an in-the-loop training variant for speech enhancement or beamforming within the next 90 days — that would be the first generalization of the DFC-IL methodology beyond feedback cancellation.
+  - Track Whisper v4/v5 release and whether anyone reproduces the Ciferri layer-alignment analysis on the new version.
+  - Open question: what does the brain-aligned layer index look like for *hearing-impaired* cortex (vs the normal-hearing cohort in Ciferri's ECoG dataset)? Almost certainly different given the Becker 2026 cortical-reorganization finding, but no one has measured it.
+
+## 2026-06-03 — Ingest: HearingTracker AI Hearing Aids vs. Background Noise (daily digest companion)
+
+**Sources added (1):**
+- `sources/hearingtracker-ai-hearing-aids-background-noise-jun-2026.md` — HearingTracker editorial/lab review (2 Jun 2026) concluding that dedicated AI co-processor devices (Phonak Sphere / DEEPSONIC and Widex Allure / Clarity Boost) deliver SNR-in-noise gains comparable to a remote microphone — the first non-CI on-aid alternative to that historical ceiling — at the cost of battery (~10–11 hr when AI block active), size, and premium pricing.
+
+**Pages created (0).**
+
+**Pages updated (2):**
+- `wiki/entities/phonak.md` — Added new source to `sources:`; added `ws-audiology-signia.md` to `related:`; added `remote-mic-equivalent-snr` tag; bumped `updated` to 2026-06-03. New "HearingTracker Background-Noise Field Review (June 2, 2026)" section placing DEEPSONIC in the first independent-lab cohort to challenge the remote-mic SNR ceiling, with explicit battery/size/price trade-off list now suitable for patient counseling.
+- `wiki/concepts/dnn-in-hearing-aids.md` — Added new source to `sources:`; bumped `updated` to 2026-06-03; appended sources-section bullet describing the field-level review.
+
+**Pages added to index (0).** No new wiki pages; existing index rows already cover updated pages.
+
+**Editorial framing:**
+- This is the first source that frames "dedicated AI co-processor in a hearing aid" as a **product category** rather than a per-brand feature. Phonak DEEPSONIC and Widex Clarity Boost are now grouped as the two flagship members; the implicit prediction is that this category is what "AI hearing aid" will mean by the end of 2026 (anything without a dedicated co-processor falls below the SNR floor).
+- The "remote-mic-equivalent SNR" framing is the most consequential. For two decades the remote microphone (Roger, Multi-Mic) defined the SNR ceiling for HI listeners. If lab measurements hold up under independent replication, the on-aid AI category collapses the remote-mic use case into the hearing aid itself — with downstream implications for the Roger / Phonak ecosystem, ALD reimbursement codes, and assistive listening venue infrastructure (Auracast intersects here).
+- Pairs cleanly with the digest-day's other items: the Voit & Doclo DFC-IL paper (ingested earlier today) is the methodology-paper proof that the next big lever for on-aid AI is training-loop closure, not architecture; the HearingTracker review is the field-level proof that the **current** on-aid AI generation already pays off measurably for the dedicated-co-processor cohort.
+
+**Carry-forward flags:**
+- Track which independent lab published the SNR numbers — HearAdvisor is the most likely source. If HearAdvisor's full report appears, it becomes a primary source to ingest with explicit test conditions.
+- Track whether Sonova / WSA publish their own controlled comparisons of DEEPSONIC vs. Clarity Boost on a common benchmark (matrix sentence in noise + reverb). Cross-OEM comparability is the obvious gap.
+- Track when (not if) dedicated-AI-co-processor silicon migrates down into the mid-tier and OTC categories. The bifurcation thesis on the otc-hearing-aids concept page predicts 2027–2028; explicit silicon roadmap leaks would tighten this.
+
+**Pages touched this ingest: 4** (1 source created, 2 wiki pages updated, plus this log entry).
