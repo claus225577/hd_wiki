@@ -2,8 +2,8 @@
 title: On-Device ML in Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-05-17
-sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, world-models-continual-learning-2026.md, interspeech-2026-audio-reasoning-challenge.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, edge-ai-audio-embedded-world-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, tinyml-speech-recognition-arduino-2025.md, anc-open-ear-smart-glasses-cmu-2026.md, meta-synthetic-data-distillation-april-2026.md, google-gemma-4-open-models-april-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, aondevices-edge-ai-ces-2026.md, tiny-ml-to-tiny-dl-survey-acm-2026.md, tf-mlpnet-tiny-speech-separation-arxiv-2026.md]
+updated: 2026-06-04
+sources: [small-language-models-edge-2026.md, large-sensor-models-arxiv-2026.md, world-models-continual-learning-2026.md, interspeech-2026-audio-reasoning-challenge.md, google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, applied-brain-research-ssm-edge-audio-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, multi-stage-low-latency-enhancement-ha-arxiv-2026.md, edge-ai-audio-embedded-world-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, tinyml-speech-recognition-arduino-2025.md, anc-open-ear-smart-glasses-cmu-2026.md, meta-synthetic-data-distillation-april-2026.md, google-gemma-4-open-models-april-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, qualcomm-s5-s3-gen3-sound-platforms-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, aondevices-edge-ai-ces-2026.md, tiny-ml-to-tiny-dl-survey-acm-2026.md, tf-mlpnet-tiny-speech-separation-arxiv-2026.md, fpga-sudormrf-feasibility-radboud-june-2026.md]
 related: [small-language-models-edge-ai.md, large-sensor-models.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, world-models-hearing-ai.md, audio-reasoning-chain-of-thought.md, model-compression.md, ../entities/google-research.md, model-context-protocol.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, ../entities/envoy-medical.md, tinyml-edge-ai.md, active-noise-cancellation.md, mamba-architecture.md, synthetic-data-for-hearing-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md, training-deployment-distribution-gap.md, acoustic-feedback-cancellation.md]
 tags: [edge-ai, hearing-aids, inference, dsp, chips, deepsonic, neural-processing, quantization, compute-in-memory, state-space-models, hearable-intelligence, convergence, synthetic-data, llm-based-se]
 ---
@@ -74,6 +74,20 @@ arXiv:2508.03047. First on-device real-time neural speech-separation network for
 - **1ms latency DNN** targets are being pursued for noise reduction blocks
 - Causal (non-lookahead) architectures are required — no future audio frames
 - This rules out most standard Transformer architectures without modification
+
+### First Concrete Embedded-FPGA Benchmark (June 2026)
+**Olalere, Altin, van der Heijden, van Gerven** (Radboud Donders + Columbia Zuckerman, arXiv:2606.04221, 4 Jun 2026) report the first peer-reviewable third-party benchmark of a DNN speech-enhancement model on a standard embedded FPGA platform:
+- **Platform:** AMD-Xilinx Kria KV260; architecture: SuDoRM-RF++; precisions: FP32 + 16-bit fixed-point.
+- **Denoising first-sample latency: 9.7 ms** — under the 10 ms clinical threshold.
+- **Speech separation first-sample latency: 16.0 ms** — above the threshold.
+- **16-bit fixed-point halves model memory footprint with no measurable degradation in objective quality.**
+- **Headline finding: first-sample latency tracks with on-chip parameter caching, not arithmetic throughput.**
+
+> **Data movement is the primary bottleneck, not compute.**
+
+This reframes the on-chip-AI race. For two years the framing has been compute (DEEPSONIC, Sphere Infinio, Fortell ~235× custom AI chip per IJA May 2026, Tufts neuro-symbolic). The Olalere et al. measurement says: once you hit a reasonable compute budget, the binding constraint shifts to memory hierarchy / cache hits / parameter streaming. The architectural implication favors streaming-friendly architectures (state-space models, recurrent layers, single-pass causal transformers) over memory-hungry U-Net-on-spectrograms designs that dominate academic publishing.
+
+Reinforces — but at a different abstraction layer than — the [[compute-in-memory]] direction (Michigan RRAM, April 2026): rather than redesigning the silicon, the immediate lever is matching the model class to existing memory access patterns. See [[../sources/fpga-sudormrf-feasibility-radboud-june-2026]].
 
 ## Training Data Scales
 On-device models are typically trained in the cloud on massive datasets:
@@ -160,3 +174,4 @@ Three companies are developing fully implantable cochlear implants with no exter
 - [Multi-Stage Low-Latency Enhancement for HAs](../../sources/multi-stage-low-latency-enhancement-ha-arxiv-2026.md) — Phase-aware multi-stage system within 5ms latency; head rotation integration
 - [Edge AI Audio — Embedded World 2026](../../sources/edge-ai-audio-embedded-world-2026.md) — Synaptics SR80, AONDevices, Aizip+PYOUR supply chain maturation
 - [HHTM: Convergence of AI, Audio, and Hearing Devices](../../sources/hhtm-convergence-ai-audio-hearing-devices-2026.md) — Consumer-medical device convergence analysis
+- [FPGA SuDoRM-RF++ feasibility benchmark (arXiv 2606.04221, Jun 2026)](../../sources/fpga-sudormrf-feasibility-radboud-june-2026.md) — First published embedded-FPGA DNN benchmark for hearing aids; data movement, not compute, is the bottleneck

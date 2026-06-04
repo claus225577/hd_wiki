@@ -2310,3 +2310,61 @@ Worth watching:
 - Track when (not if) dedicated-AI-co-processor silicon migrates down into the mid-tier and OTC categories. The bifurcation thesis on the otc-hearing-aids concept page predicts 2027–2028; explicit silicon roadmap leaks would tighten this.
 
 **Pages touched this ingest: 4** (1 source created, 2 wiki pages updated, plus this log entry).
+
+---
+
+## 2026-06-04 — LinkedIn Drafts Ingest
+
+**Trigger:** Daily LinkedIn post generation; two arXiv papers submitted 4 Jun 2026.
+
+**Sources created (2):**
+- `sources/dal-differentiable-auditory-loop-google-june-2026.md` — Ballesta Rosen, Mikiel-Hunter, Maclaren, Collins, Lyon, Carlile, arXiv:2606.04103 (Google Research Australia + Macquarie University, 4 Jun 2026).
+- `sources/fpga-sudormrf-feasibility-radboud-june-2026.md` — Olalere, Altin, van der Heijden, van Gerven, arXiv:2606.04221 (Radboud Donders + Columbia Zuckerman, 4 Jun 2026).
+
+**Pages created (1):**
+- `wiki/concepts/differentiable-cochlear-models.md` — new concept page for differentiable cochlear models as a loss-function substrate. Covers CARFAC + CARFAC-JAX, DAL as the first end-to-end framework, NAP/SAI loss primitives, three field implications (prescription → cost function, population priors as warm starts, strategic substrate ownership), open questions.
+
+**Pages updated (3):**
+- `wiki/entities/google-research.md` — added section 5 (Hearing-Aid R&D — Google Research Australia) covering DAL + CARFAC v2; reframes Google as substrate-provider for the perceptual loss function; added DAL source row; new related links + tags; bumped updated to 2026-06-04.
+- `wiki/concepts/on-device-ml-hearing-aids.md` — added First Concrete Embedded-FPGA Benchmark (June 2026) subsection under Latency Constraints with the Olalere et al. numbers (9.7 ms denoising, 16.0 ms separation, 16-bit half-memory), the data-movement-not-compute headline, and the architectural implication favoring streaming-friendly architectures over U-Net-on-spectrograms; added FPGA source row; bumped updated to 2026-06-04.
+- `wiki/index.md` — added differentiable-cochlear-models row to Concepts table; prepended new ingest summary to top.
+
+**Underlying LinkedIn posts:**
+1. Google Research Australia's Differentiable Auditory Loop (DAL) puts CARFAC inside the backprop graph — fitting target stops being a prescription (NAL-NL3, DSL v5) and becomes a per-wearer cost function in cochlear-neural-activity space; whoever owns the differentiable perceptual model owns the loss function the next decade of personalization will be optimized against. Google just open-sourced theirs.
+2. First concrete on-chip DNN benchmark for hearing aids (Radboud + Columbia Zuckerman, Kria KV260): denoising clears the 10 ms clinical bar at 9.7 ms, speech separation does not at 16.0 ms, and data movement is the binding constraint — not compute. Architectural implication: streaming-friendly state-space / recurrent / single-pass causal transformers fit the actual silicon better than memory-hungry U-Net-on-spectrograms.
+
+**Carry-forward flags:**
+- Watch for OEM (Sonova / Demant / GN / Starkey / WSA) responses to Google open-sourcing the perceptual-loss substrate: do any of them fork CARFAC, license it, or publish a proprietary alternative?
+- Watch for follow-up CPC / Clarity Prediction Challenge submissions that adopt DAL-style perceptual losses.
+- Watch for FPGA benchmark replications across other embedded platforms (Synaptics Astra SR80, Aizip + commodity DSP, Qualcomm S5/S3) — if data movement is the bottleneck on Kria KV260, does it hold on the chips actually shipping in hearables?
+- New `concepts/clinician-ai-consent-and-trust.md` page still waiting (carried from May 2026 logs) on a regulator statement / professional-body position / second on-record clinician quote.
+
+**Pages touched this ingest: 6** (2 sources created, 1 wiki page created, 3 wiki pages updated, plus this log entry).
+
+---
+
+## 2026-06-04 — Daily Hearing+AI Digest Email Sent
+
+**Trigger:** Daily hearing+AI digest email to door.punch_4o@icloud.com. Compiled during morning research pass and sent via gmail_send.py.
+
+**Sources referenced in digest (all previously ingested — no new source files this run):**
+- `sources/dal-differentiable-auditory-loop-google-june-2026.md` — headlined as Research Paper #1 (4 Jun 2026 arXiv).
+- `sources/fpga-sudormrf-feasibility-radboud-june-2026.md` — headlined as Research Paper #2 (4 Jun 2026 arXiv).
+- `sources/fortell-spatial-ai-ija-may-2026.md` — headlined as Research Paper #3 (RCT result, IJA 2026).
+- `sources/phonak-ai-excellence-award-march-2026.md` — referenced under Industry News.
+- `sources/starkey-omega-ai-big-ai-awards-2026.md` — referenced under Industry News.
+- `sources/auracast-european-public-venue-rollout-2026.md` and the WWDC 2026 watch-item — referenced under Worth Watching.
+
+**Sources created (0).** All material was already ingested.
+**Pages created (0).**
+**Pages updated (0).** Wiki pages affected by the underlying sources were updated at their original ingest dates; the digest is a downstream surfacing of existing knowledge, not a new claim that needs to be reflected back into concept/entity pages.
+
+**Editorial framing of today's digest:**
+- The two arXiv papers dated today (DAL, FPGA SuDoRM-RF++) define complementary frontiers — loss-function relocation into the cochlea, and silicon-side memory-bandwidth as the real latency bottleneck. The digest pairs them as the headline story.
+- The Fortell IJA paper is included not as new news but as the field-level RCT proof that the on-aid AI category already delivers measurable wins against five flagship incumbents — anchoring the DAL/FPGA forward-looking story to a concrete current result.
+
+**Carry-forward flags:**
+- Apple WWDC 2026 next week — flagged in Worth Watching. If self-fitting envelope expands (currently mild-to-moderate only), ingest the keynote / FDA filing as a new source and update `entities/apple-hearing-features.md` and `concepts/otc-hearing-aids.md`.
+- No additional pages touched in this ingest beyond this log entry.
+
+**Pages touched this ingest: 1** (log entry only).
