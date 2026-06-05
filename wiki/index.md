@@ -149,6 +149,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Google Research](entities/google-research.md) | company, research, ai | 2026-04-25 |
 | [HIMSA](entities/himsa.md) | organization, industry-consortium | 2026-04-21 |
 | [Orka / Bose Partnership](entities/orka-bose-partnership.md) | company, consumer-tech-partnership | 2026-04-22 |
+| [EssilorLuxottica](entities/essilorluxottica.md) | company, eyewear, otc-hearing, smart-glasses, nuance-audio | 2026-06-05 |
 | [Envoy Medical](entities/envoy-medical.md) | company, cochlear-implant, fully-implantable | 2026-04-23 |
 | [Neurotone AI](entities/neurotone-ai.md) | company, startup, aural-rehabilitation, clinician-in-the-loop | 2026-05-09 |
 | [AAA Conference](entities/aaa-conference.md) | conference, industry-event | 2026-04-24 |
@@ -180,3 +181,4 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [VA as a Hearing-Aid AI Dataset — Three-OEM Cluster (May 2026)](syntheses/va-as-hearing-ai-dataset-may-2026.md) | 2026-05-19 |
 | [Pre-Training Corpus as Moat for Hearing-Care AI](syntheses/pretraining-corpus-as-moat-hearing-ai.md) | 2026-05-20 |
 | [LMIC Screening Platform Asymmetry — Apple's May 21 India / Italy / Taiwan Wave](syntheses/lmic-screening-platform-asymmetry-may-2026.md) | 2026-05-26 |
+| [Clinical Audiology and On-Chip ML Converge — June 2026](syntheses/clinical-ml-convergence-june-2026.md) | 2026-06-05 |

@@ -2,8 +2,8 @@
 title: Probabilistic Generative Models for Hearing AI
 type: concept
 created: 2026-05-10
-updated: 2026-05-14
-sources: [aida-2-bayesian-generative-se-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
+updated: 2026-06-05
+sources: [aida-2-bayesian-generative-se-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md]
 related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, closed-loop-data-flywheel.md, hearing-aid-chip-architectures.md, ../comparisons/dnn-vs-natural-processing.md, ../syntheses/ai-understanding-gap-hearing-industry.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
 tags: [bayesian-inference, probabilistic-graphical-models, generative-model, variational-message-passing, factor-graphs, rxinfer, edge-ai, parameter-efficiency, hallucination-resistance]
 ---

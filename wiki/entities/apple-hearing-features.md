@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-15
 updated: 2026-05-26
 sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md, apple-airpods-india-italy-taiwan-may-21-2026.md]
-related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, ../concepts/hearing-care-funnel-attribution.md, ../concepts/audiologist-workforce-shortage.md, ../syntheses/lmic-screening-platform-asymmetry-may-2026.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md]
+related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, ../concepts/hearing-care-funnel-attribution.md, ../concepts/audiologist-workforce-shortage.md, ../syntheses/lmic-screening-platform-asymmetry-may-2026.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md, essilorluxottica.md]
 tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring, hearing-study, longitudinal, lmic, india, multi-modal-screening]
 ---
 

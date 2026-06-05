@@ -4,6 +4,39 @@ Chronological record of all wiki operations.
 
 ---
 
+## 2026-06-05 — Daily Hearing+AI Digest Ingest
+
+**Operation:** Ingested new sources from the 5 Jun 2026 hearing+AI digest into the wiki.
+
+**New source files (3):**
+1. `arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md` — Lu, Lv, Hu, Xu (4 Jun 2026). SB-RF combines rectified flow with Schrödinger bridge theory for one-step generative SE; competitive on VoiceBank-DEMAND and a low-SNR set with single-pass inference.
+2. `arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md` — Fan, Liu, Zhou et al. (4 Jun 2026; accepted IEEE TPAMI). Dual-branch hybrid SNN + ANN for monaural SE; 7.5x avg compute reduction vs strong baselines.
+3. `nuance-audio-western-univ-clinical-study-2026.md` — Western University National Centre for Audiology clinical validation of Nuance Audio Glasses (improved speech-in-noise, reduced listening effort, mild-to-moderate loss).
+
+**New wiki pages (1):**
+- `entities/essilorluxottica.md` — First entity page for EssilorLuxottica, framed around Nuance Audio Glasses and the optical-retail distribution disruption thesis.
+
+**Wiki pages updated (4):**
+- `concepts/speech-enhancement-neural-networks.md` — added SB-RF and DBHN-Net sources; bumped `last_change` and `updated`.
+- `concepts/probabilistic-generative-models-hearing-ai.md` — added SB-RF source (one-step generative SE).
+- `concepts/tinyml-edge-ai.md` — added DBHN-Net source (SNN+ANN low-compute hybrid).
+- `concepts/otc-hearing-aids.md` — added Nuance source and cross-link to EssilorLuxottica entity.
+- `entities/apple-hearing-features.md` — added EssilorLuxottica to `related:` (other major non-OEM consumer channel).
+- `index.md` — added EssilorLuxottica row to Entities table.
+
+**Skipped (already in wiki):**
+- arXiv:2606.04221 (FPGA SE feasibility, Olalere et al.) — covered by `sources/fpga-sudormrf-feasibility-radboud-june-2026.md`.
+- arXiv:2606.04103 (DAL, Google) — covered by `sources/dal-differentiable-auditory-loop-google-june-2026.md`.
+- arXiv:2606.03832 (DFC-IL, Voit/Doclo) — covered by `sources/arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md`.
+- ORKA × Bose RIC w/ ANC at AWE 2026 — covered by `sources/orka-o1-pro-bose-anc-awe-2026.md`.
+- Phonak 2026 AI Excellence Award — covered by `sources/phonak-ai-excellence-award-march-2026.md`.
+- Apple AirPods Hearing-Aid country expansion — covered by `sources/airpods-hearing-aid-country-expansion-may-2026.md` (+ India/Italy/Taiwan and Philippines variants).
+- TytoCare FDA De Novo for AI Otoscopy — surfaced today but outside core hearing-aid scope; left as digest "Worth Watching" only.
+
+**Pages touched this ingest: 9** (3 sources created, 1 new entity, 5 pages updated, plus this log entry).
+
+---
+
 ## 2026-05-31 — Lint Pass
 
 **Operation:** Automated lint audit of the full wiki. Checked index completeness, orphan status, broken cross-references, broken source links, stale pages, duplicate concepts, and missing cross-links.
@@ -2368,3 +2401,36 @@ Worth watching:
 - No additional pages touched in this ingest beyond this log entry.
 
 **Pages touched this ingest: 1** (log entry only).
+
+---
+
+## 2026-06-05 — LinkedIn Drafts Ingest
+
+**Trigger:** Two LinkedIn post drafts for 5 Jun 2026 → ingest researched sources into wiki.
+
+**Underlying LinkedIn posts:**
+- **Post 1** — HEAL 2026 Padua and the arxiv week that just shipped — clinical audiology and on-chip ML finally in the same room. Co-occurrence of HEAL 2026 (Padova, 4–6 Jun) with the June 1–4 arXiv wave (DAL / FPGA SE / DFC-IL / Whisper-ECoG) — common move across all four papers: drag the perceptual model inside the optimisation loop.
+- **Post 2** — Cochlear Nucleus Nexa firmware-upgradeable implant as the first stress test of FDA's PCCP framework on a Class III implantable — and the data-science follow-on (cohort stationarity / allocation / plasticity costs).
+
+**Sources created (2):**
+- `sources/heal-2026-padova-june-4-6.md` — Conference (Padova Conference Centre, 4–6 Jun 2026). ~230 oral presentations, 100 posters, 5 rooms, 40+ countries. **Track-structure observation:** "AI and Data-Driven Approaches" and "Computational & Digital Health Approaches" elevated to first-class regular-program tracks (not special sessions). Cross-references the four June 1–4 arXiv papers (DAL 2606.04103, FPGA SE 2606.04221, DFC-IL 2606.03832, Whisper-ECoG 2606.02305).
+- `sources/fda-pccp-final-guidance-december-2024.md` — FDA Final Guidance on Predetermined Change Control Plans for AI-enabled Device Software Functions (Dec 2024). Replaces April 2019 discussion paper, January 2021 Action Plan, April 2023 draft. Scope broadened from AI/ML SaMD to AI-DSF (incl. SiMD / implanted hardware). 1,350+ AI-enabled medical devices authorised by Q1 2026 (≈2× the 2022 count). PCCP = pre-specified Description of Modifications + Modification Protocol + Impact Assessment in the original marketing submission, allowing post-market changes without re-submission within the envelope. Operationalises TPLC framing. Open questions identified for hearing/CI: allocation, cohort stationarity, plasticity costs of updates, liability.
+
+**Pages created (1):**
+- `syntheses/clinical-ml-convergence-june-2026.md` — Synthesis: the structural observation that HEAL 2026's track structure (clinical audiology elevating two AI tracks to first-class) and the simultaneous arXiv eess.AS wave (DAL / FPGA SE / DFC-IL / Whisper-ECoG) execute *the same architectural move at the same time*: drag the perceptual / cortical / closed-loop model inside the optimisation loop so the gradient flows through it. Three enabling shifts named (differentiable cochlear models mature; foundation models for speech transferable to perceptual / cortical alignment; sub-10 ms on-chip latency floors). Competitive-moat shift table (before/after). Open question: which clinical outcome metric from HEAL Padova lands first in an arXiv loss-function definition in 2027 — concrete candidates named (FUEL-derived listening-effort score; audiovisual-intelligibility score; dyadic-interaction-preservation score; communication-accessibility composite).
+
+**Pages updated (2):**
+- `concepts/software-defined-medical-implants.md` — Added FDA PCCP final guidance to frontmatter sources. New section **"Three Data-Science Follow-On Questions (June 2026 Update)"** with the three named sub-problems from Post 2: (1) cohort stationarity breaks — five-year speech-in-noise outcomes become firmware-versioned multi-cohort analyses requiring version-stratified estimators; (2) the allocation problem — default rollout policy, reversibility, consent granularity, all currently underspecified; (3) plasticity cost of updates — auditory cortex has adapted to v1, v2 updates may carry re-adaptation costs the original trial protocol did not price; trial protocols and outcome metrics need a standard for measuring update-induced re-adaptation cost. Added allocation / cohort-stationarity / plasticity tags. Bumped updated to 2026-06-05.
+- `wiki/index.md` — Added `clinical-ml-convergence-june-2026.md` row to the Syntheses table with 2026-06-05 stamp.
+
+**Editorial framing:**
+- The June 2026 convergence observation is the first synthesis in the wiki that names a *cross-disciplinary structural shift in real time*, anchored by a clinical-conference programme decision (HEAL track structure) co-occurring with a coherent arXiv wave (four papers, three institutions, one shared architectural move). The previous closest analog was the May 2026 SE evaluation-stack-cracks synthesis, which was an arXiv-only pattern; this one bridges the clinical-conference and arXiv timelines.
+- The Nexa-vs-PCCP follow-on questions are the first wiki content that names cohort stationarity, allocation, and plasticity costs as *first-class data-science work* (not regulatory afterthought) for software-defined implants. Sets up the carry-forward concept page `concepts/firmware-versioned-cohort-analysis.md` if a third source surfaces a concrete cohort study or trial protocol on this construct.
+
+**Carry-forward flags:**
+- HEAL 2026 abstract book / proceedings — once released, ingest specific clinical metrics that map directly to recent ML loss-function design; expand the synthesis with concrete metric→loss mappings.
+- WWDC 2026 keynote (8 Jun) — separately flagged in the prior 2026-06-04 digest log; still pending.
+- Apple iOS 27 AirPods settings menu revamp surfacing hearing health — watch for separate update beyond hearing-aid-mode country expansion.
+- First firmware-version-stratified outcomes paper from a Nexa cohort — triggers `concepts/firmware-versioned-cohort-analysis.md` page creation.
+
+**Pages touched this ingest: 5** (2 sources created, 1 new synthesis page, 2 wiki pages updated, plus this log entry).

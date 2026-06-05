@@ -2,10 +2,10 @@
 title: Software-Defined Medical Implants
 type: concept
 created: 2026-04-26
-updated: 2026-04-26
-sources: [cochlear-nucleus-nexa-smart-implant-2026.md, completely-implantable-cochlear-implants-april-2026.md]
+updated: 2026-06-05
+sources: [cochlear-nucleus-nexa-smart-implant-2026.md, completely-implantable-cochlear-implants-april-2026.md, fda-pccp-final-guidance-december-2024.md]
 related: [cochlear-implant-ai.md, on-device-ml-hearing-aids.md, eu-ai-act-medical-devices.md, ../entities/cochlear-ltd.md, ../entities/envoy-medical.md, model-compression.md, closed-loop-data-flywheel.md]
-tags: [mlops, software-defined, firmware-updates, medical-device, regulatory, deployment, ota, tplc, pccp]
+tags: [mlops, software-defined, firmware-updates, medical-device, regulatory, deployment, ota, tplc, pccp, allocation, cohort-stationarity, plasticity]
 ---
 
 # Software-Defined Medical Implants
@@ -80,6 +80,24 @@ The competitive disciplines required:
 - Can in-vivo A/B testing of model versions be ethically conducted, even with full consent?
 - How are firmware updates priced — included in device cost, subscription, or separate clinical reimbursement?
 
+## Three Data-Science Follow-On Questions (June 2026 Update)
+
+The Cochlear Nucleus Nexa launch makes Class III implantables the first stress test of the FDA PCCP framework — see [[../../sources/fda-pccp-final-guidance-december-2024]] for the regulatory side. Once the device in vivo can be updated post-surgery, three follow-on problems become first-class data-science work, not afterthought:
+
+### 1. Cohort Stationarity Breaks
+The population cohort that a five-year speech-in-noise outcome study models is no longer time-stationary. "Year-3 outcomes for Nexa users" becomes a **firmware-versioned multi-cohort analysis** — Δv1.0 cohort, Δv1.2 cohort, Δv2.0 cohort — each with different exposure-time distributions, different version-switch timestamps, different baseline algorithms. Standard survival analysis does not handle this; the field will need version-stratified estimators borrowed from longitudinal causal inference.
+
+### 2. The Allocation Problem
+PCCPs define what the *next* algorithm is allowed to do. **Allocation — who is on which version, when, with what consent and evidence — is a separate, currently underspecified problem.** Three sub-questions:
+- Default rollout policy (everyone-eligible vs opt-in cohorts vs clinician-discretion)
+- Reversibility (can a recipient roll back to v1 if v2 is worse for them, and on what evidence)
+- Consent granularity (single device-lifetime consent vs per-update consent, and the practical UX of either)
+
+### 3. Plasticity Cost of Updates
+The auditory cortex has adapted to v1. **v2 updates may carry plasticity costs the original trial protocol did not price** — auditory re-adaptation periods, transient drops in intelligibility, central-system fatigue. The plasticity literature has the construct; the trial protocols and outcome metrics do not yet have a standard way to measure update-induced re-adaptation cost. This is a primary near-term outcome-research target.
+
+If the fitting algorithm ships a meaningful update every 9 months, the construct "long-term outcomes evidence" itself needs operational redefinition.
+
 ## Related Pages
 - [[cochlear-implant-ai]] — AI in cochlear implants generally
 - [[on-device-ml-hearing-aids]] — Hearing aid analog; similar deployment trajectory
@@ -90,5 +108,6 @@ The competitive disciplines required:
 - [[../entities/envoy-medical]] — Fully-implantable CI; no external update path is a contrast case
 
 ## Sources
-- [Cochlear Nucleus Nexa Smart Implant](../sources/cochlear-nucleus-nexa-smart-implant-2026.md) — Defining example of the category
-- [Completely Implantable Cochlear Implants](../sources/completely-implantable-cochlear-implants-april-2026.md) — Counterpoint: fully implantable devices have constrained update pathways
+- [Cochlear Nucleus Nexa Smart Implant](../../sources/cochlear-nucleus-nexa-smart-implant-2026.md) — Defining example of the category
+- [Completely Implantable Cochlear Implants](../../sources/completely-implantable-cochlear-implants-april-2026.md) — Counterpoint: fully implantable devices have constrained update pathways
+- [FDA Final Guidance — Predetermined Change Control Plans (Dec 2024)](../../sources/fda-pccp-final-guidance-december-2024.md) — Regulatory substrate for the post-implant update lifecycle and the source of the three follow-on data-science questions added in the 2026-06-05 update
