@@ -11,18 +11,18 @@ sources:
   - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
   - breaking-the-pair-speaker-switching-arxiv-june-2026.md
 related:
-  - listening-effort-evaluation.md
-  - linguistic-hallucination-speech-enhancement.md
-  - lalm-selective-auditory-attention.md
-  - speech-enhancement-neural-networks.md
-  - llm-based-speech-enhancement.md
-  - companion-phone-speech-pipeline.md
-  - dnn-in-hearing-aids.md
-  - non-intrusive-intelligibility-prediction.md
-  - foundation-model-fusion-speech.md
-  - clarity-prediction-challenge.md
-  - dyadic-interaction-preservation.md
-  - communication-accessibility-metric.md
+  - ../concepts/listening-effort-evaluation.md
+  - ../concepts/linguistic-hallucination-speech-enhancement.md
+  - ../concepts/lalm-selective-auditory-attention.md
+  - ../concepts/speech-enhancement-neural-networks.md
+  - ../concepts/llm-based-speech-enhancement.md
+  - ../concepts/companion-phone-speech-pipeline.md
+  - ../concepts/dnn-in-hearing-aids.md
+  - ../concepts/non-intrusive-intelligibility-prediction.md
+  - ../concepts/foundation-model-fusion-speech.md
+  - ../entities/clarity-prediction-challenge.md
+  - ../concepts/dyadic-interaction-preservation.md
+  - ../concepts/communication-accessibility-metric.md
 tags: [evaluation-metrics, speech-enhancement, asr-wer, listening-effort, linguistic-hallucination, hearing-aid-ai, synthesis, interspeech-2026, foundation-model-fusion, cpc3, dyadic-interaction]
 ---
 

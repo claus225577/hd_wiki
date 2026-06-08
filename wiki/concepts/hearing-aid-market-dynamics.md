@@ -2,8 +2,8 @@
 title: Hearing Aid Market Dynamics
 type: concept
 created: 2026-04-17
-updated: 2026-05-28
-sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, aaa-2026-conference-april.md, neurotone-ai-1000-clinics-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, dod-biometric-hearing-protection-fy26.md, musicians-tinnitus-meta-analysis-2026.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md, sonova-fy-2025-26-results-may-2026.md, demant-q1-2026-zeal-results-may-2026.md]
+updated: 2026-06-07
+sources: [hearing-aids-market-14b-by-2030-april-2026.md, hearing-aid-market-2025-2029.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, frontiers-ai-enabled-hearables-industry-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, completely-implantable-cochlear-implants-april-2026.md, hhtm-convergence-ai-audio-hearing-devices-2026.md, aaa-2026-conference-april.md, neurotone-ai-1000-clinics-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, eu-ai-act-medical-device-compliance-2026.md, hearingtracker-2026-premium-rankings.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, dod-biometric-hearing-protection-fy26.md, musicians-tinnitus-meta-analysis-2026.md, ehima-2025-global-sales-report-may-2026.md, eurotrak-uk-2025-adoption-aug-2025.md, sonova-fy-2025-26-results-may-2026.md, demant-q1-2026-zeal-results-may-2026.md, bihima-q1-2026-uk-sales-jun-2026.md]
 related: [otc-hearing-aids.md, ../entities/sonova-ag.md, ../entities/demant-oticon.md, ../entities/apple-hearing-features.md, ../comparisons/otc-vs-prescription-hearing-aids.md, ../syntheses/vertical-integration-trend.md, auracast-bluetooth-le-audio.md, audiologist-workforce-shortage.md, teleaudiology.md, ../entities/himsa.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md, cochlear-implant-ai.md, ../entities/envoy-medical.md, ../entities/neurotone-ai.md, ../entities/aaa-conference.md, eu-ai-act-medical-devices.md]
 tags: [market, forecast, growth, industry, pricing, demographics, workforce, shortage, sony-exit, anc, hearables-convergence, retail-channel, vertical-integration, benefits-administrators, medicare-advantage]
 ---
@@ -26,6 +26,12 @@ The discrepancy between $14.42B (MarketsandMarkets) and $22B (earlier projection
 - **1.5 billion people** currently have some form of hearing impairment worldwide
 - **700 million** projected to have disabling hearing loss by 2050 (WHO)
 - North America leads in market share but the largest unserved populations are in developing regions
+
+### UK Private Channel — Q1 2026 (BIHIMA, Jun 2026)
+- **145,575 private-sector units sold** in Q1 2026 (vs 129,371 in Q4 2025; **+12.5% QoQ**)
+- **Rechargeable share: 93%** (135,847 units) — disposable batteries reduced to a ~7% residual
+- Rechargeable lock-in is a precondition for sustained on-device DNN inference budgets
+- See [[../sources/bihima-q1-2026-uk-sales-jun-2026]].
 
 ### Workforce Constraint
 A critical structural bottleneck: there is a **global shortage of ENT specialists and audiology professionals**. See [[audiologist-workforce-shortage]] for full analysis. Key data:

@@ -9,12 +9,12 @@ sources:
   - starkey-omega-ai-government-services-may-2026.md
   - veterans-hearing-aid-improvement-act-house-jun-2026.md
 related:
-  - demant-oticon.md
-  - ws-audiology-signia.md
-  - starkey.md
-  - hearing-aid-market-dynamics.md
-  - closed-loop-data-flywheel.md
-  - longitudinal-hearing-phenotyping.md
+  - ../entities/demant-oticon.md
+  - ../entities/ws-audiology-signia.md
+  - ../entities/starkey.md
+  - ../concepts/hearing-aid-market-dynamics.md
+  - ../concepts/closed-loop-data-flywheel.md
+  - ../concepts/longitudinal-hearing-phenotyping.md
   - hearing-aid-ai-stack-2026.md
   - ../concepts/otc-hearing-aids.md
 tags: [va, veterans-affairs, distribution-channel, dataset, telemetry, closed-loop, outcomes-data, oem-cluster, synthesis, otc-pilot, legislation]

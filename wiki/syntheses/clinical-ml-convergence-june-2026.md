@@ -4,7 +4,7 @@ type: synthesis
 created: 2026-06-05
 updated: 2026-06-05
 sources: [heal-2026-padova-june-4-6.md, dal-differentiable-auditory-loop-google-june-2026.md, fpga-sudormrf-feasibility-radboud-june-2026.md, arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md, arxiv-2606-02305-whisper-ecog-ciferri-jun-2026.md]
-related: [../concepts/differentiable-cochlea.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/listening-effort-evaluation.md, ../concepts/communication-accessibility-metric.md, ../concepts/foundation-model-fusion-speech.md, ../concepts/speech-enhancement-evaluation-stack-cracks-may-2026.md, hearing-aid-ai-stack-2026.md]
+related: [../concepts/differentiable-cochlear-models.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/listening-effort-evaluation.md, ../concepts/communication-accessibility-metric.md, ../concepts/foundation-model-fusion-speech.md, speech-enhancement-evaluation-stack-cracks-may-2026.md, hearing-aid-ai-stack-2026.md]
 tags: [synthesis, convergence, clinical-ml, heal, padova, arxiv-week, perceptual-loss, optimisation-loop, june-2026]
 ---
 

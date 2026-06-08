@@ -4,6 +4,86 @@ Chronological record of all wiki operations.
 
 ---
 
+## Lint — 2026-06-07
+**Pages scanned:** 103
+**Issues found:** 30
+**Auto-fixed:** 27
+
+### Orphans
+- `syntheses/clinical-ml-convergence-june-2026.md` — not referenced by any other page. Fixed by adding to `hearing-aid-ai-stack-2026.md` related field.
+- `concepts/continual-learning-hearing-ai.md` — was listed as orphan by bash check; confirmed referenced by `training-deployment-distribution-gap.md` (false positive from grep).
+- `concepts/non-intrusive-intelligibility-prediction.md` — was orphan; fixed by updating `speech-enhancement-evaluation-stack-cracks-may-2026.md` related links.
+- `entities/clarity-prediction-challenge.md` — was orphan; fixed by correcting path in `non-intrusive-intelligibility-prediction.md` and `speech-enhancement-evaluation-stack-cracks-may-2026.md`.
+
+### Broken links (related: fields)
+Before fixes, 26 broken related: entries found across 5 pages. All resolved:
+
+- `concepts/acoustic-feedback-cancellation.md` → `dsp-classical-vs-deep-learning.md` (file does not exist). Fixed: replaced with `speech-enhancement-neural-networks.md`; also removed duplicate `dnn-architectures-hearing-aids.md` entry.
+- `entities/clarity-prediction-challenge.md` → 4 concept entries missing `../concepts/` prefix. Fixed.
+- `concepts/non-intrusive-intelligibility-prediction.md` → `clarity-prediction-challenge.md` missing `../entities/` prefix. Fixed.
+- `syntheses/clinical-ml-convergence-june-2026.md` → `../concepts/differentiable-cochlea.md` (wrong filename; correct is `differentiable-cochlear-models.md`). Fixed. Also `../concepts/speech-enhancement-evaluation-stack-cracks-may-2026.md` (is a synthesis, not concept). Fixed.
+- `syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md` → 12 entries missing `../concepts/` or `../entities/` prefix. Fixed.
+- `syntheses/va-as-hearing-ai-dataset-may-2026.md` → 6 entries missing `../entities/` or `../concepts/` prefix. Fixed.
+
+### Missing source files
+- `syntheses/pretraining-corpus-as-moat-hearing-ai.md` references `autoresearch-karpathy-april-2026.md` which does not exist in `sources/`. Needs human review — either the file was not ingested or was ingested under a different name.
+
+### Stale sources (before 2026-03-07, fast-moving topics)
+The following sources are older than 3 months and cover fast-moving AI/ML/hardware topics where claims may have aged:
+- `starkey-genesis-ai-health.md` (2023) — 3-year-old product page; Omega AI has since superseded Genesis AI.
+- `ai-audiology-scoping-review.md` (2024) — AI landscape survey; field has shifted materially.
+- `ai-predicts-ci-language-outcomes.md`, `auditory-attention-decoding-2025.md`, `cochlear-implant-ai-innovations.md`, `dnn-hearing-aids-frontiers-2025.md`, `low-latency-dnn-noise-reduction.md` (all 2025 undated) — early 2025 sources; specific benchmarks may be superseded.
+- `marketrak-2025.md` (2025 annual survey) — market data; 2026 update expected.
+- `phonak-deepsonic-ai-chip.md` (2025-10) — chip specs may be superseded by Infinio Sphere updates.
+- `eurotrak-uk-2025-adoption-aug-2025.md` (2025-08) — annual survey; BIHIMA Q1 2026 now available as more recent market data.
+- `interspeech-2026-audio-reasoning-challenge.md` (2026-02) — benchmark challenge still active; no results yet.
+
+### Potential duplicates
+- No clear duplicate concept pages found. `dnn-in-hearing-aids.md` and `dnn-architectures-hearing-aids.md` cover overlapping territory but serve distinct purposes (practical application vs architectural taxonomy).
+
+### Missing cross-references
+- All orphan pages now have at least one incoming link. No additional missing cross-references flagged.
+
+### Too-large pages (>500 lines)
+- None found. Largest page is `concepts/speech-enhancement-neural-networks.md` at 313 lines — within acceptable range.
+
+### Index issues fixed
+- Index already contained all 103 wiki pages. No additions or removals needed.
+- Note: `comparisons/ai-hearing-aid-platforms-2026.md`, `entities/aci-alliance-ci2026.md`, and 6 synthesis pages that appeared missing were actually present in the index table — an earlier grep false-negative due to the table format.
+
+### Needs human judgment
+- `syntheses/pretraining-corpus-as-moat-hearing-ai.md` → missing source `autoresearch-karpathy-april-2026.md`. Investigate whether this source exists under a different name or needs to be created.
+- `starkey-genesis-ai-health.md` (2023) — consider whether to update or archive, given Omega AI has replaced Genesis AI as Starkey's flagship.
+- `entities/who-hearing-program.md` has an empty `sources: []` field — needs at least one source file to be properly grounded.
+- Consider creating `concepts/clinician-ai-consent-and-trust.md` (flagged in log 2026-05-27 as pending) once a second corroborating data point is available.
+
+---
+
+## 2026-06-07 — Daily Hearing+AI Digest Ingest
+
+**Operation:** Ingested net-new sources from the 7 Jun 2026 hearing+AI digest into the wiki.
+
+**New source files (2):**
+1. `cilcare-cil001-massgeneral-tinnitus-may-2026.md` — Cilcare announced (SelectUSA Summit, early May 2026) US tinnitus trial preparation of CIL001 at Mass General with Maison's auditory neuroscience group + CBSET partnership. CIL001 targets cochlear synaptopathy — the mechanism implicated in tinnitus, hyperacusis, and "hidden hearing loss." Disease-modifying lane parallel to behavioural DTx.
+2. `bihima-q1-2026-uk-sales-jun-2026.md` — UK private-sector Q1 2026 sales 145,575 units (+12.5% QoQ); rechargeable share 93%. Disposable-battery models a residual 7% niche. Rechargeable lock-in as precondition for sustained on-device DNN inference budgets.
+
+**Wiki pages updated (2):**
+- `concepts/digital-therapeutics-tinnitus.md` — added Cilcare CIL001 to Competitive Landscape (pharma lane); added source to frontmatter + Sources; bumped updated to 2026-06-07.
+- `concepts/hearing-aid-market-dynamics.md` — added "UK Private Channel — Q1 2026 (BIHIMA, Jun 2026)" subsection under Global Hearing Burden; added source to frontmatter; bumped updated to 2026-06-07.
+
+**No new wiki pages created** — both items fit existing concept pages cleanly.
+
+**Skipped (already in wiki):**
+- arXiv:2606.04221 (FPGA SE feasibility, Olalere et al.) — covered by `sources/fpga-sudormrf-feasibility-radboud-june-2026.md` (ingested 4 Jun).
+- Veterans Hearing Aid Improvement Act (5 Jun 2026) — covered by `sources/veterans-hearing-aid-improvement-act-house-jun-2026.md` (ingested 5 Jun).
+- Apple AirPods country expansion — covered by `sources/airpods-hearing-aid-country-expansion-may-2026.md` + variants.
+- Auracast venue rollout — covered by `sources/auracast-*` set.
+- TytoCare De Novo AI otoscopy — outside core hearing-aid scope per 5 Jun policy; left as digest "Worth Watching" only.
+
+**Pages touched this ingest: 4** (2 sources created, 2 pages updated, plus this log entry).
+
+---
+
 ## 2026-06-05 — Daily Hearing+AI Digest Ingest
 
 **Operation:** Ingested new sources from the 5 Jun 2026 hearing+AI digest into the wiki.
@@ -2434,3 +2514,104 @@ Worth watching:
 - First firmware-version-stratified outcomes paper from a Nexa cohort — triggers `concepts/firmware-versioned-cohort-analysis.md` page creation.
 
 **Pages touched this ingest: 5** (2 sources created, 1 new synthesis page, 2 wiki pages updated, plus this log entry).
+
+---
+
+## 2026-06-07 — LinkedIn Drafts Ingest
+
+**Trigger:** Two LinkedIn post drafts for 7 Jun 2026 → confirm sources are ingested and reflect new framings back into the wiki.
+
+**Underlying LinkedIn posts:**
+- **Post 1** — House companion to Veterans Hearing Aid Improvement Act writes the missing OTC-vs-clinician evaluation infrastructure into law. Constructive follow-up to May 19 Post 2 (VA OEM cluster lacks closed-loop telemetry-to-outcome bridge) — argues the federally-mandated interim+final reports + standardized VA outcome instruments (APHAB/COSI/HHIE-S/AzBio) are structurally a natural experiment with the modal contrast (self-fit vs clinician-fit) at population scale.
+- **Post 2** — T-PAMI acceptance of DBHN-Net (arXiv:2606.05911, Fan et al., 5 Jun 2026) — dual-branch ANN+SNN with 7.5x average compute reduction. Constructive follow-up to June 4 Post 2 (memory bandwidth as binding constraint): SNNs are event-driven and temporally sparse and are exactly the architectural lever that addresses that bottleneck. Argument: on-chip compute frontier has just split into four lanes — dense ANN, compressed ANN, compute-in-memory, hybrid ANN+SNN — and SNN-friendly perceptual loss is the unbuilt evaluation piece.
+
+**Sources created (0).** Both source files already ingested on prior cycles:
+- `sources/veterans-hearing-aid-improvement-act-house-jun-2026.md` (ingested 2026-06-02).
+- `sources/arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md` (ingested 2026-06-05).
+
+**Pages created (0).** Both target wiki pages already exist and reference the underlying sources:
+- `syntheses/va-as-hearing-ai-dataset-may-2026.md` already contains the bill detail and the OTC-pilot framing (June 2 update).
+- `concepts/speech-enhancement-neural-networks.md` already references DBHN-Net in `last_change` frontmatter.
+
+**Pages updated (0).** Today's LinkedIn framings are downstream surfacings of claims already on the relevant pages, not new factual content that requires reflection back into concept/entity pages. The two new editorial angles introduced today (federal-reporting requirement as natural-experiment infrastructure; SNN+ANN hybrid as the fourth compute-frontier lane) are captured in the post-history memory file and in this log entry.
+
+**Editorial framing of today's drafts:**
+- Post 1 is the first wiki-anchored post that explicitly frames the federal interim+final reporting requirement as structured-outcome-publication infrastructure — the closed-loop bridge the May 19 VA-as-dataset synthesis named as missing. Future ingest of the actual bill text (once H.R. number assigned) should add the reporting-requirement specifics back into the synthesis page.
+- Post 2 is the first wiki-anchored post to position hybrid ANN+SNN as a distinct compute-frontier lane parallel to TurboQuant-class compressed ANN and CIM. Future ingest of SNN-friendly perceptual-loss papers should trigger a new concept page `concepts/snn-friendly-perceptual-losses.md` and a backlink from `concepts/speech-enhancement-neural-networks.md`.
+
+**Carry-forward flags:**
+- House H.R. number for the Veterans Hearing Aid Improvement Act companion bill — update `sources/veterans-hearing-aid-improvement-act-house-jun-2026.md` once assigned.
+- VA RFP language for the OTC pilot — watch for whether outcome-data-telemetry return is specified as vendor requirement. Triggers update to `syntheses/va-as-hearing-ai-dataset-may-2026.md` and `concepts/closed-loop-data-flywheel.md`.
+- First SNN-friendly perceptual-loss paper for hearing-aid SE — triggers creation of `concepts/snn-friendly-perceptual-losses.md`.
+- WWDC 2026 keynote (8 Jun) — still pending; hearing-health surface area expected.
+
+**Pages touched this ingest: 1** (log entry only — sources and wiki pages already ingested on prior cycles).
+
+---
+
+## 2026-06-08 — LinkedIn Drafts Ingest
+
+**Trigger:** Two LinkedIn post drafts for 8 Jun 2026 → reflect new framings back into the wiki.
+
+**Underlying LinkedIn posts:**
+- **Post 1** — SB-RF (arXiv:2606.05575, Lu, Lv, Hu, Xu, 4 Jun 2026): one-step generative SE via Schrödinger Bridge + Rectified Flow + entropy-regularized optimal transport. Frame: 4 years of generative-SE arxiv leaderboard work has been mathematically out of reach for hearing aids (multi-step diffusion ≠ ~1 ms algorithmic latency). One-step generative collapses that. Cross-references DBHN-Net (5 Jun T-PAMI) and Olalere et al. FPGA memory-bandwidth (4 Jun). Unbuilt piece: VoiceBank-DEMAND is anechoic; the team that ports SB-RF to HASPI / CEC3-style listener-perception loss owns the next round.
+- **Post 2** — Age-Aware Adapter Tuning for Children's ASR (arXiv:2606.05440, Jialu Li, 3 Jun 2026): per-age-band parameter-efficient adapter modules with router-based inference selection. WER 12.6%→12.3% overall, macro 18.4%→17.6%; predicted-age routing tracks ground-truth; hard routing > FiLM. Frame: the 2026 hearing-aid AI conversation has been adult-speech-in-noise. Pediatric front-end is a different physics problem (smaller ear canals, evolving pinna, faster F0, developing phonology). Parameter-efficient adapters are the tractable ML hook AAA/ASHA/NAL pediatric-fitting guidance has lacked. Unbuilt piece: pediatric-HA-specific training corpus.
+
+**Sources created (1):**
+- `sources/arxiv-2606-05440-age-aware-adapter-children-asr-jun-2026.md` — Li, "Age-Aware Adapter Tuning for Children's Speech Recognition," arXiv:2606.05440 (3 Jun 2026). Per-age-band adapter modules; ground-truth age routing 12.6%→12.3% WER overall, 18.4%→17.6% macro; predicted-age routing tracks ground-truth; hard age routing > FiLM. First published parameter-efficient per-age-band adapter approach for child ASR.
+
+**Sources already ingested on prior cycles:**
+- `sources/arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md` (ingested 2026-06-05) — already cited from `concepts/probabilistic-generative-models-hearing-ai.md`.
+
+**Pages created (0).** Both new framings extend existing concept pages.
+
+**Pages updated (2):**
+- `concepts/cross-lifespan-speech-models.md` — added arxiv-2606-05440 to frontmatter sources list, added a "first published instance" paragraph under the "third axis of training-data moat" section explicitly attributing per-age adapter tuning to Jialu Li (3 Jun 2026) with the WER deltas and the hard-routing > FiLM finding. Added new source row in Sources section. Bumped `updated` to 2026-06-08.
+- `wiki/index.md` — bumped `cross-lifespan-speech-models` row date to 2026-06-08 and added `age-conditioned-adapters` tag.
+
+**Editorial framing of today's drafts:**
+- Post 1 reflects out from the already-ingested SB-RF source. The new framing this post adds — that 2026 is the *year* the generative-SE family finally competes on hearing-aid silicon, set against DBHN-Net (5 Jun) and the Radboud-Columbia FPGA benchmark (4 Jun) — belongs in a synthesis page (`syntheses/clinical-ml-convergence-june-2026.md` is the existing home). Carry-forward flag for next ingest cycle to extend that synthesis with the SB-RF + one-step-generative narrative.
+- Post 2 lands the first concrete published method on top of the cross-lifespan-speech-models page's "age-conditioned adapter heads" axis. The previous framing identified the axis but had no published instance; this paper is that instance.
+
+**Carry-forward flags:**
+- Extend `syntheses/clinical-ml-convergence-june-2026.md` (or successor) to add SB-RF as the fourth "perceptual model inside the optimisation loop" data point alongside DAL, DFC-IL, Whisper-ECoG.
+- Watch for a follow-up SB-RF paper applying the framework to hearing-impaired-listener perceptual losses (HASPI / CEC3). Would trigger creation of `concepts/optimal-transport-perceptual-losses.md`.
+- Watch for an age-aware-adapter paper targeted at hearing-impaired pediatric ASR (the obvious next step) — would trigger a new source file and an update to `concepts/cross-lifespan-speech-models.md` to add a pediatric-HA-specific corpus subsection.
+
+**Pages touched this ingest: 3** (1 new source, 2 page edits, +1 log entry).
+
+---
+
+## 2026-06-08 — Daily Hearing+AI Digest Ingest
+
+**Trigger:** Daily hearing+AI digest email sent to door.punch_4o@icloud.com on 8 Jun 2026 — ingest underlying sources into the wiki.
+
+**Digest items covered:**
+- **arXiv:2606.02913** — Saha Shetu, Habets, Brendel (Fraunhofer IIS / IAL Erlangen) — controlled head-to-head between generative (diffusion-style) and discriminative SE; discriminative wins on stationary intrusive noise, generative wins on non-stationary noise and unseen reverberation but at the cost of content-warping artifacts.
+- **Auditdata US audiologist time-crisis survey** (4 Jun 2026) — first US-wide quantitative instrument on administrative-time-loss as the workforce-shortage mechanism; explicitly names TPA portals (TruHearing, UHC Hearing) and prior-auth workflows; aggregated benchmark to publish later in 2026.
+- **Apple pre-WWDC 2026 accessibility drop** (21 May 2026) — MFi hearing aid reliable cross-device handoff + Name Recognition (deaf/HoH ambient name-spotter, 50+ languages, on-device).
+- WWDC 2026 keynote watchlist (8 Jun 2026, 10:00 PT) — pending; carry-forward flag.
+- Voit & Doclo arXiv:2606.03832 — already in wiki (last cycle); recapped in digest only.
+- Olalere et al. arXiv:2606.04221 FPGA SE benchmark — already in wiki; cited as quick stat.
+
+**Sources created (3):**
+- `sources/arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md` — Saha Shetu, Habets, Brendel (Fraunhofer IIS), arXiv:2606.02913, 3 Jun 2026. First controlled head-to-head generative-vs-discriminative SE benchmark; the *content-fidelity* gate alongside SB-RF's *latency* gate.
+- `sources/auditdata-audiologist-time-survey-jun-2026.md` — Hearing Health & Technology Matters, 4 Jun 2026. First quantitative instrument on the administrative-burden mechanism behind the US audiologist shortage.
+- `sources/apple-pre-wwdc-accessibility-may-2026.md` — Apple Newsroom, 21 May 2026. MFi cross-device handoff fix + Name Recognition for deaf/HoH users.
+
+**Pages updated (3):**
+- `wiki/concepts/probabilistic-generative-models-hearing-ai.md` — added new section "Where Generative vs Discriminative Sit Today (Fraunhofer IIS, Jun 2026)" framing the Fraunhofer paper as the *content-fidelity* gate complementary to SB-RF's *latency* gate; called out that the Fraunhofer paper benchmarks diffusion-style, not factor-graph, generative SE — head-to-head for the latter remains open. Added source to frontmatter. Added SB-RF and Fraunhofer source rows to Sources section (and corrected source-path depth from `../sources/` to `../../sources/`). Bumped `updated` to 2026-06-08.
+- `wiki/concepts/audiologist-workforce-shortage.md` — added subsection "7. The Auditdata Time-Crisis Survey — First Quantitative Admin-Burden Instrument (Jun 2026)" explicitly naming TPA portals (TruHearing, UHC Hearing) and prior-auth as the survey's named drains; positioned as the *mechanism* layer beneath ASHA/BLS *headcount* and ScienceDirect *geographic* layers. Added source to frontmatter and Sources section. Bumped `updated` to 2026-06-08.
+- `wiki/entities/apple-hearing-features.md` — added new section "Pre-WWDC 2026 Accessibility Drop (21 May 2026)" covering MFi cross-device handoff fix and Name Recognition; flagged WWDC 2026 keynote watchlist (8 Jun 2026, 10:00 PT). Added source to frontmatter and Sources section. Bumped `updated` to 2026-06-08.
+
+**Index updates:**
+- `wiki/index.md` — bumped dates on all three updated pages to 2026-06-08; added tags (`admin-burden`, `tpa-portals` on workforce; `ood-generalization` on probabilistic-generative; `mfi-handoff`, `name-recognition` on Apple).
+
+**Carry-forward flags:**
+- **WWDC 2026 keynote** (8 Jun 2026, 10:00 PT) — watch live for AirPods Pro 3 firmware updates tied to iOS 27, Conversation Boost / Media Assist upgrades, AirPods Pro w/ cameras preview. Any HA-relevant announcement triggers a same-day update to `entities/apple-hearing-features.md`.
+- **Auditdata aggregated benchmark publication** — date TBD, expected later in 2026. Will be a primary citable data point for back-office-AI-leverage thesis.
+- **Artifact-rate metric for SE** — a paper that ships an explicit artifact-rate metric alongside PESQ / HASPI / CEC3 would close the loop on the Fraunhofer comparison; would trigger creation of `concepts/artifact-rate-evaluation-se.md`.
+- **Hybrid generative/discriminative architecture** — generative-when-OOD, discriminative-when-in-distribution, decided by on-device scene classifier. Obvious next product move; first published paper triggers source + new comparison page.
+- **Probabilistic-generative vs diffusion-generative head-to-head** — Fraunhofer paper covers diffusion-style only. A controlled benchmark of factor-graph probabilistic generative (AIDA-2 family) against diffusion generative on the same OOD axes would resolve whether the explicit-likelihood structure is genuinely more artifact-resistant by construction.
+
+**Pages touched this ingest: 7** (3 new sources, 3 page edits, 1 index update, +1 log entry).

@@ -12,7 +12,7 @@ related:
   - llm-based-speech-enhancement.md
   - communication-accessibility-metric.md
   - foundation-model-fusion-speech.md
-  - clarity-prediction-challenge.md
+  - ../entities/clarity-prediction-challenge.md
 tags: [evaluation-metrics, intelligibility-prediction, speech-foundation-models, encoder-fusion, hearing-aid-ai, non-intrusive-metrics]
 ---
 

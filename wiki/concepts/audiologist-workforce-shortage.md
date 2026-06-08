@@ -2,8 +2,8 @@
 title: Audiologist Workforce Shortage
 type: concept
 created: 2026-04-19
-updated: 2026-05-17
-sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md, listen-up-kentucky-may-2026.md]
+updated: 2026-06-08
+sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md, listen-up-kentucky-may-2026.md, auditdata-audiologist-time-survey-jun-2026.md]
 related: [teleaudiology.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, automated-audiometry.md, hearing-care-funnel-attribution.md, ../syntheses/ai-understanding-gap-hearing-industry.md, precision-drug-delivery-inner-ear.md, ../entities/who-hearing-program.md, ../syntheses/cochlear-implant-access-economics.md, ../entities/aci-alliance-ci2026.md]
 tags: [workforce, audiology, shortage, access, rural-health, demographics, telehealth, policy, demand-side]
 ---
@@ -75,6 +75,12 @@ The AAA 2026 industry-leaders panel (Sonova / Demant / GN-ReSound / WSA / Starke
 
 The pattern: the highest-leverage AI projects in 2026-2027 for HA-OEM data-science teams may be **back-office productivity multipliers that buy the field time** while audiology graduation rates catch up, rather than signal-path features competing for the product-page bullet list. The "AI vs audiologist" framing is conceded by industry leadership; the operative question is which back-office workflows scale fastest.
 
+### 7. The Auditdata Time-Crisis Survey — First Quantitative Admin-Burden Instrument (Jun 2026)
+
+On **4 June 2026**, Auditdata launched the first US-wide industry survey specifically targeting *administrative-time-loss* as the workforce-shortage mechanism. The five-minute instrument asks clinic owners, practice managers, and audiologists to rate severity of staffing pressure, identify the biggest drains on clinician time (with named examples — **TPA portals from TruHearing and UnitedHealthcare Hearing, prior-authorization workflows, documentation across disconnected systems**), and describe what would most help close the gap. Auditdata cites a baseline of up to **1 hour per clinician per day** lost to admin. Aggregated benchmark to be published later in 2026.
+
+Significance: previous quantitative instruments for the workforce shortage have measured *headcount* (ASHA, BLS) and *geographic distribution* (ScienceDirect). This is the first that quantifies the *administrative-burden mechanism* — i.e., the lever back-office AI must move to convert the AAA 2026 panel framing into measurable clinic-day reclaim. The published benchmark will become a primary citable data point for the back-office-AI thesis. See [[../../sources/auditdata-audiologist-time-survey-jun-2026.md]].
+
 ## Market Impact
 
 The MarketsandMarkets report (April 2026) specifically identifies the audiologist/ENT shortage as a **critical factor** shaping the $10.35B-to-$14.42B hearing aids market growth trajectory:
@@ -121,3 +127,4 @@ Initiatives like **[Listen Up Kentucky](../../sources/listen-up-kentucky-may-202
 - [Audiologist Workforce Shortage — ASHA + ScienceDirect](../../sources/audiologist-shortage-asha-sciencedirect-2025.md)
 - [Hearing Aids Market $14.42B by 2030](../../sources/hearing-aids-market-14b-by-2030-april-2026.md) — Workforce gap as market driver
 - [Listen Up Kentucky — ADA + WSA + KAA, May 2026](../../sources/listen-up-kentucky-may-2026.md) — Demand-side awareness pilot that pairs with the supply-side workforce constraint
+- [Auditdata Audiologist Time-Crisis Survey — 4 Jun 2026](../../sources/auditdata-audiologist-time-survey-jun-2026.md) — First quantitative instrument on the administrative-burden mechanism (TPA portals, prior auth, documentation)

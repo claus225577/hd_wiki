@@ -2,8 +2,8 @@
 title: Cross-Lifespan Speech Models
 type: concept
 created: 2026-05-21
-updated: 2026-05-21
-sources: [cross-lifespan-diarization-usc-may-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-play-si-hearingreview-april-2026.md, pediatric-softband-bcd-database-frontiers-may-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md]
+updated: 2026-06-08
+sources: [cross-lifespan-diarization-usc-may-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-play-si-hearingreview-april-2026.md, pediatric-softband-bcd-database-frontiers-may-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, arxiv-2606-05440-age-aware-adapter-children-asr-jun-2026.md]
 related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, medical-domain-edge-llms.md, small-language-models-edge-ai.md, companion-phone-speech-pipeline.md, ../entities/demant-oticon.md, longitudinal-hearing-phenotyping.md, ../entities/vcca-computational-audiology.md, dnn-in-hearing-aids.md]
 tags: [speech-foundation-models, lifespan, pediatric-speech, older-adult-speech, age-distribution-shift, domain-adaptation, speaker-diarization, training-data-moat, age-conditioned-adapters, hearing-aids, whisper, voxtral, qwen3-asr]
 ---
@@ -68,7 +68,7 @@ The USC paper opens a third axis: **lifespan-stratified speech corpora and age-c
 
 - Pediatric speech corpora at scale — much harder to collect than adult speech (consent, IRB, ethics).
 - Older-adult speech corpora that are not entangled with hearing-loss artefacts.
-- Age-conditioned adapter heads on top of shared foundation backbones — a low-parameter personalization layer that does not require retraining the foundation model.
+- Age-conditioned adapter heads on top of shared foundation backbones — a low-parameter personalization layer that does not require retraining the foundation model. **Jialu Li (arXiv:2606.05440, 3 Jun 2026)** is the first published instance of this approach for children's ASR specifically: per-age adapter modules with router-based selection at inference, ground-truth routing closes ~3% of WER (12.6→12.3 overall, 18.4→17.6 macro). Predicted-age routing tracks ground-truth — the method works without exact age metadata. Hard discrete age routing outperforms continuous FiLM conditioning, suggesting the age-band structure is more informative than the continuous scalar.
 
 The OEMs whose customer-acquisition funnels include both pediatric (Phonak Sky, Oticon Play SI) and adult/older-adult platforms are positioned to assemble lifespan-stratified corpora that pure-research labs and consumer-audio companies cannot replicate.
 
@@ -107,6 +107,7 @@ A hearing-aid-local adapter is also possible at the small-DNN scale (sub-1M-para
 
 ## Sources
 - [Cross-Lifespan Speaker Diarization (Xu, Feng & Narayanan, May 2026)](../../sources/cross-lifespan-diarization-usc-may-2026.md) — Seed paper; foundation models fail at lifespan edges; domain adaptation closes most of the gap
+- [Age-Aware Adapter Tuning for Children's ASR (Li, Jun 2026)](../../sources/arxiv-2606-05440-age-aware-adapter-children-asr-jun-2026.md) — Parameter-efficient per-age-band adapter modules; 12.6%→12.3% WER overall, 18.4%→17.6% macro; predicted-age routing tracks ground-truth; hard age routing > FiLM
 - [Oticon Play SI Pediatric Launch (Apr 2026)](../../sources/oticon-play-si-pediatric-launch-april-2026.md) — Pediatric platform now shipping flagship AI
 - [Oticon Play SI HearingReview Coverage (Apr 2026)](../../sources/oticon-play-si-hearingreview-april-2026.md) — Boys Town pediatric clinical evidence
 - [Pediatric Softband BCD Database (Frontiers, May 2026)](../../sources/pediatric-softband-bcd-database-frontiers-may-2026.md) — Pediatric candidacy expansion

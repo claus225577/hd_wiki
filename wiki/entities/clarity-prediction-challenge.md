@@ -6,10 +6,10 @@ updated: 2026-05-27
 sources:
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
 related:
-  - non-intrusive-intelligibility-prediction.md
-  - foundation-model-fusion-speech.md
-  - speech-enhancement-neural-networks.md
-  - listening-effort-evaluation.md
+  - ../concepts/non-intrusive-intelligibility-prediction.md
+  - ../concepts/foundation-model-fusion-speech.md
+  - ../concepts/speech-enhancement-neural-networks.md
+  - ../concepts/listening-effort-evaluation.md
   - vcca-computational-audiology.md
 tags: [evaluation-challenge, intelligibility-prediction, clarity-project, hearing-aid-benchmarks, cpc1, cpc2, cpc3, interspeech]
 ---

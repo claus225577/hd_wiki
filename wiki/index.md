@@ -88,7 +88,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [World Models for Hearing AI](concepts/world-models-hearing-ai.md) | world-models, continual-learning, personalization | 2026-04-16 |
 | [Hearing Aid Market Dynamics](concepts/hearing-aid-market-dynamics.md) | market, forecast, growth, industry, pricing, retail-channel, vertical-integration, benefits-administrators | 2026-05-10 |
 | [Model Compression for Hearing AI](concepts/model-compression.md) | quantization, compression, pruning, distillation, edge-ai, acoustic-semantic-distillation | 2026-05-14 |
-| [Audiologist Workforce Shortage](concepts/audiologist-workforce-shortage.md) | workforce, shortage, access, rural-health, demographics | 2026-04-19 |
+| [Audiologist Workforce Shortage](concepts/audiologist-workforce-shortage.md) | workforce, shortage, access, rural-health, demographics, admin-burden, tpa-portals | 2026-06-08 |
 | [Precision Drug Delivery for the Inner Ear](concepts/precision-drug-delivery-inner-ear.md) | drug-delivery, inner-ear, cochlea, cochlear-implant | 2026-04-25 |
 | [Model Context Protocol (MCP)](concepts/model-context-protocol.md) | mcp, agentic-ai, protocol, interoperability | 2026-04-19 |
 | [Mixture of Experts (MoE)](concepts/mixture-of-experts.md) | mixture-of-experts, moe, sparse-models, edge-ai | 2026-04-25 |
@@ -106,7 +106,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Agentic Engineering in Hearing R&D](concepts/agentic-engineering-hearing-rd.md) | agentic-engineering, software-3, karpathy, llm-agents, r-and-d | 2026-05-06 |
 | [Digital Phenotyping for Cognitive Decline](concepts/digital-phenotyping-cognitive-decline.md) | digital-phenotyping, dementia, wearables, hearing-aids, telemetry | 2026-05-07 |
 | [Cortical Reorganization from Hearing Aid Use](concepts/cortical-reorganization-hearing-aids.md) | neuroplasticity, meg, cortical-reorganization, outcome-measurement, neural-efficiency | 2026-05-08 |
-| [Probabilistic Generative Models for Hearing AI](concepts/probabilistic-generative-models-hearing-ai.md) | bayesian-inference, factor-graphs, rxinfer, parameter-efficiency, edge-ai, hallucination-resistance | 2026-05-14 |
+| [Probabilistic Generative Models for Hearing AI](concepts/probabilistic-generative-models-hearing-ai.md) | bayesian-inference, factor-graphs, rxinfer, parameter-efficiency, edge-ai, hallucination-resistance, ood-generalization | 2026-06-08 |
 | [Care Partners and Dyad-Level Models for Hearing AI](concepts/care-partner-dyad-models.md) | care-partners, dyad, multi-user-modeling, adherence, telemetry, asha | 2026-05-10 |
 | [Digital Therapeutics for Tinnitus](concepts/digital-therapeutics-tinnitus.md) | tinnitus, digital-therapeutics, dtx, icbt, cbt, adherence, silentcloud, sonova, medical-llm, rct | 2026-05-18 |
 | [Medical-Domain Edge LLMs (Hearing-Care Companion Substrate)](concepts/medical-domain-edge-llms.md) | edge-ai, medical-llm, on-device, companion-app, smartphone, digital-therapeutics, privacy, fda-saMD | 2026-05-15 |
@@ -114,7 +114,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Hearing-Care Funnel Attribution](concepts/hearing-care-funnel-attribution.md) | public-health, attribution, top-of-funnel, awareness, demand-generation, market-penetration, stigma, cultural-visibility | 2026-05-28 |
 | [Multimodal Hearing Assessment](concepts/multimodal-hearing-assessment.md) | multimodal, audiovisual, ecological-validity, hearing-assessment, outcome-measurement | 2026-05-16 |
 | [User-Controlled On-Demand AI in Hearing Aids](concepts/user-controlled-on-demand-ai-hearing-aids.md) | on-demand-ai, user-control, clarity-boost, widex, hybrid-architecture, dedicated-co-processor, labeled-telemetry | 2026-05-21 |
-| [Cross-Lifespan Speech Models](concepts/cross-lifespan-speech-models.md) | speech-foundation-models, lifespan, pediatric-speech, older-adult-speech, age-distribution-shift, domain-adaptation, speaker-diarization, training-data-moat | 2026-05-21 |
+| [Cross-Lifespan Speech Models](concepts/cross-lifespan-speech-models.md) | speech-foundation-models, lifespan, pediatric-speech, older-adult-speech, age-distribution-shift, domain-adaptation, speaker-diarization, training-data-moat, age-conditioned-adapters | 2026-06-08 |
 | [LALM Selective Auditory Attention and Multilingual Distractor Confusion](concepts/lalm-selective-auditory-attention.md) | lalm, selective-auditory-attention, multilingual, cocktail-party, benchmark, evaluation, hallucination, hearing-aid-ai, source-confusion, foundation-models | 2026-05-22 |
 | [Listening Effort as a First-Class Hearing-AI Metric](concepts/listening-effort-evaluation.md) | listening-effort, evaluation-metrics, cognitive-load, fatigue, pupillometry, fuel-framework, communication-accessibility, claude-opus-4-8-effort-dosing | 2026-06-01 |
 | [Communication Accessibility — The Missing Interactional Metric](concepts/communication-accessibility-metric.md) | communication-accessibility, fuel-framework, evaluation-metrics, outcome-measurement, interactional, conversation, telemetry, dyadic-interaction | 2026-06-02 |
@@ -139,7 +139,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [WS Audiology / Signia](entities/ws-audiology-signia.md) | company, lucid, retail-channel, sams-club, widex-allure-ai, on-demand-ai, compass-cloud | 2026-05-21 |
 | [Starkey](entities/starkey.md) | company, government-services, va, dod, starlink-edge-le | 2026-05-11 |
 | [Phonak](entities/phonak.md) | company | 2026-05-05 |
-| [Apple Hearing Features](entities/apple-hearing-features.md) | company, consumer-tech, lmic, india, multi-modal-screening | 2026-05-26 |
+| [Apple Hearing Features](entities/apple-hearing-features.md) | company, consumer-tech, lmic, india, multi-modal-screening, mfi-handoff, name-recognition | 2026-06-08 |
 | [WHO Hearing Program](entities/who-hearing-program.md) | organization | 2026-04-15 |
 | [VCCA — Computational Audiology](entities/vcca-computational-audiology.md) | conference, academic, wca2026, aram-glorig-award, pichora-fuller | 2026-05-26 |
 | [M. Kathleen (Kathy) Pichora-Fuller](entities/kathy-pichora-fuller.md) | person, researcher, cognitive-audiology, fuel-framework, listening-effort, communication-accessibility, aram-glorig-award | 2026-05-26 |

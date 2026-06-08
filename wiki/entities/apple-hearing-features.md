@@ -2,8 +2,8 @@
 title: Apple Hearing Features
 type: entity
 created: 2026-04-15
-updated: 2026-05-26
-sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md, apple-airpods-india-italy-taiwan-may-21-2026.md]
+updated: 2026-06-08
+sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md, apple-airpods-india-italy-taiwan-may-21-2026.md, apple-pre-wwdc-accessibility-may-2026.md]
 related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, ../concepts/hearing-care-funnel-attribution.md, ../concepts/audiologist-workforce-shortage.md, ../syntheses/lmic-screening-platform-asymmetry-may-2026.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md, essilorluxottica.md]
 tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring, hearing-study, longitudinal, lmic, india, multi-modal-screening]
 ---
@@ -104,6 +104,17 @@ Tim Cook moved to Executive Chairman; **John Ternus** became Apple CEO in April 
 - FDA-regulated health features as core product differentiators
 - Accessibility as a first-class product pillar
 
+## Pre-WWDC 2026 Accessibility Drop (21 May 2026)
+
+Apple's annual pre-WWDC accessibility announcement, two items most relevant to hearing care:
+
+- **MFi Hearing Aid Cross-Device Handoff** — Made-for-iPhone hearing aids now hand off reliably across iPhone, iPad, Mac, and Vision Pro under a unified setup flow across iOS, iPadOS, macOS, and visionOS. Fixes one of the longest-standing user complaints in the Apple-hearing ecosystem; foundational plumbing that determines whether hearing aid users adopt the broader Apple ecosystem holistically.
+- **Name Recognition** — Apple Intelligence-powered feature that **alerts deaf or hard-of-hearing users when their name is spoken in their environment**, across 50+ languages at launch. On-device inference. First global OS-integrated implementation of an ambient name-spotter for HoH users; equivalent features have existed in research and niche apps but never in a mainstream consumer OS.
+
+**WWDC 2026 keynote (8 Jun 2026, 10:00 PT)** — pending watchlist: AirPods Pro 3 firmware updates tied to iOS 27, Conversation Boost / Media Assist upgrades, rumored AirPods Pro w/ cameras preview.
+
+See [[../../sources/apple-pre-wwdc-accessibility-may-2026.md]].
+
 ## Apple Watch — Hearing Health
 - **Noise exposure monitoring** — Tracks environmental decibel levels; alerts to dangerous exposure
 - **AirPods Pro 3 heart rate** — Continuous cardiac monitoring extends Apple's health platform
@@ -138,4 +149,5 @@ Apple's differentiation is not primarily AI audio processing quality — it is d
 - [AirPods Hearing Aid Country Expansion — May 12 2026](../../sources/airpods-hearing-aid-country-expansion-may-2026.md) — Italy, Romania, Czechia added; now in 100+ countries
 - [Apple Expands Health Features to India, Italy, Taiwan — 21 May 2026](../../sources/apple-airpods-india-italy-taiwan-may-21-2026.md) — Hearing Test → India (LMIC inflection); Hearing Aid Mode → Italy; Sleep Apnea → India; Hypertension → Taiwan; multi-modal convergence in a single iOS push; 160+ countries footprint
 - [Apple OTC-HAF Usability (AJA, 2025)](../../sources/apple-otc-haf-usability-aja-2025.md) — First independent academic evaluation; MAUQ 6.7/7 usability
+- [Apple Pre-WWDC 2026 Accessibility Drop — 21 May 2026](../../sources/apple-pre-wwdc-accessibility-may-2026.md) — MFi cross-device handoff fix; Name Recognition for deaf/HoH users in 50+ languages
 - Research notes on AirPods Pro 2 FDA clearance, iOS 26 hearing test feature, global availability

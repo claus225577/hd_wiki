@@ -2,8 +2,8 @@
 title: Digital Therapeutics for Tinnitus
 type: concept
 created: 2026-05-11
-updated: 2026-05-18
-sources: [silentcloud-tinnitus-rwd-frontiers-may-2026.md, sonova-silentcloud-acquisition-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, musicians-tinnitus-meta-analysis-2026.md, tinnitus-app-rct-jama-wasano-may-2026.md]
+updated: 2026-06-07
+sources: [silentcloud-tinnitus-rwd-frontiers-may-2026.md, sonova-silentcloud-acquisition-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, musicians-tinnitus-meta-analysis-2026.md, tinnitus-app-rct-jama-wasano-may-2026.md, cilcare-cil001-massgeneral-tinnitus-may-2026.md]
 related: [care-partner-dyad-models.md, hearing-loss-dementia-link.md, ../entities/sonova-ag.md, longitudinal-hearing-phenotyping.md, medical-domain-edge-llms.md]
 tags: [tinnitus, digital-therapeutics, dtx, icbt, cbt, adherence, silentcloud, sonova, real-world-data, thi, digital-health, rct]
 ---
@@ -81,6 +81,7 @@ A digital therapeutic for tinnitus that takes the adherence problem seriously wo
 - **Tinnitracks** — music-based notched-amplification therapy (Germany)
 - **Lenire** — bimodal neuromodulation (Neuromod Devices; FDA-cleared device, not pure software)
 - **Audiocure** — pharmacotherapy (not DTx, included for landscape)
+- **Cilcare (CIL001)** — investigational pharmacotherapy targeting cochlear synaptopathy; US trial in preparation at Mass General with Maison's group (announced May 2026; SelectUSA Summit). Disease-modifying lane, complementary to DTx adherence problem. See [[../sources/cilcare-cil001-massgeneral-tinnitus-may-2026]].
 - **MindEar**, **Oto** — emerging app-based tinnitus management products
 
 ## Open Research Questions
@@ -103,3 +104,4 @@ A digital therapeutic for tinnitus that takes the adherence problem seriously wo
 - [SilentCloud RWD — Frontiers (May 2026)](../sources/silentcloud-tinnitus-rwd-frontiers-may-2026.md) — First peer-reviewed RWD; THI −14.7 in completers; 17,271 → 63 funnel
 - [Sonova SilentCloud Acquisition (2026)](../sources/sonova-silentcloud-acquisition-2026.md) — Strategic context: tinnitus DTx as Sonova's non-hardware lane
 - [QVAC MedPsy edge medical LLM (May 2026)](../sources/qvac-medpsy-edge-medical-llm-may-2026.md) — On-device medical LLMs as a possible adherence lever for tinnitus iCBT delivery
+- [Cilcare CIL001 Mass General US trial prep (May 2026)](../sources/cilcare-cil001-massgeneral-tinnitus-may-2026.md) — Pharma lane targeting cochlear synaptopathy; complementary to behavioural DTx

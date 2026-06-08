@@ -9,7 +9,7 @@ related:
   - training-deployment-distribution-gap.md
   - dnn-architectures-hearing-aids.md
   - on-device-ml-hearing-aids.md
-  - dsp-classical-vs-deep-learning.md
+  - speech-enhancement-neural-networks.md
 tags: [acoustic-feedback, dfc, howl, closed-loop, deep-feedback-cancellation, dsp, hearing-aid-fundamentals]
 ---
 
