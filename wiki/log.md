@@ -2615,3 +2615,71 @@ Worth watching:
 - **Probabilistic-generative vs diffusion-generative head-to-head** — Fraunhofer paper covers diffusion-style only. A controlled benchmark of factor-graph probabilistic generative (AIDA-2 family) against diffusion generative on the same OOD axes would resolve whether the explicit-likelihood structure is genuinely more artifact-resistant by construction.
 
 **Pages touched this ingest: 7** (3 new sources, 3 page edits, 1 index update, +1 log entry).
+
+---
+
+## 2026-06-09 — LinkedIn drafts ingest
+
+**Mode:** LinkedIn drafts ingest (daily). Two sources, both single-event hooks paired with structural framing.
+
+### Sources added (2)
+1. **`widex-allure-ai-launch-june-2026.md`** — Widex Allure AI RIC live in five markets June 1, 2026; follow-on industry coverage adds the technical disclosure that the AI co-processor runs a **third-generation "Linear Recurrent Neural Network" (L-RNN)** specifically built for audio. Quoted Widex AI team rationale: "It works with the temporal aspect of sound and can keep memory of what happened before. That allows balancing noise reduction, power consumption, and sound quality in a way that other AI architectures are not able to do." Full US launch Nov 1, 2026.
+2. **`biear-meng-2026-arxiv.md`** — Meng, Ambikairajah, Sethu, Zhang, Li (UNSW Sydney + Haizhou Li, NUS / CUHK Shenzhen); arXiv:2606.06795, posted June 5, 2026; accepted INTERSPEECH 2026. **BiEAR** — binaural auditory front-end with neural controller adaptively adjusting filterbank frequency selectivity at inference, inspired by the medial olivocochlear (MOC) reflex. Bilateral feedback controllers driven by per-subband sound pressure levels. End-to-end learning from multi-speaker localisation + distance estimation losses. Outperforms fixed binaural front-ends with robustness to unseen rooms / speakers.
+
+### Pages created (1)
+- **`concepts/efferent-moc-feedback-hearing-ai.md`** — New concept page for the MOC / efferent feedback class as a hearing-AI primitive. Defines the biological MOC reflex (brainstem → outer hair cell gain modulation in response to scene), reviews its established anti-masking / selective-attention / protective-gain functions, names the gap in conventional binaural HA front-ends (fixed filterbank, fixed gain map, runtime adaptation only in the back-end). Documents BiEAR as the reference implementation. Includes an afferent/efferent pair table — DAL (June 4) models the forward cochlear path; BiEAR (June 5) models the descending path — making the case that 2026 is the year the cochlear loop becomes a first-class ML object instead of a fixed preprocessing block. Implications section: filterbank as first-class adaptive object, second axis of personalization beyond the audiogram-shaped insertion gain, scene-conditioning at the source moving back-end work upstream, bridge to AAD (top-down read vs structural mechanism). Open questions on biological fidelity of the learned controller, transfer to hearing-impaired listeners (whose MOC function is itself impaired), porting to HASPI/STOI/CEC3 speech-intelligibility losses, and hardware translation cost.
+
+### Pages updated (2)
+- **`concepts/differentiable-cochlear-models.md`** — Added BiEAR to frontmatter sources + `biear-meng-2026-arxiv.md` reference; added `efferent-moc-feedback-hearing-ai.md` to related; new tags `afferent`, `efferent-pair`. New subsection **"The Afferent / Efferent Pair (Added 2026-06-09)"** documenting that DAL models afferent and BiEAR models efferent, posted within 24 hours of each other, and together operationalise the cochlear loop as a first-class ML object. Updated 2026-06-09.
+- **`concepts/user-controlled-on-demand-ai-hearing-aids.md`** — Added `widex-allure-ai-launch-june-2026.md` to frontmatter sources. Updated Reference Implementation section to record the June 1 five-market launch as actually executed (was previously framed as scheduled-launch), with full US still on November 1 trajectory. Added the **L-RNN** technical disclosure to the on-demand-path description. New subsection **"Why the L-RNN choice matters"** — maps L-RNN to the State Space Model family (S4, Mamba, RWKV-7, Hyena) the audio ML community has been converging on for chip-friendly streaming; cross-references the June 4 Olalere FPGA finding (memory bandwidth as binding on-chip constraint — exactly the constraint SSM-family architectures are designed to relax). New tags `linear-recurrent-neural-network`, `l-rnn`, `state-space-models`. Updated 2026-06-09.
+
+### Index update
+- Added `efferent-moc-feedback-hearing-ai` row to Concepts table.
+- Updated `user-controlled-on-demand-ai-hearing-aids` row tags + date.
+- Updated `differentiable-cochlear-models` row tags + date.
+- New top-of-index summary entry.
+
+### Underlying LinkedIn posts
+1. **Widex Allure AI RIC — opt-in AI is a labeled-dataset architecture, not just a marketing position.** Every press of the Clarity Boost button is a labeled positive ("this listener, this scene, perceived enough difficulty to ask for help"); every release is a labeled negative. Across millions of wearer-hours that's a contextual-bandit dataset most R&D teams would pay to construct. The L-RNN architecture choice puts WSA in the same on-chip-streaming-audio-via-SSMs camp as the rest of the 2026 chip-level audio ML field, not an idiosyncratic Widex bet.
+2. **BiEAR (arXiv:2606.06795) — efferent MOC feedback as the missing axis in binaural hearing AI.** UNSW Sydney + NUS team put a neural controller over a binaural auditory filterbank that adjusts frequency selectivity at inference, learned end-to-end from downstream localisation losses. Paired with Google's DAL (afferent / forward cochlear model) the cochlear loop — forward and back — is now a first-class ML object. For hearing AI specifically: the audiogram-shaped insertion gain has been a one-shot person-level parameter for forty years; efferent gain control is the second axis — moment-by-moment, scene-conditioned.
+
+### Carry-forward flags
+- **L-RNN architecture detail.** Widex did not disclose the specific L-RNN variant (S4-style? Mamba-derived? proprietary?). Worth watching next disclosure cycle.
+- **Real-world Clarity Boost engagement rates.** From June 1 onward in the five launch markets, real-world button-press telemetry distributions are testable in principle. Whether WSA publishes any aggregated data is the open question.
+- **BiEAR speech-in-noise port.** BiEAR's losses are localisation and distance estimation, not HASPI/STOI/CEC3 intelligibility. The HA-relevant SI port is unbuilt — the team that ships it owns the next round.
+- **Cross-trial validation of the MOC story.** Whether the BiEAR-learned controller actually resembles biological MOC policy is an interesting downstream analysis the paper does not perform.
+
+**Pages touched this ingest: 6** (2 new sources, 1 new concept page, 2 page updates, 1 index update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-09 (Daily Digest 09 Jun 2026)
+
+**Source of operation:** Daily hearing+AI digest email compiled and sent to door.punch_4o@icloud.com.
+
+### New source files
+- **`sources/elehear-delight-cic-otc-ces-2026.md`** — Elehear Delight, first AI CIC OTC hearing aid; launched at CES 2026 (Jan 13). $299 pre-order, VocClear AI engine, on-device 20-language translation, IP67, BT 5.3, ≤45 dB amplification.
+- **`sources/hearing-ai-digest-2026-06-09.md`** — Internal archive of today's digest delivery (10 items: 3 papers, 4 industry, 2 AI/ML, 2 worth-watching; 9 already in wiki, 1 net-new ingest).
+
+### Wiki page updates
+- **`wiki/concepts/otc-hearing-aids.md`** — Added `elehear-delight-cic-otc-ces-2026.md` to frontmatter sources; `updated:` bumped to 2026-06-09. New subsection **"CIC Form Factor Enters OTC — Elehear Delight (CES 2026)"** documenting that CIC is materially new to OTC, with a spec table and three "why it matters" hooks (form-factor as third axis beyond personalization/simplicity; translation as wedge feature; sub-$300 collapses the discretion premium prescription CIC has historically held).
+
+### Coverage map (10 digest items → wiki state)
+| Item | Wiki coverage |
+|------|---------------|
+| DBHN-Net (arXiv:2606.05911) | already: `arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md` |
+| DAL Differentiable Auditory Loop | already: `dal-differentiable-auditory-loop-google-june-2026.md` |
+| Northwestern CI language prediction | already: `ai-cochlear-implant-language-prediction-2025.md` |
+| Phonak AI Excellence Award | already: `phonak-ai-excellence-award-march-2026.md` |
+| Sonova ⇒ divest Sennheiser Consumer | already: `sonova-sennheiser-consumer-divestiture-may-2026.md` |
+| Elehear Delight CIC OTC | **NEW**: `elehear-delight-cic-otc-ces-2026.md` |
+| Apple AirPods Hearing Aid 100+ countries | already: `airpods-hearing-aid-country-expansion-may-2026.md` |
+| SNN+ANN hybrids / TinyML survey | folded into DBHN-Net citation |
+| Mamba / SSM in audio | already: `mamba-ssm-audio-traction-2026.md` |
+| Auracast venue rollout | already: `auracast-uk-live-theaters-april-2026.md` |
+| AAA 2026 audiologist-supply panel | already: `aaa-2026-leadership-panel-may.md` |
+
+### Editorial notes
+Quiet news cycle Monday — most of today's items were extensions or reaffirmations of existing wiki content. The single net-new source (Elehear Delight) opens up a new dimension (form factor) in the OTC bifurcation thread that has otherwise been about personalization-vs-simplicity. Deliberately holding back on WWDC 2026 follow-up coverage — iOS 27 betas haven't landed yet, will pick up tomorrow.
+
+**Pages touched this ingest: 4** (2 new sources, 1 page update, +1 log entry).

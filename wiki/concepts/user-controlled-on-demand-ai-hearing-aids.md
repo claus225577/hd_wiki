@@ -2,10 +2,10 @@
 title: User-Controlled On-Demand AI in Hearing Aids
 type: concept
 created: 2026-05-21
-updated: 2026-05-21
-sources: [widex-allure-ai-may-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, wsa-sound-preference-program-april-2026.md]
+updated: 2026-06-09
+sources: [widex-allure-ai-may-2026.md, widex-allure-ai-launch-june-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, wsa-sound-preference-program-april-2026.md]
 related: [../entities/ws-audiology-signia.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, closed-loop-data-flywheel.md, on-device-ml-hearing-aids.md, ../comparisons/dnn-vs-natural-processing.md, hearing-aid-chip-architectures.md]
-tags: [on-demand-ai, user-control, clarity-boost, widex, hybrid-architecture, dedicated-co-processor, labeled-telemetry, scene-labels, hearing-aids]
+tags: [on-demand-ai, user-control, clarity-boost, widex, hybrid-architecture, dedicated-co-processor, labeled-telemetry, scene-labels, hearing-aids, linear-recurrent-neural-network, l-rnn, state-space-models]
 ---
 
 # User-Controlled On-Demand AI in Hearing Aids
@@ -16,13 +16,19 @@ This page treats the pattern as both a **product architecture** and a **labeled-
 
 ## Reference Implementation
 
-**Widex Allure AI RIC (May 20, 2026).** First commercial implementation. Architecture:
+**Widex Allure AI RIC** — announced May 20, 2026; launched in five markets June 1, 2026; full launch incl. US scheduled November 1, 2026. First commercial implementation of the on-demand AI pattern. Architecture:
 
 - **Default path:** Widex PureSound with ZeroDelay — classical "natural sound" pipeline; temporal-fidelity-preserving DSP, no DNN.
-- **On-demand path:** "Clarity Boost" engaged via user button; dedicated AI co-processor on the W1 chip runs audio-domain neural network.
+- **On-demand path:** "Clarity Boost" engaged via user button; dedicated AI co-processor runs an audio-specific **Linear Recurrent Neural Network (L-RNN)** — Widex's terminology for a "third-generation" DNN architecture built for streaming audio at HA power budgets (close cousin of the SSM family — S4, Mamba, RWKV-7 — that the audio ML community has converged on for on-chip streaming).
 - **Claimed performance when engaged:** up to 6 dB higher output SNR vs competitor AI hearing aids (manufacturer-published).
 - **Battery budget:** 32 h total runtime including up to 6 h of AI-on use or streaming — i.e., the AI path is **explicitly power-budgeted as the minority of the day**, not the dominant operating mode.
-- See [widex-allure-ai-may-2026 source](../../sources/widex-allure-ai-may-2026.md).
+- See [widex-allure-ai-may-2026 source](../../sources/widex-allure-ai-may-2026.md) for the announcement and [widex-allure-ai-launch-june-2026 source](../../sources/widex-allure-ai-launch-june-2026.md) for the live launch + L-RNN architecture disclosure.
+
+### Why the L-RNN choice matters (added 2026-06-09)
+
+Linear Recurrent Neural Networks share their defining properties with the State Space Model family (S4, Mamba, Hyena, RWKV-7, etc.): linear recurrence in time → cheap streaming inference, constant per-step compute, no growing KV cache; state carries memory so temporal context doesn't require attention over a window. These properties map well to power-constrained DSP / NPU silicon, which is why the audio ML community has been quietly converging on this architecture family throughout 2024–2026.
+
+WSA picking an L-RNN over a CNN or transformer for the on-demand AI path is therefore **aligned with the broader 2026 chip-level convergence**, not an idiosyncratic Widex bet. It also cross-references the June 4, 2026 [Olalere et al. FPGA latency benchmark](../../sources/fpga-sudormrf-feasibility-radboud-june-2026.md) finding that **memory bandwidth — not compute — is the binding on-chip constraint**, which is exactly the constraint SSM-family architectures are designed to relax.
 
 ## Counter-Positioning Against Always-On AI
 
@@ -93,5 +99,6 @@ See [[closed-loop-data-flywheel]] for the broader flywheel framing.
 
 ## Sources
 - [Widex Allure AI RIC (May 2026)](../../sources/widex-allure-ai-may-2026.md) — Reference implementation; user-toggled Clarity Boost; W1 chip with dedicated AI co-processor; up to 6 dB SNR vs competitor AI HAs; Compass Cloud 2.0 companion platform
+- [Widex Allure AI RIC — Launch goes live (Jun 1 2026)](../../sources/widex-allure-ai-launch-june-2026.md) — Five-market launch executed; L-RNN architecture publicly disclosed; aligns the chip-side architecture with the broader 2026 SSM-for-audio convergence
 - [Korhonen et al. — Natural vs DNN (Apr 2026)](../../sources/korhonen-natural-vs-dnn-hearing-aids-april-2026.md) — Non-AI Widex Allure outperformed 4 DNN competitors by up to 8.5 dB SNR
 - [WSA Sound Preference Program (Apr 2026)](../../sources/wsa-sound-preference-program-april-2026.md) — ~40% of wearers show stable natural-vs-enhanced preference, supporting the hybrid-with-user-control design rationale

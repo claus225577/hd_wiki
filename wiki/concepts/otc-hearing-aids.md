@@ -2,8 +2,8 @@
 title: Over-the-Counter Hearing Aids
 type: concept
 created: 2026-04-15
-updated: 2026-06-05
-sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, apple-otc-haf-usability-aja-2025.md, airpods-hearing-aid-country-expansion-may-2026.md, eargo-8-launch-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, audien-atom-air-launch-may-28-2026.md, veterans-hearing-aid-improvement-act-house-jun-2026.md, nuance-audio-western-univ-clinical-study-2026.md]
+updated: 2026-06-09
+sources: [ceretone-otc-uk-launch-april-2026.md, hearing-aids-market-14b-by-2030-april-2026.md, airpods-pro-3-hearing-health-april-2026.md, audiologist-shortage-asha-sciencedirect-2025.md, sony-otc-hearing-aids-discontinued-april-2026.md, orka-o1-pro-bose-anc-awe-2026.md, audien-target-expansion-april-2026.md, ceretone-uk-otc-expansion-april-2026.md, sony-otc-discontinued-hearingtracker-april-2026.md, lexie-b3-bose-launch-may-2026.md, sams-club-nationsbenefits-supplants-lucid-may-2026.md, apple-otc-haf-usability-aja-2025.md, airpods-hearing-aid-country-expansion-may-2026.md, eargo-8-launch-may-2026.md, fda-low-risk-ai-wellness-wearables-guidance-jan-2026.md, audien-atom-air-launch-may-28-2026.md, veterans-hearing-aid-improvement-act-house-jun-2026.md, nuance-audio-western-univ-clinical-study-2026.md, elehear-delight-cic-otc-ces-2026.md]
 related: [hearing-aid-market-dynamics.md, teleaudiology.md, hearing-loss-dementia-link.md, auracast-bluetooth-le-audio.md, ../entities/ceretone.md, ../entities/apple-hearing-features.md, audiologist-workforce-shortage.md, ../entities/ws-audiology-signia.md, ../entities/orka-bose-partnership.md, ../entities/essilorluxottica.md, ../syntheses/va-as-hearing-ai-dataset-may-2026.md]
 tags: [otc, fda, regulation, market, accessibility, apple, airpods, self-fitting, ceretone, uk, international, workforce-shortage, sony-exit, anc, lexie, bose, sams-club, retail-channel, nationsbenefits, lucid, vertical-integration, va, veterans, legislation, clinically-supervised-otc]
 ---
@@ -228,6 +228,30 @@ Source: [Veterans Hearing Aid Improvement Act — House Companion](../../sources
 ## ANC Enters the Hearing Aid Market (April 2026)
 
 The Orka O1 Pro, debuting at AWE 2026 with Bose QuietControl ANC, introduces active noise cancellation to hearing aids for the first time. ANC has been a standard feature in consumer earbuds since ~2019 but was absent from hearing aids. This bridges the consumer audio and medical hearing worlds. See [[orka-bose-partnership]].
+
+## CIC Form Factor Enters OTC — Elehear Delight (CES 2026)
+
+At CES 2026 (Jan 13, 2026), **Elehear** launched **Delight**, the first AI-enabled completely-in-canal (CIC) OTC hearing aid. Materially new because the OTC category has been overwhelmingly BTE/RIC since the 2022 FDA rule — discretion/cosmesis was a structural gap.
+
+| Attribute | Value |
+|-----------|-------|
+| Form factor | CIC w/ ergonomic ear-wing retention |
+| Amplification | ≤45 dB (mild–moderate) |
+| Noise reduction | ≤24 dB, "VocClear" AI engine |
+| On-device translation | 20 languages (real-time) |
+| Tinnitus mode | "Serene Sound Relief" white noise |
+| Connectivity | Bluetooth 5.3 |
+| Ingress | IP67 |
+| Pre-order | $299 (60-day trial) |
+
+**Why it's worth tracking:**
+1. Adds a **third dimension** (form factor / visibility) to the existing personalization-vs-simplicity bifurcation table.
+2. **On-device translation as wedge feature** — pulls in non-traditional OTC entrants (frequent travelers, multilingual households) without the medical-hearing framing.
+3. Sub-$300 + AI + CIC reframes the discretion premium that prescription CIC (e.g., Phonak Virto R, Oticon Own) has historically commanded at 10–20× the price.
+
+Open questions: VocClear DNN architecture not disclosed; battery life under BT 5.3 + translation not published; no public real-ear measurement parity data vs Apple HAF n=118 cohort.
+
+See [Elehear Delight CIC OTC at CES 2026](../../sources/elehear-delight-cic-otc-ces-2026.md).
 
 ## Intersection with Dementia Research
 Given that hearing aid use is associated with **48% slower cognitive decline** (ACHIEVE study) and hearing loss is the largest modifiable dementia risk factor, increasing OTC adoption has potential population-level public health significance. See [[hearing-loss-dementia-link]].
