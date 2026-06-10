@@ -2,8 +2,8 @@
 title: TinyML for Hearing Devices
 type: concept
 created: 2026-04-23
-updated: 2026-06-05
-sources: [tinyml-speech-recognition-arduino-2025.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, tinyml-stm32-hearing-aid-speech-enhancement-2026.md, tiny-ml-to-tiny-dl-survey-acm-2026.md, aondevices-edge-ai-ces-2026.md, arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md]
+updated: 2026-06-10
+sources: [tinyml-speech-recognition-arduino-2025.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, tinyml-stm32-hearing-aid-speech-enhancement-2026.md, tiny-ml-to-tiny-dl-survey-acm-2026.md, aondevices-edge-ai-ces-2026.md, arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md, synaptics-astra-sr80-edge-ai-audio-may-2026.md]
 related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, model-compression.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, speech-enhancement-neural-networks.md, large-sensor-models.md]
 tags: [tinyml, edge-ai, microcontroller, keyword-spotting, ultra-low-resource, hearing-aids, arduino]
 ---
@@ -85,6 +85,18 @@ A 2025-2026 ScienceDirect paper implements DNN-based speech enhancement for hear
 **Why it matters:** validates that hearing-aid-grade neural speech enhancement now fits inside an off-the-shelf MCU's power and latency budget — no proprietary chip required. Unlocks the **OTC and budget hearing aid path** for DNN noise reduction without Sonova/Demant-class custom silicon.
 
 See [STM32 TinyML SE source](../sources/tinyml-stm32-hearing-aid-speech-enhancement-2026.md).
+
+## Commodity Always-On Audio MCUs Emerge (Synaptics Astra SR80, May 2026)
+
+Synaptics announced the **Astra SR80** MCU family in May 2026, pitched as a new baseline for "always-on edge AI audio" in human-centric devices — smart speakers, smart glasses, hearables, IoT endpoints. The chip integrates always-on acoustic scene detection, on-device NN inference for audio, and high-fidelity audio I/O at a power envelope tuned for continuously-listening devices.
+
+Astra SR80 isn't a hearing-aid SoC — it does not (yet) target the < 1 mW, < 10 ms envelope of an HA chip. What it signals is structural:
+
+- **Always-on audio NN inference is now an MCU-class commodity category**, not an exotic accelerator. The pricing floor for "good enough" on-device speech detection moves down accordingly.
+- The form-factor convergence between premium hearables (Apple AirPods Pro 3, Bose Ultra Open, ReSound Nexia, Jabra Enhance Pro 20) and entry-level OTC HAs gets economical to manufacture — see [[otc-hearing-aids]] CIC/hearable bifurcation thread.
+- **Hearing-aid OEM main-SoC roadmaps** (Sonova Era, GN M&RIE, Demant Polaris, Starkey Edge AI) now face a credible commodity baseline pressing up against their bottom-tier products. The asymmetry — OEMs custom-design, OTC entrants reach for off-the-shelf — is what makes Synaptics' Astra positioning consequential.
+
+See [[../sources/synaptics-astra-sr80-edge-ai-audio-may-2026]].
 
 ## TinyML Ecosystem Trajectory
 

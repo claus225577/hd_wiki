@@ -2,10 +2,11 @@
 title: Apple Hearing Features
 type: entity
 created: 2026-04-15
-updated: 2026-06-08
-sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md, apple-airpods-india-italy-taiwan-may-21-2026.md, apple-pre-wwdc-accessibility-may-2026.md]
-related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, ../concepts/hearing-care-funnel-attribution.md, ../concepts/audiologist-workforce-shortage.md, ../syntheses/lmic-screening-platform-asymmetry-may-2026.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md, essilorluxottica.md]
-tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, heart-rate, health-monitoring, hearing-study, longitudinal, lmic, india, multi-modal-screening]
+updated: 2026-06-10
+last_change: WWDC 2026 (Jun 8) — 3-band Custom EQ for AirPods in iOS 27 (H2-chip devices: AirPods 4, Pro 3, Max 2). First user-controllable EQ since AirPods launch in 2016. Co-announced: AirPods Pro 3 GymKit heart-rate sync, AirPods settings UX reorganization.
+sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md, apple-airpods-india-italy-taiwan-may-21-2026.md, apple-pre-wwdc-accessibility-may-2026.md, apple-wwdc-2026-airpods-custom-eq-jun-2026.md]
+related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, ../concepts/hearing-care-funnel-attribution.md, ../concepts/audiologist-workforce-shortage.md, ../concepts/hearing-aid-prescription-formulas.md, ../concepts/closed-loop-data-flywheel.md, ../syntheses/lmic-screening-platform-asymmetry-may-2026.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md, essilorluxottica.md]
+tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, ios27, custom-eq, wwdc-2026, heart-rate, health-monitoring, hearing-study, longitudinal, lmic, india, multi-modal-screening]
 ---
 
 # Apple Hearing Features
@@ -35,8 +36,16 @@ AirPods Pro 2 received FDA clearance as a Class II OTC hearing aid. This is not 
 - **Continuous software updates** — Apple regularly adds features post-launch, making the device improve over time (contrast with traditional hearing aids that ship with fixed firmware)
 - Extends the health monitoring use case (parallels Starkey's health-in-hearing-aids strategy but at consumer electronics scale)
 
+### WWDC 2026 — Custom EQ + AirPods reorganization (Jun 8, 2026)
+- **3-band Custom EQ** (Bass / Mids / Treble) for AirPods in iOS 27, with **live waveform preview** while a song plays. First user-controllable EQ in the AirPods line since 2016.
+- **Device support:** H2-chip AirPods only — **AirPods 4 (H2), AirPods Pro 3, AirPods Max 2**. Excludes AirPods Pro 2 and original AirPods Max.
+- **NOT audiogram-driven** — no compression ratio, no in-situ verification, no integration with the existing Hearing Test that lives separately under Hearing Health. This is consumer tone-control, structurally separate from the FDA-cleared Hearing Aid Mode pipeline.
+- **AirPods settings UX reorganized** — Spatial Audio, Hearing Health, and Adaptive features now surfaced at top level alongside EQ.
+- **AirPods Pro 3 GymKit heart-rate sync** — co-announced; in-ear PPG data syncs via iPhone to Apple Fitness+ and compatible gym equipment.
+- **Why it matters for hearing AI:** the most basic primitive of every hearing-aid prescription (NAL-NL3, DSL v5, etc.) is band-gain shaping; Apple just shipped that primitive with a beautiful UI to the ~600M AirPods installed base. The next-generation wearer's reference UX for "tune my sound" becomes consumer-grade self-adjustment in 30 seconds, not a 6-week clinical fitting cycle. Sets up a 2030 fitting model of "audiogram as warm start, continuous user adjustment in real listening scenarios as the gradient." See [[../../sources/apple-wwdc-2026-airpods-custom-eq-jun-2026]].
+
 ### Software Requirements
-- Requires **iOS 26 / iPadOS 26**
+- Requires **iOS 26 / iPadOS 26** for Hearing Aid Mode; **iOS 27** for Custom EQ (H2-chip AirPods only)
 - Available in **150+ countries** — broader global reach than most prescription hearing aid distribution networks
 - **Hearing Test + Hearing Aid features** specifically available in **100+ countries** and growing — most recent regulatory wave (12 May 2026) added Italy, Romania, and Czechia, alongside Apple Watch hypertension alerts in the same markets. See [[../../sources/airpods-hearing-aid-country-expansion-may-2026]].
 - **21 May 2026 multi-modal wave (India / Italy / Taiwan):** AirPods Pro Hearing Test launched in **India** (first launch at scale in an LMIC of this size), AirPods Hearing Aid Mode upgraded in **Italy**, Apple Watch Sleep Apnea notifications in **India**, Apple Watch Hypertension notifications in **Taiwan**. Total footprint now **160+ countries and regions** across Apple Health. Structurally distinct from the 12 May EU wave: first time three different health-screening modalities (hearing + sleep + cardiac) shipped to two new countries in a single iOS push. India's audiologist density runs ~1 per 500K-6M vs ~1 per 25K in the U.S. — the screening-layer bottleneck just collapsed to near-zero marginal cost in a 1.4 billion-person market. See [[../../sources/apple-airpods-india-italy-taiwan-may-21-2026]] and the synthesis [[../syntheses/lmic-screening-platform-asymmetry-may-2026]].

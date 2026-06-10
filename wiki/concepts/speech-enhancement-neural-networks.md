@@ -2,11 +2,11 @@
 title: Speech Enhancement Neural Networks
 type: concept
 created: 2026-04-15
-updated: 2026-06-05
-last_change: Added SB-RF (arXiv:2606.05575, Lu et al., 4 Jun 2026) — one-step generative SE via Schrödinger bridge + rectified flow; and DBHN-Net (arXiv:2606.05911, Fan et al., 4 Jun 2026, accepted TPAMI) — SNN+ANN hybrid with 7.5x compute reduction
-sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, deezer-44pct-ai-generated-audio-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, ssl-pretraining-robust-ha-speech-enhancement-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, mdpi-speech-separation-survey-2026.md, spatial-magnifier-multichannel-se-arxiv-2026.md, ndf-plus-neural-directional-filtering-arxiv-2026.md, predictive-generative-drift-decomposition-arxiv-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md, speaker-distance-estimation-reverberation-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, driftse-equilibrium-se-arxiv-2026.md, diffvqe-diffusion-aec-arxiv-may-2026.md, tf-mlpnet-tiny-speech-separation-arxiv-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md, arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, ../entities/vcca-computational-audiology.md, state-space-models.md, ../comparisons/dnn-vs-natural-processing.md, mamba-architecture.md, active-noise-cancellation.md, eu-ai-act-medical-devices.md, probabilistic-generative-models-hearing-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md, multimodal-hearing-assessment.md, companion-phone-speech-pipeline.md, listening-effort-evaluation.md, auracast-bluetooth-le-audio.md]
-tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer, mamba, generative-predictive, bayesian-counter-paradigm, llm-based-se, linguistic-hallucination, multimodal, audiovisual, single-step-generative-se, equilibrium-model, diffusion-aec, companion-phone, codec-evaluation, listening-effort]
+updated: 2026-06-10
+last_change: Added Khanagha & Gerkmann (arXiv:2606.09557, 8 Jun 2026, accepted Interspeech 2026) — U-Net dereverberation models implicitly encode RIR in deeper layers; explicit RIR conditioning via contrastive learning yields faster convergence + fewer diffusion steps. Pairs with SB-RF as a second axis for inference-step reduction.
+sources: [dnn-noise-reduction-intelligibility-2026.md, sub-millisecond-speech-enhancement-hearables-2025.md, multichannel-deep-speech-enhancement-ha-2024.md, speech-foundation-models-hearing-impaired-2024.md, ssl-loss-functions-hearing-aid-enhancement-2024.md, phonak-dnn-noise-reduction-clinical-trial-april-2026.md, deezer-44pct-ai-generated-audio-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, korhonen-natural-vs-dnn-hearing-aids-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, gap-urgenet-urgent-challenge-icassp-2026.md, target-speaker-extraction-ultra-low-latency-2026.md, ssl-pretraining-robust-ha-speech-enhancement-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, mdpi-speech-separation-survey-2026.md, spatial-magnifier-multichannel-se-arxiv-2026.md, ndf-plus-neural-directional-filtering-arxiv-2026.md, predictive-generative-drift-decomposition-arxiv-2026.md, aida-2-bayesian-generative-se-arxiv-2026.md, speaker-distance-estimation-reverberation-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, gijbels-ecological-validity-fauot-mar-2026.md, driftse-equilibrium-se-arxiv-2026.md, diffvqe-diffusion-aec-arxiv-may-2026.md, tf-mlpnet-tiny-speech-separation-arxiv-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md, arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md, arxiv-2606-09557-rir-encoder-dereverb-khanagha-gerkmann-jun-2026.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, dnn-architectures-hearing-aids.md, auditory-attention-decoding.md, cochlear-implant-ai.md, ../entities/vcca-computational-audiology.md, state-space-models.md, ../comparisons/dnn-vs-natural-processing.md, mamba-architecture.md, active-noise-cancellation.md, eu-ai-act-medical-devices.md, probabilistic-generative-models-hearing-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md, multimodal-hearing-assessment.md, companion-phone-speech-pipeline.md, listening-effort-evaluation.md, auracast-bluetooth-le-audio.md, room-aware-dereverberation.md]
+tags: [deep-learning, speech, noise-reduction, dnn, hearing-aids, crn, transformer, mamba, generative-predictive, bayesian-counter-paradigm, llm-based-se, linguistic-hallucination, multimodal, audiovisual, single-step-generative-se, equilibrium-model, diffusion-aec, companion-phone, codec-evaluation, listening-effort, rir-encoder, room-aware-se, implicit-representations]
 ---
 
 # Speech Enhancement Neural Networks
@@ -40,6 +40,29 @@ CRN is considered the optimal architecture for production hearing aids: CNN laye
 - **DCCRN** — Deep Complex Convolution Recurrent Network, good real-time performance
 - **FullSubNet** — Full-band and sub-band fusion, strong on DNS Challenge benchmarks
 - **TinyRecurrentUNet** — Designed for low-resource devices, closer to hearing aid constraints
+
+## Implicit Room-Impulse-Response Encoders (Khanagha & Gerkmann, Jun 2026)
+Khanagha & Gerkmann ([[../../sources/arxiv-2606-09557-rir-encoder-dereverb-khanagha-gerkmann-jun-2026]], U Hamburg, arXiv:2606.09557, accepted Interspeech 2026) probe both diffusion-based and discriminative U-Net dereverberation networks and find that **deeper layers implicitly encode structured RIR-dependent embeddings** even though the networks were never trained to estimate the RIR. Quality of the implicit RIR representation **correlates with downstream dereverberation performance**.
+
+Explicit RIR conditioning via self-supervised contrastive learning (positive pairs from same room, negatives from different rooms) yields:
+- Faster convergence during training
+- Better dereverberation quality on standard metrics
+- **Significantly fewer reverse diffusion steps at inference** — directly relevant to hearing-aid latency budgets
+
+### Why this matters for hearing AI
+- Reverberation is one of the top three complaints from hearing-aid wearers. The dominant approach for ~30 years has been **blind** dereverberation; the room is absorbed silently into network weights.
+- This finding reframes the room as a **first-class, extractable on-chip object** — small, low-rate, shareable across SE, scene classification, beamforming, and own-voice detection.
+- Hearing-aid wearers spend 80%+ of their time in a small set of frequent rooms (kitchen, office, car, bedroom). A per-wearer RIR library + room-recognition + room-conditioned dereverb is structurally cheap and clinically meaningful — and absent from every product on the market.
+
+### Complementary to SB-RF (one-step generative SE)
+- SB-RF (`arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md`) cuts inference steps by replacing the ODE with an entropy-regularized OT geodesic.
+- RIR-conditioning cuts inference steps by giving the network the answer to a question it was solving implicitly.
+- These are **separable axes**, could stack.
+
+### Benchmark gap
+- HASPI / STOI / Clarity Prediction Challenge (CPC1/2/3) do not directly score "RIR-aware processing." The first room-conditioned hearing-aid SE benchmark is unwritten — likely Clarity Project / Interspeech challenge candidate for 2027.
+
+See [[room-aware-dereverberation]] for the broader concept.
 
 ## Time-Domain vs Frequency-Domain Approaches
 | Approach | Pros | Cons | Example Models |

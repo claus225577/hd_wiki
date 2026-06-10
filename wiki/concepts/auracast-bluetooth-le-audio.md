@@ -2,8 +2,8 @@
 title: Auracast / Bluetooth LE Audio
 type: concept
 created: 2026-04-15
-updated: 2026-05-28
-sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, auracast-uk-live-theaters-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, oticon-zeal-full-specs-aaa-2026.md, starkey-omega-ai-aaa-2026-showcase.md, auracast-european-public-venue-rollout-2026.md, lc3plus-codec-broader-implementation-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, gn-auracast-seoul-session-big-ocean-may-2026.md, arxiv-2605-26812-cfmdctcodec-may-2026.md]
+updated: 2026-06-10
+sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, auracast-uk-live-theaters-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, oticon-zeal-full-specs-aaa-2026.md, starkey-omega-ai-aaa-2026-showcase.md, auracast-european-public-venue-rollout-2026.md, lc3plus-codec-broader-implementation-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, gn-auracast-seoul-session-big-ocean-may-2026.md, arxiv-2605-26812-cfmdctcodec-may-2026.md, hlaa-2026-convention-opens-june-2026.md]
 related: [on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, hearing-aid-market-dynamics.md, ../entities/gn-hearing-resound.md, ../entities/demant-oticon.md, ../syntheses/ai-understanding-gap-hearing-industry.md, ../entities/aaa-conference.md, ../entities/starkey.md, hearing-care-funnel-attribution.md]
 tags: [bluetooth, accessibility, connectivity, infrastructure, le-audio, venue-deployment, consumer-education, stigma]
 ---

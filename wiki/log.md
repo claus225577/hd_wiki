@@ -2683,3 +2683,71 @@ Worth watching:
 Quiet news cycle Monday — most of today's items were extensions or reaffirmations of existing wiki content. The single net-new source (Elehear Delight) opens up a new dimension (form factor) in the OTC bifurcation thread that has otherwise been about personalization-vs-simplicity. Deliberately holding back on WWDC 2026 follow-up coverage — iOS 27 betas haven't landed yet, will pick up tomorrow.
 
 **Pages touched this ingest: 4** (2 new sources, 1 page update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-10 (LinkedIn drafts ingest)
+
+**Source of operation:** Daily LinkedIn post drafts emailed to door.punch_4o@icloud.com and posted to Discord.
+
+### New source files
+- **`sources/apple-wwdc-2026-airpods-custom-eq-jun-2026.md`** — Apple WWDC 2026 keynote (Mon 8 Jun 2026). 3-band Custom EQ for AirPods in iOS 27 (Bass / Mids / Treble), live waveform preview, H2-chip devices only (AirPods 4 H2, Pro 3, Max 2). First user-controllable EQ in the AirPods line since 2016. Explicitly NOT audiogram-driven, structurally separate from FDA-cleared Hearing Aid Mode. AirPods settings reorganized to surface Spatial Audio / Hearing Health / Adaptive at top level. AirPods Pro 3 GymKit heart-rate sync co-announced.
+- **`sources/arxiv-2606-09557-rir-encoder-dereverb-khanagha-gerkmann-jun-2026.md`** — Khanagha & Gerkmann, U Hamburg Signal Processing Group, arXiv:2606.09557 (8 Jun 2026, accepted Interspeech 2026). Probes both diffusion-based and discriminative U-Net dereverberation networks; finds deeper layers implicitly encode RIR embeddings; explicit conditioning via contrastive learning yields faster convergence, better dereverb, and significantly fewer reverse diffusion steps. Reframes 30 years of blind dereverberation as a misnomer — the room was always being measured.
+
+### Wiki page updates
+- **NEW `wiki/concepts/room-aware-dereverberation.md`** — Concept page defining the architectural pattern of making room characteristics a first-class object in the on-chip pipeline. Sections: why it matters (top-3 wearer complaint), the Khanagha & Gerkmann pivot, on-chip implications (shared room representation across SE / scene classification / beamforming / own-voice detection), frequent-room prior with per-wearer RIR library, complementary-to-SB-RF axis table, benchmark gap (HASPI/STOI/CPC don't score RIR-awareness — Clarity 2027 candidate).
+- **`wiki/concepts/speech-enhancement-neural-networks.md`** — Added Khanagha & Gerkmann source to frontmatter; added `room-aware-dereverberation.md` to related; new "Implicit Room-Impulse-Response Encoders (Khanagha & Gerkmann, Jun 2026)" section with implicit-RIR finding, contrastive-learning conditioning, on-chip implications, SB-RF complementary-axis table, and benchmark gap; new tags `rir-encoder`, `room-aware-se`, `implicit-representations`; `updated:` bumped to 2026-06-10.
+- **`wiki/entities/apple-hearing-features.md`** — Added Apple WWDC source to frontmatter; new "WWDC 2026 — Custom EQ + AirPods reorganization (Jun 8, 2026)" section covering the 3-band EQ + live-preview UI + H2-only device support + the explicit NOT-audiogram-driven framing + AirPods settings reorganization + AirPods Pro 3 GymKit heart-rate sync + the why-it-matters-for-hearing-AI framing on consumer EQ as the next-decade UX baseline against clinical fitting cycle; updated Software Requirements to include iOS 27 for Custom EQ; added `closed-loop-data-flywheel.md` + `hearing-aid-prescription-formulas.md` to related; new tags `ios27`, `custom-eq`, `wwdc-2026`; `updated:` bumped to 2026-06-10.
+- **`wiki/concepts/hearing-aid-prescription-formulas.md`** — Added Apple WWDC source to frontmatter; added `apple-hearing-features.md` to related; new "Consumer-Side Counterpoint — Apple Custom EQ (WWDC 2026)" section explicitly contrasting Apple's 3-band consumer tone control with NAL-NL3 / DSL v5 multi-band gain curves (no audiogram input, no real-ear verification, no compression ratio) but argues the consumer-side UX baseline just shifted and the 2030 fitting model is more likely audiogram-warm-start + continuous user adjustment than prescription-locked-at-fitting; new tags `consumer-eq`, `airpods`, `custom-eq`; `updated:` bumped to 2026-06-10.
+- **`wiki/index.md`** — Added new top-of-file ingest entry with full descriptions of both sources and pages touched; added `room-aware-dereverberation` row to Concepts table.
+
+### Underlying LinkedIn posts
+1. **Apple ships 3-band Custom EQ to AirPods at WWDC 2026 — the audiogram-shaped sound personalization primitive just went mass-market.** Apple announced a 3-band Custom EQ for AirPods in iOS 27 with live waveform preview, and the hearing-aid field has been doing this same primitive — band-gain shaping — since around 1985 as the most basic layer of every NAL-NL3 / DSL v5 prescription. The difference is who holds the slider (audiologist vs ~600M AirPods users). The wearer who tries AirPods first will not accept a 6-week clinical fitting cycle to update a curve they could drag in 30 seconds. Fitting UX is the next competitive axis, not chip TOPS. The 2030 fitting model is "audiogram as warm start, continuous user adjustment in real listening scenarios as the gradient."
+2. **Khanagha & Gerkmann arXiv:2606.09557 — your dereverberation U-Net is secretly an RIR encoder.** U Hamburg probes both diffusion-based and discriminative U-Net dereverb models and finds that deeper layers implicitly encode RIR embeddings. Explicit contrastive RIR conditioning yields faster convergence + fewer diffusion steps. Reframes 30 years of blind dereverberation — the network was measuring the room all along. Pairs with SB-RF (June 4) along a separable axis — better ODE vs better conditioning, complementary not competing. Frequent-room prior + per-wearer RIR library + room-conditioned dereverb is structurally cheap and clinically meaningful, absent from every product on the market.
+
+### Editorial notes
+- Two distinct angles, both anchored to news posted within the last 48 hours (WWDC June 8, arXiv June 8). Wiki's WWDC 2026 hold (from June 9 log) is now released — Custom EQ is the first concrete artifact worth ingesting.
+- Both posts reinforce the same meta-pattern from earlier June: stop ignoring the part you used to factor out. DAL (forward cochlea), BiEAR (efferent cochlear control), Whisper-ECoG (brain alignment as a layer hyperparameter), and now RIR-encoder (the room) — all four say "the silent variable is the one to expose." Synthesis candidate forming.
+
+**Pages touched this ingest: 7** (2 new sources, 1 new concept page, 3 page updates, 1 index update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-10 (Daily hearing+AI digest ingest)
+
+**Source of operation:** Daily hearing+AI digest email sent to door.punch_4o@icloud.com.
+
+### Coverage map (today's digest items → wiki state)
+| Item | Wiki coverage |
+|------|---------------|
+| DBHN-Net (arXiv:2606.05911, 4 Jun) | already: `arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md` |
+| FPGA SuDoRM-RF++ feasibility (arXiv:2606.04221, 2 Jun) | already: `fpga-sudormrf-feasibility-radboud-june-2026.md` |
+| HLAA 2026 Convention opens today | **NEW**: `hlaa-2026-convention-opens-june-2026.md` |
+| Veterans Hearing Aid Improvement Act (House) | already: `veterans-hearing-aid-improvement-act-house-jun-2026.md` |
+| BIHIMA Q1 2026 UK market | already: `bihima-q1-2026-uk-sales-jun-2026.md` |
+| Phonak Red Dot / iF / AI Excellence awards | already: `phonak-virto-r-infinio-red-dot-april-2026.md`, `phonak-infinio-if-design-award-2026.md`, `phonak-ai-excellence-award-march-2026.md` |
+| Sonova Sennheiser divestiture | already: `sonova-sennheiser-consumer-divestiture-may-2026.md` |
+| Microsoft Edge 148 on-device Web Speech API | **NEW**: `microsoft-edge-148-on-device-speech-api-june-2026.md` |
+| Synaptics Astra SR80 always-on edge AI audio MCU | **NEW**: `synaptics-astra-sr80-edge-ai-audio-may-2026.md` |
+| Frontiers in Dementia review (May 2026) | **NEW**: `frontiers-dementia-hearing-loss-review-2026.md` |
+| Auracast venue rollout | already: `auracast-uk-live-theaters-april-2026.md` + others |
+| AirPods Hearing Aid 100+ countries | already: `airpods-hearing-aid-country-expansion-may-2026.md` |
+
+### New source files
+- **`sources/hlaa-2026-convention-opens-june-2026.md`** — HLAA 41st annual convention opens today (10-12 Jun 2026, Galt House, Louisville). Friday Research Symposium "The AI Revolution in Hearing Health: Smarter Tech, Greater Access" (12 Jun, 10am CT) flagged as the temperature read for what the consumer-advocacy side is willing to call AI vs. hype. Every meeting room captioned + hearing-looped. Endorses Veterans Hearing Aid Improvement Act.
+- **`sources/microsoft-edge-148-on-device-speech-api-june-2026.md`** — Microsoft Edge 148 (announced at Build 2026, 2 Jun) ships experimental on-device Web Speech API + on-device Translator + Language Detector APIs. Removes the 200-800ms cloud STT round-trip and most HIPAA/GDPR friction from browser-based teleaudiology portals. Structural signal: browser vendors are normalizing on-device ASR as a baseline web capability.
+- **`sources/synaptics-astra-sr80-edge-ai-audio-may-2026.md`** — Synaptics announced the Astra SR80 MCU family (May 2026), positioned as the new baseline category for "always-on edge AI audio" — single-chip integration of always-on scene detection, on-device NN audio inference, and high-fidelity I/O. Not a hearing-aid SoC, but the silicon class hearables and entry-level OTC HAs are migrating to; pressures OEM main-SoC roadmaps from below.
+- **`sources/frontiers-dementia-hearing-loss-review-2026.md`** — Multi-author Frontiers in Dementia review (10.3389/frdem.2026.1736003) consolidating the hearing-loss → cognitive-decline literature. Two operational findings: (1) intervention reduces dementia incidence but not memory-test scores → wrong outcome variable, not weak treatment (consistent with subjective-objective hearing gap thesis); (2) calls for biomarkers (e.g., FSR ratio) to stratify risk → opens an ML-shaped lane for digital phenotyping via hearing-aid telemetry. Will be cited at HLAA AI Symposium Friday.
+
+### Wiki page updates
+- **`wiki/concepts/hearing-loss-dementia-link.md`** — Added `frontiers-dementia-hearing-loss-review-2026.md` to frontmatter sources; `updated:` bumped to 2026-06-10; new subsection **"Frontiers in Dementia Review (May 2026) — Mechanism Still Open"** documenting the "intervention reduces dementia but not memory tests → wrong outcome variable" pattern + the call for FSR-style MRI/EEG biomarkers as the ML-shaped opening for digital phenotyping.
+- **`wiki/concepts/teleaudiology.md`** — Added Microsoft Edge source to frontmatter; `updated:` bumped to 2026-06-10; new section **"On-Device Browser ASR Removes a Cloud-STT Bottleneck (Jun 2026)"** documenting the latency + HIPAA/GDPR + multilingual implications for remote-fitting portals and Noah ES web clients. Frames the structural news as "vendors are normalizing on-device ASR as a baseline web capability."
+- **`wiki/concepts/tinyml-edge-ai.md`** — Added Synaptics source to frontmatter; `updated:` bumped to 2026-06-10; new section **"Commodity Always-On Audio MCUs Emerge (Synaptics Astra SR80, May 2026)"** framing Astra SR80 as the structural signal that always-on audio NN inference is now MCU-class commodity, with implications for hearable/OTC form-factor convergence and pressure on OEM main-SoC roadmaps from below.
+- **`wiki/concepts/auracast-bluetooth-le-audio.md`** — Added HLAA convention source to frontmatter; `updated:` bumped to 2026-06-10. The convention deploys hearing loops + Auracast in every meeting room — useful real-world stress-test data point.
+
+### Editorial notes
+- Light-net-new day: 6 of 11 digest items mapped to existing sources (DBHN-Net + FPGA SuDoRM-RF++ were already ingested 2-3 days ago; BIHIMA, Veterans Act, AirPods 100-countries, Phonak awards, Sonova divestiture, Auracast rollout all covered).
+- Three net-new sources opened distinct lanes: (1) **HLAA AI Symposium** as a consumer-advocacy temperature read; (2) **Microsoft Edge on-device ASR** as a teleaudiology infrastructure shift; (3) **Synaptics Astra SR80** as a commodity-MCU pressure point against OEM SoC roadmaps. The fourth (Frontiers dementia review) reinforces the existing subjective-objective gap thesis with a fresh authoritative citation.
+- The Synaptics + Microsoft Edge items together point to a coherent emerging substrate: always-on audio NN inference and on-device ASR are both becoming default commodity capabilities of the platforms hearing AI ships on. Worth a synthesis page in a future ingest if a third reinforcing data point appears.
+
+**Pages touched this ingest: 9** (4 new sources, 4 page updates, +1 log entry, +index update to follow).

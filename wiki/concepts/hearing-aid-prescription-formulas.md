@@ -2,10 +2,10 @@
 title: Hearing Aid Prescription Formulas (NAL, DSL, OEM)
 type: concept
 created: 2026-05-12
-updated: 2026-05-12
-sources: [gn-nal-nl3-global-launch-march-2026.md, nal-nl3-fitting-protocol-2026.md, ml-personalized-fitting-review-2024.md]
-related: [dnn-in-hearing-aids.md, closed-loop-data-flywheel.md, ../entities/gn-hearing-resound.md, ../entities/phonak.md, ../entities/demant-oticon.md, ../entities/starkey.md, ../entities/vcca-computational-audiology.md]
-tags: [fitting, prescription, nal-nl2, nal-nl3, dsl-v5, gain-curve, audiology, fairness, computational-audiology]
+updated: 2026-06-10
+sources: [gn-nal-nl3-global-launch-march-2026.md, nal-nl3-fitting-protocol-2026.md, ml-personalized-fitting-review-2024.md, apple-wwdc-2026-airpods-custom-eq-jun-2026.md]
+related: [dnn-in-hearing-aids.md, closed-loop-data-flywheel.md, ../entities/gn-hearing-resound.md, ../entities/phonak.md, ../entities/demant-oticon.md, ../entities/starkey.md, ../entities/vcca-computational-audiology.md, ../entities/apple-hearing-features.md]
+tags: [fitting, prescription, nal-nl2, nal-nl3, dsl-v5, gain-curve, audiology, fairness, computational-audiology, consumer-eq, airpods, custom-eq]
 ---
 
 # Hearing Aid Prescription Formulas
@@ -77,6 +77,16 @@ A prescription formula is the **prior**; per-user fitting is the **posterior**. 
 - ML personalization approaches ([[ml-personalized-fitting]]) sit between these two levels — using population data to nudge the prior, or per-user telemetry to nudge the posterior.
 
 WSA's [[wsa-sound-preference-program-april-2026]] is a parallel move at a different layer: rather than re-deriving the prior, it captures structured preference phenotypes (natural vs enhanced) before fitting, providing a categorical conditioning variable on top of the formula.
+
+## Consumer-Side Counterpoint — Apple Custom EQ (WWDC 2026)
+
+At WWDC 2026 (Jun 8), Apple shipped a **3-band Custom EQ** (Bass / Mids / Treble) for H2-chip AirPods in iOS 27 with live waveform preview ([[../../sources/apple-wwdc-2026-airpods-custom-eq-jun-2026]]). This is **not** a prescription formula:
+- No audiogram input.
+- No compression ratio, no real-ear verification.
+- No integration with the existing Apple Hearing Test (which lives separately under Hearing Health).
+- Single-band tone control per range, not the multi-band gain curve of NAL-NL3 / DSL v5.
+
+But it sets a new **consumer-side UX baseline** for sound personalization. The wearer who has dragged a 3-slider curve on their phone in 30 seconds will not accept a six-week clinical fitting cycle to update a similar curve on their hearing aid. The 2030 fitting model is more likely "audiogram-shaped warm start + continuous user adjustment in real listening scenarios as the gradient" than "single prescription target locked at fitting." See [[../entities/apple-hearing-features]].
 
 ## Open Questions
 

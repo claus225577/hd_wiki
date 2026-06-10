@@ -2,8 +2,8 @@
 title: Teleaudiology and Remote Hearing Care
 type: concept
 created: 2026-04-15
-updated: 2026-05-08
-sources: [audiologist-shortage-asha-sciencedirect-2025.md, noah-es-5000-subscribers-april-2026.md, remote-ci-programming-real-life-frontiers-2026.md]
+updated: 2026-06-10
+sources: [audiologist-shortage-asha-sciencedirect-2025.md, noah-es-5000-subscribers-april-2026.md, remote-ci-programming-real-life-frontiers-2026.md, microsoft-edge-148-on-device-speech-api-june-2026.md]
 related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, hearing-loss-dementia-link.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, precision-drug-delivery-inner-ear.md, cochlear-implant-ai.md, ../entities/neurotone-ai.md, predictive-pediatric-earmolds.md]
 tags: [telehealth, remote-care, audiology, self-fitting, cloud, signia, smartphone, access, workforce-shortage]
 ---
@@ -132,6 +132,18 @@ HIMSA's **Noah ES** cloud-based hearing care platform surpassed **5,000 subscrib
 - 5,000 subscribers represents a critical mass of cloud-connected hearing care practices
 - Enables **federated learning** across practices without sharing raw patient data
 - Supports the workforce shortage response: one audiologist can serve patients across multiple cloud-connected locations
+
+## On-Device Browser ASR Removes a Cloud-STT Bottleneck (Jun 2026)
+
+Microsoft Edge 148 (announced at Build 2026, 2 Jun 2026) ships an **experimental on-device Web Speech API** plus on-device Translator and Language Detector APIs — ASR runs against a local model instead of a cloud endpoint. The implication for teleaudiology:
+
+- The 200–800 ms cloud round-trip on spoken patient responses (intake forms, fitting-verification questionnaires, follow-ups) goes away.
+- The HIPAA / GDPR review that gates capturing patient voice in a browser collapses to a much smaller scope — audio never leaves the device.
+- Multilingual hearing-care portals (especially in LMIC contexts) get language detection + translation + STT all local, on whatever device the patient brought.
+
+The structural news is broader than one browser: vendors are normalizing on-device ASR as a baseline web capability. Within ~18 months, sending audio to a cloud STT endpoint becomes the unusual choice for new hearing-health web apps, not the default. Expect the next generation of remote-fitting portals — Noah ES web clients, manufacturer follow-up apps — to assume local speech I/O.
+
+See [[../sources/microsoft-edge-148-on-device-speech-api-june-2026]].
 
 ## AI Agent Infrastructure (MCP)
 

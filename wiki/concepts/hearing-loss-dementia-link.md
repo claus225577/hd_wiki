@@ -2,8 +2,8 @@
 title: Hearing Loss and Dementia: The Evidence
 type: concept
 created: 2026-04-15
-updated: 2026-05-11
-sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md]
+updated: 2026-06-10
+sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md, frontiers-dementia-hearing-loss-review-2026.md]
 related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md, care-partner-dyad-models.md]
 tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping]
 ---
@@ -137,6 +137,14 @@ Resurfaced in the **May 2026 news cycle** via Better Hearing Month coverage (IHS
 
 ### Dementia Risk Meta-Analysis (2024)
 50 studies, >1.5M participants: adult-onset hearing loss increases risk for cognitive decline, dementia, MCI, and Alzheimer's disease. Hearing loss confirmed as responsible for ~7% of dementia risk — the largest single modifiable factor.
+
+### Frontiers in Dementia Review (May 2026) — Mechanism Still Open
+A multi-author review (Frontiers in Dementia, doi 10.3389/frdem.2026.1736003) consolidates the literature and explicitly underscores that **mechanism, causality, and timing remain unresolved**. Two patterns the review highlights are now operationally important for the hearing-AI stack:
+
+1. **Intervention reduces dementia incidence but not memory-test scores.** A recent cohort (5% vs 8% dementia incidence in HA-prescribed vs not-prescribed, follow-up window) reproduces the pattern. The review treats this as evidence of "wrong outcome variable" rather than "weak treatment" — consistent with the wiki's [[subjective-objective-hearing-gap]] thesis.
+2. **Calls for biomarkers (e.g., MRI/EEG-derived frequency-specific response ratio, FSR) to stratify risk.** This opens an ML-shaped lane: digital phenotyping via hearing-aid telemetry (see [[digital-phenotyping-cognitive-decline]]) is one of the few longitudinal at-scale data streams that could plausibly disentangle sensory-deprivation vs common-cause hypotheses.
+
+The review will be a 12-month talking point at HLAA, AAA, and policy panels — most consequentially, at the HLAA 2026 Research Symposium on AI in Hearing Health (Jun 12).
 
 ## Related Pages
 - [[otc-hearing-aids]] — Policy and access arguments strengthened by this evidence
