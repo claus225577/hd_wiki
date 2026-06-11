@@ -2,9 +2,9 @@
 title: Apple Hearing Features
 type: entity
 created: 2026-04-15
-updated: 2026-06-10
-last_change: WWDC 2026 (Jun 8) — 3-band Custom EQ for AirPods in iOS 27 (H2-chip devices: AirPods 4, Pro 3, Max 2). First user-controllable EQ since AirPods launch in 2016. Co-announced: AirPods Pro 3 GymKit heart-rate sync, AirPods settings UX reorganization.
-sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md, apple-airpods-india-italy-taiwan-may-21-2026.md, apple-pre-wwdc-accessibility-may-2026.md, apple-wwdc-2026-airpods-custom-eq-jun-2026.md]
+updated: 2026-06-11
+last_change: WWDC 2026 wave deepened — Generated Subtitles (on-device ASR for video captions across iOS 27 / iPadOS 27 / macOS 27 / tvOS 27 / visionOS 27); Name Recognition shipped in 50+ languages on-device; MfI hearing-aid cross-device handoff confirmed in the keynote. Adds the visual-substitution and semantic-alert layers on top of the audio-pathway hearing features.
+sources: [airpods-pro-3-hearing-health-april-2026.md, apple-ceo-transition-ternus-april-2026.md, apple-hearing-study-results-may-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-otc-haf-usability-aja-2025.md, apple-airpods-india-italy-taiwan-may-21-2026.md, apple-pre-wwdc-accessibility-may-2026.md, apple-wwdc-2026-airpods-custom-eq-jun-2026.md, apple-wwdc-2026-generated-subtitles-jun-2026.md, apple-wwdc-2026-name-recognition-mfi-confirmation-jun-2026.md]
 related: [../concepts/auracast-bluetooth-le-audio.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/otc-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/longitudinal-hearing-phenotyping.md, ../concepts/subjective-objective-hearing-gap.md, ../concepts/hearing-loss-dementia-link.md, ../concepts/hearing-care-funnel-attribution.md, ../concepts/audiologist-workforce-shortage.md, ../concepts/hearing-aid-prescription-formulas.md, ../concepts/closed-loop-data-flywheel.md, ../syntheses/lmic-screening-platform-asymmetry-may-2026.md, starkey.md, sonova-ag.md, demant-oticon.md, google-research.md, essilorluxottica.md]
 tags: [company, consumer-tech, otc, airpods, disruption, fda-cleared, hearing-aid, ios26, ios27, custom-eq, wwdc-2026, heart-rate, health-monitoring, hearing-study, longitudinal, lmic, india, multi-modal-screening]
 ---
@@ -113,16 +113,34 @@ Tim Cook moved to Executive Chairman; **John Ternus** became Apple CEO in April 
 - FDA-regulated health features as core product differentiators
 - Accessibility as a first-class product pillar
 
-## Pre-WWDC 2026 Accessibility Drop (21 May 2026)
+## Pre-WWDC 2026 Accessibility Drop (21 May 2026) and WWDC 2026 Confirmation (8 Jun 2026)
 
-Apple's annual pre-WWDC accessibility announcement, two items most relevant to hearing care:
+Apple's annual pre-WWDC accessibility announcement on 19-21 May 2026 previewed several features for hearing care; the WWDC 2026 keynote on **8 June 2026** confirmed and shipped them as part of the iOS 27 / iPadOS 27 / macOS 27 / tvOS 27 / visionOS 27 release wave (developer betas live now; public release in fall 2026).
 
-- **MFi Hearing Aid Cross-Device Handoff** — Made-for-iPhone hearing aids now hand off reliably across iPhone, iPad, Mac, and Vision Pro under a unified setup flow across iOS, iPadOS, macOS, and visionOS. Fixes one of the longest-standing user complaints in the Apple-hearing ecosystem; foundational plumbing that determines whether hearing aid users adopt the broader Apple ecosystem holistically.
-- **Name Recognition** — Apple Intelligence-powered feature that **alerts deaf or hard-of-hearing users when their name is spoken in their environment**, across 50+ languages at launch. On-device inference. First global OS-integrated implementation of an ambient name-spotter for HoH users; equivalent features have existed in research and niche apps but never in a mainstream consumer OS.
+### Generated Subtitles — Visual-Substitution Layer at Platform Scale (NEW)
+- **On-device speech recognition** auto-transcribes any uncaptioned video the OS plays. Personal clips, family memories, content received from friends and family, streamed media.
+- Ships across **iPhone, iPad, Mac, Apple TV, and Apple Vision Pro** — every active Apple OS line.
+- **Languages at launch:** English only, U.S. and Canada.
+- **Privacy posture:** All ASR runs on-device; audio never leaves the device.
+- **Why it matters for hearing AI:** First time the visual-substitution layer (captions) ships at platform scale, on-device, cross-OS, default-on. The hearing-impaired wearer's strategy stack now has two layers — audio enhancement + universal captions on every screen. Forces hearing-aid AI roadmaps to defend their audio-pathway budget against the question: "what does enhancement deliver that captions don't?"
+- See [[../../sources/apple-wwdc-2026-generated-subtitles-jun-2026.md]].
 
-**WWDC 2026 keynote (8 Jun 2026, 10:00 PT)** — pending watchlist: AirPods Pro 3 firmware updates tied to iOS 27, Conversation Boost / Media Assist upgrades, rumored AirPods Pro w/ cameras preview.
+### Name Recognition (50+ Languages) — Semantic Listening as OS Service
+- Apple Intelligence-powered feature that **alerts deaf or hard-of-hearing users when their name is spoken in their environment**.
+- **50+ languages at launch.** On-device inference.
+- First global OS-integrated implementation of an ambient name-spotter for HoH users; equivalent features have existed in research and niche apps but never in a mainstream consumer OS.
+- **Why it matters for hearing AI:** "Wake on your name" has been an OEM-side wishlist feature; Apple just shipped it at OS level with cross-language coverage. The OEM differentiation question gets sharper — what semantic listening primitives can the hearing aid still uniquely deliver?
 
-See [[../../sources/apple-pre-wwdc-accessibility-may-2026.md]].
+### MfI Hearing Aid Cross-Device Handoff
+- Made-for-iPhone hearing aids hand off reliably across iPhone, iPad, Mac, and Apple Vision Pro under a unified setup flow across iOS, iPadOS, macOS, and visionOS.
+- Fixes one of the longest-standing user complaints in the Apple-hearing ecosystem; brings MfI hearing aid lifecycle to parity with AirPods (which has had reliable handoff for years).
+- Free uplift to ecosystem stickiness for OEMs with MfI certification (Phonak, GN ReSound, Oticon, Starkey, Widex).
+
+### Other Co-Shipping Accessibility Features
+- **Vision Pro:** eye-tracking-driven power wheelchair control; on-device live captions (same Generated Subtitles substrate).
+- **FaceTime Sign Language API:** developer API for adding human interpreters to ongoing FaceTime calls.
+
+See [[../../sources/apple-pre-wwdc-accessibility-may-2026.md]] (May 19-21 preview) and [[../../sources/apple-wwdc-2026-name-recognition-mfi-confirmation-jun-2026.md]] (June 8 keynote confirmation).
 
 ## Apple Watch — Hearing Health
 - **Noise exposure monitoring** — Tracks environmental decibel levels; alerts to dangerous exposure
@@ -159,4 +177,6 @@ Apple's differentiation is not primarily AI audio processing quality — it is d
 - [Apple Expands Health Features to India, Italy, Taiwan — 21 May 2026](../../sources/apple-airpods-india-italy-taiwan-may-21-2026.md) — Hearing Test → India (LMIC inflection); Hearing Aid Mode → Italy; Sleep Apnea → India; Hypertension → Taiwan; multi-modal convergence in a single iOS push; 160+ countries footprint
 - [Apple OTC-HAF Usability (AJA, 2025)](../../sources/apple-otc-haf-usability-aja-2025.md) — First independent academic evaluation; MAUQ 6.7/7 usability
 - [Apple Pre-WWDC 2026 Accessibility Drop — 21 May 2026](../../sources/apple-pre-wwdc-accessibility-may-2026.md) — MFi cross-device handoff fix; Name Recognition for deaf/HoH users in 50+ languages
+- [Apple WWDC 2026 — Generated Subtitles (8 Jun 2026)](../../sources/apple-wwdc-2026-generated-subtitles-jun-2026.md) — On-device ASR auto-captions for uncaptioned video across iOS 27 / iPadOS 27 / macOS 27 / tvOS 27 / visionOS 27; the visual-substitution layer ships at platform scale
+- [Apple WWDC 2026 — Name Recognition + MfI Handoff Confirmation (8 Jun 2026)](../../sources/apple-wwdc-2026-name-recognition-mfi-confirmation-jun-2026.md) — Keynote confirmation of the 19-21 May accessibility preview; semantic listening primitive shipped in 50+ languages on-device + MfI hearing-aid handoff parity with AirPods
 - Research notes on AirPods Pro 2 FDA clearance, iOS 26 hearing test feature, global availability

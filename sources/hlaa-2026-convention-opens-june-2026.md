@@ -25,6 +25,13 @@ HLAA's 41st annual convention is the largest US consumer-facing event for people
 
 The program centerpiece for the AI/data-science crowd is the Friday Research Symposium (12 Jun, 10am CT): **"The AI Revolution in Hearing Health: Smarter Tech, Greater Access."**
 
+**Friday symposium speakers confirmed (added 11 Jun 2026):**
+- Dr. Jan Blustein, New York University
+- Dr. Nicholas Lesica, University College London — strong signal that biology-in-the-loop hearing-aid ML (cochlear models as differentiable loss surfaces, c.f. the DAL paper) is being normalized for the consumer-advocacy audience, not just the engineering one.
+- Dr. Samantha Kleindienst Robler, audiology clinician-scientist, UAMS — teleaudiology and rural-access angle.
+
+Symposium is NIDCD-supported.
+
 ## Why It Matters
 HLAA is the canonical consumer-advocacy voice in US hearing-loss policy. Their convention is where:
 - Manufacturers preview features to a community that will publicly evaluate them within days.

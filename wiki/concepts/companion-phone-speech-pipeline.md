@@ -2,10 +2,10 @@
 title: Companion-Phone Speech Pipeline
 type: concept
 created: 2026-05-17
-updated: 2026-05-17
-sources: [diffvqe-diffusion-aec-arxiv-may-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, airpods-hearing-aid-country-expansion-may-2026.md]
-related: [speech-enhancement-neural-networks.md, llm-based-speech-enhancement.md, on-device-ml-hearing-aids.md, medical-domain-edge-llms.md, auracast-bluetooth-le-audio.md, linguistic-hallucination-speech-enhancement.md, ../entities/apple-hearing-features.md]
-tags: [companion-phone, le-audio, auracast, voip, speech-enhancement, generative-se, trust-calibration, off-device-ai, edge-ai, telephony]
+updated: 2026-06-11
+sources: [diffvqe-diffusion-aec-arxiv-may-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, samsung-galaxy-s26-audio-eraser-realtime-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, airpods-hearing-aid-country-expansion-may-2026.md, apple-wwdc-2026-generated-subtitles-jun-2026.md, apple-wwdc-2026-name-recognition-mfi-confirmation-jun-2026.md]
+related: [speech-enhancement-neural-networks.md, llm-based-speech-enhancement.md, on-device-ml-hearing-aids.md, medical-domain-edge-llms.md, auracast-bluetooth-le-audio.md, linguistic-hallucination-speech-enhancement.md, visual-substitution-hearing-accessibility.md, ../entities/apple-hearing-features.md]
+tags: [companion-phone, le-audio, auracast, voip, speech-enhancement, generative-se, trust-calibration, off-device-ai, edge-ai, telephony, on-device-asr, name-recognition]
 ---
 
 # Companion-Phone Speech Pipeline
@@ -53,6 +53,15 @@ The middle tier is where DiffVQE-class systems will deploy. The hearing aid is d
 3. **Companion app as an SE host.** OEM companion apps have historically been thin shells (fitting controls + scene labels). The next product-strategy frontier is whether to run OEM-controlled SE on the phone (controlling the prior distribution) or accept platform-supplied SE (Teams, Zoom, iOS) and arbitrate at the aid.
 4. **OEM-vs-platform divide.** Apple controls the AirPods Pro 2/3 phone-pipeline path end-to-end; medical-device OEMs do not. This is structurally analogous to the Apple-Health-vs-third-party-wearable dynamic.
 
+## June 2026 Update — The Pipeline Now Carries Visual Substitution and Semantic Alerts
+
+WWDC 2026 (Jun 8) confirmed two new workloads on the same companion-phone substrate, both adjacent to but not strictly within the audio-to-HA pipeline:
+
+- **Generated Subtitles** — on-device ASR transcribes any uncaptioned video the OS plays; the output is rendered as on-screen subtitles, not routed to the HA. Adds a **visual-substitution branch** to the companion-phone stack. See [[visual-substitution-hearing-accessibility]] and [[../../sources/apple-wwdc-2026-generated-subtitles-jun-2026.md]].
+- **Name Recognition** — on-device ambient keyword spotting in 50+ languages alerts deaf/HoH users when their name is spoken. Same on-device-ASR substrate, applied to environmental audio rather than playback audio. See [[../../sources/apple-wwdc-2026-name-recognition-mfi-confirmation-jun-2026.md]].
+
+Implication for OEM strategy: the companion-phone tier is no longer only an audio-cleaning host for the HA. It is increasingly a **multi-modal accessibility substrate** — audio cleaning + caption generation + semantic alerting all running on the same chip. OEMs that build only audio-cleaning workloads on the phone tier will find themselves competing for share of a stack that the platform is using to ship parallel accessibility pathways for free.
+
 ## Related Pages
 - [[speech-enhancement-neural-networks]] — the SE architectures running upstream
 - [[llm-based-speech-enhancement]] — LM-based variants and their failure modes
@@ -60,6 +69,7 @@ The middle tier is where DiffVQE-class systems will deploy. The hearing aid is d
 - [[medical-domain-edge-llms]] — non-SE companion-phone workloads (counseling, triage)
 - [[on-device-ml-hearing-aids]] — the on-chip tier this concept contrasts with
 - [[auracast-bluetooth-le-audio]] — the handoff substrate
+- [[visual-substitution-hearing-accessibility]] — the captions-as-parallel-pathway layer riding the same substrate
 - [[../entities/apple-hearing-features]] — Apple's end-to-end-controlled instance of this pipeline
 
 ## Sources
@@ -68,3 +78,5 @@ The middle tier is where DiffVQE-class systems will deploy. The hearing aid is d
 - [Samsung Galaxy S26 Audio Eraser real-time SE (2026)](../../sources/samsung-galaxy-s26-audio-eraser-realtime-2026.md) — consumer-grade generative SE shipping at phone tier
 - [Adobe + Speechmatics on-device STT (April 2026)](../../sources/adobe-speechmatics-on-device-stt-april-2026.md) — adjacent workload on the same tier
 - [Apple AirPods hearing-aid country expansion (May 2026)](../../sources/airpods-hearing-aid-country-expansion-may-2026.md) — vertically-integrated instance of the pipeline
+- [Apple WWDC 2026 — Generated Subtitles (Jun 2026)](../../sources/apple-wwdc-2026-generated-subtitles-jun-2026.md) — visual-substitution branch shipping on the same substrate
+- [Apple WWDC 2026 — Name Recognition + MfI Handoff Confirmation (Jun 2026)](../../sources/apple-wwdc-2026-name-recognition-mfi-confirmation-jun-2026.md) — ambient semantic alerting on the same substrate
