@@ -2,9 +2,10 @@
 title: Brain-Aligned Speech Foundation Models
 type: concept
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-12
 sources:
   - arxiv-2606-02305-whisper-ecog-ciferri-jun-2026.md
+  - arxiv-2606-11429-gumbel-beard-layer-selection-jun-2026.md
 related:
   - foundation-model-fusion-speech.md
   - auditory-attention-decoding.md
@@ -12,7 +13,8 @@ related:
   - cortical-reorganization-hearing-aids.md
   - speech-enhancement-neural-networks.md
   - non-intrusive-intelligibility-prediction.md
-tags: [whisper, foundation-models, brain-alignment, ecog, auditory-cortex, layer-selection, representational-alignment, phoneme-encoding]
+  - cross-lifespan-speech-models.md
+tags: [whisper, foundation-models, brain-alignment, ecog, auditory-cortex, layer-selection, representational-alignment, phoneme-encoding, gumbel-softmax]
 ---
 
 # Brain-Aligned Speech Foundation Models
@@ -35,6 +37,15 @@ Three direct implications:
 2. **Brain-aligned losses** become tractable without recording ECoG at deployment time. Train a downstream head to match the cortex-aligned layer; the foundation model itself becomes the "brain model proxy."
 3. **The next moat** in hearing-AI may shift from "which foundation model" to "**which layer of which model**, plus the bridge head that aligns it to the listener's cortex."
 
+## Deployment-Grade Mechanism: Gumbel-BEARD (Jun 9 2026)
+Ciferri et al. named layer choice as a free hyperparameter; **Gumbel-BEARD** (Wang, Shankar, Shi, Zhang & Alwan, UCLA SPAPL, arXiv:2606.11429, accepted Interspeech 2026) is the first paper to provide an end-to-end-trainable mechanism that learns it jointly with downstream adaptation. A hard Gumbel-Softmax selector wrapped around Whisper's encoder stack chooses, per target domain, which layer to tap.
+
+Headline numbers:
+- 10 hours of labeled data matches a 133-hour baseline (~13× sample-efficiency gain).
+- 8.21% WER on MyST children's speech (Whisper-medium); 11.06% WER on OGI Spontaneous (Whisper-small); 6% relative WER reduction on CORAAL dialectal speech.
+
+Why it matters: you don't need ECoG to find the right layer; you let the loss find it. Two-week pairing with Ciferri makes "Whisper's mid-layer is the right tap" a fully usable engineering recipe rather than a neuroscience observation.
+
 ## Related Empirical Threads
 - **Non-invasive brain-to-speech.** The MindVoice line of work (arXiv:2605.31173, May 29 2026) shows that reconstructing intelligible speech from non-invasive EEG / MEG works **only when the noisy biosignal queries a frozen speech foundation model**. That generalizes the present concept: brain alignment is something the foundation model already has, the bridge is the engineering work. See [[non-invasive-brain-to-speech]].
 - **Auditory attention decoding.** Mesgarani's Columbia closed-loop ECoG demonstration (Nature Neuroscience, May 2026) operates on the encoding side of attention; the Ciferri result operates on the model side of the same alignment. See [[auditory-attention-decoding]].
@@ -56,3 +67,4 @@ Three direct implications:
 
 ## Sources
 - [Ciferri et al. — Mapping Whisper Representations to Human ECoG Responses (arXiv:2606.02305)](../../sources/arxiv-2606-02305-whisper-ecog-ciferri-jun-2026.md) — primary empirical evidence for intermediate-layer alignment in Whisper
+- [Wang, Shankar, Shi, Zhang & Alwan — Gumbel-BEARD (arXiv:2606.11429)](../../sources/arxiv-2606-11429-gumbel-beard-layer-selection-jun-2026.md) — deployment-grade learnable mechanism for Whisper-layer selection

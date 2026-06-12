@@ -2807,3 +2807,18 @@ Quiet news cycle Monday — most of today's items were extensions or reaffirmati
 - Skipped re-ingesting items already covered in yesterday's digest (DBHN-Net, FPGA SuDoRM-RF++, BIHIMA Q1, Phonak Awards, Microsoft Edge 148, Synaptics Astra SR80, Frontiers cognitive-decline review, Auracast rollout summary) and the previously-ingested DAL paper — but re-flagged DAL in today's digest because the HLAA Friday speaker confirmation (Lesica/UCL) makes it newly relevant context.
 
 **Pages touched this ingest: 10** (6 new sources, 2 concept-page updates, 1 source update, 1 index update, +1 log entry).
+
+## 2026-06-12 — LinkedIn-drafts ingest (HALO + Gumbel-BEARD)
+
+Drafted two LinkedIn posts for review:
+- **Post 1:** HALO (arXiv:2606.12328, Jun 10 2026) — half-frame-rate adaptive learnable operator. Framed as the fourth on-chip lever (alongside Olalere FPGA memory-bandwidth Jun 4, DBHN-Net SNN+ANN sparsity Jun 5, SB-RF one-step generative SE Jun 4). Argument: four orthogonal axes in two weeks; competitive moat shifts from a single architectural bet to a search over the cross-product.
+- **Post 2:** Gumbel-BEARD (arXiv:2606.11429, Jun 9 2026, UCLA SPAPL, Interspeech 2026) — end-to-end-trainable Gumbel-Softmax selector over Whisper encoder layers. Closes the loop the Ciferri Whisper-ECoG paper (Jun 3) opened — provides a deployment-grade mechanism for the brain-aligned-layer hypothesis. 13× sample-efficiency gain on MyST pediatric ASR; also delivers on CORAAL dialectal speech.
+
+Ingest actions:
+- **New source file:** `sources/arxiv-2606-11429-gumbel-beard-layer-selection-jun-2026.md`
+- **HALO source already existed** (`sources/arxiv-2606-12328-halo-half-frame-rate-se-jun-2026.md`) — no duplicate created.
+- **Updated concept page:** `wiki/concepts/brain-aligned-speech-foundation-models.md` — added Gumbel-BEARD as deployment-grade mechanism for the layer-choice hypothesis; updated frontmatter (added source, related cross-lifespan, gumbel-softmax tag); added a new "Deployment-Grade Mechanism" section; added Gumbel-BEARD to Sources block.
+- **New synthesis page:** `wiki/syntheses/on-chip-hearing-ai-levers-june-2026.md` — catalogs the four levers (bandwidth, sparsity, inference steps, frame rate), why they are separable, and the cross-product strategic implication. Sources: Olalere FPGA, DBHN-Net, SB-RF, HALO.
+- **Updated `wiki/index.md`** — added the new synthesis page under the syntheses table.
+
+Pages touched this ingest: **5** (1 new source, 1 concept-page update, 1 new synthesis, 1 index update, +1 log entry).

@@ -195,3 +195,4 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Pre-Training Corpus as Moat for Hearing-Care AI](syntheses/pretraining-corpus-as-moat-hearing-ai.md) | 2026-05-20 |
 | [LMIC Screening Platform Asymmetry — Apple's May 21 India / Italy / Taiwan Wave](syntheses/lmic-screening-platform-asymmetry-may-2026.md) | 2026-05-26 |
 | [Clinical Audiology and On-Chip ML Converge — June 2026](syntheses/clinical-ml-convergence-june-2026.md) | 2026-06-05 |
+| [The On-Chip Hearing-AI Levers — June 2026 Convergence](syntheses/on-chip-hearing-ai-levers-june-2026.md) | 2026-06-12 |
