@@ -2,9 +2,10 @@
 title: Non-Intrusive Intelligibility Prediction (Hearing-Aid-Processed Speech)
 type: concept
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-06-13
 sources:
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
+  - arxiv-2512-19374-deepgesi-non-intrusive-hi-intelligibility.md
 related:
   - listening-effort-evaluation.md
   - linguistic-hallucination-speech-enhancement.md
@@ -77,3 +78,4 @@ The lever is now fusion location, not encoder identity.
 
 ## Sources
 - [Nakazawa — Frame-Aligned Fusion of Canary and WavLM (arXiv:2605.23619)](../../sources/frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md) — current SOTA configuration and the architectural-lever framing
+- [DeepGESI — Non-Intrusive Objective Evaluation for HI Listeners (arXiv:2512.19374)](../../sources/arxiv-2512-19374-deepgesi-non-intrusive-hi-intelligibility.md) — HI-tuned non-intrusive metric, candidate as DSP training objective

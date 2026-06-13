@@ -3,8 +3,10 @@ title: "From Tiny Machine Learning to Tiny Deep Learning: A Survey"
 authors: [multiple — ACM Computing Surveys 2026]
 date_published: 2026
 date_ingested: 2026-05-15
+last_referenced: 2026-06-13
 url: https://dl.acm.org/doi/10.1145/3776588
 doi: 10.1145/3776588
+arxiv: 2506.18927
 type: academic-survey
 venue: ACM Computing Surveys
 tags: [tinyml, tiny-deep-learning, model-compression, quantization, on-device-training, edge-ai, embedded-ml-survey]

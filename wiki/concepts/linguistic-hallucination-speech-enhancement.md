@@ -2,11 +2,11 @@
 title: Linguistic Hallucination in Speech Enhancement
 type: concept
 created: 2026-05-14
-updated: 2026-05-19
-last_change: 2026-05-19 — added cross-link to speech-enhancement-evaluation-stack-cracks-may-2026 synthesis and to the asr-too-good-to-be-true source; the SE-evaluator side has the same LM-prior problem as the LM-based SE itself, compounding the gap
-sources: [l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md]
-related: [llm-based-speech-enhancement.md, speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, subjective-objective-hearing-gap.md, on-device-ml-hearing-aids.md, software-defined-medical-implants.md, listening-effort-evaluation.md, lalm-selective-auditory-attention.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
-tags: [hallucination, generative-se, llm-based-se, evaluation-metrics, faithfulness, factuality, safety, hearing-aids, audiology-metrics]
+updated: 2026-06-13
+last_change: 2026-06-13 — added Saha Shetu / Habets / Brendel (arXiv:2606.02913, Jun 1 2026, Fraunhofer IIS / Erlangen) — the first empirical quantification of generative-SE hallucination on the diffusion-SE branch using WER + phoneme similarity rather than perceptual surrogates. Extends L3-SE's naming of the failure mode from LM-based SE to the broader generative-SE paradigm. Also added cross-references to C2D microphone projection (Nakatani et al., ICASSP 2026, arXiv:2606.13109) as an upstream mitigation via real paired training data.
+sources: [l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, asr-too-good-to-be-true-arxiv-may-2026.md, arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md, arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md]
+related: [llm-based-speech-enhancement.md, speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, subjective-objective-hearing-gap.md, on-device-ml-hearing-aids.md, software-defined-medical-implants.md, listening-effort-evaluation.md, lalm-selective-auditory-attention.md, close-to-distant-microphone-projection.md, training-deployment-distribution-gap.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
+tags: [hallucination, generative-se, llm-based-se, evaluation-metrics, faithfulness, factuality, safety, hearing-aids, audiology-metrics, hallucination-quantification, wer, phoneme-similarity, diffusion-se]
 ---
 
 # Linguistic Hallucination in Speech Enhancement
@@ -143,7 +143,7 @@ The right-hand column is the structural argument: the standard evaluation stack 
 - **Adversarial robustness.** Can a malicious actor craft acoustic input that *deliberately* induces a target hallucination at the listener's ear? (Speculative but the threat model is now coherent.)
 
 ## Related Pages
-- [[llm-based-speech-enhancement]] — the architectural paradigm where this failure mode lives
+- [[llm-based-speech-enhancement]] — the architectural paradigm where this failure mode was first named
 - [[speech-enhancement-neural-networks]] — broader SE context; classical failure-mode catalog
 - [[dnn-in-hearing-aids]] — production SE lineage; standard evaluation stack
 - [[probabilistic-generative-models-hearing-ai]] — counter-paradigm with explicit likelihoods; offers interpretable failure-mode analysis
@@ -151,6 +151,8 @@ The right-hand column is the structural argument: the standard evaluation stack 
 - [[subjective-objective-hearing-gap]] — hallucination is the sharpest instance of this gap
 - [[on-device-ml-hearing-aids]] — deployment context; faithfulness telemetry is an open infrastructure question
 - [[software-defined-medical-implants]] — post-market surveillance and PCCP implications
+- [[close-to-distant-microphone-projection]] — upstream mitigation via real paired training data
+- [[training-deployment-distribution-gap]] — broader framing: hallucination is the SE-side instance of the distribution gap
 
 ## The Evaluator Problem (May 2026)
 
@@ -158,6 +160,24 @@ The standard objective fallback for catching hallucinations would be: run an ASR
 
 This compounds the gap: the SE has an LM prior that produces plausible-but-wrong words; the evaluator has an LM prior that recognizes those words confidently. Neither side surfaces the error. The synthesis is in [[../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026]].
 
+## First Empirical Quantification on the Diffusion-SE Branch (Saha Shetu, Habets, Brendel, Jun 2026)
+
+L3-SE *named* linguistic hallucination as a failure mode of **LM-based** SE. **Saha Shetu, Habets & Brendel (arXiv:2606.02913, 1 Jun 2026, International Audio Laboratories Erlangen / Fraunhofer IIS)** are the first to *quantify* the same failure mode on the **diffusion-style generative** SE branch — using **WER against ground-truth transcripts and phoneme similarity** instead of perceptual surrogates.
+
+Key findings relevant to this concept page:
+
+- **Generative methods hallucinate measurably more than discriminative ones**, and the gap is largest in exactly the conditions a hearing-aid wearer encounters most often — non-stationary noise and unseen reverberation (OOD).
+- **The hallucination gap is invisible to PESQ / STOI / HASPI / HASQI / DNS-MOS.** A diffusion-SE output can match a discriminative baseline on every perceptual surrogate while scoring measurably worse on WER and phoneme similarity.
+- **The phenomenon is paradigm-level, not architecture-level.** Latency-floor work (SB-RF, DriftSE, DiffVQE, HALO) does not solve it. Single-step generative SE inherits the hallucination class from its multi-step ancestors.
+
+### Implications for This Page
+
+- The failure-mode catalog is no longer LM-SE-only. The "Why This Is a Categorically New Failure Mode" section applies to diffusion-style generative SE, not only LM-based SE.
+- The mitigation taxonomy gets a new entry: **upstream training-data substrate matters.** Real paired training data via C2D (Nakatani et al., ICASSP 2026, arXiv:2606.13109) narrows the OOD region the model has to extrapolate across — partially mitigating one of the upstream causes (training-distribution mismatch), though not eliminating the language-prior-driven core of the failure. See [[close-to-distant-microphone-projection]].
+- For Class IIa hearing-aid claims, this is the first empirical magnitude on the lexical-fidelity tradeoff. PESQ + STOI + HASPI alone are no longer a complete validation stack for a generative SE feature.
+
 ## Sources
 - [L3-SE — Reducing Linguistic Hallucination in LM-Based Speech Enhancement (Wang et al., May 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608; named the failure mode, proposed acoustic-semantic distillation as mitigation
 - [Too Good to Be True: Modern ASR for SE Evaluation (de Oliveira, Peer & Gerkmann, May 2026)](../../sources/asr-too-good-to-be-true-arxiv-may-2026.md) — arXiv:2605.12107; argues the ASR-WER fallback is structurally inadequate as an SE evaluator
+- [Saha Shetu, Habets & Brendel — Generative vs Discriminative SE Comparison (Jun 2026)](../../sources/arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md) — arXiv:2606.02913; first empirical quantification of generative-SE hallucination via WER + phoneme similarity on the diffusion-SE branch
+- [Nakatani et al. — C2D Microphone Projection (ICASSP 2026)](../../sources/arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md) — arXiv:2606.13109; upstream mitigation via real paired training data (reduces OOD generalization burden)

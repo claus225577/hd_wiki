@@ -38,7 +38,13 @@ Generative SE has been the obvious next step for hearing-aid speech enhancement 
 - No on-device benchmark; VoiceBank-DEMAND is a clean offline corpus.
 - Behavior under non-stationary noise (the actual hearing-aid case) not yet shown.
 
+## Companion / Counter-Findings
+- **Generative-vs-Discriminative empirical comparison** (Saha Shetu, Habets, Brendel — arXiv:2606.02913, 1 Jun 2026): SB-RF proves the *latency* floor for generative SE is cracking. The Fraunhofer paper provides the inconvenient companion finding that the *content-fidelity* problem is not yet solved — generative SE hallucinates measurably more than discriminative SE on WER + phoneme similarity, particularly in the OOD conditions where it perceptually wins. The two papers together set up the 2026-Q3 product question: when is the artifact rate low enough to ship?
+- **C2D microphone projection** (Nakatani et al., ICASSP 2026, arXiv:2606.13109): partial upstream mitigation of the generative-SE hallucination risk by closing the simulation-to-reality gap on training data — narrows the OOD region the model has to extrapolate across.
+
 ## Used In
 - [[wiki/concepts/speech-enhancement-neural-networks.md]]
 - [[wiki/concepts/probabilistic-generative-models-hearing-ai.md]]
 - [[wiki/concepts/on-device-ml-hearing-aids.md]]
+- [[wiki/concepts/linguistic-hallucination-speech-enhancement.md]] — companion-finding context
+- [[wiki/concepts/close-to-distant-microphone-projection.md]] — training-substrate complement

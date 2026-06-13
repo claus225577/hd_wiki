@@ -2,10 +2,10 @@
 title: Synthetic Data for Hearing AI
 type: concept
 created: 2026-04-24
-updated: 2026-04-24
-sources: [meta-synthetic-data-distillation-april-2026.md]
-related: [on-device-ml-hearing-aids.md, model-compression.md, dnn-in-hearing-aids.md, small-language-models-edge-ai.md, ../entities/demant-oticon.md, ../entities/phonak.md]
-tags: [synthetic-data, distillation, training-data, edge-ai, privacy, hearing-aids]
+updated: 2026-06-13
+sources: [meta-synthetic-data-distillation-april-2026.md, arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md]
+related: [on-device-ml-hearing-aids.md, model-compression.md, dnn-in-hearing-aids.md, small-language-models-edge-ai.md, close-to-distant-microphone-projection.md, training-deployment-distribution-gap.md, ../entities/demant-oticon.md, ../entities/phonak.md]
+tags: [synthetic-data, distillation, training-data, edge-ai, privacy, hearing-aids, simulation-to-reality-gap, c2d, real-paired-data]
 ---
 
 # Synthetic Data for Hearing AI
@@ -68,6 +68,7 @@ Hearing aid manufacturers already use synthetic mixing (combining clean speech w
 | Traditional synthetic mixing | Signal processing: mix speech + noise at various SNRs | High | Medium — limited by mixing rules |
 | HA microphone simulation | Convolve clean audio with measured HA impulse responses | Medium | High for known devices |
 | AI-generated synthetic data | Large model generates or augments scenarios | Very high | Potentially very high — captures complex interactions |
+| C2D real paired data (Jun 2026) | Dual-mic field recording + PMWF projection of close mic → distant-mic clean target | Bounded by collection cost | Real — no simulation step |
 
 ## Open Questions
 - Can AI-generated acoustic scenes match the distributional properties of real-world hearing aid recordings?
@@ -75,11 +76,22 @@ Hearing aid manufacturers already use synthetic mixing (combining clean speech w
 - How do hearing aid manufacturers validate that synthetic training data improves real-world outcomes?
 - Will synthetic data enable smaller companies to compete with Big 6 data advantages?
 
+## Counter-Paradigm: Real Paired Data via C2D Microphone Projection (Jun 2026)
+
+Nakatani et al. (NTT, ICASSP 2026, arXiv:2606.13109) introduce **Close-to-Distant (C2D) microphone projection** — a method to produce **real paired data** from dual-microphone field recordings, sidestepping simulation entirely. A close-talking mic and a distant mic array record the same scene; a PMWF-based projection turns the close-mic signal into the clean training target paired with the distant-mic noisy input.
+
+For hearing-aid OEMs, this opens a data-collection pathway (body-worn close mic + ear-worn aid mics during field studies) that produces labeled training pairs without simulation. The lever moves from "bigger model + more synthetic data" to **"better training-signal substrate"** — orthogonal to the architecture race and stackable with every other SE frontier.
+
+Synthetic and C2D real-paired data are not mutually exclusive: synthetic mixing remains the only way to cover the long tail of rare acoustic events, while C2D narrows the simulation-to-reality gap on the high-frequency conditions. See [[close-to-distant-microphone-projection]] for the primary concept page.
+
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — Target deployment environment for synthetically trained models
 - [[model-compression]] — Compression pipeline that follows synthetic data training
 - [[dnn-in-hearing-aids]] — DNN training data scales and practices
 - [[small-language-models-edge-ai]] — Edge model paradigm that benefits from synthetic data distillation
+- [[close-to-distant-microphone-projection]] — Counter-paradigm: real paired data via PMWF projection
+- [[training-deployment-distribution-gap]] — Broader framing of the train-vs-deploy mismatch synthetic data is meant to bridge
 
 ## Sources
 - [Meta Synthetic Data Distillation](../../sources/meta-synthetic-data-distillation-april-2026.md) — Recursive distillation pipeline for edge AI models
+- [Nakatani et al. — C2D Microphone Projection (arXiv:2606.13109, ICASSP 2026)](../../sources/arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md) — Real paired data via dual-mic + PMWF, counter-paradigm to simulation

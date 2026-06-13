@@ -2822,3 +2822,56 @@ Ingest actions:
 - **Updated `wiki/index.md`** — added the new synthesis page under the syntheses table.
 
 Pages touched this ingest: **5** (1 new source, 1 concept-page update, 1 new synthesis, 1 index update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-13 (C2D microphone projection + Fraunhofer gen-vs-disc)
+
+**Source of operation:** Ad-hoc ingest of two June-2026 arXiv papers explicitly flagged by user: (1) Nakatani et al. NTT C2D microphone projection (arXiv:2606.13109, ICASSP 2026), (2) Saha Shetu, Habets & Brendel Fraunhofer IIS generative-vs-discriminative SE empirical comparison (arXiv:2606.02913, Jun 1 2026).
+
+### New / re-ingested source files
+- **`sources/arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md`** — NEW. C2D method: dual-microphone field recordings (close-talk lavalier + distant array) projected through PMWF (Parametric Multichannel Wiener Filter) yield real paired training data without simulated mixing. Outperforms Guided Source Separation (GSS) on CHiME6 dinner-party benchmark. Reframes SE training-data axis as a data-collection problem, not a synthesis problem.
+- **`sources/arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md`** — RE-INGESTED (was thin, originally ingested 2026-06-08). Expanded multi-axis comparison: discriminative wins in-distribution / stationary noise; generative wins OOD / non-stationary / unseen reverberation; first empirical quantification of generative-SE hallucination via WER + phoneme similarity rather than PESQ/STOI/HASPI. Hallucination phenomenon now established as paradigm-level (LM-SE → diffusion-SE), not architecture-specific to L3-SE.
+
+### New wiki pages
+- **`wiki/concepts/close-to-distant-microphone-projection.md`** — NEW concept page. Positions C2D as counter-paradigm to synthetic-data taxonomies on the training-data substrate axis; complement to DFC-IL (dynamics-side closure) on the training-deployment distribution gap; partial upstream mitigation of the generative-SE hallucination risk by narrowing the OOD region every paradigm must extrapolate across.
+
+### Wiki page updates
+- **`wiki/concepts/synthetic-data-for-hearing-ai.md`** — Added C2D row to training-data approach table; added "Counter-Paradigm: Real Paired Data via C2D Microphone Projection (Jun 2026)" section.
+- **`wiki/concepts/training-deployment-distribution-gap.md`** — Added new item #6 in "What Closes the Gap" list framing C2D as data-side closure paired with DFC-IL dynamics-side closure (stackable).
+- **`wiki/concepts/speech-enhancement-neural-networks.md`** — Added two new body sections: C2D training-substrate and Fraunhofer first-empirical-hallucination-quantification. Both new sources added to frontmatter.
+- **`wiki/concepts/linguistic-hallucination-speech-enhancement.md`** — Added "First Empirical Quantification on the Diffusion-SE Branch" section framing Fraunhofer as the *magnitude* of the L3-SE-named failure mode; extended from LM-SE to generative-SE-general.
+- **`wiki/concepts/probabilistic-generative-models-hearing-ai.md`** — Enriched "Where Generative vs Discriminative Sit Today" section with WER + phoneme-similarity hallucination framing and paradigm-vs-architecture distinction. Added "Training-Substrate Complement (C2D)" subsection.
+- **`wiki/concepts/differentiable-cochlear-models.md`** — Light cross-link to C2D in Related Pages (DAL reshapes loss function inside training loop; C2D reshapes noisy-clean pairs the loop trains on — stackable).
+- **`wiki/syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md`** — Added "Update — 13 June 2026: The Linguistic-Faithfulness Crack Gets Its First Empirical Magnitude" section with before/after framing and note on C2D as upstream mitigation.
+- **`sources/arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md`** — Added "Companion / Counter-Findings" section connecting SB-RF (latency floor closed) to Fraunhofer (content-fidelity gate still open) and C2D (upstream training-data mitigation).
+- **`wiki/index.md`** — Added 2026-06-13 ingest entry to top-of-file change log; added Close-to-Distant (C2D) Microphone Projection row to Concepts table.
+
+### Editorial notes
+- The Fraunhofer paper turns the L3-SE / linguistic-hallucination thread from a single-data-point claim into a paradigm-level empirical finding. The SE-evaluation-stack synthesis now has a quantified third-crack metric (WER + phoneme similarity) and an explicit population-asymmetry argument (lexical artifacts hurt residual-hearing / pediatric / CI-margin populations disproportionately).
+- C2D + DFC-IL together form a "data side + dynamics side" pair on the training-deployment distribution gap. Pattern-match to the DAL + BiEAR afferent/efferent pair (2 papers, 24 hours apart) — June 2026 is producing complementary-pair drops at high frequency.
+- The Fraunhofer hallucination quantification is methodologically portable to factor-graph probabilistic-generative SE (AIDA-2 et al.) — flagged as the obvious next controlled head-to-head.
+
+**Pages touched this ingest: 11** (1 new source, 1 re-ingested source, 1 SB-RF source update, 1 new concept page, 6 concept-page updates, 1 synthesis update, 1 index update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-13 (Daily digest: DeepGESI + classroom-children SE + Tiny-DL survey arXiv ID)
+
+**Source of operation:** Daily hearing+AI email digest, sources surfaced via web research; email sent to door.punch_4o@icloud.com.
+
+### New source files
+- **`sources/arxiv-2512-19374-deepgesi-non-intrusive-hi-intelligibility.md`** — NEW. Reference-free intelligibility predictor tuned for hearing-impaired listeners; positioned as candidate training-objective for hearing-aid DSP pipelines that never see a clean reference. Linked from `wiki/concepts/non-intrusive-intelligibility-prediction.md`.
+- **`sources/arxiv-2511-07677-speech-separation-hi-children-classroom.md`** — NEW. Speech separation targeted at HI children in reverberant multi-talker classroom conditions — an under-served population/domain combination relative to adult-voice / low-reverb benchmarks.
+
+### Source file updates
+- **`sources/tiny-ml-to-tiny-dl-survey-acm-2026.md`** — Added `arxiv: 2506.18927` cross-identifier and `last_referenced: 2026-06-13` field. The arXiv preprint and the ACM Computing Surveys version are the same survey; consolidated rather than duplicated.
+
+### Wiki page updates
+- **`wiki/concepts/non-intrusive-intelligibility-prediction.md`** — Added DeepGESI to `sources` frontmatter, bumped `updated`, added Sources-section entry framing it as an HI-tuned non-intrusive metric and a candidate DSP training objective.
+
+### Editorial notes
+- Today's digest was deliberately short on novelty: most flagged items (Phonak Virto R Infinio AI Excellence Award, AirPods country expansion, Orka O1 Pro at AWE 2026, GN ReSound Enzo IA / Smart Fit 2.3, DBHN-Net, the Tiny-DL survey) were already ingested in prior log entries — no new pages or source files needed for those. The two genuinely new ingests are both evaluation/data-side contributions rather than model-architecture papers, which matches the pattern noted in the 11 Jun and earlier June logs that the SE-evaluation stack is the cracking surface this quarter.
+- DeepGESI joins the foundation-model-fusion Nakazawa work (frame-aligned Canary × WavLM) as the second 2026 entry on the non-intrusive intelligibility prediction page — the page is starting to accumulate a distinct HI-tuned reference-free lineage. Worth watching whether the Clarity Prediction Challenge organizers adopt one of these as the CPC4 baseline.
+
+**Pages touched this ingest: 5** (2 new sources, 1 source-file metadata update, 1 concept-page update, +1 log entry).

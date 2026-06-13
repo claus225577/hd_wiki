@@ -56,6 +56,7 @@ DAL models the **afferent** (forward) cochlear path. A companion paper posted ~2
 - [[on-device-ml-hearing-aids]] — DAL is currently training-side; deployment to chip is the next-step gap.
 - [[efferent-moc-feedback-hearing-ai]] — Companion descending-loop modelling work (BiEAR); completes the cochlear-loop ML pair with DAL.
 - [[../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026]] — the May 2026 papers naming evaluation cracks; perceptual-domain loss is one alternative.
+- [[close-to-distant-microphone-projection]] — complement on the data-substrate side: where DAL reshapes the loss function inside the training loop, C2D reshapes the noisy-clean pairs the loop trains on. Stackable.
 - [[../entities/google-research]] — institutional steward of CARFAC and DAL.
 
 ## Sources

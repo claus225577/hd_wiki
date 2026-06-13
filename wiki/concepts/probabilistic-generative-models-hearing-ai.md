@@ -2,10 +2,10 @@
 title: Probabilistic Generative Models for Hearing AI
 type: concept
 created: 2026-05-10
-updated: 2026-06-08
-sources: [aida-2-bayesian-generative-se-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md, arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md]
-related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, closed-loop-data-flywheel.md, hearing-aid-chip-architectures.md, ../comparisons/dnn-vs-natural-processing.md, ../syntheses/ai-understanding-gap-hearing-industry.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
-tags: [bayesian-inference, probabilistic-graphical-models, generative-model, variational-message-passing, factor-graphs, rxinfer, edge-ai, parameter-efficiency, hallucination-resistance]
+updated: 2026-06-13
+sources: [aida-2-bayesian-generative-se-arxiv-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md, arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md, arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md]
+related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, closed-loop-data-flywheel.md, hearing-aid-chip-architectures.md, ../comparisons/dnn-vs-natural-processing.md, ../syntheses/ai-understanding-gap-hearing-industry.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md, close-to-distant-microphone-projection.md]
+tags: [bayesian-inference, probabilistic-graphical-models, generative-model, variational-message-passing, factor-graphs, rxinfer, edge-ai, parameter-efficiency, hallucination-resistance, hallucination-quantification, c2d]
 ---
 
 # Probabilistic Generative Models for Hearing AI
@@ -84,15 +84,20 @@ Bert de Vries (TU Eindhoven, ELLIS) — co-author and longtime advocate of facto
 
 ## Where Generative vs Discriminative Sit Today (Fraunhofer IIS, Jun 2026)
 
-Saha Shetu, Habets & Brendel (Fraunhofer IIS / International Audio Laboratories Erlangen) published the first controlled head-to-head between diffusion-style generative SE and standard discriminative DNN SE — arXiv:2606.02913, 3 Jun 2026. Findings:
+Saha Shetu, Habets & Brendel (International Audio Laboratories Erlangen / Fraunhofer IIS) published the first controlled head-to-head between diffusion-style generative SE and standard discriminative DNN SE — arXiv:2606.02913, 1 Jun 2026. Findings:
 
-- **Discriminative wins on stationary intrusive noise** (in-distribution).
-- **Generative wins on non-stationary noise and unseen reverberation** (OOD generalization) — the conditions a hearing aid encounters most often clinically.
-- **Generative cost: occasional content-warping artifacts** under uncertainty.
+- **Discriminative wins on stationary intrusive noise and in-distribution conditions.**
+- **Generative wins on non-stationary noise and unseen reverberation (OOD generalization)** — the conditions a hearing aid encounters most often clinically.
+- **First empirical quantification of generative-SE hallucination via WER + phoneme similarity** rather than PESQ / STOI / HASPI. Generative methods hallucinate measurably more than discriminative ones, and the gap is **invisible to perceptual surrogates**.
+- The hallucination phenomenon is **paradigm-level, not architecture-level** — extends from LM-based SE (L3-SE) to diffusion-style generative SE.
 
 This sets up the realistic 2026-Q3 product question: the *latency* problem for generative SE was effectively closed by SB-RF (arXiv:2606.05575, one-step generative); the remaining gate is *content fidelity*. A paper that ships an explicit artifact-rate metric alongside PESQ / HASPI / CEC3 — or a hybrid architecture that selects generative-when-OOD / discriminative-when-in-distribution via an on-device scene classifier — is the obvious next step.
 
-The Fraunhofer paper is about *diffusion-style* generative SE, not factor-graph probabilistic-generative SE (AIDA-2 et al.). Whether the latter has the same artifact-rate profile is open — the explicit-likelihood structure of probabilistic generative models is *plausibly* more artifact-resistant by construction, but no controlled head-to-head exists.
+The Fraunhofer paper is about *diffusion-style* generative SE, not factor-graph probabilistic-generative SE (AIDA-2 et al.). Whether the latter has the same artifact-rate profile is open — the explicit-likelihood structure of probabilistic generative models is *plausibly* more artifact-resistant by construction, but no controlled head-to-head exists. The WER + phoneme-similarity evaluation methodology the Fraunhofer paper establishes is directly portable to a factor-graph-vs-discriminative comparison whenever one is run.
+
+### Training-Substrate Complement (C2D, ICASSP 2026)
+
+The OOD generalization burden that drives generative-SE hallucination is partly a consequence of training-distribution mismatch. **C2D microphone projection** (Nakatani et al., NTT, ICASSP 2026, arXiv:2606.13109) closes the simulation-to-reality gap upstream by producing **real paired training data** from dual-microphone field recordings (close-talk + distant) via PMWF projection. Narrows the OOD region every paradigm — generative, discriminative, factor-graph — has to extrapolate across. See [[close-to-distant-microphone-projection]].
 
 ## Open Questions
 
@@ -116,4 +121,5 @@ The Fraunhofer paper is about *diffusion-style* generative SE, not factor-graph 
 - [AIDA-2 — A Probabilistic Generative Model for Spectral Speech Enhancement](../../sources/aida-2-bayesian-generative-se-arxiv-2026.md) — Hidalgo-Araya et al., arXiv 2603.28436, 30 Mar 2026 (GN Advanced Science + TU Eindhoven + Lazy Dynamics)
 - [L3-SE — LM-Based SE and Linguistic Hallucination (Wang et al., May 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608; the counter-paradigm whose failure mode highlights probabilistic generative architectures' structural advantage
 - [SB-RF — Schrödinger Bridge Rectified Flow for One-Step Robust SE (Lu et al., Jun 2026)](../../sources/arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md) — arXiv:2606.05575; collapses generative SE to ~1 ms algorithmic latency, closes the latency gate
-- [Generative vs Discriminative SE (Saha Shetu, Habets, Brendel, Jun 2026)](../../sources/arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md) — arXiv:2606.02913; controlled head-to-head, generative wins OOD/non-stationary, costs content-warping artifacts
+- [Generative vs Discriminative SE (Saha Shetu, Habets, Brendel, Jun 2026)](../../sources/arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md) — arXiv:2606.02913; first empirical quantification of generative-SE hallucination via WER + phoneme similarity; generative wins OOD/non-stationary on perceptual quality but loses measurably on lexical fidelity
+- [C2D Microphone Projection (Nakatani et al., ICASSP 2026)](../../sources/arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md) — arXiv:2606.13109; real paired training data via dual-mic + PMWF — narrows OOD region across paradigms

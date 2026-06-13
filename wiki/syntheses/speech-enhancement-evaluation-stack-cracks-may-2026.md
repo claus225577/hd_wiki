@@ -2,7 +2,7 @@
 title: The Hearing-AI Speech-Enhancement Evaluation Stack — Three Cracks in Twelve Days (May 2026)
 type: synthesis
 created: 2026-05-19
-updated: 2026-06-02
+updated: 2026-06-13
 sources:
   - codec-intelligibility-se-behringer-arxiv-2026.md
   - l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md
@@ -10,6 +10,7 @@ sources:
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
   - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
   - breaking-the-pair-speaker-switching-arxiv-june-2026.md
+  - arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md
 related:
   - ../concepts/listening-effort-evaluation.md
   - ../concepts/linguistic-hallucination-speech-enhancement.md
@@ -23,7 +24,9 @@ related:
   - ../entities/clarity-prediction-challenge.md
   - ../concepts/dyadic-interaction-preservation.md
   - ../concepts/communication-accessibility-metric.md
-tags: [evaluation-metrics, speech-enhancement, asr-wer, listening-effort, linguistic-hallucination, hearing-aid-ai, synthesis, interspeech-2026, foundation-model-fusion, cpc3, dyadic-interaction]
+  - ../concepts/close-to-distant-microphone-projection.md
+  - ../concepts/probabilistic-generative-models-hearing-ai.md
+tags: [evaluation-metrics, speech-enhancement, asr-wer, listening-effort, linguistic-hallucination, hearing-aid-ai, synthesis, interspeech-2026, foundation-model-fusion, cpc3, dyadic-interaction, hallucination-quantification, generative-vs-discriminative]
 ---
 
 # The Hearing-AI Speech-Enhancement Evaluation Stack — Three Cracks in Twelve Days (May 2026)
@@ -175,6 +178,35 @@ The DDM approach is **representation-agnostic** — it sits on top of whatever e
 
 See [[dyadic-interaction-preservation]] for the full concept page.
 
+## Update — 13 June 2026: The Linguistic-Faithfulness Crack Gets Its First Empirical Magnitude
+
+The L3-SE paper (May 9) **named** linguistic hallucination as a failure mode of LM-based SE and showed acoustic-semantic distillation reduces it. What was missing: a **paradigm-level magnitude** for how much generative SE hallucinates vs the discriminative baseline that has dominated production for two decades, measured on metrics that are sensitive to lexical fidelity rather than perceptual quality.
+
+**Saha Shetu, Habets & Brendel** (arXiv:2606.02913, 1 Jun 2026 — International Audio Laboratories Erlangen / Fraunhofer IIS) provide that magnitude.
+
+- **First study to quantify generative-SE hallucination cost via WER + phoneme similarity** rather than perceptual surrogates.
+- Controlled comparison across SNR regimes, matched vs mismatched training distribution, data-volume scaling, model convergence, and compute complexity.
+- Headline: **generative SE wins on perceptual quality under OOD (non-stationary noise, unseen reverberation) and loses measurably on lexical fidelity in those same conditions.** The gap is invisible to PESQ / STOI / HASPI / DNS-MOS.
+- The hallucination phenomenon is **paradigm-level, not architecture-level** — extends beyond LM-based SE (L3-SE) to diffusion-style generative SE. Latency-floor work (SB-RF, DriftSE, DiffVQE, HALO) does not solve it; single-step generative SE inherits the hallucination class from its multi-step ancestors.
+
+### Why This Closes a Specific Loop
+
+The May trio identified three structural cracks. This June paper measures the magnitude of the *second* crack (linguistic faithfulness, L3-SE) on the diffusion branch and against the discriminative baseline:
+
+| Question | Status before | Status after Saha Shetu / Habets / Brendel |
+|---|---|---|
+| Is linguistic hallucination LM-SE-specific or generative-SE-general? | Open (L3-SE only studied LM-SE) | Generative-SE-general — diffusion-SE hallucinates measurably more than discriminative |
+| Can PESQ/STOI/HASPI proxy for lexical fidelity? | Suspected no | Empirically no — quality and fidelity diverge under OOD |
+| Is the choice generative vs discriminative paradigm-level? | Was treated as architecture choice | Paradigm-level — different Pareto curves, different failure modes |
+
+### What's Still Missing
+
+- A **standardized HA-evaluation metric for lexical fidelity** (an "HASPI-equivalent for faithfulness"). The Fraunhofer paper provides the empirical motivation; a deployable metric for OEM R&D + regulator-facing post-market surveillance is still unbuilt.
+- **Inference-time hallucination detection** — confidence estimates that let a hybrid pipeline gate generative-when-OOD vs discriminative-when-in-distribution.
+- An **upstream mitigation** is in flight: **C2D microphone projection** (Nakatani et al., ICASSP 2026, arXiv:2606.13109) closes the simulation-to-reality gap on training data via real paired dual-mic recordings. This narrows the OOD region the generative model has to extrapolate across — a partial but real mitigation for the upstream cause of hallucination, complementary to the inference-time metric work above. See [[../concepts/close-to-distant-microphone-projection]].
+
+The crack is not closing — it is being mapped, and the field now has a magnitude to argue against.
+
 ## Sources
 - [Behringer et al. — On the Influence of Speech Enhancement and Codecs on Speech Intelligibility and Listening Effort](../../sources/codec-intelligibility-se-behringer-arxiv-2026.md) — listening-effort axis
 - [Wang et al. — L3-SE: Reducing Linguistic Hallucination in LM-Based Speech Enhancement](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — linguistic-faithfulness axis
@@ -182,3 +214,4 @@ See [[dyadic-interaction-preservation]] for the full concept page.
 - [Nakazawa — Frame-Aligned Fusion of Canary and WavLM on CPC3 (arXiv:2605.23619)](../../sources/frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md) — the constructive direction (foundation-model fusion + binaural preservation + CPC3-style labels)
 - [Nakazawa — Word-Level Modeling with Alignment-Aware Acoustic Fusion (arXiv:2605.23604)](../../sources/arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md) — granularity as a third axis; text-assisted reference-conditioned word-level intelligibility on the same CPC3 dataset
 - [Nilabh & Sharma — Breaking the Pair: Evaluating Dyadic Interaction via Speaker Switching (arXiv:2606.02185)](../../sources/breaking-the-pair-speaker-switching-arxiv-june-2026.md) — interaction preservation as a fifth, orthogonal axis
+- [Saha Shetu, Habets & Brendel — Generative vs Discriminative SE Comparison (arXiv:2606.02913)](../../sources/arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md) — first empirical quantification of generative-SE hallucination magnitude via WER + phoneme similarity

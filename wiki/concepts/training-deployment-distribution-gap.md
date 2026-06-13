@@ -2,16 +2,19 @@
 title: Training–Deployment Distribution Gap in Hearing-Aid ML
 type: concept
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-13
 sources:
   - arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md
+  - arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md
 related:
   - acoustic-feedback-cancellation.md
   - on-device-ml-hearing-aids.md
   - speech-enhancement-neural-networks.md
   - dnn-architectures-hearing-aids.md
   - continual-learning-hearing-ai.md
-tags: [training-loop, closed-loop-dynamics, distribution-shift, deployment-gap, methodology, dsp, on-chip]
+  - close-to-distant-microphone-projection.md
+  - synthetic-data-for-hearing-ai.md
+tags: [training-loop, closed-loop-dynamics, distribution-shift, deployment-gap, methodology, dsp, on-chip, c2d, real-paired-data, simulation-to-reality-gap]
 ---
 
 # Training–Deployment Distribution Gap in Hearing-Aid ML
@@ -45,6 +48,7 @@ Drawing from DFC-IL and adjacent literature:
 3. **Telemetry-grounded fine-tuning** — use deployed-device logs (where regulation permits) to surface failure modes for retraining.
 4. **Curriculum from stable to unstable** — train on quasi-stationary first, anneal toward the unstable operating regime.
 5. **Predetermined change control plans** — regulatory frameworks (FDA SaMD, EU AI Act) that allow telemetry-driven update of the model post-clearance.
+6. **Real paired training data via C2D microphone projection** (Nakatani et al., ICASSP 2026, arXiv:2606.13109) — closes the **data-side** instance of the gap by replacing simulated noisy-clean pairs with real ones derived from dual-microphone field recordings + PMWF projection. The DFC-IL approach closes the gap on the **dynamics** side (closed-loop feedback); C2D closes it on the **data** side (clean reference). They are complementary and stackable. See [[close-to-distant-microphone-projection]].
 
 ## Why It Matters Strategically
 The architectural lever ("bigger model, more data, foundation-model fine-tune") is approaching diminishing returns. The training-loop lever (close the gap between train and deploy) is **earlier on its curve**. Teams that integrate closed-loop dynamics into their training pipeline are likely to capture a non-obvious quality margin without needing to ship a bigger model.
@@ -55,6 +59,9 @@ The architectural lever ("bigger model, more data, foundation-model fine-tune") 
 - [[speech-enhancement-neural-networks]] — the largest population of models silently affected
 - [[continual-learning-hearing-ai]] — the closed-loop framing extended over the user's lifetime
 - [[dnn-architectures-hearing-aids]] — the architectural lever this concept counter-positions
+- [[close-to-distant-microphone-projection]] — closes the data-side instance of the gap (real paired SE training data)
+- [[synthetic-data-for-hearing-ai]] — the simulation paradigm whose limits this concept names
 
 ## Sources
 - [Voit & Doclo — In-the-Loop Training of Deep Feedback Cancellation for Hearing Aids (arXiv:2606.03832)](../../sources/arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md) — origin of the DFC-IL framing, primary empirical evidence for the gain-regime stability gap
+- [Nakatani et al. — C2D Microphone Projection (arXiv:2606.13109, ICASSP 2026)](../../sources/arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md) — closes the data-side instance of the gap with real paired SE training data via dual-mic + PMWF projection
