@@ -2,9 +2,9 @@
 title: Care Partners and Dyad-Level Models for Hearing AI
 type: concept
 created: 2026-05-10
-updated: 2026-05-16
+updated: 2026-06-14
 sources: [asha-nslhm-2026-care-partners.md, gijbels-ecological-validity-fauot-mar-2026.md]
-related: [closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, digital-phenotyping-cognitive-decline.md, longitudinal-hearing-phenotyping.md, on-device-ml-hearing-aids.md, multimodal-hearing-assessment.md, ../syntheses/ai-understanding-gap-hearing-industry.md]
+related: [closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, digital-phenotyping-cognitive-decline.md, longitudinal-hearing-phenotyping.md, on-device-ml-hearing-aids.md, multimodal-hearing-assessment.md, ../syntheses/ai-understanding-gap-hearing-industry.md, turn-taking-prediction-hearing-ai.md]
 tags: [care-partners, dyad, multi-user-modeling, adherence, patient-centered-care, telemetry, family, asha, vocal-effort, lombard-effect]
 ---
 

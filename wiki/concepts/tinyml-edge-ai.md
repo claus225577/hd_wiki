@@ -2,9 +2,9 @@
 title: TinyML for Hearing Devices
 type: concept
 created: 2026-04-23
-updated: 2026-06-10
+updated: 2026-06-14
 sources: [tinyml-speech-recognition-arduino-2025.md, aizip-tiny-ai-hearing-devices-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, tinyml-stm32-hearing-aid-speech-enhancement-2026.md, tiny-ml-to-tiny-dl-survey-acm-2026.md, aondevices-edge-ai-ces-2026.md, arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md, synaptics-astra-sr80-edge-ai-audio-may-2026.md]
-related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, model-compression.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, speech-enhancement-neural-networks.md, large-sensor-models.md]
+related: [on-device-ml-hearing-aids.md, small-language-models-edge-ai.md, model-compression.md, hearing-aid-chip-architectures.md, dnn-architectures-hearing-aids.md, speech-enhancement-neural-networks.md, large-sensor-models.md, ../syntheses/on-chip-hearing-ai-levers-june-2026.md]
 tags: [tinyml, edge-ai, microcontroller, keyword-spotting, ultra-low-resource, hearing-aids, arduino]
 ---
 

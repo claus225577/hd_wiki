@@ -2875,3 +2875,117 @@ Pages touched this ingest: **5** (1 new source, 1 concept-page update, 1 new syn
 - DeepGESI joins the foundation-model-fusion Nakazawa work (frame-aligned Canary × WavLM) as the second 2026 entry on the non-intrusive intelligibility prediction page — the page is starting to accumulate a distinct HI-tuned reference-free lineage. Worth watching whether the Clarity Prediction Challenge organizers adopt one of these as the CPC4 baseline.
 
 **Pages touched this ingest: 5** (2 new sources, 1 source-file metadata update, 1 concept-page update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-14 (Ad-hoc: ModeratorLM turn-taking arXiv + HLAA 2026 Convention)
+
+**Source of operation:** Ad-hoc ingest task; two sources covering the engineering and patient-voice rungs of the same fortnight.
+
+### New source files
+- **`sources/moderatorlm-adaptive-turn-taking-arxiv-june-2026.md`** — NEW. Mitra, Pandey, Jain, Sahith, Girish (Amazon), arXiv:2606.13544, submitted 11 Jun 2026, Interspeech 2026. Chunk-wise streaming speech-LLM voice agent for multi-party conversation; role-conditioned turn-taking + reasoning-enhanced chain-of-thought variant; RolePlayConv synthetic corpus; +40% turn-taking precision and >70% recall over the strongest non-role-conditioned baseline. Hearing-AI framing: multi-party as #1 unsolved wearer complaint; reactive→predictive shift in beamforming / gain ramps / attention steering; generative cousin to the dyadic-interaction-preservation diagnostic at the interactional layer.
+- **`sources/hlaa-2026-convention-louisville-june-2026.md`** — NEW. HLAA 41st Annual Convention, 10-12 Jun 2026, Galt House Louisville KY. Captioning for every session + hearing loops in every meeting room as consumer-scale accessibility deployment. Fri Jun 12 NIDCD-supported Research Symposium "The AI Revolution in Hearing Health: Smarter Tech, Greater Access" — first US patient-side convention with AI as headline plenary. Patient-voice rung of the three-rung discourse ladder alongside HEAL 2026 Padua (clinical) and arXiv-week (engineering). Complements the previously-ingested `sources/hlaa-2026-convention-opens-june-2026.md`.
+
+### New wiki pages
+- **`wiki/concepts/turn-taking-prediction-hearing-ai.md`** — NEW concept page. Turn-taking prediction as a pragmatic primitive for hearing AI; reactive→predictive scene-control shift; role-conditioning mechanism transferable to wearer-side host/guest/listener; companion-phone substrate; sub-primitive of the interactional axis alongside dyadic-interaction-preservation in the five-axis evaluation stack.
+- **`wiki/entities/hlaa.md`** — NEW entity page. Hearing Loss Association of America. Three-rung-discourse-ladder framing (engineering / clinical / patient); annual-convention table; accessibility-substrate-deployment angle; legislative weight (Veterans Hearing Aid Improvement Act endorser).
+- **`wiki/concepts/patient-advocacy-hearing-health.md`** — NEW concept page. Anchors the wearer-voice rung. HLAA + WHO + ACI Alliance as canonical anchors; the contested-AI-questions list at the patient rung in 2026 (DNN noise reduction now table-stakes; on-demand AI clarity boost contested; conversation memory / name recognition feature-acceptance question; audiogram-vs-self-fit divided; real-time captioning broadly accepted).
+
+### Wiki page updates
+- **`wiki/concepts/dyadic-interaction-preservation.md`** — Added `turn-taking-prediction-hearing-ai.md` to `related:` frontmatter; added a Related-Pages line flagging ModeratorLM as the generative cousin to the diagnostic. Bumped `updated` to 2026-06-14.
+- **`wiki/index.md`** — Added 2026-06-14 ingest entry to top-of-file change log; added Turn-Taking Prediction and Patient Advocacy rows to Concepts table; added HLAA row to Entities table.
+
+### Editorial notes
+- The interactional axis of the SE evaluation stack now has both a **diagnostic** (speaker-switch / DDM, arXiv:2606.02185, 1 Jun 2026) and a **generative** (ModeratorLM, arXiv:2606.13544, 11 Jun 2026) operationalization in the same fortnight. Same construct (interactional layer), different operation (evaluate vs act).
+- The patient-voice rung surfacing AI as the headline plenary (HLAA Fri 12 Jun) in the same fortnight as the engineering rung (arXiv flow) and clinical rung (HEAL 2026 Padua, 4-6 Jun) is the first time all three rungs of the discourse ladder have produced an AI-in-hearing-health headline in the same week. Pattern worth tracking for cross-rung translation lag (how long does engineering→patient typically take, and is it compressing).
+- Role-conditioning is the architecturally portable piece of ModeratorLM for hearing AI — the same mechanism that lets a voice agent be a moderator vs an expert lets a hearing aid be tuned for "wearer is host" vs "wearer is invited guest" vs "wearer is the quiet listener." Natural locus for personalization at the interactional layer.
+
+**Pages touched this ingest: 7** (2 new sources, 3 new wiki pages, 1 wiki-page update, 1 index update, +1 log entry).
+
+## Ingest — 2026-06-14 (Daily digest: Tetteh-et-al UAIS SE review + Consumer Reports OTC head-to-head)
+
+**Source of operation:** Daily hearing+AI email digest, sources surfaced via web research; email sent to door.punch_4o@icloud.com.
+
+### New source files
+- **`sources/uais-tetteh-se-techniques-hearing-aids-review-2026.md`** — NEW. Tetteh, Mensah Gyening, Arthur, *Universal Access in the Information Society*, DOI 10.1007/s10209-026-01342-7, Apr 2026. Systematic review of AI-driven SE for hearing aids 2017–2025 across classical DSP / deep learning / hybrid AI+adaptive filtering taxonomy. Confirms field-wide that DL beats classical SE in complex acoustic scenarios, hybrids occupy the embedded-deployment middle ground. Linked from `wiki/concepts/speech-enhancement-neural-networks.md`.
+- **`sources/consumer-reports-otc-hearing-aid-review-jun-2026.md`** — NEW. Consumer Reports first head-to-head test of 14 OTC hearing aids, updated 12 Jun 2026. Covers Apple, Eargo, Lexie, Sennheiser + MDHearing / Audien / Yeasound / Soundbright / Elehear / Concha Labs. Lab measurement + HI-user panel; ease-of-use / performance / sound-quality axes; trial-period UX flagged as the binding bottleneck. Linked from `wiki/concepts/otc-hearing-aids.md`.
+
+### Wiki page updates
+- **`wiki/concepts/speech-enhancement-neural-networks.md`** — Added Tetteh review to `sources` frontmatter; bumped `updated` to 2026-06-14; bumped `last_change` to note the literature-level confirmation framing against single-study work (FPGA SuDoRM-RF++, DAL).
+- **`wiki/concepts/otc-hearing-aids.md`** — Added Consumer Reports review to `sources` frontmatter; bumped `updated` to 2026-06-14; added bottom-Sources entry framing it as the consumer-electronics-isation marker (Apple as default comparator) and trial-period-as-binding-bottleneck data point.
+- **`wiki/index.md`** — Added 2026-06-14 daily-digest entry to top-of-file change log (demoted the earlier-today ad-hoc ModeratorLM/HLAA entry to "_Earlier_").
+
+### Editorial notes
+- Mostly a re-reference day: 8 of the 11 digest items mapped to already-ingested sources (DAL, FPGA SuDoRM-RF++, DFingerNet, Veterans Act, Widex Allure AI, Demant Q1/Zeal, Starkey Auracast, Auracast UK theatres). The two net-new ingests are both review-class / consumer-test-class items rather than primary research — consistent with the pattern noted in the 11-13 Jun log entries that the SE-evaluation and consumer-channel stacks are where the action is this quarter, not new architectures.
+- The Tetteh review covers 2017–2025, so it pre-dates the 2026 generative-SE wave (AIDA-2, GMAPSE, SBRF, DriftSE, DFingerNet at its IEEE conference version) and the L3-SE / linguistic-hallucination naming work. Useful as a literature-level anchor for the "DL > classical" claim but explicitly not yet covering the generative-vs-discriminative tradeoff the Fraunhofer 13 Jun ingest quantified.
+- The CR test methodology — combining lab measurement with HI-user panels across three axes — is closer to a mini-Clarity-Prediction-Challenge framing than to a typical consumer-electronics review. Worth tracking whether the CR test set becomes a de facto reference cohort for OEM marketing claims in 2026–2027, since the prior CR OTC coverage was paragraph-scale not test-driven.
+- Apple's promotion to default OTC comparator in CR is the cleanest single signal of OTC consumer-electronics-isation we've logged.
+- The Veterans Hearing Aid Improvement Act was attributed in the digest email to "5 Jun 2026" based on a news re-report, but the underlying Mullin press release dates the House introduction to **1 Jun 2026** — see `sources/veterans-hearing-aid-improvement-act-house-jun-2026.md`. The wiki sticks with the press-release date.
+
+**Pages touched this ingest: 5** (2 new sources, 2 concept-page updates, 1 index update, +1 log entry).
+
+---
+
+## Lint — 2026-06-14
+
+**Pages scanned:** 111 (69 concepts, 26 entities, 4 comparisons, 12 syntheses)
+**Sources inventoried:** 297
+**Issues found:** 18
+**Auto-fixed:** 14
+**Needs human judgment:** 4 (carried from prior lints)
+
+### Index vs filesystem
+- ✅ All 111 index entries resolve to real files.
+- ✅ All 111 wiki files are listed in index.md.
+
+### Broken `related:` links — FIXED
+
+**`syntheses/on-chip-hearing-ai-levers-june-2026.md`** — all 5 `related:` entries were bare filenames resolving to the wrong directory (syntheses/ instead of concepts/). Fixed: added `../concepts/` prefix to all 5 entries. Also added `../concepts/tinyml-edge-ai.md` as a 6th related entry (the SNN+ANN paper sourced there directly). Updated date to 2026-06-14.
+
+**`concepts/efferent-moc-feedback-hearing-ai.md`** — `binaural-beamforming.md` in `related:` does not exist anywhere in the wiki. Fixed: removed broken link; replaced with `speech-enhancement-neural-networks.md` (the BiEAR paper targets SE/localization). Updated date to 2026-06-14. Note: if a `binaural-beamforming.md` page is created in future, add the cross-reference back.
+
+### Orphan pages — FIXED
+
+**`syntheses/on-chip-hearing-ai-levers-june-2026.md`** — had zero incoming links (plus the 5 broken outgoing links above). Fixed: added `../syntheses/on-chip-hearing-ai-levers-june-2026.md` to `related:` in:
+- `concepts/hearing-aid-chip-architectures.md` (updated 2026-06-14)
+- `concepts/on-device-ml-hearing-aids.md` (updated 2026-06-14)
+- `concepts/tinyml-edge-ai.md` (updated 2026-06-14)
+
+### Missing cross-references — FIXED
+
+**`concepts/turn-taking-prediction-hearing-ai.md`** was not linked from `care-partner-dyad-models.md` or `communication-accessibility-metric.md` despite body-text references. Fixed: added `turn-taking-prediction-hearing-ai.md` to `related:` in both pages. Updated both dates to 2026-06-14.
+
+**New pages `entities/hlaa.md` and `concepts/patient-advocacy-hearing-health.md`** (created 2026-06-14, only linked to each other). Fixed: added both to `related:` in `concepts/auracast-bluetooth-le-audio.md` (HLAA is a named source in that page's `sources:` list). Also added `patient-advocacy-hearing-health.md` to `related:` in `concepts/communication-accessibility-metric.md`. Updated both pages' dates to 2026-06-14.
+
+Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-device-ml-hearing-aids.md` (body text discusses continual adaptation but did not link to the concept page).
+
+### Stale sources
+- **`entities/amplifon.md`** — single source dated 2026-01-01 (165+ days old). Page describes the GN Hearing acquisition as ongoing strategic transformation; situation has evolved. Flagged for next entity refresh cycle.
+- 15 additional pages last updated between 2026-04-15 and 2026-04-26 on fast-moving topics (AI architectures, chip hardware, market data, regulation). Not structurally broken; flagged as candidates for the next ingest wave.
+
+### Oversized pages
+- `concepts/speech-enhancement-neural-networks.md` — 359 lines (was 313 at 2026-06-07 lint). Growing ~15 lines/week from SE paper ingestions. Trajectory to 500 lines within ~10 weeks. No split needed yet; flag again at next lint.
+- `concepts/otc-hearing-aids.md` (280 lines), `concepts/dnn-in-hearing-aids.md` (254 lines) — within acceptable range.
+
+### Potential duplicates
+- No new duplicate candidates found. `dnn-in-hearing-aids.md` vs `dnn-architectures-hearing-aids.md` confirmed distinct (noted in prior lints).
+
+### Needs human judgment (persistent)
+1. **Missing source `autoresearch-karpathy-april-2026.md`** — cited in `syntheses/pretraining-corpus-as-moat-hearing-ai.md`. Unresolved since 2026-06-07 lint. Either ingest under the correct name or update the frontmatter reference.
+2. **`entities/who-hearing-program.md`** — `sources: []` empty. Only wiki page with no source grounding. Add at least one source file.
+3. **`syntheses/hearing-ai-research-landscape-2025.md`** — title says "2025" but content draws on 2026 sources. Rename to `hearing-ai-research-landscape-2026.md` or update title in frontmatter. Noted since 2026-05-31 lint.
+4. **`entities/amplifon.md`** stale — see Stale Sources above.
+
+### Summary of files modified this lint
+1. `syntheses/on-chip-hearing-ai-levers-june-2026.md` — fixed 5 broken related: paths + added tinyml cross-link
+2. `concepts/efferent-moc-feedback-hearing-ai.md` — removed broken binaural-beamforming.md link; added speech-enhancement-neural-networks.md
+3. `concepts/care-partner-dyad-models.md` — added turn-taking-prediction-hearing-ai.md
+4. `concepts/communication-accessibility-metric.md` — added turn-taking-prediction-hearing-ai.md + patient-advocacy-hearing-health.md
+5. `concepts/hearing-aid-chip-architectures.md` — added on-chip-hearing-ai-levers-june-2026.md
+6. `concepts/on-device-ml-hearing-aids.md` — added on-chip-hearing-ai-levers-june-2026.md + continual-learning-hearing-ai.md
+7. `concepts/tinyml-edge-ai.md` — added on-chip-hearing-ai-levers-june-2026.md
+8. `concepts/auracast-bluetooth-le-audio.md` — added hlaa.md + patient-advocacy-hearing-health.md
+
+**Pages touched this lint: 9** (8 wiki pages updated + this log entry).
+
+---

@@ -2,9 +2,9 @@
 title: Efferent / MOC Feedback in Hearing AI
 type: concept
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-14
 sources: [biear-meng-2026-arxiv.md, dal-differentiable-auditory-loop-google-june-2026.md]
-related: [differentiable-cochlear-models.md, binaural-beamforming.md, auditory-attention-decoding.md, on-device-ml-hearing-aids.md, brain-aligned-speech-foundation-models.md]
+related: [differentiable-cochlear-models.md, auditory-attention-decoding.md, on-device-ml-hearing-aids.md, brain-aligned-speech-foundation-models.md, speech-enhancement-neural-networks.md]
 tags: [efferent-feedback, medial-olivocochlear, moc-reflex, adaptive-filterbank, binaural, cochlear-models, scene-conditioned-gain, auditory-efference, biologically-inspired-ml, interspeech-2026]
 ---
 

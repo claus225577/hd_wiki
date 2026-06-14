@@ -2,18 +2,19 @@
 title: The On-Chip Hearing-AI Levers — June 2026 Convergence
 type: synthesis
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-14
 sources:
   - fpga-sudormrf-feasibility-radboud-june-2026.md
   - arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md
   - arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md
   - arxiv-2606-12328-halo-half-frame-rate-se-jun-2026.md
 related:
-  - on-device-ml-hearing-aids.md
-  - hearing-aid-chip-architectures.md
-  - speech-enhancement-neural-networks.md
-  - model-compression.md
-  - dnn-architectures-hearing-aids.md
+  - ../concepts/on-device-ml-hearing-aids.md
+  - ../concepts/hearing-aid-chip-architectures.md
+  - ../concepts/speech-enhancement-neural-networks.md
+  - ../concepts/model-compression.md
+  - ../concepts/dnn-architectures-hearing-aids.md
+  - ../concepts/tinyml-edge-ai.md
 tags: [on-device-ml, edge-ai, model-compression, speech-enhancement, spiking-neural-networks, generative-se, frame-rate, fpga, june-2026]
 ---
 

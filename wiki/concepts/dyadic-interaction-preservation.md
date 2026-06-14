@@ -2,11 +2,12 @@
 title: Dyadic Interaction Preservation — Speaker-Switch Diagnostics for Conversation-Level Evaluation
 type: concept
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-14
 sources:
   - breaking-the-pair-speaker-switching-arxiv-june-2026.md
   - wca-2026-pichora-fuller-aram-glorig-may-26-2026.md
 related:
+  - turn-taking-prediction-hearing-ai.md
   - communication-accessibility-metric.md
   - listening-effort-evaluation.md
   - non-intrusive-intelligibility-prediction.md
@@ -90,6 +91,7 @@ This is functionally an interaction-preservation regression test. A new axis in 
 - Does the diagnostic transfer to dyads where one speaker is hearing-impaired and using a hearing aid (asymmetric entrainment)?
 
 ## Related Pages
+- [[turn-taking-prediction-hearing-ai]] — generative counterpart at the same interactional layer; ModeratorLM (arXiv:2606.13544, June 2026) operationalizes role-conditioned turn-taking prediction, where dyadic-interaction-preservation operationalizes the diagnostic.
 - [[communication-accessibility-metric]] — the construct named at WCA 2026 Seoul by Pichora-Fuller; speaker-switch is one operationalization candidate.
 - [[non-intrusive-intelligibility-prediction]] — what the field has been building at the lexical layer; this is the analog at the interactional layer.
 - [[listening-effort-evaluation]] — adjacent but distinct; effort is about cost paid, interaction preservation is about whether the conversation as a system survives processing.
