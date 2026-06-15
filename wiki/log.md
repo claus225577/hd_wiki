@@ -2989,3 +2989,62 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 **Pages touched this lint: 9** (8 wiki pages updated + this log entry).
 
 ---
+
+---
+
+## Ingest — 2026-06-15 (LinkedIn drafts: HIDVAS dataset + MeCo one-step corrector)
+
+**Source of operation:** Daily LinkedIn-post drafting; two arxiv-week items selected after checking 538-line post history for non-repeat angles. Posts written and shipped to Discord channel 1492462147127742565 and emailed to door.punch_4o@icloud.com. This log entry covers the wiki-ingestion leg.
+
+### New source files
+- **`sources/arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md`** — NEW. Roebben, Bernardi, Wouters, van Waterschoot, Moonen (KU Leuven); HIDVAS — Hearing Instrument Dataset in Various Acoustical Scenarios; arXiv:2606.14175; accepted EURASIP Journal on Audio, Speech, and Music Processing (June 12, 2026); CC-BY-4.0. Dummy-head + BTE/RIC shell + eardrum-level mic recordings; 8 external loudspeakers + 2 reference room mics; speech / SSN / singing / strings / wind / percussion stimuli; T30 = 0.09 / 0.47 / 0.73 / 1.48 s; **open / semi-open / closed / no-RIC dome configurations as a structured published variable** (the headline novelty for ML pipelines that have inherited single-dome distribution mismatch). Both IRs and audio published.
+- **`sources/arxiv-2606-09677-meco-meanflow-corrector-jun-2026.md`** — NEW. Kim & Choi (KAIST); MeCo — discriminative estimator followed by a one-step **MeanFlow**-based generative corrector for multi-channel speech separation; Interspeech 2026; arXiv:2606.09677; **DSO (Data-Space Optimization)** loss combining x_r-loss (perceptual displacement) with endpoint SI-SDR (signal fidelity). Reported SOTA in-domain and out-of-domain with minimal compute overhead.
+
+### New wiki pages
+- **`wiki/concepts/hidvas-dataset.md`** — NEW. Standalone concept page for HIDVAS as a public-substrate benchmark; covers composition, why-it-matters (real-vs-simulated, dome configuration as first-class variable, IR+audio substrate framing, KU Leuven public-substrate program continuity with SparrKULee / AV-GC-AAD), limitations (no listener-perception labels, no pediatric, no bilateral fitting feedback). Cross-linked to training-deployment-distribution-gap, room-aware-dereverberation, synthetic-data-for-hearing-ai, speech-enhancement-neural-networks, dnn-architectures-hearing-aids, close-to-distant-microphone-projection.
+- **`wiki/concepts/one-step-generative-correction.md`** — NEW. Concept page naming the **discriminative-front + one-step-generative-corrector** pattern as a mid-2026 architectural unit ties together: (1) SB-RF Schrödinger-Bridge-Rectified-Flow (Lu, Lv, Hu, Xu, arXiv:2606.05575, Jun 4 2026), (2) MeCo MeanFlow corrector (Kim & Choi, arXiv:2606.09677, Jun 8-9 2026), (3) Saha Shetu / Habets / Brendel hallucination receipts (arXiv:2606.02913, Jun 1 2026) as the constraint that motivates the pattern. Covers latency-floor crossing, hallucination mitigation as architectural choice, DSO hybrid losses, multi-channel hearing-aid mic-array relevance, and open pieces (HASPI/STOI/CPC3 ports, chip-budget claims, hallucination quantification on the one-step corrector class itself).
+
+### Wiki page updates
+- **`wiki/concepts/training-deployment-distribution-gap.md`** — Added HIDVAS as the **evaluation-substrate** instance of the closure tactic (alongside DFC-IL on the dynamics side and C2D on the paired-data side). Added closure-tactic #7 to the body text, added arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md to `sources:` frontmatter, added hidvas-dataset.md to `related:`, bumped `updated:` to 2026-06-15. New tag: real-paired-data, simulation-to-reality-gap.
+- **`wiki/concepts/speech-enhancement-neural-networks.md`** — Added arxiv-2606-09677-meco-meanflow-corrector-jun-2026.md and arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md to `sources:` frontmatter; bumped `updated:` to 2026-06-15 with last_change note covering both ingests.
+- **`wiki/concepts/linguistic-hallucination-speech-enhancement.md`** — Added Kim & Choi MeCo as the constructive architectural answer to Saha Shetu's hallucination quantification (one week apart, structurally complementary). Added new section "The Constructive Architectural Answer (Kim & Choi, MeCo, Jun 2026)" reframing hallucination as a pipeline-position question rather than a paradigm choice. Added MeCo source to frontmatter + bottom Sources list; added one-step-generative-correction.md to `related:`; bumped `updated:` to 2026-06-15; updated last_change note.
+- **`wiki/index.md`** — Added two new concept entries (hidvas-dataset and one-step-generative-correction); added 2026-06-15 daily-ingest entry to top-of-file change log.
+
+### Editorial notes
+- Two-axis ingest: **data substrate (HIDVAS) + architecture (MeCo)**. Mirrors the explicit 2026 split the wiki has been tracking — the moat is shifting from architecture to substrate, but the architectural axis is still moving in parallel (SB-RF Jun 4 → MeCo Jun 8-9 means the field went from "first one-step generative SE works" to "one-step generative as a corrector after a discriminative front" in 4 days).
+- MeCo's framing closes a loop that has been open in the wiki since the May 14 L3-SE ingest: the discriminative-vs-generative debate is mis-framed; the right primitive is "where does the corrector live and what does its velocity field point at." Surfaced this explicitly in both `linguistic-hallucination-speech-enhancement.md` and the new `one-step-generative-correction.md` concept page.
+- HIDVAS's dome-configuration axis is the first published-dataset surface for vent acoustics in a public-substrate context. Almost every ML pipeline silently assumes a single dome configuration. Worth tracking whether downstream SE / dereverb / beamforming benchmarks adopt HIDVAS as a structured factor or continue training on dome-agnostic mixtures.
+- The DSO loss (x_r-loss + endpoint SI-SDR) is the most concrete example of the hybrid-loss direction the [[listening-effort-evaluation]] page has been pointing toward. Likely template for the next round of HASPI-adjacent training objectives.
+- Open hallucination question carried forward: is the one-step corrector class measurably less hallucination-prone than its multi-step ancestors? Saha Shetu's harness should be run against MeCo to close this loop. Logged in the open-pieces section of `one-step-generative-correction.md` and the body of `linguistic-hallucination-speech-enhancement.md`.
+
+**Pages touched this ingest: 7** (2 new sources, 2 new wiki pages, 3 wiki-page updates, 1 index update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-15 (Daily hearing+AI digest)
+
+**Source of operation:** Daily hearing+AI digest email compiled and sent to door.punch_4o@icloud.com (subject: 🎧 Hearing + AI Daily Digest — 15 Jun 2026). 7 items covered across Research Papers / Industry News / AI-ML Developments / Worth Watching / Quick Stats. This log entry covers the wiki-ingestion leg.
+
+### New source files
+- **`sources/arxiv-2606-14120-faconformer-aad-jun-2026.md`** — NEW. Wang, He, Jia, Wang, Wu (Huazhong Univ. of Sci. & Tech.); FAConformer — Frequency-Aware Convolutional Transformer for Auditory Attention Decoding; arXiv:2606.14120, 12 Jun 2026. Per-band EEG encoding + cross-band attention module on top of a Conformer trunk. ~5% accuracy gain over prior AAD baselines on standard public datasets.
+- **`sources/arxiv-2606-13095-llm-asr-diarization-jun-2026.md`** — NEW. Zheng, Lin, Tian, Li, Lin, Xiao, Tu (Huawei); Balancing ASR and Diarization in End-to-End LLMs for Multi-Talker Speech Recognition; arXiv:2606.13095, 11 Jun 2026. Separate semantic + speaker encoders, interleaved tokens, speaker-attribution loss, adaptive overlap threshold. 18% rel. WER drop on AliMeeting / 24% on AISHELL-4 vs strongest open-source multi-talker baselines.
+- **`sources/arxiv-2606-13450-endpoint-anticipation-jun-2026.md`** — NEW. Udupa et al.; Endpoint Anticipation for Low-Latency Spoken Dialogue; arXiv:2606.13450, 11 Jun 2026. Predicts speech endpoints from acoustic + lexical cues before the silence threshold elapses, shaving turn-taking latency.
+
+### Wiki page updates
+- **`wiki/concepts/auditory-attention-decoding.md`** — Added arxiv-2606-14120-faconformer-aad-jun-2026.md to `sources:` frontmatter; new "FAConformer — Frequency-Aware Conformer for AAD (June 2026)" section at the top of Recent Academic Advances; `updated:` bumped to 2026-06-15.
+- **`wiki/index.md`** — New 2026-06-15 daily-digest entry at top, prior 2026-06-14 entry preserved as "Previously updated".
+
+### Items mapped to already-ingested sources (no new files needed)
+- Veterans Hearing Aid Improvement Act → `veterans-hearing-aid-improvement-act-house-jun-2026.md`
+- HLAA 2026 Louisville convention → `hlaa-2026-convention-louisville-june-2026.md`
+- Widex Allure AI RIC rollout → `widex-allure-ai-launch-june-2026.md`
+- Consumer Reports 2026 OTC refresh → `consumer-reports-otc-hearing-aid-review-jun-2026.md`
+- AccLock earbud BCG biometric auth → `acclock-earbud-bcg-biometric-may-2026.md`
+
+### Editorial notes
+- Sunday digest — light news cycle post-HLAA. Three arXiv items dominate; industry news is mostly tail-of-the-week resolution.
+- FAConformer lands in the AAD lineage that has been steadily compounding since the May 2026 Mesgarani-lab Nature Neuroscience closed-loop ECoG result reframed AAD's loss function from signal-side to attention-side. Band-wise decomposition is the inductive-bias axis — it does not need more electrodes or more compute, just smarter use of the spectrum the device already has.
+- The Huawei multi-talker-ASR work is the substrate for the "who said what" UX that Apple's WWDC 2026 generated-subtitles announcement hinted at. Phone-side LLM + speaker-conditioning is the natural deployment substrate; on-aid is not feasible at these model sizes.
+- Endpoint anticipation joins the low-latency-floor family (SB-RF, HALO, FPGA SuDoRM-RF++, DriftSE) — the field is converging on "every 10-50 ms matters" as the operating constraint.
+
+**Pages touched this ingest: 5** (3 new sources, 1 wiki concept update, 1 index update, +1 log entry).

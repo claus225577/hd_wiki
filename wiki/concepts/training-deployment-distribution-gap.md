@@ -2,10 +2,11 @@
 title: Training–Deployment Distribution Gap in Hearing-Aid ML
 type: concept
 created: 2026-06-03
-updated: 2026-06-13
+updated: 2026-06-15
 sources:
   - arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md
   - arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md
+  - arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md
 related:
   - acoustic-feedback-cancellation.md
   - on-device-ml-hearing-aids.md
@@ -49,6 +50,7 @@ Drawing from DFC-IL and adjacent literature:
 4. **Curriculum from stable to unstable** — train on quasi-stationary first, anneal toward the unstable operating regime.
 5. **Predetermined change control plans** — regulatory frameworks (FDA SaMD, EU AI Act) that allow telemetry-driven update of the model post-clearance.
 6. **Real paired training data via C2D microphone projection** (Nakatani et al., ICASSP 2026, arXiv:2606.13109) — closes the **data-side** instance of the gap by replacing simulated noisy-clean pairs with real ones derived from dual-microphone field recordings + PMWF projection. The DFC-IL approach closes the gap on the **dynamics** side (closed-loop feedback); C2D closes it on the **data** side (clean reference). They are complementary and stackable. See [[close-to-distant-microphone-projection]].
+7. **Public real-recording benchmarks like HIDVAS** (Roebben et al., KU Leuven, arXiv:2606.14175, June 12, 2026) — close the **evaluation-substrate** instance of the gap by publishing real dummy-head + eardrum-level recordings across structured acoustic and dome-configuration factors that simulators silently fail to capture. Where DFC-IL closes the dynamics side and C2D closes the paired-data side, HIDVAS closes the shared-benchmark side: it gives the community a common real-acoustic yardstick rather than letting each team ship a simulator-bound private benchmark. See [[hidvas-dataset]].
 
 ## Why It Matters Strategically
 The architectural lever ("bigger model, more data, foundation-model fine-tune") is approaching diminishing returns. The training-loop lever (close the gap between train and deploy) is **earlier on its curve**. Teams that integrate closed-loop dynamics into their training pipeline are likely to capture a non-obvious quality margin without needing to ship a bigger model.
@@ -65,3 +67,4 @@ The architectural lever ("bigger model, more data, foundation-model fine-tune") 
 ## Sources
 - [Voit & Doclo — In-the-Loop Training of Deep Feedback Cancellation for Hearing Aids (arXiv:2606.03832)](../../sources/arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md) — origin of the DFC-IL framing, primary empirical evidence for the gain-regime stability gap
 - [Nakatani et al. — C2D Microphone Projection (arXiv:2606.13109, ICASSP 2026)](../../sources/arxiv-2606-13109-c2d-microphone-projection-nakatani-jun-2026.md) — closes the data-side instance of the gap with real paired SE training data via dual-mic + PMWF projection
+- [Roebben et al. — HIDVAS Hearing Instrument Dataset (arXiv:2606.14175, EURASIP JASMP)](../../sources/arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md) — closes the public-benchmark instance of the gap with real dummy-head + eardrum-level recordings across 4 dome configurations and 4 reverberation conditions

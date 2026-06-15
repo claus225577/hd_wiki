@@ -2,8 +2,8 @@
 title: Auditory Attention Decoding (AAD)
 type: concept
 created: 2026-04-15
-updated: 2026-06-02
-sources: [brain-controlled-hearing-nature-neuroscience-may-2026.md, eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md, target-speaker-extraction-ultra-low-latency-2026.md, musa-benchmark-koo-arxiv-2026.md, mindvoice-non-invasive-neural-speech-arxiv-may-2026.md]
+updated: 2026-06-15
+sources: [brain-controlled-hearing-nature-neuroscience-may-2026.md, eeg-neurosteering-hearing-aid-2025.md, tsf-aadnet-short-window-aad-2025.md, wireless-eeg-aad-two-node-2026.md, in-ear-eeg-aad-comparison-2025.md, deep-aad-hearing-impaired-2024.md, noise-reduction-selective-attention-eneuro-2025.md, target-speaker-extraction-ultra-low-latency-2026.md, musa-benchmark-koo-arxiv-2026.md, mindvoice-non-invasive-neural-speech-arxiv-may-2026.md, arxiv-2606-14120-faconformer-aad-jun-2026.md]
 related: [on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, dnn-architectures-hearing-aids.md, ../entities/vcca-computational-audiology.md, audio-reasoning-chain-of-thought.md, lalm-selective-auditory-attention.md, non-invasive-brain-to-speech.md, brain-aligned-speech-foundation-models.md]
 tags: [aad, eeg, bci, neurosteering, attention, beamforming, in-ear-eeg, ecog, closed-loop, cocktail-party, hearing-aids, lalm, multilingual, brain-to-speech, brain-alignment]
 ---
@@ -93,6 +93,9 @@ The pathway from research to product is gated by electrode miniaturization, ampl
 | Power impact | Minimal | Significant (+EEG recording) |
 
 ## Recent Academic Advances (2024–2026)
+
+### FAConformer — Frequency-Aware Conformer for AAD (June 2026)
+Wang et al. (Huazhong Univ. of Sci. & Tech.), arXiv:2606.14120, 12 June 2026. Conformer-style architecture with two changes: EEG is decomposed into discrete frequency bands and encoded per-band; a cross-band attention layer learns inter-band dependencies. Reports ~5% accuracy gain over prior AAD baselines on standard public datasets. Why it matters: short-window AAD accuracy is the latency-vs-correctness frontier for real-time neurosteering. Band-wise decomposition is a smarter use of existing EEG signal — it does not require more electrodes or more compute.
 
 ### First Real-Time Closed-Loop Human Demonstration with ECoG (May 2026)
 Choudhari, Mesgarani et al. (Columbia Zuckerman Institute), *Nature Neuroscience*, 11 May 2026 — DOI 10.1038/s41593-026-02281-5. The first peer-reviewed human demonstration that closing the AAD loop in real time produces a *perceptual* benefit, not just offline classification accuracy. Used high-resolution intracranial ECoG in epilepsy patients undergoing neurosurgery; system improved speech intelligibility, reduced listening effort, and was consistently preferred by subjects across guided and self-initiated attention shifts. Critically reframes hearing-aid AI's loss function from signal-side enhancement to attention-side enhancement. ECoG itself won't ship — the translational gap is whether ear-EEG / cEEGrids / non-neural surrogates can recover enough of the attention signal at hearing-aid power budgets. Senior author Mesgarani is the same group behind much of the foundational AAD work since 2012.
