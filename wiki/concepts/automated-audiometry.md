@@ -2,8 +2,8 @@
 title: Automated & Computational Audiometry
 type: concept
 created: 2026-04-15
-updated: 2026-05-10
-sources: [ml-pure-tone-audiometry-automated-masking-2025.md, deep-learning-audiogram-classification-2024.md, hearing-loss-type-classification-ml-2024.md, ml-menieres-disease-audiometry-2025.md, kde-vae-audiometric-data-synthesis-2025.md, audiologist-shortage-asha-sciencedirect-2025.md, llm-pure-tone-audiogram-chatgpt5-gemini25-2026.md, bisgaard-audiogram-loudness-scaling-ml-2026.md]
+updated: 2026-06-16
+sources: [ml-pure-tone-audiometry-automated-masking-2025.md, deep-learning-audiogram-classification-2024.md, hearing-loss-type-classification-ml-2024.md, ml-menieres-disease-audiometry-2025.md, kde-vae-audiometric-data-synthesis-2025.md, audiologist-shortage-asha-sciencedirect-2025.md, llm-pure-tone-audiogram-chatgpt5-gemini25-2026.md, bisgaard-audiogram-loudness-scaling-ml-2026.md, jamia-open-ci-eligibility-audiogram-2026.md]
 related: [teleaudiology.md, ../entities/vcca-computational-audiology.md, on-device-ml-hearing-aids.md, audiologist-workforce-shortage.md, model-context-protocol.md, otc-hearing-aids.md]
 tags: [audiometry, machine-learning, automated-testing, pure-tone, classification, clinical-decision-support, workforce-shortage]
 ---
@@ -16,6 +16,7 @@ The application of machine learning and AI to automate, improve, and extend pure
 
 - **Multimodal LLMs as audiogram readers (2026):** ChatGPT-5.0 Plus outperformed Gemini 2.5 on diagnostic interpretation of pure-tone audiograms (Springer / Eur Arch Oto-Rhino-Laryngol). Conclusion: useful as a primary-care / telehealth triage adjunct, not standalone diagnosis. See [LLM PTA paper](../sources/llm-pure-tone-audiogram-chatgpt5-gemini25-2026.md).
 - **Loudness-scaling → Bisgaard audiograms (April 2026):** Int J Audiology paper demonstrates that ACALOS adaptive categorical loudness scaling data can classify listeners into standard Bisgaard audiogram archetypes via supervised ML (Logistic Regression best). Opens a calibration-independent self-fitting path well-suited to OTC. See [Bisgaard ML paper](../sources/bisgaard-audiogram-loudness-scaling-ml-2026.md).
+- **Audiogram → CI eligibility (JAMIA Open, 2026):** ML pipeline flags CI-eligible adults from routine audiograms; outperforms common referral rules (e.g., "60/60"). Treats the existing audiogram pile as a clinical-decision-support substrate for closing the well-documented CI under-referral gap. See [JAMIA Open CI eligibility paper](../sources/jamia-open-ci-eligibility-audiogram-2026.md) and [[cochlear-implant-ai]].
 
 ## Current State of the Art
 

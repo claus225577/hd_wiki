@@ -23,12 +23,13 @@ tags: [auditory-attention-decoding, aad, eeg, transformer, conformer, frequency-
 Auditory Attention Decoding (AAD) — telling which speaker a listener is attending to from EEG — needs short-window, high-accuracy decoding to be viable as a hearing-aid front-end. Existing models treat the EEG spectrum monolithically, which mixes physiologically distinct frequency bands (delta, theta, alpha, beta, gamma) that carry different aspects of selective attention.
 
 ## Contribution
-A Conformer-style architecture with two design changes:
-1. **Band-specific encoding.** EEG is decomposed into discrete frequency bands; each band is encoded independently to preserve band-local temporal structure.
-2. **Frequency-aware attention module.** A cross-band attention layer learns dependencies between bands rather than collapsing them at the input.
+A Conformer-style architecture with three design changes:
+1. **Band-specific encoding.** EEG is decomposed into multiple frequency bands; each band is encoded by an **independent CNN-Transformer encoder** to preserve band-local temporal structure.
+2. **Frequency-Aware Attention (FAA) module.** A cross-band attention layer treats band-wise features as **tokens** and learns inter-band dependencies rather than collapsing the spectrum at the input.
+3. **Band-wise Auxiliary Supervision (BAS).** Auxiliary losses applied per-branch prevent weakly contributing branches from being under-optimized during joint training — a deliberate antidote to the dominant-band collapse that pure end-to-end multi-branch training tends to produce.
 
 ## Key Result
-~5% accuracy improvement over prior AAD baselines on standard public datasets.
+**+4.9% accuracy** over the strongest of **12 baselines**, evaluated on **two public AAD datasets** across **three decision-window lengths**. The framing in the abstract explicitly names AAD as a "key problem for neuro-steered hearing systems."
 
 ## Why It Matters for Hearing Aids
 - AAD is the canonical brain-steered hearing-aid front-end. The Mesgarani-lab Nature Neuroscience demo from May 2026 showed perceptual benefit *in vivo* with ECoG; the open question is whether non-invasive EEG (cEEGrids, ear-EEG) can carry enough signal at hearing-aid power budgets.

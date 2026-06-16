@@ -2,8 +2,8 @@
 title: Starkey
 type: entity
 created: 2026-04-15
-updated: 2026-05-11
-sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, starkey-omega-ai-aaa-2026-showcase.md, hearingtracker-2026-premium-rankings.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md, starkey-omega-ai-government-services-may-2026.md]
+updated: 2026-06-16
+sources: [starkey-omega-ai-launch-2025.md, starkey-cto-bhowmik-aimbe-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, starkey-omega-ai-aaa-2026-showcase.md, hearingtracker-2026-premium-rankings.md, samsung-galaxy-buds-health-monitoring-ppg-2026.md, starkey-omega-ai-government-services-may-2026.md, starkey-omega-ai-update-may-2026.md]
 related: [sonova-ag.md, demant-oticon.md, ../concepts/on-device-ml-hearing-aids.md, apple-hearing-features.md, ../concepts/auracast-bluetooth-le-audio.md, aaa-conference.md]
 tags: [company, manufacturer, usa, health-monitoring, fall-detection, genesis-ai, npu, dnn, achin-bhowmik, aimbe, omega-ai, awards, auracast, respiratory-rate, aaa-2026]
 ---
@@ -90,6 +90,14 @@ Widely rolled out feature update for Omega AI platform:
   - Combined with heart rate, fall detection, and activity tracking, enables comprehensive health profiling from the ear
   - Strengthens Starkey's "health tech company" positioning with four distinct biometric signals
 
+## Omega AI Connectivity & Convenience Update (May 2026)
+Starkey's May 2026 blog post consolidates the spring-2026 firmware wave for the Omega AI platform. Net-new artifacts beyond the Jan/AAA/Govt rollouts:
+- **StarLink Edge LE Adapter** — first OEM-branded LE Audio bridge dongle from a top-5 manufacturer; converts non-LE source devices (legacy phones, TVs, conference rooms) into Auracast-receivable streams for Omega AI aids. Vendor-locked counterpart to cross-OEM streamers like Trihear ClearTV.
+- **DNN 360 performance claims:** **+28% speech understanding**, **+8 dB SNR** — Starkey's marketing line against Phonak Sphere DEEPSONIC and Oticon Intent claims. Not yet peer-reviewed.
+- **2026 BIG Innovation Award** (Business Intelligence Group) — distinct from the BIG AI Excellence Awards earlier in 2026.
+- **Edge AI + Vision Alliance award** — first hearing-aid recognition from the cross-industry edge-AI consortium that typically recognizes Qualcomm / Intel / Nvidia silicon. Cross-industry signal that hearing-aid AI is being read as legitimate edge-AI by the broader silicon community. Reinforces Bhowmik's Intel-perceptual-computing pedigree as a strategic angle, not a biographical footnote.
+- See [[../sources/starkey-omega-ai-update-may-2026]].
+
 ## Government Services Portfolio Expansion (May 1, 2026)
 Omega AI's full feature set is now available to U.S. **Government Services** audiologists — VA, DoD, and IHS — as of May 1, 2026:
 - **Auracast Assistant**, **Push-to-Talk**, **Google Fast Pair** — feature parity with the Jan 2026 commercial rollout
@@ -133,3 +141,4 @@ As of 2026, Starkey is the only hearing aid manufacturer with FDA-cleared fall d
 - [Starkey Omega AI at AAA 2026](../sources/starkey-omega-ai-aaa-2026-showcase.md) — Full platform showcase: Auracast, AI processing, health integration
 - [HearingTracker 2026 Premium Rankings](../sources/hearingtracker-2026-premium-rankings.md) — Starkey Genesis AI ranked #2
 - [Samsung Galaxy Buds Health Monitoring](../sources/samsung-galaxy-buds-health-monitoring-ppg-2026.md) — Consumer earbud health monitoring competitive context
+- [Starkey Omega AI May 2026 Update](../sources/starkey-omega-ai-update-may-2026.md) — StarLink Edge LE Adapter, DNN 360 +28%/+8 dB claims, 2026 BIG Innovation Award, Edge AI + Vision Alliance award

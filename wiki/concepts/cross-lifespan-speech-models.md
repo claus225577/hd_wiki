@@ -2,9 +2,9 @@
 title: Cross-Lifespan Speech Models
 type: concept
 created: 2026-05-21
-updated: 2026-06-08
-sources: [cross-lifespan-diarization-usc-may-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-play-si-hearingreview-april-2026.md, pediatric-softband-bcd-database-frontiers-may-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, arxiv-2606-05440-age-aware-adapter-children-asr-jun-2026.md]
-related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, medical-domain-edge-llms.md, small-language-models-edge-ai.md, companion-phone-speech-pipeline.md, ../entities/demant-oticon.md, longitudinal-hearing-phenotyping.md, ../entities/vcca-computational-audiology.md, dnn-in-hearing-aids.md]
+updated: 2026-06-16
+sources: [cross-lifespan-diarization-usc-may-2026.md, oticon-play-si-pediatric-launch-april-2026.md, oticon-play-si-hearingreview-april-2026.md, pediatric-softband-bcd-database-frontiers-may-2026.md, qvac-medpsy-edge-medical-llm-may-2026.md, arxiv-2606-05440-age-aware-adapter-children-asr-jun-2026.md, arxiv-2606-16539-elderly-asr-online-adaptation.md, arxiv-2606-16546-elderly-asr-pseudo-labeling.md]
+related: [speech-enhancement-neural-networks.md, on-device-ml-hearing-aids.md, medical-domain-edge-llms.md, small-language-models-edge-ai.md, companion-phone-speech-pipeline.md, ../entities/demant-oticon.md, longitudinal-hearing-phenotyping.md, ../entities/vcca-computational-audiology.md, dnn-in-hearing-aids.md, elderly-speech-recognition.md, ../entities/dementiabank-pitt-dataset.md, ../entities/jccocc-moca-dataset.md, ../entities/xunying-liu-cuhk-speech-group.md]
 tags: [speech-foundation-models, lifespan, pediatric-speech, older-adult-speech, age-distribution-shift, domain-adaptation, speaker-diarization, training-data-moat, age-conditioned-adapters, hearing-aids, whisper, voxtral, qwen3-asr]
 ---
 
@@ -72,6 +72,22 @@ The USC paper opens a third axis: **lifespan-stratified speech corpora and age-c
 
 The OEMs whose customer-acquisition funnels include both pediatric (Phonak Sky, Oticon Play SI) and adult/older-adult platforms are positioned to assemble lifespan-stratified corpora that pure-research labs and consumer-audio companies cannot replicate.
 
+## Bracketing the Lifespan — June 2026 Two-Sided Closure
+
+The age-axis pattern has now been demonstrated at both ends of the lifespan within twelve days, both using a **small learnable conditioning hook over a frozen / mostly-frozen foundation backbone**:
+
+| Lifespan edge | Paper | Posted | Routing variable | Hook type | Headline gain |
+|---|---|---|---|---|---|
+| Pediatric (3–12+) | Jialu Li, arXiv:2606.05440 | Jun 3 2026 | Age band (ground-truth or estimated) | Per-age-band adapter | 12.6→12.3% WER overall, 18.4→17.6% macro |
+| Elderly (≥65, dementia cohort) | Deng et al. arXiv:2606.16539 | Jun 15 2026 | Speaker identity (online, no enrollment) | Cross-utterance audio-textual prompt | −0.61% abs WER (English), −1.22% abs CER (Cantonese); 9.83× RTF speedup |
+| Elderly (semi-supervised training) | Deng et al. arXiv:2606.16546 | Jun 15 2026 | Speaker identity + confidence rank | Learnable per-speaker prompt + curriculum | −1.45% abs WER (English, 6.21% rel), −2.27% abs CER (Cantonese, 6.98% rel) |
+
+The CUHK elderly pair adds two things the pediatric work alone could not:
+1. **The non-English channel.** The Cantonese JCCOCC MoCA results (see [[../entities/jccocc-moca-dataset]]) show the gains transfer to a tonal, non-Indo-European language. The pediatric work was English-only.
+2. **Training-time × inference-time decomposition.** Deng et al. publish both halves of the pipeline on the same day — online speaker adaptation at inference (2606.16539) and confidence-curriculum + learnable-prompt training-time adaptation (2606.16546). The pediatric work covered only the inference-time adapter axis.
+
+See [[elderly-speech-recognition]] for the dedicated older-edge page.
+
 ## Confound: Hearing-Impaired Speech Production
 
 Older-adult speech also covaries with **hearing-impaired speech production** — presbyphonia, dysarthria, reduced articulatory precision, the Lombard effect under self-perceived inaudibility. The USC paper does not disentangle age effects from hearing-loss effects.
@@ -108,6 +124,8 @@ A hearing-aid-local adapter is also possible at the small-DNN scale (sub-1M-para
 ## Sources
 - [Cross-Lifespan Speaker Diarization (Xu, Feng & Narayanan, May 2026)](../../sources/cross-lifespan-diarization-usc-may-2026.md) — Seed paper; foundation models fail at lifespan edges; domain adaptation closes most of the gap
 - [Age-Aware Adapter Tuning for Children's ASR (Li, Jun 2026)](../../sources/arxiv-2606-05440-age-aware-adapter-children-asr-jun-2026.md) — Parameter-efficient per-age-band adapter modules; 12.6%→12.3% WER overall, 18.4%→17.6% macro; predicted-age routing tracks ground-truth; hard age routing > FiLM
+- [Elderly ASR Online Audio-Textual Prompt (Deng et al., Jun 15 2026)](../../sources/arxiv-2606-16539-elderly-asr-online-adaptation.md) — Older-edge inference-time bracket; zero-shot online speaker adaptation; English + Cantonese
+- [Elderly ASR Confidence-Curriculum Pseudo-Labeling (Deng et al., Jun 15 2026)](../../sources/arxiv-2606-16546-elderly-asr-pseudo-labeling.md) — Older-edge training-time bracket; semi-supervised, learnable speaker prompts
 - [Oticon Play SI Pediatric Launch (Apr 2026)](../../sources/oticon-play-si-pediatric-launch-april-2026.md) — Pediatric platform now shipping flagship AI
 - [Oticon Play SI HearingReview Coverage (Apr 2026)](../../sources/oticon-play-si-hearingreview-april-2026.md) — Boys Town pediatric clinical evidence
 - [Pediatric Softband BCD Database (Frontiers, May 2026)](../../sources/pediatric-softband-bcd-database-frontiers-may-2026.md) — Pediatric candidacy expansion

@@ -2,8 +2,8 @@
 title: Auracast / Bluetooth LE Audio
 type: concept
 created: 2026-04-15
-updated: 2026-06-14
-sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, auracast-uk-live-theaters-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, oticon-zeal-full-specs-aaa-2026.md, starkey-omega-ai-aaa-2026-showcase.md, auracast-european-public-venue-rollout-2026.md, lc3plus-codec-broader-implementation-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, gn-auracast-seoul-session-big-ocean-may-2026.md, arxiv-2605-26812-cfmdctcodec-may-2026.md, hlaa-2026-convention-opens-june-2026.md, sterkens-joins-center-for-hearing-access-jun-2026.md, trihear-cleartv-launch-jun-2026.md]
+updated: 2026-06-16
+sources: [auracast-hearing-accessibility-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, oticon-verit-launch-april-2026.md, oticon-play-si-pediatric-launch-april-2026.md, auracast-uk-live-theaters-april-2026.md, oticon-zeal-hearingreview-aaa-2026.md, starkey-omega-ai-auracast-update-jan-2026.md, oticon-zeal-full-specs-aaa-2026.md, starkey-omega-ai-aaa-2026-showcase.md, auracast-european-public-venue-rollout-2026.md, lc3plus-codec-broader-implementation-2026.md, codec-intelligibility-se-behringer-arxiv-2026.md, gn-auracast-seoul-session-big-ocean-may-2026.md, arxiv-2605-26812-cfmdctcodec-may-2026.md, hlaa-2026-convention-opens-june-2026.md, sterkens-joins-center-for-hearing-access-jun-2026.md, trihear-cleartv-launch-jun-2026.md, auracast-venue-deployments-2026.md, starkey-omega-ai-update-may-2026.md]
 related: [on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, hearing-aid-market-dynamics.md, ../entities/gn-hearing-resound.md, ../entities/demant-oticon.md, ../syntheses/ai-understanding-gap-hearing-industry.md, ../entities/aaa-conference.md, ../entities/starkey.md, hearing-care-funnel-attribution.md, ../entities/hlaa.md, patient-advocacy-hearing-health.md]
 tags: [bluetooth, accessibility, connectivity, infrastructure, le-audio, venue-deployment, consumer-education, stigma]
 ---
@@ -79,6 +79,15 @@ GN/Ampetronic Seoul Session at the World Congress of Audiology 2026:
 - **First non-Western and first symbolic-performance Auracast deployment** to date. Korea has the demographic profile (population aging fast, audiologist shortage relative to demand) where infrastructure-side accessibility may be the binding constraint.
 - **Adjacent finding (YouGov, GN-commissioned, 30 Jan–4 Feb 2026, n≈3,053 across AU/UK/US):** up to **40%** perceive people with hearing loss as less intelligent or less capable; more than a third are read as rude or disengaged or believe they should "try harder." Frames the Seoul install as **structurally an intervention on the stigma variable**, not a product launch.
 
+### Flagship Cultural-Venue Deployments — UK + Australia + UAL (Mid-2026)
+Following the April 2026 regional UK theatre pilots, mid-2026 sees the first wave of *flagship* cultural-venue installs (HearingTracker venue tracker):
+- **National Theatre — Dorfman (London):** Auracast trialed during the run of *Man and Boy* — first National Theatre auditorium to test the standard.
+- **Bridge Theatre (London):** General-audience Auracast deployment.
+- **Sydney Opera House (Australia):** First flagship Southern-Hemisphere cultural venue with Auracast — pairs with the May 26 Seoul jazz-club installation as the second Asia-Pacific install of 2026.
+- **CCI / Creative Computing Institute, UAL (London):** First documented academic-creative-space Auracast deployment (studio / lecture / workshop context, not a performance venue).
+
+The hardware-side bottleneck is solved; venue procurement cycles are the binding constraint. With this wave the cumulative mid-2026 surface spans regional theatres, flagship theatres, NHS clinics, European airports/transit pilots, Korean cultural venues, an Australian flagship cultural venue, and a UK academic-creative space. See [[../sources/auracast-venue-deployments-2026]].
+
 ### First UK Live Theater Deployments (April 2026)
 The first real-world Auracast assistive listening deployments in UK performance venues have been documented:
 - **Everyman Theatre (Cheltenham)** and **Contact (Manchester)** — using the **Auri Bluetooth Auracast system**
@@ -142,3 +151,5 @@ This does not displace LC3 as the mandatory Bluetooth LE Audio baseline, but it 
 - [Codec Intelligibility under Noise + SE (Behringer et al., 2026)](../../sources/codec-intelligibility-se-behringer-arxiv-2026.md) — Classical codecs more noise-robust than neural; SE preprocessing materially improves codec intelligibility and listening effort
 - [GN/Ampetronic Seoul Session + YouGov stigma data (May 26, 2026)](../../sources/gn-auracast-seoul-session-big-ocean-may-2026.md) — First permanent Auracast venue install in South Korea; Big Ocean K-pop performance; YouGov stigma survey across AU/UK/US
 - [CFMDCTCodec (Du, Ai et al., arXiv:2605.26812, May 2026)](../../sources/arxiv-2605-26812-cfmdctcodec-may-2026.md) — Sub-kbps (0.65 kbps) MDCT-domain neural codec with CFM-based spectral enhancement; pushes the bitrate frontier well below LC3's mandatory mode
+- [Auracast Venue Deployments — UK Flagships + Sydney Opera House + CCI UAL (2026)](../../sources/auracast-venue-deployments-2026.md) — Dorfman/Bridge/Sydney Opera House/CCI UAL flagship cultural-venue rollout
+- [Starkey Omega AI May 2026 Update](../../sources/starkey-omega-ai-update-may-2026.md) — StarLink Edge LE Adapter (first OEM-branded LE Audio bridge dongle)

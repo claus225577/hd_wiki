@@ -2,8 +2,8 @@
 title: Efferent / MOC Feedback in Hearing AI
 type: concept
 created: 2026-06-09
-updated: 2026-06-14
-sources: [biear-meng-2026-arxiv.md, dal-differentiable-auditory-loop-google-june-2026.md]
+updated: 2026-06-16
+sources: [biear-meng-2026-arxiv.md, dal-differentiable-auditory-loop-google-june-2026.md, arxiv-2606-14120-faconformer-aad-jun-2026.md]
 related: [differentiable-cochlear-models.md, auditory-attention-decoding.md, on-device-ml-hearing-aids.md, brain-aligned-speech-foundation-models.md, speech-enhancement-neural-networks.md]
 tags: [efferent-feedback, medial-olivocochlear, moc-reflex, adaptive-filterbank, binaural, cochlear-models, scene-conditioned-gain, auditory-efference, biologically-inspired-ml, interspeech-2026]
 ---
@@ -45,6 +45,17 @@ BiEAR pairs naturally with **DAL** ([Differentiable Auditory Loop, Google Resear
 | Efferent (descending) | BiEAR | Jun 5 2026 | Brainstem → MOC → outer hair cell gain as a learned controller over the filterbank |
 
 Posted within 24 hours of each other, these two papers operationalise the cochlear control loop, forward and back, as a first-class ML object. Together they signal a shift away from the long-standing pattern of treating the cochlea as a fixed preprocessing block.
+
+## The Cortex × Periphery Band-Axis Duo (June 2026)
+
+A complementary pairing emerged one week later, this time along the **frequency-band axis** at opposite ends of the auditory hierarchy:
+
+| Level | Paper | Posted | What it does with bands |
+|------|-------|--------|----------------|
+| Periphery (cochlea) | BiEAR | Jun 5 2026 | MOC-style controller adaptively modulates per-band filter selectivity at inference time |
+| Cortex (EEG) | FAConformer (Wang et al., arXiv:2606.14120) | Jun 12 2026 | EEG decomposed into bands, per-band CNN-Transformer encoders, cross-band Frequency-Aware Attention; +4.9% over the strongest of 12 AAD baselines |
+
+Both papers treat **frequency bands as first-class structural objects with cross-band interactions**, but at opposite ends of the auditory pathway — BiEAR modulates band selectivity at the cochlea, FAConformer reads attention-modulated band activity off the cortex. The conceptual symmetry — periphery-side gain control and cortex-side decoding of the same band-axis — makes this an unusually clean target for closed-loop pairing. A future system that **decodes attention from cortical band activity (FAConformer) and steers periphery-side band gain (BiEAR-style)** would close the AAD loop *through* the auditory band structure rather than around it. See [[auditory-attention-decoding]] and the [FAConformer source](../../sources/arxiv-2606-14120-faconformer-aad-jun-2026.md).
 
 ## Implications for the Field
 

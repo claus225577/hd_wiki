@@ -2,7 +2,7 @@
 title: Brain-Aligned Speech Foundation Models
 type: concept
 created: 2026-06-03
-updated: 2026-06-12
+updated: 2026-06-16
 sources:
   - arxiv-2606-02305-whisper-ecog-ciferri-jun-2026.md
   - arxiv-2606-11429-gumbel-beard-layer-selection-jun-2026.md
@@ -48,7 +48,7 @@ Why it matters: you don't need ECoG to find the right layer; you let the loss fi
 
 ## Related Empirical Threads
 - **Non-invasive brain-to-speech.** The MindVoice line of work (arXiv:2605.31173, May 29 2026) shows that reconstructing intelligible speech from non-invasive EEG / MEG works **only when the noisy biosignal queries a frozen speech foundation model**. That generalizes the present concept: brain alignment is something the foundation model already has, the bridge is the engineering work. See [[non-invasive-brain-to-speech]].
-- **Auditory attention decoding.** Mesgarani's Columbia closed-loop ECoG demonstration (Nature Neuroscience, May 2026) operates on the encoding side of attention; the Ciferri result operates on the model side of the same alignment. See [[auditory-attention-decoding]].
+- **Auditory attention decoding.** Mesgarani's Columbia closed-loop ECoG demonstration (Nature Neuroscience, May 2026) operates on the encoding side of attention; the Ciferri result operates on the model side of the same alignment. See [[auditory-attention-decoding]]. **FAConformer** (Wang et al., arXiv:2606.14120, Jun 12 2026) adds a complementary **band-axis** to the layer-axis Gumbel-BEARD operates on — EEG decomposed into per-band CNN-Transformer branches with a Frequency-Aware Attention module learning cross-band dependencies. Layer routing inside the FM stack and band routing across EEG bands are now both being treated as learnable hyperparameters over frozen / structured substrate.
 - **Cortical reorganization with hearing aids.** Becker et al. 2026 (MEG, Frontiers in Aging Neuroscience) show 12-week cortical reorganization in HA wearers. If the cortex itself reshapes under hearing-aid input, brain-aligned model layers may need wearer-specific recalibration over time. See [[cortical-reorganization-hearing-aids]].
 
 ## Open Questions

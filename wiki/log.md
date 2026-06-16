@@ -3048,3 +3048,79 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 - Endpoint anticipation joins the low-latency-floor family (SB-RF, HALO, FPGA SuDoRM-RF++, DriftSE) — the field is converging on "every 10-50 ms matters" as the operating constraint.
 
 **Pages touched this ingest: 5** (3 new sources, 1 wiki concept update, 1 index update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-16 (LinkedIn-research ingest, three arXiv sources)
+
+**Source of operation:** Three arXiv sources researched for the daily LinkedIn post on 2026-06-16: FAConformer (cortex-side AAD, band-axis), plus two Xunying Liu / CUHK INTERSPEECH 2026 papers on elderly ASR. This entry covers the wiki-ingestion leg.
+
+### Source files
+- **`sources/arxiv-2606-14120-faconformer-aad-jun-2026.md`** — UPDATED. Existing 2026-06-15 source file refined with the full extraction detail: Frequency-Aware Attention (FAA) module treats band-wise features as tokens; Band-wise Auxiliary Supervision (BAS) prevents weak-branch under-optimisation; +4.9% over strongest of 12 baselines; two public AAD datasets, three decision-window lengths; explicit "neuro-steered hearing systems" framing.
+- **`sources/arxiv-2606-16539-elderly-asr-online-adaptation.md`** — NEW. Chengxi Deng, Xurong Xie, Shujie Hu, Mengzhe Geng, Tianzi Wang, Youjun Chen, Huimeng Wang, Haoning Xu, Jiajun Deng, Xunying Liu (CUHK); "Decoding while Adapting: Zero-Shot Online Speaker Adaptation via Audio-Textual Prompts for Elderly Speech Recognition"; arXiv:2606.16539, 15 Jun 2026, accepted INTERSPEECH 2026. Cross-utterance audio-textual prompts fused cross-modally into compact speaker prompt; beats i-vector / x-vector / ECAPA-TDNN. **−0.61% absolute WER on DementiaBank Pitt (English)**, **−1.22% absolute CER on JCCOCC MoCA (Cantonese)**, **9.83× RTF speedup** vs offline batch adaptation, statistically significant.
+- **`sources/arxiv-2606-16546-elderly-asr-pseudo-labeling.md`** — NEW. Chengxi Deng, Xurong Xie, Shujie Hu, Jiajun Deng, Mengzhe Geng, Youjun Chen, Huimeng Wang, Haoning Xu, Guinan Li, Xunying Liu (CUHK); "Confidence Score Guided Incremental and Speaker Adaptive Pseudo-Labeling for Semi-Supervised Elderly Speech Recognition"; arXiv:2606.16546, 15 Jun 2026, accepted INTERSPEECH 2026. High-to-low confidence curriculum on pseudo-labeled unlabeled speech + speaker-adaptive training with learnable prompts. **−1.45% abs WER (6.21% rel) on Pitt**, **−2.27% abs CER (6.98% rel) on JCCOCC MoCA** vs baseline semi-supervised methods.
+
+### New wiki pages (4)
+- **`wiki/concepts/elderly-speech-recognition.md`** — Dedicated older-edge concept page. Frames elderly ASR as the older-edge failure mode of cross-lifespan generalization; the inference-time × training-time two-paper pair from CUHK; bracketed against Jialu Li's pediatric adapter to make the lifespan-closure point; explicit list of the five routing variables (age band, speaker identity, layer choice, room, EEG band) that have converged on the same small-learnable-hook-over-frozen-FM pattern.
+- **`wiki/entities/dementiabank-pitt-dataset.md`** — Dataset entity. English clinical-interview corpus; Cookie Theft picture description; first wiki appearance; ASR + diagnosis-classification + linguistic-feature-extraction tasks; tabulated June 2026 CUHK benchmark gains.
+- **`wiki/entities/jccocc-moca-dataset.md`** — Dataset entity. Cantonese MoCA recordings, CUHK-built; first wiki appearance. Non-Indo-European tonal-language elderly-ASR benchmark; CER (not WER); larger absolute gains than Pitt in both CUHK papers, consistent with the prior that non-English elderly speech is further from the FM pre-training distribution.
+- **`wiki/entities/xunying-liu-cuhk-speech-group.md`** — Research-group entity for the CUHK speech line. Core team list from the June 2026 pair (Chengxi Deng first author, Xunying Liu senior); three research threads (elderly/dysarthric, Cantonese-language, learnable-prompt-over-frozen-FM); Asia-Pacific OEM strategy angle (GN / Sonova / Phonak / Cochlear / Widex Cantonese-market exposure).
+
+### Existing wiki page updates (4)
+- **`wiki/concepts/auditory-attention-decoding.md`** — Refined the FAConformer entry in Recent Academic Advances with the full extraction (FAA, BAS, +4.9%, 12 baselines, 2 datasets, 3 windows, explicit hearing-systems framing). Added cortex × periphery band-axis duo pairing with BiEAR. Added `efferent-moc-feedback-hearing-ai` to `related:`. `updated:` → 2026-06-16.
+- **`wiki/concepts/cross-lifespan-speech-models.md`** — Added "Bracketing the Lifespan" section with a three-way comparison table (Jialu Li pediatric / Deng et al. inference-time elderly / Deng et al. training-time elderly), called out the non-English Cantonese channel and the training-time × inference-time decomposition. Added both elderly sources to `sources:` and the four new pages to `related:`. Updated `Sources` section. `updated:` → 2026-06-16.
+- **`wiki/concepts/efferent-moc-feedback-hearing-ai.md`** — Added "The Cortex × Periphery Band-Axis Duo (June 2026)" section pairing FAConformer with BiEAR at opposite ends of the auditory hierarchy along the frequency-band axis. Added FAConformer source to `sources:`. `updated:` → 2026-06-16.
+- **`wiki/concepts/brain-aligned-speech-foundation-models.md`** — FAConformer noted as band-axis complement to Gumbel-BEARD's layer-axis; both treated as learnable-hyperparameter routing over structured substrate. `updated:` → 2026-06-16.
+
+### Index and log
+- **`wiki/index.md`** — New 2026-06-16 entry prepended to "Last updated"; prior 2026-06-15 entry preserved as "Previously updated". Concepts table: new Elderly Speech Recognition row; AAD / Cross-Lifespan / Efferent-MOC / Brain-Aligned rows refreshed to 2026-06-16 with refined tags. Entities table: three new rows (DementiaBank Pitt, JCCOCC MoCA, Xunying Liu group).
+- **`wiki/log.md`** — This entry.
+
+### Editorial notes
+- The unifying frame across this ingest: **a small learnable conditioning hook over a frozen / mostly-frozen foundation backbone, routed by a clinical / demographic / structural variable**. The variable now spans age band (Jialu Li), speaker identity (Deng et al. × 2), layer choice (Gumbel-BEARD), room acoustics (Khanagha-Gerkmann), and EEG band (FAConformer). Same primitive, five axes — the strongest single architectural pattern of the June 2026 research wave.
+- FAConformer is most interesting as a complement to BiEAR. The two papers operationalise **frequency-band routing at opposite ends of the auditory hierarchy** (BiEAR: periphery-side gain control; FAConformer: cortex-side attention decoding). A future closed-loop system would decode attention from cortical band activity and steer periphery band gain — closing the AAD loop *through* the auditory band structure rather than around it.
+- The CUHK elderly pair makes the cross-lifespan generalization frame symmetric. Twelve days separates Jialu Li's pediatric adapter from the Deng et al. elderly twin pair; the same small-learnable-hook pattern is now demonstrated at both lifespan edges. The Cantonese channel is new — almost all elderly-ASR literature is English-only.
+- Did not create a dedicated `adapter-tuning` or `prompt-tuning` concept page even though it was floated. The pattern is now better represented as a recurring axis across `cross-lifespan-speech-models`, `elderly-speech-recognition`, `brain-aligned-speech-foundation-models`, and `continual-learning-hearing-ai` — splitting it out would be more taxonomy than content. Reconsider if a fifth or sixth instance lands.
+- Did not create a `neuro-steered-hearing-aids` synthesis page; the existing `auditory-attention-decoding` concept page now covers the FAConformer/BiEAR duo and the cortex × periphery framing without needing a separate synthesis.
+
+**Pages touched this ingest: 12** (1 source updated, 2 new sources, 4 new wiki pages, 4 existing wiki pages updated, 1 index update, +1 log entry).
+
+---
+
+## Ingest — 2026-06-16 (Daily hearing+AI digest, 11 sources reviewed)
+
+**Source of operation:** Daily hearing+AI digest for 16 Jun 2026 — 11 candidate sources reviewed; 8 already ingested under existing source files, 3 net-new source files created.
+
+### Source files — already present (skipped, mapped to existing):
+- DAL (arXiv:2606.04103) → `dal-differentiable-auditory-loop-google-june-2026.md` (already ingested 4 Jun 2026)
+- FPGA Time-Domain DNN SE (arXiv:2606.04221) → `fpga-sudormrf-feasibility-radboud-june-2026.md` (already ingested 4 Jun 2026)
+- AI predicts CI language outcomes (92% on pre-implant MRI, 278 children Hong Kong/Australia/US) → `ai-predicts-ci-language-outcomes.md` and `pediatric-ci-language-prediction-transfer-learning-2025.md` (already ingested)
+- Phonak Virto R Infinio 2026 Red Dot Award → `phonak-virto-r-infinio-red-dot-april-2026.md` (already ingested)
+- Amplifon + GN combination plans → `amplifon-gn-acquisition-2026.md` (already ingested)
+- Apple AirPods Hearing Aid expansion to 100+ countries → `airpods-hearing-aid-country-expansion-may-2026.md` (already ingested)
+- NeuralAids — Wireless Hearables w/ Programmable Speech AI Accelerators (arXiv:2503.18698) → `wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md` (already ingested)
+- FHH 2026 Virtual Conference → `fhh-2026-virtual-conference-may.md` (already ingested)
+
+### Source files — net-new (3):
+- **`sources/jamia-open-ci-eligibility-audiogram-2026.md`** — JAMIA Open ML pipeline that flags CI-eligible adults from routine audiograms; outperforms common referral rules; framed as a clinical-utility / deployment-lessons paper, not a benchmark race. Eligibility prediction is a distinct ML problem from outcome prediction; audiogram-as-input is realistic and EHR-deployable. Companion to the audiologist-shortage thread as a workflow-side response.
+- **`sources/starkey-omega-ai-update-may-2026.md`** — Starkey blog post consolidating the spring 2026 Omega AI firmware wave. Net-new artifacts vs. the Jan 2026 and May Govt-Services sources: **StarLink Edge LE Adapter** (first OEM-branded LE Audio bridge dongle from a top-5 manufacturer), **DNN 360 +28% speech / +8 dB SNR** marketing claims, **2026 BIG Innovation Award** (distinct from the BIG AI Excellence Awards), **Edge AI + Vision Alliance award** (first hearing-aid recognition from the cross-industry edge-AI consortium that typically recognises Qualcomm/Intel/Nvidia silicon).
+- **`sources/auracast-venue-deployments-2026.md`** — HearingTracker venue-tracker wave covering National Theatre Dorfman (Man and Boy trial), Bridge Theatre (London), Sydney Opera House (Australia — second Asia-Pacific Auracast install after the May 26 Seoul jazz club), and CCI at University of the Arts London (first academic-creative-space install). First *flagship* cultural-venue cluster after the April Everyman/Contact regional pilots.
+
+### Existing wiki page updates (4):
+- **`wiki/concepts/cochlear-implant-ai.md`** — added new "AI for CI Eligibility / Referral (JAMIA Open, 2026)" subsection under Outcome Prediction; bumped `updated:` to 2026-06-16; added `jamia-open-ci-eligibility-audiogram-2026.md` to `sources:` and to bottom Sources list.
+- **`wiki/concepts/automated-audiometry.md`** — added new bullet to "2026 Updates" section pointing to the JAMIA Open audiogram-to-CI-eligibility pipeline as a third audiogram-as-input ML pathway alongside the LLM-PTA and Bisgaard loudness-scaling threads; bumped `updated:` to 2026-06-16; added source.
+- **`wiki/entities/starkey.md`** — added new "Omega AI Connectivity & Convenience Update (May 2026)" section immediately above the Government Services section, covering StarLink Edge LE Adapter, DNN 360 claims, 2026 BIG Innovation Award, Edge AI + Vision Alliance award; bumped `updated:` to 2026-06-16; added source.
+- **`wiki/concepts/auracast-bluetooth-le-audio.md`** — added new "Flagship Cultural-Venue Deployments — UK + Australia + UAL (Mid-2026)" section above the April UK regional theatre subsection, naming Dorfman / Bridge / Sydney Opera House / CCI UAL; bumped `updated:` to 2026-06-16; added both new sources (venue deployments + Starkey May 2026 for the StarLink LE adapter cross-reference).
+
+### Index and log
+- **`wiki/index.md`** — no update; no new wiki pages created.
+- **`wiki/log.md`** — this entry.
+
+### Editorial notes
+- The high duplication rate (8/11 sources already covered) reflects the daily-digest pipeline working as intended — the wiki is now mostly current with the hearing+AI news flow, and ingest passes catch the genuinely new artifacts cleanly.
+- The StarLink Edge LE Adapter is the most strategically interesting net-new artifact today — first OEM-branded LE Audio bridge dongle from a top-5 manufacturer. It's the source-side complement to the device-side Auracast rollout: wearers have LE-Audio hearing aids but their TVs / conference rooms / partners' phones don't. Trihear ClearTV (June 4) plays the same role cross-OEM; the StarLink Adapter is the vendor-locked version. Watch for whether Sonova, Demant, and WSA ship competitors.
+- The Auracast flagship-venue wave (Dorfman + Bridge + Sydney Opera House + CCI UAL) is a cleaner-than-expected qualitative shift from "regional pilots" to "cultural flagships" inside two months. The Sydney Opera House install is the most consequential by social-proof reach.
+- The JAMIA Open CI-eligibility paper is the venue-shift signal — CI under-referral is now being treated as a *clinical informatics* problem, not an audiology research problem. Different reader base, different deployment pathway. Pairs with the audiologist-shortage workforce-response thread.
+- Did not create a new wiki page for any of the three net-new sources — each cleanly extends an existing concept page (CI AI / automated audiometry / Starkey entity / Auracast). The bar for new pages today was the substrate-shift criterion; these are incremental updates to existing substrates.
+
+**Pages touched this ingest: 8** (3 new sources, 4 existing wiki pages updated, +1 log entry).

@@ -2,8 +2,8 @@
 title: AI in Cochlear Implants
 type: concept
 created: 2026-04-15
-updated: 2026-05-09
-sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md, dnn-noise-reduction-intelligibility-2026.md, completely-implantable-cochlear-implants-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, end-to-end-audiovisual-ci-sound-coding-arxiv-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, cochlear-nucleus-nexa-smart-implant-2026.md, lucia-bilateral-ci-trial-may-2026.md]
+updated: 2026-06-16
+sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md, dnn-noise-reduction-intelligibility-2026.md, completely-implantable-cochlear-implants-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, end-to-end-audiovisual-ci-sound-coding-arxiv-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, cochlear-nucleus-nexa-smart-implant-2026.md, lucia-bilateral-ci-trial-may-2026.md, jamia-open-ci-eligibility-audiogram-2026.md]
 related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, ../entities/vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, precision-drug-delivery-inner-ear.md, ../entities/envoy-medical.md, hearing-aid-chip-architectures.md, compute-in-memory.md, state-space-models.md, mamba-architecture.md, gene-therapy-hearing.md, ../entities/regeneron.md, ../entities/cochlear-ltd.md, software-defined-medical-implants.md, longitudinal-hearing-phenotyping.md, ../entities/aci-alliance-ci2026.md, ../syntheses/cochlear-implant-access-economics.md]
 tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics, fully-implantable, gene-therapy]
 ---
@@ -43,6 +43,9 @@ CI outcomes vary enormously: some children achieve near-normal language; others 
 A national UK RCT announced 6 May 2026 (Cambridge / Birmingham, 14 NHS hospitals, n > 250) will randomize profoundly deaf adults to one vs two cochlear implants — the first system-scale interventional comparison of bilateral vs unilateral CI in late-deafened adults. Existing bilateral evidence is registry- and case-series-based; LUCIA generates the labeled cohort that pre-implant outcome-prediction models (e.g., the JAMA / Northwestern preimplant-MRI deep-transfer-learning approach above) need to extend from "will this child benefit from one CI?" to "who benefits from a second implant?" The trial does not propose any new AI technology — it is purpose-built to produce the missing dataset.
 
 See [[../../sources/lucia-bilateral-ci-trial-may-2026]] and [[../syntheses/cochlear-implant-access-economics]].
+
+### AI for CI Eligibility / Referral (JAMIA Open, 2026)
+Only ~5–10% of CI-eligible adults in the US are actually implanted — the gap is largely a **referral** problem, not a surgical capacity problem. A JAMIA Open paper (2026) trains an ML model to flag CI-eligible adults directly from routine audiograms, materially outperforming current referral heuristics (e.g., the "60/60 rule"). Framed as a **clinical-utility / deployment lessons paper**, not a benchmark race — the value is the audit trail of pushing a CI-eligibility classifier into clinician workflow. Eligibility prediction is a distinct ML problem from outcome prediction (will this person benefit?) and the field needs both; the audiogram-as-input substrate is realistic, every audiologist already collects it. Pairs with the [[automated-audiometry]] thread and the [[audiologist-workforce-shortage]] response. See [[../sources/jamia-open-ci-eligibility-audiogram-2026]].
 
 ## AI for Speech Processing (Sound Coding)
 
@@ -191,3 +194,4 @@ Novel system using audio-visual speech enhancement (lip reading + audio) as pre-
 - [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — First gene therapy for hearing loss; may reduce CI candidacy for OTOF mutations
 - [Harvard/Fudan OTOF Nature Study](../sources/harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md) — 90% improvement, 50% normal hearing at 2.5 years
 - [Cochlear Nucleus Nexa Smart Implant](../sources/cochlear-nucleus-nexa-smart-implant-2026.md) — World's first CI with upgradeable firmware and on-implant memory
+- [JAMIA Open — ML for CI Eligibility Prediction](../sources/jamia-open-ci-eligibility-audiogram-2026.md) — Audiogram-based ML referral model; clinical-utility framing
