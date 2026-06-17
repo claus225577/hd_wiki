@@ -2,9 +2,9 @@
 title: Digital Phenotyping for Cognitive Decline
 type: concept
 created: 2026-05-07
-updated: 2026-05-07
-sources: [jmir-ai-wearables-cognitive-impairment-2026.md, achieve-trial-cognitive-hearing-2025.md, apple-hearing-study-results-may-2026.md]
-related: [hearing-loss-dementia-link.md, longitudinal-hearing-phenotyping.md, large-sensor-models.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md]
+updated: 2026-06-17
+sources: [jmir-ai-wearables-cognitive-impairment-2026.md, achieve-trial-cognitive-hearing-2025.md, apple-hearing-study-results-may-2026.md, arxiv-2606-18054-cognitive-linguistic-features-dementia-jun-2026.md, arxiv-2606-18019-llm-dementia-depression-clinical-interviews-jun-2026.md, arxiv-2606-17254-cross-lingual-alzheimer-detection-jun-2026.md]
+related: [hearing-loss-dementia-link.md, longitudinal-hearing-phenotyping.md, large-sensor-models.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, elderly-speech-recognition.md, medical-domain-edge-llms.md, ../syntheses/speech-as-passive-cognition-biomarker-pipeline-june-2026.md]
 tags: [digital-phenotyping, dementia, cognitive-decline, wearables, preclinical, ai-prediction, hearing-aids, telemetry]
 ---
 
@@ -52,6 +52,16 @@ A model fusing even a subset of these is qualitatively different from any single
 - Cohort bias — most studies recruit from clinic populations, not general aging populations
 - Privacy and governance: continuous behavioral monitoring creates a regulatory surface that current FDA AI/ML SaMD guidance does not fully cover
 
+## Audio-to-Cognition Pipeline — June 2026 Snapshot
+
+Between **Jun 8 and Jun 16, 2026** the **microphone → elderly-adapted ASR → LLM cognitive-linguistic scoring → longitudinal trajectory** pipeline became fully populated on arXiv. The scoring layer in particular got three independent papers in 24 hours:
+
+- **Xu et al., arXiv:2606.18054** (Jun 16) — 7 cognitive-linguistic constructs on the Cookie Theft task; Claude 3.5 Sonnet emits score + explanation per construct; **85% accuracy on ADReSS, 3.99/5 expert-judged explanation quality**. The auditability shape a clinical-screening tool needs.
+- **Braun et al., arXiv:2606.18019** (Jun 16, TH Nürnberg + Paracelsus Medical Univ) — Open-weights LLMs (Mistral 3.1, DeepHermes, Qwen3) on 154 German standardised history-taking interviews; **MAE 0.60 depression (zero-shot), MAE 0.78 dementia (with structured features); up to 35% error reduction; pause-enriched transcripts approach human-transcription quality**. Open-weights at clinical-grade quality removes the closed-API blocker for on-device / on-prem deployment.
+- **Girish et al., arXiv:2606.17254** (Jun 16) — Zero-shot cross-lingual Alzheimer detection via language-invariant multimodal bi-geometric adversarial learning. The shape that scales across an OEM's actual sales geography without per-market labelled data.
+
+The ASR substrate underneath is the **Xunying Liu / CUHK** elderly-ASR pair (Jun 15) — see [[elderly-speech-recognition]]. The full synthesis — including the three unbuilt pieces (PCCP regulatory shape, daily-life prompt substrate beyond Cookie Theft, false-positive clinical-harm cost) — is at [[../syntheses/speech-as-passive-cognition-biomarker-pipeline-june-2026]].
+
 ## Connection to Industry Strategy
 
 If digital phenotyping for cognitive decline becomes a clinical category, hearing aid manufacturers face a strategic choice:
@@ -67,8 +77,14 @@ The [[closed-loop-data-flywheel]] pattern argues for option 2 if the manufacture
 - [[large-sensor-models]] — Foundation-model architectures that could fuse heterogeneous wearable streams
 - [[on-device-ml-hearing-aids]] — Privacy-preserving compute substrate for behavioral signal extraction
 - [[closed-loop-data-flywheel]] — Strategic framing of telemetry as feedstock for product improvement
+- [[elderly-speech-recognition]] — Upstream ASR substrate the audio-to-cognition pipeline depends on
+- [[medical-domain-edge-llms]] — Open-weights LLM deployment surface for the scoring layer
+- [[../syntheses/speech-as-passive-cognition-biomarker-pipeline-june-2026]] — Full pipeline synthesis with the three unbuilt pieces
 
 ## Sources
 - [JMIR systematic review (Feb 2026, 49 studies)](../../sources/jmir-ai-wearables-cognitive-impairment-2026.md) — The defining recent synthesis of the field; basis for this page
 - [ACHIEVE trial](../../sources/achieve-trial-cognitive-hearing-2025.md) — Interventional anchor: hearing aids slow cognitive decline 48% in at-risk adults
 - [Apple Hearing Study (May 2026)](../../sources/apple-hearing-study-results-may-2026.md) — Confirms hearing-loss/walking-speed link at population scale; n=57k mobility sub-analysis
+- [Xu et al. — Cognitive-linguistic Construct Rubric (Jun 2026)](../../sources/arxiv-2606-18054-cognitive-linguistic-features-dementia-jun-2026.md) — Claude 3.5 Sonnet score+explanation on Cookie Theft; 85% ADReSS, 3.99/5 expert agreement on explanations
+- [Braun et al. — Open-Weights LLMs on German Clinical Interviews (Jun 2026)](../../sources/arxiv-2606-18019-llm-dementia-depression-clinical-interviews-jun-2026.md) — MAE 0.60 depression, 0.78 dementia; pause-enriched transcripts close most of the human-transcription gap
+- [Girish et al. — Zero-Shot Cross-Lingual Alzheimer Detection (Jun 2026)](../../sources/arxiv-2606-17254-cross-lingual-alzheimer-detection-jun-2026.md) — Language-invariant multimodal bi-geometric adversarial transfer

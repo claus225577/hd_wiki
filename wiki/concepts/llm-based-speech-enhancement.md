@@ -2,10 +2,11 @@
 title: LM-Based Speech Enhancement
 type: concept
 created: 2026-05-14
-updated: 2026-05-14
-sources: [l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
-related: [speech-enhancement-neural-networks.md, linguistic-hallucination-speech-enhancement.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, large-sensor-models.md, model-compression.md, on-device-ml-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, audio-reasoning-chain-of-thought.md]
-tags: [llm-based-se, language-models, generative-se, autoregressive, neural-codec, wavlm, acoustic-semantic-distillation, foundation-models, speech-enhancement]
+updated: 2026-06-17
+sources: [l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, arxiv-2606-16464-cnac-se-vq-codec-zhao-madhu-jun-2026.md]
+related: [speech-enhancement-neural-networks.md, linguistic-hallucination-speech-enhancement.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, large-sensor-models.md, model-compression.md, on-device-ml-hearing-aids.md, probabilistic-generative-models-hearing-ai.md, eu-ai-act-medical-devices.md, audio-reasoning-chain-of-thought.md, companion-phone-speech-pipeline.md]
+tags: [llm-based-se, language-models, generative-se, autoregressive, neural-codec, wavlm, acoustic-semantic-distillation, foundation-models, speech-enhancement, vector-quantisation]
+last_change: 2026-06-17 — added cNAC-SE / dNAC-SE (Zhao & Madhu, arXiv:2606.16464). The headline result — fully fine-tuned continuous-latent cNAC-SE consistently outperforms discrete-token dNAC-SE variants on DNS-MOS — and the underlying mechanism claim — VQ's robustness benefit comes from *clean-prior-constrained regularisation*, independent of the discretisation itself — together split the codec-prior axis from the discrete-token axis on this page for the first time.
 ---
 
 # LM-Based Speech Enhancement
@@ -40,6 +41,20 @@ The May 2026 L3-SE paper (arXiv:2605.08608) is the most prominent recent contrib
 - **Decoder-only autoregressive LM** conditioned on the fused acoustic-semantic features.
 
 Reported result: substantial reduction in **linguistic hallucinations** with perceptual quality preserved, with the largest gains in low-SNR and reverberant conditions. See the [[linguistic-hallucination-speech-enhancement]] page for the failure-mode argument that motivated this design.
+
+## cNAC-SE / dNAC-SE (Zhao & Madhu, Jun 2026) — Codec Prior Without Discretisation
+
+The June 2026 Zhao & Madhu paper (arXiv:2606.16464) asks a question the L3-SE / VALL-E lineage implicitly answered with "discrete tokens": *does generative SE inside a VQ-based neural audio codec actually need the discretisation, or only the codec's prior?*
+
+- **Two frameworks compared head-to-head on the same codec backbone:**
+  - **cNAC-SE** predicts **continuous representations** in the codec latent space.
+  - **dNAC-SE** predicts **discrete tokens** (the standard codec-LM framing).
+- **Headline result:** fully fine-tuned cNAC-SE **consistently outperforms all dNAC-SE variants** across diverse test conditions, and achieves leading performance among generative SE methods on **DNS-MOS**.
+- **Mechanism claim (the part that matters for the field):** the robustness benefit of VQ codec SE comes from **clean-prior-constrained regularisation** induced by the quantiser — and this regularisation effect is **transferable to other continuous modelling methods**, independent of whether discretisation actually happens at inference.
+
+Taken at face value this **splits two axes** that have been conflated in the LM-based SE literature for the last 18 months: (a) "use a codec-derived prior" and (b) "predict discrete tokens autoregressively". The Zhao & Madhu result says (a) is doing most of the work, and (b) may be costing you continuous-geometry information without paying you back. If it generalises, it's an argument that the most productive direction is *non-autoregressive continuous-latent SE with a quantiser-shaped prior* — not the autoregressive token LM that L3-SE and the broader codec-LM lineage assumed.
+
+Hearing-aid relevance is indirect for now — model still well outside the 1–3 mW envelope — but the framing matters: a non-autoregressive continuous-latent generative SE removes the **sequential token-decoding latency floor** that has been the single biggest blocker for any on-ear deployment of LM-based SE. See [[companion-phone-speech-pipeline]] for the realistic deployment path on a 12–24 month horizon.
 
 ## Relationship to Other SE Paradigms
 
@@ -94,3 +109,4 @@ This is the central concern for hearing-aid applications of LM-based SE. See [[l
 
 ## Sources
 - [L3-SE — Reducing Linguistic Hallucination in LM-Based Speech Enhancement (Wang et al., May 2026)](../../sources/l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md) — arXiv:2605.08608, noise-invariant acoustic-semantic distillation; anchor source for this page
+- [cNAC-SE / dNAC-SE — Robust Generative SE with VQ Neural Audio Codec (Zhao & Madhu, Jun 2026)](../../sources/arxiv-2606-16464-cnac-se-vq-codec-zhao-madhu-jun-2026.md) — arXiv:2606.16464, head-to-head continuous-latent vs discrete-token under the same codec backbone; mechanism claim that VQ's robustness is clean-prior-constrained regularisation, transferable to continuous methods.

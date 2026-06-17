@@ -3124,3 +3124,70 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 - Did not create a new wiki page for any of the three net-new sources — each cleanly extends an existing concept page (CI AI / automated audiometry / Starkey entity / Auracast). The bar for new pages today was the substrate-shift criterion; these are incremental updates to existing substrates.
 
 **Pages touched this ingest: 8** (3 new sources, 4 existing wiki pages updated, +1 log entry).
+
+---
+
+## 2026-06-17 — LinkedIn-Pair Ingest (Band-Axis Triangle + Speech-as-Cognition Pipeline)
+
+**Operation:** Ingested the underlying arXiv sources for the 2026-06-17 daily LinkedIn pair into the wiki.
+
+### Source files — net-new (4):
+- **`sources/arxiv-2606-12662-basenet-band-adapted-se-jun-2026.md`** — Martins Gomes & Capman, arXiv:2606.12662, 10 Jun 2026. **BASENet**: CRN-family SE with Bark-scale critical-band partition, scaled-capacity per-band encoder, **linear-complexity cross-band attention** over frequency-pooled per-band representations, inverted residual + dense connectivity backbone. **3.55 PESQ / ~96% STOI / 0.83 M params / 7.3 GMACs** on VoiceBank+DEMAND; **causal variant 3.44 PESQ** surpasses several non-causal baselines — streaming-capable.
+- **`sources/arxiv-2606-18054-cognitive-linguistic-features-dementia-jun-2026.md`** — Xu, Kadambi, Goldinger, Berisha, Mueller, Liss, arXiv:2606.18054, 16 Jun 2026. Seven cognitive-linguistic constructs for Cookie Theft; Claude 3.5 Sonnet emits **both score and explanation**; **85% accuracy on ADReSS**; **3.99/5 expert agreement on generated explanations** (the auditability number that matters for a clinical screening tool).
+- **`sources/arxiv-2606-18019-llm-dementia-depression-clinical-interviews-jun-2026.md`** — Braun, Rüggeberg, Ranzenberger, Lehfeld, Hillemacher, Bocklet, Riedhammer (TH Nürnberg + Paracelsus Medical Univ), arXiv:2606.18019, 16 Jun 2026. 154 German history-taking interviews; open-weights Mistral 3.1 / DeepHermes / Qwen3 score GDS (dementia) + observer-based Global Depression Scale. **MAE 0.60 depression zero-shot**, **MAE 0.78 dementia with structured feature extraction**, **up to 35% error reduction**; pause-enriched transcripts approach human-transcription quality. Open-weights at clinical-grade quality removes the closed-API blocker for on-device / on-prem deployment.
+- **`sources/arxiv-2606-17254-cross-lingual-alzheimer-detection-jun-2026.md`** — Girish et al., arXiv:2606.17254, 16 Jun 2026. Zero-shot cross-lingual Alzheimer detection via **language-invariant multimodal bi-geometric adversarial learning**.
+
+### New wiki pages (2):
+- **`wiki/syntheses/band-axis-shared-coordinate-system-june-2026.md`** — three independent groups, eleven days, **same operator (cross-band attention) on the same axis (Bark / critical bands)** at three different layers of the auditory pipeline: BiEAR at the periphery (Jun 5), BASENet at SE (Jun 10), FAConformer at the cortex (Jun 12). Names the unbuilt unified band-axis control bus, the end-to-end three-module demo, and band-conditioned HASPI/STOI/HASQI as the missing benchmark piece.
+- **`wiki/syntheses/speech-as-passive-cognition-biomarker-pipeline-june-2026.md`** — the microphone → elderly-adapted ASR → LLM cognitive-linguistic scoring → longitudinal trajectory pipeline became fully populated on arXiv in **nine days, Jun 8 (Jialu Li pediatric adapter) → Jun 15 (CUHK elderly-ASR pair) → Jun 16 (three LLM cognitive-scoring papers)**. Frames the hearing aid as the longest-baseline ear-worn passive cognition sensor any consumer industry has shipped. Names the **three unbuilt pieces**: (1) PCCP regulatory shape with the construct rubric as the anchored artefact while ASR/LLM update inside pre-specified bounds, (2) daily-life prompt substrate beyond Cookie Theft, (3) false-positive clinical-harm cost (anxiety, behavioural change, premature healthcare utilisation, insurance friction) — not addressed by any paper in the nine-day window.
+
+### Existing wiki page updates (4):
+- **`wiki/concepts/speech-enhancement-neural-networks.md`** — added "Band-Adapted CRN — BASENet (Martins Gomes & Capman, Jun 2026)" subsection between the Implicit RIR Encoders subsection and the legacy CRN/Conv-TasNet block; added BASENet source to `sources:` frontmatter; bumped `updated:` to 2026-06-17 and rewrote `last_change:` to reflect the BASENet addition and the band-axis-triangle framing.
+- **`wiki/concepts/auditory-attention-decoding.md`** — extended the FAConformer "Recent Academic Advances" entry to close the band-axis duo into a triangle with BASENet at the SE mid-stage; added cross-link to the new band-axis synthesis. (No frontmatter sources change — BASENet sits in the SE concept page, not the AAD page.)
+- **`wiki/concepts/efferent-moc-feedback-hearing-ai.md`** — extended the "Cortex × Periphery Band-Axis Duo (June 2026)" section with a paragraph noting that the duo became a triangle on Jun 10 with BASENet at the SE mid-stage; linked the BASENet source and the new synthesis.
+- **`wiki/concepts/digital-phenotyping-cognitive-decline.md`** — added new "Audio-to-Cognition Pipeline — June 2026 Snapshot" section covering the Xu / Braun / Girish trio; added 3 new sources to `sources:` frontmatter; added 3 cross-links (`elderly-speech-recognition`, `medical-domain-edge-llms`, new synthesis) to `related:` and Related Pages; added 3 new entries to the Sources list; bumped `updated:` to 2026-06-17.
+- **`wiki/concepts/elderly-speech-recognition.md`** — added 3 downstream-scoring sources to `sources:` frontmatter and to the Sources list; added the biomarker-pipeline synthesis to `related:`; bumped `updated:` to 2026-06-17. (No new prose section — the page already covers the upstream ASR substrate; the scoring layer lives in `digital-phenotyping-cognitive-decline.md` and the new synthesis.)
+
+### Index update
+- **`wiki/index.md`** — added the two new synthesis entries to the Syntheses table; updated the "Last updated" preamble paragraph with a detailed 2026-06-17 ingest summary; pushed the previous 2026-06-16 paragraph down to "Previously updated".
+
+### Editorial notes
+- **Did NOT create new concept pages.** Per the surgical-changes rule, each net-new artefact fit cleanly into an existing concept page or one of the two new syntheses. The bar for new concept pages was not met.
+- **Did NOT update `concepts/dnn-architectures-hearing-aids.md`** or `concepts/hearing-loss-dementia-link.md` even though both are adjacent. Neither needed structural changes from this ingest — BASENet is a CRN-family extension that lives most naturally in `speech-enhancement-neural-networks.md`, and `hearing-loss-dementia-link.md` is an epidemiology page, not a measurement-pipeline page. The pipeline framing lives in `digital-phenotyping-cognitive-decline.md`.
+- **Did NOT create new entity pages** for the TH Nürnberg / Paracelsus Medical Univ Braun et al. group or the Girish et al. group. The Braun group is a credible candidate for a future entity page once a second corroborating paper appears; flagged for the next ingest pass.
+- **Open question for next pass:** `arxiv-2606-17254-cross-lingual-alzheimer-detection-jun-2026.md` was ingested with partial extraction (author affiliations, exact headline numbers). A follow-up read of the paper is warranted; the source file flags this explicitly.
+
+**Pages touched this ingest: 11** (4 new sources, 2 new syntheses, 4 existing wiki pages updated, +1 log entry, +1 index update).
+
+---
+
+## 2026-06-17 — Daily hearing+AI digest ingest
+
+**Operation:** Ingested the unique source from the 2026-06-17 daily hearing+AI digest email into the wiki. Other digest items mapped to already-ingested sources and did not need duplicate creation.
+
+### Source files — net-new (1):
+- **`sources/arxiv-2606-16464-cnac-se-vq-codec-zhao-madhu-jun-2026.md`** — Zhao & Madhu, arXiv:2606.16464, 15 Jun 2026. Head-to-head **cNAC-SE (continuous-latent)** vs **dNAC-SE (discrete-token)** under the same VQ neural-audio-codec backbone. Fully fine-tuned **cNAC-SE consistently outperforms all dNAC-SE variants** on **DNS-MOS**, leading among generative SE methods. Mechanism claim: VQ's robustness benefit is **clean-prior-constrained regularisation**, **transferable to other continuous methods** independent of the discretisation itself. Splits the codec-prior axis from the discrete-token axis that has been conflated in the LM-based SE literature since 2024.
+
+### Source files — already present, mapped only (8):
+- `dal-differentiable-auditory-loop-google-june-2026.md` — arXiv:2606.04103, DAL framework (digest item).
+- `fpga-sudormrf-feasibility-radboud-june-2026.md` — arXiv:2606.04221, fixed-point SuDoRM-RF++ on Kria KV260, 9.7 ms first-sample latency.
+- `arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md` — In-the-loop deep feedback cancellation.
+- `arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md` — Dual-branch SNN+ANN low-complexity SE.
+- `uais-tetteh-se-techniques-hearing-aids-review-2026.md` — Springer UAIS systematic review of SE techniques for hearing aids (digest's "systematic review" item).
+- `phonak-ai-excellence-award-march-2026.md` — Phonak Virto R Infinio / Ultra Sphere 2026 AI Excellence Award.
+- `airpods-hearing-aid-country-expansion-may-2026.md` — Apple AirPods Pro Hearing Aid feature expansion to Italy, Romania, Czechia (May 12, 2026 MacRumors article).
+- `hlaa-2026-convention-louisville-june-2026.md` — HLAA 41st annual convention, Louisville, Jun 10–12 2026.
+- `auracast-rollout-2025-2026.md` / `auracast-european-public-venue-rollout-2026.md` (multiple) — Bluetooth SIG 2026 Auracast outlook framing.
+
+### Existing wiki page updates (1):
+- **`wiki/concepts/llm-based-speech-enhancement.md`** — added new "**cNAC-SE / dNAC-SE (Zhao & Madhu, Jun 2026) — Codec Prior Without Discretisation**" subsection between the L3-SE section and the "Relationship to Other SE Paradigms" table. Explicitly names the two-axis split (codec-prior vs discrete-token) the Zhao & Madhu result enables, the non-autoregressive continuous-latent SE direction it points to, and the latency-floor implication for any future on-ear deployment of LM-based SE. Added Zhao & Madhu source to `sources:` frontmatter; added `companion-phone-speech-pipeline` to `related:`; added `vector-quantisation` tag; bumped `updated:` to 2026-06-17 with a `last_change:` note.
+
+### Index update
+- **`wiki/index.md`** — added a 2026-06-17 (digest) preamble paragraph summarising the cNAC-SE ingest and the page touched; pushed the earlier 2026-06-17 (LinkedIn) paragraph down to "Previously updated".
+
+### Editorial notes
+- **Did NOT create new concept or entity pages.** Per the surgical-changes rule, the cNAC-SE result fit cleanly into the existing `llm-based-speech-enhancement.md` page — adding a new concept page would have produced near-duplication with that one.
+- **Did NOT update `wiki/concepts/probabilistic-generative-models-hearing-ai.md`** despite the codec-prior cross-reference noted in the source file. The Zhao & Madhu paper does not introduce a new probabilistic-generative *model*; it observes that the existing VQ codec acts as a clean-prior regulariser. The cross-link in `related:` is sufficient — no structural update needed yet. Flagged for re-evaluation if a follow-up paper formalises the codec-as-Bayesian-prior framing.
+- **Did NOT touch `concepts/companion-phone-speech-pipeline.md`** despite the non-autoregressive latency-floor implication. Wanted to keep the page focused on already-shipping pipelines; the cNAC-SE direction is two-plus years from a realistic deployment. The cross-link from `llm-based-speech-enhancement.md` makes the connection discoverable without padding the companion-phone page with speculative content.
+
+**Pages touched this ingest: 3** (1 new source, 1 existing wiki page updated, +1 index update, +1 log entry).

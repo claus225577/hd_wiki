@@ -57,6 +57,8 @@ A complementary pairing emerged one week later, this time along the **frequency-
 
 Both papers treat **frequency bands as first-class structural objects with cross-band interactions**, but at opposite ends of the auditory pathway — BiEAR modulates band selectivity at the cochlea, FAConformer reads attention-modulated band activity off the cortex. The conceptual symmetry — periphery-side gain control and cortex-side decoding of the same band-axis — makes this an unusually clean target for closed-loop pairing. A future system that **decodes attention from cortical band activity (FAConformer) and steers periphery-side band gain (BiEAR-style)** would close the AAD loop *through* the auditory band structure rather than around it. See [[auditory-attention-decoding]] and the [FAConformer source](../../sources/arxiv-2606-14120-faconformer-aad-jun-2026.md).
 
+The duo became a **triangle** on Jun 10 2026 with **BASENet** ([[../../sources/arxiv-2606-12662-basenet-band-adapted-se-jun-2026]], Martins Gomes & Capman, arXiv:2606.12662), which inserts the same operator (linear-complexity cross-band attention over Bark-scale critical bands) at the **SE mid-stage** — three independent groups, three layers of the auditory pipeline, eleven days, same axis. See synthesis [[../syntheses/band-axis-shared-coordinate-system-june-2026]].
+
 ## Implications for the Field
 
 - **Filterbank as first-class adaptive object.** Treating the filterbank as a learned, time-varying transform reframes binaural processing from "pick the right beam" to "pick the right basis."

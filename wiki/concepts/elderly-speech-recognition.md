@@ -2,9 +2,9 @@
 title: Elderly Speech Recognition
 type: concept
 created: 2026-06-16
-updated: 2026-06-16
-sources: [arxiv-2606-16539-elderly-asr-online-adaptation.md, arxiv-2606-16546-elderly-asr-pseudo-labeling.md, cross-lifespan-diarization-usc-may-2026.md]
-related: [cross-lifespan-speech-models.md, companion-phone-speech-pipeline.md, digital-phenotyping-cognitive-decline.md, hearing-loss-dementia-link.md, closed-loop-data-flywheel.md, continual-learning-hearing-ai.md, ../entities/dementiabank-pitt-dataset.md, ../entities/jccocc-moca-dataset.md, ../entities/xunying-liu-cuhk-speech-group.md]
+updated: 2026-06-17
+sources: [arxiv-2606-16539-elderly-asr-online-adaptation.md, arxiv-2606-16546-elderly-asr-pseudo-labeling.md, cross-lifespan-diarization-usc-may-2026.md, arxiv-2606-18054-cognitive-linguistic-features-dementia-jun-2026.md, arxiv-2606-18019-llm-dementia-depression-clinical-interviews-jun-2026.md, arxiv-2606-17254-cross-lingual-alzheimer-detection-jun-2026.md]
+related: [cross-lifespan-speech-models.md, companion-phone-speech-pipeline.md, digital-phenotyping-cognitive-decline.md, hearing-loss-dementia-link.md, closed-loop-data-flywheel.md, continual-learning-hearing-ai.md, ../entities/dementiabank-pitt-dataset.md, ../entities/jccocc-moca-dataset.md, ../entities/xunying-liu-cuhk-speech-group.md, ../syntheses/speech-as-passive-cognition-biomarker-pipeline-june-2026.md]
 tags: [elderly-asr, dysarthric-speech, speaker-adaptation, pseudo-labeling, audio-textual-prompts, learnable-prompts, dementiabank, jccocc-moca, cantonese, english, cross-lifespan, hearing-aids, dementia-screening]
 ---
 
@@ -81,3 +81,6 @@ For hearing-AI specifically, the unifying point is that **OEMs do not need to tr
 - [Decoding while Adapting (Deng et al., Jun 15 2026)](../../sources/arxiv-2606-16539-elderly-asr-online-adaptation.md) — inference-time zero-shot online speaker adaptation via audio-textual prompts
 - [Confidence-Guided Pseudo-Labeling (Deng et al., Jun 15 2026)](../../sources/arxiv-2606-16546-elderly-asr-pseudo-labeling.md) — training-time confidence curriculum + learnable speaker prompts
 - [Cross-Lifespan Speaker Diarization (Xu, Feng & Narayanan, May 2026)](../../sources/cross-lifespan-diarization-usc-may-2026.md) — frames the older-edge failure mode
+- [Xu et al. — Cognitive-linguistic Construct Rubric for Dementia (Jun 16 2026)](../../sources/arxiv-2606-18054-cognitive-linguistic-features-dementia-jun-2026.md) — downstream LLM scoring layer that consumes the elderly-ASR transcript
+- [Braun et al. — German Clinical Interview LLM Scoring (Jun 16 2026)](../../sources/arxiv-2606-18019-llm-dementia-depression-clinical-interviews-jun-2026.md) — downstream open-weights LLM scoring; pause-enriched transcripts close most of the human-transcription gap
+- [Girish et al. — Zero-Shot Cross-Lingual Alzheimer Detection (Jun 16 2026)](../../sources/arxiv-2606-17254-cross-lingual-alzheimer-detection-jun-2026.md) — downstream cross-lingual scoring layer
