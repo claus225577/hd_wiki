@@ -2,15 +2,39 @@
 title: AI in Cochlear Implants
 type: concept
 created: 2026-04-15
-updated: 2026-06-16
-sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md, dnn-noise-reduction-intelligibility-2026.md, completely-implantable-cochlear-implants-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, end-to-end-audiovisual-ci-sound-coding-arxiv-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, cochlear-nucleus-nexa-smart-implant-2026.md, lucia-bilateral-ci-trial-may-2026.md, jamia-open-ci-eligibility-audiogram-2026.md]
-related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, ../entities/vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, precision-drug-delivery-inner-ear.md, ../entities/envoy-medical.md, hearing-aid-chip-architectures.md, compute-in-memory.md, state-space-models.md, mamba-architecture.md, gene-therapy-hearing.md, ../entities/regeneron.md, ../entities/cochlear-ltd.md, software-defined-medical-implants.md, longitudinal-hearing-phenotyping.md, ../entities/aci-alliance-ci2026.md, ../syntheses/cochlear-implant-access-economics.md]
-tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics, fully-implantable, gene-therapy]
+updated: 2026-06-18
+last_change: 2026-06-18 — Added "Foundational Layer Recognition — 2026 Merkin Prize" section after the Merkin Prize was announced June 17 2026 to Clark, Hochmair, Hochmair, Merzenich, Wilson. Framed Blake Wilson's 1989 CIS strategy as the persistent fixed-rule signal-processing primitive on top of which the ML/AI layer (Cochlear Nucleus Nexa Jan 2026, BiEAR/FAConformer/BASENet June 2026 band-axis cluster) is being built. Cross-referenced to the new source file merkin-prize-cochlear-implant-pioneers-june-2026.md and to the band-axis synthesis.
+sources: [deep-learning-framework-cochlear-implants-2025.md, avse-ecs-audiovisual-ci-2025.md, ml-ci-speech-perception-multicenter-2025.md, pediatric-ci-language-prediction-transfer-learning-2025.md, ai-cochlear-implant-innovations-review-2025.md, advanced-bionics-research-collaboration-ci-april-2026.md, dnn-noise-reduction-intelligibility-2026.md, completely-implantable-cochlear-implants-april-2026.md, dat-cftnet-ci-speech-enhancement-icassp-2026.md, tokense-mamba-ci-speech-enhancement-2026.md, end-to-end-audiovisual-ci-sound-coding-arxiv-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, cochlear-nucleus-nexa-smart-implant-2026.md, lucia-bilateral-ci-trial-may-2026.md, jamia-open-ci-eligibility-audiogram-2026.md, merkin-prize-cochlear-implant-pioneers-june-2026.md]
+related: [dnn-architectures-hearing-aids.md, on-device-ml-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, ../entities/vcca-computational-audiology.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, precision-drug-delivery-inner-ear.md, ../entities/envoy-medical.md, hearing-aid-chip-architectures.md, compute-in-memory.md, state-space-models.md, mamba-architecture.md, gene-therapy-hearing.md, ../entities/regeneron.md, ../entities/cochlear-ltd.md, software-defined-medical-implants.md, longitudinal-hearing-phenotyping.md, ../entities/aci-alliance-ci2026.md, ../syntheses/cochlear-implant-access-economics.md, ../syntheses/band-axis-shared-coordinate-system-june-2026.md]
+tags: [cochlear-implant, ci, deep-learning, speech-recognition, outcomes-prediction, sound-coding, pediatric, advanced-bionics, fully-implantable, gene-therapy, cis-strategy, merkin-prize, foundational-layer]
 ---
 
 # AI in Cochlear Implants
 
 Cochlear implants (CIs) are surgically implanted devices that bypass damaged hair cells and directly stimulate the auditory nerve via an electrode array. AI and deep learning are being applied across the CI pipeline: from pre-surgical outcome prediction, to signal processing, to post-surgical rehabilitation.
+
+## Foundational Layer Recognition — 2026 Merkin Prize
+
+On **June 17, 2026**, the $400,000 Richard N. Merkin Prize in Biomedical Technology was awarded jointly to five cochlear-implant pioneers — Graeme Clark, Erwin Hochmair, Ingeborg Hochmair, Michael Merzenich, and Blake Wilson — for the foundational work underpinning every CI shipping today. The award sits at the **base of the CI stack** that current ML/AI work is layering on top of.
+
+Key contributions:
+- **Hochmair & Hochmair (1977)** — first multi-channel microelectronic CI, implanted in Vienna December 16, 1977. The hardware substrate the Cochlear Nucleus Nexa system, MED-EL, and Advanced Bionics all extend.
+- **Graeme Clark (1985)** — first FDA-approved multi-channel implant; speech-coding insights enabling spoken-language understanding without lipreading.
+- **Michael Merzenich** — established the neurophysiological basis; led commercialization through what became **[[../entities/advanced-bionics]]** (now a Sonova subsidiary).
+- **Blake Wilson (1989)** — developed **Continuous Interleaved Sampling (CIS)**, the sound-coding strategy that pushed mean speech understanding past 80% across CI users. **CIS remains the default in every shipping CI 35+ years later** — the canonical example of a fixed-rule signal-processing primitive that ML extensions wrap rather than replace.
+
+### Why This Matters for AI/ML Work in CIs
+The Merkin Prize announcement is the right reference point for framing where ML adds value in CIs: **a learnable shell on top of a foundational primitive that was right the first time.** Concretely:
+
+| Layer | Foundational (Merkin-recognized) | ML/AI Extension (2026) |
+|-------|----------------------------------|------------------------|
+| Hardware substrate | Hochmair multi-channel implant (1977) | Cochlear Nucleus Nexa on-implant ML chip (Jan 2026); fully-implantable candidates (April 2026) |
+| Sound coding | Wilson CIS (1989) | DAT-CFTNet, TokenSE-Mamba, end-to-end audiovisual CI sound coding (2026 arXiv) |
+| Band-axis processing | Clark speech-coding insights | BiEAR / FAConformer / BASENet band-axis cluster (June 2026); see [[../syntheses/band-axis-shared-coordinate-system-june-2026]] |
+| Outcome / referral | Merzenich neurophysiology + early trials | JAMIA Open CI eligibility from audiograms (2026); JAMA pre-implant MRI language-outcome prediction (2025) |
+| Commercialization | Merzenich → Advanced Bionics | [[../entities/sonova-ag]] CI division; Spiral Therapeutics drug-delivery investment (Apr 2026) |
+
+Source: [[../../sources/merkin-prize-cochlear-implant-pioneers-june-2026]]. Ceremony scheduled September 2026.
 
 ## What Makes CI Different from Hearing Aids
 

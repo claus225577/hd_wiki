@@ -2,10 +2,11 @@
 title: Audiologist Workforce Shortage
 type: concept
 created: 2026-04-19
-updated: 2026-06-08
-sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md, listen-up-kentucky-may-2026.md, auditdata-audiologist-time-survey-jun-2026.md]
+updated: 2026-06-18
+last_change: Added BIHIMA 2026 UK&I audiologist survey as transatlantic counterpart to Auditdata US instrument (digest 2026-06-18).
+sources: [audiologist-shortage-asha-sciencedirect-2025.md, hearing-aids-market-14b-by-2030-april-2026.md, aaa-2026-leadership-panel-may.md, listen-up-kentucky-may-2026.md, auditdata-audiologist-time-survey-jun-2026.md, bihima-2026-audiologist-survey-launch-jun-2026.md]
 related: [teleaudiology.md, otc-hearing-aids.md, hearing-aid-market-dynamics.md, automated-audiometry.md, hearing-care-funnel-attribution.md, ../syntheses/ai-understanding-gap-hearing-industry.md, precision-drug-delivery-inner-ear.md, ../entities/who-hearing-program.md, ../syntheses/cochlear-implant-access-economics.md, ../entities/aci-alliance-ci2026.md]
-tags: [workforce, audiology, shortage, access, rural-health, demographics, telehealth, policy, demand-side]
+tags: [workforce, audiology, shortage, access, rural-health, demographics, telehealth, policy, demand-side, uk-ireland]
 ---
 
 # Audiologist Workforce Shortage
@@ -81,6 +82,12 @@ On **4 June 2026**, Auditdata launched the first US-wide industry survey specifi
 
 Significance: previous quantitative instruments for the workforce shortage have measured *headcount* (ASHA, BLS) and *geographic distribution* (ScienceDirect). This is the first that quantifies the *administrative-burden mechanism* — i.e., the lever back-office AI must move to convert the AAA 2026 panel framing into measurable clinic-day reclaim. The published benchmark will become a primary citable data point for the back-office-AI thesis. See [[../../sources/auditdata-audiologist-time-survey-jun-2026.md]].
 
+### 8. BIHIMA 2026 UK & Ireland Audiologist Survey — Transatlantic Counterpart (Jun 2026)
+
+In mid-June 2026, **BIHIMA** opened its **2026 annual audiologist survey** for UK and Ireland hearing-care professionals across all practice settings (NHS, independent, multiple/chain, manufacturer-owned). The 2026 instrument explicitly pulls on **workforce-shortage signals, AI-tooling adoption in clinical workflow, patient-demand shifts (including OTC / Apple AirPods encroachment), and system-reform priorities**. Building on the 2024/2025 edition, it's the first UK/Ireland instrument that asks specifically about AI in routine clinical workflow.
+
+Significance: pairs with the Auditdata US time-crisis survey to form a **transatlantic measurement axis** on the back-office-AI thesis. The two surveys differ in design (Auditdata = admin time-loss focus; BIHIMA = broader workforce + AI-adoption + demand) but both will publish 2026 aggregated benchmarks. Cross-comparison will let the workforce thesis be stress-tested across regulatory regimes (NHS vs US payer-mix), and BIHIMA's unique NHS-vs-independent split will reveal whether public-sector audiology lags private-sector AI-tooling adoption — a structural question that has no US analogue. See [[../../sources/bihima-2026-audiologist-survey-launch-jun-2026.md]].
+
 ## Market Impact
 
 The MarketsandMarkets report (April 2026) specifically identifies the audiologist/ENT shortage as a **critical factor** shaping the $10.35B-to-$14.42B hearing aids market growth trajectory:
@@ -128,3 +135,4 @@ Initiatives like **[Listen Up Kentucky](../../sources/listen-up-kentucky-may-202
 - [Hearing Aids Market $14.42B by 2030](../../sources/hearing-aids-market-14b-by-2030-april-2026.md) — Workforce gap as market driver
 - [Listen Up Kentucky — ADA + WSA + KAA, May 2026](../../sources/listen-up-kentucky-may-2026.md) — Demand-side awareness pilot that pairs with the supply-side workforce constraint
 - [Auditdata Audiologist Time-Crisis Survey — 4 Jun 2026](../../sources/auditdata-audiologist-time-survey-jun-2026.md) — First quantitative instrument on the administrative-burden mechanism (TPA portals, prior auth, documentation)
+- [BIHIMA 2026 UK & Ireland Audiologist Survey — Jun 2026](../../sources/bihima-2026-audiologist-survey-launch-jun-2026.md) — Transatlantic counterpart; broader workforce + AI-tooling-adoption + demand instrument; NHS-vs-independent split has no US analogue

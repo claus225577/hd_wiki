@@ -2,10 +2,11 @@
 title: Model Compression for Hearing AI
 type: concept
 created: 2026-04-18
-updated: 2026-05-14
-sources: [google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, open-source-speech-ai-edge-native-april-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, google-gemma-4-open-models-april-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md]
-related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../comparisons/on-device-vs-cloud-ml.md, ../entities/google-research.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, synthetic-data-for-hearing-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md]
-tags: [quantization, compression, pruning, distillation, edge-ai, efficiency, compute-in-memory, acoustic-semantic-distillation]
+updated: 2026-06-18
+last_change: 2026-06-18 — Added "Algebraic Weight Sharing (Quaternion Networks)" subsection under Core Techniques for QC-GAN (Yamauchi et al., arXiv:2606.18611, 17 Jun 2026). Hamilton-product structure forces a ~4× parameter reduction per layer that the model cannot trade away — distinct from quantization (precision-side) and pruning (post-hoc). Compact QC-GAN: 35K parameters / PESQ 3.23 on VoiceBank+DEMAND.
+sources: [google-turboquant-iclr-2026.md, prismml-ternary-bonsai-158bit-april-2026.md, wireless-hearables-programmable-speech-ai-accelerators-arxiv-2025.md, aizip-tiny-ai-hearing-devices-2026.md, michigan-compute-in-memory-rram-ssm-nature-2026.md, open-source-speech-ai-edge-native-april-2026.md, adobe-speechmatics-on-device-stt-april-2026.md, google-gemma-4-open-models-april-2026.md, efficient-on-device-speech-enhancement-qat-2026.md, l3-se-linguistic-hallucination-llm-speech-enhancement-may-2026.md, arxiv-2606-18611-qc-gan-quaternion-conformer-jun-2026.md]
+related: [small-language-models-edge-ai.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../comparisons/on-device-vs-cloud-ml.md, ../entities/google-research.md, mixture-of-experts.md, compute-in-memory.md, state-space-models.md, synthetic-data-for-hearing-ai.md, llm-based-speech-enhancement.md, linguistic-hallucination-speech-enhancement.md, speech-enhancement-neural-networks.md, ../syntheses/on-chip-hearing-ai-levers-june-2026.md]
+tags: [quantization, compression, pruning, distillation, edge-ai, efficiency, compute-in-memory, acoustic-semantic-distillation, quaternion-networks, algebraic-weight-sharing, hamilton-product]
 ---
 
 # Model Compression for Hearing AI
@@ -33,6 +34,23 @@ Reducing the numerical precision of model weights and activations:
 - **Ternary (1.58-bit)** — Weights restricted to {-1, 0, +1}; PrismML Ternary Bonsai (April 2026) achieves 75.5 avg benchmark at 1.75 GB for an 8B model — 9x smaller than FP16. Eliminates multiplications entirely (additions/subtractions only). See below.
 - **Post-training quantization (PTQ)** — Applied after training, no retraining needed (e.g., TurboQuant)
 - **Quantization-aware training (QAT)** — Model trained with quantization in the loop; better accuracy but requires full retraining. April 2026 results show INT8 QAT achieves **3x speedup on ARM** for speech enhancement with minimal quality loss — validating QAT as superior to PTQ for hearing-relevant audio tasks
+
+### Algebraic Weight Sharing (Quaternion Networks)
+A structurally different compression lever from quantization (precision) and pruning (post-hoc removal). **Quaternion neural networks** replace real-valued weights with quaternion-valued weights, and replace standard matrix multiplication with the **Hamilton product**. The algebraic constraint forces a ~4× parameter reduction per layer: one quaternion-valued layer parametrically substitutes for ~4 real-valued layers, and the constraint is baked in at training time rather than imposed post-hoc.
+
+#### QC-GAN (Yamauchi et al., arXiv:2606.18611, 17 Jun 2026)
+First SE-specific quaternion-conformer GAN published at hearing-aid silicon scale.
+
+| Variant | Parameters | PESQ (VoiceBank+DEMAND) |
+|---------|-----------|--------------------------|
+| Full QC-GAN | 0.89 M | 3.48 — comparable to SOTA at <50% the size |
+| Compact QC-GAN | **0.035 M (35K)** | **3.23** — first 2026 arXiv SE result living natively inside a HA memory budget |
+
+The Hamilton product encodes magnitude + phase via structured weight sharing. **Phase is preserved by construction** — the part real-valued SE silently discards. MetricGAN training aligns optimization with perceptual quality, not waveform/spectrogram MSE.
+
+For stereo-mic HAs, the L/R complex spectrogram (L mag, L phase, R mag, R phase) maps natively onto a quaternion — replacing the hand-crafted dual-stream complex-spectrogram architectures the field has been building. This native-multichannel use case is not directly evaluated in the QC-GAN paper.
+
+Catalogued as **Lever 5** in the [[../syntheses/on-chip-hearing-ai-levers-june-2026]] synthesis (memory bandwidth, sparsity, inference steps, frame rate, quaternion weight sharing — all separable, all combinable).
 
 ### Knowledge Distillation
 Training a small "student" model to mimic a large "teacher" model:

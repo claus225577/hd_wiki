@@ -2,12 +2,14 @@
 title: The On-Chip Hearing-AI Levers — June 2026 Convergence
 type: synthesis
 created: 2026-06-12
-updated: 2026-06-14
+updated: 2026-06-18
+last_change: 2026-06-18 — Added Lever 5 (Quaternion Weight Sharing) for QC-GAN (Yamauchi et al., arXiv:2606.18611, 17 Jun 2026). Compact variant: 35K parameters / PESQ 3.23 on VoiceBank+DEMAND — first arXiv result this year living natively inside a hearing-aid memory budget. Full variant: 0.89M parameters / PESQ 3.48. Hamilton-product weight sharing collapses ~4 real-valued layers into 1 quaternion-valued layer with phase preserved by construction. MetricGAN training aligns with perceptual metrics. The cluster is now five orthogonal axes — the strategic-implications section, the table, and the cross-axis benchmark "unbuilt piece" all updated to reflect the fifth lever.
 sources:
   - fpga-sudormrf-feasibility-radboud-june-2026.md
   - arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md
   - arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md
   - arxiv-2606-12328-halo-half-frame-rate-se-jun-2026.md
+  - arxiv-2606-18611-qc-gan-quaternion-conformer-jun-2026.md
 related:
   - ../concepts/on-device-ml-hearing-aids.md
   - ../concepts/hearing-aid-chip-architectures.md
@@ -21,11 +23,11 @@ tags: [on-device-ml, edge-ai, model-compression, speech-enhancement, spiking-neu
 # The On-Chip Hearing-AI Levers — June 2026 Convergence
 
 ## Observation
-In the two weeks of June 4–10 2026, four hearing-aid-relevant arXiv papers each opened a **different architectural lever** on the same underlying problem: how to make a useful speech-enhancement (or related) DNN fit inside a hearing-aid power and latency envelope.
+In the four weeks of June 4–17 2026, **five** hearing-aid-relevant arXiv papers each opened a **different architectural lever** on the same underlying problem: how to make a useful speech-enhancement (or related) DNN fit inside a hearing-aid power and latency envelope.
 
-This page catalogs the four levers, why they are separable, and what the cross-product implies for OEM strategy.
+This page catalogs the five levers, why they are separable, and what the cross-product implies for OEM strategy.
 
-## The Four Levers
+## The Five Levers
 
 ### 1. Memory Bandwidth (arXiv:2606.04221, Olalere et al., Radboud + Columbia, Jun 4)
 **Finding:** On the Xilinx Kria KV260 embedded FPGA, first-sample latency of SuDoRM-RF++ tracks with on-chip parameter caching, **not** arithmetic throughput. Denoising: 9.7 ms (within clinical 10 ms threshold). Separation: 16.0 ms (over).
@@ -47,6 +49,11 @@ This page catalogs the four levers, why they are separable, and what the cross-p
 
 **Implication:** STFT-based SE backbones have been frame-rate-bound at the analysis-window rate even when most inter-frame activity is redundant. HALO is the first general-purpose plug-in that targets this redundancy without touching the STFT contract downstream HA-DSP stages assume.
 
+### 5. Quaternion Weight Sharing (arXiv:2606.18611, QC-GAN, Jun 17)
+**Finding:** Replace the real-valued conformer in a MetricGAN-trained SE generator with a **Quaternion Conformer**. Hamilton-product weight sharing parametrically substitutes for ~4 real-valued layers with one quaternion-valued layer, with algebraic constraints baked in rather than learned. Phase is preserved by construction. Compact variant: **0.035 M parameters → PESQ 3.23 on VoiceBank+DEMAND**; full variant: 0.89 M parameters → PESQ 3.48. Comparable to SOTA at less than half their size. Validated on DNS-Challenge 3 for generalization.
+
+**Implication:** 35K parameters is the first arXiv result this year living natively inside a hearing-aid memory budget (<40KB in INT8). The lever is algebraic — Hamilton-product structure forces a parameter reduction the model cannot trade away, unlike pruning (post-hoc) or quantization (precision-side). Phase-preservation is a structural bonus the SE field has been spending architectural ingenuity to approximate via dual-stream complex-spectrogram designs. For stereo-mic hearing aids the L/R complex spectrogram maps natively onto a quaternion.
+
 ## Why the Levers Are Separable
 Each lever attacks a **different axis** of the cost function:
 
@@ -56,6 +63,7 @@ Each lever attacks a **different axis** of the cost function:
 | Sparsity | Active units × time | Event-driven SNN branches |
 | Inference steps | Forward passes per sample | OT-geodesic learned velocity |
 | Frame rate | Temporal samples processed | Adaptive temporal subsampling |
+| Quaternion weight sharing | Parameters per layer | Hamilton-product algebraic constraint |
 
 A team that picks **only one lever** will be outcompeted by a team that combines two or three. The competitive frontier is the **cross-product**, not a single architectural bet.
 
@@ -66,19 +74,22 @@ A team that picks **only one lever** will be outcompeted by a team that combines
 4. **Pairs with the brain-aligned-layer thread** ([[brain-aligned-speech-foundation-models]]) — choice of *which* foundation-model layer to tap is a **fifth axis** orthogonal to all four above.
 
 ## Unbuilt Pieces
-- **Cross-axis benchmark.** No public leaderboard reports SE quality jointly against bandwidth, sparsity, step-count, and frame-rate constraints. CPC4 candidate.
-- **Cross-axis tooling.** Training a model that exploits SNN sparsity AND one-step generative SE AND half frame rate AND streaming-friendly memory access patterns requires a joint training stack no published codebase ships.
-- **Silicon-aware NAS.** Neural architecture search conditioned on the actual target chip's memory hierarchy and event-driven compute capability.
+- **Cross-axis benchmark.** No public leaderboard reports SE quality jointly against bandwidth, sparsity, step-count, frame-rate, **and quaternion-weight-sharing** constraints. CPC4 candidate.
+- **Cross-axis tooling.** Training a model that exploits SNN sparsity AND one-step generative SE AND half frame rate AND streaming-friendly memory access patterns AND quaternion weight sharing requires a joint training stack no published codebase ships.
+- **Silicon-aware NAS.** Neural architecture search conditioned on the actual target chip's memory hierarchy, event-driven compute capability, and quaternion-algebra primitives.
+- **Quaternion + half-frame-rate combination.** Obvious next experiment (QC-GAN backbone × HALO drop-in); not yet published.
+- **Stereo-mic native quaternion evaluation.** L/R complex spectrogram → quaternion is the compelling HA use case QC-GAN does not directly evaluate.
 
 ## Related Pages
 - [[on-device-ml-hearing-aids]] — broader on-device ML context for hearing aids
 - [[hearing-aid-chip-architectures]] — the silicon side of the same problem
 - [[speech-enhancement-neural-networks]] — the largest population of HA models the levers apply to
 - [[model-compression]] — adjacent compression-side techniques (TurboQuant et al.)
-- [[brain-aligned-speech-foundation-models]] — fifth axis: which foundation-model layer to tap
+- [[brain-aligned-speech-foundation-models]] — sixth axis: which foundation-model layer to tap
 
 ## Sources
 - [Olalere et al. — FPGA SuDoRM-RF++ (arXiv:2606.04221)](../../sources/fpga-sudormrf-feasibility-radboud-june-2026.md) — memory-bandwidth-as-binding-constraint evidence
 - [Fan et al. — DBHN-Net (arXiv:2606.05911)](../../sources/arxiv-2606-05911-dbhn-net-snn-ann-fan-jun-2026.md) — sparsity / SNN+ANN lever
 - [Lu et al. — SB-RF (arXiv:2606.05575)](../../sources/arxiv-2606-05575-sbrf-schrodinger-bridge-jun-2026.md) — inference-step lever
 - [Zhao et al. — HALO (arXiv:2606.12328)](../../sources/arxiv-2606-12328-halo-half-frame-rate-se-jun-2026.md) — frame-rate lever
+- [Yamauchi et al. — QC-GAN (arXiv:2606.18611)](../../sources/arxiv-2606-18611-qc-gan-quaternion-conformer-jun-2026.md) — quaternion weight-sharing lever
