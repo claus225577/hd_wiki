@@ -3242,3 +3242,34 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 - **Did NOT create a "transatlantic workforce instrument pair" synthesis** for the BIHIMA + Auditdata pairing despite the symmetric structure. The two surveys are not yet *findings* — both are open instruments with publication dates later in 2026. A synthesis page now would be speculation; ingest the aggregated benchmarks when they publish, then write the synthesis on real data.
 
 **Pages touched this ingest: 4** (2 new sources, 2 existing wiki pages updated, +1 index update, +1 log entry).
+
+
+## 2026-06-20 — LinkedIn-research ingest
+
+**Operation:** Ingested research for the 2026-06-20 daily LinkedIn pair into the wiki.
+
+### Source files — net-new (3):
+- **`sources/vcca2026-pre-conference-workshops-jun-19-2026.md`** — VCCA 2026 pre-conference workshops, June 18–19, 2026. Three workshops; Workshops 2 (Saddler/DTU — "A Practical Introduction to Machine Learning for Hearing Science," hands-on Jupyter, materials on GitHub) and 3 (Banerjee/Harvard-MIT — "Computational Models of the Auditory Periphery: From Normal Hearing to Impairment") on June 19. First time the audiology community's flagship virtual conference runs a hands-on ML + computational-periphery lab pair in its foundational pre-conference slot, taught by audiology-systems researchers rather than borrowed from a CS department. Discipline-formation signal that pairs with the WCA Seoul 2026 "computational audiology becomes a track" observation (May 26 post) but is one notch deeper — host community now runs the tutorial.
+- **`sources/saddler-mcdermott-2024-nature-comms-temporal-coding.md`** — Saddler & McDermott, Nature Communications 2024. Task-optimized DNNs trained on biophysically faithful cochlear simulators as in-silico models of human auditory perception. High-fidelity auditory-nerve phase locking yields more human-like sound localization and speech perception. Critical finding: temporal-coding precision required to match human behavior is **task-dependent**, not universal — a falsifiable claim about how the auditory system uses neural timing.
+- **`sources/saddler-clarity6-2025-individualized-hi-models.md`** — Saddler, Dau, McDermott, Proceedings of the 6th Clarity Workshop 2025. Extension of the task-optimized-DNN program to HI listeners. Jointly optimized localization + recognition through individualized hearing-loss simulations predicts intelligibility. Calibration finding: **majority of variance in the prediction dataset comes from the hearing aid itself, not the listener** — a clarifying, slightly humbling result for "personalized AI" marketing claims.
+
+### Wiki pages created (2):
+- **`wiki/concepts/task-optimized-dnn-as-auditory-model.md`** — new concept page formalising the inverse-modelling framing (train DNN end-to-end on a peripheral simulator, compare mistakes to humans, treat the model as a falsifiable scientific hypothesis). Establishes the upstream/downstream relationship with `differentiable-cochlear-models` — task-optimized DNNs say *which* peripheral features are load-bearing and *against which behavioral target*; differentiable cochleae say *how* to train a hearing-aid network through that periphery. Open questions: stimulus-set generalization, per-wearer individualization scaling, multi-task objective design, regulatory PCCP framing of "fitting = training run."
+- **`wiki/entities/mark-saddler.md`** — DTU Hearing Systems postdoc, ex-McDermott lab MIT. Three research strands: auditory-nerve phase locking, pitch perception, hearing loss / assistive technology. VCCA 2026 Pre-Conference Workshop 2 instructor. Strategic-relevance section flagged for industry.
+
+### Existing wiki pages updated (1):
+- **`wiki/concepts/differentiable-cochlear-models.md`** — new "Upstream Pair: Task-Optimized DNNs as Auditory Models" sub-section explicitly placing the Saddler program as the upstream complement to DAL / CARFAC. Added 2 Saddler sources + `task-optimized-dnn-as-auditory-model` concept + `mark-saddler` entity to frontmatter; new tag `task-optimized-dnn`; bumped updated/last_change to 2026-06-20.
+
+### Existing source page extended (1):
+- **`sources/vcca2026-conference.md`** — pre-conference workshop bullet expanded with the three workshop titles, presenters, and a cross-link to the new pre-conference source file; added `date_updated: 2026-06-20`.
+
+### Index update
+- **`wiki/index.md`** — added a 2026-06-20 preamble paragraph summarising the LinkedIn-research ingest; pushed the 2026-06-18 (digest) paragraph down to "Previously updated."
+
+### Editorial notes
+- **Did NOT create an entity page for Annesya Banerjee** despite her Workshop 3 visibility. Her wiki footprint is currently a single workshop slot — the auditory-periphery-models framing already lives across `differentiable-cochlear-models` and the new `task-optimized-dnn-as-auditory-model`. If she or her Harvard/MIT auditory-periphery program publishes a substantive arXiv paper in the next 6 months, revisit and stand up the entity page.
+- **Did NOT create an entity page for Tobias Goehring** despite his VCCA 2026 Session 4A chair role. Same reasoning — a session chair role alone is too thin to support an entity page without risking a near-orphan. Re-evaluate when a Goehring-lab paper lands or his AAA / Cambridge group's program gets a non-conference citation.
+- **Did NOT update `entities/clarity-prediction-challenge`** with the Saddler-Dau-McDermott Clarity-6 result. The Clarity-6 paper is positioned as a key sub-finding of the task-optimized-DNN program in the new concept page rather than as a Clarity-Challenge benchmark milestone. The cross-link in `related:` on the new concept page is sufficient; full Clarity-page update reserved for when a Clarity Challenge leaderboard or methods-comparison paper lands.
+- **Did NOT create a `wiki/syntheses/discipline-formation-computational-audiology.md`** consolidating the WCA-Seoul-track + VCCA-workshops-foundational-lab observations. Two data points is a near-miss for a synthesis; queue for re-evaluation if a third independent discipline-formation signal lands (e.g. an audiology body's formal ML curriculum requirement, a journal launching an ML-track, or a regulatory body recognising computational audiology as a clinical specialty).
+
+**Pages touched this ingest: 7** (3 new sources, 2 new wiki pages, 1 wiki page updated, 1 source extended, +1 index update, +1 log entry).

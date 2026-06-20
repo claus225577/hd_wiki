@@ -2,10 +2,11 @@
 title: Differentiable Cochlear Models
 type: concept
 created: 2026-06-04
-updated: 2026-06-09
-sources: [dal-differentiable-auditory-loop-google-june-2026.md, biear-meng-2026-arxiv.md]
-related: [brain-aligned-speech-foundation-models.md, communication-accessibility-metric.md, on-device-ml-hearing-aids.md, efferent-moc-feedback-hearing-ai.md, ../entities/google-research.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
-tags: [differentiable-cochlea, carfac, jax, perceptual-loss, gradient-based-fitting, end-to-end-personalization, afferent, efferent-pair]
+updated: 2026-06-20
+sources: [dal-differentiable-auditory-loop-google-june-2026.md, biear-meng-2026-arxiv.md, saddler-mcdermott-2024-nature-comms-temporal-coding.md, saddler-clarity6-2025-individualized-hi-models.md]
+related: [brain-aligned-speech-foundation-models.md, communication-accessibility-metric.md, on-device-ml-hearing-aids.md, efferent-moc-feedback-hearing-ai.md, task-optimized-dnn-as-auditory-model.md, ../entities/google-research.md, ../entities/mark-saddler.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
+tags: [differentiable-cochlea, carfac, jax, perceptual-loss, gradient-based-fitting, end-to-end-personalization, afferent, efferent-pair, task-optimized-dnn]
+last_change: "2026-06-20 — added cross-reference to task-optimized-dnn-as-auditory-model concept page and Saddler sources; clarified the upstream/downstream relationship in a new sub-section."
 ---
 
 # Differentiable Cochlear Models
@@ -45,6 +46,17 @@ This reframes hearing-aid fitting as a per-wearer optimization in perceptual spa
 - Can per-wearer cochlear-parameter fitting be done from passive in-situ telemetry, or does it require a clinical session?
 - Regulatory framing: if every fitting is a training run, what does a predetermined change control plan look like?
 - Will OEMs build proprietary differentiable cochlear models or fork CARFAC?
+
+## Upstream Pair: Task-Optimized DNNs as Auditory Models (Added 2026-06-20)
+
+The differentiable-cochlea framing (loss substrate for end-to-end training) has a natural upstream complement in the **task-optimized-DNN-as-auditory-model** program of Mark Saddler (DTU / ex-McDermott MIT) — see [[task-optimized-dnn-as-auditory-model]].
+
+- **Differentiable cochlear models** (DAL, CARFAC-JAX) tell you *how* to train a hearing-aid network through the periphery — the cochlea is the optimization substrate.
+- **Task-optimized DNNs as auditory models** (Saddler & McDermott 2024 Nat Comms; Saddler, Dau, McDermott 2025 Clarity-6) tell you *which* peripheral features are load-bearing and *against which behavioral target* — the DNN is a falsifiable scientific hypothesis whose mistakes are compared to humans.
+
+In a mature stack, the task-optimized DNN is the population-level prior, the differentiable cochlea is the optimization machinery, and the deployed device is the policy that gets fit against both for a specific wearer.
+
+Saddler's VCCA 2026 pre-conference workshop (June 19, 2026) made a public Jupyter on-ramp to this program — relevant for the substrate-availability question (whoever controls the differentiable substrate effectively controls what "personalized hearing" optimizes toward).
 
 ## The Afferent / Efferent Pair (Added 2026-06-09)
 

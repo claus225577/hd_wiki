@@ -3,6 +3,7 @@ title: "VCCA2026 — 7th Virtual Conference on Computational Audiology"
 type: conference
 date_published: 2026-06-25
 date_ingested: 2026-04-15
+date_updated: 2026-06-20
 url: https://computationalaudiology.com/events/vcca2026/
 tags: [vcca, computational-audiology, conference, ai-audiology]
 ---
@@ -16,9 +17,11 @@ tags: [vcca, computational-audiology, conference, ai-audiology]
 
 ## Programme Structure
 
-### Pre-Conference Workshops (June 19)
-- Introductory, hands-on training in machine learning for audiology
-- Computational modelling workshop
+### Pre-Conference Workshops (June 18–19) — detail added 2026-06-20
+- **Workshop 1 (Thu Jun 18):** Dr. Natàlia Gorina-Careta (UVic) + Dr. Helia Relaño-Iborra (Eriksholm / Rochester) — "From Question to Evidence: Building Your Research and Scientific Communication in Audiology"
+- **Workshop 2 (Fri Jun 19):** Dr. Mark Saddler (DTU Hearing Systems, ex-McDermott lab MIT) — "A Practical Introduction to Machine Learning for Hearing Science" — hands-on Jupyter notebooks, materials on GitHub
+- **Workshop 3 (Fri Jun 19):** Annesya Banerjee (Harvard / MIT) — "Computational Models of the Auditory Periphery: From Normal Hearing to Impairment" — interactive simulations, no coding required
+- See standalone source: [[vcca2026-pre-conference-workshops-jun-19-2026]]
 
 ### Day 1 — June 25
 
