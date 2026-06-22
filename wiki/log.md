@@ -4,6 +4,50 @@ Chronological record of all wiki operations.
 
 ---
 
+## Digest — 2026-06-22
+**Operation:** Daily hearing+AI digest compiled and sent to door.punch_4o@icloud.com.
+**Items covered:** 11 (2 papers, 5 industry, 2 AI/ML, 2 worth-watching) + 5 quick stats.
+**Word count:** 608 (under 800-word cap).
+
+**Sources referenced (all already ingested — no new wiki pages or source files needed):**
+- `dal-differentiable-auditory-loop-google-june-2026.md` — DAL framework, arXiv:2606.04103
+- `ai-cochlear-implant-language-prediction-2025.md` / `pediatric-ci-language-prediction-transfer-learning-2025.md` — CUHK + Lurie / Northwestern pediatric CI MRI predictor
+- `phonak-ai-excellence-award-march-2026.md` — Phonak Virto R + Infinio Ultra Sphere 2026 AI Excellence Awards
+- `airpods-hearing-aid-country-expansion-may-2026.md` / `apple-airpods-india-italy-taiwan-may-21-2026.md` — Apple AirPods Hearing Aid 100+ country footprint
+- `veterans-hearing-aid-improvement-act-house-jun-2026.md` — VA 2-year OTC HA pilot bill
+- `signia-insio-charge-go-cic-ix-2026.md` — Signia Insio Charge&Go CIC IX US launch
+- `elehear-delight-cic-otc-ces-2026.md` — Elehear Delight CIC at CES 2026
+- `tiny-ml-to-tiny-dl-survey-acm-2026.md` — TinyML → Tiny DL survey, arXiv:2506.18927
+- `tinyml-stm32-hearing-aid-speech-enhancement-2026.md` — SSIES emergency-sound TinyML (Internet of Things)
+- `auracast-uk-live-theaters-april-2026.md` / `auracast-rollout-2025-2026.md` — Auracast UK venue + station deployments
+- `orka-o1-pro-bose-anc-awe-2026.md` — ORKA × Bose RIC w/ ANC at AWE 2026
+
+**New source file:** `hearing-ai-digest-2026-06-22.md` (digest record only; no concept/entity page changes).
+
+**Action:** No new wiki pages or new external-source files created — today's research fully overlapped with existing wiki coverage. Logged for traceability.
+
+---
+
+## Digest — 2026-06-20
+**Operation:** Daily hearing+AI digest compiled and sent to door.punch_4o@icloud.com.
+**Items covered:** 12 (3 papers, 5 industry, 2 AI/ML, 2 worth-watching).
+
+**Sources referenced (all already ingested — no new source files created):**
+- `arxiv-2507-07043-selective-noise-cancellation-review-2026.md` — Advances in Intelligent Hearing Aids review
+- `dal-differentiable-auditory-loop-google-june-2026.md` — DAL framework for hyper-personalized fitting
+- `gap-urgenet-urgent-challenge-icassp-2026.md` — ICASSP 2026 URGENT SE Challenge
+- `widex-allure-ai-launch-june-2026.md` — Widex Allure AI RIC launch
+- `orka-o1-pro-bose-anc-awe-2026.md` — ORKA × Bose ANC RIC at AWE 2026
+- `veterans-hearing-aid-improvement-act-house-jun-2026.md` — bipartisan VA OTC HA pilot bill
+- `airpods-hearing-aid-country-expansion-may-2026.md` — AirPods Hearing Aid country expansion
+- `hlaa-2026-convention-louisville-june-2026.md` — HLAA 41st convention
+- `ai-predicts-ci-language-outcomes.md` — CUHK/Lurie predict-to-prescribe pediatric CI
+- `tiny-ml-to-tiny-dl-survey-acm-2026.md` — TinyML → Tiny DL survey
+
+**Action:** No new wiki pages or sources created; today's research overlapped fully with existing wiki coverage. Logged for traceability only.
+
+---
+
 ## Lint — 2026-06-07
 **Pages scanned:** 103
 **Issues found:** 30
