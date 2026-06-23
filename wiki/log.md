@@ -3355,3 +3355,26 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 - **Did NOT update the band-axis synthesis (`syntheses/band-axis-shared-coordinate-system-june-2026.md`)** despite OVC and DDSP-EQ both being band-axis-friendly. The synthesis is tightly scoped to the BiEAR / BASENet / FAConformer three-paper June 2026 cluster; folding in OVC + DDSP-EQ would dilute its narrative. Cross-discoverability via the new concept pages is sufficient.
 
 **Pages touched this ingest: 11** (2 new sources, 3 new wiki pages, 5 existing wiki pages updated, +1 index update, +1 log entry).
+
+## 2026-06-23 — Daily hearing+AI digest ingest (Phonak AutoSense OS 7.0)
+
+**Operation:** Ingested the most material net-new vendor announcement surfaced by today's daily digest email (sent to door.punch_4o@icloud.com, ~700 words, 2 arXiv papers + 4 industry news + 2 AI/ML synthesis notes + 2 worth-watching items + 6 quick stats). The two arXiv preprints featured in the digest body (OVC + DDSP-EQ) were already ingested in the earlier 2026-06-23 ad-hoc ingest above; the Veterans Hearing Aid Improvement Act and the Sonova FY 2025/26 results were already in the wiki (`veterans-hearing-aid-improvement-act-house-jun-2026.md` and `sonova-fy-2025-26-results-may-2026.md`); the HearingLife Fairfax retail-center opening (Jun 16) and the Starkey Omega AI connectivity refresh were both judged too thin for net-new source files per the "prefer updating existing pages over creating near-duplicates" convention.
+
+### Source files — net-new (1)
+
+- **`sources/phonak-autosense-os-7-jun-2026.md`** — Phonak whitepaper, announced June 2026 as part of the Infinio Ultra firmware refresh. AutoSense OS 7.0 expands the scene-classifier training database **18×** vs v6.0, delivering **+24%** classification precision, **+30%** battery efficiency, **one-step Bluetooth pairing**, and faster feedback management. Same firmware push brings **Spheric Speech Clarity 2.0** to Sphere models. Free firmware upgrade via Target for existing Infinio / Infinio Sphere wearers. Establishes a ~twice-a-year cadence of post-deployment model updates (Oct 2025 → Jun 2026).
+
+### Wiki pages updated (1)
+
+1. **`wiki/entities/phonak.md`** — added the new source to `sources:` frontmatter; bumped `updated:` to 2026-06-23 with `last_change:` note. Expanded the "Firmware & Ongoing Model Updates" section with the AutoSense OS 7.0 bullet (18× scene database, +24% precision, +30% battery efficiency, one-step BT pairing, Spheric Speech Clarity 2.0 on Sphere) and added an explicit framing that AutoSense OS sits *upstream* of the DEEPSONIC AI feature blocks — it's the soft router that decides which block(s) to engage. Added the source to the bottom Sources list.
+
+### Editorial notes
+
+- **Did NOT create a new concept page for AutoSense OS / automatic scene classification.** The scene-classifier concept is sufficiently covered across `dnn-in-hearing-aids.md`, `on-device-ml-hearing-aids.md`, and the OEM entity pages. Re-evaluate if a second OEM ships a comparable named scene-classifier upgrade in the next 60 days (Oticon "Intent Aware" refresh, Signia "Augmented Focus" next-gen, etc.) — at that point a horizontal `automatic-scene-classification` concept page would have three datapoints and could pull cross-OEM comparison work out of the entity pages.
+- **Did NOT create a source file for the HearingLife Fairfax retail opening (Jun 16, 2026).** A single retail-center ribbon-cutting doesn't materially change the Demant retail-footprint story; folded into the Demant/Oticon entity page on the next substantive Demant ingest.
+- **Did NOT create a source file for the Starkey Omega AI connectivity refresh (Auracast assistant + Google Fast Pair + Push-to-Talk).** This is a minor extension of the Jan 2026 Edge AI Auracast firmware refresh already documented in `entities/starkey.md`. Re-evaluate if Starkey publishes a whitepaper on the connectivity stack or if Push-to-Talk turns into a named feature with clinical/UX data.
+- **Did NOT update `entities/sonova-ag.md` with the AGM / FY 2025/26 7% growth bullet** — `sources/sonova-fy-2025-26-results-may-2026.md` and the existing Sonova entity page already cover the May 20 results release; the Jun 16 AGM is the formal vote, not a new disclosure.
+- **Did NOT update `concepts/dnn-in-hearing-aids.md` or `concepts/on-device-ml-hearing-aids.md`** with the AutoSense OS 7.0 detail. The Phonak entity page is the natural home for OEM-specific firmware-update milestones; folding model-update bullets into the cross-OEM concept pages would dilute their abstraction level. Re-evaluate at the next horizontal concept-page lint pass.
+- **Did NOT update `wiki/index.md` Phonak row date** in this ingest. The earlier 2026-06-23 ad-hoc OVC + DDSP-EQ ingest already pushed the index header to today's date; the Phonak entity row's Updated column carries a stale 2026-05-05 date and should be bumped to 2026-06-23 at the next index sweep along with the new `last_change` note in the entity page header.
+
+**Pages touched this ingest: 3** (1 new source, 1 wiki page updated, +1 log entry).

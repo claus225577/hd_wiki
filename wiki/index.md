@@ -186,7 +186,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Demant / Oticon](entities/demant-oticon.md) | company | 2026-04-25 |
 | [WS Audiology / Signia](entities/ws-audiology-signia.md) | company, lucid, retail-channel, sams-club, widex-allure-ai, on-demand-ai, compass-cloud | 2026-05-21 |
 | [Starkey](entities/starkey.md) | company, government-services, va, dod, starlink-edge-le | 2026-05-11 |
-| [Phonak](entities/phonak.md) | company | 2026-05-05 |
+| [Phonak](entities/phonak.md) | company, autosense-os-7, firmware-cadence, infinio-ultra, deepsonic | 2026-06-23 |
 | [Apple Hearing Features](entities/apple-hearing-features.md) | company, consumer-tech, lmic, india, multi-modal-screening, mfi-handoff, name-recognition, generated-subtitles, wwdc-2026, ios-27, visual-substitution | 2026-06-11 |
 | [WHO Hearing Program](entities/who-hearing-program.md) | organization | 2026-04-15 |
 | [VCCA — Computational Audiology](entities/vcca-computational-audiology.md) | conference, academic, wca2026, aram-glorig-award, pichora-fuller | 2026-05-26 |

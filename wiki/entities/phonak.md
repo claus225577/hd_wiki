@@ -2,8 +2,9 @@
 title: Phonak
 type: entity
 created: 2026-04-15
-updated: 2026-06-03
-sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md, phonak-ai-excellence-award-march-2026.md, phonak-usa-pickleball-partnership-spring-2026.md, phonak-pickleball-aaa-2026-deeper-coverage.md, hearingtracker-2026-premium-rankings.md, phonak-infinio-if-design-award-2026.md, phonak-virto-r-infinio-red-dot-april-2026.md, hearingtracker-ai-hearing-aids-background-noise-jun-2026.md]
+updated: 2026-06-23
+last_change: 2026-06-23 — added AutoSense OS 7.0 (June 2026) firmware refresh: scene-database expanded 18×, +24% classification precision, +30% battery efficiency, one-step BT pairing, faster AFC; Spheric Speech Clarity 2.0 also shipped on Sphere models via the same firmware update; new source `phonak-autosense-os-7-jun-2026.md`.
+sources: [phonak-dnn-noise-reduction-clinical-trial-april-2026.md, phonak-ai-excellence-award-march-2026.md, phonak-usa-pickleball-partnership-spring-2026.md, phonak-pickleball-aaa-2026-deeper-coverage.md, hearingtracker-2026-premium-rankings.md, phonak-infinio-if-design-award-2026.md, phonak-virto-r-infinio-red-dot-april-2026.md, hearingtracker-ai-hearing-aids-background-noise-jun-2026.md, phonak-autosense-os-7-jun-2026.md]
 related: [sonova-ag.md, ../concepts/on-device-ml-hearing-aids.md, gn-hearing-resound.md, demant-oticon.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/hearing-aid-market-dynamics.md, ../concepts/eu-ai-act-medical-devices.md, ws-audiology-signia.md]
 tags: [company, brand, phonak, sonova, deepsonic, ai-hearing-aid, dual-chip, clinical-trial, marketing, sports-partnership, remote-mic-equivalent-snr]
 ---
@@ -43,7 +44,8 @@ See [[sonova-ag]] for full DEEPSONIC architecture details.
 
 ## Firmware & Ongoing Model Updates
 - **Ultra firmware update (Oct 2025)**: delivered 18x more real-world training data to deployed devices via over-the-air update
-- Demonstrates Phonak's post-deployment model improvement capability — analogous to how software companies ship model updates
+- **AutoSense OS 7.0 firmware refresh (Jun 2026)**: scene-classifier database expanded **18×** vs v6.0 → **+24%** classification precision; **+30%** battery efficiency; **one-step Bluetooth pairing**; faster feedback management. Same firmware push also brings **Spheric Speech Clarity 2.0** to Sphere models. Free firmware upgrade via Target for existing Infinio / Infinio Sphere wearers. Establishes a ~twice-a-year cadence of meaningful firmware model updates (Oct 2025 → Jun 2026). See [AutoSense OS 7.0 source](../sources/phonak-autosense-os-7-jun-2026.md).
+- Demonstrates Phonak's post-deployment model improvement capability — analogous to how software companies ship model updates. AutoSense OS sits *upstream* of the DEEPSONIC AI feature blocks (Spheric Speech Clarity, DNN noise reduction) — it's the soft router that decides which block(s) to engage.
 
 ## Clinical Evidence Building
 
@@ -121,3 +123,4 @@ Phonak accounts for the majority of Sonova AG's hearing aid revenue. Unitron is 
 - [Phonak USA Pickleball Partnership](../sources/phonak-usa-pickleball-partnership-spring-2026.md) — "Hear to Win" campaign, spring 2026 tournament season
 - [Phonak Pickleball AAA 2026 Deeper Coverage](../sources/phonak-pickleball-aaa-2026-deeper-coverage.md) — Sphere Sound Lab, executive quotes, ~20M player audience scale
 - [HearingTracker 2026 Premium Rankings](../sources/hearingtracker-2026-premium-rankings.md) — Phonak Infinio Sphere ranked #1
+- [Phonak AutoSense OS 7.0 Whitepaper](../sources/phonak-autosense-os-7-jun-2026.md) — June 2026 firmware refresh: 18× scene database, +24% precision, +30% battery efficiency, one-step BT pairing, Spheric Speech Clarity 2.0 on Sphere
