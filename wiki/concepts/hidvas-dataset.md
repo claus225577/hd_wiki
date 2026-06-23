@@ -2,9 +2,11 @@
 title: HIDVAS — Hearing Instrument Dataset in Various Acoustical Scenarios
 type: concept
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-23
+last_change: "2026-06-23 — Flagged HIDVAS as the natural training substrate for the DDSP-EQ adaptive room EQ framework (Marcos-Macias et al., arXiv:2606.22563, DAFx26, Jun 21 2026). Added the DDSP-EQ source to frontmatter and a new sub-section calling out the dome × reverb cross-product as the per-wearer fitting substrate for the FxLMS-DDSP recast."
 sources:
   - arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md
+  - arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md
 related:
   - training-deployment-distribution-gap.md
   - room-aware-dereverberation.md
@@ -12,7 +14,10 @@ related:
   - speech-enhancement-neural-networks.md
   - dnn-architectures-hearing-aids.md
   - close-to-distant-microphone-projection.md
-tags: [public-dataset, hearing-aid-benchmark, ku-leuven, dummy-head-recordings, dome-configuration, vent-acoustics, eardrum-microphone, real-recordings, cc-by-4-0, eurasip-jasmp]
+  - differentiable-dsp.md
+  - fxlms-adaptive-filtering.md
+  - acoustic-feedback-cancellation.md
+tags: [public-dataset, hearing-aid-benchmark, ku-leuven, dummy-head-recordings, dome-configuration, vent-acoustics, eardrum-microphone, real-recordings, cc-by-4-0, eurasip-jasmp, ddsp, fxlms]
 ---
 
 # HIDVAS — Hearing Instrument Dataset in Various Acoustical Scenarios
@@ -48,6 +53,14 @@ A public dataset of real (not simulated) recordings made on a dummy head with mo
 ### Continuity with KU Leuven's public-substrate program
 - KU Leuven has been steadily releasing structured public benchmarks for hearing-relevant ML — SparrKULee (n=85 EEG, 168 h, speech-evoked auditory responses), AV-GC-AAD (gaze-controlled auditory attention decoding), and now HIDVAS.
 - An emerging "publish your measurement room" pattern as substrate for academic-industry collaboration in hearing AI.
+
+## DDSP-EQ Use Case (Marcos-Macias et al., Jun 21 2026)
+The DDSP-EQ framework ([arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md](../../sources/arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md), DAFx26) recovers classical **FxLMS** as a Differentiable DSP special case for adaptive room equalisation. HIDVAS supplies exactly the substrate that framework needs:
+- **4 dome configurations × 4 reverberation conditions, with impulse responses included.** Train DDSP-EQ on subsets, hold out a dome / reverb to evaluate generalisation.
+- **Per-dome personalisation studies.** Fit a DDSP-EQ topology per dome configuration — the clinical fitting question the framework is built for.
+- **Stackable with neural feedback cancellation (DFC-IL, Voit & Doclo, Jun 2026)** — joint training of DDSP-EQ + DFC-IL on HIDVAS IRs is unpublished but architecturally straightforward.
+
+See [[differentiable-dsp]] and [[fxlms-adaptive-filtering]] for the operator-family framing.
 
 ## Limitations / Open Pieces
 - No listener-perception labels (HASPI / COSI / effort ratings) — pair with CPC1/2/3 for end-to-end evaluation.

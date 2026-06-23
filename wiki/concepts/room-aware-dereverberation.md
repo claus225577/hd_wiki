@@ -2,10 +2,11 @@
 title: Room-Aware Dereverberation
 type: concept
 created: 2026-06-10
-updated: 2026-06-10
-sources: [arxiv-2606-09557-rir-encoder-dereverb-khanagha-gerkmann-jun-2026.md, speaker-distance-estimation-reverberation-arxiv-2026.md]
-related: [speech-enhancement-neural-networks.md, differentiable-cochlear-models.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../entities/clarity-prediction-challenge.md, dyadic-interaction-preservation.md]
-tags: [dereverberation, rir, room-impulse-response, implicit-representations, contrastive-learning, hearing-aids, speech-enhancement, diffusion-se, on-device-ai, frequent-rooms]
+updated: 2026-06-23
+last_change: "2026-06-23 — Added DDSP-EQ (Marcos-Macias et al., arXiv:2606.22563, DAFx26, Jun 21 2026) as the adaptive-filter-side parallel to RIR-encoder conditioning: both expose the room as an explicit object the rest of the pipeline can read, but via different operator families. Added cross-refs to the new `differentiable-dsp` and `fxlms-adaptive-filtering` concept pages and the DDSP-EQ source."
+sources: [arxiv-2606-09557-rir-encoder-dereverb-khanagha-gerkmann-jun-2026.md, speaker-distance-estimation-reverberation-arxiv-2026.md, arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md]
+related: [speech-enhancement-neural-networks.md, differentiable-cochlear-models.md, on-device-ml-hearing-aids.md, dnn-architectures-hearing-aids.md, ../entities/clarity-prediction-challenge.md, dyadic-interaction-preservation.md, differentiable-dsp.md, fxlms-adaptive-filtering.md, acoustic-feedback-cancellation.md, hidvas-dataset.md]
+tags: [dereverberation, rir, room-impulse-response, implicit-representations, contrastive-learning, hearing-aids, speech-enhancement, diffusion-se, on-device-ai, frequent-rooms, ddsp, fxlms]
 ---
 
 # Room-Aware Dereverberation
@@ -47,6 +48,16 @@ Hearing-aid wearers spend 80%+ of their time in a small set of "frequent rooms" 
 - **Population library** — warm-start from common room types (cars, classrooms, kitchens)
 - **Personal library** — fine-tuned on the wearer's specific environments via on-device contrastive learning or companion-phone consolidation
 - Architectural overlap with the Apr 2026 Sound Preference Tool (WSA) and the broader on-device personalization stack
+
+## Adaptive-Filter Parallel — DDSP-EQ (Marcos-Macias et al., Jun 21 2026)
+The SE branch (RIR encoders) is not the only 2026 thread that exposes the room as a first-class object. On the **classical adaptive-filter** side, [arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md](../../sources/arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md) (DAFx26) recasts adaptive room EQ as a **Differentiable DSP (DDSP)** framework that recovers classical **filtered-x LMS (FxLMS)** as a special case. Different EQ topologies, perceptual losses, and modern optimisers plug in. Reported: **~70% reduction in system distance**, **13% worst-case mel-spectral distance improvement** vs unequalised baseline.
+
+| Operator family | Exposure of the room | Position in stack |
+|---|---|---|
+| RIR encoder (Khanagha & Gerkmann) | Continuous embedding conditioning a neural SE network | Mid-stage SE |
+| DDSP-EQ (Marcos-Macias et al.) | Parameterised differentiable filter the EQ stage adapts | Early-stage adaptive filter (FxLMS-style) |
+
+These are complementary rather than competing — different operator families on the same axis (the room), at different positions in the on-chip pipeline. The natural stack is: DDSP-EQ for early-stage adaptive room/vent compensation, RIR-encoder conditioning for the SE backbone, with both potentially trained against the same perceptual loss flowing through a differentiable cochlea (DAL). See [[differentiable-dsp]], [[fxlms-adaptive-filtering]], and [[acoustic-feedback-cancellation]].
 
 ## Complementary to One-Step Generative SE
 Two separable axes for cutting diffusion inference steps:

@@ -2,11 +2,11 @@
 title: Differentiable Cochlear Models
 type: concept
 created: 2026-06-04
-updated: 2026-06-20
-sources: [dal-differentiable-auditory-loop-google-june-2026.md, biear-meng-2026-arxiv.md, saddler-mcdermott-2024-nature-comms-temporal-coding.md, saddler-clarity6-2025-individualized-hi-models.md]
-related: [brain-aligned-speech-foundation-models.md, communication-accessibility-metric.md, on-device-ml-hearing-aids.md, efferent-moc-feedback-hearing-ai.md, task-optimized-dnn-as-auditory-model.md, ../entities/google-research.md, ../entities/mark-saddler.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md]
-tags: [differentiable-cochlea, carfac, jax, perceptual-loss, gradient-based-fitting, end-to-end-personalization, afferent, efferent-pair, task-optimized-dnn]
-last_change: "2026-06-20 — added cross-reference to task-optimized-dnn-as-auditory-model concept page and Saddler sources; clarified the upstream/downstream relationship in a new sub-section."
+updated: 2026-06-23
+sources: [dal-differentiable-auditory-loop-google-june-2026.md, biear-meng-2026-arxiv.md, saddler-mcdermott-2024-nature-comms-temporal-coding.md, saddler-clarity6-2025-individualized-hi-models.md, arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md]
+related: [brain-aligned-speech-foundation-models.md, communication-accessibility-metric.md, on-device-ml-hearing-aids.md, efferent-moc-feedback-hearing-ai.md, task-optimized-dnn-as-auditory-model.md, ../entities/google-research.md, ../entities/mark-saddler.md, ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md, differentiable-dsp.md, fxlms-adaptive-filtering.md, room-aware-dereverberation.md]
+tags: [differentiable-cochlea, carfac, jax, perceptual-loss, gradient-based-fitting, end-to-end-personalization, afferent, efferent-pair, task-optimized-dnn, ddsp]
+last_change: "2026-06-23 — Added pointer to the parallel acoustic-physical-side DDSP work (Marcos-Macias et al., arXiv:2606.22563, DAFx26, Jun 21 2026) — DDSP-EQ recasts FxLMS as a Differentiable DSP special case for adaptive room EQ. With DAL on the perceptual side and DDSP-EQ on the room/vent side, 2026 looks like the year adaptive hearing processing moves from per-component analytical rules to a single end-to-end differentiable graph. Added the DDSP-EQ source + the new `differentiable-dsp`, `fxlms-adaptive-filtering`, `room-aware-dereverberation` cross-links. Previous change (2026-06-20): added cross-reference to task-optimized-dnn-as-auditory-model concept page and Saddler sources; clarified the upstream/downstream relationship in a new sub-section."
 ---
 
 # Differentiable Cochlear Models
@@ -61,6 +61,11 @@ Saddler's VCCA 2026 pre-conference workshop (June 19, 2026) made a public Jupyte
 ## The Afferent / Efferent Pair (Added 2026-06-09)
 
 DAL models the **afferent** (forward) cochlear path. A companion paper posted ~24 hours later — [BiEAR](../../sources/biear-meng-2026-arxiv.md) (Meng et al., UNSW Sydney + NUS, arXiv:2606.06795, Jun 5, 2026, accepted INTERSPEECH 2026) — models the **efferent** (descending) path: a learned MOC-style neural controller that adapts the binaural filterbank's frequency selectivity at inference. Together the two papers operationalise the cochlear loop, forward and back, as a first-class ML object. See [[efferent-moc-feedback-hearing-ai]] for the full discussion.
+
+## Acoustic-Physical-Side DDSP Pair (Added 2026-06-23)
+DAL puts the **perceptual** side of the hearing-aid stack into a differentiable graph (cochlear loss). A parallel June 2026 paper — [Marcos-Macias et al., DDSP Framework for Adaptive Room Equalization](../../sources/arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md), DAFx26 — does the analogous move on the **acoustic-physical** side: recasts classical filtered-x LMS (FxLMS) as a Differentiable DSP special case for adaptive room EQ, with flexible EQ structures, perceptual losses, and modern optimisers as plug-in choices.
+
+Together the two argue that 2026 is the year **adaptive hearing processing moves from per-component analytical rules to a single end-to-end differentiable graph** spanning cochlea (DAL), room/vent (DDSP-EQ), feedback (DFC-IL, Voit & Doclo Jun 2026), and downstream SE (band-axis cluster, on-chip levers). The joint training stack across all four is the obvious next experiment — see [[differentiable-dsp]] for the broader operator-family framing.
 
 ## Related Pages
 - [[brain-aligned-speech-foundation-models]] — the receive-side analog: foundation models implicitly model the brain; differentiable cochleas explicitly model the periphery.
