@@ -2,9 +2,9 @@
 title: Audio Reasoning and Chain-of-Thought
 type: concept
 created: 2026-04-16
-updated: 2026-04-16
-sources: [interspeech-2026-audio-reasoning-challenge.md]
-related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, agentic-engineering-hearing-rd.md]
+updated: 2026-06-24
+sources: [interspeech-2026-audio-reasoning-challenge.md, mellow-cmu-small-audio-lm-167m-march-2025.md]
+related: [on-device-ml-hearing-aids.md, dnn-in-hearing-aids.md, speech-enhancement-neural-networks.md, auditory-attention-decoding.md, agentic-engineering-hearing-rd.md, small-language-models-edge-ai.md]
 tags: [audio-reasoning, chain-of-thought, explainability, large-audio-language-models, interspeech]
 ---
 
@@ -31,6 +31,10 @@ The first major benchmark for audio chain-of-thought reasoning:
 - **MMAR-Rubrics** evaluation: prediction correct only if reasoning path AND answer are both right
 - Key finding: agent systems (combining ASR, audio separation, beat tracking, captioners) outperformed single models
 - Spans speech, music, sound, and mixed modalities
+
+## Small Audio-LMs as a Practical Path
+
+**Mellow** (CMU, 167M params, March 2025) is the smallest credible audio-LM that performs reasoning at competitive accuracy — matching Qwen2-Audio on MMAU with 50× fewer parameters and 60× less training audio. Uses HTSAT + SmolLM2 trained on the open ReasonAQA dataset. Architecturally relevant because it sits at the **companion-phone tier** rather than the in-ear HA-chip tier — establishing a near-term shippable size class for audio reasoning in hearing products (see [[small-language-models-edge-ai]] and the source file).
 
 ## Relevance to Hearing Aids
 
@@ -59,3 +63,4 @@ Audio reasoning could enable hearing aids to:
 
 ## Sources
 - [Interspeech 2026 Audio Reasoning Challenge](../../sources/interspeech-2026-audio-reasoning-challenge.md)
+- [Mellow: A Small Audio Language Model for Reasoning (CMU)](../../sources/mellow-cmu-small-audio-lm-167m-march-2025.md)

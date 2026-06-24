@@ -2,10 +2,11 @@
 title: Hearing Loss and Dementia: The Evidence
 type: concept
 created: 2026-04-15
-updated: 2026-06-10
-sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md, frontiers-dementia-hearing-loss-review-2026.md]
-related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md, care-partner-dyad-models.md]
-tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping]
+updated: 2026-06-24
+last_change: 2026-06-24 — Cross-linked to the new dedicated [[hidden-hearing-loss]] concept page, the [[otoprotection-pharmacology]] page (Acousia Phase 2a, Jun 18 2026), and the [[../syntheses/hidden-hearing-loss-fullstack-june-2026]] synthesis. The Knipper section here is now the cognitive-risk anchor for the broader HHL stack; the standalone HHL concept page consolidates the diagnostic / mechanism / VCCA 2026 programme material.
+sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md, frontiers-dementia-hearing-loss-review-2026.md, vcca-2026-main-programme-june-2026.md, acousia-bimokalner-phase-2a-june-2026.md]
+related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md, care-partner-dyad-models.md, hidden-hearing-loss.md, otoprotection-pharmacology.md, ../syntheses/hidden-hearing-loss-fullstack-june-2026.md, ../entities/sharon-kujawa.md, ../entities/harvey-dillon.md, ../entities/anu-sharma.md]
+tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping, hidden-hearing-loss, ehf-audiometry, otoprotection]
 ---
 
 # Hearing Loss and Dementia: The Evidence
@@ -112,6 +113,16 @@ In a 1 May 2026 public statement, Tübingen researcher **Prof. Dr. Marlies Knipp
 - This is consistent with the Apple Hearing Study finding that 16% of "clinically normal" listeners self-rate fair/poor hearing — likely a population-scale signature of hidden hearing loss.
 
 **Implication for hearing AI:** Speech-in-noise testing, extended-high-frequency audiometry, and self-reported hearing should be additional outcome measures in hearing-aid validation and ML training pipelines — not optional. See [Knipper source](../sources/knipper-hidden-hearing-loss-dementia-may-2026.md) and [[subjective-objective-hearing-gap]].
+
+### Update — Jun 2026: HHL graduates to a full-stack engineering problem
+
+The Knipper framing here is now the cognitive-risk anchor for a much broader multi-layer convergence on hidden hearing loss in June 2026:
+
+- **VCCA 2026 (Jun 25–26):** Day 1 keynote Harvey Dillon "Separating the Causes of Listening Difficulties when Thresholds are Normal," Day 2 invited Sharon Kujawa "Hidden Hearing Loss: From Animal Models to Human Translation," dedicated Session 3.A "Hidden Hearing Loss and Subclinical Auditory Disorders," and Matthias Inghels poster "Computational Closed-Loop Methods to Compensate for Standard and Hidden Hearing Losses." See [[../entities/vcca-computational-audiology]], [[../entities/sharon-kujawa]], [[../entities/harvey-dillon]].
+- **Acousia Therapeutics Phase 2a positive (Jun 18 2026):** Bimokalner / ACOU085 Kv7.4 modulator prevents cisplatin-induced EHF-range PTA shifts in a split-body trial. First clinical-stage drug-side intervention on the HHL biology. See [[otoprotection-pharmacology]] and [[../entities/acousia-therapeutics]].
+- **Adjacent cortical mechanism:** Anu Sharma VCCA 2026 invited "The Changing Brain: Cross-Modal Neuroplasticity in Hearing loss" — cortical reorganisation as a candidate neural-side mechanism in the hearing-loss → cognitive-decline chain. See [[../entities/anu-sharma]] and [[cortical-reorganization-hearing-aids]].
+
+**Net effect on the cognitive-risk argument:** If a substantial fraction of HHL listeners are entirely missed by audiogram-based risk classification (Knipper's argument, now backed by the Apple 16% finding at population scale and the Acousia Phase 2a result on the prevention side), then the modifiable-risk-factor population for dementia is currently *underestimated*. The standalone [[hidden-hearing-loss]] page consolidates the diagnostic and mechanism material; the [[../syntheses/hidden-hearing-loss-fullstack-june-2026]] synthesis captures the multi-layer convergence.
 
 ## Recent Academic Updates (2024–2025)
 

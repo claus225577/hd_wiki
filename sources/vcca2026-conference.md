@@ -56,3 +56,12 @@ tags: [vcca, computational-audiology, conference, ai-audiology]
 ## Key Extraction
 
 VCCA2026 introduces a dedicated session on "Hidden Hearing Loss and Subclinical Auditory Disorders" (synaptopathy), reflecting growing research interest in cochlear synaptopathy. The "From Lab to Clinic" session signals maturation of computational audiology from pure research toward clinical impact. Pre-conference ML workshops indicate growing demand for computational skills among audiologists.
+
+## Main Programme Detail Added 2026-06-24
+
+The full keynote / invited / Session 4.A & 5.B lineup is captured in the standalone source [[vcca-2026-main-programme-june-2026]]:
+- **Keynotes:** Harvey Dillon (Day 1), Barbara Shinn-Cunningham (Day 1), Linda J. Hood (Day 2), Enrique A. Lopez-Poveda (Day 2)
+- **Invited:** Andrew Dimitrijevic, Sharon Kujawa, Waldo Nogueira, Anu Sharma
+- **Session 4.A featured:** Mark Saddler ("Perceptual Sensitivity is Explained by Optimization for Ecological Hearing Tasks"), Frank Betances Reinoso ("VIA+")
+- **Session 4.A poster (called out):** Matthias Inghels ("Computational Closed-Loop Methods to Compensate for Standard and Hidden Hearing Losses")
+- **Session 5.B featured:** Andrew Sabin (commercial-HA ease-of-understanding database + predictive model), Julie Van Heghe (neural-response-driven CI stimulation optimisation using differentiable auditory models)

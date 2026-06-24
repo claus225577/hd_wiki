@@ -2,10 +2,11 @@
 title: Precision Drug Delivery for the Inner Ear
 type: concept
 created: 2026-04-19
-updated: 2026-04-25
-sources: [advanced-bionics-research-collaboration-ci-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md]
-related: [cochlear-implant-ai.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, teleaudiology.md, audiologist-workforce-shortage.md, gene-therapy-hearing.md, ../entities/regeneron.md]
-tags: [drug-delivery, inner-ear, cochlea, spiral-therapeutics, cochlear-implant, pharmacotherapy, regenerative-medicine, gene-therapy]
+updated: 2026-06-24
+last_change: 2026-06-24 — Added the Acousia Bimokalner Phase 2a positive result (Jun 18 2026) as the most advanced transtympanic-gel programme to date; cross-linked to the new [[otoprotection-pharmacology]] and [[kv74-kcnq4-outer-hair-cell]] concept pages and the [[../entities/acousia-therapeutics]] entity. The Acousia programme validates the transtympanic-gel route distinct from the AB / Spiral Therapeutics surgical-window-during-CI-insertion route — two distinct local-delivery substrates now have clinical readouts.
+sources: [advanced-bionics-research-collaboration-ci-april-2026.md, otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, acousia-bimokalner-phase-2a-june-2026.md]
+related: [cochlear-implant-ai.md, ../entities/advanced-bionics.md, ../entities/sonova-ag.md, teleaudiology.md, audiologist-workforce-shortage.md, gene-therapy-hearing.md, otoprotection-pharmacology.md, kv74-kcnq4-outer-hair-cell.md, hidden-hearing-loss.md, ../entities/regeneron.md, ../entities/acousia-therapeutics.md, ../syntheses/hidden-hearing-loss-fullstack-june-2026.md]
+tags: [drug-delivery, inner-ear, cochlea, spiral-therapeutics, cochlear-implant, pharmacotherapy, regenerative-medicine, gene-therapy, otoprotection, acousia, transtympanic, kv7-4]
 ---
 
 # Precision Drug Delivery for the Inner Ear
@@ -25,6 +26,7 @@ Emerging field focused on delivering therapeutic agents directly to the cochlea 
 1. **Intratympanic injection:** Drug placed in the middle ear, diffuses through round window membrane. Simple but imprecise — concentration drops exponentially along the cochlea
 2. **Systemic administration:** Oral/IV drugs. Poor cochlear penetration due to blood-labyrinth barrier
 3. **Cochlear implant surgery as delivery window:** During electrode insertion, direct access to scala tympani allows localized drug delivery — this is the AB + Spiral Therapeutics approach
+4. **Transtympanic slow-release gel:** Drug deposited as a slow-release gel through the tympanic membrane onto the round-window niche; diffusion across the round-window membrane into the cochlea over hours-to-days. The Acousia Bimokalner platform; first-in-class clinical-stage validation of this route in Phase 2a (Jun 18 2026). See [[otoprotection-pharmacology]] and [[../entities/acousia-therapeutics]].
 
 ## Spiral Therapeutics Platform
 
@@ -49,7 +51,7 @@ During cochlear implant surgery, the surgeon already has direct access to the co
 - **Anti-apoptotic:** Prevent hair cell death triggered by surgical trauma
 
 ### Medium-Term
-- **Otoprotection:** Preventing hearing damage from noise exposure or ototoxic drugs (aminoglycosides, cisplatin)
+- **Otoprotection:** Preventing hearing damage from noise exposure or ototoxic drugs (aminoglycosides, cisplatin). Acousia's Bimokalner (ACOU085) Kv7.4 modulator reported positive Phase 2a results in cisplatin-induced HL on 18 Jun 2026 — the first clinical-stage validation of OHC-side pharmacological prevention. See [[otoprotection-pharmacology]] and [[kv74-kcnq4-outer-hair-cell]].
 - **Tinnitus treatment:** Direct delivery of therapeutics to cochlear targets involved in tinnitus generation
 
 ### Long-Term (No Longer Speculative for OTOF)
@@ -76,3 +78,4 @@ During cochlear implant surgery, the surgeon already has direct access to the co
 - [AB + Spiral Therapeutics Collaboration](../sources/advanced-bionics-research-collaboration-ci-april-2026.md)
 - [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — First gene therapy for hearing loss
 - [Harvard/Fudan OTOF Nature Study](../sources/harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md) — 2.5-year follow-up
+- [Acousia Bimokalner Phase 2a Positive (Jun 18, 2026)](../sources/acousia-bimokalner-phase-2a-june-2026.md) — Transtympanic slow-release gel route, OHC-side Kv7.4 modulator, cisplatin-induced HL prevention

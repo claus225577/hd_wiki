@@ -2,10 +2,11 @@
 title: The Subjective–Objective Hearing Gap
 type: concept
 created: 2026-05-04
-updated: 2026-05-26
-sources: [apple-hearing-study-results-may-2026.md, achieve-trial-cognitive-hearing-2025.md, gijbels-ecological-validity-fauot-mar-2026.md, wca-2026-pichora-fuller-aram-glorig-may-26-2026.md]
-related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, multimodal-hearing-assessment.md, listening-effort-evaluation.md, communication-accessibility-metric.md, ../entities/apple-hearing-features.md, ../entities/kathy-pichora-fuller.md]
-tags: [outcome-measurement, audiometry, perception, self-report, personalization, real-world-evidence, multimodal, fuel-framework, communication-accessibility]
+updated: 2026-06-24
+last_change: 2026-06-24 — Added cross-links to the new [[hidden-hearing-loss]] concept page (the leading auditory-side mechanism for the gap) and the [[../syntheses/hidden-hearing-loss-fullstack-june-2026]] synthesis. HHL is now treated as a dedicated concept page; this page remains the population-scale / measurement-architecture framing.
+sources: [apple-hearing-study-results-may-2026.md, achieve-trial-cognitive-hearing-2025.md, gijbels-ecological-validity-fauot-mar-2026.md, wca-2026-pichora-fuller-aram-glorig-may-26-2026.md, vcca-2026-main-programme-june-2026.md]
+related: [longitudinal-hearing-phenotyping.md, automated-audiometry.md, on-device-ml-hearing-aids.md, closed-loop-data-flywheel.md, hearing-loss-dementia-link.md, multimodal-hearing-assessment.md, listening-effort-evaluation.md, communication-accessibility-metric.md, hidden-hearing-loss.md, ../entities/apple-hearing-features.md, ../entities/kathy-pichora-fuller.md, ../entities/harvey-dillon.md, ../syntheses/hidden-hearing-loss-fullstack-june-2026.md]
+tags: [outcome-measurement, audiometry, perception, self-report, personalization, real-world-evidence, multimodal, fuel-framework, communication-accessibility, hidden-hearing-loss, ehf-audiometry]
 ---
 
 # The Subjective–Objective Hearing Gap

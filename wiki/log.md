@@ -4,6 +4,33 @@ Chronological record of all wiki operations.
 
 ---
 
+## Ingest — 2026-06-24
+**Operation:** Two LinkedIn-post sources ingested: (A) VCCA 2026 Main Programme (Jun 25–26 2026) — full keynote/invited/Session 4.A & 5.B detail; (B) Acousia Therapeutics Bimokalner Phase 2a positive readout (Jun 18 2026, Tübingen) — first clinical-stage validation of OHC-side Kv7.4 modulation against cisplatin-induced HL via transtympanic slow-release gel.
+
+**New source files (2):**
+- `sources/vcca-2026-main-programme-june-2026.md` — Keynotes (Dillon, Shinn-Cunningham, Hood, Lopez-Poveda), invited (Dimitrijevic, Kujawa, Nogueira, Sharma), Session 4.A featured (Saddler, Betances Reinoso, Inghels poster), Session 5.B featured (Sabin, Van Heghe), plus three structural reads.
+- `sources/acousia-bimokalner-phase-2a-june-2026.md` — ACOU085 Kv7.4 modulator, split-body cisplatin design, transtympanic-gel route, four hearing-AI implications.
+
+**New wiki pages (10):**
+- Concepts (3): `concepts/hidden-hearing-loss.md`, `concepts/otoprotection-pharmacology.md`, `concepts/kv74-kcnq4-outer-hair-cell.md`
+- Entities (7): `entities/acousia-therapeutics.md`, `entities/harvey-dillon.md`, `entities/sharon-kujawa.md`, `entities/barbara-shinn-cunningham.md`, `entities/anu-sharma.md`, `entities/enrique-lopez-poveda.md`, `entities/waldo-nogueira.md`
+- Syntheses (1): `syntheses/hidden-hearing-loss-fullstack-june-2026.md` — the marquee output. Argues VCCA 2026 + Acousia ground the same OHC / IHC-ribbon-synapse / suprathreshold-EHF biology; six independent groups on two continents converging on one phenotype inside a seven-day window; HHL has crossed from research curiosity to multi-layer drug + device + ML + biomarker + outcome-measurement engineering problem; identifies the shared longitudinal HHL phenotyping cohort substrate as the most underbuilt layer.
+
+**Updated wiki pages (6):**
+- `entities/vcca-computational-audiology.md` — added VCCA 2026 Main Programme section + three structural reads; expanded frontmatter.
+- `entities/mark-saddler.md` — added Session 4.A featured talk "Perceptual Sensitivity is Explained by Optimization for Ecological Hearing Tasks".
+- `syntheses/hearing-aid-market-outlook.md` — added "Upstream Layer — Otoprotection Pharmacology" with three-scenario contingency table.
+- `concepts/hearing-loss-dementia-link.md` — added "Update — Jun 2026: HHL graduates to a full-stack engineering problem" sub-section.
+- `concepts/subjective-objective-hearing-gap.md` — cross-linked to `hidden-hearing-loss` and to the new synthesis.
+- `concepts/precision-drug-delivery-inner-ear.md` — added transtympanic slow-release gel as approach #4; medium-term otoprotection updated with Acousia readout.
+- `sources/vcca2026-conference.md` — back-cross-link added to the new main-programme source.
+
+**Index update:** `wiki/index.md` preamble entry for 2026-06-24 ingest + 3 new concept rows + 7 new entity rows + 1 synthesis row.
+
+**Synthesis angle:** VCCA 2026 (Dillon keynote on prescription validity in the suprathreshold era, Kujawa invited on synaptopathy, Inghels poster on closed-loop compensation for hidden losses, Sabin on commercial-HA ease-of-understanding databases, Van Heghe on neural-response-driven CI optimisation with differentiable auditory models) and Acousia's Phase 2a positive readout both ground the same biology — OHC dysfunction and IHC ribbon-synapse loss in the suprathreshold / EHF 10–16 kHz range — across drug, device, model, and biomarker layers. HHL has been quietly graduating from research curiosity to a full-stack engineering problem; the missing layer is a shared longitudinal HHL phenotyping cohort that ties all five layers together.
+
+---
+
 ## Digest — 2026-06-22
 **Operation:** Daily hearing+AI digest compiled and sent to door.punch_4o@icloud.com.
 **Items covered:** 11 (2 papers, 5 industry, 2 AI/ML, 2 worth-watching) + 5 quick stats.
@@ -3378,3 +3405,27 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 - **Did NOT update `wiki/index.md` Phonak row date** in this ingest. The earlier 2026-06-23 ad-hoc OVC + DDSP-EQ ingest already pushed the index header to today's date; the Phonak entity row's Updated column carries a stale 2026-05-05 date and should be bumped to 2026-06-23 at the next index sweep along with the new `last_change` note in the entity page header.
 
 **Pages touched this ingest: 3** (1 new source, 1 wiki page updated, +1 log entry).
+
+## 2026-06-24 — Daily hearing+AI digest ingest (Mellow CMU audio-LM)
+
+**Operation:** Ingested the most material net-new item from today's daily digest email (sent to door.punch_4o@icloud.com, ~700 words, 2 arXiv papers + 4 industry notes + 2 AI/ML synthesis items + 2 worth-watching + 4 quick stats). Nine of ten digest items mapped to already-ingested sources — the two featured arXiv preprints (DFC-IL Voit & Doclo `arxiv-2606-03832-dfc-il-voit-doclo-jun-2026` and DAL Ballesta Rosen et al `dal-differentiable-auditory-loop-google-june-2026`) plus the Veterans Hearing Aid Improvement Act (`veterans-hearing-aid-improvement-act-house-jun-2026`), HLAA Louisville Convention (`hlaa-2026-convention-louisville-june-2026`), Sonova FY 2025/26 results (`sonova-fy-2025-26-results-may-2026`), BIHIMA Q1 2026 UK sales (`bihima-q1-2026-uk-sales-jun-2026`), Microsoft Edge 148 on-device speech API (`microsoft-edge-148-on-device-speech-api-june-2026`), HearingTracker AI hearing aids background-noise article (`hearingtracker-ai-hearing-aids-background-noise-jun-2026`), and the Otarmeni FDA approval (`otarmeni-fda-gene-therapy-approval-april-2026`) are all already in the wiki.
+
+### Source files — net-new (1)
+
+- **`sources/mellow-cmu-small-audio-lm-167m-march-2025.md`** — Soham Deshmukh et al., Carnegie Mellon University, arXiv:2503.08540 (March 2025). 167M-parameter audio language model: HTSAT (Hierarchical Token Semantic Audio Transformer) encoder + SmolLM2 backbone, trained on ReasonAQA (~155 hours of AudioCaps + Clotho audio-question-answer triples). **Matches Qwen2-Audio on MMAU** with **~50× fewer parameters** and **~60× less training audio**; outperforms larger peers on deductive and comparative reasoning sub-tasks. Functional interface: 2 audio inputs + text prompt → free-form text output. Open weights (Hugging Face: soham97/mellow) and code (GitHub: soham97/Mellow). For hearing AI this is the smallest credible audio-LM in the wiki's SLM roster — sits at the **companion-phone tier** rather than the in-ear HA-chip tier (167M is still too big for current HA SoCs); architectural precedent for sub-200M audio reasoning on consumer silicon. The ReasonAQA dataset being open lowers the bar for OEMs that want to bootstrap audio-reasoning capability without licensing concerns.
+
+### Wiki pages updated (2)
+
+1. **`wiki/concepts/small-language-models-edge-ai.md`** — added Mellow as a new entry in the "Notable Small Models (2026)" roster between QVAC MedPsy and Custom DSP nets, with full architecture (HTSAT + SmolLM2), parameter count (167M), training-audio comparison (50×/60× efficiency), benchmark (MMAU vs Qwen2-Audio), and companion-phone-tier framing. Added Mellow source to `sources:` frontmatter; added `audio-reasoning-chain-of-thought` to `related:`; bumped `updated:` to 2026-06-24.
+
+2. **`wiki/concepts/audio-reasoning-chain-of-thought.md`** — added new "Small Audio-LMs as a Practical Path" section after the Interspeech 2026 Audio Reasoning Challenge section, framing Mellow as the companion-phone-tier shippable size class for audio reasoning above scene classification. Added Mellow source to `sources:` frontmatter; added `small-language-models-edge-ai` to `related:`; added Mellow to the bottom Sources list; bumped `updated:` to 2026-06-24.
+
+### Editorial notes
+
+- **Did NOT create a source file for the FDA CNPV pilot public meeting (Jun 4 2026, comments through Jun 29 2026).** The CNPV mechanism itself is covered in `sources/otarmeni-fda-gene-therapy-approval-april-2026.md` as the regulatory vehicle that accelerated Otarmeni; the public meeting is a stakeholder-input step in the same programme rather than a new device/AI implication. Re-evaluate if a second CNPV-accelerated hearing-related approval lands or if FDA publishes formal eligibility criteria for hearing AI products under the CNPV pilot.
+- **Did NOT create a source file for the HHTM "Current State of Hearing Care" professional survey (Jun 14 2026).** The instrument substantially overlaps `bihima-2026-audiologist-survey-launch-jun-2026` and the existing US `auditdata-audiologist-time-survey-jun-2026` axis; ingesting the bare-launch announcement before results publish would create a third near-duplicate workforce-survey source. Re-evaluate at HHTM results publication.
+- **Did NOT create a source file for the Sonova Jun 16 AGM.** Formal AGM vote on the already-disclosed FY 2025/26 results that are already covered by `sources/sonova-fy-2025-26-results-may-2026.md` and `entities/sonova-ag.md`; no new disclosure.
+- **Did NOT create or update an entity page for Soham Deshmukh / CMU's audio-language-model lab.** Per the entity-page-stub-orphan policy, a single-paper authorship cluster doesn't justify a separate entity page; if a second Deshmukh-led audio-reasoning paper lands on arXiv in 2026 (especially around HA-relevant tasks like dyadic / cocktail-party reasoning), reconsider.
+- **Did NOT update `concepts/companion-phone-speech-pipeline.md`** with the Mellow datapoint. The Mellow source file already cross-links to that concept page; folding a paragraph-level Mellow entry into the companion-phone page would create a triplicate (small-language-models-edge-ai already has the full entry, audio-reasoning-chain-of-thought now has the application framing). Re-evaluate at the next horizontal sweep of the companion-phone page when a second audio-reasoning model joins the tier.
+
+**Pages touched this ingest: 4** (1 new source, 2 wiki pages updated, +1 index update, +1 log entry).
