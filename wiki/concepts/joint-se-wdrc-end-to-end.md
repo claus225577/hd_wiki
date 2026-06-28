@@ -4,7 +4,7 @@ type: concept
 created: 2026-06-25
 updated: 2026-06-25
 sources: [arxiv-2606-25959-se-agcnet-joint-se-agc-jun-2026.md]
-related: [speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, differentiable-dsp.md, nal-nl2-fitting.md, listening-effort-evaluation.md, dnn-vs-natural-processing.md, on-device-ml-hearing-aids.md]
+related: [speech-enhancement-neural-networks.md, dnn-in-hearing-aids.md, dnn-architectures-hearing-aids.md, differentiable-dsp.md, hearing-aid-prescription-formulas.md, listening-effort-evaluation.md, dnn-vs-natural-processing.md, on-device-ml-hearing-aids.md]
 tags: [speech-enhancement, automatic-gain-control, agc, wdrc, loudness, lufs, joint-optimization, end-to-end, hearing-aids, loss-function, perceived-loudness, se-agcnet]
 ---
 

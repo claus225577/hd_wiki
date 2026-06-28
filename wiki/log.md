@@ -4,6 +4,74 @@ Chronological record of all wiki operations.
 
 ---
 
+## Lint — 2026-06-28
+
+**Operation:** Comprehensive lint pass of full wiki. 143 pages across concepts (90), entities (39), comparisons (4), syntheses (15).
+
+**Checks performed:**
+1. Index completeness — all 143 disk pages vs. index.md catalog
+2. Orphan detection — pages with no incoming `related:` links from any other page
+3. Broken cross-references — `related:` fields pointing to non-existent files
+4. Duplicate concept candidates — semantically overlapping page pairs
+5. Stale content — pages last updated before 2026-03-28 (3-month cutoff)
+6. Oversized pages — pages exceeding 500 lines
+
+**Issues found and fixed (3):**
+- `concepts/joint-se-wdrc-end-to-end.md`: broken `related:` reference `nal-nl2-fitting.md` (file does not exist). Fixed → replaced with `hearing-aid-prescription-formulas.md` (the correct existing page covering NAL-NL2 and prescriptive targets).
+- `concepts/task-optimized-dnn-as-auditory-model.md`: existed on disk but absent from `wiki/index.md`. Added to Concepts table (row inserted after `salience-aware-gain`).
+- `entities/mark-saddler.md`: existed on disk but absent from `wiki/index.md`. Added to Entities table (row inserted after `waldo-nogueira`).
+- `syntheses/hidden-hearing-loss-fullstack-june-2026.md`: existed on disk but absent from `wiki/index.md`. Added to Syntheses table (row appended after `speech-as-passive-cognition-biomarker-pipeline-june-2026`).
+
+**Clean results (no action required):**
+- Orphans: 0 — all 143 pages have at least one incoming `related:` link after correct parsing (YAML inline list vs. multiline list formats both handled).
+- Stale pages: 0 — all pages last updated on or after 2026-03-28.
+- Oversized pages: 0 — no page exceeds 500 lines.
+
+**Needs human judgment (not auto-fixed):**
+- **Potential merges** — 6 candidate pairs identified. All pairs are currently cross-linked so no information is lost, but editorial consolidation could improve navigability:
+  - `concepts/dnn-in-hearing-aids.md` vs `concepts/dnn-architectures-hearing-aids.md` (general DNN overview vs. architecture-specific taxonomy — borderline split)
+  - `concepts/small-language-models-edge-ai.md` vs `concepts/tinyml-edge-ai.md` (SLM framing vs. TinyML/hardware framing — distinct enough angles, low priority)
+  - `concepts/model-compression.md` vs `concepts/tinyml-edge-ai.md` (compression techniques vs. TinyML application — likely should merge into tinyml-edge-ai)
+  - `concepts/llm-based-speech-enhancement.md` vs `concepts/speech-enhancement-neural-networks.md` (LLM-specific SE is a large subtopic of SE neural nets — likely should remain separate given page sizes)
+  - `concepts/hearing-aid-market-dynamics.md` vs `syntheses/hearing-aid-market-outlook.md` (concept vs. synthesis — different types, keep separate)
+  - `concepts/mamba-architecture.md` vs `concepts/state-space-models.md` (Mamba is a specific SSM variant — Mamba page could become a subsection of SSM page, or remain separate given its prominence)
+
+---
+
+## Ingest — 2026-06-28 (Daily Digest)
+**Operation:** Daily hearing+AI digest compiled and emailed to door.punch_4o@icloud.com (~789 words). 11 items covered (5 research papers, 4 industry, 2 AI/ML, plus a vestibular-VR worth-watching mention). Explicit framing: "what's new since the 26 Jun digest" — avoided re-surfacing DAL, the Selective NC review, Veterans Hearing Aid Improvement Act, AirPods country rollout, Sonova-Sennheiser divestiture, NYU Langone CI trial, Phonak awards, Frankfurt Auracast, CES 2026 hearables (all covered 26 Jun).
+
+**New source files (6):**
+- `sources/hearing-ai-digest-2026-06-28.md` — digest record + coverage map.
+- `sources/arxiv-2606-06962-fsc-net-bandwidth-extension-jun-2026.md` — Chen et al., FFC + progressive learning for speech bandwidth extension.
+- `sources/airpods-pro-2-prescribed-targets-pubmed-jun-2026.md` — first independent clinical-grade audit of AirPods Pro 2 OTC mode vs. NAL-NL2 / DSL.
+- `sources/hearing-aid-plasma-biomarkers-medrxiv-jun-2026.md` — medRxiv preprint, ~33% lower 7-year dementia risk + first plasma Aβ / p-tau / NfL layer on the hearing-aid intervention question.
+- `sources/amazon-prime-day-otc-hearing-aids-jun-2026.md` — Cearvol Wave $377 / Wave Lite $299; OTC retail-channel maturation.
+- `sources/dol-owcp-occupational-hearing-loss-rfi-jun-2026.md` — DOL OWCP public-input window on whether audiograms remain the appropriate primary occupational HL measure.
+
+**Updated wiki pages (3):**
+- `wiki/concepts/otc-hearing-aids.md` — frontmatter sources extended with 3 new sources (AirPods audit, Prime Day pricing, DOL OWCP RFI); bottom Sources list extended; updated date bumped to 2026-06-28.
+- `wiki/concepts/hearing-loss-dementia-link.md` — frontmatter sources extended with medRxiv plasma-biomarker preprint; new last_change note documenting the first plasma-biomarker layer on the intervention question; bottom Sources list extended.
+- `wiki/concepts/speech-enhancement-neural-networks.md` — frontmatter sources extended with FSC-Net; new last_change note documenting the FFC + progressive-learning bandwidth-extension entry.
+
+**Items covered that mapped to already-ingested sources (5):**
+- DFC-IL (Voit & Doclo) → `arxiv-2606-03832-dfc-il-voit-doclo-jun-2026.md`
+- Generative-vs-Discriminative SE (Shetu et al.) → `arxiv-2606-02913-generative-vs-discriminative-se-jun-2026.md`
+- BIHIMA UK/Ireland audiologist survey → `bihima-2026-audiologist-survey-launch-jun-2026.md`
+- Federated TinyML for urban sound → `federated-tinyml-urban-sound-mdpi-sensors-2026.md`
+- TinyML → Tiny DL survey → `tiny-ml-to-tiny-dl-survey-acm-2026.md`
+
+**Items intentionally not given new source files:**
+- Starkey Omega AI Edge AI + Vision Alliance Innovation Award — consolidated under the existing `starkey-omega-ai-big-ai-awards-2026.md` + `starkey-omega-ai-update-may-2026.md` award-cycle source pair; no separate page warranted for an additional industry-association recognition.
+- Determinants of Speech Perception Outcomes (PubMed clinical study) — mentioned in digest only; single-centre determinants study without strong novelty hook. Re-evaluate if surfaced in a larger meta-analysis.
+- Vestibular rehabilitation with VR meta-analysis — adjacent to audiology but outside the wiki's current scope (vestibular).
+
+**Index update:** new preamble entry at top of `wiki/index.md`, demoting the earlier 2026-06-28 LinkedIn-research entry to "Previously updated."
+
+**Editorial note (density):** Jun-cycle eess.AS hearing-aid traffic on arXiv was lighter on 27-28 Jun than the mid-June peak; three solid papers (Voit DFC, Shetu generative-vs-discriminative, Chen FSC-Net) plus one clinical audit (AirPods prescribed targets) constitute a respectable haul for a Sunday digest. Combined with the medRxiv plasma-biomarker preprint and the DOL OWCP regulatory signal, the cycle had genuine substance despite the slow-news-Sunday default.
+
+---
+
 ## Ingest — 2026-06-24
 **Operation:** Two LinkedIn-post sources ingested: (A) VCCA 2026 Main Programme (Jun 25–26 2026) — full keynote/invited/Session 4.A & 5.B detail; (B) Acousia Therapeutics Bimokalner Phase 2a positive readout (Jun 18 2026, Tübingen) — first clinical-stage validation of OHC-side Kv7.4 modulation against cisplatin-induced HL via transtympanic slow-release gel.
 
@@ -3460,3 +3528,116 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 - **Did NOT create or update `concepts/nal-nl2-fitting.md`** — referenced in the new joint-SE-WDRC page's `related:` but the underlying fitting-prescription concept page already exists and the SE-AGCNet result doesn't yet change anything inside it (it changes what comes downstream of the prescription). Re-evaluate if NAL-NL3 or a successor explicitly references learned-block compression targets.
 
 **Pages touched this ingest: 6** (2 new sources, 2 new concept pages, 1 wiki page updated, +1 index update, +1 log entry).
+
+## 2026-06-25 — Daily hearing+AI digest (email send)
+
+**Operation:** Daily digest compiled and sent to door.punch_4o@icloud.com (Subject: "🎧 Hearing + AI Daily Digest — 25 Jun 2026", word count 671). Discord confirmation posted to browser-agent channel.
+
+### Source files — net-new (1)
+
+- **`sources/hearing-ai-digest-2026-06-25.md`** — Digest record. 8 items covered: VCCA 2026 main programme opening day; arXiv:2606.04103 (DAL); arXiv:2606.04221 (FPGA SuDoRM-RF++ for HA SE); Phonak Virto R Infinio + Infinio Ultra Sphere 2026 BIG AI Excellence Award; Amazon Prime Day OTC promos 23–26 Jun (Sennheiser All-Day Clear up to $250 off, Cearvol Wave at $377); Apple AirPods Pro hearing-aid country expansion; edge-AI memory-bandwidth-vs-MAC design lesson; Auracast public-venue rollout.
+
+### Wiki pages created (0)
+### Wiki pages updated (0)
+
+### Editorial notes
+
+- **7 of 8 digest items map to already-ingested sources.** The DAL paper (`dal-differentiable-auditory-loop-google-june-2026.md`), FPGA SE feasibility (`fpga-sudormrf-feasibility-radboud-june-2026.md`), VCCA programme (`vcca-2026-main-programme-june-2026.md`), Phonak BIG AI award (`phonak-ai-excellence-award-march-2026.md`), AirPods country rollout (`airpods-hearing-aid-country-expansion-may-2026.md`), and Auracast venue deployments (multiple) are all already in the wiki.
+- **Amazon Prime Day OTC promotion (item 5) NOT created as standalone source.** Transient seasonal e-commerce event; captured inside the digest record rather than as a separate source, consistent with the simplicity convention applied to prior digests (e.g., 22 Jun cycle). Re-evaluate if it becomes a multi-year structural channel signal.
+- **No new wiki pages.** Today's digest deliberately surfaces material already covered by existing concept and entity pages (DAL → `wiki/concepts/differentiable-cochlear-models.md`; FPGA → `wiki/concepts/on-device-ml-hearing-aids.md`; VCCA hidden-HL / differentiable-substrate threads → existing VCCA programme source + Hidden HL concept pages). Re-stating in new wiki pages would create near-duplicates.
+- **Index not modified.** No new wiki pages → no new index entries.
+
+**Pages touched this ingest: 2** (1 new source: digest record; +1 log entry).
+
+## 2026-06-26 — LinkedIn-research ingest
+
+**Operation:** Two LinkedIn-post sources ingested for the daily 2026-06-26 pair: (A) Sabin, Taddei & Bailey — A Large-Scale Database and Predictive Model of Listener-Rated Ease of Speech Understanding in Commercial Hearing Aids (arXiv:2606.26342, 24 Jun 2026); (B) Deng, Pei, Ma, Huang, Chen & Benesty — Joint Learning of Covariance Estimation and White Noise Gain for Robust MVDR Beamforming (arXiv:2606.24137, 23 Jun 2026, Interspeech 2026).
+
+### New source files (2)
+
+1. **`sources/sabin-taddei-bailey-commercial-ha-database-arxiv-2606-26342-jun-2026.md`** — 151,608 ratings (104,298 after QC) of "Ease of Understanding" on a five-point scale; 10,394 binaural acoustic-manikin recordings; **83 commercial HA products** across 72 realistic acoustic scenes; blind MUSHRA-inspired test from HearingTracker. **Model:** frozen Whisper encoder over aided + clean signals, tiny MLP head on the difference embedding. **Correlation vs listener ratings:** 0.92 overall (HASPIv2 0.83); loud 0.89/0.75; quiet 0.79/0.58. Loud-scene performance reaches single-listener-rating reliability. The unit-of-evaluation flip from signal to product; foundation-model encoder beats hand-engineered HA intelligibility metric; ease-of-understanding becomes a learnable target aligned with the Pichora-Fuller / FUEL / WCA-2026 lineage. Operationally previewed at VCCA 2026 Session 5.B the day after the arXiv drop.
+
+2. **`sources/deng-pei-ma-joint-mvdr-wng-arxiv-2606-24137-jun-2026.md`** — Chen / Benesty / Huang collaboration (Northwestern Polytechnical University + INRS-EMT Montréal). A single network jointly predicts (a) a time-frequency noise mask for covariance estimation Φ_nn and (b) a frequency-dependent **White Noise Gain (WNG)** threshold per frame; both feed a **differentiable robust-MVDR layer** for end-to-end training. Replaces the hand-tuned WNG threshold / diagonal-loading constant that has anchored hearing-aid spatial processing for 30+ years. Reports consistent quality and intelligibility gains over fixed-WNG MVDR baselines under time-varying conditions; the regime where fixed thresholds are most fragile.
+
+### Wiki pages created (2)
+
+1. **`wiki/concepts/product-level-ha-listener-rated-evaluation.md`** — The unit-of-evaluation shift from signal-level (HASPI / HASQI / STOI / PESQ / NCM / SI-SDR) to product-level (a shipping commercial HA worn in a real scene by an acoustic manikin, rated by a population). Documents the Sabin et al. dataset construction, the Whisper + MLP recipe, and four downstream implications: (1) objective-metric era is closing because the field can now afford 100K-scale real listener ratings; (2) the unit flip changes regulator-facing post-market surveillance, comparative-claims marketing, and R&D A/B testing; (3) foundation models eat another vertical-specific stack (frozen Whisper + tiny head beats HASPIv2); (4) Ease of Understanding becomes a learnable target aligned with Pichora-Fuller / FUEL / WCA-2026 communication-accessibility lineage. Cross-links: `non-intrusive-intelligibility-prediction` (sibling for the **signal-level** non-intrusive axis), `foundation-model-fusion-speech` (same frozen-encoder + small-head recipe), `listening-effort-evaluation`, `communication-accessibility-metric`, `subjective-objective-hearing-gap`, `syntheses/speech-enhancement-evaluation-stack-cracks-may-2026`, `syntheses/pretraining-corpus-as-moat-hearing-ai`, `entities/clarity-prediction-challenge`, `entities/vcca-computational-audiology`.
+
+2. **`wiki/concepts/differentiable-mvdr-beamforming.md`** — Differentiable robust-MVDR with learned noise-covariance estimate + learned frequency-dependent WNG threshold. Documents the robust-MVDR stability problem (Cox 1987 diagonal loading; Doclo / Gannot WNG-constraint lineage), the 30-year hand-tuning art of WNG constants per program (Restaurant / Outdoors / Car), the Deng et al. joint-learning recipe, and four implications for HA spatial processing: (1) microphone-array self-noise makes WNG load-bearing for tiny BTE/RIC arrays; (2) per-program → per-frame frequency-dependent learned thresholds dissolve the program-switching architecture; (3) the DSP-vs-DNN boundary moves up one level — first credible end-to-end-trainable replacement for the spatial stage; (4) joint optimisation kills another cascade (mask-estimator + beamformer were two separately-tuned blocks). Open questions: sub-10 ms HA-chip latency, BTE/RIC 2–3-mic array transfer, mic-drift robustness, audiologist interpretability, joint training with downstream DNN-NR + WDRC (cascade-collapse composes with SE-AGCNet). Cross-links: `dnn-architectures-hearing-aids`, `dnn-in-hearing-aids`, `differentiable-dsp` (parent operator family), `joint-se-wdrc-end-to-end` (sibling cascade-collapse), `on-device-ml-hearing-aids`, `speech-enhancement-neural-networks`, `fxlms-adaptive-filtering`, `syntheses/hearing-aid-ai-stack-2026`, `syntheses/on-chip-hearing-ai-levers-june-2026`.
+
+### Wiki pages updated (3)
+
+1. **`wiki/concepts/non-intrusive-intelligibility-prediction.md`** — Frontmatter: added the Sabin source, added the new sibling `product-level-ha-listener-rated-evaluation` and `subjective-objective-hearing-gap` to `related:`, new tags `ease-of-understanding / whisper-encoder / commercial-hearing-aid-evaluation / product-level-evaluation`; bumped `updated:` to 2026-06-26 with last_change note. Body: new section **"June 2026 — The Unit-of-Evaluation Shift (Sabin, Taddei & Bailey)"** documenting the dataset (151,608 ratings × 83 commercial HAs × 72 scenes), the frozen-Whisper + MLP recipe, the head-to-head HASPIv2 numbers, the signal-vs-product framing, and three implications (objective-metric era closing; foundation models eat another vertical-specific stack; Ease of Understanding becomes a learnable target). Sources section extended.
+
+2. **`wiki/concepts/foundation-model-fusion-speech.md`** — Frontmatter: added the Sabin source, added the new sibling `product-level-ha-listener-rated-evaluation` to `related:`, new tags `commercial-ha-evaluation / ease-of-understanding`; bumped `updated:` to 2026-06-26 with last_change note documenting that the frozen-encoder + small-head recipe generalises from CPC3 signal scoring to product-level evaluation.
+
+3. **`wiki/concepts/differentiable-dsp.md`** — Frontmatter: added the Deng source, added the new sibling `differentiable-mvdr-beamforming` and `joint-se-wdrc-end-to-end` to `related:`, new tags `mvdr-beamforming / spatial-processing / white-noise-gain`; bumped `updated:` to 2026-06-26 with last_change note. Body: section heading "Three Hearing-AI DDSP Beachheads" → "**Four** Hearing-AI DDSP Beachheads"; new beachhead block **#4 Differentiable Robust MVDR (Deng et al., Jun 23 2026 — Interspeech 2026)** with the joint-network architecture, the 30-year hand-tuned WNG context, and the cross-link to the new `differentiable-mvdr-beamforming` page. Related Pages extended.
+
+### Index update
+
+- `wiki/index.md` preamble entry for 2026-06-26 ingest + 2 new concept rows (`product-level-ha-listener-rated-evaluation`, `differentiable-mvdr-beamforming`). Pushed prior 2026-06-25 entry to "Previously updated".
+
+### Editorial notes
+
+- **Did NOT create a dedicated entity page for HearingTracker** — the consumer-side review platform behind Sabin/Taddei/Bailey's dataset has a clear role (web-administered MUSHRA at population scale; independent ranking infrastructure for commercial HAs), but a single-paper entity page risks orphaning. Re-evaluate at the next HearingTracker-authored or HearingTracker-dataset-using paper drop, especially if an OEM publicly collaborates.
+- **Did NOT create dedicated entity pages for Andrew Sabin / Steve Taddei / Abram Bailey** — Sabin is referenced in the existing VCCA 2026 main-programme source as a featured Session 5.B talk; that cross-reference is sufficient for now. Re-evaluate if Sabin / HearingTracker continues to drive the product-level-evaluation programme through 2027.
+- **Did NOT create a dedicated entity page for the Chen / Benesty / Huang array-signal-processing collaboration** — well-established collaboration with a decades-long publication record in microphone-array processing; a single LinkedIn-cycle ingest doesn't justify the entity page. Re-evaluate at the next HA-relevant arXiv drop from the same cluster.
+- **Did NOT update `concepts/dnn-in-hearing-aids.md` or `concepts/on-device-ml-hearing-aids.md`** with the differentiable-MVDR datapoint inline — spatial-stage differentiable beamforming is a structurally distinct concept and the new dedicated page handles it. Touching both would create near-duplicate prose. Re-evaluate at horizontal lint pass.
+- **Did NOT update `syntheses/hearing-aid-ai-stack-2026.md` or `syntheses/on-chip-hearing-ai-levers-june-2026.md`** to add MVDR / spatial-stage as a sixth lever / new tile. The synthesis-level update is the natural next move (composes Jun 23 OVC + Jun 23 DDSP-EQ + Jun 25 joint-SE-WDRC + Jun 26 differentiable-MVDR into one "operator family eating the classical-DSP HA chain" pass), but that synthesis-level pass is its own careful editorial cycle — defer to a near-future synthesis update rather than a casual append now.
+- **Did NOT update `syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md`** with the Sabin / product-level cracks. The May synthesis is tightly scoped to *SE-model* evaluation cracks (Behringer / L3-SE-hallucination / ASR-too-good); product-level evaluation is a *different unit* and the framing of the May synthesis doesn't accommodate it cleanly. The honest move is a new June 2026 synthesis page on the unit-of-evaluation shift, written once a second product-level datapoint lands. For now the new concept page `product-level-ha-listener-rated-evaluation` carries the standalone framing and cross-links back to the May synthesis.
+- **Did NOT update `entities/sonova-ag.md` / `entities/demant-oticon.md` / `entities/starkey.md`** — neither paper is OEM-authored or OEM-attributable; ingesting research preprints into OEM entity pages would over-attribute, especially with HearingTracker explicitly outside the OEM circle.
+
+**Pages touched this ingest: 8** (2 new sources, 2 new concept pages, 3 wiki pages updated, +1 index update, +1 log entry).
+
+## 2026-06-26 — Daily digest ingest (PM cycle)
+
+**Operation:** Hearing + AI Daily Digest email compiled and sent to door.punch_4o@icloud.com (subject "🎧 Hearing + AI Daily Digest — 26 Jun 2026"). 9 items: 2 research papers, 3 industry news, 2 AI/ML developments, 2 worth-watching.
+
+### New source files (1)
+
+1. **`sources/hearing-ai-digest-2026-06-26.md`** — Digest-record source documenting today's 9 items, delivery metadata, and a coverage map showing all 9 items mapping to already-ingested wiki sources (DAL paper, Selective Noise Cancellation review, Veterans Hearing Aid Improvement Act, AirPods country rollout, Sonova / SilentCloud, NYU Langone AI CI programming, Phonak Infinio BIG AI Excellence Award, Frankfurt Auracast / European venue rollout, hearables convergence at CES 2026). Records the Guangfan Lightwear datapoint inside the digest record per simplicity policy rather than creating a separate source file for a single-CES product mention.
+
+### Wiki pages created (0)
+
+### Wiki pages updated (0)
+
+### Editorial notes
+
+- **9 of 9 digest items map to already-ingested sources.** Consistent with the slow-news midweek pattern noted in `hearing-ai-digest-2026-06-25.md` — the 24–26 Jun arXiv eess.AS window did not produce a genuinely new HA-relevant paper that wasn't already in the wiki.
+- **No new wiki pages.** Today's digest deliberately re-surfaces existing material under tighter editorial framings (DAL as physiology-targeted fitting; the Advances review as deployment-engineering rather than algorithmic gap; the Veterans Act as the first serious federal OTC-into-payer move). The framings belong in the digest itself; the underlying concept pages (`wiki/concepts/differentiable-cochlear-models.md`, `wiki/concepts/on-device-ml-hearing-aids.md`, `wiki/concepts/speech-enhancement-neural-networks.md`, `wiki/entities/sonova-ag.md`, `wiki/entities/apple-hearing-health.md`) already carry the substance.
+- **No standalone Guangfan Lightwear source.** Single-product CES 2026 marker; captured in the digest record. Re-evaluate if Lightwear ships at retail, lands FDA clearance, or recurs in a non-CES news cycle.
+- **Index not modified.** No new wiki pages → no new index entries.
+
+**Pages touched this ingest: 2** (1 new source: digest record; +1 log entry).
+
+## 2026-06-28 — LinkedIn daily ingest
+
+**Operation:** Two LinkedIn drafts generated for 28 Jun 2026 (binaural-localisation + voice-AI affect gap) — corresponding research sources ingested and connected to the wiki.
+
+### New source files (2)
+
+1. **`sources/arxiv-2606-24367-bayesian-localisation-jun-2026.md`** — Barumerli et al. (Verona / TU Berlin / Imperial College London), "Statistical validation and full-sphere extension of a Bayesian model for human static sound localisation," arXiv:2606.24367, 23 Jun 2026. Validated Bayesian ideal-observer; full-sphere coverage + high-frequency spectral fidelity dominate HRTF template quality; interpolation algorithm is secondary. Open-source Python implementation.
+2. **`sources/arxiv-2606-26083-voice-ai-hears-not-listens-jun-2026.md`** — Bartelds, Bianchi & Zou (Stanford and collaborators), "Real-Time Voice AI Hears but Does Not Listen," arXiv:2606.26083, 24 Jun 2026. Four production voice-AI systems privileged lexical content over paralinguistic cues; 3 of 4 could *name* the emotional state they had just ignored — perception-action gap, not perception gap.
+
+### Wiki pages created (4)
+
+1. **`wiki/concepts/binaural-sound-localisation-models.md`** — the Bayesian ideal-observer family for binaural localisation; positions Barumerli et al. as the first statistically validated implementation; consequences for HA spatialisation evaluation.
+2. **`wiki/concepts/hrtf-personalisation.md`** — re-frames the 30-year HRTF interpolation debate around the Barumerli finding: measurement quality dominates algorithm choice; lists practical cheap-personalisation paths (phone photogrammetry, blocked-meatus probes, sparse-rig + neural fields).
+3. **`wiki/concepts/vocal-affect-paralinguistics-hearing-ai.md`** — the affect channel HAs have ignored; maps the Bartelds perception-action gap to the HA action-policy gap.
+4. **`wiki/concepts/salience-aware-gain.md`** — engineering concept for the next-generation HA action policy that conditions gain on inferred source attribution + affect + context; the downstream operationalisation of the vocal-affect channel.
+
+### Wiki pages updated (2)
+
+1. **`wiki/syntheses/ai-understanding-gap-hearing-industry.md`** — added a "perception-action gap inside the devices (Jun 2026)" section that connects the Bartelds production-voice-AI failure mode to the HA perception-action gap; added source + related links.
+2. **`wiki/concepts/turn-taking-prediction-hearing-ai.md`** — added cross-references to `vocal-affect-paralinguistics-hearing-ai` and `salience-aware-gain`; affect is the dimension current turn-taking models miss.
+
+### Editorial notes
+
+- **The Barumerli paper was deliberately treated as a "concept-creation" event, not a "synthesis" event.** Binaural localisation models are a genuine gap in the wiki — neither `auditory-attention-decoding.md` nor `non-intrusive-intelligibility-prediction.md` covered ideal-observer localisation. Two complementary concept pages (`binaural-sound-localisation-models` + `hrtf-personalisation`) are appropriate scope; collapsing into one would have over-broadened either page.
+- **The Bartelds paper was deliberately treated as a synthesis update + concept-creation, not a synthesis creation.** A dedicated "perception-action gap" synthesis page would over-claim from one paper; the right move is to extend the existing `ai-understanding-gap-hearing-industry.md` synthesis with the engineering-internal counterpart, and to create the operationalisation concept (`salience-aware-gain`) and the perception-side concept (`vocal-affect-paralinguistics-hearing-ai`).
+- **Did NOT create dedicated entity pages for Barumerli / Brinkmann / Picinali / Geronazzo or Bartelds / Bianchi / Zou.** Established research collaborations with broad publication records; single-LinkedIn-cycle ingest does not justify entity pages. Re-evaluate at second HA-relevant publication from either cluster.
+- **Did NOT update `concepts/dnn-in-hearing-aids.md` or `concepts/on-device-ml-hearing-aids.md`** inline with the salience-aware-gain datapoint — the dedicated concept page handles it, and these umbrella pages would suffer from concept-drift if every shipping-policy idea were appended.
+- **Did NOT update `syntheses/hearing-aid-ai-stack-2026.md`** to add a spatial-localisation-evaluation lever. The synthesis pass that adds spatial + affect levers together is its own editorial cycle and deserves a unit-of-evaluation framing rather than two unrelated appends.
+- **Did NOT add a new tag taxonomy for "perception-action gap."** Used existing `perception-action-gap` tag on the new pages where appropriate; will formalise into the tag index if it appears in a third source.
+
+**Pages touched this ingest: 8** (2 new sources, 4 new concept pages, 2 wiki pages updated, +1 log entry, +1 index update).

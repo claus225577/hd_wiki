@@ -2,10 +2,10 @@
 title: The AI Understanding Gap in the Hearing Industry
 type: synthesis
 created: 2026-04-17
-updated: 2026-05-06
-sources: [karpathy-ai-psychosis-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, karpathy-claude-md-template-viral-april-2026.md, karpathy-idea-files-april-2026.md, mcp-dev-summit-97m-installs-april-2026.md, kimi-k26-agentic-model-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, karpathy-sequoia-ascent-2026.md]
-related: [../concepts/otc-hearing-aids.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/auracast-bluetooth-le-audio.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../concepts/model-context-protocol.md, ../concepts/audiologist-workforce-shortage.md, ../concepts/agentic-engineering-hearing-rd.md]
-tags: [ai-psychosis, understanding-gap, marketing, consumer-education, adoption, software-3, agentic-engineering]
+updated: 2026-06-28
+sources: [karpathy-ai-psychosis-april-2026.md, auracast-ready-vs-enabled-venue-guides-april-2026.md, karpathy-claude-md-template-viral-april-2026.md, karpathy-idea-files-april-2026.md, mcp-dev-summit-97m-installs-april-2026.md, kimi-k26-agentic-model-april-2026.md, starkey-omega-ai-big-ai-awards-2026.md, karpathy-sequoia-ascent-2026.md, arxiv-2606-26083-voice-ai-hears-not-listens-jun-2026.md]
+related: [../concepts/otc-hearing-aids.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/auracast-bluetooth-le-audio.md, ../comparisons/ai-hearing-aid-platforms-2026.md, ../concepts/model-context-protocol.md, ../concepts/audiologist-workforce-shortage.md, ../concepts/agentic-engineering-hearing-rd.md, ../concepts/vocal-affect-paralinguistics-hearing-ai.md, ../concepts/salience-aware-gain.md]
+tags: [ai-psychosis, understanding-gap, marketing, consumer-education, adoption, software-3, agentic-engineering, perception-action-gap]
 ---
 
 # The AI Understanding Gap in the Hearing Industry
@@ -110,6 +110,22 @@ In hearing R&D this maps directly:
 
 See [[../concepts/agentic-engineering-hearing-rd]] for the full treatment.
 
+## The Perception-Action Gap Inside the Devices (Jun 2026)
+
+Bartelds, Bianchi & Zou ("Real-Time Voice AI Hears but Does Not Listen", arXiv:2606.26083, 24 Jun 2026) names a second, narrower understanding gap: the one **between perception and action inside the AI system itself**.
+
+In four production voice-AI systems they tested, the systems:
+
+- Perceived vocal-affect cues (fear, distress, sarcasm) clearly enough that **3 of 4** could *name* the emotional state when asked.
+- Nevertheless approved wire transfers from frightened callers and ended calls with distressed users.
+
+This is structurally the same gap that lives inside every modern hearing aid:
+
+- The perception side (DNN-NR, neural beamforming, foundation-model SE) has accelerated for a decade.
+- The action side (amplify, compress, transmit) has barely moved.
+
+The HA-specific response to this gap is salience-aware processing — see [[../concepts/salience-aware-gain]] and [[../concepts/vocal-affect-paralinguistics-hearing-ai]]. The understanding-gap synthesis now has an engineering-internal counterpart, not just a marketing-vs-consumer one.
+
 ## Open Questions
 
 - Should the hearing aid industry develop standardized AI feature labels (similar to nutrition labels)?
@@ -117,6 +133,7 @@ See [[../concepts/agentic-engineering-hearing-rd]] for the full treatment.
 - Will consumer AI literacy improve fast enough to close the gap naturally?
 - Can structured agent instruction patterns (like CLAUDE.md and idea files) be adapted for hearing AI systems to ensure reliable, predictable behavior?
 - Could MCP-based AI agents serve as the bridge layer between complex hearing technology and patient understanding?
+- What is the right regulatory category for "heard but did not act" failures in HA action policies?
 
 ## Related Pages
 
@@ -136,3 +153,4 @@ See [[../concepts/agentic-engineering-hearing-rd]] for the full treatment.
 - [Karpathy Idea Files](../sources/karpathy-idea-files-april-2026.md) — "Share the idea, not the code" paradigm
 - [MCP Dev Summit + 97M Installs](../sources/mcp-dev-summit-97m-installs-april-2026.md) — AI agent infrastructure milestone
 - [Karpathy — Sequoia AI Ascent 2026](../sources/karpathy-sequoia-ascent-2026.md) — "Outsource thinking, not understanding"; Software 3.0 framing
+- [Bartelds, Bianchi, Zou — "Real-Time Voice AI Hears but Does Not Listen", arXiv:2606.26083 (Jun 2026)](../sources/arxiv-2606-26083-voice-ai-hears-not-listens-jun-2026.md) — perception-action gap inside production voice-AI systems; mirrors the HA action-policy gap.

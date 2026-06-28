@@ -2,20 +2,24 @@
 title: Differentiable DSP (DDSP) for Hearing AI
 type: concept
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-06-26
+last_change: 2026-06-26 — added Deng/Pei/Ma/Huang/Chen/Benesty (arXiv:2606.24137, 23 Jun 2026, Interspeech 2026): joint differentiable robust-MVDR layer with learned noise-covariance estimate AND learned frequency-dependent WNG threshold. Extends DDSP from adaptive filtering / room EQ / cochlear front-end to the spatial-beamforming stage of the HA pipeline. New sibling concept page `differentiable-mvdr-beamforming`.
 sources:
   - arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md
   - dal-differentiable-auditory-loop-google-june-2026.md
   - arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md
+  - deng-pei-ma-joint-mvdr-wng-arxiv-2606-24137-jun-2026.md
 related:
   - acoustic-feedback-cancellation.md
   - room-aware-dereverberation.md
   - differentiable-cochlear-models.md
+  - differentiable-mvdr-beamforming.md
   - speech-enhancement-neural-networks.md
+  - joint-se-wdrc-end-to-end.md
   - hidvas-dataset.md
   - training-deployment-distribution-gap.md
   - on-device-ml-hearing-aids.md
-tags: [ddsp, differentiable-dsp, fxlms, adaptive-filtering, room-eq, vent-eq, feedback-cancellation, dafx, hearing-aids, open-source, autodiff]
+tags: [ddsp, differentiable-dsp, fxlms, adaptive-filtering, room-eq, vent-eq, feedback-cancellation, dafx, hearing-aids, open-source, autodiff, mvdr-beamforming, spatial-processing, white-noise-gain]
 ---
 
 # Differentiable DSP (DDSP) for Hearing AI
@@ -29,7 +33,7 @@ Hearing-aid signal processing has been built for forty years out of analytically
 
 DDSP reframes each of those blocks as a **point in a continuous parameter space the framework can search over**. The classical algorithm is recovered as one configuration of the differentiable operator; novel filter topologies, perceptual losses, and modern optimisers (Adam, RMSprop) plug in without re-deriving update rules. Crucially, the resulting block is **end-to-end trainable** with whatever sits downstream — a perceptual loss, a neural SE network, a cochlear model.
 
-## Three Hearing-AI DDSP Beachheads (June 2026)
+## Four Hearing-AI DDSP Beachheads (June 2026)
 
 ### 1. DDSP-EQ — Adaptive Room Equalization (Marcos-Macias et al., Jun 21 2026)
 [arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md](../../sources/arxiv-2606-22563-ddsp-adaptive-room-eq-jun-2026.md). Accepted at DAFx26. **Recovers classical filtered-x LMS (FxLMS) as a special case** of a general DDSP adaptive-EQ framework. Different EQ structures (cascade biquads, parametric EQs, learned implicit responses), perceptual losses, and modern optimisers all plug in. Reported: **~70% reduction in system distance**, **13% worst-case mel-spectral distance improvement** vs unequalised baseline. Open-source implementation. See [[fxlms-adaptive-filtering]] for the algorithmic foundation.
@@ -39,6 +43,9 @@ DDSP reframes each of those blocks as a **point in a continuous parameter space 
 
 ### 3. HIDVAS — Real Measurement Substrate (Roebben et al., KU Leuven, Jun 12 2026)
 [arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md](../../sources/arxiv-2606-14175-hidvas-ku-leuven-jun-2026.md). Not a DDSP method, but the data substrate the DDSP-EQ framework needs: dummy-head recordings across **4 dome configurations × 4 reverberation conditions**, including impulse responses. Stacks with DDSP-EQ to support per-dome / per-room personalisation studies. See [[hidvas-dataset]].
+
+### 4. Differentiable Robust MVDR (Deng et al., Jun 23 2026 — Interspeech 2026)
+[deng-pei-ma-joint-mvdr-wng-arxiv-2606-24137-jun-2026.md](../../sources/deng-pei-ma-joint-mvdr-wng-arxiv-2606-24137-jun-2026.md). Extends DDSP from the *spectral-and-perceptual* stages to the **spatial stage**. A single network jointly predicts the noise-mask covariance estimate and a frequency-dependent **White Noise Gain (WNG) threshold** per frame; both feed a differentiable robust-MVDR layer with end-to-end gradients. The 30-year hand-tuned WNG / diagonal-loading parameter becomes a learned function. Reports consistent intelligibility gains over fixed-WNG MVDR baselines under time-varying conditions. See [[differentiable-mvdr-beamforming]].
 
 ## The Unifying Architectural Move
 Across all three, the same shift recurs:
@@ -68,6 +75,8 @@ FxLMS sits at the deepest part of the on-chip path. It runs **every sample**, ah
 
 ## Related Pages
 - [[acoustic-feedback-cancellation]] — the canonical FxLMS hearing-aid application; DDSP-EQ is the differentiable recast
+- [[differentiable-mvdr-beamforming]] — spatial-stage differentiable-DSP, learned WNG threshold
+- [[joint-se-wdrc-end-to-end]] — loudness-stage joint optimisation, same cascade-collapse logic
 - [[room-aware-dereverberation]] — RIR encoders as the SE-side parallel
 - [[differentiable-cochlear-models]] — the perceptual-side differentiable substrate (DAL / CARFAC-JAX)
 - [[speech-enhancement-neural-networks]] — downstream consumer of jointly-trained DDSP blocks

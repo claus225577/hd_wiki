@@ -2,9 +2,9 @@
 title: Hearing Loss and Dementia: The Evidence
 type: concept
 created: 2026-04-15
-updated: 2026-06-24
-last_change: 2026-06-24 — Cross-linked to the new dedicated [[hidden-hearing-loss]] concept page, the [[otoprotection-pharmacology]] page (Acousia Phase 2a, Jun 18 2026), and the [[../syntheses/hidden-hearing-loss-fullstack-june-2026]] synthesis. The Knipper section here is now the cognitive-risk anchor for the broader HHL stack; the standalone HHL concept page consolidates the diagnostic / mechanism / VCCA 2026 programme material.
-sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md, frontiers-dementia-hearing-loss-review-2026.md, vcca-2026-main-programme-june-2026.md, acousia-bimokalner-phase-2a-june-2026.md]
+updated: 2026-06-28
+last_change: 2026-06-28 — Added [[../sources/hearing-aid-plasma-biomarkers-medrxiv-jun-2026]] (medRxiv preprint indexed Jun 27): ~33% lower 7-year dementia risk in new-HA-prescription arm, modest longitudinal cognitive change, plasma Aβ / p-tau / NfL readout layered on top of cognitive endpoints. First plasma-biomarker layer on the hearing-aid intervention question.
+sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md, frontiers-dementia-hearing-loss-review-2026.md, vcca-2026-main-programme-june-2026.md, acousia-bimokalner-phase-2a-june-2026.md, hearing-aid-plasma-biomarkers-medrxiv-jun-2026.md]
 related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md, care-partner-dyad-models.md, hidden-hearing-loss.md, otoprotection-pharmacology.md, ../syntheses/hidden-hearing-loss-fullstack-june-2026.md, ../entities/sharon-kujawa.md, ../entities/harvey-dillon.md, ../entities/anu-sharma.md]
 tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping, hidden-hearing-loss, ehf-audiometry, otoprotection]
 ---
@@ -172,3 +172,4 @@ The review will be a 12-month talking point at HLAA, AAA, and policy panels — 
 - [Cognitive Outcome Prediction Model](../sources/hearing-aid-cognitive-outcome-prediction-2025.md)
 - [Framingham Heart Study — Hearing & Brain (JAMA Open, 2024)](../sources/hearing-loss-dementia-framingham-jama-2024.md)
 - [Framingham — Self-Reported Hearing Aid Use & Incident Dementia (JAMA Neurology Letters, 2025)](../sources/framingham-hearing-aid-dementia-jaman-2025.md) — 61% lower dementia risk in under-70 hearing-aid users
+- [Hearing Aids and Plasma Biomarkers of Alzheimer's (medRxiv, indexed Jun 2026)](../sources/hearing-aid-plasma-biomarkers-medrxiv-jun-2026.md) — ~33% lower 7-year dementia risk in new-prescription arm; modest cognitive change; first plasma Aβ / p-tau / NfL layer on the intervention question

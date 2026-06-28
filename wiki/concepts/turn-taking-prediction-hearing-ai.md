@@ -14,6 +14,8 @@ related:
   - auditory-attention-decoding.md
   - care-partner-dyad-models.md
   - listening-effort-evaluation.md
+  - vocal-affect-paralinguistics-hearing-ai.md
+  - salience-aware-gain.md
   - ../syntheses/speech-enhancement-evaluation-stack-cracks-may-2026.md
 tags: [turn-taking, multi-party-conversation, pragmatic-primitive, predictive-beamforming, voice-agents, speech-llm, role-conditioning, conversation, dyadic-interaction, interactional-layer]
 ---
