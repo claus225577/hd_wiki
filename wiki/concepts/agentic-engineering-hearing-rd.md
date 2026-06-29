@@ -2,8 +2,8 @@
 title: Agentic Engineering in Hearing R&D
 type: concept
 created: 2026-05-06
-updated: 2026-05-20
-sources: [karpathy-sequoia-ascent-2026.md, karpathy-idea-files-april-2026.md, karpathy-claude-md-template-viral-april-2026.md, karpathy-anthropic-pretraining-may-2026.md]
+updated: 2026-06-29
+sources: [karpathy-sequoia-ascent-2026.md, karpathy-idea-files-april-2026.md, karpathy-claude-md-template-viral-april-2026.md, karpathy-anthropic-pretraining-may-2026.md, karpathy-claude-md-ten-rules-june-2026.md]
 related: [../syntheses/ai-understanding-gap-hearing-industry.md, ../concepts/dnn-in-hearing-aids.md, ../concepts/on-device-ml-hearing-aids.md, ../concepts/model-context-protocol.md, ../syntheses/hearing-ai-research-landscape-2025.md, ../syntheses/pretraining-corpus-as-moat-hearing-ai.md]
 tags: [agentic-engineering, software-3, karpathy, llm-agents, r-and-d, taste, understanding, pre-training, anthropic]
 ---
@@ -58,6 +58,28 @@ Read-across for hearing R&D:
 - The conceptual move is not "automate the experiment" — it is "let the agent compress the parameter-search / writeup / cross-reference work so the human can spend more time on calibrated judgment"
 - It also reopens a strategic question for OEMs that the fine-tuning-era playbook had quietly closed: does the next-decade moat live in the **base model's pre-training corpus**, not just in the on-chip algorithm? See [[../syntheses/pretraining-corpus-as-moat-hearing-ai]] for the full thread
 
+## Ten-Rule CLAUDE.md Extension (June 27 2026) — Named Failure Modes for ML Loops
+
+A six-rule extension to the four-rule community CLAUDE.md template started circulating on X on Friday 27 Jun 2026, attributed to Karpathy via a contact on his Anthropic pre-training team. Authenticity is unconfirmed; the operational value of the **named failure modes** is what justifies inclusion here.
+
+### The four named failure modes — and their HA-R&D analogues
+
+- **Kitchen Sink** — piling on options/features/losses without ablating. HA analogue: adding a multi-resolution STFT loss on top of perceptual loss and a differentiable-cochlear loss without ablating the original two; the dashboard improves, nobody knows which loss is doing the work.
+- **Wrong Abstraction** — clean abstraction over a stack-layer that should stay messy. HA analogue: wrapping the chip-vendor SDK in an OOP layer so the SE engineer never sees the int8 quantisation boundary; the bug at deployment is on the wrong side of the abstraction.
+- **Optimistic Path** — declaring victory on the canonical test set while field/edge cases break. HA analogue: STOI improves on VoiceBank-DEMAND, team declares victory, wearer commute recordings sound worse. The new [[product-level-ha-listener-rated-evaluation|Sabin et al. listener-rated benchmark]] is the cleanest published Optimistic-Path detector for HA SE today.
+- **Runaway Refactor** — small change cascades into rewriting adjacent code that wasn't broken. HA analogue: an SE branch tensor shape change cascades into a WDRC fitting-interface rewrite three weeks later.
+
+### Verification substrate in HA is unusually strong
+
+The verification-before-fix rule is the highest-leverage of the six new rules when the loop runs unsupervised for hours. HA teams have more verification surface than most ML applications:
+
+- HASPIv2 (objective intelligibility)
+- The Sabin et al. listener-rated benchmark (arXiv:2606.26342, 24 Jun 2026)
+- In-situ wearer telemetry from connected HAs
+- Behavioural-audiometry probes from the [[differentiable-cochlear-models|differentiable-cochlea / DAL]] program
+
+The standing risk is the same one Karpathy names: the loop optimises the surrogate it watches, not the metric the wearer feels.
+
 ## Implications for Sonova / Industry R&D
 
 - The competitive moat shifts from "who has the most ML headcount" to "who has the most *calibrated* hearing-domain judgment paired with effective agent infrastructure"
@@ -86,3 +108,4 @@ Read-across for hearing R&D:
 - [Karpathy idea files](../../sources/karpathy-idea-files-april-2026.md) — knowledge specifications for agents
 - [Karpathy CLAUDE.md template](../../sources/karpathy-claude-md-template-viral-april-2026.md) — agent behavioural guardrails
 - [Karpathy → Anthropic pre-training (May 19 2026)](../../sources/karpathy-anthropic-pretraining-may-2026.md) — Anthropic's "use Claude to accelerate pre-training" framing as the most expensive recursive AI-improves-AI loop
+- [Karpathy CLAUDE.md ten rules (June 28 2026)](../../sources/karpathy-claude-md-ten-rules-june-2026.md) — six-rule extension of the template adding verification-before-fix, debugging discipline, dependency hygiene, and four named failure modes (Kitchen Sink, Wrong Abstraction, Optimistic Path, Runaway Refactor)

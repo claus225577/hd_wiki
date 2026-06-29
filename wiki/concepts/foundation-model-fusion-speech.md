@@ -2,17 +2,19 @@
 title: Foundation-Model Fusion for Speech (Multi-Encoder Mid-Fusion)
 type: concept
 created: 2026-05-27
-updated: 2026-06-26
-last_change: 2026-06-26 — added Sabin/Taddei/Bailey (arXiv:2606.26342, 24 Jun 2026): frozen Whisper encoder + tiny MLP head on aided-minus-clean difference embeddings beats HASPIv2 (0.92 vs 0.83 correlation) on listener ratings of 83 commercial hearing aids. Strong evidence that the frozen-foundation-encoder + small-head recipe generalises from CPC3 signal scoring to product-level evaluation.
+updated: 2026-06-29
+last_change: 2026-06-29 — added Pu & Scarpiniti (arXiv:2606.24745, 23 Jun 2026): a frozen **Descript Audio Codec (DAC)** plays the same foundation-eats-vertical role on the **training side** of SE that frozen Whisper plays on the **evaluation side**. Skip-free flow-matching SE backbone aligned to clean-speech DAC latent at bottleneck and decoder; 5 NFE inference; competitive PESQ. The frozen-foundation-as-target recipe now spans evaluation (Sabin et al. → HASPIv2 displaced) and training-loss (Pu & Scarpiniti → U-Net skip connections displaced). See new concept page [[skip-free-flow-matching-se]]. Previous change (2026-06-26) — added Sabin/Taddei/Bailey (arXiv:2606.26342, 24 Jun 2026): frozen Whisper encoder + tiny MLP head on aided-minus-clean difference embeddings beats HASPIv2 (0.92 vs 0.83 correlation) on listener ratings of 83 commercial hearing aids.
 sources:
   - frame-aligned-fusion-canary-wavlm-cpc3-may-2026.md
   - arxiv-2605-23604-word-level-cpc3-fusion-nakazawa-may-2026.md
   - arxiv-2606-01905-electrolaryngeal-se-jun-2026.md
   - arxiv-2606-02305-whisper-ecog-ciferri-jun-2026.md
   - sabin-taddei-bailey-commercial-ha-database-arxiv-2606-26342-jun-2026.md
+  - pu-scarpiniti-beyond-unet-flow-matching-se-2026.md
 related:
   - non-intrusive-intelligibility-prediction.md
   - product-level-ha-listener-rated-evaluation.md
+  - skip-free-flow-matching-se.md
   - speech-enhancement-neural-networks.md
   - llm-based-speech-enhancement.md
   - cross-lifespan-speech-models.md

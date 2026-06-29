@@ -131,7 +131,8 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Predictive Pediatric Earmolds](concepts/predictive-pediatric-earmolds.md) | pediatric-hearing, custom-earmolds, ml-prediction, 3d-printing, ear-canal-growth, mirroring, open-source-medical | 2026-05-15 |
 | [OTC Hearing Aids](concepts/otc-hearing-aids.md) | otc, regulation, consumer, lexie, bose, sams-club, retail-channel, vertical-integration, anti-personalization, audien-atom-air, elehear-delight, cic-form-factor | 2026-06-09 |
 | [Small Language Models for Edge AI](concepts/small-language-models-edge-ai.md) | slm, edge-ai, tinyml, on-device, medical-llm | 2026-05-15 |
-| [Speech Enhancement Neural Networks](concepts/speech-enhancement-neural-networks.md) | deep-learning, speech, noise-reduction, late-reverberation, llm-based-se, linguistic-hallucination, diffusion-aec, companion-phone, own-voice-cancellation, ovc, band-axis, quaternion-conformer, rir-encoder | 2026-06-23 |
+| [Speech Enhancement Neural Networks](concepts/speech-enhancement-neural-networks.md) | deep-learning, speech, noise-reduction, late-reverberation, llm-based-se, linguistic-hallucination, diffusion-aec, companion-phone, own-voice-cancellation, ovc, band-axis, quaternion-conformer, rir-encoder, skip-free-flow-matching | 2026-06-29 |
+| [Skip-Free Flow-Matching Speech Enhancement](concepts/skip-free-flow-matching-se.md) | flow-matching, skip-connections, u-net, descript-audio-codec, dac, foundation-model-codec, latent-alignment, generative-se, low-nfe-inference | 2026-06-29 |
 | [Teleaudiology](concepts/teleaudiology.md) | telehealth, remote-care, access | 2026-05-04 |
 | [Audio Reasoning and Chain-of-Thought](concepts/audio-reasoning-chain-of-thought.md) | audio-reasoning, chain-of-thought, explainability | 2026-04-16 |
 | [World Models for Hearing AI](concepts/world-models-hearing-ai.md) | world-models, continual-learning, personalization | 2026-04-16 |
@@ -152,7 +153,7 @@ _Earlier 2026-05-07 entry (LinkedIn drafts ingest — added 1 source [JMIR AI+We
 | [Software-Defined Medical Implants](concepts/software-defined-medical-implants.md) | mlops, firmware-updates, medical-device, regulatory, deployment | 2026-04-26 |
 | [Longitudinal Hearing Phenotyping](concepts/longitudinal-hearing-phenotyping.md) | phenotyping, longitudinal, outcome-measurement, gene-therapy, ml-monitoring, telemetry, candidacy-expansion | 2026-05-09 |
 | [Subjective–Objective Hearing Gap](concepts/subjective-objective-hearing-gap.md) | outcome-measurement, audiometry, perception, self-report, personalization, fuel-framework, communication-accessibility | 2026-05-26 |
-| [Agentic Engineering in Hearing R&D](concepts/agentic-engineering-hearing-rd.md) | agentic-engineering, software-3, karpathy, llm-agents, r-and-d | 2026-05-06 |
+| [Agentic Engineering in Hearing R&D](concepts/agentic-engineering-hearing-rd.md) | agentic-engineering, software-3, karpathy, llm-agents, r-and-d, named-failure-modes, verification-before-fix, claude-md-ten-rules | 2026-06-29 |
 | [Digital Phenotyping for Cognitive Decline](concepts/digital-phenotyping-cognitive-decline.md) | digital-phenotyping, dementia, wearables, hearing-aids, telemetry | 2026-05-07 |
 | [Cortical Reorganization from Hearing Aid Use](concepts/cortical-reorganization-hearing-aids.md) | neuroplasticity, meg, cortical-reorganization, outcome-measurement, neural-efficiency | 2026-05-08 |
 | [Probabilistic Generative Models for Hearing AI](concepts/probabilistic-generative-models-hearing-ai.md) | bayesian-inference, factor-graphs, rxinfer, parameter-efficiency, edge-ai, hallucination-resistance, ood-generalization | 2026-06-08 |

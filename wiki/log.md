@@ -3641,3 +3641,36 @@ Also added `continual-learning-hearing-ai.md` to `related:` in `concepts/on-devi
 - **Did NOT add a new tag taxonomy for "perception-action gap."** Used existing `perception-action-gap` tag on the new pages where appropriate; will formalise into the tag index if it appears in a third source.
 
 **Pages touched this ingest: 8** (2 new sources, 4 new concept pages, 2 wiki pages updated, +1 log entry, +1 index update).
+
+---
+
+## 2026-06-29 — LinkedIn-draft ingest: skip-free flow-matching SE + Karpathy CLAUDE.md ten rules
+
+Two new source files ingested from today's LinkedIn-draft research cycle.
+
+### Sources added
+
+1. **`sources/pu-scarpiniti-beyond-unet-flow-matching-se-2026.md`** — Wangyi Pu, Michele Scarpiniti, "Beyond U-Net: A Latent-Representation-Aligned Skip-Free Backbone for Flow-Matching Speech Enhancement," arXiv:2606.24745, 23 Jun 2026. Flow-matching SE that deletes U-Net skip connections and aligns bottleneck + decoder outputs to clean-speech latent features from a frozen Descript Audio Codec (DAC). Competitive PESQ at 5 NFE on WSJ0-CHiME3 and VoiceBank-DEMAND. Argument: skip paths leak noise-correlated low-level features encoder→decoder; foundation-codec latent provides a clean training target. Two patterns crystallise: (a) U-Net SE backbone era is up for renegotiation; (b) "frozen foundation model + tiny head" recipe now spans evaluation (Sabin et al.) and training-loss (this paper).
+
+2. **`sources/karpathy-claude-md-ten-rules-june-2026.md`** — Tech Times article (28 Jun 2026) on a six-rule extension to the Forrest Chang / andrej-karpathy-skills CLAUDE.md template that started circulating on X on Friday 27 Jun, attributed to Karpathy via a contact on his Anthropic pre-training team (authenticity unconfirmed). Adds verification-before-fix, debugging discipline, dependency hygiene, plus four named failure modes for agent loops: **Kitchen Sink, Wrong Abstraction, Optimistic Path, Runaway Refactor**. Highest-leverage rule is verification-before-fix when the loop runs unsupervised for hours.
+
+### New wiki pages
+
+- **`wiki/concepts/skip-free-flow-matching-se.md`** — Dedicated concept page for the Pu & Scarpiniti pattern. Covers the argument against skip connections in SE, the latent-alignment replacement, the 5-NFE inference budget, three HA implications (backbone up for grabs, generative-SE-on-the-ear curve bend, foundation-eats-vertical-on-the-training-side pattern), open questions on latency / DAC runtime / distribution shift, and positions the pattern in the broader SE architecture inventory as of late June 2026.
+
+### Wiki pages updated
+
+- **`wiki/concepts/speech-enhancement-neural-networks.md`** — updated `last_change` to add Beyond U-Net entry with HA implications; added source to `sources:` list; `updated: 2026-06-29`.
+- **`wiki/concepts/foundation-model-fusion-speech.md`** — updated `last_change` to name the symmetric pattern (DAC on training-loss side ⟷ Whisper on evaluation side); added source to `sources:`; added `skip-free-flow-matching-se` to `related:`; `updated: 2026-06-29`.
+- **`wiki/concepts/agentic-engineering-hearing-rd.md`** — added new section "Ten-Rule CLAUDE.md Extension (June 27 2026) — Named Failure Modes for ML Loops" with the four named failure modes mapped to HA-R&D analogues (Kitchen Sink → multi-loss stacking without ablation; Wrong Abstraction → SDK-over-int8-quantisation; Optimistic Path → STOI-on-VoiceBank → wearer-commute regression detected by Sabin et al. benchmark; Runaway Refactor → SE-tensor-shape → WDRC-fitting-interface cascade). Added subsection on the unusually strong HA verification substrate (HASPIv2, Sabin et al. listener-rated dataset, in-situ wearer telemetry, differentiable-cochlea behavioural probes). Added source citation. `updated: 2026-06-29`.
+- **`wiki/index.md`** — added new `Skip-Free Flow-Matching Speech Enhancement` row, updated `Speech Enhancement Neural Networks` row tag list and date, updated `Agentic Engineering in Hearing R&D` row tag list and date.
+
+### Editorial choices NOT made
+
+- **Did NOT update `concepts/probabilistic-generative-models-hearing-ai.md`** with the 5-NFE flow-matching datapoint inline. It will absorb this on the next synthesis pass when the broader generative-SE-on-the-ear question gets a dedicated review — separate editorial unit from today's source-ingest cycle.
+- **Did NOT update `concepts/dnn-architectures-hearing-aids.md`** with the skip-free backbone as a first-class architecture. Same reason: backbone-inventory revision is its own pass and should be done against the cross-product of axes (backbone × loss × inference paradigm × spatial integration × AGC integration × hardware substrate) rather than per-paper.
+- **Did NOT update `concepts/closed-loop-data-flywheel.md`** with the verification-before-fix rule. The Karpathy ten-rules content lives natively in agentic-engineering-hearing-rd and would duplicate context if appended.
+- **Did NOT create a new tag for `claude-md-ten-rules`.** Added inline to the agentic-engineering-hearing-rd index row; will formalise into the tag taxonomy if it shows up in a second source.
+- **Authenticity caveat carried forward** — the Karpathy ten-rules attribution is unconfirmed; both source file and concept page record that explicitly, and the editorial frame is "the named failure modes earn their inclusion on operational utility, not provenance."
+
+**Pages touched this ingest: 7** (2 new sources, 1 new concept page, 3 wiki concept pages updated, 1 index update, 1 log entry).
