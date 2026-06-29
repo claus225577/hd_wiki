@@ -2,8 +2,8 @@
 title: Gene Therapy for Hearing Loss
 type: concept
 created: 2026-04-25
-updated: 2026-04-26
-sources: [otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md]
+updated: 2026-06-29
+sources: [otarmeni-fda-gene-therapy-approval-april-2026.md, harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md, sensorion-sens-601-gjb2-lead-jun-2026.md]
 related: [precision-drug-delivery-inner-ear.md, cochlear-implant-ai.md, ../entities/regeneron.md, hearing-aid-market-dynamics.md, longitudinal-hearing-phenotyping.md, software-defined-medical-implants.md]
 tags: [gene-therapy, otof, aav, hearing-loss, regenerative-medicine, fda, regulatory]
 ---
@@ -39,7 +39,7 @@ Gene therapy for hearing loss aims to restore hearing function by delivering fun
 3. The inner ear is immunologically privileged (reduced immune rejection of viral vectors)
 
 Additional gene therapy targets under investigation:
-- **GJB2 (connexin 26):** Most common cause of genetic deafness (~50% of cases). More challenging — requires restoring gap junction networks between supporting cells
+- **GJB2 (connexin 26):** Most common cause of genetic deafness (~50% of cases). More challenging — requires restoring gap junction networks between supporting cells. **First clinical-stage program: Sensorion SENS-601** (named lead 9 Jun 2026 after company dropped its OTOF candidate SENS-501 citing Regeneron competition). CTAs filed in Canada and France; US and Australia filings targeted by end-2026.
 - **TMC1/TMC2:** Mechanotransduction channel genes. Multiple preclinical programs
 - **SLC26A4 (Pendrin):** Causes enlarged vestibular aqueduct syndrome
 - **TMPRSS3, LOXHD1, PCDH15:** Other targets in preclinical/early clinical stages
@@ -78,3 +78,4 @@ Additional gene therapy targets under investigation:
 ## Sources
 - [FDA Approves Otarmeni](../sources/otarmeni-fda-gene-therapy-approval-april-2026.md) — FDA approval announcement, mechanism, efficacy data
 - [Harvard/Mass Eye and Ear Nature Study](../sources/harvard-mass-eye-ear-gene-therapy-otof-nature-2026.md) — 2.5-year follow-up, 90% improvement, 50% normal hearing
+- [Sensorion Names SENS-601 (GJB2) as Lead Gene Therapy](../sources/sensorion-sens-601-gjb2-lead-jun-2026.md) — Jun 2026 lead program designation, OTOF discontinuation, CTA filings in Canada/France

@@ -2,8 +2,8 @@
 title: Amplifon
 type: entity
 created: 2026-04-15
-updated: 2026-04-15
-sources: [amplifon-gn-acquisition-2026.md]
+updated: 2026-06-29
+sources: [amplifon-gn-acquisition-2026.md, amplifon-gn-1.35b-senior-loan-jun-2026.md]
 related: [gn-hearing-resound.md, ../concepts/closed-loop-data-flywheel.md, ../syntheses/vertical-integration-trend.md]
 tags: [company, retailer, manufacturer, m-and-a, italy, vertical-integration]
 ---
@@ -41,6 +41,11 @@ World's largest hearing aid retailer. Headquartered in Milan, Italy. Undergoing 
 - **€60–80 million in annual synergies projected by 2029**
 - Synergies from: manufacturing cost reductions, cross-selling proprietary devices through clinics, shared R&D/data infrastructure
 
+### Financing (Jun 2026 update)
+- **€1.35 billion senior loan** secured to fund the cash portion of the deal — surfaced 26 Jun 2026.
+- Removes one of the largest residual execution risks between "announced" and "closed"; sets the leverage profile of the combined entity going into the 2027-29 integration window.
+- Signals lender confidence in the vertically-integrated retail+manufacturer thesis surviving the OTC margin compression.
+
 ### Data Science Significance
 Post-merger, Amplifon creates a unique closed-loop data architecture:
 - **Patient journey data** (clinic visits, audiograms, fitting outcomes, returns, satisfaction) — Amplifon's existing strength
@@ -61,5 +66,5 @@ Amplifon was the last major pure retailer; this move closes that gap and adds a 
 - [[vertical-integration-trend]] — Broader industry pattern this acquisition continues
 
 ## Sources
-- [Amplifon-GN Acquisition 2026](../../sources/amplifon-gn-acquisition-2026.md)
-- Research notes on deal terms, synergy projections, and combined entity scale
+- [Amplifon-GN Acquisition 2026](../../sources/amplifon-gn-acquisition-2026.md) — original deal terms, synergy projections, combined entity scale
+- [Amplifon Secures €1.35B Senior Loan](../../sources/amplifon-gn-1.35b-senior-loan-jun-2026.md) — Jun 2026 financing milestone

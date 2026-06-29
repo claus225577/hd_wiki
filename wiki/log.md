@@ -3674,3 +3674,32 @@ Two new source files ingested from today's LinkedIn-draft research cycle.
 - **Authenticity caveat carried forward** — the Karpathy ten-rules attribution is unconfirmed; both source file and concept page record that explicitly, and the editorial frame is "the named failure modes earn their inclusion on operational utility, not provenance."
 
 **Pages touched this ingest: 7** (2 new sources, 1 new concept page, 3 wiki concept pages updated, 1 index update, 1 log entry).
+
+---
+
+## 2026-06-29 — Daily digest ingest: Sensorion GJB2 lead, Affine-Modulation audiogram fusion, Amplifon €1.35B loan
+
+Three new source files ingested from the 29 Jun 2026 hearing+AI daily digest. Most digest items (Sabin et al., Orka O1 Pro AWE 2026, Apple WWDC26 hearing accessibility ×3, AirPods Pro country expansion, Auracast UK theatres, Amplifon-GN base deal, Northwestern CI prediction) already had source files from prior ingests and were not re-created — surgical update only.
+
+### Sources added
+
+1. **`sources/sensorion-sens-601-gjb2-lead-jun-2026.md`** — Sensorion (9 Jun 2026 release) names SENS-601 (GJB2) as lead gene-therapy program; discontinues SENS-501 (OTOF) citing Regeneron Otarmeni competition. CTAs filed Canada + France; US + Australia targeted by year-end. GJB2 = ~50% of autosomal-recessive non-syndromic hearing loss — order-of-magnitude larger addressable population than OTOF.
+
+2. **`sources/affine-modulation-audiogram-fusion-arxiv-2509-07341.md`** — arXiv:2509.07341 (Sep 2025, resurfaced in Jun 2026 daily digest). Single DNN performs joint noise reduction + prescriptive hearing-loss compensation, audiogram-conditioned via FiLM-style affine modulation. Collapses the classical two-stage SE-front-end → prescriptive-amplification-back-end cascade into one model.
+
+3. **`sources/amplifon-gn-1.35b-senior-loan-jun-2026.md`** — €1.35B senior loan secured (surfaced 26 Jun 2026, HHMT) to finance the cash portion of the $2.64B GN Hearing acquisition. Closes one of the largest residual execution risks between "announced" and "closed"; sets the leverage profile for the 2027-29 integration window.
+
+### Wiki pages updated
+
+- **`wiki/concepts/gene-therapy-hearing.md`** — extended the "Beyond OTOF" pipeline section with Sensorion SENS-601 as the first clinical-stage GJB2 program; added source to `sources:` list; `updated: 2026-06-29`.
+- **`wiki/entities/amplifon.md`** — added Jun 2026 financing subsection (€1.35B senior loan), reframed as the gate between "announced" and "closed"; added source to `sources:` list; `updated: 2026-06-29`.
+
+### Editorial choices NOT made
+
+- **Did NOT create a `sensorion.md` entity page.** Sensorion's wiki-resident footprint is currently limited to one program update; creating an entity page on a single release would over-claim. Re-evaluate at first CTA approval or first-in-human dosing.
+- **Did NOT create a dedicated `audiogram-conditioned-se.md` concept page.** The Affine-Modulation paper is one architectural datapoint; the right pass for a dedicated concept page is when at least one other shipping or peer-reviewed instance lands (Phonak Sphere successor, Oticon Intent successor, or a second arXiv preprint with the same conditioning pattern).
+- **Did NOT update `entities/regeneron.md`.** Sensorion's framing of "Regeneron has crowded OTOF" is already implicit in the existing Otarmeni FDA-approval entry; appending it would duplicate context without adding signal.
+- **Did NOT re-ingest sources that already exist** for the Sabin et al. paper, Orka O1 Pro at AWE 2026, Apple WWDC26 (3 sources), AirPods Pro country expansion (May 2026), Auracast UK theatres, the Amplifon-GN base acquisition deal, or the Northwestern/CUHK CI language-outcome prediction work. The 29 Jun digest cites the existing sources by URL only.
+- **Did NOT update `wiki/index.md`.** No new wiki pages created this cycle (only updates to two existing pages). Index update reserved for the next pass that introduces a new page.
+
+**Pages touched this ingest: 6** (3 new sources, 2 wiki pages updated, 1 log entry).
