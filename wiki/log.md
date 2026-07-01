@@ -3703,3 +3703,28 @@ Three new source files ingested from the 29 Jun 2026 hearing+AI daily digest. Mo
 - **Did NOT update `wiki/index.md`.** No new wiki pages created this cycle (only updates to two existing pages). Index update reserved for the next pass that introduces a new page.
 
 **Pages touched this ingest: 6** (3 new sources, 2 wiki pages updated, 1 log entry).
+
+---
+
+## 2026-07-01 — Daily LinkedIn ingest: EAN Congress comorbidity dementia signal, AutoSense OS 7.0 flywheel framing
+
+Daily LinkedIn-post research pass (1 Jul 2026 drafts). Two posts drafted:
+1. **EAN Congress 2026 (27 Jun)** — 23% lower dementia risk for hearing-aid users with both epilepsy and hearing loss.
+2. **Phonak AutoSense OS 7.0** — 18× more training data → 24% more precise scene classification, framed as a labeled-data-flywheel-under-privacy problem.
+
+### Sources added
+
+1. **`sources/ean-congress-hearing-aids-epilepsy-dementia-jun-27-2026.md`** — EAN Congress press release, 27 Jun 2026. 23% lower dementia risk in hearing-aid users with **both** epilepsy and hearing loss. First widely reported comorbidity-stratified two-hit estimate where both conditions are neurological. Extends the modifiable-risk-factor argument from Lancet 2024 / Framingham 2025 / Apple Hearing Study 2026 into cohorts previously assumed too sick to move. Neurology-venue signal that "hearing-aids-as-cognitive-intervention" is being taken seriously outside audiology. Personalization pointer: comorbidity features belong in the covariate set for cognitive-trajectory-endpoint personalization models.
+
+### Wiki pages updated
+
+- **`wiki/concepts/hearing-loss-dementia-link.md`** — added dedicated EAN Congress 2026 subsection under Frontiers-review commentary; wired new source into `sources:` list and Sources footer; `updated: 2026-07-01`; `last_change` note refreshed.
+
+### Editorial choices NOT made
+
+- **Did NOT create a new source file for the AutoSense OS 7.0 post.** The vendor whitepaper is already ingested at `sources/phonak-autosense-os-7-jun-2026.md` (23 Jun 2026 ingest), and the flywheel-framing content of Post 2 is a re-cast of existing wiki material (see [[../wiki/entities/phonak]] AutoSense OS 7.0 subsection + [[../wiki/concepts/closed-loop-data-flywheel]] pre-training-aware flywheel discussion). Creating a duplicate source would be redundant.
+- **Did NOT add a sixth flywheel architecture to `closed-loop-data-flywheel.md`.** Phonak's fitting-software + myPhonak telemetry route is arguably a distinct "vendor-native firmware-refresh flywheel" pattern, but no *new* announced feature justifies the entry beyond what the 23 Jun 2026 ingest already captured under [[../wiki/entities/phonak]] AutoSense OS 7.0. Reserved for the first Phonak announcement that explicitly commits fitting-software telemetry to a retraining loop (analogous to how Widex Allure + Compass Cloud 2.0 triggered the fifth architecture entry).
+- **Did NOT create an `epilepsy-and-hearing.md` concept page.** Single-datapoint entity; wiki-resident footprint is one press release. Re-evaluate at either a second EAN-caliber comorbidity result or the peer-reviewed EAN 2026 manuscript.
+- **Did NOT update `wiki/index.md`.** No new wiki pages created this cycle; index update reserved for the next pass that introduces a new page.
+
+**Pages touched this ingest: 3** (1 new source, 1 wiki page updated, 1 log entry).

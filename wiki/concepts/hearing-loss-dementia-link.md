@@ -2,9 +2,9 @@
 title: Hearing Loss and Dementia: The Evidence
 type: concept
 created: 2026-04-15
-updated: 2026-06-28
-last_change: 2026-06-28 — Added [[../sources/hearing-aid-plasma-biomarkers-medrxiv-jun-2026]] (medRxiv preprint indexed Jun 27): ~33% lower 7-year dementia risk in new-HA-prescription arm, modest longitudinal cognitive change, plasma Aβ / p-tau / NfL readout layered on top of cognitive endpoints. First plasma-biomarker layer on the hearing-aid intervention question.
-sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md, frontiers-dementia-hearing-loss-review-2026.md, vcca-2026-main-programme-june-2026.md, acousia-bimokalner-phase-2a-june-2026.md, hearing-aid-plasma-biomarkers-medrxiv-jun-2026.md]
+updated: 2026-07-01
+last_change: 2026-07-01 — Added [[../sources/ean-congress-hearing-aids-epilepsy-dementia-jun-27-2026]] (EAN Congress press release, 27 Jun 2026): 23% lower dementia risk in hearing-aid users with **both** epilepsy and hearing loss. First widely reported comorbidity-stratified estimate where both conditions are neurological; extends the modifiable-risk-factor argument into two-hit populations and shifts the "who benefits most" personalization question toward comorbidity covariates.
+sources: [achieve-trial-cognitive-hearing-2025.md, hearing-aid-cognitive-outcome-prediction-2025.md, hearing-loss-dementia-framingham-jama-2024.md, framingham-hearing-aid-dementia-jaman-2025.md, hearing-loss-dementia-lancet-2024.md, apple-hearing-study-results-may-2026.md, knipper-hidden-hearing-loss-dementia-may-2026.md, jmir-ai-wearables-cognitive-impairment-2026.md, ihs-better-hearing-month-2026.md, frontiers-dementia-hearing-loss-review-2026.md, vcca-2026-main-programme-june-2026.md, acousia-bimokalner-phase-2a-june-2026.md, hearing-aid-plasma-biomarkers-medrxiv-jun-2026.md, ean-congress-hearing-aids-epilepsy-dementia-jun-27-2026.md]
 related: [otc-hearing-aids.md, hearing-aid-market-dynamics.md, teleaudiology.md, automated-audiometry.md, longitudinal-hearing-phenotyping.md, subjective-objective-hearing-gap.md, digital-phenotyping-cognitive-decline.md, care-partner-dyad-models.md, hidden-hearing-loss.md, otoprotection-pharmacology.md, ../syntheses/hidden-hearing-loss-fullstack-june-2026.md, ../entities/sharon-kujawa.md, ../entities/harvey-dillon.md, ../entities/anu-sharma.md]
 tags: [dementia, cognitive-decline, public-health, epidemiology, achieve-study, lancet, risk-factors, mobility, walking-speed, healthspan, digital-phenotyping, hidden-hearing-loss, ehf-audiometry, otoprotection]
 ---
@@ -157,6 +157,18 @@ A multi-author review (Frontiers in Dementia, doi 10.3389/frdem.2026.1736003) co
 
 The review will be a 12-month talking point at HLAA, AAA, and policy panels — most consequentially, at the HLAA 2026 Research Symposium on AI in Hearing Health (Jun 12).
 
+### EAN Congress 2026 (Jun 27) — First Comorbidity-Stratified Two-Hit Estimate
+
+Presented at the European Academy of Neurology (EAN) Congress on **27 Jun 2026**: adults with **both epilepsy and hearing loss** who use hearing aids show a **23% lower dementia risk** than peers with the same comorbid burden who do not use hearing aids. See [[../sources/ean-congress-hearing-aids-epilepsy-dementia-jun-27-2026]].
+
+Three reasons this matters more than yet-another prevalence datapoint:
+
+1. **Two-hit populations still respond.** Effect sizes derived from general hearing-loss cohorts (Lancet ~7% modifiable-risk-factor contribution; Framingham 61% for under-70 hearing-aid users) are averages. Comorbid cohorts have historically been assumed to be "too sick to move" — the EAN 2026 result argues the opposite. Both cognitive-load and social-isolation mechanisms plausibly *amplify* when a seizure disorder is layered on top of sensory deprivation.
+2. **Neurology venue.** The setting itself (Europe's largest neurology congress) signals that the "hearing-aids-as-cognitive-intervention" narrative is now being taken seriously outside audiology — with implications for referral patterns, reimbursement panels, and neurology-side coding of hearing intervention.
+3. **Personalization pointer.** For the hearing-AI stack, this is a signal to move "who benefits most cognitively?" from a research aspiration to a modelable target. Comorbidity features (epilepsy, cardiovascular, metabolic) belong in the covariate set for personalization models trained against cognitive-trajectory endpoints — not just acoustic-fit endpoints.
+
+**Caveat:** press-release-level reporting from a congress presentation, not the peer-reviewed manuscript. Directionality is observational — hearing-aid adopters in the epilepsy population may differ systematically from non-adopters on health engagement, access, and adherence. Provisional until the full paper indexes; the sign and rough magnitude are consistent with the rest of the evidence base.
+
 ## Related Pages
 - [[otc-hearing-aids]] — Policy and access arguments strengthened by this evidence
 - [[hearing-aid-market-dynamics]] — Dementia link is a marketing and clinical narrative driving adoption
@@ -173,3 +185,4 @@ The review will be a 12-month talking point at HLAA, AAA, and policy panels — 
 - [Framingham Heart Study — Hearing & Brain (JAMA Open, 2024)](../sources/hearing-loss-dementia-framingham-jama-2024.md)
 - [Framingham — Self-Reported Hearing Aid Use & Incident Dementia (JAMA Neurology Letters, 2025)](../sources/framingham-hearing-aid-dementia-jaman-2025.md) — 61% lower dementia risk in under-70 hearing-aid users
 - [Hearing Aids and Plasma Biomarkers of Alzheimer's (medRxiv, indexed Jun 2026)](../sources/hearing-aid-plasma-biomarkers-medrxiv-jun-2026.md) — ~33% lower 7-year dementia risk in new-prescription arm; modest cognitive change; first plasma Aβ / p-tau / NfL layer on the intervention question
+- [EAN Congress 2026 — Hearing Aid Use in Epilepsy + Hearing Loss (27 Jun 2026)](../sources/ean-congress-hearing-aids-epilepsy-dementia-jun-27-2026.md) — 23% lower dementia risk in hearing-aid users with both conditions; first widely reported two-hit comorbidity-stratified estimate
